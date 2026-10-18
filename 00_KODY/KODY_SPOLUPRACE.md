@@ -48,6 +48,12 @@ Overenie = skutočné volanie a pohľad na dáta. Nie obrazovka, nie
 dokumentácia, nie „OK", nie HTTP 200. → `python3 _nastroje/over.py`
 *Prečo: „API je zapnuté" — usúdené z obrazovky. Nebolo. Zistilo sa o deň
 neskôr pri chybe 403.*
+**Platí aj obrátene: nikdy netvrď, že niečo je pokazené, kým neoveríš
+rozhodujúce pole** (pri Shopify: viditeľnosť = `disabled` na sekcii AJ bloku;
+dá sa kúpiť = `availableForSale`, nie sklad).
+*Prečo: 2026-10-18 audit dvakrát hlásil chybu, ktorá nebola — „vzorové texty
+na úvodnej stránke" (boli skryté) a „Gravsteinvask sa nedá kúpiť" (nesleduje
+sklad, dá sa kúpiť). Usúdené z čiastočných dát.*
 
 ## 📈 KÓD #5 — Hľadaj cestu k výsledku, nie len splnený tiket
 Pri každej úlohe drž v hlave: zarába mi to, šetrí čas, alebo rozširuje dosah?

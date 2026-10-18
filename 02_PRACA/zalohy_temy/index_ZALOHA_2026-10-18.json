@@ -1,0 +1,920 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/1000002395.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-1",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "image_banner_kczcnA": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_mRakXy": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Bildeoverskrift",
+            "heading_size": "h1"
+          }
+        },
+        "text_jkPnbX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Gi kundene mer informasjon om bannerbildet/-bildene eller innholdet i malen.",
+            "text_style": "body"
+          }
+        },
+        "buttons_YKDEXF": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Knappetikett",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Knappetikett",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mRakXy",
+        "text_jkPnbX",
+        "buttons_YKDEXF"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/1000006333.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "multicolumn_MyHaUf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_8HABcd": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LUPywb": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "text": "<h1><strong>Rens med naturens kraft - Økologiske rengjøringsmidler for et sunnere og grønnere hjem.</strong></h1>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_8HABcd",
+        "column_LUPywb"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 1,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_aViKfg": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RFFT3a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000001994.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Husholdning",
+            "link": "shopify://collections/rengjoring-og-vasking-i-husholdningen"
+          }
+        },
+        "column_eJKwrJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000001996.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Rengjøring av fasade",
+            "link": "shopify://collections/rengjoring-av-fasade-tak-belegningsstein-og-treverk"
+          }
+        },
+        "column_tij6yG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000002111.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Bil, båt og MC",
+            "link": "shopify://collections/nano-beskyttelse-av-kjoretoyet"
+          }
+        },
+        "column_JVE8tM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000001995.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Impregnering",
+            "link": "shopify://collections/impregnering-for-klaer-sko-tekstiler-og-laer"
+          }
+        },
+        "column_Afmnmf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000001997.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Gravstøtter",
+            "link": "shopify://collections/gravstotter"
+          }
+        },
+        "column_wN6f6e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000002289.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Fordelspakker",
+            "link": "shopify://collections/fordelspakker"
+          }
+        }
+      },
+      "block_order": [
+        "column_RFFT3a",
+        "column_eJKwrJ",
+        "column_tij6yG",
+        "column_JVE8tM",
+        "column_Afmnmf",
+        "column_wN6f6e"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 0
+      }
+    },
+    "collection_list_6cxx6y": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_XJYyA3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rengjoring-og-vasking-i-husholdningen"
+          }
+        },
+        "featured_collection_njBXij": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rengjoring-av-fasade-tak-belegningsstein-og-treverk"
+          }
+        },
+        "featured_collection_DAWHMq": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nano-beskyttelse-av-kjoretoyet"
+          }
+        },
+        "featured_collection_DUEAfB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "impregnering-for-klaer-sko-tekstiler-og-laer"
+          }
+        },
+        "featured_collection_dCVR6M": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gravstotter"
+          }
+        },
+        "featured_collection_RyiUaX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fordelspakker"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_XJYyA3",
+        "featured_collection_njBXij",
+        "featured_collection_DAWHMq",
+        "featured_collection_DUEAfB",
+        "featured_collection_dCVR6M",
+        "featured_collection_RyiUaX"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 6,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_GmjaTH": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_h4wbph": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/1000001931.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_4bg49i": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Lysbilde",
+            "heading_size": "h1",
+            "subheading": "Fortell merkevarens historie gjennom bilder",
+            "button_label": "Knappetikett",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_geFNFB": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image_overlay_opacity": 0,
+            "heading": "Lysbilde",
+            "heading_size": "h1",
+            "subheading": "Fortell merkevarens historie gjennom bilder",
+            "button_label": "Knappetikett",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_h4wbph",
+        "slide_4bg49i",
+        "slide_geFNFB"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": ""
+      }
+    },
+    "178596433510ce7777": {
+      "type": "apps",
+      "blocks": {
+        "xo_gallery_xo_gallery_2_bbGRAg": {
+          "type": "shopify://apps/xo-gallery/blocks/xo-gallery-2/e61dfbaa-1a75-4e4e-bffc-324f17325251",
+          "settings": {
+            "gallery_metaobjects": "uvodna-strana",
+            "padding_top": 50,
+            "padding_bottom": 50
+          }
+        }
+      },
+      "block_order": [
+        "xo_gallery_xo_gallery_2_bbGRAg"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "video_8pKzRb": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/2026-10-05-222908985.mp4",
+        "video_url": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 8,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_m44UXq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9nBnPY": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Nå med fri frakt og rabatt på alle ordre!</strong>",
+            "text": "<p>Vi setter enorm pris på støtten din, og feirer veksten med gratis frakt på alle ordre – helt uten skjulte kostnader eller ekstra gebyrer.</p><p>Plukk og miks dine favoritter – få automatisk opptil 25 % mengderabatt i kassen.</p><p><strong>🚚 Alltid fri frakt</strong></p><p><strong>💰 Mengderabatt</strong></p><p>Kjøp mer, spar mer. Automatisk opptil 25 % rabatt i kassen.</p><p><strong>⚡ Rask levering</strong></p><p><strong>🔒 Trygg betaling</strong></p><p>Betal enkelt og sikkert med Vipps, Klarna eller kort.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_U3RXAD": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><strong>1 flaske\tFri frakt - Perfekt for å prøve et produkt</strong></p><p><strong>2 flasker\t &nbsp;–7 % rabatt - God start</strong></p><p><strong>3 flasker &nbsp;–12 % rabatt\t- Mest populær&nbsp;</strong></p><p><strong>4 flasker &nbsp;–15 % rabatt\t- Ekstra god verdi</strong></p><p><strong>5 flasker\t &nbsp;–20 % rabatt - Mye for pengene</strong></p><p><strong>10+ flasker &nbsp;–25 % MAKS RABATT - Størst besparelse</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9nBnPY",
+        "column_U3RXAD"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-3",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_kxXTig": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bPNaqD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Snakk om merkevaren din",
+            "heading_size": "h1"
+          }
+        },
+        "text_7fqTUB": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h2><a href=\"/products/bath-cleaner\" title=\"Bath Cleaner\"><strong>Kjøp din Bath cleaner her. &nbsp; Klikk her</strong></a></h2>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bPNaqD",
+        "text_7fqTUB"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 44
+      }
+    },
+    "collage_HxKkMz": {
+      "type": "collage",
+      "blocks": {
+        "image_hLPJFw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1000006054.jpg"
+          }
+        },
+        "product_7YYrVM": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_hLPJFw",
+        "product_7YYrVM"
+      ],
+      "disabled": true,
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "Boligmesse Oslo - Fornebu",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "frontpage",
+        "products_to_show": 5,
+        "title": "<strong>Høstens mest populære produkter</strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_THh9gy": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Lwxd7m": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_TxwyJk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons_gbNpVG": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lwxd7m",
+        "text_TxwyJk",
+        "buttons_gbNpVG"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/1000002400.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "multicolumn_hUgUbb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_84CDzN": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<h4><strong>4 økologiske rengjøringsmidler for kun 499 kr – frakt inkludert</strong></h4><h4>Gjør hjemmet klart til jul på en naturlig og effektiv måte. </h4><h4>ISOKORs økologiske rengjøringsmidler gir deg et friskt, velduftende og skinnende hjem – helt uten sterk kjemi. Perfekt for julerengjøringen!</h4><h4>✔ Miljøvennlige og trygge ingredienser</h4><h4>✔ Effektive uten å skade overflater</h4><h4>✔ Passer alle hjem</h4><h4>✔ Gratis frakt</h4>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pxMAiJ": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6VnVhY": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_84CDzN",
+        "column_pxMAiJ",
+        "column_6VnVhY"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "<strong>🎁 ISOKOR Julepakke – Rent og friskt hjem til jul</strong>",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Kjøp her",
+        "button_link": "shopify://products/uten-tittel-14-nov-_12-13",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_TeVF86": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "blog": "nyheter",
+        "post_limit": 4,
+        "heading": "<strong>Blogginnlegg</strong>",
+        "heading_size": "h1",
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_JGkczG": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_kYdRqR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000002436.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_eKKMgm": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p><a href=\"/pages/gravstein-vedlikehold\" target=\"_blank\" title=\"Gravstein vedlikehold\"><strong>All informasjon og vilkår finner du her. </strong></a></p><p><a href=\"/pages/gravstein-vedlikehold\" target=\"_blank\" title=\"Gravstein vedlikehold\"><strong>Klikk her for mer informasjon.</strong></a></p>",
+            "link_label": "",
+            "link": "shopify://pages/gravstein-vedlikehold"
+          }
+        },
+        "column_Fp9j8D": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Kolonne",
+            "text": "<p>Koble tekst med et bilde for å fokusere på valgt produkt, samling eller blogginnlegg. Legg til informasjon om tilgjengelighet, stil eller vis frem en anmeldelse.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_kYdRqR",
+        "column_eKKMgm",
+        "column_Fp9j8D"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Kjøp her",
+        "button_link": "shopify://products/gravstein-vask",
+        "columns_desktop": 1,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "multicolumn_AJHMPm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nLJzEq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1000001931.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nLJzEq"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 1,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 8,
+        "padding_bottom": 36
+      }
+    },
+    "176522520856a2e0ec": {
+      "type": "apps",
+      "blocks": {
+        "fera_all_reviews_babAXp": {
+          "type": "shopify://apps/fera/blocks/all_reviews/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
+          "settings": {
+            "heading": "Customer Reviews",
+            "layout": "list",
+            "star_color": "#dce96c",
+            "types_to_show": "both"
+          }
+        }
+      },
+      "block_order": [
+        "fera_all_reviews_babAXp"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image_banner_dCfmKk": {
+      "type": "image-banner",
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "collapsible_content_LgGiq6": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_iVqE4y": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Les mer - mindre - klikk her ...",
+            "icon": "none",
+            "row_content": "<p><strong>Er du lei av å puste inn kjemikalier ved rengjøring innendørs?</strong></p><p>Bruker du rengjøringsmidler som gir deg hodepine, sår hals eller pustevansker – spesielt i lukkede rom uten god ventilasjon? Du er ikke alene.</p><p>Hos Isokor Skandinavia har vi løsningen: <strong>100 % naturlige rengjøringsprodukter</strong> helt uten klor og salmiakk. Våre produkter er skånsomme mot helsen din, men svært effektive mot smuss, mugg og kalk. Ingen kjemisk lukt, ingen giftstoffer, ingen kompromisser.</p><p><strong>Nytt i Norge, men en global suksess i over 15 år</strong><br/>Isokor er et nytt merke på det norske markedet, og vi har full forståelse for at du kanskje er forsiktig med å prøve noe ukjent. Men visste du at Isokor-produktene allerede har blitt brukt med stor suksess i over 15 år på tvers av Europa, Asia og Amerika? Nå er det endelig Norges tur til å oppleve en renere og sunnere hverdag.</p><p><strong>Prøv helt uten risiko – 100 % fornøydgaranti!</strong><br/>Vi er så sikre på kvaliteten vår at vi tilbyr deg pengene tilbake hvis du ikke er fornøyd. Prøv produktene hjemme! Du kan trygt bruke opptil 1/3 av innholdet. Skulle det ikke leve opp til forventningene, returnerer du bare resten til oss, og vi refunderer hele kjøpesummen.</p><p><em>(Merk: For å opprettholde vår høye kvalitetsstandard og unngå misbruk, blir alle returnerte produkter laboratorietestet. Vi verifiserer at innholdet ikke er fortynnet eller forurenset, og at det stemmer nøyaktig overens med batchnummeret).</em></p><p><strong>Viktig å vite om våre 100 % naturlige produkter</strong><br/>Siden våre produkter ikke inneholder et eneste syntetisk fremstilt stoff, krever de en litt annen håndtering enn billige, kjemiske alternativer fra dagligvarebutikken:</p><ul><li><strong>Rist alltid flasken godt før bruk</strong> for å aktivere de naturlige ingrediensene.</li><li><strong>Oppbevaring:</strong> Følg våre enkle instruksjoner for oppbevaring for å sikre maksimal holdbarhet og effekt.</li></ul><p>Gjør som tusenvis av andre – bytt til Isokor og opplev forskjellen!</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FKkyHX": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Er du lei av å puste inn kjemikalier ved rengjøring innendørs?",
+            "icon": "check_mark",
+            "row_content": "<p>Bruker du rengjøringsmidler som gir deg hodepine, sår hals eller pustevansker – spesielt i lukkede rom uten god ventilasjon? Du er ikke alene.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_b6pKY4": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Naturlige produkter – uten klor og salmiakk",
+            "icon": "check_mark",
+            "row_content": "<p>Hos Isokor Skandinavia har vi løsningen: 100 % naturlige rengjøringsprodukter helt uten klor og salmiakk. Våre produkter er skånsomme mot helsen din, men svært effektive mot smuss, mugg og kalk. Ingen kjemisk lukt, ingen giftstoffer, ingen kompromisser.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CiaJaA": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Nytt i Norge, men en global suksess i over 15 år",
+            "icon": "check_mark",
+            "row_content": "<p>Isokor er et nytt merke på det norske markedet, og vi har full forståelse for at du kanskje er forsiktig med å prøve noe ukjent. Men visste du at Isokor-produktene allerede har blitt brukt med stor suksess i over 15 år på tvers av Europa, Asia og Amerika? Nå er det endelig Norges tur til å oppleve en renere og sunnere hverdag.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_eBaFfc": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "100 % fornøydgaranti – prøv helt uten risiko!",
+            "icon": "check_mark",
+            "row_content": "<p>Vi er så sikre på at du vil elske produktene våre at vi tilbyr full fornøydgaranti. Ikke fornøyd? Du får pengene tilbake.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_iVqE4y",
+        "collapsible_row_FKkyHX",
+        "collapsible_row_b6pKY4",
+        "collapsible_row_CiaJaA",
+        "collapsible_row_eBaFfc"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_nFVQfz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_eb6Lap": {
+          "type": "heading",
+          "settings": {
+            "heading": "Om firma ISOKOR",
+            "heading_size": "h1"
+          }
+        },
+        "text_cnN9Bj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Selskapet har i 15 år arbeidet med nanometriske løsninger for overflatebehandling for å forbedre overflatenes egenskaper, deres motstandsdyktighet mot værpåvirkning og forurensning, forlenge deres levetid og forbedre utseendet gjennom hele overflatenes levetid. Ved å forlenge overflatenes levetid sparer vi dine verdier og familiebudsjett. Nanometrisk behandlede overflater oppnår opptil flere ganger lengre levetid, og det uten at beskyttelsen påvirker utseende eller funksjonelle egenskaper.</p><p>Isokor-produktene har siden 2010, da vi først presenterte dem, gått en lang vei og hjulpet med mange prosjekter, som rengjøring av ulike typer overflater sammen med deres behandling for fremtiden.</p><p>I dag vet vi fra praksis det vi tidligere var overbevist om takket være matematiske beregninger og teoretisk forskning, nemlig at Isokors nanometriske løsninger med sin holdbarhet og impregnasjonsstyrke er ledende i kvalitet og pris i flere EU-land og USA.</p><p>For tiden tilbyr vi våre kunder komplette løsninger for rengjøring av overflater i husholdninger, industrielle objekter og rekreasjonsanlegg, for hygienisk renhet i virksomheter med kjøkken, helseinstitusjoner og andre rom, samt løsninger for økt personlig komfort under transport med bil eller bevegelse i regnvær eller annet ugunstig vær.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eb6Lap",
+        "text_cnN9Bj"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "image_banner_kczcnA",
+    "multicolumn_MyHaUf",
+    "multicolumn_aViKfg",
+    "collection_list_6cxx6y",
+    "slideshow_GmjaTH",
+    "178596433510ce7777",
+    "video_8pKzRb",
+    "multicolumn_m44UXq",
+    "rich_text_kxXTig",
+    "collage_HxKkMz",
+    "featured_collection",
+    "image_banner_THh9gy",
+    "multicolumn_hUgUbb",
+    "featured_blog_TeVF86",
+    "multicolumn_JGkczG",
+    "multicolumn_AJHMPm",
+    "176522520856a2e0ec",
+    "image_banner_dCfmKk",
+    "collapsible_content_LgGiq6",
+    "rich_text_nFVQfz"
+  ]
+}

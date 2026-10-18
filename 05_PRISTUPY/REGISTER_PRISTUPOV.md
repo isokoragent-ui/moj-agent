@@ -23,3 +23,9 @@
 
 ## Nástroje, ku ktorým agent prístup NEMÁ (a nemá ho pýtať)
 - **Bankové účty** — nikdy (pozri Hranice v `AGENT.md`)
+
+### Shopify konektor — čo nejde (overené volaním 2026-10-18)
+- Zmazanie témy (`themeDelete`) → odmietnuté bezpečnostnou politikou konektora: „Use Shopify admin.“
+- Podľa popisu konektora (netestované): zápis do živej témy, publikovanie témy, refundy, darčekové karty, zamestnanci.
+- Úprava právnych podmienok (`shopPolicyUpdate`: Frakt, Vilkår, Angrerett…) → „Access denied… `write_legal_policies`“ (overené 2026-10-18). Texty vloží Luk v admine: Nastavenia → Pravidlá.
+- Funguje: kópia témy (`themeDuplicate`) a úpravy nepublikovanej kópie → Luk publikuje sám.
