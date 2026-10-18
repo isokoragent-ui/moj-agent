@@ -17,6 +17,7 @@
 5. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
 6. Peisglassrens: jesenný príspevok — návrh čaká na Lukovo „áno“
 7. Metricool: pripojiť Facebook + Instagram (Luk)
+9. Web audit (`02_PRACA/WEB_AUDIT_2026-10-18.md`) — 24 nedostatkov, čaká na Lukovo „áno“ k opravám; najprv Gravstein vask (nedá sa kúpiť) a vzorové texty na úvodnej stránke; Luk má povedať správne org. číslo (922 112 975 vs 912 689 441)
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 
 ## Pozor (čo by ďalšieho vypálilo)
