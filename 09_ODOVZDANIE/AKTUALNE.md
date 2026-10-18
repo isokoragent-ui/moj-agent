@@ -17,7 +17,7 @@
 5. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
 6. Peisglassrens: jesenný príspevok — návrh čaká na Lukovo „áno“
 7. Metricool: pripojiť Facebook + Instagram (Luk)
-9. Web audit (`02_PRACA/WEB_AUDIT_2026-10-18.md`) — 24 nedostatkov, čaká na Lukovo „áno“ k opravám; najprv Gravstein vask (nedá sa kúpiť) (bod 1 o vzorových textoch bol omyl — sú skryté); v Shopify leží nepublikovaná kópia témy „Dawn – úprava úvodnej stránky 2026-10-18“ bez zmien; obe org. čísla zostávajú (2 firmy) — doplniť, ktorá predáva čo
+9. Web audit (`02_PRACA/WEB_AUDIT_2026-10-18.md`) — 24 nedostatkov, čaká na Lukovo „áno“ k opravám; najprv Gravstein vask (nedá sa kúpiť) (bod 1 o vzorových textoch bol omyl — sú skryté); Luk: na úvodnej stránke nič nemeniť, nechať pôvodný stav (živá téma overená, nezmenená); moju nepublikovanú kópiu „Dawn – úprava úvodnej stránky 2026-10-18“ zmaže Luk v admine (agent témy mazať nemôže); „Oppdatert kopi av Dawn“ je Lukova — nechať; obe org. čísla zostávajú (2 firmy) — doplniť, ktorá predáva čo
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 
 ## Pozor (čo by ďalšieho vypálilo)
