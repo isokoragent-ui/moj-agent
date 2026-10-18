@@ -24,7 +24,7 @@
 3. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0 (obrat, náklady, zákazky za 3 mesiace)
 4. Prvý prístup: Gmail / doménová schránka (schéma `07_SCHEMY/NOVY_PRISTUP.md`) → denný prehľad pošty; doplniť poskytovateľa doménových schránok
 5. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
-6. Peisglassrens: jesenný príspevok — návrh čaká na Lukovo „áno“
+6. Peisglassrens: koncept FB+IG je v Metricoole ako DRAFT (st 21. 10. 2026 12:00, foto produktu zo Shopify) — Luk ho skontroluje; po „áno“ prepnúť z draftu na naplánovaný
 7. ✅ Metricool: Facebook + Instagram pripojené (2026-10-18, cez appku Metricool)
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 9. Sprievodca: dnešný míľnik „pridať test do over.py“ ponúknutý nebol dokončený — ponúknuť znova
