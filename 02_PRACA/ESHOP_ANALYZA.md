@@ -1,33 +1,68 @@
-# Analýza e-shopu isokor-skandinavia.no
+# Hĺbková analýza e-shopu isokor-skandinavia.no
 
-*2026-10-17 · dáta zo Shopify (posledných 12 mesiacov) · iba čítanie, nič nezmenené*
+*Verzia 2 · 2026-10-18 · dáta zo Shopify (iba čítanie, nič nezmenené)*
+*Predchádzajúca verzia (2026-10-17) je v histórii gitu.*
 
-## Čísla
+## 1. Čísla
 | | |
 |---|---|
-| Čisté tržby z e-shopu | **8 260 NOK / 12 mes.** (≈ 690 NOK mesačne) |
-| Objednávky | 28 (35 vrátane testov, zrušených a vrátených) |
-| Priemerná objednávka | ≈ 300 NOK; väčšinou 1 produkt za 199 + doprava |
-| Návštevy | 3 752 / rok · do košíka 3–4 % · nákup 0,6–1 % |
-| Najlepší mesiac | júl 2026: 15 objednávok, 3 779 NOK (GreenGuard + Facebook) |
-| Október 2026 | 233 návštev, 0 objednávok |
-| Zdroje objednávok | priamo 14 · Facebook 7 · Google 5 · Bing 1 |
-| Katalóg | 34 produktov, 20 kolekcií, plán Basic |
+| Tržby za 12 mesiacov | 8 260 NOK čistých, 28 objednávok |
+| Návštevy za 90 dní | 1 167 (66 % mobil) → do košíka 45 (3,9 %) → pokladňa 33 → **nákup 6** |
+| **Pokladňa → nákup** | **18 %** (bežne 40–50 %) — najväčší únik |
+| Zdroje (90 dní) | priamo 544 · sociálne siete 502 · Google 107 |
+| Platby | Shopify Payments (karty, Apple/Google Pay), Vipps funguje (#1038), PayPal, Faktura |
 
-**Top produkty:** GreenGuard (12 obj., 2 384 NOK) · Glass Profi · Grave Cleaner (5 obj.) · Feriepakken · Mold Cleaner (3 obj.)
+## 2. Cenová politika — pred a po zmene (27. 8. 2026)
+| Košík | Pred: 149 + doprava | Teraz: 199 vrátane dopravy + zľava |
+|---|---|---|
+| 1 fľaša | 149 + 99 = **248** | **199** |
+| 2 fľaše | 298 + 99 = 397 | 398 − 7 % = **370** |
+| 3 fľaše | 447 + 49 = **496** | 597 − 12 % = **525** |
+| 5 fliaš | 745 + 49 = 794 | 995 − 20 % = **796** |
+| 10 fliaš | 1 490 + 49 = 1 539 | 1 990 − 25 % = **1 493** |
 
-## Hlavný záver
-E-shop dnes zarába ~2 % cieľa 40–50 tis. NOK. Peniaze prídu zo **služieb a B2B**.
-E-shop má byť výklad a zdroj dopytov, nie hlavný príjem.
+**Zistenia:**
+- Pre zákazníka je nový systém lacnejší pri 1–2 fľašiach, pri 3–4 je drahší.
+- **Zľavy na stránke nikto nevidí.** Sekcia s tabuľkou zliav je na úvodnej stránke vypnutá a v pruhu hore je len „Gratis frakt“. Zákazník sa o zľave dozvie až v košíku, takže ho nemotivuje kúpiť viac.
+- **Zľava platí na celú objednávku** — aj na službu Gravstein vask (1 699), balíky (Baderomssett 1 499) a 5 l balenia. Pri 2 položkách so službou ide 7 % zo služby.
+- Opustené pokladne pokračujú aj po zavedení dopravy zdarma (od 27. 8.: 9 opustených, napr. košík 2 249 NOK s 11 fľašami, 2× Baderomssett 1 499). Doprava teda **nebola jediný dôvod**.
+- Od zmeny sú len 3 objednávky — na posúdenie, či nový systém funguje, je to zatiaľ príliš málo dát.
+- **Marža neznáma:** jedna fľaša dnes prinesie 199 namiesto 248 (−49 NOK) pri rovnakých nákladoch na PostNord. Bez nákupnej ceny a ceny dopravy sa nedá povedať, či na 1 fľaši nezarábaš 0.
 
-## Návrhy podľa priority
-1. **Hroby pred Allehelgensdag (1. 11.)** — na úvodnú stránku banner „Gravstein vask“ (1 699 NOK) + Grave Cleaner
-2. **Služby** — v kolekcii „Tjenester“ je len 1 služba; pridať impregnáciu skla/zábradlí, čistenie fasád, formulár „Be om tilbud“
-3. **B2B** — kolekcia „For profesjonelle“ je prázdna; naplniť (5 l balenia, FVE/FVP, Glass Profi) + stránka spolupráce
-4. **Doprava a priemerná objednávka** — OPRAVA: od ~septembra je „Gratis frakt på alle ordre“ (do augusta ľudia platili dopravu). Pri objednávke 199 NOK to môže zjesť maržu → zvážiť dopravu zdarma od napr. 499–599 NOK; sekcia s množstevnou zľavou až 25 % je na úvodnej stránke vypnutá — overiť, či zľava v pokladni naozaj funguje
-5. **Nórske názvy** — Grave Cleaner, Bath Cleaner, Cleaner, LMS, WASH-IN → nórske názvy podľa toho, čo ľudia hľadajú
-6. **Sklad** — Mold Cleaner 1 ks (sezóna plesní), Lotos standard 1 ks; GreenGuard 284 ks → jarná kampaň od apríla
-7. **Upratanie** — 2 koncepty (Badepakken, Feriepakken), prázdna kolekcia „Dyr“, duplicitná „AVADA - Best Sellers“, varianty bez zásob (FVP, Facade plus 5 l, SW 5 l), 2 produkty bez typu
-8. **Objednávka #1027** — 248 NOK; Luk potvrdil, že zákazníčka zaplatila cez PayPal. Označiť ako zaplatené musí Luk v Shopify admin (konektor to z bezpečnostných dôvodov nedovolí)
+## 3. Úniky — čo stratí predaj
+| # | Zistenie | Dôkaz |
+|---|---|---|
+| 1 | **Mold Cleaner: 1 ks na sklade**, pritom 2. najčastejšia vstupná stránka | 132 návštev / 90 dní; sezóna plesní |
+| 2 | **Feriepakken je koncept** (nedostupný), ale ľudia naň chodia | 32 vstupov / 90 dní → stránka nenájdená |
+| 3 | Lotos standard: 1 ks, 57 vstupov | |
+| 4 | Pokladňa → nákup len 18 % | 33 pokladní → 6 nákupov |
+| 5 | Zľavy neviditeľné (sekcia vypnutá) | `templates/index.json` |
+| 6 | **27 z 32 produktov má len 1 fotku** | žiadne pred/po, použitie, veľkosť |
+| 7 | Stránka „Vårt Magasin“ v menu je **prázdna** | 0 znakov |
+| 8 | „Om oss“ **nie je zverejnená** — nová značka potrebuje dôveru | |
+| 9 | „For profesjonelle“ v menu je **prázdna kolekcia** | 0 produktov |
+| 10 | Recenzie majú anglický nadpis „Customer Reviews“ | Fera app |
+| 11 | Krátke popisy: Grave Cleaner (184 znakov), SW EKO, LMS, LM Descaling | |
+| 12 | Úvodná stránka: 21 sekcií, z toho väčšina vypnutá — neprehľadná | |
 
-*Neskontrolované: vzhľad stránok, fotky, recenzie — konektor vidí dáta, nie dizajn.*
+## 4. Návrhy zmien (poradie = dopad / námaha)
+### A) Hneď, zadarmo (opravy únikov)
+1. **Doobjednať Mold Cleaner** (a Lotos standard) — dopyt je dokázaný.
+2. **Feriepakken:** zverejniť (9 ks skladom), alebo presmerovať adresu na Baderomssett.
+3. **Ukázať zľavy:** pruh hore „Fri frakt + opptil 25 % rabatt når du kjøper flere“ + zapnúť sekciu s tabuľkou + text na stránke produktu.
+4. **Vylúčiť zo zľavy** službu Gravstein vask a balíky.
+5. **Menu:** skryť „Vårt Magasin“ (prázdne) a „For profesjonelle“ (kým nebude naplnená); **zverejniť „Om oss“**.
+6. **Recenzie:** nadpis po nórsky „Kundeanmeldelser“; po každej objednávke poprosiť o recenziu.
+7. **Opustené pokladne:** overiť, že je zapnutý automatický e-mail (Shopify → Nastavenia → Oznámenia); urobiť skúšobný nákup na mobile.
+
+### B) Tento mesiac (obsah)
+8. **Fotky:** ku každému bestselleru 3–4 (pred/po, použitie, fľaša v ruke). Pred/po musí byť skutočné, ostatné vie pomôcť Artlist.
+9. Dopísať krátke popisy (Grave Cleaner, SW EKO, LMS, LM Descaling) + nórske názvy produktov.
+10. Zjednodušiť úvodnú stránku: hlavný banner so sľubom → 4 bestsellery → prečo Isokor (prírodné, certifikáty, alergici) → recenzie → služby a B2B.
+
+### C) Návštevnosť (bez nej nič z toho nezaberie)
+11. 1 167 návštev za 90 dní je málo. Sociálne siete fungujú (502 návštev) → 2–3 príspevky týždenne na témy, ktoré ľudia už hľadajú: pleseň, čistenie kameňa a dlažby, impregnácia.
+12. Google: nórske názvy a popisy (dnes len 107 návštev z vyhľadávania).
+
+## 5. Čo treba od Luka
+- Nákupná cena fľaše a reálna cena PostNord za balík → výpočet marže pri 1, 2, 5 a 10 fľašiach.
