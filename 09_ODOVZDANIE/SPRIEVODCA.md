@@ -1,6 +1,6 @@
 # Sprievodca — kde som
 
-*Deň 2 od začiatku · 11 z 16 míľnikov · aktualizuje sa samo pri každom štarte*
+*Deň 2 od začiatku · 12 z 16 míľnikov · aktualizuje sa samo pri každom štarte*
 
   ✅ Agent ťa pozná
   ✅ Agent vie, ako znieš
@@ -11,7 +11,7 @@
   ☐  Prístup je overený volaním
   ☐  Prvé skóre
   ✅ Prvá schéma
-  ☐  Prvé zapísané rozhodnutie
+  ✅ Prvé zapísané rozhodnutie
   ✅ Prvá vec, ktorú už nerobíš
   ✅ Mozog aj na druhom počítači
   ✅ Tri schémy

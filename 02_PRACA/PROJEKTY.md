@@ -12,6 +12,7 @@
 - **Stav:** 🚀 rozbieha sa — beží asi rok, stále počiatočná fáza
 - **Čo chýba:** dobré postupy a marketing — bez nich sa na trhu neetablujú
 - **E-shop (Shopify, Basic):** 8 260 NOK čistých za 12 mes., 28 objednávok, konverzia ~0,6–1 % → `02_PRACA/ESHOP_ANALYZA.md`; web audit 2026-10-18 → `02_PRACA/WEB_AUDIT_2026-10-18.md` (názvy, SEO, adresy opravené; zvyšok rozpracovaný)
+- **Sociálne siete (2026-10-18):** FB, IG, TikTok, YouTube, Google Business pripojené cez Metricool → agent pripravuje príspevky (draft → Lukovo „áno“); 1. príspevok Peisglassrens zverejnený 18. 10. 2026 (FB+IG) → `07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md`
 - **Trh:** Nórsko (komunikácia po nórsky), web `www.isokor-skandinavia.no`
 - **Predaj:** zatiaľ bez predajcov v regiónoch; posielam PostNordom alebo
   osobne; pri viac ako 4 fľašiach lepšia cena
