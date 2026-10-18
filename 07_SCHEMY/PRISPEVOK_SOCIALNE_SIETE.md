@@ -25,7 +25,8 @@ alebo službe Isokor na Facebook, Instagram (prípadne TikTok, YouTube, Google).
 7. **Ukáž Lukovi** text (+ krátky preklad), fotku, čas a odkaz `plannerUrl`.
 8. **Až po jeho výslovnom „áno“** prepni draft na naplánovaný
    (`updateScheduledPost`, `draft: false`).
-9. Zapíš do `09_ODOVZDANIE/AKTUALNE.md`, čo je naplánované a kedy.
+9. **Po čase zverejnenia over** `getScheduledPosts`: na každej sieti `status: PUBLISHED` + `publicUrl`. Draft môže Luk pustiť aj sám v Metricoole (tak prebehol prvý test).
+10. Zapíš do `09_ODOVZDANIE/AKTUALNE.md`, čo vyšlo, kedy a odkazy.
 
 ## Pasce — čo nás už vypálilo
 - ⚠️ **Pripojenie Facebooku cez web Metricoolu na tablete nefungovalo** —
