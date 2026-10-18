@@ -1,6 +1,6 @@
 # Návrh: nórske názvy produktov
 
-*2026-10-18 · NÁVRH — v Shopify nič nezmenené, čaká na Lukovo „áno“.*
+*2026-10-18 · ✅ ZMENENÉ v Shopify (Luk „áno“), všetkých 34, overené čítaním. Adresy (URL) nezmenené. Pôvodné názvy na návrat: `zalohy_temy/nazvy_produktov_PRED_2026-10-18.tsv`.*
 
 Pravidlá návrhu:
 - Formát „Isokor + nórsky názov“; produktové rady (Lotos, FVE, SW, LMS, GreenGuard, EcoNeutral) ostávajú ako meno.
