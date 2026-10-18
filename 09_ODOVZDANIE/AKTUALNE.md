@@ -2,7 +2,7 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-18 21:40 UTC, cloudová relácia (claude.ai) — všetko je v `main` (PR #1 aj PR #2 zlúčené)
+**Naposledy:** 2026-10-18 21:25 UTC, cloudová relácia (claude.ai) — všetko je v `main` (PR #1, #2, #3 zlúčené)
 
 ## Hotové naposledy
 - **Sociálne siete pripojené cez Metricool** (overené volaním): Facebook, Instagram @isokor_skandinavia, TikTok, YouTube, Google Business Profile, Facebook Ads
@@ -11,7 +11,7 @@
 - Skôr v ten deň: web audit + opravy e-shopu (názvy, SEO, adresy, doprava) — PR #1 zlúčený
 
 ## Nedokončené — pokračovať tu
-1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → o pár dní pozrieť dosah
+1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → **kontrola dosahu a interakcií naplánovaná na st 21. 10. 2026 10:00 (Oslo)** — pripomienka sa sama ozve v tejto relácii (FB+IG metriky z Metricoolu + objednávky Peisglassrens v Shopify, zapísať do denníka)
    - ✅ Prázdny TikTok draft Luk zmazal ručne (overené v Metricoole 18. 10.)
 2. **Web audit — zvyšok** (poradie, na ktorom sme sa dohodli):
    a) Menu: skryť „Vårt Magasin“ a „For profesjonelle“, zverejniť „Om oss“ — agent vie sám, po „áno“
@@ -36,4 +36,4 @@
 - Živý web je z cloudu nedostupný (proxy 403) — rýchlosť, mobil, cookie lištu treba pozrieť Lukovými očami.
 - Na konci okna VŽDY commit + push, inak sa práca stratí.
 
-ĎALŠÍ KROK: pokračovať menu (audit 2a); o 2–3 dni (cca st 21. 10.) pozrieť dosah príspevku Peisglassrens.
+ĎALŠÍ KROK: st 21. 10. 10:00 vyhodnotiť dosah príspevku Peisglassrens; dovtedy pokračovať menu na webe (audit 2a).
