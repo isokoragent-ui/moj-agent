@@ -2,7 +2,7 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-18 21:16 UTC, cloudová relácia (claude.ai) — práca je na vetve `ccr-e88f699a-8rrcln`, PR #2 do `main` (PR #1 už zlúčený)
+**Naposledy:** 2026-10-18 21:40 UTC, cloudová relácia (claude.ai) — všetko je v `main` (PR #1 aj PR #2 zlúčené)
 
 ## Hotové naposledy
 - **Sociálne siete pripojené cez Metricool** (overené volaním): Facebook, Instagram @isokor_skandinavia, TikTok, YouTube, Google Business Profile, Facebook Ads
@@ -29,7 +29,6 @@
 10. ⏸ Hroby (kampaň pred Allehelgensdag) — Luk odložil; návrh v `02_PRACA/NAVRH_HROBY_2026-10.md`, nepripomínať
 
 ## Pozor (čo by ďalšieho vypálilo)
-- **Dnešná večerná práca je na vetve `ccr-e88f699a-8rrcln` (PR #2), NIE v `main`.** Kým Luk PR #2 nezlúči, nové okno z `main` tento stav neuvidí.
 - Príspevky na siete: vždy najprv **draft**, zverejniť/naplánovať až po „áno“. Na produkt reálna fotka zo Shopify, nie AI.
 - Pripájanie sietí: web Metricoolu na tablete nefunguje → appka Metricool.
 - Shopify konektor NESMIE: zapisovať do živej témy, publikovať/mazať tému, meniť právne podmienky (overené). Viac v `05_PRISTUPY/REGISTER_PRISTUPOV.md`.
@@ -37,4 +36,4 @@
 - Živý web je z cloudu nedostupný (proxy 403) — rýchlosť, mobil, cookie lištu treba pozrieť Lukovými očami.
 - Na konci okna VŽDY commit + push, inak sa práca stratí.
 
-ĎALŠÍ KROK: zlúčiť PR #2, potom pokračovať menu (audit 2a); o 2–3 dni pozrieť dosah príspevku Peisglassrens.
+ĎALŠÍ KROK: pokračovať menu (audit 2a); o 2–3 dni (cca st 21. 10.) pozrieť dosah príspevku Peisglassrens.
