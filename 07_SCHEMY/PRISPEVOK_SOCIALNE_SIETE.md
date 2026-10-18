@@ -41,6 +41,7 @@ alebo službe Isokor na Facebook, Instagram (prípadne TikTok, YouTube, Google).
   18. 10. 2026 → samé nuly). Zatiaľ sa riadiť Facebookom.
 - ⚠️ **„Na schválenie“ (review) v Metricoole sme neskúšali** — podľa popisu
   nástroja vyžaduje plán s tímovou správou. Zatiaľ draft + schválenie v chate.
+- ⚠️ **Konektor Metricool nevie príspevok zmazať** (overené 18. 10. 2026 — nástroj na mazanie neexistuje). Zbytočné drafty maže Luk ručne v Plánovači.
 - ⚠️ Instagram musí byť **profesionálny účet prepojený s FB stránkou**, inak
   ho Metricool nepripojí na publikovanie.
 

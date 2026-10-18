@@ -12,7 +12,7 @@
 
 ## Nedokončené — pokračovať tu
 1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → o pár dní pozrieť dosah
-   - V Metricoole leží prázdny TikTok draft (18. 10. 22:24, bez textu) — asi Lukov test; spýtať sa, či zmazať
+   - Prázdny TikTok draft (18. 10. 22:24, bez textu) — Luk povedal zmazať; konektor Metricool **nemá mazanie** → **Luk zmaže ručne** v Plánovači (je to draft, sám nevyjde)
 2. **Web audit — zvyšok** (poradie, na ktorom sme sa dohodli):
    a) Menu: skryť „Vårt Magasin“ a „For profesjonelle“, zverejniť „Om oss“ — agent vie sám, po „áno“
    b) Vilkår for bruk: nevyplnená šablóna — agent pripraví text, **Luk vloží** (konektor nemá `write_legal_policies`); treba od Luka: ktorá firma predáva produkty a ktorá robí služby
