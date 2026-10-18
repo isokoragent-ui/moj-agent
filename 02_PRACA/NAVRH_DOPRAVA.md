@@ -1,6 +1,6 @@
 # Návrh: zjednotiť texty o doprave
 
-*2026-10-18 · NÁVRH — v Shopify nič nezmenené, čaká na Lukovo „áno“.*
+*2026-10-18 · Luk „áno“. ✅ Kolekcie 2 a 3 zmenené a overené. ⏳ Podmienka Frakt (1): konektor nemá oprávnenie → vloží Luk v admine. Záloha pôvodnej: `zalohy_temy/frakt_policy_PRED_2026-10-18.html`.*
 
 ## Overený skutočný stav (Shopify, 2026-10-18)
 - Doručovací profil „Generell profil“ → zóna Norge (NO) → „Standardlevering“ **0 NOK, bez podmienok** → doprava je naozaj zdarma na všetko, len v Nórsku.
