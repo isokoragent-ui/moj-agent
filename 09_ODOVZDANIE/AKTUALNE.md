@@ -25,7 +25,7 @@
 4. Prvý prístup: Gmail / doménová schránka (schéma `07_SCHEMY/NOVY_PRISTUP.md`) → denný prehľad pošty; doplniť poskytovateľa doménových schránok
 5. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
 6. Peisglassrens: jesenný príspevok — návrh čaká na Lukovo „áno“
-7. Metricool: pripojiť Facebook + Instagram (Luk)
+7. ✅ Metricool: Facebook + Instagram pripojené (2026-10-18, cez appku Metricool)
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 9. Sprievodca: dnešný míľnik „pridať test do over.py“ ponúknutý nebol dokončený — ponúknuť znova
 10. ⏸ Hroby (kampaň pred Allehelgensdag) — Luk odložil; návrh v `02_PRACA/NAVRH_HROBY_2026-10.md`, nepripomínať
