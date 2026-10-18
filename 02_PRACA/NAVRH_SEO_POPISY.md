@@ -1,6 +1,6 @@
 # Návrh: SEO popisy (meta description)
 
-*2026-10-18 · NÁVRH — v Shopify nič nezmenené, čaká na Lukovo „áno“.*
+*2026-10-18 · ✅ ZMENENÉ v Shopify (Luk „áno“), 17 popisov, overené čítaním. Stĺpec „Teraz“ = záloha pôvodných.*
 
 Mení sa 17 z 34 popisov: tie so starými anglickými názvami alebo s rizikovými tvrdeniami (insektmiddel, bakterier og virus, giftfri, uten kjemikalier). Ostatných 17 je v poriadku. Dĺžka 117–155 znakov.
 
