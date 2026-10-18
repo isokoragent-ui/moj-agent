@@ -18,6 +18,7 @@ a pasce v nich sú tie, ktoré naozaj niekoho stáli čas alebo peniaze:
 - **`ZALOHA_PRED_ZASAHOM.md`** — vždy, keď sa mení niečo živé
 - **`NOVY_PRISTUP.md`** — keď má agent prvý raz siahnuť na novú službu
 - **`OBRAZKY_PRE_WEB.md`** — keď treba sadu obrázkov, ktoré držia spolu
+- **`PRISPEVOK_SOCIALNE_SIETE.md`** — príspevok na FB/IG cez Metricool (draft → „áno“)
 
 Prečítaj si ich skôr, než budeš písať vlastné. Ukazujú, akú podrobnosť má
 schéma mať — najmä tie pasce.

@@ -15,7 +15,7 @@
 | Excel, Word | faktúry, dokumenty | lokálne súbory | čítanie; úpravy len po potvrdení | — |
 | E-shop Shopify (www.isokor-skandinavia.no) | objednávky, produkty, zákazníci, analytika | ✅ Shopify konektor v claude.ai (overené 2026-10-17 čítaním) | len čítanie — zásahy nikdy bez schválenia | — |
 | Higgsfield (AI video/obrázky) | tvorba videí a obrázkov na marketing | ⏳ plánované — účet na firmu (AS), platený plán kvôli komerčným právam | — | zrušiť predplatné |
-| Metricool (plánovanie príspevkov) | plánovať príspevky, analytika | ✅ konektor v claude.ai (overené 2026-10-18); značka isokorskandinavia napojená na **Facebook, Instagram, TikTok, YouTube, Google Business Profile, Facebook Ads** | príspevky iba „na schválenie“ (review) | odpojiť v claude.ai → Connectors |
+| Metricool (plánovanie príspevkov) | plánovať príspevky, analytika | ✅ konektor v claude.ai (overené 2026-10-18); značka isokorskandinavia napojená na **Facebook, Instagram, TikTok, YouTube, Google Business Profile, Facebook Ads** | príspevky ako draft → naplánovať až po „áno“ (`07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md`) | odpojiť v claude.ai → Connectors |
 | Artlist (AI obrázky, videá, hlas, hudba) | tvorba marketingového obsahu | ✅ konektor v claude.ai (overené 2026-10-17); plán AI Suite 16500, ostáva 6 723 kreditov, obnova 10. 11. | generovanie míňa kredity → vopred povedať cenu | odpojiť v claude.ai → Connectors |
 | PostNord app | odosielanie zásielok | Luk ručne | agent len pripraví údaje | — |
 
