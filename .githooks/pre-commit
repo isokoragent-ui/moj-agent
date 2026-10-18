@@ -1,0 +1,54 @@
+#!/bin/bash
+# ═══════════════════════════════════════════════════════════════════════
+#  STRÁŽCA GITU — zablokuje commit, ak by odišiel prístupový údaj
+# ═══════════════════════════════════════════════════════════════════════
+#  PREČO: stačí jedno „git add .“ a na GitHub odíde kľúč. Toto prehľadá
+#  všetko, čo ide do commitu, a pri náleze commit ZASTAVÍ.
+#  Zapína ho zaloha.sh (git config core.hooksPath .githooks).
+
+CERVENA='\033[31m'; ZELENA='\033[32m'; KONIEC='\033[0m'
+
+VZORY=(
+  'sk-[A-Za-z0-9_-]{30,}'
+  'sk_(live|test)_[A-Za-z0-9]{20,}'
+  'gsk_[A-Za-z0-9]{40,}'
+  'AIza[A-Za-z0-9_-]{30,}'
+  'ya29\.[A-Za-z0-9_-]{30,}'
+  'ghp_[A-Za-z0-9]{30,}'
+  'xox[baprs]-[A-Za-z0-9-]{20,}'
+  'ck_[a-f0-9]{32,}'
+  'cs_[a-f0-9]{32,}'
+  'eyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\.'
+  '-----BEGIN [A-Z ]*PRIVATE KEY'
+)
+# Vzory bez predpony — v binárkach (PDF, obrázky) dávajú plané poplachy,
+# preto sa skúšajú len na textových súboroch.
+VZORY_LEN_TEXT=( '[a-f0-9]{48}' )
+
+# Riadky, ktoré vyzerajú ako tajomstvo, ale nie sú (DNS overenia, komentáre).
+NIE_JE='_verify=|verification|dns|TXT +|MOZOG_ID=|^[[:space:]]*#'
+
+SUBORY=$(git diff --cached --name-only --diff-filter=ACM)
+[ -z "$SUBORY" ] && exit 0
+
+NALEZY=""
+for f in $SUBORY; do
+  [ -f "$f" ] || continue
+  if git show ":$f" 2>/dev/null | grep -qI . ; then
+    POUZI=("${VZORY[@]}" "${VZORY_LEN_TEXT[@]}")
+  else
+    POUZI=("${VZORY[@]}")
+  fi
+  for v in "${POUZI[@]}"; do
+    Z=$(git show ":$f" 2>/dev/null | grep -nE -- "$v" | grep -vE "$NIE_JE" | head -3)
+    [ -n "$Z" ] && NALEZY+="  $f  →  $(echo "$Z" | cut -c1-80)"$'\n'
+  done
+done
+
+if [ -n "$NALEZY" ]; then
+  printf "${CERVENA}⛔ STRÁŽCA ZASTAVIL COMMIT — vyzerá to na prístupový údaj:${KONIEC}\n%s" "$NALEZY"
+  echo "Presuň ho do ~/.config/<nazov>/ a do súboru daj len odkaz. Planý poplach? Uprav vzor v .githooks/pre-commit."
+  exit 1
+fi
+printf "${ZELENA}  ✅ Strážca: žiadne prístupové údaje v commite${KONIEC}\n"
+exit 0

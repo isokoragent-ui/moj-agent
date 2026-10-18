@@ -1,0 +1,25 @@
+# ── TAJOMSTVÁ — nikdy do gitu ────────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*secret*
+*token*
+client_secret*.json
+kluce.py
+
+# ── súkromné výstupy, ktoré nemajú opúšťať počítač ───────────────────
+_inbox/*
+!_inbox/README.md
+_sukromne/
+_archiv/
+_log/
+09_ODOVZDANIE/.sprievodca_ukazane
+
+# ── systémový šum ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.claude/settings.local.json

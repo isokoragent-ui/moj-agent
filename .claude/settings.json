@@ -1,0 +1,89 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(~/.config/**)",
+      "Read(~/.ssh/**)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*.pem)",
+      "Read(**/*credentials*)",
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git commit --no-verify *)",
+      "Bash(git reset --hard *)"
+    ],
+    "allow": [
+      "Bash(bash _nastroje/preveruj.sh *)",
+      "Bash(_nastroje/preveruj.sh *)",
+      "Bash(python3 _nastroje/over.py *)",
+      "Bash(bash _nastroje/zaloha.sh *)",
+      "Bash(bash _nastroje/sprievodca.sh *)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/na_zaciatku.sh\""
+          }
+        ]
+      },
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/na_zaciatku.sh\" po_skrateni"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/straznik.sh\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'command -v afplay >/dev/null 2>&1 || exit 0; afplay /System/Library/Sounds/Glass.aiff >/dev/null 2>&1 &'"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "permission_prompt|elicitation_dialog",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'command -v afplay >/dev/null 2>&1 || exit 0; afplay /System/Library/Sounds/Glass.aiff >/dev/null 2>&1 &'"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/sluby.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}
