@@ -6,7 +6,7 @@
 | Služba | Čo umožňuje | Kde je prístup | Rozsah | Ako zrušiť |
 |---|---|---|---|---|
 | Gmail (niekoľko schránok) | čítať poštu, pripravovať koncepty | ⏳ zatiaľ nepripojené | najprv len čítanie + koncepty | odobrať prístup v nastaveniach Google účtu |
-| Doménové schránky @isokor-skandinavia.no | čítať poštu, pripravovať koncepty | ⏳ zatiaľ nepripojené (poskytovateľ: ?) | najprv len čítanie + koncepty | zmeniť heslo / zrušiť heslo aplikácie |
+| Doménové schránky @isokor-skandinavia.no | čítať poštu, pripravovať koncepty | ⏳ zatiaľ nepripojené (poskytovateľ: **One.com**; plán 2026-10-19: preposielať kópie lukas@ → isokor.agent@gmail.com, čítať cez Gmail konektor) | najprv len čítanie + koncepty | zmeniť heslo / zrušiť heslo aplikácie |
 | Facebook | príspevky, stránka Isokor (+ Facebook Ads účet) | ✅ cez Metricool — pripojené v appke Metricool, overené volaním 2026-10-18 (web na tablete nefungoval) | návrhy → publikuje sa až po „áno“ | odpojiť v Metricoole → Pripojenia, alebo odobrať v nastaveniach stránky |
 | Instagram | príspevky (@isokor_skandinavia) | ✅ cez Metricool, overené volaním 2026-10-18 | návrhy → publikuje sa až po „áno“ | odpojiť v Metricoole → Pripojenia |
 | X (Twitter) | príspevky | ⏳ zatiaľ nepripojené | návrhy → publikuje sa až po „áno“ | odobrať v nastaveniach |
