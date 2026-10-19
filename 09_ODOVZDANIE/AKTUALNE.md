@@ -26,7 +26,8 @@
 7. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 9. Sprievodca: míľnik „pridať test do over.py“ (napr. Metricool `getBrandSettings`) — ponúknuť znova
-10. ⏸ Hroby (kampaň pred Allehelgensdag) — Luk odložil; návrh v `02_PRACA/NAVRH_HROBY_2026-10.md`, nepripomínať
+10. **Video pre nórsky trh** (strih, kvalita, profesionálna úprava): originál 59 MB je na Disku v priečinku „Isokor – video na úpravu“. Konektor Disku stiahne max. 10 MB; drive.usercontent.google.com a www.canva.com sú v sieti cloudu blokované (Luk ich zatiaľ nepovolil). Luk video zmenší alebo rozdelí na časti pod 10 MB → agent stiahne, upraví ffmpeg-om (je nainštalovaný). Treba ešte vyjasniť: cieľ videa (produkt?), dĺžka, sieť (Reels/TikTok)
+11. ⏸ Hroby (kampaň pred Allehelgensdag) — Luk odložil; návrh v `02_PRACA/NAVRH_HROBY_2026-10.md`, nepripomínať
 
 ## Pozor (čo by ďalšieho vypálilo)
 - Príspevky na siete: vždy najprv **draft**, zverejniť/naplánovať až po „áno“. Na produkt reálna fotka zo Shopify, nie AI.
