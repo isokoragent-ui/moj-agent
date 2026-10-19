@@ -2,13 +2,13 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-18 21:40 UTC, cloudová relácia (claude.ai) — všetko je v `main` (PR #1 aj PR #2 zlúčené)
+**Naposledy:** 2026-10-19 ~21:00 UTC, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy
-- **Sociálne siete pripojené cez Metricool** (overené volaním): Facebook, Instagram @isokor_skandinavia, TikTok, YouTube, Google Business Profile, Facebook Ads
-- **Prvý príspevok Peisglassrens zverejnený na FB + IG** (Luk ho pustil ručne ako test, 18. 10. 23:01) — overené: PUBLISHED na oboch
-- Nová schéma `07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md` · rozhodnutie `08_ROZHODNUTIA/2026-10-18_socialne_siete_cez_metricool.md` · register prístupov aktualizovaný
-- Skôr v ten deň: web audit + opravy e-shopu (názvy, SEO, adresy, doprava) — PR #1 zlúčený
+- **Google Kalendár pripojený** (isokor.agent@gmail.com, pásmo UTC): „Stretnutie Butik Mira“ št 29. 10. (celý deň) + samostatná udalosť‑pripomienka st 28. 10. 17:00 Oslo
+- **Pošta pripojená a overená:** lukas@ + info@isokor-skandinavia.no (One.com) → preposielanie do isokor.agent@gmail.com
+- Gmail: štítky **Faktúry/Na tlač** a **Faktúry/Vytlačené**; prvé upratanie (24 konverzácií do koša, Luk schválil)
+- Pravidlá pošty v `08_ROZHODNUTIA/2026-10-19_posta_cez_preposielanie_do_gmailu.md`
 
 ## Nedokončené — pokračovať tu
 1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → o pár dní pozrieť dosah
@@ -35,5 +35,9 @@
 - Pri audite témy kontrolovať `disabled` na sekcii AJ bloku; dostupnosť produktu = `availableForSale`, nie sklad (KÓD #4).
 - Živý web je z cloudu nedostupný (proxy 403) — rýchlosť, mobil, cookie lištu treba pozrieť Lukovými očami.
 - Na konci okna VŽDY commit + push, inak sa práca stratí.
+- Gmail konektor **nevie stiahnuť prílohy** → faktúry tlačí Luk priamo z e-mailu, každú zvlášť (nie spájať).
+- Kalendár je v UTC: pri celodenných udalostiach počítať pripomienky od polnoci UTC; časové udalosti zadávať s pásmom Europe/Oslo.
+- Mazanie pošty: vždy najprv zoznam, maže sa až po „áno“. Dopyty z Mittanbud a správy od klientov nemazať.
+- Sprievodca pri štarte prepisuje počítadlo dní v `09_ODOVZDANIE/SPRIEVODCA.md` → commitnúť do `main`, nie do vetvy.
 
-ĎALŠÍ KROK: pokračovať menu (audit 2a); o 2–3 dni (cca st 21. 10.) pozrieť dosah príspevku Peisglassrens.
+ĎALŠÍ KROK: prvý denný prehľad pošty (klienti, faktúry, návrh na zmazanie — vrátane 2 testovacích e-mailov z 19. 10.); potom menu na webe (audit 2a).
