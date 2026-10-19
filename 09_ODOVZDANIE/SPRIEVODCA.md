@@ -1,6 +1,6 @@
 # Sprievodca — kde som
 
-*Deň 2 od začiatku · 12 z 16 míľnikov · aktualizuje sa samo pri každom štarte*
+*Deň 3 od začiatku · 12 z 16 míľnikov · aktualizuje sa samo pri každom štarte*
 
   ✅ Agent ťa pozná
   ✅ Agent vie, ako znieš
