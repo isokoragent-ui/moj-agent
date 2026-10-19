@@ -18,3 +18,14 @@
   kópie — originály na One.com ostávajú, kým ich Luk nezmaže sám.
 - **Odpovede:** agent pripraví koncept, Luk skontroluje a odošle zo svojej
   schránky (agent nikdy nepíše v mene Luka bez kontroly).
+
+## Doplnené 2026-10-19 — faktúry a triedenie
+- **Faktúry:** agent ich zbiera a triedi v Gmaile štítkami
+  `Faktúry/Na tlač` → po vytlačení `Faktúry/Vytlačené`. Každá faktúra
+  sa tlačí **zvlášť, ako PDF prišlo v prílohe** (nie spájať do jedného).
+- Na Google Disk PDF kopírovať nevieme — Gmail konektor nemá sťahovanie
+  príloh (overené 2026-10-19). Tlačí sa priamo z e-mailu.
+- **Gmail drží len poštu potrebnú pre firmu.** Ponuky spolupráce, marketing,
+  reklamy → agent navrhne zoznam na zmazanie, maže po „áno".
+- ⚠️ Mittanbud: rozlišovať reklamu od **dopytov na zákazky** (údržba
+  nehnuteľností) — dopyty nemazať, hlásiť Lukovi.
