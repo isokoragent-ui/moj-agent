@@ -26,7 +26,7 @@
 7. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 9. Sprievodca: míľnik „pridať test do over.py“ (napr. Metricool `getBrandSettings`) — ponúknuť znova
-10. **Video pre nórsky trh** (strih, kvalita, profesionálna úprava): originál 59 MB je na Disku v priečinku „Isokor – video na úpravu“. Konektor Disku stiahne max. 10 MB; drive.usercontent.google.com a www.canva.com sú v sieti cloudu blokované (Luk ich zatiaľ nepovolil). Luk video zmenší alebo rozdelí na časti pod 10 MB → agent stiahne, upraví ffmpeg-om (je nainštalovaný). Treba ešte vyjasniť: cieľ videa (produkt?), dĺžka, sieť (Reels/TikTok)
+10. **Video Peisglassrens** — návrh 26 s, 9:16, nórske texty hotový z 360p verzie (2026-10-19, poslaný Lukovi; súbor len v cloude relácie, nie v gite). Čaká: Lukova spätná väzba na strih a texty → finál z originálu 1080p (59 MB na Disku „Isokor – video na úpravu“, treba časti pod 10 MB). Hudba je z pôvodného videa — over licenciu, inak hudba z Artlistu.
 11. ⏸ Hroby (kampaň pred Allehelgensdag) — Luk odložil; návrh v `02_PRACA/NAVRH_HROBY_2026-10.md`, nepripomínať
 
 ## Pozor (čo by ďalšieho vypálilo)
