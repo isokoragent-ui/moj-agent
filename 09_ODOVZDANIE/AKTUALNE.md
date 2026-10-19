@@ -22,7 +22,7 @@
 3. Marketing ďalej: navrhnúť Lukovi pravidelný rytmus príspevkov (napr. 2× týždenne, produkty podľa sezóny) — zatiaľ nedohodnuté
 4. Luk zmaže v admine nepublikovanú kópiu témy „Dawn – úprava úvodnej stránky 2026-10-18“ (agent témy mazať nemôže; „Oppdatert kopi av Dawn“ je Lukova — nechať)
 5. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0 (obrat, náklady, zákazky za 3 mesiace)
-6. Prvý prístup: Gmail / doménová schránka (schéma `07_SCHEMY/NOVY_PRISTUP.md`) → denný prehľad pošty; doplniť poskytovateľa doménových schránok
+6. **Pošta:** Luk zapína na One.com preposielanie lukas@isokor-skandinavia.no → isokor.agent@gmail.com (krok 1: one.com → E-mail), potom ďalšie schránky; agent overí doručenie a začne denný prehľad (rozhodnutie `08_ROZHODNUTIA/2026-10-19_posta_cez_preposielanie_do_gmailu.md`)
 7. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 9. Sprievodca: míľnik „pridať test do over.py“ (napr. Metricool `getBrandSettings`) — ponúknuť znova
