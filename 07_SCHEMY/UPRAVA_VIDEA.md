@@ -36,3 +36,13 @@ prestrihať a upraviť na sociálne siete.
 ## Čo agent spraví sám / kde čaká na „áno"
 - **sám:** analýza, strih, návrh textov, kontrola
 - **čaká:** na schválenie strihu a textov; zverejnenie vždy až po „áno"
+
+## Príloha — text k videu Peisglassrens (2026-10-19)
+Sotet peisglass etter fyringen?
+
+Isokor Peisglassrens er et ferdigblandet skum som løser sot, tjære og fett fra peis- og ovnsglass. Spray på, vent litt og tørk av – så er glasset klart igjen.
+
+199 kr. Gratis frakt.
+isokor-skandinavia.no/products/peisglassrens
+
+#peis #vedovn #rengjøring #isokor

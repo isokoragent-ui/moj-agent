@@ -26,7 +26,7 @@
 7. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 9. Sprievodca: míľnik „pridať test do over.py“ (napr. Metricool `getBrandSettings`) — ponúknuť znova
-10. ✅ **Video Peisglassrens** — finál 26 s, 9:16 odovzdaný Lukovi 2026-10-19 (z 360p; hudba OK podľa Luka). Ostrejšia verzia z originálu 1080p len ak Luk nahrá časti pod 10 MB. Schéma `07_SCHEMY/UPRAVA_VIDEA.md`. Ďalej: Luk rozhodne o zverejnení (draft v Metricoole po „áno“).
+10. ✅ **Video Peisglassrens** — finál 26 s, 9:16 odovzdaný Lukovi 2026-10-19 (z 360p; hudba OK podľa Luka). Ostrejšia verzia z originálu 1080p len ak Luk nahrá časti pod 10 MB. Schéma `07_SCHEMY/UPRAVA_VIDEA.md`. Luk ho zverejní **sám ručne, postupne po sieťach** (rozhodol 2026-10-19, do Shopify Súborov nenahrávať). Nórsky text príspevku je v `07_SCHEMY/UPRAVA_VIDEA.md` → Príloha.
 11. ⏸ Hroby (kampaň pred Allehelgensdag) — Luk odložil; návrh v `02_PRACA/NAVRH_HROBY_2026-10.md`, nepripomínať
 
 ## Pozor (čo by ďalšieho vypálilo)

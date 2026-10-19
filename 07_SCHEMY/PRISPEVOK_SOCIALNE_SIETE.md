@@ -45,6 +45,8 @@ alebo službe Isokor na Facebook, Instagram (prípadne TikTok, YouTube, Google).
 - ⚠️ Instagram musí byť **profesionálny účet prepojený s FB stránkou**, inak
   ho Metricool nepripojí na publikovanie.
 
+- ⚠️ **Video do Metricoolu potrebuje verejnú URL** a Reels/TikTok bez videa koncept neuložia (overené 19. 10. 2026). Z cloudu je Disk aj Canva blokovaná; fungovalo by Shopify Súbory, ale Luk to zatiaľ nechce → videá zverejňuje ručne. TikTok vyžaduje `tiktokData.title`.
+
 ## Čo agent spraví sám / kde čaká na moje „áno"
 - sám: overenie pripojení, fakty zo Shopify, text, výber fotky a času,
   vytvorenie DRAFTU v Metricoole
