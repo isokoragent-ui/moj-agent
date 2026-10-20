@@ -87,3 +87,8 @@ Med vennlig hilsen,
 
 Lukas
 ```
+
+## Odborné slová (opravy od Luka)
+- **baderomsplater** = lesklé laminátové platne do kúpeľne — NIE „fliser“
+  (kachličky). Oprava diery: „Reparasjon av baderomsplate“ (2026-10-20).
+- Prezentácia „pred a po“ = len FØR / ETTER, bez výzvy na ponuku.
