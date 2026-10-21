@@ -5,12 +5,12 @@
 
 | Služba | Čo umožňuje | Kde je prístup | Rozsah | Ako zrušiť |
 |---|---|---|---|---|
-| Gmail (niekoľko schránok) | čítať poštu, pripravovať koncepty | ⏳ zatiaľ nepripojené | najprv len čítanie + koncepty | odobrať prístup v nastaveniach Google účtu |
-| Doménové schránky @isokor-skandinavia.no | čítať poštu, pripravovať koncepty | ⏳ zatiaľ nepripojené (poskytovateľ: ?) | najprv len čítanie + koncepty | zmeniť heslo / zrušiť heslo aplikácie |
+| Gmail (niekoľko schránok) | čítať poštu, pripravovať koncepty, štítky, kôš | ✅ Gmail konektor v claude.ai na **isokor.agent@gmail.com** (overené 2026-10-19); prílohy sťahovať nevie | najprv len čítanie + koncepty | odobrať prístup v nastaveniach Google účtu |
+| Doménové schránky @isokor-skandinavia.no | čítať poštu, pripravovať koncepty | ✅ poskytovateľ **One.com**; **lukas@ a info@** preposielajú kópie → isokor.agent@gmail.com, agent číta cez Gmail konektor (overené 2026-10-19 skúšobnými e-mailmi na obe adresy) | najprv len čítanie + koncepty | zmeniť heslo / zrušiť heslo aplikácie |
 | Facebook | príspevky, stránka Isokor (+ Facebook Ads účet) | ✅ cez Metricool — pripojené v appke Metricool, overené volaním 2026-10-18 (web na tablete nefungoval) | návrhy → publikuje sa až po „áno“ | odpojiť v Metricoole → Pripojenia, alebo odobrať v nastaveniach stránky |
 | Instagram | príspevky (@isokor_skandinavia) | ✅ cez Metricool, overené volaním 2026-10-18 | návrhy → publikuje sa až po „áno“ | odpojiť v Metricoole → Pripojenia |
 | X (Twitter) | príspevky | ⏳ zatiaľ nepripojené | návrhy → publikuje sa až po „áno“ | odobrať v nastaveniach |
-| Kalendár (Google) | plánovanie, termíny — doteraz ho veľmi nepoužívam, môžeš ho začať viesť | ⏳ zatiaľ nepripojené | čítanie + zápis po dohode | odobrať v Google účte |
+| Kalendár (Google) | plánovanie, termíny — doteraz ho veľmi nepoužívam, môžeš ho začať viesť | ✅ Google Calendar konektor v claude.ai, kalendár **isokor.agent@gmail.com** = Lukov kalendár v telefóne (overené 2026-10-19 zápisom udalosti). ⚠️ Časové pásmo kalendára je **UTC**, nie Oslo — pripomienky pri celodenných udalostiach počítať od polnoci UTC | čítanie + zápis po dohode | odobrať v Google účte / claude.ai → Connectors |
 | Google nástroje (Drive, Docs, Sheets) | dokumenty, tabuľky, podklady | ⏳ zatiaľ nepripojené | podľa dohody | odobrať v Google účte |
 | Excel, Word | faktúry, dokumenty | lokálne súbory | čítanie; úpravy len po potvrdení | — |
 | E-shop Shopify (www.isokor-skandinavia.no) | objednávky, produkty, zákazníci, analytika | ✅ Shopify konektor v claude.ai (overené 2026-10-17 čítaním) | len čítanie — zásahy nikdy bez schválenia | — |
