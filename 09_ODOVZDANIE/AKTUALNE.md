@@ -11,6 +11,7 @@
 - Pravidlá pošty v `08_ROZHODNUTIA/2026-10-19_posta_cez_preposielanie_do_gmailu.md`
 
 ## Nedokončené — pokračovať tu
+0. **Boligmesse Drammen pi 23. – ne 25. 10. 2026** — grafika Messekupp hotová (`02_PRACA/messe/`: A4 `Messekupp_A4_v4.pdf` na stôl, `Messekupp_Instagram_1x1.jpg`, `Messekupp_TikTok_9x16.jpg`). Cena 249 kr za Cleaner + Fridge Cleaner, porovnanie 370 kr (rozhodnutie `08_ROZHODNUTIA/2026-10-21_messekupp_cena.md`). Text príspevku (draft) `02_PRACA/messe/TEXT_PRISPEVKU.md` → Luk zverejní sám, **najneskôr št 22. 10.**; vytlačiť A4.
 1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → o pár dní pozrieť dosah
    - ✅ Prázdny TikTok draft Luk zmazal ručne (overené v Metricoole 18. 10.)
 2. **Web audit — zvyšok** (poradie, na ktorom sme sa dohodli):
