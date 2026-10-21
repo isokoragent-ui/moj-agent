@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="no"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;600;800;900&family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#7fae2e;--green-d:#5d8a1c;--blue:#7fb3dc;--ink:#2b2f2a;--grey:#6d726b}
+body{width:210mm;height:297mm;font-family:'Fira Sans',sans-serif;color:var(--ink);background:#fff;position:relative;overflow:hidden}
+.hex{position:absolute;width:60mm;height:69mm;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.top{background:var(--green);color:#fff;text-align:center;padding:9mm 10mm 7mm;position:relative}
+.top .logo{display:flex;align-items:center;justify-content:center;gap:3mm;font-size:13pt;letter-spacing:.35em;font-weight:500;opacity:.95}
+.top h1{font-family:'Fira Sans Condensed';font-weight:900;font-size:66pt;line-height:.95;letter-spacing:.02em;margin-top:3mm}
+.top p{font-family:'Fira Sans Condensed';font-weight:600;font-size:19pt;margin-top:2mm;letter-spacing:.04em}
+.prods{display:flex;gap:7mm;padding:7mm 12mm 0;position:relative;z-index:1}
+.prod{flex:1;text-align:center}
+.card{height:117mm;border-radius:5mm;position:relative;overflow:hidden}
+.card img{position:absolute;left:50%;bottom:10mm;height:104mm;transform:translateX(-50%);filter:drop-shadow(0 2mm 3mm rgba(0,0,0,.35))}
+.card .floor{position:absolute;left:0;right:0;bottom:0;height:16mm;background:rgba(255,255,255,.45)}
+.prod .name{font-family:'Fira Sans Condensed';font-weight:800;font-size:21pt;margin-top:3.5mm;line-height:1}
+.prod .no{font-size:12pt;color:var(--grey);margin-top:1.2mm}
+.bar{height:2.2mm;width:22mm;margin:3mm auto 0;border-radius:2mm}
+.plus{position:absolute;left:50%;top:58mm;transform:translateX(-50%);width:16mm;height:16mm;border-radius:50%;background:#fff;color:var(--green);font:900 30pt/16mm 'Fira Sans Condensed';text-align:center;box-shadow:0 1mm 3mm rgba(0,0,0,.25)}
+.price{margin:11mm 12mm 0;display:flex;align-items:center;justify-content:space-between;border:1.2mm solid var(--green);border-radius:5mm;padding:3mm 8mm;position:relative;z-index:1;background:#fff}
+.old{font-family:'Fira Sans Condensed';font-size:15pt;color:var(--grey);line-height:1.25}
+.old s{font-size:26pt;font-weight:600;text-decoration-thickness:.9mm;text-decoration-color:#c0392b}
+.new{text-align:right;font-family:'Fira Sans Condensed';line-height:.9}
+.new .lbl{font-weight:800;font-size:16pt;color:var(--green-d);letter-spacing:.06em}
+.new .amt{font-weight:900;font-size:68pt;color:var(--ink)}
+.new .amt span{font-size:44pt}
+.new .sub{font-weight:600;font-size:15pt;color:var(--grey);margin-top:1mm}
+.save{position:absolute;top:-9mm;left:50%;transform:translateX(-50%) rotate(-4deg);background:#e8462e;color:#fff;font:800 19pt 'Fira Sans Condensed';padding:2mm 7mm;border-radius:3mm;white-space:nowrap}
+.foot{position:absolute;bottom:0;left:0;right:0;text-align:center;padding:0 12mm 7mm;z-index:1}
+.eco{font-family:'Fira Sans Condensed';font-weight:600;font-size:15pt;color:var(--green-d);letter-spacing:.05em}
+.only{display:inline-block;margin-top:3mm;background:var(--ink);color:#fff;font:800 16pt 'Fira Sans Condensed';padding:2.5mm 8mm;border-radius:20mm;letter-spacing:.06em}
+.web{margin-top:3.5mm;font-size:11pt;color:var(--grey);letter-spacing:.08em}
+</style></head><body>
+
+<div class="top">
+  <div class="logo">
+    <svg width="22" height="22" viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4"><polygon points="50,4 90,27 90,73 50,96 10,73 10,27"/><polygon points="50,24 72,37 72,63 50,76 28,63 28,37"/><path d="M50 4V24M90 27 72 37M90 73 72 63M50 96V76M10 73 28 63M10 27 28 37"/></svg>
+    ISOKOR
+  </div>
+  <h1>MESSEKUPP</h1>
+  <p>Rent kjøkken – helt naturlig</p>
+</div>
+
+<div class="prods">
+  <div class="prod">
+    <div class="card" style="background:url(bg_kitchen.jpg) center/cover;border-bottom:2.5mm solid var(--green)"><img src="cleaner_cut3.png" alt="Isokor Cleaner" style="height:103mm;bottom:14mm"></div>
+    <div class="name">CLEANER</div>
+    <div class="no">Fett- og flekkfjerner · 500 ml</div>
+    <div class="bar" style="background:var(--green)"></div>
+  </div>
+  <div class="plus">+</div>
+  <div class="prod">
+    <div class="card" style="background:url(bg_fridge.jpg) center/cover;border-bottom:2.5mm solid var(--blue)"><img src="fridge_cut.png" alt="Isokor Fridge Cleaner"></div>
+    <div class="name">FRIDGE CLEANER</div>
+    <div class="no">Kjøleskapsrens · 500 ml</div>
+    <div class="bar" style="background:var(--blue)"></div>
+  </div>
+</div>
+
+<div class="price">
+  <div class="save">SPAR 121,-</div>
+  <div class="old">Pris i nettbutikken<br><s>370 kr</s><br>(2 stk.)</div>
+  <div class="new">
+    <div class="lbl">BEGGE FOR</div>
+    <div class="amt">249<span>,-</span></div>
+    <div class="sub">messepris</div>
+  </div>
+</div>
+
+<div class="foot">
+  <div class="eco">Økologisk · Naturlig · Biologisk nedbrytbar</div>
+  <div class="only">KUN PÅ MESSEN</div>
+  <div class="web">ISOKOR-SKANDINAVIA.NO</div>
+</div>
+</body></html>

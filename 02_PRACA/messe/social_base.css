@@ -1,0 +1,24 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#7fae2e;--green-d:#5d8a1c;--blue:#7fb3dc;--ink:#2b2f2a;--grey:#6d726b}
+body{font-family:'Fira Sans',sans-serif;color:var(--ink);background:#fff;position:relative;overflow:hidden}
+.top{background:var(--green);color:#fff;text-align:center;position:relative}
+.logo{display:flex;align-items:center;justify-content:center;gap:12px;letter-spacing:.35em;font-weight:500}
+.top h1{font-family:'Fira Sans Condensed';font-weight:900;line-height:.92;letter-spacing:.02em}
+.top p{font-family:'Fira Sans Condensed';font-weight:600;letter-spacing:.04em}
+.prods{display:flex;position:relative}
+.prod{flex:1;text-align:center}
+.card{border-radius:22px;position:relative;overflow:hidden}
+.card img{position:absolute;left:50%;transform:translateX(-50%);filter:drop-shadow(0 8px 12px rgba(0,0,0,.35))}
+.name{font-family:'Fira Sans Condensed';font-weight:800;line-height:1}
+.no{color:var(--grey)}
+.plus{position:absolute;left:50%;transform:translateX(-50%);border-radius:50%;background:#fff;color:var(--green);font-family:'Fira Sans Condensed';font-weight:900;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.25);z-index:2}
+.price{display:flex;align-items:center;justify-content:space-between;border:5px solid var(--green);border-radius:22px;position:relative;background:#fff}
+.old{font-family:'Fira Sans Condensed';color:var(--grey);line-height:1.2}
+.old s{font-weight:600;text-decoration-thickness:4px;text-decoration-color:#c0392b;color:var(--ink)}
+.new{text-align:right;font-family:'Fira Sans Condensed';line-height:.9}
+.new .lbl{font-weight:800;color:var(--green-d);letter-spacing:.06em}
+.new .amt{font-weight:900}
+.save{position:absolute;left:50%;transform:translateX(-50%) rotate(-4deg);background:#e8462e;color:#fff;font-family:'Fira Sans Condensed';font-weight:800;border-radius:12px;white-space:nowrap}
+.only{display:inline-block;background:var(--ink);color:#fff;font-family:'Fira Sans Condensed';font-weight:800;border-radius:80px;letter-spacing:.06em}
+.web{color:var(--grey);letter-spacing:.08em}
+.eco{font-family:'Fira Sans Condensed';font-weight:600;color:var(--green-d);letter-spacing:.05em}
