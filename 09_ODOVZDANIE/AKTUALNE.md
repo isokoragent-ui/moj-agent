@@ -2,16 +2,17 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-19 ~21:00 UTC, cloudová relácia (claude.ai) — všetko je v `main`
+**Naposledy:** 2026-10-21 08:05 UTC, cloudová relácia (claude.ai) — vyhodnotenie dosahu príspevku Peisglassrens
 
 ## Hotové naposledy
+- **Dosah príspevku Peisglassrens (18.–21. 10.):** FB 9 ľudí / 15 zobrazení, 1 reakcia, 1 klik na odkaz, 0 komentárov, 0 zdieľaní · IG 1 človek / 6 zobrazení, 0 interakcií · Shopify: od 18. 10. **žiadna objednávka** (posledná #1039 z 23. 9.)
 - **Google Kalendár pripojený** (isokor.agent@gmail.com, pásmo UTC): „Stretnutie Butik Mira“ št 29. 10. (celý deň) + samostatná udalosť‑pripomienka st 28. 10. 17:00 Oslo
 - **Pošta pripojená a overená:** lukas@ + info@isokor-skandinavia.no (One.com) → preposielanie do isokor.agent@gmail.com
 - Gmail: štítky **Faktúry/Na tlač** a **Faktúry/Vytlačené**; prvé upratanie (24 konverzácií do koša, Luk schválil)
 - Pravidlá pošty v `08_ROZHODNUTIA/2026-10-19_posta_cez_preposielanie_do_gmailu.md`
 
 ## Nedokončené — pokračovať tu
-1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → o pár dní pozrieť dosah
+1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → ✅ dosah vyhodnotený 21. 10. (pozri Hotové); odporúčanie: ďalší príspevok ako krátke video/Reel
    - ✅ Prázdny TikTok draft Luk zmazal ručne (overené v Metricoole 18. 10.)
 2. **Web audit — zvyšok** (poradie, na ktorom sme sa dohodli):
    a) Menu: skryť „Vårt Magasin“ a „For profesjonelle“, zverejniť „Om oss“ — agent vie sám, po „áno“
