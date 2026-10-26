@@ -9,7 +9,8 @@
 - Kolekcie Solcelle a For profesjonelle: „Gratis frakt … over 700 kr“.
 - Pruh hore je v téme vypnutý → nič netreba. Feriepakken (799) „inkludert gratis frakt“ platí.
 - Podmienka Frakt („Fraktkostnad vises ved kassen“) teraz sedí; konkrétne hranice v nej nie sú.
-- Pozor: EcoNeutral 100 ml 129 vs. 500 ml 149 — malý rozdiel, Luk zváži. GreenGuard ostal 239.
+- GreenGuard 239 → **149** (Luk, 2026-10-26, overené). EcoNeutral 500 ml ostáva 149.
+- EcoNeutral 100 ml (dnes 129): Luk povedal „je za 49“ aj „zmeň na 59“ — čaká na potvrdenie čísla.
 
 
 ## Čo hovoria objednávky (Shopify, overené 2026-10-26)
