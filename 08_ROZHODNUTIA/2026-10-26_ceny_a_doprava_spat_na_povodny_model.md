@@ -18,3 +18,8 @@
 
 ## Vyhodnotiť
 - Koncom novembra 2026 porovnať počet objednávok a priemerný košík. Potrebná marža (nákupná cena + PostNord).
+
+## Doplnené 2026-10-26 — výnimka Badepakken
+- Badepakken (LM Descaling + Bath Cleaner) = **349 kr vrátane dopravy** (Luk, variant A).
+- Technicky: samostatný doručovací profil „Badepakken – frakt inkludert“ s 0 kr pre Nórsko.
+  V zmiešanom košíku Shopify sčíta dopravu oboch profilov (0 + sadzba za ostatné produkty).

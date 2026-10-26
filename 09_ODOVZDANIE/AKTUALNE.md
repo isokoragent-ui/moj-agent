@@ -22,7 +22,8 @@
    d) Zľavy viditeľné v pruhu hore — cez kópiu témy, Luk publikuje
    e) Vypredané: FVP, Fasaderens Plus 5 l, SW 5 l — Luk rozhodne: doobjednať alebo skryť
 3. 📝 **Draft „Nye priser i nettbutikken“** (FB + IG, karusel Peisglassrens/Muggfjerner/EcoNeutral, fotky zo Shopify) — ✅ NAPLÁNOVANÝ (Luk „áno“ 2026-10-26), Metricool id 407159046, uuid -2680320050525026356, **ut 27. 10. 12:00 Oslo** (Luk presunul zo stredy). Kontrola zverejnenia naplánovaná na 27. 10. 12:15 Oslo.
-   - 🎄 Grafika **Badepakken – Julen starter med et rent bad** (349 kr inkl. frakt) hotová, 3 formáty v `02_PRACA/grafika/`. Pred zverejnením: Badepakken je DRAFT + pri 349 kr by sa pripočítalo 99 kr dopravy → vyriešiť (vlastný doručovací profil zdarma alebo cena 250 + 99).
+   - 🎄 ✅ **Badepakken zverejnený 2026-10-26** (Luk „áno“, variant A): https://isokor-skandinavia.no/products/badepakken · 349 kr · vlastný doručovací profil „Badepakken – frakt inkludert“ (0 kr, Norge; gid DeliveryProfile/105471049907) · opravené `requiresShipping` (bolo false → pokladňa by nepýtala adresu) · nová grafika ako 1. obrázok + obsah balíka v popise · zverejnený vo všetkých 7 kanáloch. Grafiky `02_PRACA/grafika/badepakken_jul_*.png` → ďalší krok príspevok na siete (draft).
+     Pozor: Badepakken má vlastný sklad (20 ks), predaj neznižuje sklad Kalkfjerner/Baderomsrens.
    Marketing ďalej: navrhnúť Lukovi pravidelný rytmus príspevkov (napr. 2× týždenne, produkty podľa sezóny) — zatiaľ nedohodnuté
 4. Luk zmaže v admine nepublikovanú kópiu témy „Dawn – úprava úvodnej stránky 2026-10-18“ (agent témy mazať nemôže; „Oppdatert kopi av Dawn“ je Lukova — nechať)
 5. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0 (obrat, náklady, zákazky za 3 mesiace)
