@@ -27,3 +27,8 @@ Farby: ihličnatá zelená #0f3326, zlatá #d9b56b; písmo Fraunces + Assistant.
 
 Zdroj: `zdroj/badepakken_jul/` → `node render.js` (výstup do `02_PRACA/grafika/`).
 ⚠️ Produkt „Isokor Badepakken“ (349 kr) je v Shopify **DRAFT** a pri cene 349 by sa pripočítala doprava 99 kr → treba vyriešiť „inkl. frakt“, kým sa grafika zverejní.
+
+### Video Story Badepakken (2026-10-26)
+`badepakken_jul_story.mp4` — 13 s, 1080 × 1920, 30 fps, **bez zvuku** (hudbu pridá Luk v Instagrame/TikToku).
+Scény: „Før – Kalk på dusjdøra?“ (0–3 s) → stierka na „Etter – Blank igjen, uten harde kjemikalier“ (3–6 s) → fľaše + „Julen starter med et rent bad“ + „Begge for 349 kr inkl. frakt“ + „spar 48 kr“ + isokor-skandinavia.no (6–13 s). Sneží celý čas.
+Zdroj: `zdroj/badepakken_jul/video.html` + `frames.js` (snímky) → `ffmpeg -framerate 30 -i frames/f%04d.jpg -c:v libx264 -pix_fmt yuv420p -crf 18`.

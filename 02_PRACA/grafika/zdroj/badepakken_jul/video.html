@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=block" rel="stylesheet">
+<style>
+  :root { --pine:#0f3326; --pine-2:#1a4a37; --gold:#d9b56b; --gold-soft:#f0dcae; --snow:#f7f4ec; --ink:#10251c; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--pine); }
+  body { font-family: "Assistant", sans-serif; color: var(--snow); }
+  .layer { position: absolute; inset: 0; }
+  .bg { background: radial-gradient(120% 70% at 50% 40%, var(--pine-2) 0%, var(--pine) 70%); }
+  .photo { position: absolute; inset: 0; overflow: hidden; }
+  .photo img { width: 100%; height: 100%; object-fit: cover; transform-origin: 55% 50%; }
+  .shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,30,22,.55) 0%, rgba(10,30,22,0) 30%, rgba(10,30,22,0) 60%, rgba(10,30,22,.75) 100%); }
+  .tag { position: absolute; left: 70px; top: 150px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: 40px; padding: 10px 28px; border-radius: 999px; background: var(--snow); color: var(--ink); }
+  .tag.gold { background: var(--gold); }
+  .q { position: absolute; left: 70px; right: 70px; bottom: 210px; font-family: "Fraunces", serif; font-weight: 700; font-size: 104px; line-height: 1.02; text-shadow: 0 6px 30px rgba(0,0,0,.45); }
+  .q em { font-style: normal; color: var(--gold-soft); }
+  .eyebrow { position: absolute; left: 0; right: 0; top: 190px; text-align: center; color: var(--gold); font-weight: 700; letter-spacing: .22em; text-transform: uppercase; font-size: 30px; }
+  .title { position: absolute; left: 60px; right: 60px; top: 250px; text-align: center; font-family: "Fraunces", serif; font-weight: 700; font-size: 110px; line-height: 1.02; }
+  .title em { font-style: normal; color: var(--gold-soft); }
+  .bottles { position: absolute; left: 0; right: 170px; top: 660px; display: flex; justify-content: center; align-items: flex-end; gap: 0; }
+  .bottles img { height: 760px; filter: drop-shadow(0 34px 34px rgba(0,0,0,.45)); }
+  .bottles img.bath { filter: brightness(1.12) contrast(1.03) drop-shadow(0 34px 34px rgba(0,0,0,.45)); margin-left: -40px; }
+  .glow { position: absolute; left: 50%; top: 1020px; width: 1100px; height: 1100px; margin: -550px 0 0 -550px; border-radius: 50%; background: radial-gradient(circle, rgba(240,220,174,.28) 0%, rgba(240,220,174,0) 62%); }
+  .lbl { position: absolute; background: rgba(247,244,236,.97); color: var(--ink); border-radius: 18px; padding: 16px 22px; box-shadow: 0 12px 26px rgba(0,0,0,.28); }
+  .lbl b { display: block; font-size: 34px; font-weight: 800; }
+  .lbl span { display: block; font-size: 26px; font-weight: 600; color: #34463c; }
+  .badge { position: absolute; right: 40px; top: 760px; width: 300px; height: 300px; border-radius: 50%; background: var(--gold); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 18px 38px rgba(0,0,0,.4); }
+  .badge .k { font-size: 30px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+  .badge .p { font-family: "Fraunces", serif; font-weight: 700; font-size: 110px; line-height: .95; }
+  .badge .p small { font-size: .42em; }
+  .badge .f { font-size: 30px; font-weight: 800; }
+  .cta { position: absolute; left: 50%; bottom: 230px; transform: translateX(-50%); white-space: nowrap; background: var(--snow); color: var(--ink); font-weight: 800; font-size: 44px; padding: 22px 40px; border-radius: 999px; }
+  .save { position: absolute; left: 0; right: 0; bottom: 340px; text-align: center; font-size: 36px; font-weight: 700; color: #cfe0d6; }
+  .save b { color: var(--gold-soft); }
+  .brand { position: absolute; left: 0; right: 0; bottom: 150px; text-align: center; letter-spacing: .42em; font-weight: 600; font-size: 34px; opacity: .9; }
+  svg.snow { position: absolute; inset: 0; }
+</style>
+</head>
+<body>
+<div class="layer bg"></div>
+<div class="layer" id="s3">
+  <div class="glow"></div>
+  <div class="eyebrow">Julepakke</div>
+  <div class="title" id="title">Julen starter med<br><em>et rent bad</em></div>
+  <div class="bottles" id="bottles"><img id="b1" src="lm.png"><img id="b2" class="bath" src="bath_fix.png"></div>
+  <div class="lbl" id="l1" style="left:30px; top:1060px"><b>LM Descaling</b><span>fjerner kalk</span></div>
+  <div class="lbl" id="l2" style="right:300px; top:1340px"><b>Bath Cleaner</b><span>baderomsrens</span></div>
+  <div class="badge" id="badge"><div class="k">Begge for</div><div class="p">349<small> kr</small></div><div class="f">inkl. frakt</div></div>
+  <div class="save" id="save">Hver for seg 397 kr – <b>spar 48 kr</b></div>
+  <div class="cta" id="cta">isokor-skandinavia.no</div>
+  <div class="brand" id="brand">ISOKOR</div>
+</div>
+<div class="photo" id="p2"><img id="i2" src="in/0b6a2b25-image.jpg" style="object-position:58% 50%"><div class="shade"></div><div class="tag gold">Etter</div><div class="q" id="q2">Blank igjen –<br><em>uten harde kjemikalier</em></div></div>
+<div class="photo" id="p1"><img id="i1" src="in/66a6fb1a-image.jpg" style="object-position:62% 55%"><div class="shade"></div><div class="tag">Før</div><div class="q" id="q1">Kalk på<br><em>dusjdøra?</em></div></div>
+<svg class="snow" id="snow" width="1080" height="1920"></svg>
+<script>
+  const ease = x => x <= 0 ? 0 : x >= 1 ? 1 : 1 - Math.pow(1 - x, 3);
+  const seg = (t, a, b) => ease((t - a) / (b - a));
+  let s = 11; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  const flakes = Array.from({ length: 120 }, () => ({ x: r() * 1080, y: r() * 1920, rad: 1 + r() * 3.2, o: .15 + r() * .45, v: 40 + r() * 70, d: r() * 6.28 }));
+  const $ = id => document.getElementById(id);
+  const set = (id, o, tf) => { const e = $(id); e.style.opacity = o; if (tf !== undefined) e.style.transform = tf; };
+  window.render = (t) => {
+    // scene 1: before (0–3.2s)
+    $('i1').style.transform = `scale(${1.08 + t * 0.03})`;
+    set('q1', seg(t, .2, .9), `translateY(${(1 - seg(t, .2, .9)) * 40}px)`);
+    // wipe to after (3.0–3.8s)
+    const w = seg(t, 3.0, 3.8);
+    $('p1').style.clipPath = `inset(0 ${w * 100}% 0 0)`;
+    $('i2').style.transform = `scale(${1.12 - Math.min(t, 6.5) * 0.012})`;
+    set('q2', seg(t, 3.7, 4.4), `translateY(${(1 - seg(t, 3.7, 4.4)) * 40}px)`);
+    // fade photos out (6.0–6.8s)
+    const f = 1 - seg(t, 6.0, 6.8);
+    $('p2').style.opacity = f; $('p1').style.opacity = t < 3.8 ? 1 : f;
+    // scene 3: product (6.4s →)
+    set('title', seg(t, 6.4, 7.2), `translateY(${(1 - seg(t, 6.4, 7.2)) * 50}px)`);
+    set('b1', seg(t, 6.8, 7.6), `translateY(${(1 - seg(t, 6.8, 7.6)) * 160}px)`);
+    set('b2', seg(t, 7.0, 7.8), `translateY(${(1 - seg(t, 7.0, 7.8)) * 160}px)`);
+    set('l1', seg(t, 7.8, 8.4), `translateX(${(1 - seg(t, 7.8, 8.4)) * -60}px)`);
+    set('l2', seg(t, 8.0, 8.6), `translateX(${(1 - seg(t, 8.0, 8.6)) * 60}px)`);
+    const bp = seg(t, 8.7, 9.3);
+    set('badge', bp, `rotate(-8deg) scale(${0.6 + 0.4 * bp + Math.max(0, Math.sin((t - 9.3) * 3)) * 0.03 * (t > 9.3 ? 1 : 0)})`);
+    set('save', seg(t, 9.6, 10.2));
+    set('cta', seg(t, 10.0, 10.6), `translateX(-50%) translateY(${(1 - seg(t, 10.0, 10.6)) * 30}px)`);
+    set('brand', seg(t, 10.4, 11.0));
+    // snow
+    $('snow').innerHTML = flakes.map(p => {
+      const y = (p.y + p.v * t) % 1960 - 20, x = p.x + Math.sin(t * .8 + p.d) * 14;
+      return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${p.rad}" fill="#fff" opacity="${p.o}"/>`;
+    }).join('');
+  };
+  render(0);
+</script>
+</body>
+</html>
