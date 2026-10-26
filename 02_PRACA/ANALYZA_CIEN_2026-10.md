@@ -48,3 +48,4 @@ Pravdepodobne pozostatok z prechodu na „dopravu zdarma“ (27. 8.), keď sa ce
 15 variantov zmenených na ceny zo stĺpca F, overené čítaním. Záloha: `02_PRACA/zalohy/ceny_PRED_tabulka_2026-10-26.json`.
 Luk: „Facade 5 L“ = **Fasaderens** (5 l) → 799 → 699 (2026-10-26). Fasaderens Plus 5000 ml (899, vypredané) v tabuľke nie je — nezmenené.
 Glass Profi 749 nastavené podľa tabuľky, hoci je pod veľkoobchodom s DPH (755,56) — Luk vie.
+- Antidugg 100 ml 159 → **89** (Luk, 2026-10-26). SW 5 l: Luk nemá skladom — v Shopify už 0 ks, „nedá sa kúpiť“ (overené), cena nezmenená.
