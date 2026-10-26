@@ -27,6 +27,6 @@
 - ✅ Instagram: https://www.instagram.com/p/De-YKLHjUjs/
 - ✅ Threads: https://www.threads.com/@isokor_skandinavia/post/De-YMDLiLGK
 - ✅ Google firemný profil: https://local.google.com/place?id=5296335594512313323&use=posts&lpsid=CAIQACoeChxtc3BfaDpkaEwwdWEtdHdXc2JqWlM5T2JyMnNR
-- ❌ TikTok: „image/png is not allowed, use image/jpeg/jpg/webp“ → opakované ako JPEG (Shopify Súbory `badepakken-jul.jpg`), samostatný príspevok Metricool 407250572, 27. 10. 00:10; kontrola 00:18.
+- ❌ TikTok: „image/png is not allowed, use image/jpeg/jpg/webp“ → JPEG pokus (Metricool uuid 758217148578547347) Luk zrušil — **na TikTok dá video ručne** (`02_PRACA/grafika/badepakken_jul_story.mp4`). Pokus prepnutý na koncept, nevyšiel (overené 00:18, žiadna publicUrl). Luk môže koncept zmazať v Plánovači.
 
 **Pasca:** TikTok fotopríspevok neberie PNG → do Metricoolu na TikTok vždy JPEG/WEBP.
