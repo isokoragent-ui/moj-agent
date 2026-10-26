@@ -10,7 +10,7 @@
 - Pruh hore je v téme vypnutý → nič netreba. Feriepakken (799) „inkludert gratis frakt“ platí.
 - Podmienka Frakt („Fraktkostnad vises ved kassen“) teraz sedí; konkrétne hranice v nej nie sú.
 - GreenGuard 239 → **149** (Luk, 2026-10-26, overené). EcoNeutral 500 ml ostáva 149.
-- EcoNeutral 100 ml (dnes 129): Luk povedal „je za 49“ aj „zmeň na 59“ — čaká na potvrdenie čísla.
+- EcoNeutral 100 ml 129 → **49** (Luk potvrdil, 2026-10-26, overené).
 
 
 ## Čo hovoria objednávky (Shopify, overené 2026-10-26)
