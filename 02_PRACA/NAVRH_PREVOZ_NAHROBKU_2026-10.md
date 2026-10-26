@@ -62,3 +62,10 @@ nákladov, nie cena služby.
 
 ## Zdroje
 - Rome2rio Nittedal Station – Porsgrunn; Vegfinans E18 Vestfold takster; Fjellinjen takster 2026; bompengeappen.no (Grenland, Oslo–Skien); Sticos – statens reiseregulativ 2026; lokalhistoriewiki.no – Nittedal kirke
+
+## AKTUALIZÁCIA 2026-10-26 — Lukove finálne ceny (s MVA, pevné)
+- Demontáž + naloženie + jordpåfylling: 2 000 · Doprava Porsgrunn–Nittedal t/r vrát. mýta: 5 800 · Osadenie v Nittedale: 2 000
+- **Spolu 9 800 kr s MVA, hotová cena.** Cesta z našej základne do Porsgrunnu a späť sa neúčtuje.
+- Termíny: st 28. 10., pi 30. 10. alebo budúci týždeň (uke 45, 2.–6. 11.)
+- SMS pre klienta (nórsky) pripravená v chate 2026-10-26 — **odosiela Luk sám**
+- Čaká sa od klienta: ktoré cintoríny a ich adresy + nahlásenie kirkeverge v oboch obciach
