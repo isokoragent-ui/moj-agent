@@ -12,7 +12,7 @@
 
 ## Nedokončené — pokračovať tu
 0. ✅ **Ceny + doprava (2026-10-26):** späť na 149 + doprava 99/49/0 (hranice 400 a 700 kr), zľavy za kusy vypnuté. Detail `02_PRACA/NAVRH_CENY_DOPRAVA_2026-10.md`. Chýba od Luka: nákupná cena fľaše + cena PostNord → marža.
-   - Stránku „Frakt og priser“ Luk nechcel → zmazaná (bola nezverejnená). Namiesto nej grafika `02_PRACA/grafika/frakt_{banner,square,mobile}.png` (zdroj v `zdroj/`, render `node render.js`) — na úvodnú stránku / vyskakovacie okno. Pruh hore (vypnutý v živej téme) zapína Luk: „Frakt 99 kr · Halv frakt over 400 kr · Gratis frakt over 700 kr“.
+   - Stránku „Frakt og priser“ Luk nechcel → zmazaná (bola nezverejnená). Namiesto nej grafika `02_PRACA/grafika/frakt_{banner,square,mobile}.png` (zdroj v `zdroj/`, render `node render.js`) — na úvodnú stránku / vyskakovacie okno. Luk jeden použil sám (2026-10-26); ostatné odložené v zásobníku `02_PRACA/grafika/README.md`, vrátime sa k nim. Pruh hore (vypnutý v živej téme) zapína Luk: „Frakt 99 kr · Halv frakt over 400 kr · Gratis frakt over 700 kr“.
 1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → o pár dní pozrieť dosah
    - ✅ Prázdny TikTok draft Luk zmazal ručne (overené v Metricoole 18. 10.)
 2. **Web audit — zvyšok** (poradie, na ktorom sme sa dohodli):
