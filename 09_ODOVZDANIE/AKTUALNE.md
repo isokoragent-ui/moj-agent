@@ -14,7 +14,7 @@
 1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → o pár dní pozrieť dosah
    - ✅ Prázdny TikTok draft Luk zmazal ručne (overené v Metricoole 18. 10.)
 2. **Web audit — zvyšok** (poradie, na ktorom sme sa dohodli):
-   a) ✅ Menu hotové 2026-10-26: Vårt Magasin a For profesjonelle vyradené z menu (stránka a kolekcia ostali), Om oss zverejnená a v menu pred Kontakt. Záloha menu: `02_PRACA/zalohy/menu_hovedmeny_2026-10-26.json`. Zostáva: preklep „hudsensitiive“ na Om oss → opraviť po „áno“
+   a) ✅ Menu hotové 2026-10-26: Vårt Magasin a For profesjonelle vyradené z menu (stránka a kolekcia ostali), Om oss zverejnená a v menu pred Kontakt. Záloha menu: `02_PRACA/zalohy/menu_hovedmeny_2026-10-26.json`. Preklep „hudsensitiive“ opravený (2026-10-26).
    b) Vilkår for bruk: nevyplnená šablóna — agent pripraví text, **Luk vloží** (konektor nemá `write_legal_policies`); treba od Luka: ktorá firma predáva produkty a ktorá robí služby
    c) Angrerett + angreskjema podľa nórskeho zákona — agent pripraví, Luk vloží (odporúčané dať pozrieť odborníkovi)
    d) Zľavy viditeľné v pruhu hore — cez kópiu témy, Luk publikuje
