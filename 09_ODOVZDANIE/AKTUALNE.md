@@ -11,6 +11,7 @@
 - Pravidlá pošty v `08_ROZHODNUTIA/2026-10-19_posta_cez_preposielanie_do_gmailu.md`
 
 ## Nedokončené — pokračovať tu
+0. ✅ **Ceny + doprava (2026-10-26):** späť na 149 + doprava 99/49/0 (hranice 400 a 700 kr), zľavy za kusy vypnuté. Detail `02_PRACA/NAVRH_CENY_DOPRAVA_2026-10.md`. Chýba od Luka: nákupná cena fľaše + cena PostNord → marža.
 1. ✅ **Peisglassrens zverejnený** 2026-10-18 23:01 (Luk ručne, test) — overené v Metricoole: FB https://facebook.com/122216737250920172/posts/122216741084920172 · IG https://www.instagram.com/p/DepmmyTCQED/ → o pár dní pozrieť dosah
    - ✅ Prázdny TikTok draft Luk zmazal ručne (overené v Metricoole 18. 10.)
 2. **Web audit — zvyšok** (poradie, na ktorom sme sa dohodli):
@@ -43,4 +44,4 @@
 - Mazanie pošty: vždy najprv zoznam, maže sa až po „áno“. Dopyty z Mittanbud a správy od klientov nemazať.
 - Sprievodca pri štarte prepisuje počítadlo dní v `09_ODOVZDANIE/SPRIEVODCA.md` → commitnúť do `main`, nie do vetvy.
 
-ĎALŠÍ KROK: Luk pozrie menu + Om oss na mobile; potom audit 2b — agent pripraví text Vilkår (predávajúci: Isokor Skandinavia AS, 922 112 975), Luk vloží.
+ĎALŠÍ KROK: Luk urobí skúšobný košík na mobile (1 fľaša → 99 kr doprava, 3 → 49, 5 → zdarma); sledovať objednávky 2–4 týždne vs. 27. 8.–26. 10. (3 obj.); potom audit 2b — agent pripraví text Vilkår (predávajúci: Isokor Skandinavia AS, 922 112 975), Luk vloží.

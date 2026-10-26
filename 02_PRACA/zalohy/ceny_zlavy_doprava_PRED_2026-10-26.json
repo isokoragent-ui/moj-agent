@@ -1,0 +1,24 @@
+{"poznamka":"Stav pred zmenou na model 149 + doprava (2026-10-26). Návrat: ceny späť na 199, zľavy aktivovať, Standardlevering 0 NOK bez podmienok, texty kolekcií vrátiť.",
+"ceny_199":{
+"gid://shopify/ProductVariant/44779252252851":"Kalkfjerner for bad",
+"gid://shopify/ProductVariant/44779368841395":"Baderomsrens",
+"gid://shopify/ProductVariant/44779377950899":"Fett- og flekkfjerner",
+"gid://shopify/ProductVariant/44779380965555":"Gravsteinrens 500 ml",
+"gid://shopify/ProductVariant/44957144711347":"Sofarens",
+"gid://shopify/ProductVariant/44958978212019":"Peisglassrens",
+"gid://shopify/ProductVariant/45184839975091":"LMS rustfjerner",
+"gid://shopify/ProductVariant/45205871198387":"Kjøleskapsrens",
+"gid://shopify/ProductVariant/45259746836659":"Bilrens",
+"gid://shopify/ProductVariant/45260561973427":"Møbelrens",
+"gid://shopify/ProductVariant/45260633669811":"Muggfjerner",
+"gid://shopify/ProductVariant/46204028485811":"EcoNeutral 500 ml"},
+"zlavy_aktivne":{
+"gid://shopify/DiscountAutomaticNode/1221145985203":"2 flasker 7 %",
+"gid://shopify/DiscountAutomaticNode/1221148410035":"3 flasker 12 %",
+"gid://shopify/DiscountAutomaticNode/1221149065395":"4 flasker 15 %",
+"gid://shopify/DiscountAutomaticNode/1221149262003":"5 - 9 flasker 20 %",
+"gid://shopify/DiscountAutomaticNode/1265546068147":"10 + flasker 25 %"},
+"doprava":{"profil":"gid://shopify/DeliveryProfile/98933375155","zona":"gid://shopify/DeliveryZone/441445777587 (Domestic, NO)","metoda":"gid://shopify/DeliveryMethodDefinition/817175068851 Standardlevering, popis 'Sporingsnummer inkludert', 0 NOK, bez podmienok"},
+"texty_kolekcii":{
+"gid://shopify/Collection/325852463283 (Rengjøringsmiddel for solcellepaneler)":"<strong>Gratis frakt på alle bestillinger</strong>",
+"gid://shopify/Collection/326126108851 (For profesjonelle)":"<li ...><b>Gratis frakt på alle bestillinger</b></li>"}}

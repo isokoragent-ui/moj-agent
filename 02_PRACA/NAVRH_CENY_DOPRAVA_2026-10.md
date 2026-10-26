@@ -1,6 +1,16 @@
 # Návrh: späť k modelu „nižšia cena + doprava v košíku“
 
-*2026-10-26 · Luk chce vrátiť pôvodný koncept. Stav: NÁVRH, nič nezmenené — čaká na „áno“.*
+*2026-10-26 · Luk „áno“. ✅ ZMENENÉ a overené čítaním zo Shopify (body 1–3 + texty kolekcií). Záloha: `02_PRACA/zalohy/ceny_zlavy_doprava_PRED_2026-10-26.json`.*
+
+## Čo je teraz naozaj nastavené (2026-10-26)
+- 12 variantov 199 → **149** (overené).
+- Doprava Norge: „Standardlevering“ 99 kr (0–399,99) · „Standardlevering – halv frakt“ 49 kr (400–699,99) · „Gratis frakt“ 0 kr (700+).
+- 5 zliav za kusy vypnutých (stav EXPIRED, nezmazané — dajú sa znova aktivovať).
+- Kolekcie Solcelle a For profesjonelle: „Gratis frakt … over 700 kr“.
+- Pruh hore je v téme vypnutý → nič netreba. Feriepakken (799) „inkludert gratis frakt“ platí.
+- Podmienka Frakt („Fraktkostnad vises ved kassen“) teraz sedí; konkrétne hranice v nej nie sú.
+- Pozor: EcoNeutral 100 ml 129 vs. 500 ml 149 — malý rozdiel, Luk zváži. GreenGuard ostal 239.
+
 
 ## Čo hovoria objednávky (Shopify, overené 2026-10-26)
 | Obdobie | Model | Objednávky |
