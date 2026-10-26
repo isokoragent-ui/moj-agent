@@ -16,7 +16,7 @@
    - ✅ Prázdny TikTok draft Luk zmazal ručne (overené v Metricoole 18. 10.)
 2. **Web audit — zvyšok** (poradie, na ktorom sme sa dohodli):
    a) ✅ Menu hotové 2026-10-26: Vårt Magasin a For profesjonelle vyradené z menu (stránka a kolekcia ostali), Om oss zverejnená a v menu pred Kontakt. Záloha menu: `02_PRACA/zalohy/menu_hovedmeny_2026-10-26.json`. Preklep „hudsensitiive“ opravený (2026-10-26). Om oss: org. č. → 922 112 975 (Isokor Skandinavia AS); galéria náhrobných kameňov a Fera recenzie odstránené prepnutím šablóny na `sertifikater` (návrat: templateSuffix `page`). Neskôr: Luk dodá fotky interiéru → nová šablóna pre Om oss cez kópiu témy.
-   b) Vilkår for bruk: nevyplnená šablóna — agent pripraví text, **Luk vloží** (konektor nemá `write_legal_policies`); treba od Luka: ktorá firma predáva produkty a ktorá robí služby
+   b) ⏸ (Luk odložil 2026-10-26 — „spravíme neskôr“) Vilkår for bruk: nevyplnená šablóna — predávajúci Isokor Skandinavia AS, 922 112 975; — agent pripraví text, **Luk vloží** (konektor nemá `write_legal_policies`); treba od Luka: ktorá firma predáva produkty a ktorá robí služby
    c) Angrerett + angreskjema podľa nórskeho zákona — agent pripraví, Luk vloží (odporúčané dať pozrieť odborníkovi)
    d) Zľavy viditeľné v pruhu hore — cez kópiu témy, Luk publikuje
    e) Vypredané: FVP, Fasaderens Plus 5 l, SW 5 l — Luk rozhodne: doobjednať alebo skryť

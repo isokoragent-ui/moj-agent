@@ -37,12 +37,12 @@ prestrihať a upraviť na sociálne siete.
 - **sám:** analýza, strih, návrh textov, kontrola
 - **čaká:** na schválenie strihu a textov; zverejnenie vždy až po „áno"
 
-## Príloha — text k videu Peisglassrens (2026-10-19)
+## Príloha — text k videu Peisglassrens (2026-10-19, cena opravená 2026-10-26)
 Sotet peisglass etter fyringen?
 
 Isokor Peisglassrens er et ferdigblandet skum som løser sot, tjære og fett fra peis- og ovnsglass. Spray på, vent litt og tørk av – så er glasset klart igjen.
 
-199 kr. Gratis frakt.
+149 kr. Gratis frakt ved kjøp over 700 kr.
 isokor-skandinavia.no/products/peisglassrens
 
 #peis #vedovn #rengjøring #isokor
