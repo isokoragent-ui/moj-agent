@@ -23,6 +23,8 @@
 4. Luk zmaže v admine nepublikovanú kópiu témy „Dawn – úprava úvodnej stránky 2026-10-18“ (agent témy mazať nemôže; „Oppdatert kopi av Dawn“ je Lukova — nechať)
 5. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0 (obrat, náklady, zákazky za 3 mesiace)
 6. ✅ **Pošta:** lukas@ + info@ sa preposielajú do isokor.agent@gmail.com (overené 2026-10-19). Ďalej: denný prehľad pošty; faktúry štítkom Faktúry/Na tlač; spam navrhnúť na zmazanie (pravidlá v `08_ROZHODNUTIA/2026-10-19_posta_cez_preposielanie_do_gmailu.md`)
+   - 2026-10-26: Gmail upratný (21 do koša, Luk schválil). V doručenej: 6 návodov Metricool (Luk si pozrie, potom zmazať) + Anthropic faktúra. Mittanbud prehľady sa odteraz mažú.
+   - Nápad: bezplatný Google firemný profil (Vyhľadávanie + Mapy) pre Isokor — ponúknuť Lukovi
 7. #1027 (248 NOK) — Luk má označiť ako zaplatené v Shopify admin; potom overiť
 8. Higgsfield: kľúč z chatu zrušiť a vytvoriť nový; zatiaľ netreba — Artlist stačí
 9. Sprievodca: míľnik „pridať test do over.py“ (napr. Metricool `getBrandSettings`) — ponúknuť znova
@@ -41,4 +43,4 @@
 - Mazanie pošty: vždy najprv zoznam, maže sa až po „áno“. Dopyty z Mittanbud a správy od klientov nemazať.
 - Sprievodca pri štarte prepisuje počítadlo dní v `09_ODOVZDANIE/SPRIEVODCA.md` → commitnúť do `main`, nie do vetvy.
 
-ĎALŠÍ KROK: prvý denný prehľad pošty (klienti, faktúry, návrh na zmazanie — vrátane 2 testovacích e-mailov z 19. 10.); potom menu na webe (audit 2a).
+ĎALŠÍ KROK: menu na webe (audit 2a).

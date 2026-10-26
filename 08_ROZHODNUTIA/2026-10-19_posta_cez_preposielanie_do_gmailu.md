@@ -29,3 +29,10 @@
   reklamy → agent navrhne zoznam na zmazanie, maže po „áno".
 - ⚠️ Mittanbud: rozlišovať reklamu od **dopytov na zákazky** (údržba
   nehnuteľností) — dopyty nemazať, hlásiť Lukovi.
+
+## Doplnené 2026-10-26 — Mittanbud a Metricool
+- **Mittanbud denné prehľady zákaziek** („… og N nye jobber til deg“,
+  „jobber du kan svare på uten abonnement“) → Luk rozhodol: **mazať**.
+  Priamu správu od konkrétneho zákazníka cez Mittanbud stále nemazať, hlásiť.
+- **Metricool:** návody (ako na reporty, komentáre, plánovanie…) nechať,
+  Luk si ich pozrie. Pripomienky „connect your first network“ mazať.
