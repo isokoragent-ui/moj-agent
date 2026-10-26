@@ -20,7 +20,8 @@
    c) Angrerett + angreskjema podľa nórskeho zákona — agent pripraví, Luk vloží (odporúčané dať pozrieť odborníkovi)
    d) Zľavy viditeľné v pruhu hore — cez kópiu témy, Luk publikuje
    e) Vypredané: FVP, Fasaderens Plus 5 l, SW 5 l — Luk rozhodne: doobjednať alebo skryť
-3. Marketing ďalej: navrhnúť Lukovi pravidelný rytmus príspevkov (napr. 2× týždenne, produkty podľa sezóny) — zatiaľ nedohodnuté
+3. 📝 **Draft „Nye priser i nettbutikken“** (FB + IG, karusel Peisglassrens/Muggfjerner/EcoNeutral, fotky zo Shopify) — Metricool id 407153951, čas st 28. 10. 12:00 Oslo, **čaká na Lukovo „áno“** → potom `updateScheduledPost draft:false`. Po zverejnení overiť `getScheduledPosts`.
+   Marketing ďalej: navrhnúť Lukovi pravidelný rytmus príspevkov (napr. 2× týždenne, produkty podľa sezóny) — zatiaľ nedohodnuté
 4. Luk zmaže v admine nepublikovanú kópiu témy „Dawn – úprava úvodnej stránky 2026-10-18“ (agent témy mazať nemôže; „Oppdatert kopi av Dawn“ je Lukova — nechať)
 5. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0 (obrat, náklady, zákazky za 3 mesiace)
 6. ✅ **Pošta:** lukas@ + info@ sa preposielajú do isokor.agent@gmail.com (overené 2026-10-19). Ďalej: denný prehľad pošty; faktúry štítkom Faktúry/Na tlač; spam navrhnúť na zmazanie (pravidlá v `08_ROZHODNUTIA/2026-10-19_posta_cez_preposielanie_do_gmailu.md`)
