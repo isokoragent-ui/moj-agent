@@ -46,5 +46,5 @@ Pravdepodobne pozostatok z prechodu na „dopravu zdarma“ (27. 8.), keď sa ce
 
 ## ✅ Zosúladené so Shopify 2026-10-26 (Luk „áno“)
 15 variantov zmenených na ceny zo stĺpca F, overené čítaním. Záloha: `02_PRACA/zalohy/ceny_PRED_tabulka_2026-10-26.json`.
-Nezmenené (nejasné priradenie): Fasaderens Plus 5000 ml (899, vypredané) a Fasaderens (799) — ktorý je „Facade 5 L“ (699)?
+Luk: „Facade 5 L“ = **Fasaderens** (5 l) → 799 → 699 (2026-10-26). Fasaderens Plus 5000 ml (899, vypredané) v tabuľke nie je — nezmenené.
 Glass Profi 749 nastavené podľa tabuľky, hoci je pod veľkoobchodom s DPH (755,56) — Luk vie.
