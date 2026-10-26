@@ -12,10 +12,13 @@
 - **Stav:** 🚀 rozbieha sa — beží asi rok, stále počiatočná fáza
 - **Čo chýba:** dobré postupy a marketing — bez nich sa na trhu neetablujú
 - **E-shop (Shopify, Basic):** 8 260 NOK čistých za 12 mes., 28 objednávok, konverzia ~0,6–1 % → `02_PRACA/ESHOP_ANALYZA.md`; web audit 2026-10-18 → `02_PRACA/WEB_AUDIT_2026-10-18.md` (názvy, SEO, adresy opravené; zvyšok rozpracovaný)
-- **Sociálne siete (2026-10-18):** FB, IG, TikTok, YouTube, Google Business pripojené cez Metricool → agent pripravuje príspevky (draft → Lukovo „áno“); 1. príspevok Peisglassrens zverejnený 18. 10. 2026 (FB+IG) → `07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md`
+- **Sociálne siete (2026-10-18):** FB, IG, TikTok, YouTube, Google Business pripojené cez Metricool → agent pripravuje príspevky (draft → Lukovo „áno“); príspevky: Peisglassrens 18. 10., Badepakken 26. 10. (FB, IG, Threads, Google), Nye priser 27. 10.; TikTok — videá dáva Luk ručne → `07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md`
+- **Ceny a doprava (od 2026-10-26):** bežná fľaša 149 kr + doprava 99 kr / 49 kr od 400 kr / zdarma od 700 kr; zľavy za kusy vypnuté; ceny podľa Lukovej tabuľky → `08_ROZHODNUTIA/2026-10-26_ceny_a_doprava_spat_na_povodny_model.md`
+- **Balíky:** 🎄 Badepakken (LM Descaling + Bath Cleaner) 349 kr vrátane dopravy — zverejnený 26. 10., kampaň „Julen starter med et rent bad“ beží → `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`; 🍳 kuchynský balík (Fett- og flekkfjerner + Kjøleskapsrens) — 📝 čaká na cenu a fotky
+- **Firma na webe:** Isokor Skandinavia AS, org. č. 922 112 975
 - **Trh:** Nórsko (komunikácia po nórsky), web `www.isokor-skandinavia.no`
 - **Predaj:** zatiaľ bez predajcov v regiónoch; posielam PostNordom alebo
-  osobne; pri viac ako 4 fľašiach lepšia cena
+  osobne
 - **Sortiment (z e-mailov):** čistenie a impregnácia skla a profilov,
   odstraňovanie hrdze (betón, dlažba…), impregnácia WPC panelov;
   **budúci rok nový produkt** — čistenie + impregnácia v jednom
