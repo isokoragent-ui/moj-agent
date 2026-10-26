@@ -21,3 +21,12 @@
 
 ## Ďalšie formáty
 - Story 1080×1920 a portrait 1080×1350 sú hotové, zatiaľ nenahrané (potrebujú verejnú URL → Shopify Súbory).
+
+## Výsledok zverejnenia (overené v Metricoole 26. 10. 23:51)
+- ✅ Facebook: https://facebook.com/122216737250920172/posts/122218258688920172
+- ✅ Instagram: https://www.instagram.com/p/De-YKLHjUjs/
+- ✅ Threads: https://www.threads.com/@isokor_skandinavia/post/De-YMDLiLGK
+- ✅ Google firemný profil: https://local.google.com/place?id=5296335594512313323&use=posts&lpsid=CAIQACoeChxtc3BfaDpkaEwwdWEtdHdXc2JqWlM5T2JyMnNR
+- ❌ TikTok: „image/png is not allowed, use image/jpeg/jpg/webp“ → opakované ako JPEG (Shopify Súbory `badepakken-jul.jpg`), samostatný príspevok Metricool 407250572, 27. 10. 00:10; kontrola 00:18.
+
+**Pasca:** TikTok fotopríspevok neberie PNG → do Metricoolu na TikTok vždy JPEG/WEBP.

@@ -52,3 +52,5 @@ alebo službe Isokor na Facebook, Instagram (prípadne TikTok, YouTube, Google).
   vytvorenie DRAFTU v Metricoole
 - čaká: prepnutie draftu na naplánovaný / zverejnenie, platená propagácia
   (boost), čokoľvek s cenou alebo zľavou, ktorá ešte nie je na webe
+- ⚠️ **TikTok fotka nesmie byť PNG** — Business TikTok berie len JPEG/JPG/WEBP (zlyhalo 26. 10. 2026). Grafiku pred zverejnením previesť na JPEG. **Threads má limit 500 znakov** — pri zverejnení všade naraz držať text pod 500.
+- Verejnú URL obrázka vieme dostať cez Shopify Súbory (stagedUploadsCreate → curl POST → fileCreate) — funguje z cloudu (overené 26. 10. 2026).
