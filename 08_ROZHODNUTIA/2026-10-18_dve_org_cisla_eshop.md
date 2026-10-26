@@ -15,5 +15,5 @@ Luk: „Je to kombinácia, ten e-shop je kombinácia dvoch firiem."
 
 ## Doplnené 2026-10-26
 - Luk: do obchodných podmienok (Vilkår) ide **org. č. 922 112 975** („nechaj to prvé číslo“).
-- Pozor: stránka Om oss zatiaľ uvádza 912 689 441 MVA — zladiť, keď bude jasné, či sa 912… z webu úplne odstraňuje.
-- Ešte chýba: presný názov firmy s č. 922 112 975.
+- Luk potvrdil: **922 112 975 = Isokor Skandinavia AS**. Om oss prepnutá na „Firma: Isokor Skandinavia AS, Org.nr: 922 112 975“ (bez MVA — registráciu v MVA sme neoverili; brreg.no je z cloudu blokované).
+- Otvorené: kde ešte na webe stojí 912 689 441 (päta, Kontakt, podmienky) a či ho tam nechať.
