@@ -1,13 +1,14 @@
 # Kampaň: Badepakken – Julen starter med et rent bad
 
-*2026-10-26 · stav: DRAFT v Metricoole, čaká na Lukovo „áno“ (príspevok + rozpočet)*
+*2026-10-26 · ✅ NAPLÁNOVANÉ (Luk „áno“) na po 26. 10. 23:40 Oslo — FB, IG, Threads, TikTok (foto), Google firemný profil. Sponzorovanie si Luk nastaví sám v Instagrame (rozpočet aj cieľenie). Kontrola zverejnenia 23:50.*
 
 ## Príspevok (FB + IG feed)
-- Metricool id 407212732, uuid 1560282835478463254, čas po 26. 10. 23:40 Oslo (draft)
+- Metricool id 407214644 (pôvodne 407212732), uuid 1560282835478463254, po 26. 10. 23:40 Oslo
+- Text skrátený na 488 znakov kvôli limitu Threads (500).
 - Obrázok: `02_PRACA/grafika/badepakken_jul_square.png` (zo Shopify CDN)
 - Odkaz: isokor-skandinavia.no/products/badepakken
 
-## Sponzorovanie (návrh — peniaze, len po „áno“ so sumou)
+## Sponzorovanie — robí Luk ručne v Instagrame (rozhodol 2026-10-26); agent len podklady
 - Cez Metricool „boost“ (Facebook Ads účet act_1244185607155581 je pripojený).
 - Návrh: **500 kr na 7 dní** (~70 kr/deň), FB + IG, Nórsko.
 - Platiteľ / príjemca (povinné v EÚ/EHP): Isokor Skandinavia AS.
