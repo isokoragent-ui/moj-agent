@@ -20,7 +20,7 @@
    c) Angrerett + angreskjema podľa nórskeho zákona — agent pripraví, Luk vloží (odporúčané dať pozrieť odborníkovi)
    d) Zľavy viditeľné v pruhu hore — cez kópiu témy, Luk publikuje
    e) Vypredané: FVP, Fasaderens Plus 5 l, SW 5 l — Luk rozhodne: doobjednať alebo skryť
-3. 📝 **Draft „Nye priser i nettbutikken“** (FB + IG, karusel Peisglassrens/Muggfjerner/EcoNeutral, fotky zo Shopify) — ✅ NAPLÁNOVANÝ (Luk „áno“ 2026-10-26), Metricool id 407157021, uuid -2680320050525026356, st 28. 10. 12:00 Oslo. Kontrola zverejnenia naplánovaná na 28. 10. 12:15 Oslo.
+3. 📝 **Draft „Nye priser i nettbutikken“** (FB + IG, karusel Peisglassrens/Muggfjerner/EcoNeutral, fotky zo Shopify) — ✅ NAPLÁNOVANÝ (Luk „áno“ 2026-10-26), Metricool id 407159046, uuid -2680320050525026356, **ut 27. 10. 12:00 Oslo** (Luk presunul zo stredy). Kontrola zverejnenia naplánovaná na 27. 10. 12:15 Oslo.
    Marketing ďalej: navrhnúť Lukovi pravidelný rytmus príspevkov (napr. 2× týždenne, produkty podľa sezóny) — zatiaľ nedohodnuté
 4. Luk zmaže v admine nepublikovanú kópiu témy „Dawn – úprava úvodnej stránky 2026-10-18“ (agent témy mazať nemôže; „Oppdatert kopi av Dawn“ je Lukova — nechať)
 5. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0 (obrat, náklady, zákazky za 3 mesiace)
