@@ -5,6 +5,7 @@
 **Naposledy:** 2026-10-27 13:03 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy (26.–27. 10.)
+- **Sikkerhetsdatablad Isokor Bilrens (Car Cleaner)** — SK originál = Baderomsrens (nie je nebezpečný), iný len názov; v origináli chýba nadpis oddielu 11 (ponechaný) → na webe pri „Isokor Bilrens“, záloha `02_PRACA/zalohy/popis_Bilrens_PRED_2026-10-27.html`. Spolu 22 kariet, 19 na webe.
 - **Sikkerhetsdatablad Isokor Fett- og flekkfjerner** — SK originál „Isokor Univerzál (Cleaner)“ = Baderomsrens (nie je nebezpečný), iný len názov → na webe pri „Isokor Fett- og flekkfjerner“ (popis ho volá „Isokor Cleaner“), záloha `02_PRACA/zalohy/popis_Fett_og_flekkfjerner_PRED_2026-10-27.html`. Spolu 21 kariet, 18 na webe.
 - **Sikkerhetsdatablad Isokor Eko Profi** — SK originál = Lotos Profi (nie je klasifikovaný, bez UFI), iný len názov → na webe pri „Isokor EKO Profi flisimpregnering“ (Luk schválil 27. 10.), záloha `02_PRACA/zalohy/popis_EKO_Profi_PRED_2026-10-27.html`. Spolu 20 kariet, 17 na webe.
 - **Sikkerhetsdatablad Isokor FPC** — nová šablóna, vlastný obsah: **žieravý** (hydroxid sodný a draselný 1–<5 %, chlórnan sodný 0,3–<1 %), Met. Corr. 1; H290, Skin Corr. 1B; H314, Eye Dam. 1; H318, pH 13–14, **UN 3266, trieda 8, obalová skupina II**, UFI 5360-80PP-M00A-18S5 → PDF hotové **len na stiahnutie** (Luk: na web neskôr). Opravy oproti originálu: prvá pomoc a ochrana očí podľa H314, v 10.3 doplnené uvoľnenie chlóru pri kontakte s kyselinami. Spolu 19 kariet, 16 na webe.
