@@ -2,9 +2,10 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-27 ~00:35 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
+**Naposledy:** 2026-10-27 13:03 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy (26.–27. 10.)
+- **Sikkerhetsdatablad Baderomsrens:** SK karta (13 strán) preložená do nórčiny, nórsky dodávateľ, Giftinformasjonen, nórske predpisy, slogan „vaske og beskytte“ → `02_PRACA/sikkerhetsdatablad/`. Na webe pri Baderomsrens (odkaz „Last ned sikkerhetsdatablad (PDF)“, bez „på norsk“), Luk overil, že funguje.
 - **Gmail upratný:** 21 konverzácií do koša (Luk schválil). Nové pravidlo: Mittanbud denné prehľady sa mažú; návody Metricoolu ostávajú (6 v doručenej, Luk si ich pozrie).
 - **Web:** menu bez Vårt Magasin a For profesjonelle, Om oss zverejnená (pred Kontakt), preklep opravený, org. č. **922 112 975 = Isokor Skandinavia AS**, galéria kameňov preč (šablóna `sertifikater`). Záloha menu `02_PRACA/zalohy/`.
 - **Ceny + doprava:** späť na model „cena + doprava“ — bežná fľaša 149 kr; doprava 99 kr · 49 kr od 400 kr · 0 od 700 kr; zľavy za kusy vypnuté (nezmazané). Ceny zosúladené s Lukovou tabuľkou (16 variantov), GreenGuard 149, EcoNeutral 100 ml 49, Antidugg 100 ml 89, Fasaderens 5 l 699. Rozhodnutie `08_ROZHODNUTIA/2026-10-26_ceny_a_doprava_spat_na_povodny_model.md`, analýza `02_PRACA/ANALYZA_CIEN_2026-10.md`, zálohy `02_PRACA/zalohy/`.
@@ -14,7 +15,7 @@
 - **Príspevok „Nye priser i nettbutikken“** naplánovaný na **ut 27. 10. 12:00** (FB + IG, Metricool uuid -2680320050525026356).
 
 ## Nedokončené — pokračovať tu
-0. ✅ **Sikkerhetsdatablad Baderomsrens (NO)** na webe 27. 10. — odkaz „Last ned sikkerhetsdatablad (PDF)“ na konci popisu https://isokor-skandinavia.no/products/isokor-baderomsrens · súbor Shopify GenericFile 33814198845619 · záloha popisu `02_PRACA/zalohy/popis_Baderomsrens_PRED_2026-10-27.html`. **Luk:** raz klikni na odkaz na mobile (z cloudu cdn.shopify.com nevidím). Ďalšie produkty rovnako (`02_PRACA/sikkerhetsdatablad/README.md`).
+0. 🧪 **Sikkerhetsdatablady pre ďalšie produkty** — keď Luk nahrá SK PDF, rovnaký postup (`02_PRACA/sikkerhetsdatablad/README.md`, ~1 karta na okno).
 1. ✅ **„Nye priser“ vyšiel 27. 10. 12:00** — FB https://facebook.com/122216737250920172/posts/122218346936920172 · IG https://www.instagram.com/p/De_tbYZDVfL/
    - 📝 E-mail pre Smajliho (montér skla, návrh spolupráce) pripravený → `02_PRACA/emaily/2026-10-27_Smajli_samarbeid_glass.md`, čaká na Lukovu kontrolu; Luk odošle z lukas@; follow-up po 7 dňoch.
 2. ✅ Sponzorovanie Reelu Badepakken beží (Luk 27. 10.: Arendal, Kristiansand, Stavanger, Oslo, Trondheim, ~50 kr/deň) — report čt 29. 10. ráno, návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web sám · zmazať v Metricoole TikTok koncept Badepakken (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken sám → 349 spolu).
@@ -47,5 +48,6 @@
 - Kalendár je v UTC; časové udalosti zadávať s pásmom Europe/Oslo.
 - Sprievodca pri štarte prepisuje počítadlo v `09_ODOVZDANIE/SPRIEVODCA.md` → commit do `main`.
 - Na konci okna VŽDY commit + push do `main`.
+- Sikkerhetsdatablad: na webe nepísať jazyk („på norsk“) — Luk chce čistý text.
 
 ĎALŠÍ KROK: Luk skontroluje e-mail pre Smajliho; ďalšie e-maily spolupracovníkom; kuchynský balík — cena a fotky fliaš.
