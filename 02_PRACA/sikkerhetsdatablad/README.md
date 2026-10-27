@@ -2,6 +2,7 @@
 
 | Produkt | Súbor | Stav |
 |---|---|---|
+| Isokor SW EKO → web „Isokor SW EKO impregnering for fasade og tak“ | `Isokor_SW_EKO_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · H319 (Advarsel), nie je nebezpečný tovar pri preprave |
 | Isokor SW → web „Isokor SW treimpregnering“ | `Isokor_SW_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · **nebezpečný** (H225, H319, H336) |
 | Isokor Baderomsrens (Bath Cleaner) | `Isokor_Baderomsrens_Sikkerhetsdatablad_NO.pdf` | ✅ NO verzia 1.0 · 27. 10. 2026 · na webe od 27. 10. (odkaz na konci popisu produktu) |
 
@@ -14,7 +15,7 @@
 - Slogan v logu: „vaske og beskytte“.
 
 ## Ako spraviť ďalšiu kartu
-1. Text → nový modul `zdroj/<produkt>.py` (PRODUCT, DATE, PAGES; jedna položka = jedna strana, stránkovanie ako originál; voliteľne EXTRA_CSS). Vzor: `baderomsrens.py` (nie nebezpečný), `sw_impregnering.py` (nebezpečný: piktogramy, zloženie, limity, ADR tabuľka).
+1. Text → nový modul `zdroj/<produkt>.py` (PRODUCT, DATE, PAGES; jedna položka = jedna strana, stránkovanie ako originál; voliteľne EXTRA_CSS). Vzor: `baderomsrens.py` (nie nebezpečný), `sw_impregnering.py` (nebezpečný: piktogramy, zloženie, limity, ADR tabuľka), `sw_eko.py` (len H319, preberá CSS zo SW).
 2. `cd zdroj && python3 build.py <produkt>` → `<produkt>.html`; potom `NODE_PATH=$(npm root -g) node render.js $PWD/<produkt>.html <výstup>.pdf` (HTML potom zmazať).
    Skript vypíše výšku obsahu každej strany (max 220 mm), ak niečo pretečie, dá strane červený rámik.
 3. Názov produktu a dátum sú v module (hlavička sa berie odtiaľ).
