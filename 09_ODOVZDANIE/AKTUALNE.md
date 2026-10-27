@@ -5,6 +5,7 @@
 **Naposledy:** 2026-10-27 13:03 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy (26.–27. 10.)
+- **Sikkerhetsdatablad Isokor WhiteWood** — SK originál = LMS (žieravý), iný len názov a UFI NY10-Y0JM-W00J-8VSR → PDF hotové v `02_PRACA/sikkerhetsdatablad/`, **na web nejde** (Luk ho v Nórsku zatiaľ nepredáva; keď príde do e-shopu, nahrať rovnako ako ostatné).
 - **Sikkerhetsdatablad Isokor Gravsteinrens** — SK originál (Na hroby) = Baderomsrens, iný len názov → na webe pri „Isokor Gravsteinrens“, záloha `02_PRACA/zalohy/popis_Gravsteinrens_PRED_2026-10-27.html`. Spolu 10 kariet na webe.
 - **Sikkerhetsdatablad Isokor Lotos Profi** — neklasifikovaný (izopropanol 5–<10 %, EUH210, bez UFI), inak ako SW EKO → na webe pri „Isokor Lotos Profi nanoimpregnering“, záloha `02_PRACA/zalohy/popis_Lotos_Profi_PRED_2026-10-27.html`. Spolu 9 kariet na webe.
 - **Sikkerhetsdatablad Isokor Lotos Standard** — SK originál = SW (horľavý, UN 1219), iný len názov a UFI 4K30-K0P5-Q00Y-UCV3 → na webe pri „Isokor Lotos Standard nanoimpregnering“; dve prázdne odseky na konci popisu nahradila sekcia Sikkerhetsdatablad. Záloha `02_PRACA/zalohy/popis_Lotos_Standard_PRED_2026-10-27.html`.
