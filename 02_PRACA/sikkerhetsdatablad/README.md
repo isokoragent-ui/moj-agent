@@ -2,6 +2,7 @@
 
 | Produkt | Súbor | Stav |
 |---|---|---|
+| Isokor SW → web „Isokor SW treimpregnering“ | `Isokor_SW_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · **nebezpečný** (H225, H319, H336) |
 | Isokor Baderomsrens (Bath Cleaner) | `Isokor_Baderomsrens_Sikkerhetsdatablad_NO.pdf` | ✅ NO verzia 1.0 · 27. 10. 2026 · na webe od 27. 10. (odkaz na konci popisu produktu) |
 
 ## Čo sa menilo oproti SK originálu (`zdroj/original_SK_…pdf`)
@@ -13,10 +14,10 @@
 - Slogan v logu: „vaske og beskytte“.
 
 ## Ako spraviť ďalšiu kartu
-1. Text → `zdroj/content.py` (jedna položka = jedna strana, rovnaké stránkovanie ako originál).
-2. `python3 zdroj/build.py x` → `zdroj/sds.html`; potom `NODE_PATH=$(npm root -g) node zdroj/render.js <cesta>/sds.html <výstup>.pdf`.
+1. Text → nový modul `zdroj/<produkt>.py` (PRODUCT, DATE, PAGES; jedna položka = jedna strana, stránkovanie ako originál; voliteľne EXTRA_CSS). Vzor: `baderomsrens.py` (nie nebezpečný), `sw_impregnering.py` (nebezpečný: piktogramy, zloženie, limity, ADR tabuľka).
+2. `cd zdroj && python3 build.py <produkt>` → `<produkt>.html`; potom `NODE_PATH=$(npm root -g) node render.js $PWD/<produkt>.html <výstup>.pdf` (HTML potom zmazať).
    Skript vypíše výšku obsahu každej strany (max 220 mm), ak niečo pretečie, dá strane červený rámik.
-3. Názov produktu a dátum sa menia v `build.py` (hlavička).
+3. Názov produktu a dátum sú v module (hlavička sa berie odtiaľ).
 
 **Pasce:** Playwright je len v Node (`require('playwright')`), nie v Pythone. Fonty Khand z GitHubu cez `raw.githubusercontent.com` (github.com/raw je blokovaný). Slogan je súčasť obrázka hlavičky → `logo.py`.
 
@@ -24,3 +25,5 @@
 stagedUploadsCreate (resource FILE, application/pdf) → curl POST súboru → fileCreate (contentType FILE) → počkať na READY a vziať `url` → záloha popisu do `02_PRACA/zalohy/` → productUpdate: na koniec descriptionHtml `<hr><h3>Sikkerhetsdatablad</h3><p>… <a href=URL target=_blank>Last ned sikkerhetsdatablad (PDF)</a></p>`.
 
 **Text na webe (Luk, 27. 10.):** bez „på norsk“ — web je nórsky, jazyk sa nepíše: „Sikkerhetsdatabladet (SDS) for <produkt> kan lastes ned her: Last ned sikkerhetsdatablad (PDF)“.
+
+**Pasce pri nebezpečných produktoch:** tabuľky v SK origináli sú obrázky (pdftotext ich nevidí) → čítať stránky ako obrázok. Poľské limity (NDS) nahradiť nórskymi grenseverdi (izopropanol: 100 ppm / 245 mg/m³, 8 h — overené z viacerých nórskych SDS; lovdata.no je z cloudu blokovaný). V SW origináli mali prepravné nálepky chybne „2“ → vlastná `adr3.svg`. GHS piktogramy `ghs02.png`, `ghs07.png`.

@@ -1,9 +1,10 @@
-import sys, os
+import sys, os, importlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from content import PAGES
+# použitie: python3 build.py <modul s textom, napr. baderomsrens>
+M = importlib.import_module(sys.argv[1])
+PAGES, PRODUCT, DATE = M.PAGES, M.PRODUCT, M.DATE
 
 D = os.path.dirname(os.path.abspath(__file__))
-OUT = sys.argv[1]
 N = len(PAGES)
 
 CSS = """
@@ -62,24 +63,24 @@ table.abbr td{padding:1mm 2mm}
 table.abbr td:first-child{width:18mm}
 ol.laws{margin:3.4mm 0 0;padding-left:5.8mm;line-height:1.75}
 ol.laws li{margin:0 0 1.9mm;padding-left:.8mm}
-"""
+""" + getattr(M, "EXTRA_CSS", "")
 
 def page(i, html):
     return f"""<div class="page">
 <img class="wm" src="watermark.jpg">
 <img class="hdr" src="header.jpg">
-<div class="ht"><b>Sikkerhetsdatablad</b><br>Isokor Baderomsrens (Bath Cleaner)<br>Utgivelsesdato: 27.10.2026<br>NO versjon: 1.0</div>
+<div class="ht"><b>Sikkerhetsdatablad</b><br>{PRODUCT}<br>Utgivelsesdato: {DATE}<br>NO versjon: 1.0</div>
 <div class="sub">Dette sikkerhetsdatabladet er i samsvar med forordning (EF) nr. 1907/2006 av 18.12.2006 – REACH og forordning (EU) 2020/878 av 18.6.2020.</div>
 <div class="body">{html}</div>
 <div class="foot">Side {i} av {N}</div>
 </div>"""
 
 doc = f"""<!doctype html><html lang="nb"><head><meta charset="utf-8">
-<title>Sikkerhetsdatablad – Isokor Baderomsrens (Bath Cleaner)</title>
+<title>Sikkerhetsdatablad – {PRODUCT}</title>
 <style>{CSS}</style></head><body>
 {''.join(page(i+1, h) for i, h in enumerate(PAGES))}
 </body></html>"""
-html_path = os.path.join(D, "sds.html")
+html_path = os.path.join(D, sys.argv[1] + ".html")
 open(html_path, "w", encoding="utf-8").write(doc)
 
 print("html", html_path)

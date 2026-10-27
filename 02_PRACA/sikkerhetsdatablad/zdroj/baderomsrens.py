@@ -1,4 +1,6 @@
 # Norsk innhold for sikkerhetsdatablad Isokor Baderomsrens – én liste per side
+PRODUCT = "Isokor Baderomsrens (Bath Cleaner)"
+DATE = "27.10.2026"
 NA = "Ingen data tilgjengelig"
 NT = "Ikke relevant, produktet er ikke klassifisert som farlig gods."
 KR = "På grunnlag av tilgjengelige data er klassifiseringskriteriene ikke oppfylt"
