@@ -5,6 +5,7 @@
 **Naposledy:** 2026-10-27 13:03 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy (26.–27. 10.)
+- **Sikkerhetsdatablad Isokor Sofarens** — SK originál (Na tepovanie) zhodný s Baderomsrens, iný len názov → na webe pri „Isokor Sofarens“, záloha `02_PRACA/zalohy/popis_Sofarens_PRED_2026-10-27.html`.
 - **Sikkerhetsdatablad Isokor LMD (LM Descaling)** — SK originál zhodný s LMS (overené diffom textu aj tabuliek), iný len názov a UFI 7S10-Y05U-900K-X6MM → na webe pri „Isokor Kalkfjerner for bad“, záloha popisu `02_PRACA/zalohy/popis_Kalkfjerner_PRED_2026-10-27.html`.
 - **Sikkerhetsdatablad Isokor LMS** (18 strán; žieravý H314/H318, Fare; ADR UN 1760, trieda 8, obalová skupina III) preložený a na webe pri „Isokor LMS rustfjerner“ (https://isokor-skandinavia.no/products/lms), záloha popisu `02_PRACA/zalohy/popis_LMS_PRED_2026-10-27.html`. Prvá pomoc a ochranné pomôcky zosúladené s H314.
 - **Sikkerhetsdatablad Isokor SW EKO** (14 strán; prázdna 15. strana originálu vynechaná; H319, Advarsel, izopropanol 5–10 %) preložený a na webe pri „Isokor SW EKO impregnering for fasade og tak“ (https://isokor-skandinavia.no/products/sw-eko), záloha popisu `02_PRACA/zalohy/popis_SW_EKO_PRED_2026-10-27.html`.

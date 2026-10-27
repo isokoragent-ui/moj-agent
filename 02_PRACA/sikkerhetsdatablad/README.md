@@ -2,6 +2,7 @@
 
 | Produkt | Súbor | Stav |
 |---|---|---|
+| Isokor Sofarens (SK: Na tepovanie / Sofa Cleaner) | `Isokor_Sofarens_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · obsahovo = Baderomsrens (nie je nebezpečný), iný len názov |
 | Isokor LMD (LM Descaling) → web „Isokor Kalkfjerner for bad“ | `Isokor_LMD_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · obsahovo = LMS (žieravý H314, UN 1760), iný len názov a UFI |
 | Isokor LMS → web „Isokor LMS rustfjerner“ | `Isokor_LMS_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · **žieravý** (H314, Fare), ADR UN 1760 trieda 8 |
 | Isokor SW EKO → web „Isokor SW EKO impregnering for fasade og tak“ | `Isokor_SW_EKO_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · H319 (Advarsel), nie je nebezpečný tovar pri preprave |
@@ -17,7 +18,7 @@
 - Slogan v logu: „vaske og beskytte“.
 
 ## Ako spraviť ďalšiu kartu
-1. Text → nový modul `zdroj/<produkt>.py` (PRODUCT, DATE, PAGES; jedna položka = jedna strana, stránkovanie ako originál; voliteľne EXTRA_CSS). Vzor: `baderomsrens.py` (nie nebezpečný), `sw_impregnering.py` (nebezpečný: piktogramy, zloženie, limity, ADR tabuľka), `sw_eko.py` (len H319, preberá CSS zo SW), `lms.py` (žieravý, 7 zložiek, DNEL/PNEC v dvoch stĺpcoch), `lmd.py` (= LMS, mení len názov a UFI).
+1. Text → nový modul `zdroj/<produkt>.py` (PRODUCT, DATE, PAGES; jedna položka = jedna strana, stránkovanie ako originál; voliteľne EXTRA_CSS). Vzor: `baderomsrens.py` (nie nebezpečný), `sw_impregnering.py` (nebezpečný: piktogramy, zloženie, limity, ADR tabuľka), `sw_eko.py` (len H319, preberá CSS zo SW), `lms.py` (žieravý, 7 zložiek, DNEL/PNEC v dvoch stĺpcoch), `lmd.py` (= LMS, mení len názov a UFI), `sofarens.py` (= Baderomsrens, mení len názov).
 2. `cd zdroj && python3 build.py <produkt>` → `<produkt>.html`; potom `NODE_PATH=$(npm root -g) node render.js $PWD/<produkt>.html <výstup>.pdf` (HTML potom zmazať).
    Skript vypíše výšku obsahu každej strany (max 220 mm), ak niečo pretečie, dá strane červený rámik.
 3. Názov produktu a dátum sú v module (hlavička sa berie odtiaľ).
