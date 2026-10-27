@@ -25,6 +25,7 @@
   **budúci rok nový produkt** — čistenie + impregnácia v jednom
   (nano-keramická vrstva)
 - **Súvisí:** firma = a.s. (prácu môže robiť aj živnosť pre a.s.)
+- ⏸ **neskôr:** Isokor Junior (Baby Cleaner) — na sklade, do e-shopu zatiaľ nie (Luk 27. 10.); nórska bezpečnostná karta je hotová (`02_PRACA/sikkerhetsdatablad/Isokor_Junior_Sikkerhetsdatablad_NO.pdf`), pri pridaní produktu ju priložiť.
 
 ### Služby s najväčším potenciálom (finančne veľmi zaujímavé)
 | Služba | Stav |
