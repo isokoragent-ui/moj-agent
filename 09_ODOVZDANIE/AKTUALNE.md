@@ -14,6 +14,7 @@
 - **Príspevok „Nye priser i nettbutikken“** naplánovaný na **ut 27. 10. 12:00** (FB + IG, Metricool uuid -2680320050525026356).
 
 ## Nedokončené — pokračovať tu
+0. 🧪 **Sikkerhetsdatablad Baderomsrens (NO)** hotový → `02_PRACA/sikkerhetsdatablad/` — Luk skontroluje PDF; po „áno“ nahrať k produktu Baderomsrens na web na stiahnutie. Ďalšie produkty rovnakým postupom (README tam).
 1. ✅ **„Nye priser“ vyšiel 27. 10. 12:00** — FB https://facebook.com/122216737250920172/posts/122218346936920172 · IG https://www.instagram.com/p/De_tbYZDVfL/
    - 📝 E-mail pre Smajliho (montér skla, návrh spolupráce) pripravený → `02_PRACA/emaily/2026-10-27_Smajli_samarbeid_glass.md`, čaká na Lukovu kontrolu; Luk odošle z lukas@; follow-up po 7 dňoch.
 2. ✅ Sponzorovanie Reelu Badepakken beží (Luk 27. 10.: Arendal, Kristiansand, Stavanger, Oslo, Trondheim, ~50 kr/deň) — report čt 29. 10. ráno, návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web sám · zmazať v Metricoole TikTok koncept Badepakken (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken sám → 349 spolu).
