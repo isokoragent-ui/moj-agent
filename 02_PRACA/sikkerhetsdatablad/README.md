@@ -22,3 +22,5 @@
 
 ## Ako nahrať na web
 stagedUploadsCreate (resource FILE, application/pdf) → curl POST súboru → fileCreate (contentType FILE) → počkať na READY a vziať `url` → záloha popisu do `02_PRACA/zalohy/` → productUpdate: na koniec descriptionHtml `<hr><h3>Sikkerhetsdatablad</h3><p>… <a href=URL target=_blank>Last ned sikkerhetsdatablad (PDF)</a></p>`.
+
+**Text na webe (Luk, 27. 10.):** bez „på norsk“ — web je nórsky, jazyk sa nepíše: „Sikkerhetsdatabladet (SDS) for <produkt> kan lastes ned her: Last ned sikkerhetsdatablad (PDF)“.
