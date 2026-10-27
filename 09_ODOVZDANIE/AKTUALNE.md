@@ -5,6 +5,7 @@
 **Naposledy:** 2026-10-27 13:03 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy (26.–27. 10.)
+- **Sikkerhetsdatablad Isokor Allrens for hjemmet** — SK originál (Univerzál koncentrát) = Baderomsrens → na webe, záloha `02_PRACA/zalohy/popis_Allrens_PRED_2026-10-27.html`. Spolu 14 kariet, 12 na webe. ⚠️ Popis Allrens obsahuje zdravotné tvrdenia („naturlig avgiftning“, „støtter immunforsvaret“, „trygg for å vaske egen hud“) — riziko u Forbrukertilsynet; Luk rozhodne, či upraviť.
 - **Sikkerhetsdatablad Isokor Glass Profi** — SK originál = Polisher (horľavý, UN 1219), iný len názov a UFI V310-W0NN-U00M-NFY1 → na webe pri „Isokor Glass Profi glassimpregnering“, záloha `02_PRACA/zalohy/popis_Glass_Profi_PRED_2026-10-27.html`. Spolu 13 kariet, 11 na webe.
 - **Sikkerhetsdatablad Isokor SWB** — SK originál = SW EKO (H319), iný len názov a UFI HR20-H0S6-P000-7Y1D → PDF hotové, **produkt v e-shope nie je** (na web nejde, kým ho Luk nepridá).
 - **Sikkerhetsdatablad Isokor WhiteWood** — SK originál = LMS (žieravý), iný len názov a UFI NY10-Y0JM-W00J-8VSR → PDF hotové v `02_PRACA/sikkerhetsdatablad/`, **na web nejde** (Luk ho v Nórsku zatiaľ nepredáva; keď príde do e-shopu, nahrať rovnako ako ostatné).

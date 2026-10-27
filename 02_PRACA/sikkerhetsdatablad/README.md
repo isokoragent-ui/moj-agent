@@ -2,6 +2,7 @@
 
 | Produkt | Súbor | Stav |
 |---|---|---|
+| Isokor Allrens for hjemmet (SK: Univerzál koncentrát / Cleaner Home) | `Isokor_Allrens_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · obsahovo = Baderomsrens (nie je nebezpečný), iný len názov |
 | Isokor Glass Profi → web „Isokor Glass Profi glassimpregnering“ | `Isokor_Glass_Profi_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · obsahovo = Polisher (horľavý, UN 1219), iný len názov a UFI |
 | Isokor SWB | `Isokor_SWB_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · **len do zásoby, produkt nie je v e-shope** · obsahovo = SW EKO (H319), iný len názov a UFI |
 | Isokor WhiteWood | `Isokor_WhiteWood_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · **len do zásoby, nie je na webe** (Luk ho zatiaľ v Nórsku nepredáva) · obsahovo = LMS (žieravý H314, UN 1760), iný len názov a UFI |
@@ -25,7 +26,7 @@
 - Slogan v logu: „vaske og beskytte“.
 
 ## Ako spraviť ďalšiu kartu
-1. Text → nový modul `zdroj/<produkt>.py` (PRODUCT, DATE, PAGES; jedna položka = jedna strana, stránkovanie ako originál; voliteľne EXTRA_CSS). Vzor: `baderomsrens.py` (nie nebezpečný), `sw_impregnering.py` (nebezpečný: piktogramy, zloženie, limity, ADR tabuľka), `sw_eko.py` (len H319, preberá CSS zo SW), `lms.py` (žieravý, 7 zložiek, DNEL/PNEC v dvoch stĺpcoch), `lmd.py` (= LMS, mení len názov a UFI), `sofarens.py` (= Baderomsrens, mení len názov), `polisher.py` (= SW, mení názov, použitie a UFI), `lotos_standard.py` (= SW, mení názov a UFI), `gravsteinrens.py` (= Baderomsrens, mení len názov), `whitewood.py` (= LMS, mení názov a UFI), `swb.py` (= SW EKO, mení názov a UFI), `glass_profi.py` (= Polisher, mení názov a UFI), `lotos_profi.py` (= SW EKO, ale neklasifikovaný – prepísané strany 1–4, 7, 9, 14).
+1. Text → nový modul `zdroj/<produkt>.py` (PRODUCT, DATE, PAGES; jedna položka = jedna strana, stránkovanie ako originál; voliteľne EXTRA_CSS). Vzor: `baderomsrens.py` (nie nebezpečný), `sw_impregnering.py` (nebezpečný: piktogramy, zloženie, limity, ADR tabuľka), `sw_eko.py` (len H319, preberá CSS zo SW), `lms.py` (žieravý, 7 zložiek, DNEL/PNEC v dvoch stĺpcoch), `lmd.py` (= LMS, mení len názov a UFI), `sofarens.py` (= Baderomsrens, mení len názov), `polisher.py` (= SW, mení názov, použitie a UFI), `lotos_standard.py` (= SW, mení názov a UFI), `gravsteinrens.py` (= Baderomsrens, mení len názov), `whitewood.py` (= LMS, mení názov a UFI), `swb.py` (= SW EKO, mení názov a UFI), `glass_profi.py` (= Polisher, mení názov a UFI), `allrens.py` (= Baderomsrens, mení len názov), `lotos_profi.py` (= SW EKO, ale neklasifikovaný – prepísané strany 1–4, 7, 9, 14).
 2. `cd zdroj && python3 build.py <produkt>` → `<produkt>.html`; potom `NODE_PATH=$(npm root -g) node render.js $PWD/<produkt>.html <výstup>.pdf` (HTML potom zmazať).
    Skript vypíše výšku obsahu každej strany (max 220 mm), ak niečo pretečie, dá strane červený rámik.
 3. Názov produktu a dátum sú v module (hlavička sa berie odtiaľ).
