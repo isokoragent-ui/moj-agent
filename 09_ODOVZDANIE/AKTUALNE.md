@@ -5,6 +5,7 @@
 **Naposledy:** 2026-10-27 13:03 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy (26.–27. 10.)
+- **Sikkerhetsdatablad Isokor Lotos Profi** — neklasifikovaný (izopropanol 5–<10 %, EUH210, bez UFI), inak ako SW EKO → na webe pri „Isokor Lotos Profi nanoimpregnering“, záloha `02_PRACA/zalohy/popis_Lotos_Profi_PRED_2026-10-27.html`. Spolu 9 kariet na webe.
 - **Sikkerhetsdatablad Isokor Lotos Standard** — SK originál = SW (horľavý, UN 1219), iný len názov a UFI 4K30-K0P5-Q00Y-UCV3 → na webe pri „Isokor Lotos Standard nanoimpregnering“; dve prázdne odseky na konci popisu nahradila sekcia Sikkerhetsdatablad. Záloha `02_PRACA/zalohy/popis_Lotos_Standard_PRED_2026-10-27.html`.
 - **Sikkerhetsdatablad Isokor Polisher** — SK originál zhodný so SW (izopropanol 70–100 %, H225/H319/H336, UN 1219), iné použitie a UFI CX00-W08V-700M-ASSW → na webe pri „Isokor Polish for blanke overflater“, záloha `02_PRACA/zalohy/popis_Polish_PRED_2026-10-27.html`.
 - **Sikkerhetsdatablad Isokor Sofarens** — SK originál (Na tepovanie) zhodný s Baderomsrens, iný len názov → na webe pri „Isokor Sofarens“, záloha `02_PRACA/zalohy/popis_Sofarens_PRED_2026-10-27.html`.
