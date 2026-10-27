@@ -5,6 +5,7 @@
 **Naposledy:** 2026-10-27 13:03 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy (26.–27. 10.)
+- **Sikkerhetsdatablad Isokor EcoNeutral (Anti Urine Cleaner)** — SK originál „Proti zápachu“ = Baderomsrens (nie je nebezpečný), iný len názov → na webe pri „Isokor EcoNeutral lukt- og flekkfjerner“ (Luk potvrdil priradenie), záloha `02_PRACA/zalohy/popis_EcoNeutral_PRED_2026-10-27.html`. Spolu 24 kariet, 20 na webe.
 - **Sikkerhetsdatablad Isokor Junior (Baby Cleaner)** — SK originál = Baderomsrens (nie je nebezpečný), iný len názov → PDF hotové, **produkt v e-shope nie je** — Luk 27. 10.: produkt má na sklade, do e-shopu ho pridá neskôr; potom kartu nahrať a pridať odkaz. Spolu 23 kariet, 19 na webe.
 - **Sikkerhetsdatablad Isokor Bilrens (Car Cleaner)** — SK originál = Baderomsrens (nie je nebezpečný), iný len názov; v origináli chýba nadpis oddielu 11 (ponechaný) → na webe pri „Isokor Bilrens“, záloha `02_PRACA/zalohy/popis_Bilrens_PRED_2026-10-27.html`. Spolu 22 kariet, 19 na webe.
 - **Sikkerhetsdatablad Isokor Fett- og flekkfjerner** — SK originál „Isokor Univerzál (Cleaner)“ = Baderomsrens (nie je nebezpečný), iný len názov → na webe pri „Isokor Fett- og flekkfjerner“ (popis ho volá „Isokor Cleaner“), záloha `02_PRACA/zalohy/popis_Fett_og_flekkfjerner_PRED_2026-10-27.html`. Spolu 21 kariet, 18 na webe.
