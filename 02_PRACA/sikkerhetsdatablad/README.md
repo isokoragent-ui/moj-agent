@@ -2,7 +2,7 @@
 
 | Produkt | Súbor | Stav |
 |---|---|---|
-| Isokor Baderomsrens (Bath Cleaner) | `Isokor_Baderomsrens_Sikkerhetsdatablad_NO.pdf` | ✅ NO verzia 1.0 · 27. 10. 2026 · čaká na nahratie na web (po Lukovom „áno“) |
+| Isokor Baderomsrens (Bath Cleaner) | `Isokor_Baderomsrens_Sikkerhetsdatablad_NO.pdf` | ✅ NO verzia 1.0 · 27. 10. 2026 · na webe od 27. 10. (odkaz na konci popisu produktu) |
 
 ## Čo sa menilo oproti SK originálu (`zdroj/original_SK_…pdf`)
 - Preklad do bokmålu podľa oficiálnej nórskej terminológie REACH/CLP (Avsnitt 1–16).
@@ -19,3 +19,6 @@
 3. Názov produktu a dátum sa menia v `build.py` (hlavička).
 
 **Pasce:** Playwright je len v Node (`require('playwright')`), nie v Pythone. Fonty Khand z GitHubu cez `raw.githubusercontent.com` (github.com/raw je blokovaný). Slogan je súčasť obrázka hlavičky → `logo.py`.
+
+## Ako nahrať na web
+stagedUploadsCreate (resource FILE, application/pdf) → curl POST súboru → fileCreate (contentType FILE) → počkať na READY a vziať `url` → záloha popisu do `02_PRACA/zalohy/` → productUpdate: na koniec descriptionHtml `<hr><h3>Sikkerhetsdatablad</h3><p>… <a href=URL target=_blank>Last ned sikkerhetsdatablad (PDF)</a></p>`.
