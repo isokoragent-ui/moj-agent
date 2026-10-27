@@ -14,7 +14,8 @@
 - **Príspevok „Nye priser i nettbutikken“** naplánovaný na **ut 27. 10. 12:00** (FB + IG, Metricool uuid -2680320050525026356).
 
 ## Nedokončené — pokračovať tu
-1. **Ut 27. 10. 12:15** — skontrolovať, či vyšiel „Nye priser“ (naplánovaná pripomienka v tejto relácii; v novom okne overiť ručne `getScheduledPosts`).
+1. ✅ **„Nye priser“ vyšiel 27. 10. 12:00** — FB https://facebook.com/122216737250920172/posts/122218346936920172 · IG https://www.instagram.com/p/De_tbYZDVfL/
+   - 📝 E-mail pre Smajliho (montér skla, návrh spolupráce) pripravený → `02_PRACA/emaily/2026-10-27_Smajli_samarbeid_glass.md`, čaká na Lukovu kontrolu; Luk odošle z lukas@; follow-up po 7 dňoch.
 2. ✅ Sponzorovanie Reelu Badepakken beží (Luk 27. 10.: Arendal, Kristiansand, Stavanger, Oslo, Trondheim, ~50 kr/deň) — report čt 29. 10. ráno, návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web sám · zmazať v Metricoole TikTok koncept Badepakken (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken sám → 349 spolu).
 3. 🍳 **Kuchynský balík** (Luk chce): Cleaner (= Fett- og flekkfjerner) + Fridge Cleaner (= Kjøleskapsrens) — grafika + produkt + príspevok ako pri Badepakken. Treba od Luka: **cena balíka** a **fotky oboch fliaš** (najlepšie s nórskymi nálepkami).
 4. **Marža:** chýba od Luka nákupná cena EcoNeutral 100 ml a súprav, reálna cena PostNord za balík. V tabuľke cien: Glass Profi (749) a Polisher 500 ml (1 099) sú lacnejšie než veľkoobchod s DPH — Luk opraví v tabuľke. Kurz 15 NOK/EUR — overiť, či kryje dopravu/clo.
@@ -46,4 +47,4 @@
 - Sprievodca pri štarte prepisuje počítadlo v `09_ODOVZDANIE/SPRIEVODCA.md` → commit do `main`.
 - Na konci okna VŽDY commit + push do `main`.
 
-ĎALŠÍ KROK: po 12:15 overiť príspevok „Nye priser“, potom kuchynský balík — vypýtať od Luka cenu a fotky fliaš.
+ĎALŠÍ KROK: Luk skontroluje e-mail pre Smajliho; ďalšie e-maily spolupracovníkom; kuchynský balík — cena a fotky fliaš.
