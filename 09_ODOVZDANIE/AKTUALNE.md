@@ -5,6 +5,7 @@
 **Naposledy:** 2026-10-27 13:03 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy (26.–27. 10.)
+- **Sikkerhetsdatablad Isokor Fasaderens (Facade Eko)** — SK originál = Baderomsrens (nie je nebezpečný), iný len názov → na webe pri „Isokor Fasaderens“ (nie Fasaderens Plus – to je FPC), záloha `02_PRACA/zalohy/popis_Fasaderens_PRED_2026-10-27.html`. Spolu 26 kariet, 22 na webe.
 - **Sikkerhetsdatablad Isokor EcoDescal** — SK originál „Odvápňovač (Eco Descal)“ = LMS (**žieravý H314, Fare, UN 1760**), UFI W120-G081-7002-X7CT → na webe pri „Isokor EcoDescal avkalker for vannkoker og kaffemaskin“, záloha `02_PRACA/zalohy/popis_EcoDescal_PRED_2026-10-27.html`. Spolu 25 kariet, 21 na webe.
 - **Sikkerhetsdatablad Isokor EcoNeutral (Anti Urine Cleaner)** — SK originál „Proti zápachu“ = Baderomsrens (nie je nebezpečný), iný len názov → na webe pri „Isokor EcoNeutral lukt- og flekkfjerner“ (Luk potvrdil priradenie), záloha `02_PRACA/zalohy/popis_EcoNeutral_PRED_2026-10-27.html`. Spolu 24 kariet, 20 na webe.
 - **Sikkerhetsdatablad Isokor Junior (Baby Cleaner)** — SK originál = Baderomsrens (nie je nebezpečný), iný len názov → PDF hotové, **produkt v e-shope nie je** — Luk 27. 10.: produkt má na sklade, do e-shopu ho pridá neskôr; potom kartu nahrať a pridať odkaz. Spolu 23 kariet, 19 na webe.
