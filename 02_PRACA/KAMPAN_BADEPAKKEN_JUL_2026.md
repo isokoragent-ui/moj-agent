@@ -30,3 +30,21 @@
 - ❌ TikTok: „image/png is not allowed, use image/jpeg/jpg/webp“ → JPEG pokus (Metricool uuid 758217148578547347) Luk zrušil — **na TikTok dá video ručne** (`02_PRACA/grafika/badepakken_jul_story.mp4`). Pokus prepnutý na koncept, nevyšiel (overené 00:18, žiadna publicUrl). Luk môže koncept zmazať v Plánovači.
 
 **Pasca:** TikTok fotopríspevok neberie PNG → do Metricoolu na TikTok vždy JPEG/WEBP.
+
+## Sponzorovanie — nastavil Luk 27. 10. 2026 (ručne v Instagrame)
+- Propaguje sa **video (Reel)** https://www.instagram.com/reel/De-bSHDImxV/ (zverejnené 26. 10. 23:12).
+- Mestá: Arendal, Kristiansand, Stavanger, Oslo, Trondheim · ~**50 kr/deň**.
+- Stav 27. 10. 11:30: organicky dosah 11, 14 prehratí; platené čísla v Metricoole zatiaľ prázdne (Meta Ads sa do Metricoolu synchronizujú s oneskorením).
+
+### Čo sledovať (poradie dôležitosti)
+1. Predaje Badepakken v Shopify (cieľ: ≥ 4 ks na 500 kr reklamy, marža ~160 kr/ks pred PostNordom)
+2. Kliky na odkaz / návštevy /products/badepakken (Shopify návštevy)
+3. Cena za klik a CTR (Metricool Meta Ads, Instagram Reels paid)
+4. Retencia videa (či ľudia dopozerajú do ceny v 9. sekunde)
+
+### Návrhy agenta (2026-10-27)
+- 3–4 dni nič nemeniť — každá úprava reklamy reštartuje učenie Meta.
+- Posielame do celého Nórska → 5 miest zbytočne zužuje publikum. Po 3 dňoch zvážiť celé Nórsko (alebo len Agder, ak chce Luk aj osobné doručenie).
+- Cieľ propagácie: „návštevy webu“ s odkazom na Badepakken, nie „návštevy profilu“.
+- Publikum: vek ~30–65, záujmy domácnosť/upratovanie/interiér; nezužovať viac.
+- Video je bez zvuku → pridať hudbu priamo v Instagrame.
