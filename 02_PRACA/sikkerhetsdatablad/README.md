@@ -2,7 +2,7 @@
 
 | Produkt | Súbor | Stav |
 |---|---|---|
-| Isokor Eko Profi (web: „Isokor EKO Profi flisimpregnering“) | `Isokor_Eko_Profi_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · **len na stiahnutie** (nahratie do Shopify Luk 27. 10. zamietol) · obsahovo = Lotos Profi (nie je klasifikovaný, bez UFI), iný len názov |
+| Isokor Eko Profi (web: „Isokor EKO Profi flisimpregnering“) | `Isokor_Eko_Profi_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. (najprv zamietnuté, potom Luk schválil) · obsahovo = Lotos Profi (nie je klasifikovaný, bez UFI), iný len názov |
 | Isokor FPC | `Isokor_FPC_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · **len na stiahnutie, na web zatiaľ nie** (Luk 27. 10.: „necháme na neskôr“; pravdepodobne = „Isokor Fasaderens Plus“ – H-vety v popise sedia, nepotvrdené) · **vlastný obsah, žieravý:** NaOH + KOH + chlórnan sodný, H290/H314 (Fare), pH 13–14, UN 3266 trieda 8, obalová skupina II · ⚠️ nórske limity v 8.1 (NaOH 2, KOH 2 mg/m³ T, chlór 0,5 ppm/1,5 mg/m³ T) zapísané bez overenia v Lovdata – overiť pred zverejnením |
 | Isokor FVP → web „Isokor FVP impregnering for solcellepaneler“ | `Isokor_FVP_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · obsahovo = SW/Polisher/Glass Profi (horľavý H225/H319/H336, UN 1219), iné len použitie „impregneringsmiddel“; **SK originál bez UFI** |
 | Isokor FVE → web „Isokor FVE solcellepanelrens“ | `Isokor_FVE_Sikkerhetsdatablad_NO.pdf` | ✅ NO 1.0 · 27. 10. 2026 · na webe od 27. 10. · **vlastný obsah:** Eye Dam. 1, H318 (Fare), GHS05 – originál mal chybne GHS07+GHS02, opravené; alkoholy C12-14 etoxylované 15–20 %; SK originál bez UFI; nie je nebezpečný tovar pri preprave |
