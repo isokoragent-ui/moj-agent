@@ -40,4 +40,6 @@ www.isokor-skandinavia.no
 - Veta o rukaviciach **vyhodená** (Luk 28. 10.: produkt je pri bežnom používaní jemný, označenie je kvôli zneužitiu — piť, do očí). Tvrdenia o bezpečnosti sa ale nepridávajú (označený výrobok — riziko pri kontrole reklamy).
 - Bez falošnej urgentnosti, bez emoji, bez odrážok (HLAS.md).
 - Baderomsrens zvýraznený (Luk 28. 10.): 100 % prírodný, rastlinné extrakty a oleje, V-Label (podľa popisu na webe). **„Antimikrobielle egenskaper“ zámerne nie** — tvrdenie o ničení mikróbov robí z čistiaceho prostriedku biocíd (povolenie Miljødirektoratet); použité „rengjør hygienisk“. Pri „100 % naturlig“ a V-Label mať po ruke doklad (certifikát V-Label zatiaľ nie je na webe).
+- **Obrázok:** Luk 28. 10. vložil kampaňový `badepakken_jul_square` — obsahuje cenu (349 kr, 397 kr, „du sparer 48 kr“) a „Antimikrobiell baderomsrens“. Agent upozornil, **Luk rozhodol: nechať** („držíme sa toho, čo dáva výrobca; uvidíme reakciu“). Pri ďalších e-mailoch netreba otvárať znova.
+- Odporúčania agenta: obrázok hore nad textom + klikateľný na produkt, alt text, tlačidlo pod textom, test na mobil pred naplánovaním.
 - Odhlásenie pridá Messaging sám.
