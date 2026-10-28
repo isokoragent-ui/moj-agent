@@ -5,6 +5,13 @@
 | Produkt | Súbory | Stav |
 |---|---|---|
 | Isokor Fett- og flekkfjerner 500 ml (SK: Cleaner) | `Isokor_Fett_og_flekkfjerner_500ml_etikett_NO.pdf` (tlač, spadávka 3 mm + orezové značky ako originál) · `…_NO.png` (300 dpi, čistý formát 210 × 140 mm, do Wordu) · `…_NO_A4_2ks.pdf` (2 ks na A4, 95 %, domáca tlač) | 🟡 návrh 28. 10. 2026 — čaká na Lukovu kontrolu |
+| Isokor EcoNeutral 500 ml (SK: Anti Urine Cleaner) | `Isokor_EcoNeutral_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — čaká na Lukovu kontrolu |
+
+### EcoNeutral — iný typ SK súboru (pozor pri ďalších)
+- SK PDF nie je vektorový originál ako Cleaner: **pozadie je obrázok 150 dpi v RGB**, texty sú písmo, názov v páse a odznaky „Prírodný produkt“ sú zapečené v obrázku, logo a čiarový kód sú znaky písma.
+- Riešenie v `econeutral_500ml.py`: texty sa mažú podľa polohy, pás sa pretrie farbou z obrázku a názov sa napíše znova, SK texty v odznakoch a zvyšky starého loga prekryté bielou, oblúkový nápis „NØYTRALISERER LUKT“ položený na kruh zmeraný z pôvodných písmen.
+- **Na veľkotlač si od výrobcu vypýtať vektorový originál (Illustrator/PDF ako pri Cleaneri)** — 150 dpi pozadie je na hrane, na domácu tlač stačí.
+- Zmeny proti SK: CAS 144-55-8 presunuté k natron (v origináli omylom pri pelargóniovom oleji); vynechaná nezmyselná zátvorka „(anti-kyanidíny)“. Tvrdenia „dermatologicky testovaný“ a „bezpečný pre človeka aj zvieratá“ ponechané (od výrobcu).
 
 ## Ako vzniká (`zdroj/etikett.py <modul>`)
 1. Z originálu sa **vektorovo vystrihnú** SK texty a staré logo (cesty ležiace celé v oblastiach `REGIONS`) — nič sa neprekrýva bielym, pozadie (šesťuholníky, fotky, ikony, čiarový kód) ostáva originál v CMYK.

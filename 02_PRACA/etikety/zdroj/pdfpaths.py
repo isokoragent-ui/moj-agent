@@ -1,10 +1,11 @@
+"""Ohraničenia kreslených ciest a pozície textov v obsahu PDF stránky (px pri 100 dpi, y zhora)."""
 import sys
 from pypdf import PdfReader
 from pypdf.generic import ContentStream
 H=462.487
 def mul(a,b):
     return [a[0]*b[0]+a[1]*b[2],a[0]*b[1]+a[1]*b[3],a[2]*b[0]+a[3]*b[2],a[2]*b[1]+a[3]*b[3],a[4]*b[0]+a[5]*b[2]+b[4],a[4]*b[1]+a[5]*b[3]+b[5]]
-def walk(ops):
+def walk(ops, H=H):
     """yield (index, op, fillcolor, bbox_px) for each painting op"""
     ctm=[1,0,0,1,0,0];col=None;stack=[];pts=[];start=None
     for i,(a,o) in enumerate(ops):
@@ -30,6 +31,17 @@ def walk(ops):
                 bb=(min(xs)/0.72,(H-max(ys))/0.72,max(xs)/0.72,(H-min(ys))/0.72)
                 yield (s,i,o,col,bb,a)
             pts=[];start=None
+def text_ops(ops, H=H):
+    """yield (index, (x_px, y_px)) pre každé Tj/TJ — pozícia počiatku textu (PDF, kde každý Tj má vlastný Tm)."""
+    ctm=[1,0,0,1,0,0]; st=[]; tm=[1,0,0,1,0,0]
+    for i,(a,o) in enumerate(ops):
+        if o==b'q': st.append(ctm)
+        elif o==b'Q': ctm=st.pop()
+        elif o==b'cm': ctm=mul([float(x) for x in a],ctm)
+        elif o==b'Tm': tm=[float(x) for x in a]
+        elif o in (b'Tj',b'TJ'):
+            m=mul(tm,ctm); yield i,(m[4]/0.72,(H-m[5])/0.72)
+
 if __name__=='__main__':
     r=PdfReader(sys.argv[1]);p=r.pages[0]
     ops=ContentStream(p.get_contents(),r).operations

@@ -1,13 +1,15 @@
-"""Nórska etiketa zo SK originálu: vektorovo vystrihne SK texty a staré logo, položí NO texty a nové logo.
+"""Nórska etiketa zo SK originálu: vystrihne SK texty a staré logo, položí NO texty a nové logo.
 
 Použitie:  python3 etikett.py fettfjerner_500ml
 Výstup do 02_PRACA/etikety/:  <OUT>.pdf (tlač: spadávka + orezové značky ako originál),
 <OUT>.png (300 dpi, orezané na čistý formát — do Wordu), <OUT>_A4_2ks.pdf (2 etikety na A4 na domácu tlač).
+
+Rozloženie (súradnice v px na náhľade 100 dpi, y zhora) je v LAYOUT; modul produktu prepíše, čo má inak (m.LAYOUT).
 """
-import importlib, io, os, subprocess, sys
+import importlib, io, math, os, subprocess, sys
 from pypdf import PdfReader, PdfWriter, Transformation
 from pypdf.generic import (ContentStream, DecodedStreamObject, NameObject, ArrayObject,
-                           FloatObject, DictionaryObject, NumberObject)
+                           FloatObject, DictionaryObject)
 from reportlab.pdfgen import canvas
 from reportlab.lib.colors import CMYKColor
 from reportlab.lib.styles import ParagraphStyle
@@ -15,7 +17,7 @@ from reportlab.lib.enums import TA_JUSTIFY
 from reportlab.platypus import Paragraph, Frame
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from pdfpaths import walk
+from pdfpaths import walk, text_ops
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUTDIR = os.path.dirname(HERE)
@@ -24,36 +26,54 @@ for w in ('Regular', 'Medium', 'SemiBold', 'Bold'):
     pdfmetrics.registerFont(TTFont('Khand-' + w, KHAND.format(w)))
 pdfmetrics.registerFont(TTFont('Arial-Bold', '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf'))
 
-GREEN = CMYKColor(0.48, 0.05, 0.99, 0)     # zelená pásu a nápisov z originálu
+GREEN = CMYKColor(0.48, 0.05, 0.99, 0)     # zelená pásu a nápisov z originálu Cleaner
 BLACK = CMYKColor(0, 0, 0, 1)
 WHITE = CMYKColor(0, 0, 0, 0)
 
-W, H = 660.947, 462.487                    # MediaBox originálu (TrimBox 33..627.9 × 33..429.5)
+W, H = 660.947, 462.487                    # MediaBox originálu; build() prepíše podľa zdroja
 def X(px): return px * 0.72                # súradnice merané na náhľade 100 dpi
 def Y(px): return H - px * 0.72
 
-# Čo sa z originálu vystrihne (px pri 100 dpi, y zhora). Maže sa len to, čo leží CELÉ vnútri.
-REGIONS = {
-    'text':    (460, 60, 848, 400),
-    'text2':   (460, 390, 700, 452),
-    'logo':    (296, 96, 446, 140),
-    'nazov':   (130, 183, 400, 258),
-    'eko':     (320, 344, 453, 432),
-    'vyrobca': (478, 503, 650, 592),
-    'odznak':  (725, 470, 761, 502),
+# Predvolené rozloženie = Cleaner 500 ml (vektorový originál, texty v krivkách)
+LAYOUT = {
+    # čo sa z originálu vystrihne; maže sa len to, čo leží CELÉ vnútri (texty: počiatok riadku)
+    'regions': {
+        'text':    (460, 60, 848, 400),
+        'text2':   (460, 390, 700, 452),
+        'logo':    (296, 96, 446, 140),
+        'nazov':   (130, 183, 400, 258),
+        'eko':     (320, 344, 453, 432),
+        'vyrobca': (478, 503, 650, 592),
+        'odznak':  (725, 470, 761, 502),
+    },
+    'masks': [],                           # biele obdĺžniky (px) — na texty zapečené v obrázku
+    'green': GREEN,
+    'band': (75, 181, 448, 255),           # zelený pás s názvom
+    'band_fill': None,                     # farba na pretretie pásu, keď je názov zapečený v obrázku
+    'claims': (451, (358, 379, 400), 'Khand-Regular', 11.5),   # pravý okraj, účiaria, písmo, veľkosť
+    'badges': [(728, 759, (479.5, 488), 5.2)],  # odznak NATURLIG PRODUKT: ľavý/pravý okraj textu, účiaria, max. písmo
+    'body': (465, 842, 63, 398),           # x0, x1, horný okraj, spodná hranica
+    'producer': (527, 515),                # ľavý okraj, prvé účiarie
+    'logo': (372, 140, 118),               # stred x, spodok, šírka v pt
+    'icon': (487, 555, 32),                # ľavý okraj, spodok, výška v pt
+    'arc': None,                           # nápis po oblúku (odznak „neutralizuje zápach“)
 }
 
-def strip(page, writer):
+def strip(page, writer, regions):
     cs = ContentStream(page.get_contents(), writer)
     ops = cs.operations
     drop, hits = set(), {}
     inside = lambda b, r: b[0] >= r[0] and b[1] >= r[1] and b[2] <= r[2] and b[3] <= r[3]
-    for s, i, o, col, bb, a in walk(ops):
+    for s, i, o, col, bb, a in walk(ops, H):
         if o == b'n':
             continue
-        for name, reg in REGIONS.items():
+        for name, reg in regions.items():
             if inside(bb, reg):
                 drop.update(range(s, i + 1)); hits[name] = hits.get(name, 0) + 1; break
+    for i, (x, y) in text_ops(ops, H):
+        for name, reg in regions.items():
+            if inside((x, y, x, y), reg):
+                drop.add(i); hits[name] = hits.get(name, 0) + 1; break
     cs.operations = [op for k, op in enumerate(ops) if k not in drop]
     page.replace_contents(cs)
     return hits
@@ -79,15 +99,49 @@ def para(text_pairs, size):
     html = ' '.join('<font name="Khand-Bold">{}</font> {}'.format(h, t) for h, t in text_pairs)
     return Paragraph(html, st)
 
-def overlay(m):
+def arc_text(c, L, text, color):
+    """Text po spodnom oblúku (vrchy písmen do stredu), pod ním biely pás, ktorý zakryje starý nápis."""
+    cx, cy, r, span, mask_w = L                # stred a polomer stredu písmen v px, rozpätie nápisu v °, šírka masky px
+    cxp, cyp, rp = X(cx), Y(cy), r * 0.72
+    c.saveState()
+    c.setStrokeColor(WHITE); c.setLineWidth(mask_w * 0.72); c.setLineCap(1)
+    p = c.beginPath(); p.arc(cxp - rp, cyp - rp, cxp + rp, cyp + rp, startAng=-178, extent=176)
+    c.drawPath(p, stroke=1, fill=0)
+    font = 'Khand-Bold'
+    size = 3.0
+    while pdfmetrics.stringWidth(text, font, size + 0.1) / (rp + (size + 0.1) * 0.35) < math.radians(span):
+        size += 0.1
+    cap = size * 0.70
+    rb = rp + cap / 2                          # účiarie je na vonkajšej strane
+    total = pdfmetrics.stringWidth(text, font, size) / rb
+    ang = -math.pi / 2 - total / 2
+    c.setFillColor(color); c.setFont(font, size)
+    for ch in text:
+        cw = pdfmetrics.stringWidth(ch, font, size) / rb
+        a = ang + cw / 2
+        c.saveState()
+        c.translate(cxp + rb * math.cos(a), cyp + rb * math.sin(a)); c.rotate(math.degrees(a) + 90)
+        c.drawCentredString(0, 0, ch)
+        c.restoreState()
+        ang += cw
+    c.restoreState()
+
+def overlay(m, L):
     buf = io.BytesIO()
     c = canvas.Canvas(buf, pagesize=(W, H))
+    green = L['green']
 
-    # 1) Názov v zelenom páse (pás: px 75–448 × 181–255), biele písmo, na stred
-    cx, top, bot = X(261.5), Y(181), Y(255)
+    for x0, y0, x1, y1 in L['masks']:
+        c.setFillColor(WHITE); c.rect(X(x0), Y(y1), X(x1 - x0), X(y1 - y0), stroke=0, fill=1)
+
+    # 1) Názov v zelenom páse, biele písmo, na stred
+    bx0, by0, bx1, by1 = L['band']
+    if L['band_fill'] is not None:
+        c.setFillColor(L['band_fill']); c.rect(X(bx0), Y(by1), X(bx1 - bx0), X(by1 - by0), stroke=0, fill=1)
+    cx, top, bot = X((bx0 + bx1) / 2), Y(by0), Y(by1)
     n = len(m.TITLE)
     size = 34 if n == 1 else 25
-    while max(pdfmetrics.stringWidth(t, 'Khand-Bold', size) for t in m.TITLE) > X(448 - 75) - 30:
+    while max(pdfmetrics.stringWidth(t, 'Khand-Bold', size) for t in m.TITLE) > X(bx1 - bx0) - 30:
         size -= 0.5
     cap = size * 0.70; gap = size * 0.22
     block = n * cap + (n - 1) * gap
@@ -96,20 +150,25 @@ def overlay(m):
     for t in m.TITLE:
         c.setFont('Khand-Bold', size); c.drawCentredString(cx, y, t); y -= cap + gap
 
-    # 2) Tvrdenia pod BIO, zarovnané doprava ako originál
-    c.setFillColor(GREEN)
-    for t, py in zip(m.CLAIMS, (358, 379, 400)):
-        c.setFont('Khand-Regular', 11.5); c.drawRightString(X(451), Y(py), t)
+    # 2) Tvrdenia / podnadpis pod pásom, zarovnané doprava ako originál
+    rx, ys, font, fs = L['claims']
+    c.setFillColor(green)
+    for t, py in zip(m.CLAIMS, ys):
+        c.setFont(font, fs); c.drawRightString(X(rx), Y(py), t)
 
-    # 3) Odznak „naturlig produkt“
-    for t, py in zip(m.BADGE, (479.5, 488)):
-        fs = 5.2
-        while pdfmetrics.stringWidth(m.BADGE[0], 'Arial-Bold', fs) > X(759 - 728):
+    # 3) Odznaky „naturlig produkt“
+    for x0, x1, ys, fs in L['badges']:
+        while pdfmetrics.stringWidth(m.BADGE[0], 'Arial-Bold', fs) > X(x1 - x0):
             fs -= 0.1
-        c.setFont('Arial-Bold', fs); c.drawString(X(728), Y(py), t)
+        for t, py in zip(m.BADGE, ys):
+            c.setFont('Arial-Bold', fs); c.drawString(X(x0), Y(py), t)
+
+    if L['arc']:
+        arc_text(c, L['arc'], m.ARC, green)
 
     # 4) Hlavný text — veľkosť písma sa prispôsobí, aby blok sedel nad ikonami
-    fx, fw, ftop, fbot = X(465), X(842) - X(465), Y(63), Y(398)
+    x0, x1, t0, b0 = L['body']
+    fx, fw, ftop, fbot = X(x0), X(x1) - X(x0), Y(t0), Y(b0)
     for size in [x / 10 for x in range(80, 55, -1)]:
         p = para(m.BODY, size)
         _, h = p.wrap(fw, 10000)
@@ -125,7 +184,8 @@ def overlay(m):
     body_size = size
 
     # 5) Dovozca (namiesto slovenského výrobcu); vľavo ikona nového loga
-    tx, y = X(527), Y(515)
+    px, py = L['producer']
+    tx, y = X(px), Y(py)
     c.setFillColor(BLACK)
     c.setFont('Khand-Bold', 7.2); c.drawString(tx, y, m.PRODUCER['head']); y -= 8.4
     for i, t in enumerate(m.PRODUCER['lines']):
@@ -136,12 +196,16 @@ def overlay(m):
     return PdfReader(buf).pages[0], body_size
 
 def build(name):
+    global W, H
     m = importlib.import_module(name)
+    L = dict(LAYOUT, **getattr(m, 'LAYOUT', {}))
     w = PdfWriter()
     w.append(PdfReader(os.path.join(HERE, m.SOURCE)))
     page = w.pages[0]
-    hits = strip(page, w)
-    ov, body_size = overlay(m)
+    W, H = float(page.mediabox.width), float(page.mediabox.height)
+    trim = [float(v) for v in page.trimbox]
+    hits = strip(page, w, L['regions'])
+    ov, body_size = overlay(m, L)
     page.merge_page(ov)
 
     # Logá: celé logo hore (namiesto starého), ikona pri dovozcovi
@@ -149,10 +213,12 @@ def build(name):
     icon = logo_form(w, [-1, -1, 212, 238.57])
     xo = page['/Resources'].setdefault(NameObject('/XObject'), DictionaryObject())
     xo[NameObject('/IsoLogo')] = full; xo[NameObject('/IsoIcon')] = icon
-    s_top = 118 / 585.38                     # šírka loga hore 118 pt
-    lx = X(372) - 585.38 * s_top / 2; ly = Y(140)
-    s_ic = 32 / 238.57                       # ikona vysoká 32 pt
-    ix, iy = X(487), Y(555)
+    lcx, lbot, lw = L['logo']
+    s_top = lw / 585.38
+    lx = X(lcx) - 585.38 * s_top / 2; ly = Y(lbot)
+    ix0, ibot, ih = L['icon']
+    s_ic = ih / 238.57
+    ix, iy = X(ix0), Y(ibot)
     cs = ContentStream(page.get_contents(), w)
     extra = ('q {s} 0 0 {s} {x} {y} cm /IsoLogo Do Q q {t} 0 0 {t} {ix} {iy} cm /IsoIcon Do Q'
              .format(s=s_top, x=lx, y=ly, t=s_ic, ix=ix, iy=iy))
@@ -164,31 +230,31 @@ def build(name):
     with open(pdf, 'wb') as f:
         w.write(f)
 
-    # PNG 300 dpi orezané na TrimBox (33 pt z každej strany) — na Word
+    # PNG 300 dpi orezané na TrimBox — na Word
     png = os.path.join(OUTDIR, m.OUT)
-    subprocess.run(['pdftoppm', '-r', '300', '-png', '-singlefile', '-x', str(round(33 / 72 * 300)),
-                    '-y', str(round(33 / 72 * 300)), '-W', str(round(594.947 / 72 * 300)),
-                    '-H', str(round(396.487 / 72 * 300)), pdf, png], check=True)
-    a4(pdf, os.path.join(OUTDIR, m.OUT + '_A4_2ks.pdf'))
+    d = lambda v: str(round(v / 72 * 300))
+    subprocess.run(['pdftoppm', '-r', '300', '-png', '-singlefile', '-x', d(trim[0]), '-y', d(H - trim[3]),
+                    '-W', d(trim[2] - trim[0]), '-H', d(trim[3] - trim[1]), pdf, png], check=True)
+    a4(pdf, os.path.join(OUTDIR, m.OUT + '_A4_2ks.pdf'), trim)
     print('vystrihnuté:', hits, '| písmo textu', body_size, 'pt')
     print(pdf); print(png + '.png')
 
 def _stream(data):
     s = DecodedStreamObject(); s.set_data(data); return s
 
-def a4(src, dst):
+def a4(src, dst, trim):
     """Dve etikety pod sebou na A4, zmenšené na 95 % (domáca tlačiareň netlačí do kraja), s orezovými značkami."""
     A4W, A4H = 595.276, 841.89
     sc = 0.95
-    tw, th = 594.947 * sc, 396.487 * sc       # čistý formát po zmenšení
+    tw, th = (trim[2] - trim[0]) * sc, (trim[3] - trim[1]) * sc   # čistý formát po zmenšení
     w = PdfWriter(); out = w.add_blank_page(A4W, A4H)
     x0 = (A4W - tw) / 2
     gap = (A4H - 2 * th) / 3
     for k in range(2):
         y0 = A4H - gap - th - k * (th + gap)
         lab = PdfReader(src).pages[0]
-        lab.mediabox.lower_left = (33, 33); lab.mediabox.upper_right = (627.947, 429.487)
-        out.merge_transformed_page(lab, Transformation().translate(-33, -33).scale(sc).translate(x0, y0))
+        lab.mediabox.lower_left = (trim[0], trim[1]); lab.mediabox.upper_right = (trim[2], trim[3])
+        out.merge_transformed_page(lab, Transformation().translate(-trim[0], -trim[1]).scale(sc).translate(x0, y0))
     buf = io.BytesIO(); c = canvas.Canvas(buf, pagesize=(A4W, A4H)); c.setLineWidth(0.3)
     for k in range(2):
         y0 = A4H - gap - th - k * (th + gap)
