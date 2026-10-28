@@ -2,19 +2,13 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-27 23:18 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
+**Naposledy:** 2026-10-28 21:18 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
-## Hotové naposledy (26.–27. 10.)
-- **Sikkerhetsdatablady (bezpečnostné karty) — Luk 27. 10.: „uzavrieme, zatiaľ ukončené“.** 31 kariet preložených do nórčiny v dizajne Isokor, **27 na webe** (odkaz „Last ned sikkerhetsdatablad (PDF)“ na konci popisu produktu, pred každou zmenou záloha popisu v `02_PRACA/zalohy/`). Prehľad všetkých kariet, odchýlok od originálov a pascí: **`02_PRACA/sikkerhetsdatablad/README.md`**.
-  - Len na stiahnutie (nie na webe): **WhiteWood**, **SWB** (produkty nie sú v e-shope), **Junior (Baby Cleaner)** (na sklade, do e-shopu neskôr), **FPC** (samostatný produkt, Luk: len preklad).
-  - Kontrola e-shopu (34 produktov): **bez karty** GreenGuard 100 ml, Multi Steinrens 5 l, Peisglassrens (treba SK originál od výrobcu); balíčky Badepakken, Baderomssett, Feriepakken (koncept) majú karty zložiek, odkaz na stránke balíčka nie je — Luk: „je to v poriadku“. Gravsteinvask = služba, karta netreba.
-  - Nový postup overovania popisu: SHA-256 `digest` z `translatableResource` (presná zhoda znak po znaku, aj `&nbsp;`) — v README.
-  - Oprava vlastnej chyby: Møbelrens PDF mylne uvádzal „doplnený 1.1“ → PDF vymenené, odkaz aktualizovaný.
-  - EcoDescal: analýza `02_PRACA/ANALYZA_EcoDescal_2026-10-27.md`; **Luk rozhodol: popis bez zmeny** → `08_ROZHODNUTIA/2026-10-27_EcoDescal_popis_bez_zmeny.md` (tému znova neotvárať bez novej informácie).
-- **Gmail upratný:** 21 konverzácií do koša (Luk schválil). Pravidlo: Mittanbud denné prehľady mazať; návody Metricoolu ostávajú.
-- **Web:** menu bez Vårt Magasin a For profesjonelle, Om oss zverejnená, org. č. **922 112 975 = Isokor Skandinavia AS**, galéria kameňov preč.
-- **Ceny + doprava:** fľaša 149 kr; doprava 99 kr · 49 kr od 400 kr · 0 od 700 kr → `08_ROZHODNUTIA/2026-10-26_ceny_a_doprava_spat_na_povodny_model.md`.
-- **Badepakken** zverejnený (349 kr vrátane dopravy), kampaň „Julen starter med et rent bad“ vyšla 26. 10.; **„Nye priser“** vyšiel 27. 10. 12:00 (FB + IG).
+## Hotové naposledy
+- **28. 10. — E-mail marketing spustený:** nástroj Shopify Messaging (WorkflowMail nie), 1× týždenne v nedeľu 9:30 → `08_ROZHODNUTIA/2026-10-28_email_marketing_nedela.md`. **Nyhetsbrev č. 1 „Julen starter med et rent bad“ (Badepakken) NAPLÁNOVANÝ na ne 1. 11. 9:30**, 23 príjemcov (segment „Nyhetsbrev – kunder med kjøp“); test OK (odkazy, alt text, odhlásenie). Postup: `07_SCHEMY/NEDELNY_EMAIL.md`.
+- **28. 10. — Doména odosielateľa overená:** na One.com doplnených 5 chýbajúcich CNAME (6/6) → Shopify „Autentisert“ 21:08; skutočný e-mail: SPF/DKIM/DMARC pass (p=REJECT) → `07_SCHEMY/OVERENIE_DOMENY_EMAIL.md`. DNS je na One.com (Luk), zapísané v `05_PRISTUPY/REGISTER_PRISTUPOV.md`.
+- **28. 10. — Kontrola e-shopu** po „jesennom upgrade“ Shopify: bez zmien (zoznam aplikácií a kanálov ako základ v denníku). Prompt shop.com/skill.md Luk odložil („nie je to teraz dôležité“).
+- **26.–27. 10.:** bezpečnostné karty uzavreté (31 kariet, 27 na webe → `02_PRACA/sikkerhetsdatablad/README.md`); EcoDescal popis bez zmeny (rozhodnutie, neotvárať); Gmail upratný; menu webu, Om oss, org. č. 922 112 975; ceny 149 kr + doprava 99/49/0; Badepakken 349 kr vrátane dopravy + kampaň; „Nye priser“ 27. 10.
 
 ## Nedokončené — pokračovať tu
 1. **Sikkerhetsdatablady — zvyšok (keď Luk pošle SK PDF):** GreenGuard 100 ml (⚠️ odpudzovač hmyzu = pravdepodobne **biocíd**, v Nórsku povolenie Miljødirektoratet — overiť skôr, než sa ho bude predávať viac; 284 ks na sklade), Multi Steinrens 5 l, Peisglassrens. Junior → na web, keď ho Luk pridá do e-shopu. Postup: `02_PRACA/sikkerhetsdatablad/README.md`.
@@ -35,7 +29,10 @@
 13. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0.
 14. #1027 (248 NOK) — Luk označí ako zaplatené; potom overiť.
 15. Google firemný profil — overiť vyplnenie (adresa, hodiny, fotky).
-16. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
+16. 📧 **E-mail marketing** — Messaging, 1× týždenne v ne 9:30 (`08_ROZHODNUTIA/2026-10-28_email_marketing_nedela.md`, postup `07_SCHEMY/NEDELNY_EMAIL.md`). **Nyhetsbrev č. 1 naplánovaný na ne 1. 11. 9:30** (23 príjemcov, test OK). Doména overená, SPF/DKIM/DMARC pass. Ďalej: **po 2. 11. výsledky** (otvorenia/kliky/predaje vs. júl 70 %) · **do št 5. 11. text č. 2**. Nízka priorita: štandardný TXT koreňa domény na One.com je vypnutý (možno SPF pre poštu z lukas@/info@) — overiť hlavičkou e-mailu odoslaného z One.com; pri DMARC p=REJECT dôležité.
+17. **Lovable** — Luk 28. 10.: nainštaloval na odporúčanie, **nepoužíva**, nevie na čo je. Má zápis do produktov, zliav, skladu a publikovania + vlastný predajný kanál. Agent odporučil odinštalovať (najužšie oprávnenie, KÓD #3) — **Luk súhlasí, odinštaluje sám ručne** (Nastavenia → Aplikácie → Lovable). **Agent potom overí** cez API (`appInstallations` + `publications`), že zmizla aplikácia aj kanál Lovable.
+18. 💡 **Messaging automatizácie:** „Vi har lagret handlekurven din“ a „Fullfør bestillingen din“ (opustený košík) sú len **návrhy** — zapnutie = predaj navyše bez práce. Navrhnúť Lukovi po prvom nyhetsbreve.
+19. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
 
 ## Pozor (čo by ďalšieho vypálilo)
 - **Prepis popisu produktu:** productUpdate prepíše celý text → vždy over kandidáta aj výsledok cez SHA-256 `digest` (`translatableResource` → `body_html`); `&nbsp;` vo výstupe vyzerá ako medzera. Výmena PDF cez `fileUpdate` mení `?v=` → upraviť aj odkaz.
@@ -49,6 +46,10 @@
 - Gmail konektor nevie stiahnuť prílohy. Mazanie pošty len po „áno“; dopyty klientov nemazať.
 - Kalendár je v UTC; udalosti zadávať s pásmom Europe/Oslo.
 - Sikkerhetsdatablad na webe: bez „på norsk“.
-- Na konci okna VŽDY commit + push do `main`.
+- **Messaging nemá API na kampane** — agent vie len segmenty (`segmentCreate`) a čítať zákazníkov; e-mail zadáva Luk podľa `07_SCHEMY/NEDELNY_EMAIL.md`. `customersCount(query:)` ignoruje filter súhlasu → počty cez `customerSegmentMembers`.
+- **DMARC p=REJECT:** každá nová služba posielajúca ako @isokor-skandinavia.no potrebuje vlastné overenie domény, inak e-maily odmietnu.
+- Shopify `updatedAt` produktov je posunutý o +12 h oproti skutočnosti (poradie sedí) — pri porovnávaní „čo sa zmenilo“ nepanikáriť.
+- `shop.com`, `cloudflare-dns.com` z cloudu blokované; DNS čítať cez hlavičky e-mailu (Gmail RAW).
+- Na konci okna VŽDY commit + push do `main` (z cloudu: vetva → PR → zlúčiť, Luk to schválil 28. 10.).
 
-ĎALŠÍ KROK: Luk skontroluje e-mail pre Smajliho; vo štvrtok 29. 10. ráno report sponzorovaného Reelu Badepakken.
+ĎALŠÍ KROK: št 29. 10. ráno report sponzorovaného Reelu Badepakken; potom do št 5. 11. text nyhetsbrevu č. 2 a po 2. 11. výsledky nyhetsbrevu č. 1.
