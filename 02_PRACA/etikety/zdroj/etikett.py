@@ -62,7 +62,8 @@ LAYOUT = {
     'arc': None,                           # nápis po oblúku (odznak „neutralizuje zápach“)
     'clp': None,                           # výstražné údaje CLP pod textom: (x0, x1, spodná hranica) px
     'a4_scale': 0.95,                      # zmenšenie na A4 (etiketa 210 mm sa do kraja nevytlačí)
-    'photos': [],                          # náhrada fotiek: (súbor 300 dpi, výrez px, šesťuholník originálu px)
+    'photos': [],
+    'texts': [],                           # ďalšie nápisy: (text, x, y účiaria px, písmo, pt, farba, 'l'|'c'|'r')                          # náhrada fotiek: (súbor 300 dpi, výrez px, šesťuholník originálu px)
 }
 
 def strip(page, writer, regions):
@@ -187,6 +188,10 @@ def overlay(m, L):
 
     if L['arc']:
         arc_text(c, L['arc'], m.ARC, green)
+
+    for t, tx_, ty_, font, fs, col, al in L['texts']:
+        c.setFillColor(col); c.setFont(font, fs)
+        {'l': c.drawString, 'c': c.drawCentredString, 'r': c.drawRightString}[al](X(tx_), Y(ty_), t)
 
     # 4) Hlavný text — veľkosť písma sa prispôsobí, aby blok sedel nad ikonami
     x0, x1, t0, b0 = L['body']
