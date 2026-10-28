@@ -35,7 +35,8 @@
 13. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0.
 14. #1027 (248 NOK) — Luk označí ako zaplatené; potom overiť.
 15. Google firemný profil — overiť vyplnenie (adresa, hodiny, fotky).
-16. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
+16. 📧 **E-mail marketing** (Luk 28. 10.: posielať e-maily existujúcim zákazníkom) → analýza `02_PRACA/EMAIL_MARKETING_ANALYZA_2026-10-28.md`: nástroj **Messaging**, nie WorkflowMail; 23 kupujúcich so súhlasom (29 spolu). Čaká: overenie domény odosielateľa, Lukova voľba frekvencie, prvý text.
+17. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
 
 ## Pozor (čo by ďalšieho vypálilo)
 - **Prepis popisu produktu:** productUpdate prepíše celý text → vždy over kandidáta aj výsledok cez SHA-256 `digest` (`translatableResource` → `body_html`); `&nbsp;` vo výstupe vyzerá ako medzera. Výmena PDF cez `fileUpdate` mení `?v=` → upraviť aj odkaz.
