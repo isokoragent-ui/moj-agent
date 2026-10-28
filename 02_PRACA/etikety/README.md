@@ -15,6 +15,7 @@
 | Isokor Bilrens 500 ml (SK: Car Cleaner) | `Isokor_Bilrens_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — odznaky GIR GLANS, EFFEKTIV, NATURLIG PRODUKT |
 | Isokor Clinic 500 ml (SK: Cleaner Clinic) | `Isokor_Clinic_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — tvrdenia + „testet av SUJCHBO, V.V.I., nr. 56/2015/LTL“ ako originál |
 | Isokor Allrens for hjemmet 500 ml (SK: Cleaner Home) | `Isokor_Allrens_for_hjemmet_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — názov v páse na 2 riadky |
+| Isokor Kalkfjerner for bad 500 ml (SK: LM Descaling) | `Isokor_Kalkfjerner_for_bad_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — **žieravý (H314)**: doplnené CLP (FARE, Inneholder: melkesyre, H314, P102/P260/P280/P301+P330+P331/P305+P351+P338/P310/P501, UFI) z karty LMD; odznaky UTEN BØRSTING, EFFEKTIV RENGJØRING |
 
 ### EcoNeutral — iný typ SK súboru (pozor pri ďalších)
 - SK PDF nie je vektorový originál ako Cleaner: **pozadie je obrázok 150 dpi v RGB**, texty sú písmo, názov v páse a odznaky „Prírodný produkt“ sú zapečené v obrázku, logo a čiarový kód sú znaky písma.
@@ -47,6 +48,11 @@
 - Odporúčanie „Isokor Cleaner“ → „Isokor Fett- og flekkfjerner“ (nórsky názov). Ikony „eco friendly“ a „fog stop“ ostali po anglicky (grafika výrobcu).
 - **Piktogram GHS07 je menší, než chce CLP** (min. 10 × 10 mm): 250/500 ml má stranu kosoštvorca ~8,4 mm, 100 ml ~5,9 mm — tak je to už v SK origináli. **Luk 28. 10.: necháva podľa výrobcu** (nezväčšovať, neotvárať znova).
 - Dovozca bez org. č. a „Produsert i EU“ — na malej etikete by adresa narazila do čiarového kódu; povinné je meno, adresa a telefón.
+
+### Kalkfjerner — poznámky
+- SK text píše, že pri styku s pokožkou „spôsobuje mierne podráždenie“, ale výrobok je podľa karty žieravý (H314). Preložené verne (pravidlo len preklad); CLP blok pod textom uvádza správnu klasifikáciu.
+- Žieravé výrobky pre spotrebiteľov musia mať podľa CLP aj uzáver odolný proti otvoreniu deťmi a hmatové výstražné označenie — týka sa fľaše, nie etikety; overiť u výrobcu.
+- CLP blok je od 28. 10. zarovnaný vľavo (aj Antidugg) — pri zarovnaní do bloku vznikali diery.
 
 ## Otvorené (Luk rozhodne / overí)
 *Logá, názvy, V-label, čiarový kód a ostatné licencie výrobcu sú vybavené dohodou → `08_ROZHODNUTIA/2026-10-28_vyrobca_prava_znacky.md`.*

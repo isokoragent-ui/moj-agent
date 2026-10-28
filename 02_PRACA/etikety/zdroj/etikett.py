@@ -15,7 +15,7 @@ from pypdf.generic import (ContentStream, DecodedStreamObject, NameObject, Array
 from reportlab.pdfgen import canvas
 from reportlab.lib.colors import CMYKColor
 from reportlab.lib.styles import ParagraphStyle
-from reportlab.lib.enums import TA_JUSTIFY
+from reportlab.lib.enums import TA_JUSTIFY, TA_LEFT
 from reportlab.platypus import Paragraph, Frame
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -100,9 +100,9 @@ def logo_form(writer, bbox):
                  NameObject('/Resources'): p['/Resources'].clone(writer)})
     return writer._add_object(form)
 
-def para(text_pairs, size):
+def para(text_pairs, size, align=TA_JUSTIFY):
     st = ParagraphStyle('b', fontName='Khand-Regular', fontSize=size, leading=size * 1.18,
-                        alignment=TA_JUSTIFY, textColor=BLACK)
+                        alignment=align, textColor=BLACK)
     html = ' '.join('<font name="Khand-Bold">{}</font> {}'.format(h, t) for h, t in text_pairs)
     return Paragraph(html, st)
 
@@ -200,7 +200,7 @@ def overlay(m, L):
         p = para(m.BODY, size)
         _, h = p.wrap(fw, 10000)
         if L['clp']:                           # text aj CLP blok musia spolu sedieť nad spodnou hranicou CLP
-            _, ch = para(m.CLP, size).wrap(X(L['clp'][1]) - X(L['clp'][0]), 10000)
+            _, ch = para(m.CLP, size, TA_LEFT).wrap(X(L['clp'][1]) - X(L['clp'][0]), 10000)
             if h + 4 + size * 1.35 + len(m.FOOT) * size * 1.2 + ch + 6 > ftop - Y(L['clp'][2]):
                 continue
         if h <= ftop - fbot:
@@ -219,7 +219,7 @@ def overlay(m, L):
         cx0, cx1, cb = L['clp']
         ctop = y + size * 0.5 - 6           # horný okraj rámu ~ účiarie ďalšieho riadku + medzera
         for cs_ in [x / 10 for x in range(int(size * 10), 44, -1)]:
-            cp = para(m.CLP, cs_)
+            cp = para(m.CLP, cs_, TA_LEFT)       # H/P vety zarovnané vľavo — pri zarovnaní do bloku vznikali diery
             _, ch = cp.wrap(X(cx1) - X(cx0), 10000)
             if ch <= ctop - Y(cb):
                 break
