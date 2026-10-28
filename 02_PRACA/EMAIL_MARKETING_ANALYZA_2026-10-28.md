@@ -26,7 +26,7 @@
 Podľa toho, čo agent vie: prvých ~10 000 e-mailov mesačne zdarma, potom zhruba 1 USD / 1 000. Pri 29 adresách × 3 e-maily týždenne ≈ 375 e-mailov mesačne → hlboko pod limitom.
 
 ## Názor agenta na frekvenciu
-„Niekoľko do týždňa“ pri 23–29 ľuďoch je priveľa — malý zoznam sa rýchlo odhlasuje (2 odhlásenia už v júli). Návrh: **1 e-mail týždenne**, 2 len pri akcii (napr. Badepakken pred Vianocami). Rast zoznamu: zapnúť formulár na odber (Forms) v pätičke — newsletter je teraz vypnutý.
+**Rozhodnuté 28. 10.: 1× týždenne, nedeľa do obeda.** Pôvodný názor: „Niekoľko do týždňa“ pri 23–29 ľuďoch je priveľa — malý zoznam sa rýchlo odhlasuje (2 odhlásenia už v júli). Návrh: **1 e-mail týždenne**, 2 len pri akcii (napr. Badepakken pred Vianocami). Rast zoznamu: zapnúť formulár na odber (Forms) v pätičke — newsletter je teraz vypnutý.
 
 ## Neoverené / treba skontrolovať
 - **Odosielacia adresa a overenie domény** (SPF/DKIM/DMARC pre `isokor-skandinavia.no`) — bez nich e-maily idú „cez Shopify“ a častejšie padajú do spamu. Z cloudu sa DNS overiť nedá (proxy 403). Kde: Shopify admin → Nastavenia → Upozornenia → E-mail odosielateľa.
