@@ -12,6 +12,7 @@
 | Isokor Antidugg 100 ml (SK: Antifog 100 ml) | `Isokor_Antidugg_100ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — texty = 250/500 ml, písmo 5 pt (malá etiketa + CLP blok) |
 | Isokor Junior 500 ml (SK: Baby Cleaner) | `Isokor_Junior_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — odznak „ANTIMIKROBIELLE EGENSKAPER“ ponechaný ako originál; názov „Junior“ podľa bezpečnostnej karty, produkt zatiaľ nie je v e-shope |
 | Isokor Baderomsrens 500 ml (SK: Bath Cleaner) | `Isokor_Baderomsrens_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — „Isokor Polisher“ → „Isokor Polish“ (názov na webe); dovozca bez „Produsert i EU“ (blok je nižšie, siahal by k orezu) |
+| Isokor Bilrens 500 ml (SK: Car Cleaner) | `Isokor_Bilrens_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — odznaky GIR GLANS, EFFEKTIV, NATURLIG PRODUKT |
 
 ### EcoNeutral — iný typ SK súboru (pozor pri ďalších)
 - SK PDF nie je vektorový originál ako Cleaner: **pozadie je obrázok 150 dpi v RGB**, texty sú písmo, názov v páse a odznaky „Prírodný produkt“ sú zapečené v obrázku, logo a čiarový kód sú znaky písma.
