@@ -52,13 +52,15 @@ LAYOUT = {
     'green': GREEN,
     'band': (75, 181, 448, 255),           # zelený pás s názvom
     'band_fill': None,                     # farba na pretretie pásu, keď je názov zapečený v obrázku
-    'claims': (451, (358, 379, 400), 'Khand-Regular', 11.5),   # pravý okraj, účiaria, písmo, veľkosť
+    'claims': (451, (358, 379, 400), 'Khand-Regular', 11.5),   # pravý okraj, účiaria, písmo, veľkosť (písmo aj po riadkoch)
     'badges': [(728, 759, (479.5, 488), 5.2)],  # odznak NATURLIG PRODUKT: ľavý/pravý okraj textu, účiaria, max. písmo
     'body': (465, 842, 63, 398),           # x0, x1, horný okraj, spodná hranica
-    'producer': (527, 515),                # ľavý okraj, prvé účiarie
+    'producer': (527, 515, 7.2, 7.6),      # ľavý okraj, prvé účiarie, písmo pt, riadkovanie pt
     'logo': (372, 140, 118),               # stred x, spodok, šírka v pt
     'icon': (487, 555, 32),                # ľavý okraj, spodok, výška v pt
     'arc': None,                           # nápis po oblúku (odznak „neutralizuje zápach“)
+    'clp': None,                           # výstražné údaje CLP pod textom: (x0, x1, spodná hranica) px
+    'a4_scale': 0.95,                      # zmenšenie na A4 (etiketa 210 mm sa do kraja nevytlačí)
     'photos': [],                          # náhrada fotiek: (súbor 300 dpi, výrez px, šesťuholník originálu px)
 }
 
@@ -169,9 +171,11 @@ def overlay(m, L):
 
     # 2) Tvrdenia / podnadpis pod pásom, zarovnané doprava ako originál
     rx, ys, font, fs = L['claims']
+    fonts = font if isinstance(font, (list, tuple)) else [font] * len(ys)
+    sizes = fs if isinstance(fs, (list, tuple)) else [fs] * len(ys)
     c.setFillColor(green)
-    for t, py in zip(m.CLAIMS, ys):
-        c.setFont(font, fs); c.drawRightString(X(rx), Y(py), t)
+    for t, py, f, z in zip(m.CLAIMS, ys, fonts, sizes):
+        c.setFont(f, z); c.drawRightString(X(rx), Y(py), t)
 
     # 3) Odznaky „naturlig produkt“
     for x0, x1, ys, fs in L['badges']:
@@ -189,6 +193,10 @@ def overlay(m, L):
     for size in [x / 10 for x in range(80, 55, -1)]:
         p = para(m.BODY, size)
         _, h = p.wrap(fw, 10000)
+        if L['clp']:                           # text aj CLP blok musia spolu sedieť nad spodnou hranicou CLP
+            _, ch = para(m.CLP, size).wrap(X(L['clp'][1]) - X(L['clp'][0]), 10000)
+            if h + 4 + size * 1.35 + len(m.FOOT) * size * 1.2 + ch + 6 > ftop - Y(L['clp'][2]):
+                continue
         if h <= ftop - fbot:
             break
     Frame(fx, ftop - h - 4, fw, h + 8, leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0,
@@ -200,14 +208,30 @@ def overlay(m, L):
         y -= size * 1.2
     body_size = size
 
+    # 4b) Výstražné údaje CLP (signálne slovo, H/P vety, UFI) — hneď pod textom, pri piktograme
+    if L['clp']:
+        cx0, cx1, cb = L['clp']
+        ctop = y + size * 0.5 - 6           # horný okraj rámu ~ účiarie ďalšieho riadku + medzera
+        for cs_ in [x / 10 for x in range(int(size * 10), 49, -1)]:
+            cp = para(m.CLP, cs_)
+            _, ch = cp.wrap(X(cx1) - X(cx0), 10000)
+            if ch <= ctop - Y(cb):
+                break
+        else:
+            raise SystemExit('CLP sa nezmestí — zmenši text alebo posuň hranicu')
+        Frame(X(cx0), ctop - ch - 4, X(cx1) - X(cx0), ch + 8, leftPadding=0, rightPadding=0, topPadding=0,
+              bottomPadding=0, showBoundary=0).addFromList([cp], c)
+        print('CLP písmo', cs_, 'pt')
+
     # 5) Dovozca (namiesto slovenského výrobcu); vľavo ikona nového loga
-    px, py = L['producer']
+    px, py, pfs, lead = L['producer']
     tx, y = X(px), Y(py)
     c.setFillColor(BLACK)
-    c.setFont('Khand-Bold', 7.2); c.drawString(tx, y, m.PRODUCER['head']); y -= 8.4
+    c.setFont('Khand-Bold', pfs); c.drawString(tx, y, m.PRODUCER['head']); y -= lead + 0.8
     for i, t in enumerate(m.PRODUCER['lines']):
-        c.setFont('Khand-SemiBold' if i == 0 else 'Khand-Regular', 7.2); c.drawString(tx, y, t); y -= 7.6
-    c.setFont('Khand-Bold', 7.2); c.drawString(tx, y - 1, m.PRODUCER['tail'])
+        c.setFont('Khand-SemiBold' if i == 0 else 'Khand-Regular', pfs); c.drawString(tx, y, t); y -= lead
+    if m.PRODUCER.get('tail'):
+        c.setFont('Khand-Bold', pfs); c.drawString(tx, y - 1, m.PRODUCER['tail'])
     c.save()
     buf.seek(0)
     return PdfReader(buf).pages[0], body_size
@@ -252,17 +276,16 @@ def build(name):
     d = lambda v: str(round(v / 72 * 300))
     subprocess.run(['pdftoppm', '-r', '300', '-png', '-singlefile', '-x', d(trim[0]), '-y', d(H - trim[3]),
                     '-W', d(trim[2] - trim[0]), '-H', d(trim[3] - trim[1]), pdf, png], check=True)
-    a4(pdf, os.path.join(OUTDIR, m.OUT + '_A4_2ks.pdf'), trim)
+    a4(pdf, os.path.join(OUTDIR, m.OUT + '_A4_2ks.pdf'), trim, L['a4_scale'])
     print('vystrihnuté:', hits, '| písmo textu', body_size, 'pt')
     print(pdf); print(png + '.png')
 
 def _stream(data):
     s = DecodedStreamObject(); s.set_data(data); return s
 
-def a4(src, dst, trim):
-    """Dve etikety pod sebou na A4, zmenšené na 95 % (domáca tlačiareň netlačí do kraja), s orezovými značkami."""
+def a4(src, dst, trim, sc):
+    """Dve etikety pod sebou na A4 (veľká etiketa zmenšená — domáca tlačiareň netlačí do kraja), s orezovými značkami."""
     A4W, A4H = 595.276, 841.89
-    sc = 0.95
     tw, th = (trim[2] - trim[0]) * sc, (trim[3] - trim[1]) * sc   # čistý formát po zmenšení
     w = PdfWriter(); out = w.add_blank_page(A4W, A4H)
     x0 = (A4W - tw) / 2

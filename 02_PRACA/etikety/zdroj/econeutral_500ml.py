@@ -79,7 +79,7 @@ LAYOUT = {
     'badges': [(380, 414, (414.7, 423.3), 6.5), (737, 765, (481.7, 488.8), 4.6)],
     'arc': (403.56, 356.83, 22.6, 150, 9.0),   # kruh zmeraný z pôvodných písmen
     'body': (480, 850, 63, 405),
-    'producer': (534, 513),
+    'producer': (534, 513, 7.2, 7.6),
     'logo': (375, 140, 118),
     'icon': (486, 556, 32),
     # Lukove fotky (sofa, posilňovňa, tenisky, šteňa) z jeho JPG 300 dpi → presne do šesťuholníkov originálu
