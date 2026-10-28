@@ -52,3 +52,9 @@ Hodnoty prepísané zo snímky — pri zadávaní **kopírovať ikonou v Shopify
 | 6 | `pdk2._domainkey.mailer7zv` | `dkim4.2de311d626f0.p761.email.myshopify.com` | ✅ pridané 28. 10. 19:53 |
 
 Pasca: One.com za vertsnavn sám dopĺňa `.isokor-skandinavia.no` → zadávať len názov z tabuľky.
+
+## Čo už v Messaging je (Lukova snímka 28. 10. 20:08)
+- Kampaň **„Sommeren er i gang 🌿“** odoslaná 2. 7. 2026 18:00, otvorenia 70 % (→ 2 odhlásenia v júli sú pravdepodobne odtiaľto).
+- Koncept „☀️ Sommeren er her“ (s výstrahou), „Kopi av Gi medlemmene dine en re…“ (koncept).
+- Automatizácie: **„Vi er glade for å se deg igjen“ — aktívna**, **„Takk skal du ha!“ — aktívna** (62,5 % otvorení), „Vi har lagret handlekurven din“ — návrh, „Fullfør bestillingen din“ — návrh (42,86 %), „Fortsett der du slapp“ (50 %).
+- Posledných 30 dní: 1 odoslaná správa.
