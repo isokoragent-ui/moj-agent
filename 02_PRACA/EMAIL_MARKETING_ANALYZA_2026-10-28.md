@@ -37,3 +37,18 @@ Podľa toho, čo agent vie: prvých ~10 000 e-mailov mesačne zdarma, potom zhru
 2. Segment v Messaging: „počet objednávok ≥ 1 a súhlas s e-mailovým marketingom“.
 3. Agent napíše text (nórsky, tón Isokor) → Luk schváli → Messaging koncept → Luk odošle (alebo naplánuje).
 4. Po každom e-maile zapísať otvorenia, kliky, odhlásenia (KÓD #23 — číslo po každej úlohe).
+
+## Overenie domény v Shopify — 6 CNAME na One.com (stav 28. 10. 19:38)
+Shopify → Nastavenia → Varsler → Autentisering av e-postdomene. Na One.com bol len riadok 1.
+Hodnoty prepísané zo snímky — pri zadávaní **kopírovať ikonou v Shopify**, nie písať ručne.
+
+| # | Názov (vertsnavn) | Hodnota | Stav |
+|---|---|---|---|
+| 1 | `maileriub` | `d87b0043a9da.p782.email.myshopify.com` | ✅ na One.com |
+| 2 | `iub._domainkey` | `dkim1.d87b0043a9da.p782.email.myshopify.com` | chýba |
+| 3 | `iub2._domainkey` | `dkim2.d87b0043a9da.p782.email.myshopify.com` | chýba |
+| 4 | `mailer7zv` | `2de311d626f0.p761.email.myshopify.com` | chýba |
+| 5 | `pdk1._domainkey.mailer7zv` | `dkim3.2de311d626f0.p761.email.myshopify.com` | chýba |
+| 6 | `pdk2._domainkey.mailer7zv` | `dkim4.2de311d626f0.p761.email.myshopify.com` | chýba |
+
+Pasca: One.com za vertsnavn sám dopĺňa `.isokor-skandinavia.no` → zadávať len názov z tabuľky.
