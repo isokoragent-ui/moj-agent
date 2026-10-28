@@ -24,10 +24,9 @@
 - **Vynechaná veta** o „inhibičnom vplyve na baktérie, vírusy a hmyz“ — v EÚ/EHP je to biocídne tvrdenie (nariadenie 528/2012), bez povolenia nesmie byť na etikete.
 
 ## Otvorené (Luk rozhodne / overí)
+*Logá, názvy, V-label, čiarový kód a ostatné licencie výrobcu sú vybavené dohodou → `08_ROZHODNUTIA/2026-10-28_vyrobca_prava_znacky.md`.*
 - Prečítať texty, skontrolovať názov v páse (alternatíva: ponechať „CLEANER“).
 - „Produsert i EU“ vs. „Produsert i Slovakia“.
-- **V-label** (European Vegetarian Union) — licencia patrí výrobcovi; overiť, že platí aj pre predaj v Nórsku pod Isokor Skandinavia.
-- **Čiarový kód** 8588006889239 ostáva výrobcov (prefix 858 = GS1 Slovensko — to je v poriadku, krajinu pôvodu neurčuje).
 - Nariadenie o detergentoch 648/2004 (platí v Nórsku cez EHP) chce na etikete aj zoznam zložiek vo forme „<5 % …“ (tenzidy, parfum, alergény) a web so zoznamom zložiek — overiť s výrobcom, či sa na tento výrobok vzťahuje.
 - Niektoré CAS čísla v SK origináli nesedia s názvom (napr. 8007-02-1 je olej citrónovej trávy, 8016-20-4 grapefruitový) — preložené presne podľa originálu; overiť u výrobcu.
 - Pred veľkotlačou: poslať tlačiarni PDF a spýtať sa na ich požiadavky (profil farieb, spadávka) — zatiaľ sme sa držali výrobcovho originálu (3 mm spadávka).

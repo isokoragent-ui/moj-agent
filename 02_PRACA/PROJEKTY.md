@@ -18,6 +18,7 @@
 - **Bezpečnostné karty (SDS) NO:** ✅ uzavreté 27. 10. — 31 kariet, 27 na webe; chýbajú GreenGuard, Multi Steinrens, Peisglassrens (čaká na SK PDF od výrobcu) → `02_PRACA/sikkerhetsdatablad/README.md`
 - **Balíky:** 🎄 Badepakken (LM Descaling + Bath Cleaner) 349 kr vrátane dopravy — zverejnený 26. 10., kampaň „Julen starter med et rent bad“ beží → `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`; 🍳 kuchynský balík (Fett- og flekkfjerner + Kjøleskapsrens) — 📝 čaká na cenu a fotky
 - **Firma na webe:** Isokor Skandinavia AS, org. č. 922 112 975
+- **Vzťah s výrobcom:** priame zastúpenie, logá/názvy/texty/licencie vybavené dohodou → `08_ROZHODNUTIA/2026-10-28_vyrobca_prava_znacky.md`
 - **Trh:** Nórsko (komunikácia po nórsky), web `www.isokor-skandinavia.no`
 - **Predaj:** zatiaľ bez predajcov v regiónoch; posielam PostNordom alebo
   osobne
