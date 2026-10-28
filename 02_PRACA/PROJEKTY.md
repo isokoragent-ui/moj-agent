@@ -13,6 +13,7 @@
 - **Čo chýba:** dobré postupy a marketing — bez nich sa na trhu neetablujú
 - **E-shop (Shopify, Basic):** 8 260 NOK čistých za 12 mes., 28 objednávok, konverzia ~0,6–1 % → `02_PRACA/ESHOP_ANALYZA.md`; web audit 2026-10-18 → `02_PRACA/WEB_AUDIT_2026-10-18.md` (názvy, SEO, adresy opravené; zvyšok rozpracovaný)
 - **Sociálne siete (2026-10-18):** FB, IG, TikTok, YouTube, Google Business pripojené cez Metricool → agent pripravuje príspevky (draft → Lukovo „áno“); príspevky: Peisglassrens 18. 10., Badepakken 26. 10. (FB, IG, Threads, Google), Nye priser 27. 10.; TikTok — videá dáva Luk ručne → `07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md`
+- **E-mail marketing (od 2026-10-28):** Shopify Messaging, 1× týždenne v ne 9:30 zákazníkom s nákupom a súhlasom (23); doména overená; č. 1 Badepakken naplánovaný na 1. 11. → `07_SCHEMY/NEDELNY_EMAIL.md`
 - **Ceny a doprava (od 2026-10-26):** bežná fľaša 149 kr + doprava 99 kr / 49 kr od 400 kr / zdarma od 700 kr; zľavy za kusy vypnuté; ceny podľa Lukovej tabuľky → `08_ROZHODNUTIA/2026-10-26_ceny_a_doprava_spat_na_povodny_model.md`
 - **Bezpečnostné karty (SDS) NO:** ✅ uzavreté 27. 10. — 31 kariet, 27 na webe; chýbajú GreenGuard, Multi Steinrens, Peisglassrens (čaká na SK PDF od výrobcu) → `02_PRACA/sikkerhetsdatablad/README.md`
 - **Balíky:** 🎄 Badepakken (LM Descaling + Bath Cleaner) 349 kr vrátane dopravy — zverejnený 26. 10., kampaň „Julen starter med et rent bad“ beží → `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`; 🍳 kuchynský balík (Fett- og flekkfjerner + Kjøleskapsrens) — 📝 čaká na cenu a fotky
