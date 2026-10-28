@@ -18,6 +18,11 @@
 - ⚠️ Štandardné záznamy One.com sa môžu vypnúť po pridaní vlastného záznamu rovnakého typu na rovnaký názov (podozrenie pri TXT koreňa = SPF, neoverené).
 - ⚠️ Z cloudu sa DNS nedá čítať (proxy 403) → overovanie len cez Lukove snímky alebo stav v Shopify.
 
+## Overenie skutočným e-mailom (KÓD #4)
+Testovací e-mail z Messaging na lukas@ (preposiela sa do isokor.agent@gmail.com) → agent cez Gmail konektor `get_message` vo formáte RAW → hlavička `Authentication-Results`.
+Výsledok 28. 10. 2026: **SPF pass, DKIM pass (mailer7zv…, pdk1), DMARC pass**; DMARC politika One.com je **p=REJECT** (štandardný `_dmarc` stačí, druhý nepridávať). Riadok „Oppsett av DMARC-oppføring / Vis trinn“ v Shopify je len odporúčanie bez stavu — netreba riešiť.
+- ⚠️ Pri **p=REJECT** každá ďalšia služba, ktorá posiela ako @isokor-skandinavia.no (napr. nový e-mailový nástroj, formulár), musí mať vlastné overenie domény — inak jej e-maily príjemcovia odmietnu.
+
 ## Čo agent spraví sám / kde čaká na moje „áno"
 - sám: pripraví tabuľku záznamov, kontroluje snímky, zapisuje stav.
 - čaká: každé pridanie/zmenu na One.com robí Luk (agent nemá prístup).
