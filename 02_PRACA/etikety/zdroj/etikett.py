@@ -51,7 +51,8 @@ LAYOUT = {
     'masks': [],                           # biele obdĺžniky (px) — na texty zapečené v obrázku
     'green': GREEN,
     'band': (75, 181, 448, 255),           # zelený pás s názvom
-    'band_fill': None,                     # farba na pretretie pásu, keď je názov zapečený v obrázku
+    'band_fill': None,
+    'title_max': 34,                       # najväčšie písmo názvu v páse (pt)                     # farba na pretretie pásu, keď je názov zapečený v obrázku
     'claims': (451, (358, 379, 400), 'Khand-Regular', 11.5),   # pravý okraj, účiaria, písmo, veľkosť (písmo aj po riadkoch)
     'badges': [(728, 759, (479.5, 488), 5.2)],  # odznak NATURLIG PRODUKT: ľavý/pravý okraj textu, účiaria, max. písmo
     'body': (465, 842, 63, 398),           # x0, x1, horný okraj, spodná hranica
@@ -159,7 +160,7 @@ def overlay(m, L):
         c.setFillColor(L['band_fill']); c.rect(X(bx0), Y(by1), X(bx1 - bx0), X(by1 - by0), stroke=0, fill=1)
     cx, top, bot = X((bx0 + bx1) / 2), Y(by0), Y(by1)
     n = len(m.TITLE)
-    size = 34 if n == 1 else 25
+    size = L['title_max'] if n == 1 else 25
     while max(pdfmetrics.stringWidth(t, 'Khand-Bold', size) for t in m.TITLE) > X(bx1 - bx0) - 30:
         size -= 0.5
     cap = size * 0.70; gap = size * 0.22
@@ -190,7 +191,7 @@ def overlay(m, L):
     # 4) Hlavný text — veľkosť písma sa prispôsobí, aby blok sedel nad ikonami
     x0, x1, t0, b0 = L['body']
     fx, fw, ftop, fbot = X(x0), X(x1) - X(x0), Y(t0), Y(b0)
-    for size in [x / 10 for x in range(80, 55, -1)]:
+    for size in [x / 10 for x in range(80, 44, -1)]:
         p = para(m.BODY, size)
         _, h = p.wrap(fw, 10000)
         if L['clp']:                           # text aj CLP blok musia spolu sedieť nad spodnou hranicou CLP
@@ -212,7 +213,7 @@ def overlay(m, L):
     if L['clp']:
         cx0, cx1, cb = L['clp']
         ctop = y + size * 0.5 - 6           # horný okraj rámu ~ účiarie ďalšieho riadku + medzera
-        for cs_ in [x / 10 for x in range(int(size * 10), 49, -1)]:
+        for cs_ in [x / 10 for x in range(int(size * 10), 44, -1)]:
             cp = para(m.CLP, cs_)
             _, ch = cp.wrap(X(cx1) - X(cx0), 10000)
             if ch <= ctop - Y(cb):
