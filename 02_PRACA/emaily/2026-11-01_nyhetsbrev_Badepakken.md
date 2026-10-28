@@ -18,8 +18,6 @@ Før jul er det mange som tar en ekstra runde på badet. Derfor har vi satt samm
 
 Kalkfjerneren tar seg av kalk og såpefilm på fliser, fuger, dusj og armatur. Baderomsrensen bruker du til den vanlige rengjøringen etterpå. Begge er klare til bruk, uten blanding, og frakten i Norge er inkludert i pakken.
 
-Kalkfjerneren er effektiv, så bruk gjerne hansker og les etiketten før bruk.
-
 [ Se Badepakken ]
 
 Lurer du på noe om hvordan produktene brukes, er det bare å svare på denne e-posten.
@@ -34,6 +32,6 @@ www.isokor-skandinavia.no
 
 ## Poznámky agenta
 - Vynechané zámerne: „trygg for hele familien“, „uten harde kjemikalier“, „allergifri“ — Kalkfjerner je podľa bezpečnostnej karty žieravý (H314); v e-maile by to bolo tvrdenie proti vlastnej karte.
-- Veta o rukaviciach = úprimnosť v Lukovom štýle, nie strašenie.
+- Veta o rukaviciach **vyhodená** (Luk 28. 10.: produkt je pri bežnom používaní jemný, označenie je kvôli zneužitiu — piť, do očí). Tvrdenia o bezpečnosti sa ale nepridávajú (označený výrobok — riziko pri kontrole reklamy).
 - Bez falošnej urgentnosti, bez emoji, bez odrážok (HLAS.md).
 - Odhlásenie pridá Messaging sám.
