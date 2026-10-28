@@ -2,7 +2,13 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-27 23:18 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
+**Naposledy:** 2026-10-28 ~21:00 Oslo, cloudová relácia (claude.ai) — zlúčené do `main` (PR #8)
+
+## Hotové 28. 10.
+- **E-mail marketing spustený:** nástroj Shopify Messaging (WorkflowMail nie), 1× týždenne v nedeľu 9:30. **Nyhetsbrev č. 1 „Julen starter med et rent bad“ (Badepakken) NAPLÁNOVANÝ na ne 1. 11. 9:30**, 23 príjemcov (segment „Nyhetsbrev – kunder med kjøp“); Luk overil testom odkazy aj alt text. Postup: `07_SCHEMY/NEDELNY_EMAIL.md`.
+- **Overenie domény odosielateľa:** na One.com doplnených 5 chýbajúcich CNAME (spolu 6/6, Shopify 6× ✓) — čaká na „Autentisert“. Postup: `07_SCHEMY/OVERENIE_DOMENY_EMAIL.md`.
+- Kontrola e-shopu po „jesennom upgrade“ Shopify: bez zmien; prompt shop.com/skill.md Luk odložil.
+
 
 ## Hotové naposledy (26.–27. 10.)
 - **Sikkerhetsdatablady (bezpečnostné karty) — Luk 27. 10.: „uzavrieme, zatiaľ ukončené“.** 31 kariet preložených do nórčiny v dizajne Isokor, **27 na webe** (odkaz „Last ned sikkerhetsdatablad (PDF)“ na konci popisu produktu, pred každou zmenou záloha popisu v `02_PRACA/zalohy/`). Prehľad všetkých kariet, odchýlok od originálov a pascí: **`02_PRACA/sikkerhetsdatablad/README.md`**.
@@ -35,7 +41,7 @@
 13. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0.
 14. #1027 (248 NOK) — Luk označí ako zaplatené; potom overiť.
 15. Google firemný profil — overiť vyplnenie (adresa, hodiny, fotky).
-16. 📧 **E-mail marketing** (Luk 28. 10.: posielať e-maily existujúcim zákazníkom) → analýza `02_PRACA/EMAIL_MARKETING_ANALYZA_2026-10-28.md`: nástroj **Messaging**, nie WorkflowMail; 23 kupujúcich so súhlasom (29 spolu). **Luk: 1× týždenne, nedeľa do obeda** → `08_ROZHODNUTIA/2026-10-28_email_marketing_nedela.md`. Prvý e-mail **ne 1. 11.** = Badepakken bez cien (Luk); text `02_PRACA/emaily/2026-11-01_nyhetsbrev_Badepakken.md` SCHVÁLENÝ, segment „Nyhetsbrev – kunder med kjøp“ (23) vytvorený; **NAPLÁNOVANÉ v Messaging na ne 1. 11. 9:30** (23 príjemcov); pred nedeľou: test na mobil + overiť odkaz tlačidla „Klikk og kjøp her“; po 1. 11.: otvorenia/kliky/predaje vs. júl (70 % otvorení); overenie domény odosielateľa: **28. 10. 19:53 všetkých 6 CNAME na One.com** (predtým len 1 → preto nikdy neprešlo); Shopify 19:55 potvrdil 6× ✓, čaká sa na „Autentisert“ (do 48 h → skontrolovať pi 30. 10.). Pôvodne 19:22 stav „Oppdateres / Propagering pågår“** (do 48 h → najneskôr pi 30. 10. večer), **DMARC: One.com má štandardný TXT `_dmarc` ZAPNUTÝ** → druhý NEpridávať; hodnotu ešte nevidíme. ⚠️ Štandardný TXT na koreni domény (pravdepodobne SPF One.com) je VYPNUTÝ — podozrenie: vypol sa po pridaní vlastného TXT google-site-verification; neoverené, overiť hodnotu. Kým to nie je hotové, Shopify posiela z `store+71973896371@shopifyemail.com`.
+16. 📧 **E-mail marketing** (Luk 28. 10.: posielať e-maily existujúcim zákazníkom) → analýza `02_PRACA/EMAIL_MARKETING_ANALYZA_2026-10-28.md`: nástroj **Messaging**, nie WorkflowMail; 23 kupujúcich so súhlasom (29 spolu). **Luk: 1× týždenne, nedeľa do obeda** → `08_ROZHODNUTIA/2026-10-28_email_marketing_nedela.md`. Prvý e-mail **ne 1. 11.** = Badepakken bez cien (Luk); text `02_PRACA/emaily/2026-11-01_nyhetsbrev_Badepakken.md` SCHVÁLENÝ, segment „Nyhetsbrev – kunder med kjøp“ (23) vytvorený; **NAPLÁNOVANÉ v Messaging na ne 1. 11. 9:30** (23 príjemcov); pred nedeľou: test na mobil + overiť odkaz tlačidla „Klikk og kjøp her“; po 1. 11.: otvorenia/kliky/predaje vs. júl (70 % otvorení); overenie domény odosielateľa: **28. 10. 19:53 všetkých 6 CNAME na One.com** (predtým len 1 → preto nikdy neprešlo); Shopify 19:55 potvrdil 6× ✓; test e-mailu OK (Luk 28. 10.: obrázok aj tlačidlo vedú na produkt, alt text uložený); čaká sa na „Autentisert“ (do 48 h → skontrolovať pi 30. 10.). Pôvodne 19:22 stav „Oppdateres / Propagering pågår“** (do 48 h → najneskôr pi 30. 10. večer), **DMARC: One.com má štandardný TXT `_dmarc` ZAPNUTÝ** → druhý NEpridávať; hodnotu ešte nevidíme. ⚠️ Štandardný TXT na koreni domény (pravdepodobne SPF One.com) je VYPNUTÝ — podozrenie: vypol sa po pridaní vlastného TXT google-site-verification; neoverené, overiť hodnotu. Kým to nie je hotové, Shopify posiela z `store+71973896371@shopifyemail.com`.
 17. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
 
 ## Pozor (čo by ďalšieho vypálilo)
@@ -52,4 +58,4 @@
 - Sikkerhetsdatablad na webe: bez „på norsk“.
 - Na konci okna VŽDY commit + push do `main`.
 
-ĎALŠÍ KROK: Luk skontroluje e-mail pre Smajliho; vo štvrtok 29. 10. ráno report sponzorovaného Reelu Badepakken.
+ĎALŠÍ KROK: št 29. 10. ráno report sponzorovaného Reelu Badepakken · pi 30. 10. overiť „Autentisert“ (ak nie, riešiť DMARC/SPF) · do št 5. 11. text nyhetsbrevu č. 2 · po 2. 11. výsledky nyhetsbrevu č. 1.
