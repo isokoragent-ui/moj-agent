@@ -23,7 +23,7 @@ BODY = [
      'både mennesker og dyr. Naturlig og biologisk nedbrytbart. Etterlater en behagelig, frisk duft.'),
     ('Inneholder ikke:',
      'glyserol, parabener, silikoner, parafiner, ceresin, fosfater, SLES, SLS, kunstige fargestoffer, '
-     'syntetiske dufter (terpener), syntetiske fortykningsmidler, petrokjemikalier, stoffer av animalsk '
+     'syntetiske dufter (terpener), syntetiske fortykningsmidler (anti-cyanidiner), petrokjemikalier, stoffer av animalsk '
      'opprinnelse eller metallforbindelser.'),
     ('Bruksanvisning:',
      'Rist flasken i ca.&nbsp;5&nbsp;sekunder før bruk. Spray middelet jevnt over overflaten. Tørk over med '
@@ -48,7 +48,7 @@ BODY = [
      'kreftfremkallende stoffer.'),
     ('Farlige stoffer:', 'Ingen.'),
 ]
-# Oproti Lukovej verzii: „økologisk“ → „miljøvennlig“ (økologisk = certifikované bio), vynechané „(anti-cyanidiner)“,
+# Oproti Lukovej verzii: „økologisk“ → „miljøvennlig“ (økologisk = certifikované bio),
 # CAS 144-55-8 patrí k natron (v SK aj v Lukovej verzii omylom pri geraniumolje), doplnené Holdbarhet/Forbruk
 # a Farlige stoffer (sú v SK origináli).
 

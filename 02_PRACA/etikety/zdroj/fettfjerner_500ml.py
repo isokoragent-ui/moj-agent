@@ -44,11 +44,12 @@ BODY = [
      'fruktkjerneekstrakt (68916-04-1), ammoniumbikarbonat av næringsmiddelkvalitet (1066-33-7), '
      'bearbeidet havsalt (11062-32-1), vann. *lyofilisater eller konsentrater. Inneholder ingen kjente '
      'kreftfremkallende stoffer.'),
-    ('Farlige stoffer:', 'Ingen.'),
+    ('Farlige stoffer:',
+     'Ingen. Middelet hemmer formeringen av bakterier og virus takket være sin basiske natur og innholdet av '
+     'sjeldne naturlige planteekstrakter. Disse svært effektive stoffene reduserer bakteriers, virus\' og '
+     'insekters evne til å reprodusere og formere seg.'),
 ]
-# Veta o „inhibičnom vplyve na baktérie, vírusy a hmyz“ zo SK originálu je VYNECHANÁ zámerne:
-# v EÚ/EHP je to biocídne tvrdenie (nariadenie 528/2012) a bez povolenia ho na etikete mať nesmieme.
-# Ak ju Luk chce späť, patrí sem do 'Farlige stoffer'.
+# Všetko, čo uvádza výrobca, ostáva — len preklad (rozhodnutie 08_ROZHODNUTIA/2026-10-28_etikety_len_preklad.md).
 
 FOOT = [('Holdbarhet:', 'Se emballasjen'), ('Forbruk:', 'ca. 100 ml/m²')]
 

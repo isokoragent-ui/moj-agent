@@ -1,5 +1,7 @@
 # Etikety — nórske verzie zo SK originálov
 
+**Pravidlo (Luk 28. 10.):** všetko, čo uvádza výrobca, ostáva — len preklad do nórčiny → `08_ROZHODNUTIA/2026-10-28_etikety_len_preklad.md`.
+
 *Zdroj: SK tlačové PDF od výrobcu (Illustrator, texty prevedené na krivky). Výrobca povolil nahradiť jeho údaje údajmi Isokor Skandinavia AS.*
 
 | Produkt | Súbory | Stav |
@@ -8,14 +10,14 @@
 | Isokor EcoNeutral 500 ml (SK: Anti Urine Cleaner) | `Isokor_EcoNeutral_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — čaká na Lukovu kontrolu |
 | Isokor Antidugg 250/500 ml (SK: Antifog) | `Isokor_Antidugg_250_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` (2 ks na A4 v 100 %) | 🟡 návrh 28. 10. 2026 — čaká na Lukovu kontrolu |
 | Isokor Antidugg 100 ml (SK: Antifog 100 ml) | `Isokor_Antidugg_100ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — texty = 250/500 ml, písmo 5 pt (malá etiketa + CLP blok) |
-| Isokor Junior 500 ml (SK: Baby Cleaner) | `Isokor_Junior_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — **odstránený odznak a veta o antimikrobiálnych vlastnostiach** (biocídne tvrdenie); názov „Junior“ podľa bezpečnostnej karty, produkt zatiaľ nie je v e-shope |
+| Isokor Junior 500 ml (SK: Baby Cleaner) | `Isokor_Junior_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — odznak „ANTIMIKROBIELLE EGENSKAPER“ ponechaný ako originál; názov „Junior“ podľa bezpečnostnej karty, produkt zatiaľ nie je v e-shope |
 
 ### EcoNeutral — iný typ SK súboru (pozor pri ďalších)
 - SK PDF nie je vektorový originál ako Cleaner: **pozadie je obrázok 150 dpi v RGB**, texty sú písmo, názov v páse a odznaky „Prírodný produkt“ sú zapečené v obrázku, logo a čiarový kód sú znaky písma.
 - Riešenie v `econeutral_500ml.py`: texty sa mažú podľa polohy, pás sa pretrie farbou z obrázku a názov sa napíše znova, SK texty v odznakoch a zvyšky starého loga prekryté bielou, oblúkový nápis „NØYTRALISERER LUKT“ položený na kruh zmeraný z pôvodných písmen.
 - **Na veľkotlač si od výrobcu vypýtať vektorový originál (Illustrator/PDF ako pri Cleaneri)** — 150 dpi pozadie je na hrane, na domácu tlač stačí.
 - **28. 10. neskôr: obsah podľa Lukovej NO verzie** (`zdroj/Luk_NO_EcoNeutral_500ml.jpg`) — produkt má širšie použitie (pot, posilňovne, šatne, obuv, auto). Podnadpis „Universell lukt- og flekkfjerner“, Lukove fotky (sofa, posilňovňa, tenisky, šteňa) vystrihnuté z jeho JPG a vložené presne do šesťuholníkov originálu. Forma (písmo, logo, dovozca, odznaky) ostala ako pri ostatných etiketách. Fotky nie sú od výrobcu → ich licencia je Lukova vec.
-- Zmeny proti SK: CAS 144-55-8 presunuté k natron (v origináli omylom pri pelargóniovom oleji); vynechaná nezmyselná zátvorka „(anti-kyanidíny)“. Tvrdenia „dermatologicky testovaný“ a „bezpečný pre človeka aj zvieratá“ ponechané (od výrobcu).
+- Zmeny proti SK: CAS 144-55-8 presunuté k natron (v origináli omylom pri pelargóniovom oleji); zátvorka „(anti-cyanidiner)“ ponechaná ako v origináli. Tvrdenia „dermatologicky testovaný“ a „bezpečný pre človeka aj zvieratá“ ponechané (od výrobcu).
 
 ## Ako vzniká (`zdroj/etikett.py <modul>`)
 1. Z originálu sa **vektorovo vystrihnú** SK texty a staré logo (cesty ležiace celé v oblastiach `REGIONS`) — nič sa neprekrýva bielym, pozadie (šesťuholníky, fotky, ikony, čiarový kód) ostáva originál v CMYK.
@@ -32,7 +34,7 @@
 - Zloženie preložené zo SK originálu aj s CAS číslami. Lukova verzia mala chyby: „geraniol“ (správne geraniumolje), „olivenolje“, „flerumettede fettsyrer“, „mineralstoffer og vitaminer“ (v origináli nie sú); chýbal cesnakový extrakt, voda a veta o karcinogénoch.
 - Doplnené riadky z originálu: **Holdbarhet: Se emballasjen**, **Forbruk: ca. 100 ml/m²**.
 - Výrobca → **Importør og distributør: Isokor Skandinavia AS**, org. nr., adresa, telefón, web, „PRODUSERT I EU“.
-- **Vynechaná veta** o „inhibičnom vplyve na baktérie, vírusy a hmyz“ — v EÚ/EHP je to biocídne tvrdenie (nariadenie 528/2012), bez povolenia nesmie byť na etikete.
+- Veta o „inhibičnom vplyve na baktérie, vírusy a hmyz“ **ponechaná** (Luk: zachovať všetko od výrobcu → `08_ROZHODNUTIA/2026-10-28_etikety_len_preklad.md`).
 
 ### Antidugg — nebezpečný výrobok (H319)
 - SK originál je vektorový ako Cleaner, formát 150 × 130 mm **bez spadávky** (orez = okraj súboru); A4 nesie 2 ks v 100 %.

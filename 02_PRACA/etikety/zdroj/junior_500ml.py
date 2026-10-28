@@ -11,9 +11,10 @@ CLAIMS = ['Rengjøring av leker', 'og barnemøbler']
 BODY = [
     ('ISOKOR® JUNIOR',
      'er et naturlig rengjøringsmiddel for leker og andre overflater som barn kommer i kontakt med. '
-     'Inneholder ingen kjente farlige eller kreftfremkallende stoffer. Produktet er dermatologisk testet. '
+     'Inneholder ingen kjente farlige eller kreftfremkallende stoffer. Produktet er dermatologisk testet og '
+     'testet for antimikrobielle egenskaper. '
      'Leker og overflater rengjort med Isokor Junior er ikke forurenset med farlige kjemikalier og forblir '
-     'rene. Barnet kan derfor trygt leke med dem rett etter bruk. Egnet til: barnemøbler, matstoler, '
+     'hygieniske og rene. Barnet kan derfor trygt leke med dem rett etter bruk. Egnet til: barnemøbler, matstoler, '
      'stellematter, barnesenger, leker, potter, kurver og bokser til leker, flasker, barneservise og bestikk, '
      'rens av barnevogner, bilseter, madrasser, lekematter, tepper, gulv osv.'),
     ('Bruksanvisning:',
@@ -34,7 +35,7 @@ BODY = [
      'bearbeidet havsalt (11062-32-1), vann. *lyofilisater eller konsentrater.'),
     ('Inneholder ikke:',
      'glyserol, parabener, silikoner, parafiner, ceresin, fosfater, SLES, SLS, kunstige fargestoffer, '
-     'syntetiske dufter (terpener), syntetiske fortykningsmidler, petrokjemiske stoffer, stoffer av animalsk '
+     'syntetiske dufter (terpener), syntetiske fortykningsmidler (anti-cyanidiner), petrokjemiske stoffer, stoffer av animalsk '
      'opprinnelse, metallforbindelser. Inneholder ingen kjente kreftfremkallende stoffer.'),
     ('Farlige stoffer:', 'Ingen.'),
     ('Oppbevaring:',
@@ -42,9 +43,7 @@ BODY = [
      'Beskyttes mot frost. Produktet kan endre farge og konsistens ved temperaturpåvirkning, men dette '
      'påvirker ikke egenskapene. Kun tom emballasje kan resirkuleres.'),
 ]
-# VYNECHANÉ zo SK: „má vykonané skúšky na antimikrobiálne vlastnosti“ a odznak „ANTIMIKROBIÁLNE VLASTNOSTI“
-# — biocídne tvrdenie (528/2012), bez povolenia nesmie byť na etikete (rovnako ako pri Fett- og flekkfjerner).
-# Vynechaná aj zátvorka „(anti-kyanidíny)“ (nedáva zmysel), „hygienické a čisté“ → „rene“ (hygiena znie ako dezinfekcia).
+# Všetko, čo uvádza výrobca, ostáva — len preklad (08_ROZHODNUTIA/2026-10-28_etikety_len_preklad.md).
 
 FOOT = [('Holdbarhet:', 'Se emballasjen'), ('Forbruk:', 'ca. 100 ml/m²')]
 
@@ -58,6 +57,7 @@ PRODUCER = {
 CYAN = CMYKColor(0.516, 0, 0.13, 0)          # podnadpis
 PINK = CMYKColor(0, 0.861, 0.47, 0)          # odznak „dermatologisk testet“
 TEAL = CMYKColor(0.641, 0, 0.34, 0)          # odznak „naturlig produkt“
+BAND = CMYKColor(0.044, 0.686, 0.323, 0)     # ružová pásu a nápisu „antimikrobielle egenskaper“
 LAYOUT = {
     'regions': {
         'text':      (465, 60, 850, 452),
@@ -65,7 +65,7 @@ LAYOUT = {
         'logo':      (296, 96, 446, 140),
         'nazov':     (90, 188, 440, 250),
         'podnadpis': (230, 270, 442, 314),
-        'antimikro': (330, 315, 442, 345),   # odznak ANTIMIKROBIÁLNE VLASTNOSTI (ikona aj text) — preč
+        'antimikro': (355, 315, 442, 345),   # text odznaku ANTIMIKROBIÁLNE VLASTNOSTI (ikona baktérie ostáva)
         'derm':      (377, 357, 416, 373),
         'naturlig':  (659, 476, 691, 495),
         'vyrobca':   (476, 508, 650, 566),
@@ -77,6 +77,8 @@ LAYOUT = {
     'texts': [
         ('DERMATOLOGISK', 396.7, 365, 'Khand-SemiBold', 4.3, PINK, 'c'),
         ('TESTET', 396.7, 371.3, 'Khand-SemiBold', 4.3, PINK, 'c'),
+        ('ANTIMIKROBIELLE', 358.8, 329.4, 'Khand-SemiBold', 10, BAND, 'l'),
+        ('EGENSKAPER', 358.8, 341.5, 'Khand-SemiBold', 10, BAND, 'l'),
         ('NATURLIG', 661, 485, 'Arial-Bold', 3.8, TEAL, 'l'),
         ('PRODUKT', 661, 493.4, 'Arial-Bold', 3.8, TEAL, 'l'),
     ],
