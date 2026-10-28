@@ -1,6 +1,6 @@
 # Nyhetsbrev č. 1 — Badepakken (ne 1. 11. 2026, 9:30 Oslo)
 
-*Stav: ✅ TEXT SCHVÁLENÝ (Luk 28. 10.) → zadať do Messaging. Príjemcovia: segment **„Nyhetsbrev – kunder med kjøp“** (`gid://shopify/Segment/500114030771`, kupujúci so súhlasom = 23, overené 28. 10.). Text ďakuje za nákup → 6 odberateľov bez nákupu zámerne nie.*
+*Stav: ✅ **NAPLÁNOVANÉ v Messaging na ne 1. 11. 2026 9:30 CET** (Luk 28. 10. 20:50, potvrdené snímkou). Rozloženie: logo → obrázok (oblúk, odkaz na Isokor Badepakken) → text → tlačidlo „Klikk og kjøp her“. Neoverené: kam vedie tlačidlo, alt text → pred nedeľou poslať test. Príjemcovia: segment **„Nyhetsbrev – kunder med kjøp“** (`gid://shopify/Segment/500114030771`, kupujúci so súhlasom = 23, overené 28. 10.). Text ďakuje za nákup → 6 odberateľov bez nákupu zámerne nie.*
 *Messaging nemá API na kampane → koncept zadáva Luk v aplikácii, agent vedie po krokoch.*
 *Luk 28. 10.: bez cien a cenových pásiem, len akcia Badepakken.*
 
