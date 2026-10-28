@@ -1,7 +1,7 @@
 # Overenie e-mailovej domény v Shopify (DNS na One.com)
 
 **Kedy sa použije:** Shopify hlási pri adrese odosielateľa „Oppdateres“ / overenie neprešlo, alebo pribudne nová doména či adresa.
-**Naposledy prešla:** 2026-10-28 (záznamy pridané; výsledok overenia doplniť)
+**Naposledy prešla:** 2026-10-28 (Shopify 6× ✓; tlačidlo „Jeg har oppdatert“ ostane neaktívne, keď Shopify záznamy už vidí — netreba klikať)
 
 ## Kroky
 1. Shopify → Nastavenia → **Varsler** → Avsender-e-post → **Autentisering av e-postdomene** → rozbaliť šípku pri stave → tabuľka záznamov (2026-10: **6 CNAME**).
