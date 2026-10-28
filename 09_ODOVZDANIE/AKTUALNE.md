@@ -5,6 +5,7 @@
 **Naposledy:** 2026-10-28 21:18 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
 
 ## Hotové naposledy
+- **28. 10. večer — Nórska etiketa Fett- og flekkfjerner 500 ml (SK Cleaner)** — návrh: tlačové PDF + PNG + A4 2 ks → `02_PRACA/etikety/README.md`. Generuje `02_PRACA/etikety/zdroj/etikett.py` (vektorovo zo SK originálu, nové logo).
 - **28. 10. — E-mail marketing spustený:** nástroj Shopify Messaging (WorkflowMail nie), 1× týždenne v nedeľu 9:30 → `08_ROZHODNUTIA/2026-10-28_email_marketing_nedela.md`. **Nyhetsbrev č. 1 „Julen starter med et rent bad“ (Badepakken) NAPLÁNOVANÝ na ne 1. 11. 9:30**, 23 príjemcov (segment „Nyhetsbrev – kunder med kjøp“); test OK (odkazy, alt text, odhlásenie). Postup: `07_SCHEMY/NEDELNY_EMAIL.md`.
 - **28. 10. — Doména odosielateľa overená:** na One.com doplnených 5 chýbajúcich CNAME (6/6) → Shopify „Autentisert“ 21:08; skutočný e-mail: SPF/DKIM/DMARC pass (p=REJECT) → `07_SCHEMY/OVERENIE_DOMENY_EMAIL.md`. DNS je na One.com (Luk), zapísané v `05_PRISTUPY/REGISTER_PRISTUPOV.md`.
 - **28. 10. — Kontrola e-shopu** po „jesennom upgrade“ Shopify: bez zmien (zoznam aplikácií a kanálov ako základ v denníku). Prompt shop.com/skill.md Luk odložil („nie je to teraz dôležité“).
@@ -32,6 +33,7 @@
 16. 📧 **E-mail marketing** — Messaging, 1× týždenne v ne 9:30 (`08_ROZHODNUTIA/2026-10-28_email_marketing_nedela.md`, postup `07_SCHEMY/NEDELNY_EMAIL.md`). **Nyhetsbrev č. 1 naplánovaný na ne 1. 11. 9:30** (23 príjemcov, test OK). Doména overená, SPF/DKIM/DMARC pass. Ďalej: **po 2. 11. výsledky** (otvorenia/kliky/predaje vs. júl 70 %) · **do št 5. 11. text č. 2**. Nízka priorita: štandardný TXT koreňa domény na One.com je vypnutý (možno SPF pre poštu z lukas@/info@) — overiť hlavičkou e-mailu odoslaného z One.com; pri DMARC p=REJECT dôležité.
 17. **Lovable** — Luk 28. 10.: nainštaloval na odporúčanie, **nepoužíva**, nevie na čo je. Má zápis do produktov, zliav, skladu a publikovania + vlastný predajný kanál. Agent odporučil odinštalovať (najužšie oprávnenie, KÓD #3) — **Luk súhlasí, odinštaluje sám ručne** (Nastavenia → Aplikácie → Lovable). **Agent potom overí** cez API (`appInstallations` + `publications`), že zmizla aplikácia aj kanál Lovable.
 18. 💡 **Messaging automatizácie:** „Vi har lagret handlekurven din“ a „Fullfør bestillingen din“ (opustený košík) sú len **návrhy** — zapnutie = predaj navyše bez práce. Navrhnúť Lukovi po prvom nyhetsbreve.
+20. 🏷️ **Etiketa Fett- og flekkfjerner** — Luk skontroluje texty a rozhodne otvorené body v `02_PRACA/etikety/README.md` (názov v páse, Produsert i EU/Slovakia, V-label, biocídna veta vynechaná). Potom ďalšie etikety rovnakým skriptom.
 19. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
 
 ## Pozor (čo by ďalšieho vypálilo)
