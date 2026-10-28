@@ -16,7 +16,11 @@ takk for at du har handlet hos oss tidligere – det setter vi stor pris på.
 
 Før jul er det mange som tar en ekstra runde på badet. Derfor har vi satt sammen Badepakken: Isokor Kalkfjerner for bad og Isokor Baderomsrens, 500 ml av hver.
 
-Kalkfjerneren tar seg av kalk og såpefilm på fliser, fuger, dusj og armatur. Baderomsrensen bruker du til den vanlige rengjøringen etterpå. Begge er klare til bruk, uten blanding, og frakten i Norge er inkludert i pakken.
+Kalkfjerneren tar seg av kalk og såpefilm på fliser, fuger, dusj og armatur.
+
+Baderomsrensen er 100 % naturlig, laget av plantebaserte ekstrakter og oljer. Den rengjør hygienisk og skånsomt og gir en naturlig glans på fliser, servant, dusjvegger og speil. Den er også sertifisert med det veganske merket V-Label.
+
+Begge er klare til bruk, uten blanding, og frakten i Norge er inkludert i pakken.
 
 [ Se Badepakken ]
 
@@ -34,4 +38,5 @@ www.isokor-skandinavia.no
 - Vynechané zámerne: „trygg for hele familien“, „uten harde kjemikalier“, „allergifri“ — Kalkfjerner je podľa bezpečnostnej karty žieravý (H314); v e-maile by to bolo tvrdenie proti vlastnej karte.
 - Veta o rukaviciach **vyhodená** (Luk 28. 10.: produkt je pri bežnom používaní jemný, označenie je kvôli zneužitiu — piť, do očí). Tvrdenia o bezpečnosti sa ale nepridávajú (označený výrobok — riziko pri kontrole reklamy).
 - Bez falošnej urgentnosti, bez emoji, bez odrážok (HLAS.md).
+- Baderomsrens zvýraznený (Luk 28. 10.): 100 % prírodný, rastlinné extrakty a oleje, V-Label (podľa popisu na webe). **„Antimikrobielle egenskaper“ zámerne nie** — tvrdenie o ničení mikróbov robí z čistiaceho prostriedku biocíd (povolenie Miljødirektoratet); použité „rengjør hygienisk“. Pri „100 % naturlig“ a V-Label mať po ruke doklad (certifikát V-Label zatiaľ nie je na webe).
 - Odhlásenie pridá Messaging sám.
