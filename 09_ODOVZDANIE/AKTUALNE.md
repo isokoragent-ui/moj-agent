@@ -6,7 +6,7 @@
 
 ## Hotové 28. 10.
 - **E-mail marketing spustený:** nástroj Shopify Messaging (WorkflowMail nie), 1× týždenne v nedeľu 9:30. **Nyhetsbrev č. 1 „Julen starter med et rent bad“ (Badepakken) NAPLÁNOVANÝ na ne 1. 11. 9:30**, 23 príjemcov (segment „Nyhetsbrev – kunder med kjøp“); Luk overil testom odkazy aj alt text. Postup: `07_SCHEMY/NEDELNY_EMAIL.md`.
-- **Overenie domény odosielateľa:** na One.com doplnených 5 chýbajúcich CNAME (spolu 6/6, Shopify 6× ✓) — čaká na „Autentisert“. Postup: `07_SCHEMY/OVERENIE_DOMENY_EMAIL.md`.
+- **Overenie domény odosielateľa:** na One.com doplnených 5 chýbajúcich CNAME (spolu 6/6) — **28. 10. 21:08 „Autentisert“ ✅ (DNS-poster oppdatert globalt)**. Zostáva skontrolovať DMARC riadok vo Varsler. Postup: `07_SCHEMY/OVERENIE_DOMENY_EMAIL.md`.
 - Kontrola e-shopu po „jesennom upgrade“ Shopify: bez zmien; prompt shop.com/skill.md Luk odložil.
 
 
@@ -58,4 +58,4 @@
 - Sikkerhetsdatablad na webe: bez „på norsk“.
 - Na konci okna VŽDY commit + push do `main`.
 
-ĎALŠÍ KROK: št 29. 10. ráno report sponzorovaného Reelu Badepakken · pi 30. 10. overiť „Autentisert“ (ak nie, riešiť DMARC/SPF) · do št 5. 11. text nyhetsbrevu č. 2 · po 2. 11. výsledky nyhetsbrevu č. 1.
+ĎALŠÍ KROK: št 29. 10. ráno report sponzorovaného Reelu Badepakken · overiť, či Shopify ešte hlási DMARC (doména už „Autentisert“) · do št 5. 11. text nyhetsbrevu č. 2 · po 2. 11. výsledky nyhetsbrevu č. 1.
