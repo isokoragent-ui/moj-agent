@@ -1,6 +1,7 @@
 # Nyhetsbrev č. 1 — Badepakken (ne 1. 11. 2026, 9:30 Oslo)
 
-*Stav: KONCEPT — čaká na Lukovo schválenie. Nástroj: Shopify Messaging. Príjemcovia: zákazníci so súhlasom (29).*
+*Stav: ✅ TEXT SCHVÁLENÝ (Luk 28. 10.) → zadať do Messaging. Príjemcovia: segment **„Nyhetsbrev – kunder med kjøp“** (`gid://shopify/Segment/500114030771`, kupujúci so súhlasom = 23, overené 28. 10.). Text ďakuje za nákup → 6 odberateľov bez nákupu zámerne nie.*
+*Messaging nemá API na kampane → koncept zadáva Luk v aplikácii, agent vedie po krokoch.*
 *Luk 28. 10.: bez cien a cenových pásiem, len akcia Badepakken.*
 
 **Predmet:** Julen starter med et rent bad
