@@ -7,6 +7,7 @@
 |---|---|---|---|---|
 | Gmail (niekoľko schránok) | čítať poštu, pripravovať koncepty, štítky, kôš | ✅ Gmail konektor v claude.ai na **isokor.agent@gmail.com** (overené 2026-10-19); prílohy sťahovať nevie | najprv len čítanie + koncepty | odobrať prístup v nastaveniach Google účtu |
 | Doménové schránky @isokor-skandinavia.no | čítať poštu, pripravovať koncepty | ✅ poskytovateľ **One.com**; **lukas@ a info@** preposielajú kópie → isokor.agent@gmail.com, agent číta cez Gmail konektor (overené 2026-10-19 skúšobnými e-mailmi na obe adresy) | najprv len čítanie + koncepty | zmeniť heslo / zrušiť heslo aplikácie |
+| Doména isokor-skandinavia.no (DNS) | DNS záznamy (overenie odosielateľa Shopify, DMARC) | ❌ agent nemá prístup — Luk na **One.com** (Luk potvrdil 2026-10-28); z cloudu sa DNS nedá ani čítať (proxy 403) | len Luk | — |
 | Facebook | príspevky, stránka Isokor (+ Facebook Ads účet) | ✅ cez Metricool — pripojené v appke Metricool, overené volaním 2026-10-18 (web na tablete nefungoval) | návrhy → publikuje sa až po „áno“ | odpojiť v Metricoole → Pripojenia, alebo odobrať v nastaveniach stránky |
 | Instagram | príspevky (@isokor_skandinavia) | ✅ cez Metricool, overené volaním 2026-10-18 | návrhy → publikuje sa až po „áno“ | odpojiť v Metricoole → Pripojenia |
 | X (Twitter) | príspevky | ⏳ zatiaľ nepripojené | návrhy → publikuje sa až po „áno“ | odobrať v nastaveniach |
