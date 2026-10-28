@@ -49,6 +49,6 @@ Hodnoty prepísané zo snímky — pri zadávaní **kopírovať ikonou v Shopify
 | 3 | `iub2._domainkey` | `dkim2.d87b0043a9da.p782.email.myshopify.com` | ✅ pridané 28. 10. 19:48 |
 | 4 | `mailer7zv` | `2de311d626f0.p761.email.myshopify.com` | ✅ pridané 28. 10. 19:50 |
 | 5 | `pdk1._domainkey.mailer7zv` | `dkim3.2de311d626f0.p761.email.myshopify.com` | ✅ pridané 28. 10. 19:52 |
-| 6 | `pdk2._domainkey.mailer7zv` | `dkim4.2de311d626f0.p761.email.myshopify.com` | chýba |
+| 6 | `pdk2._domainkey.mailer7zv` | `dkim4.2de311d626f0.p761.email.myshopify.com` | ✅ pridané 28. 10. 19:53 |
 
 Pasca: One.com za vertsnavn sám dopĺňa `.isokor-skandinavia.no` → zadávať len názov z tabuľky.
