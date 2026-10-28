@@ -11,6 +11,7 @@
 - SK PDF nie je vektorový originál ako Cleaner: **pozadie je obrázok 150 dpi v RGB**, texty sú písmo, názov v páse a odznaky „Prírodný produkt“ sú zapečené v obrázku, logo a čiarový kód sú znaky písma.
 - Riešenie v `econeutral_500ml.py`: texty sa mažú podľa polohy, pás sa pretrie farbou z obrázku a názov sa napíše znova, SK texty v odznakoch a zvyšky starého loga prekryté bielou, oblúkový nápis „NØYTRALISERER LUKT“ položený na kruh zmeraný z pôvodných písmen.
 - **Na veľkotlač si od výrobcu vypýtať vektorový originál (Illustrator/PDF ako pri Cleaneri)** — 150 dpi pozadie je na hrane, na domácu tlač stačí.
+- **28. 10. neskôr: obsah podľa Lukovej NO verzie** (`zdroj/Luk_NO_EcoNeutral_500ml.jpg`) — produkt má širšie použitie (pot, posilňovne, šatne, obuv, auto). Podnadpis „Universell lukt- og flekkfjerner“, Lukove fotky (sofa, posilňovňa, tenisky, šteňa) vystrihnuté z jeho JPG a vložené presne do šesťuholníkov originálu. Forma (písmo, logo, dovozca, odznaky) ostala ako pri ostatných etiketách. Fotky nie sú od výrobcu → ich licencia je Lukova vec.
 - Zmeny proti SK: CAS 144-55-8 presunuté k natron (v origináli omylom pri pelargóniovom oleji); vynechaná nezmyselná zátvorka „(anti-kyanidíny)“. Tvrdenia „dermatologicky testovaný“ a „bezpečný pre človeka aj zvieratá“ ponechané (od výrobcu).
 
 ## Ako vzniká (`zdroj/etikett.py <modul>`)

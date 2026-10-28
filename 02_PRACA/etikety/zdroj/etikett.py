@@ -7,6 +7,8 @@ Výstup do 02_PRACA/etikety/:  <OUT>.pdf (tlač: spadávka + orezové značky ak
 Rozloženie (súradnice v px na náhľade 100 dpi, y zhora) je v LAYOUT; modul produktu prepíše, čo má inak (m.LAYOUT).
 """
 import importlib, io, math, os, subprocess, sys
+from PIL import Image
+from reportlab.lib.utils import ImageReader
 from pypdf import PdfReader, PdfWriter, Transformation
 from pypdf.generic import (ContentStream, DecodedStreamObject, NameObject, ArrayObject,
                            FloatObject, DictionaryObject)
@@ -57,6 +59,7 @@ LAYOUT = {
     'logo': (372, 140, 118),               # stred x, spodok, šírka v pt
     'icon': (487, 555, 32),                # ľavý okraj, spodok, výška v pt
     'arc': None,                           # nápis po oblúku (odznak „neutralizuje zápach“)
+    'photos': [],                          # náhrada fotiek: (súbor 300 dpi, výrez px, šesťuholník originálu px)
 }
 
 def strip(page, writer, regions):
@@ -130,6 +133,20 @@ def overlay(m, L):
     buf = io.BytesIO()
     c = canvas.Canvas(buf, pagesize=(W, H))
     green = L['green']
+
+    # Fotky do šesťuholníkov: výrez z cudzieho obrázka, orezaný presne na tvar originálu (o 1 % väčší — prekryje okraj)
+    for src, (ux0, uy0, ux1, uy1), poly in L['photos']:
+        im = Image.open(os.path.join(HERE, src)).convert('RGB').crop((ux0 * 3, uy0 * 3, ux1 * 3, uy1 * 3))
+        cx = sum(x for x, _ in poly) / len(poly); cy = sum(y for _, y in poly) / len(poly)
+        pts = [(cx + (x - cx) * 1.01, cy + (y - cy) * 1.01) for x, y in poly]
+        xs = [x for x, _ in pts]; ys = [y for _, y in pts]
+        c.saveState()
+        path = c.beginPath(); path.moveTo(X(pts[0][0]), Y(pts[0][1]))
+        for x, y in pts[1:]:
+            path.lineTo(X(x), Y(y))
+        path.close(); c.clipPath(path, stroke=0, fill=0)
+        c.drawImage(ImageReader(im), X(min(xs)), Y(max(ys)), X(max(xs) - min(xs)), X(max(ys) - min(ys)))
+        c.restoreState()
 
     for x0, y0, x1, y1 in L['masks']:
         c.setFillColor(WHITE); c.rect(X(x0), Y(y1), X(x1 - x0), X(y1 - y0), stroke=0, fill=1)

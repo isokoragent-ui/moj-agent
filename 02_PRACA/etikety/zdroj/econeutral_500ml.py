@@ -1,4 +1,4 @@
-# Isokor EcoNeutral 500 ml (SK: Anti Urine Cleaner) — nórske texty etikety.
+# Isokor EcoNeutral 500 ml (SK: Anti Urine Cleaner) — nórske texty etikety; texty a fotky podľa Lukovej NO verzie.
 # SK originál je iný typ súboru než Cleaner: pozadie je obrázok (150 dpi, RGB), texty sú písmo,
 # názov a odznaky „Prírodný produkt“ sú zapečené v obrázku → pretierajú sa (LAYOUT band_fill, masks).
 from reportlab.lib.colors import Color
@@ -7,24 +7,28 @@ SOURCE = 'original_SK_Anti_Urine_Cleaner_500ml.pdf'
 OUT = 'Isokor_EcoNeutral_500ml_etikett_NO'
 
 TITLE = ['ECONEUTRAL']
-CLAIMS = ['Lukt- og flekkfjerner', 'mot urin og dyrelukt']   # podnadpis pod pásom
+CLAIMS = ['Universell lukt-', 'og flekkfjerner']             # podnadpis pod pásom
 BADGE = ['NATURLIG', 'PRODUKT']
 ARC = 'NØYTRALISERER LUKT'                                   # oblúk pod ikonou (SK: NEUTRALIZUJE ZÁPACHY)
 
+# Obsah podľa Lukovej nórskej verzie (Luk_NO_EcoNeutral_500ml.jpg, 28. 10.) — širšie použitie než SK originál
+# (pot, posilňovne, šatne, obuv, auto); jazyk a štruktúra zjednotené s ostatnými etiketami.
 BODY = [
     ('ISOKOR® ECONEUTRAL',
-     'er et miljøvennlig middel for effektiv fjerning av flekker og lukt etter urin, avføring og oppkast. '
-     'Egnet til vask og rens av madrasser, tepper, møbelstoff, barnesenger og gulv, og til vask av '
-     'liggeunderlag og små bur for dyr. Produktet er dermatologisk testet. Trygt for mennesker og dyr. '
-     'Naturlig og biologisk nedbrytbart. Etterlater en behagelig, frisk duft.'),
+     'er et miljøvennlig og effektivt middel for fjerning av flekker og nøytralisering av ubehagelig lukt. '
+     'Produktet er spesielt utviklet for å fjerne lukt fra svette, urin, oppkast, ekskrementer og annen '
+     'organisk forurensning. Ideell for tekstiler, madrasser, tepper, møbelstoff og sko, samt i '
+     'treningssentre, garderober og bilinteriør. Virker utmerket mot lukt fra både mennesker og dyr, '
+     'også ved rengjøring av smådyrbur og liggeplasser. Produktet er dermatologisk testet og trygt for '
+     'både mennesker og dyr. Naturlig og biologisk nedbrytbart. Etterlater en behagelig, frisk duft.'),
     ('Inneholder ikke:',
      'glyserol, parabener, silikoner, parafiner, ceresin, fosfater, SLES, SLS, kunstige fargestoffer, '
-     'syntetiske dufter (terpener), syntetiske fortykningsmidler, petrokjemiske stoffer, stoffer av '
-     'animalsk opprinnelse, metallforbindelser.'),
+     'syntetiske dufter (terpener), syntetiske fortykningsmidler, petrokjemikalier, stoffer av animalsk '
+     'opprinnelse eller metallforbindelser.'),
     ('Bruksanvisning:',
-     'Rist flasken i ca.&nbsp;5&nbsp;sekunder før bruk. Spray slik at hele overflaten dekkes. Tørk av med '
-     'en svamp, og tørk deretter med en klut. Produktet trenger ikke skylles av med vann. På tekstiler: '
-     'tørk ganske enkelt av med en svamp.'),
+     'Rist flasken i ca.&nbsp;5&nbsp;sekunder før bruk. Spray middelet jevnt over overflaten. Tørk over med '
+     'en svamp, og tørk deretter tørt med en klut. Produktet trenger ikke skylles av med vann. Tekstiler: '
+     'spray på og tørk ganske enkelt av med en svamp eller klut.'),
     ('Oppbevaring:',
      'Oppbevares i lukket originalemballasje ved 15–35&nbsp;°C. Må ikke utsettes for direkte sollys. '
      'Beskyttes mot frost. Oppbevares utilgjengelig for barn. Produktet kan endre farge og konsistens ved '
@@ -44,8 +48,9 @@ BODY = [
      'kreftfremkallende stoffer.'),
     ('Farlige stoffer:', 'Ingen.'),
 ]
-# SK „syntetické zahusťovadlá (anti-kyanidíny)“ — zátvorka nedáva zmysel (antokyanidíny sú farbivá), vynechaná.
-# SK „pelargóniový olej (8000-46-2) (144-55-8)“ — 144-55-8 je CAS sódy bikarbóny → presunuté k natron.
+# Oproti Lukovej verzii: „økologisk“ → „miljøvennlig“ (økologisk = certifikované bio), vynechané „(anti-cyanidiner)“,
+# CAS 144-55-8 patrí k natron (v SK aj v Lukovej verzii omylom pri geraniumolje), doplnené Holdbarhet/Forbruk
+# a Farlige stoffer (sú v SK origináli).
 
 FOOT = [('Holdbarhet:', 'Se emballasjen'), ('Forbruk:', 'ca. 100 ml/m²')]
 
@@ -77,4 +82,11 @@ LAYOUT = {
     'producer': (534, 513),
     'logo': (375, 140, 118),
     'icon': (486, 556, 32),
+    # Lukove fotky (sofa, posilňovňa, tenisky, šteňa) z jeho JPG 300 dpi → presne do šesťuholníkov originálu
+    'photos': [
+        ('Luk_NO_EcoNeutral_500ml.jpg', (69, 345, 207, 464), [(85, 400.5), (118, 343), (184, 343), (217, 400.5), (184, 458), (118, 458)]),
+        ('Luk_NO_EcoNeutral_500ml.jpg', (183, 412, 321, 532), [(194, 464.5), (227, 407), (293, 407), (326, 464.5), (293, 522), (227, 522)]),
+        ('Luk_NO_EcoNeutral_500ml.jpg', (69, 475, 207, 596), [(85, 526), (118, 469), (184.5, 469), (217, 526), (184, 583), (118, 583)]),
+        ('Luk_NO_EcoNeutral_500ml.jpg', (298, 478, 437, 600), [(304, 529), (337, 471), (403, 471), (437, 529), (404, 586), (337, 586)]),
+    ],
 }
