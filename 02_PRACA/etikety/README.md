@@ -38,7 +38,7 @@
 - SK etiketa má piktogram GHS07, ale **chýbajú signálne slovo a H/P vety** → doplnené po nórsky presne podľa oddielu 2.2 našej bezpečnostnej karty: ADVARSEL, H319, P102, P305+P351+P338, P501 + UFI 6W20-J050-9000-JN6H, blok stojí nad piktogramom.
 - **Rozpor na overenie u výrobcu:** etiketa uvádza „voda, etanol, aditíva“, bezpečnostná karta (rovnaká ako SW EKO) uvádza izopropylalkohol 5–10 %.
 - Odporúčanie „Isokor Cleaner“ → „Isokor Fett- og flekkfjerner“ (nórsky názov). Ikony „eco friendly“ a „fog stop“ ostali po anglicky (grafika výrobcu).
-- **Piktogram GHS07 je menší, než chce CLP** (min. 10 × 10 mm): 250/500 ml má stranu kosoštvorca ~8,4 mm, 100 ml ~5,9 mm — tak je to už v SK origináli. Zväčšenie = zmena rozloženia spodnej časti; čaká na Lukovo rozhodnutie.
+- **Piktogram GHS07 je menší, než chce CLP** (min. 10 × 10 mm): 250/500 ml má stranu kosoštvorca ~8,4 mm, 100 ml ~5,9 mm — tak je to už v SK origináli. **Luk 28. 10.: necháva podľa výrobcu** (nezväčšovať, neotvárať znova).
 - Dovozca bez org. č. a „Produsert i EU“ — na malej etikete by adresa narazila do čiarového kódu; povinné je meno, adresa a telefón.
 
 ## Otvorené (Luk rozhodne / overí)
