@@ -38,3 +38,8 @@ Zdroj textov: `stranka_hytteservice.html`, `stranka_vilkar_hytteservice.html`, `
 ## Pasce
 - `collectionCreate(input:)` je v API 2026-10 zastarané → `collection:` + `sources` (podmienka `productTag`).
 - `pages(query:"title:…")` nenašlo nové stránky → overovať cez `page(id:)`.
+
+## Úpravy 29. 10. večer (Luk)
+- Úvod bez konkrétnych miest („bor et stykke unna – kanskje i en annen by eller landsdel"); oblasť len **Vegårshei, Tvedestrand og Risør** (Gjerstad a Åmli preč) — stránka, produkty, príspevky, reklamné texty.
+- Sneh: žiadna cena za m², „snømåking kun etter avtale og når vi har kapasitet"; snømåking **nie je súčasť kontroly**, pri veľkom snehu bez záruky (stránka, podmienky bod 2, Vintertilsyn, Hele sesongen).
+- Galéria náhrobných kameňov dole: pochádzala zo šablóny `page.json` (XO Gallery „gravsttter-vedlikehold"). Tému nemeníme → stránka Hytteservice prepnutá na šablónu **`tjenester`** (text + recenzie), Vilkår na **`sertifikater`** (len text).

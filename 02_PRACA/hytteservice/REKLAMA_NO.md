@@ -12,7 +12,7 @@ Vi passer på den for deg i vinter:
 🌱 Våråpning – klar til sommeren før 17. mai
 
 📋 Du får tilsynslogg du kan vise forsikringsselskapet.
-📍 Vegårshei, Tvedestrand, Risør, Gjerstad og Åmli.
+📍 Vegårshei, Tvedestrand og Risør.
 
 Hele vintersesongen fra 11 990 kr.
 👉 Les mer og bestill: isokor-skandinavia.no/pages/hytteservice
@@ -55,7 +55,7 @@ Lukas, Isokor Skandinavia AS · [telefon]
 Vi passer på hytta di i vinter
 🍂 Høstlukking · ❄️ Tilsyn hver 14. dag · 🌱 Våråpning
 Bilder etter hvert besøk · Tilsynslogg til forsikringen
-Vegårshei · Tvedestrand · Risør · Gjerstad · Åmli
+Vegårshei · Tvedestrand · Risør
 Hele vintersesongen fra 11 990 kr
 isokor-skandinavia.no/pages/hytteservice · [telefon] · [QR-kode]
 *Kam: obchody pri osadách (Joker/Coop), stavebniny, nástenky pri chatových cestách.*

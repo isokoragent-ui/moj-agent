@@ -25,7 +25,7 @@
 7. **Marža:** chýba nákupná cena EcoNeutral 100 ml a súprav, reálna cena PostNord. Glass Profi (749) a Polisher 500 ml (1 099) sú lacnejšie než veľkoobchod s DPH — Luk opraví tabuľku. Kurz 15 NOK/EUR overiť.
 8. **Vyhodnotenie cien:** koncom novembra 2026 porovnať objednávky s 27. 8.–26. 10. (3 objednávky).
 9. **Badepakken sklad:** vlastný (20 ks), predaj neodráta Kalkfjerner/Baderomsrens → Luk stráži ručne.
-10. **Web audit — zvyšok:** b) ⏸ Vilkår for bruk (agent pripraví, Luk vloží) · c) Angrerett + angreskjema · d) pruh hore „Frakt 99 kr · Halv frakt over 400 kr · Gratis frakt over 700 kr“ (zapína Luk) · e) vypredané FVP, Fasaderens Plus 5 l, SW 5 l — doobjednať/skryť · f) Om oss — fotky interiéru.
+10. **Web audit — zvyšok:** g) stránka „Vårt Magasin“ používa šablónu `page.json` → dole galéria náhrobných kameňov (asi nechcené, Luk rozhodne) · b) ⏸ Vilkår for bruk (agent pripraví, Luk vloží) · c) Angrerett + angreskjema · d) pruh hore „Frakt 99 kr · Halv frakt over 400 kr · Gratis frakt over 700 kr“ (zapína Luk) · e) vypredané FVP, Fasaderens Plus 5 l, SW 5 l — doobjednať/skryť · f) Om oss — fotky interiéru.
 11. **Marketing:** pravidelný rytmus (návrh 2× týždenne, ut/st + pi, 10–12 h). Muggfjerner ⏸ a Hroby ⏸ (nepripomínať).
 12. Luk zmaže nepublikovanú kópiu témy „Dawn – úprava úvodnej stránky 2026-10-18“.
 13. Luk prejde `02_PRACA/PLAN.md` a dodá čísla pre Krok 0.

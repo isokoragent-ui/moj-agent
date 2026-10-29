@@ -16,6 +16,7 @@
 8. Overiť: `onlineStoreUrl` produktov, `resourcePublicationsV2` kolekcie, `isPublished` stránok, položky menu.
 
 ## Pasce
+- ⚠️ **Predvolená šablóna stránky `page.json` má dole galériu náhrobných kameňov** (XO Gallery). Novej stránke hneď daj `templateSuffix: "tjenester"` (text + recenzie) alebo `"sertifikater"` (len text). Tému nemeníme.
 - ⚠️ `collectionCreate(input:)` je v API 2026-10 zastarané → `collection:` + `sources`. `collectionAddProducts` neexistuje.
 - ⚠️ `Publication.name` zastarané → `catalog { title }`. `Collection.onlineStoreUrl` neexistuje.
 - ⚠️ `pages(query:"title:…")` nové stránky nenašlo → overovať cez `page(id:)`.
