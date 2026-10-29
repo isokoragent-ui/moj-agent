@@ -1,64 +1,101 @@
-# Návrh: Hytteservice — zatvorenie na zimu, otvorenie na jar (v2, 2026-10-29)
+# Návrh: Hytteservice — Vintersesong (v3, 2026-10-29)
 
-*Agent Iso. Verzia 2 podľa Lukových podmienok (pozri
+*Agent Iso. Verzia 3 podľa Lukových podmienok (pozri
 `08_ROZHODNUTIA/2026-10-29_hytteservice_rozsah.md`). Ceny sú odhad
 z cudzích cenníkov — overiť testom.*
 
-## Podmienky (Luk)
-- **Bez pohotovosti** — žiadny výjazd do 24 h, Luk si termíny volí sám.
-- **Bez zamestnanca** — všetko zvládne Luk sám popri Isokore.
-- **Bez zmluvy o zodpovednosti** — pri periodickej kontrole netreba.
-- **Sezónne:** zatvorenie na zimu → (voliteľne) občasná kontrola → otvorenie na jar → **koniec pred letom** (v lete náhrobné kamene a Isokor).
+## Princíp v jednej vete
+**Plánovaná kontrola každých 14 dní od zatvorenia po otvorenie, so
+záznamom pre poisťovňu — ale bez pohotovosti.** Luk chodí podľa svojej
+trasy, nie na zavolanie.
 
-## Prečo to sedí do roka
-| Obdobie | Hytteservice | Ostatné |
-|---|---|---|
-| okt.–nov. | **Høstlukking** | Isokor, Vianoce |
-| dec.–mar. | **Vintersjekk** 1× mesačne (voliteľné) | tichá sezóna → voľný čas |
-| apr.–pol. mája | **Våråpning** (pred 17. 5.) | |
-| jún–sep. | — | náhrobné kamene, Isokor |
+## Sezóna
+| Obdobie | Čo |
+|---|---|
+| okt.–nov. | **Høstlukking** — zatvorenie chaty |
+| nov.–apr. | **Vintertilsyn** — kontrola každých 14 dní, fotoreport, záznam |
+| apr.–pol. mája | **Våråpning** — otvorenie, príprava na leto (pred 17. 5.) |
+| jún–sep. | koniec (náhrobné kamene, Isokor) |
 
-## Balíky (cena podľa veľkosti chaty, odhad)
-| Balík | Čo obsahuje | Cena |
-|---|---|---|
-| **Høstlukking** | voda zavrieť/vypustiť, hlavný ventil, kúrenie na protimrazovú teplotu, jedlo von, ochrana proti myšiam, nábytok a vankúše dnu, odkvapy, kontrola strechy a dverí, fotoreport | 2 500–4 500 kr |
-| **Vintersjekk** | 1× mesačne dec.–mar., **termín v rámci mesiaca určuje Luk**: pohľad dnu aj von, teplota, voda, myši, sneh, fotky | 1 900 kr / 4 návštevy |
-| **Våråpning** | voda pustiť + kontrola únikov, vyvetrať, ľahké upratanie, okná, terasa + zelený povlak, fľaky od hrdze/mangánu, impregnácia (Isokor), nábytok von, fotoreport | 3 500–6 500 kr |
-| **Sesongpakke** | všetky tri | −10 % |
+## Ako sa dá „14 dní" dodržať a mať normálny život
+1. **Pevná trasa:** každá chata má svoj pevný deň v 14-dňovom cykle.
+   Chaty sú v 2 skupinách: **týždeň A** (napr. Vegårshei + vnútrozemie),
+   **týždeň B** (pobrežie Tvedestrand/Risør). Jeden–dva trasové dni
+   týždenne, zvyšok týždňa je Lukov.
+2. **Plánovať každých 12–13 dní, nie 14** → 1–2 dni rezerva na počasie
+   alebo chorobu bez toho, aby sa prekročila hranica.
+3. **Sviatky/dovolenka:** návšteva tesne pred a hneď po (napr. ~20. 12.
+   a ~2. 1.). Pri dlhšej neprítomnosti majiteľovi vopred oznámiť alebo
+   mať náhradníka platení za návštevu (kolega remeselník) — rozhodne Luk.
+4. **Žiadna pohotovosť — napísané v ponuke:** „Vi har ikke døgnvakt. Ved
+   akutt skade: ring rørlegger/vakt. Ekstra besøk kan avtales når vi har
+   kapasitet." Po búrke: najbližšia plánovaná návšteva, alebo platená
+   návšteva navyše, keď to ide.
+5. **Senzor namiesto pohotovosti (doplnok):** teplotný + únikový senzor
+   s upozornením do mobilu majiteľa (hardvér cca 500–1 500 kr, montáž
+   pri zatváraní). Majiteľ má poplach hneď, Luk nemusí byť na príjme.
+   *Typy/značky overiť pred ponukou.*
 
-**Navyše, len keď je čas (bez záruky termínu):** sneh zo strechy 40–60 kr/m², drevo, drobné opravy.
+## Čo sa pri každej kontrole robí (~20–30 min)
+Dnu: teplota (číslo na fotke teplomera), hlavný ventil, stopy vody/únikov,
+myši, zápach/vlhkosť. Von: strecha a sneh, dvere/okná/zámky, odkvapy,
+stromy po búrke. **3–6 fotiek.**
 
-## Čo z toho NEsľubovať
-- **Poistka „každých 14 dní":** mesačná kontrola túto požiadavku niektorých poisťovní **nespĺňa** → nepredávať ako „splníte poistku". Predávať: **správne zatvorenie** (hlavný ventil, vypustená voda, teplota) — to je to, čo pri škode mrazom rozhoduje najviac — a fotoreport ako doklad.
-- **Pohotovosť po búrke** — len „keď to ide", nie garancia.
+## Tilsynslogg — to, čo predáva
+- Po každej návšteve krátka SMS/e-mail s fotkami.
+- Na konci mesiaca a sezóny **PDF záznam**: dátum, čas, teplota, nálezy,
+  čo urobené, fotky. Majiteľ ho môže dať poisťovni.
+- Agent pripraví šablónu a môže záznam skladať z Lukových fotiek a
+  odpovedí (cieľ: Luk fotí a odfajkne, papiere robí agent).
+- **Férovo v ponuke:** „Sjekk vilkårene i din forsikring — tilsynsloggen
+  vår dokumenterer besøkene." (Požiadavky sa líšia podľa poisťovne;
+  nesľubovať, že poistka je automaticky splnená.)
+
+## Cenník (odhad, chata do ~100 m² / nad 100 m²)
+| Balík | Cena |
+|---|---|
+| Høstlukking | 2 900 / 3 900 kr |
+| Vintertilsyn 14 dní (≈ 13 návštev, nov.–apr.) | 4 900 / 5 900 kr za sezónu |
+| Våråpning | 3 900 / 5 900 kr (+ materiál Isokor pri impregnácii) |
+| **Vintersesong komplett** (všetky tri) | **10 900 / 14 500 kr** (≈ −10 %) |
+
+- Platba: 50 % pri zatvorení, 50 % vo februári.
+- Navyše, keď je kapacita: sneh zo strechy 40–60 kr/m², návšteva navyše
+  500 kr, drevo, opravy (hodinovka).
+- Kto chce len zatvorenie + otvorenie bez kontrol, môže — ale komplett
+  je to, čo ponúkame ako prvé.
 
 ## Kapacita (Luk sám)
-- Zatvorenie ~2–3 h/chata, otvorenie ~3–5 h/chata, kontrola ~30–45 min.
-- **Strop prvej sezóny: 15–20 chát**, zhlukovaných podľa oblasti (Vegårshei · Tvedestrand · Risør/Gjerstad).
-- Kontroly: 15–20 chát = 2–3 dni mesačne trasou.
+- 20 chát × 13 kontrol ≈ 260 návštev za sezónu ≈ 45 mesačne.
+- V zhlukoch ~8–10 chát za trasový deň → **4–5 dní mesačne**.
+- Zatvorenie (okt.–nov.) a otvorenie (apr.–máj) sú špičky — preto strop.
+- **Strop prvej sezóny: 15–20 chát.**
 
 ## Peniaze (odhad)
-15 chát × (3 500 + 1 900 + 5 000) ≈ **156 000 kr za sezónu** + produkty
-(sada Isokor nechaná na chate → objednávky cez e-shop). Väčšina v novembri
-a apríli–máji, keď je inak menej práce.
+- Realisticky 1. sezóna 8–12 chát × ~12 000 kr ≈ **100–145 000 kr**.
+- Pri 20 chatách ≈ **240 000 kr** za 6–7 mesiacov (≈ 35–40 tis. kr/mes.
+  v sezóne) + produkty Isokor a práce navyše.
 
 ## Odkiaľ zákazníci
-1. Chaty, ktoré už Luk pozná → ponuka hneď (høstlukking ešte v novembri).
-2. Susedia v tých istých osadách → zhluky.
+1. Majitelia, ktorých Luk pozná → ponuka hneď.
+2. Ich susedia v osade (zhluky = lacnejšia trasa; zľava 5 % pre 3+ chaty v osade).
 3. Hyttevel (spolky osád) — list predsedovi.
 4. Finn + FB skupiny chatárov + Google profil.
 5. Realitky (noví majitelia z miest).
 
 ## Načasovanie
-- **Teraz (nov. 2026):** høstlukking + vintersjekk — kto stihne. Malý test.
-- **Feb.–mar. 2027:** hlavný predaj våråpning (väčšia zákazka, viac Isokoru).
+- **Teraz (nov. 2026):** test s pár známymi chatami — zatvorenie + kontroly
+  hneď od zatvorenia.
+- **Feb.–mar. 2027:** predaj våråpning (aj chatám bez zimného balíka).
+- **Aug.–sep. 2027:** predaj celej sezóny 2027/28 vopred — hlavná vlna.
 
 ## Ďalší krok
-Agent pripraví (draft → Lukovo „áno"): ponuku pre známych majiteľov (NO),
-checklist zatvorenia/otvorenia + šablónu fotoreportu, Finn/FB inzerát.
+Agent pripraví (draft → Lukovo „áno"): ponuku po nórsky pre známych
+majiteľov, checklist kontroly + šablónu Tilsynslogg, Finn/FB inzerát.
 
 ## Zdroje
 - https://www.bytt.no/forsikring/hytteforsikring/a-enbe/slik-unngar-du-at-hytteforsikringen-din-blir-verdilos-i-vinter
+- https://www.bytt.no/artikler/41
 - https://kjellshytteservice.no/hyttetilsyn/
 - https://vesthytteservice.com/priser/
 - http://www.strynhytteservice.no/tenester/
