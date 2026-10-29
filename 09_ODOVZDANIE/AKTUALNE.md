@@ -19,7 +19,7 @@
    - **Nórske limity v 8.1 neoverené** (Lovdata z cloudu blokovaná): Fasaderens Plus (na webe!) a FPC — NaOH/KOH 2 mg/m³ T, chlór 0,5 ppm/1,5 mg/m³ T. Overiť vo FOR-2011-12-06-1358 vedlegg 1.
 3. **Popisy produktov — Luk rozhodne (nič sa nemenilo):** Wash-In má viditeľnú „Oversetters merknad … Lotos Profi“ (agent ponúkol odstrániť) · Clinic a Muggfjerner — tvrdenia typické pre biocíd (vírusy/baktérie, „99,99 %“, „eliminere sporer“) · Universalrens (ex Allrens) — zdravotné tvrdenia · Badepakken „trygg for hele familien“ pri žieravom Kalkfjerner · Lotos Standard „helsemessig trygg“ · FVP „Sikkerhetstiltak“ nespomína horľavosť · Antidugg — zvyšky HTML z AI nástroja.
 4. ✉️ **Smajli** (montér skla, spolupráca) — e-mail **Luk odoslal ručne** (oznámil 29. 10.); čakáme na odpoveď. Ak nepríde, follow-up **št 5. 11. 2026** (agent pripomenie).
-5. **Sponzorovanie Reelu Badepakken** beží (~50 kr/deň) — **report št 29. 10. ráno**, návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web · zmazať v Metricoole TikTok koncept (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken → 349 spolu).
+5. **Sponzorovanie Reelu Badepakken** beží (~50 kr/deň) — report 1 spravený 29. 10. (17 vstupov, 3 košíky, 0 objednávok — pozri kampaňový súbor), návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web · zmazať v Metricoole TikTok koncept (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken → 349 spolu).
 6. 🍳 **Kuchynský balík:** Fett- og flekkfjerner (Cleaner) + Kjøleskapsrens (Fridge Cleaner) — grafika + produkt + príspevok. Treba od Luka: **cena balíka** a **fotky oboch fliaš**.
 7. **Marža:** chýba nákupná cena EcoNeutral 100 ml a súprav, reálna cena PostNord. Glass Profi (749) a Polisher 500 ml (1 099) sú lacnejšie než veľkoobchod s DPH — Luk opraví tabuľku. Kurz 15 NOK/EUR overiť.
 8. **Vyhodnotenie cien:** koncom novembra 2026 porovnať objednávky s 27. 8.–26. 10. (3 objednávky).
@@ -54,4 +54,4 @@
 - `shop.com`, `cloudflare-dns.com` z cloudu blokované; DNS čítať cez hlavičky e-mailu (Gmail RAW).
 - Na konci okna VŽDY commit + push do `main` (z cloudu: vetva → PR → zlúčiť, Luk to schválil 28. 10.).
 
-ĎALŠÍ KROK: report sponzorovaného Reelu Badepakken (bol plánovaný na št 29. 10. ráno — ešte nespravený); potom ďalšie etikety, keď Luk pošle SK PDF; po 2. 11. výsledky nyhetsbrevu č. 1, do št 5. 11. text č. 2 a follow-up Smajlimu, ak neodpovie.
+ĎALŠÍ KROK: ďalšie etikety, keď Luk pošle SK PDF; po 2. 11. výsledky nyhetsbrevu č. 1, do št 5. 11. text č. 2 a follow-up Smajlimu, ak neodpovie.
