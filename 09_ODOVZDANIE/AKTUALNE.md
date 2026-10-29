@@ -11,6 +11,7 @@
 - **26.–27. 10.:** bezpečnostné karty uzavreté (31 kariet, 27 na webe → `02_PRACA/sikkerhetsdatablad/README.md`); EcoDescal popis bez zmeny (rozhodnutie, neotvárať); Gmail upratný; menu webu, Om oss, org. č. 922 112 975; ceny 149 kr + doprava 99/49/0; Badepakken 349 kr vrátane dopravy + kampaň; „Nye priser“ 27. 10.
 
 ## Nedokončené — pokračovať tu
+0. 📧 **monika@skredderstuen.no (One.com) nedoručí na Gmail** (29. 10.) — prijíma OK, odosiela OK inam. Podozrenie: chýba/vypnutý SPF alebo DKIM (Gmail od 2024 odmieta neoverenú poštu). Čakám na vrátený e-mail (kód 550 5.7.x) od Luka → potom One.com → DNS: zapnúť SPF/DKIM. Z cloudu DNS čítať nevieme.
 1. **Sikkerhetsdatablady — zvyšok (keď Luk pošle SK PDF):** GreenGuard 100 ml (⚠️ odpudzovač hmyzu = pravdepodobne **biocíd**, v Nórsku povolenie Miljødirektoratet — overiť skôr, než sa ho bude predávať viac; 284 ks na sklade), Multi Steinrens 5 l, Peisglassrens. Junior → na web, keď ho Luk pridá do e-shopu. Postup: `02_PRACA/sikkerhetsdatablad/README.md`.
 2. **Povinnosti pri nebezpečných výrobkoch — Luk overí/rozhodne:**
    - Týka sa: **horľavé** SW, Polisher, Glass Profi, Lotos Standard, FVP (UN 1219) · **žieravé** LMS, LM Descaling/Kalkfjerner, EcoDescal (UN 1760), Fasaderens Plus, FPC (UN 3266), WhiteWood · **oči** SW EKO, SWB, Antidugg (H319), FVE (H318).
