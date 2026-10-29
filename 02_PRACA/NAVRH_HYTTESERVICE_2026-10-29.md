@@ -31,10 +31,7 @@ trasy, nie na zavolanie.
    akutt skade: ring rørlegger/vakt. Ekstra besøk kan avtales når vi har
    kapasitet." Po búrke: najbližšia plánovaná návšteva, alebo platená
    návšteva navyše, keď to ide.
-5. **Senzor namiesto pohotovosti (doplnok):** teplotný + únikový senzor
-   s upozornením do mobilu majiteľa (hardvér cca 500–1 500 kr, montáž
-   pri zatváraní). Majiteľ má poplach hneď, Luk nemusí byť na príjme.
-   *Typy/značky overiť pred ponukou.*
+5. **Senzory:** Luk 29. 10. — **nemontujeme ani neinštalujeme**. Majiteľ si ich dá namontovať odborníkovi; my pri kontrole senzor len pozrieme a odfotíme, za funkciu nezodpovedáme.
 
 ## Čo sa pri každej kontrole robí (~20–30 min)
 Dnu: teplota (číslo na fotke teplomera), hlavný ventil, stopy vody/únikov,

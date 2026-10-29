@@ -25,6 +25,7 @@
 - [ ] Ingen fukt eller vond lukt
 - [ ] Tak: snømengde ca. ___ cm · skader? (bilde)
 - [ ] Dører, vinduer, låser hele
+- [ ] Sensor/alarm (hvis eieren har): sett på den og ta bilde – vi monterer ikke og svarer ikke for funksjonen
 - [ ] Takrenner, trær og omgivelser etter storm
 - [ ] 3–6 bilder · avvik meldt eier samme dag
 
