@@ -14,11 +14,11 @@ produkt k nemu).*
 - ⚠️ Kyseliny môžu poškodiť **mramor, vápenec, terazzo** (kyselinocitlivý kameň) —
   v návode a reklame: „test na skrytom mieste, nie na mramor/vápenec“ (overiť
   s výrobcom, ktoré povrchy výslovne vylučuje).
-- ⚠️ **Mangán (čierne fľaky) netvrdiť**, kým to Luk neoverí na skutočnom WC.
-  Hrdza (železo) a vodný kameň áno — tie sú v popise.
+- **Mangán neriešime** (Luk 29. 10.). Kampaň len na **hrdzu — oranžové až hnedé
+  fľaky** (a vodný kameň, ktorý je v popise).
 
 **Prečo Agder / chaty** (verejné zdroje):
-- Železo a mangán sú bežné v **vŕtaných studniach** v Nórsku; nie sú
+- Železo (a mangán) sú bežné vo **vŕtaných studniach** v Nórsku; nie sú
   nebezpečné, ale robia **hnedé/čierne fľaky** na WC, vani, umývadle a prádle
   (FHI, NGU, fóra byggebolig.no). Odporúčané limity: Fe 0,2 mg/l, Mn 0,05 mg/l.
 - Chaty mimo verejného vodovodu majú často **vlastnú studňu** (Mattilsynet,
@@ -31,13 +31,13 @@ produkt k nemu).*
 ## 2. Myšlienka kampane
 **„Rustflekker på hytta?“** — jeden problém, dve riešenia:
 1. **Urob si sám** → Isokor LMS z e-shopu (149 kr).
-2. **Urobíme za teba** → Hytteservice (Våråpning obsahuje rust- og
-   manganflekker na WC/vani; celá sezóna s tilsyn hver 14. dag).
+2. **Urobíme za teba** → Hytteservice (Våråpning obsahuje rustflekker og
+   kalk na WC/vani; celá sezóna s tilsyn hver 14. dag).
 
 ## 3. Reklamy (NO, bez emoji podľa `03_STYL/HLAS.md`)
 **A — LMS, chata a studňa (lokálne Agder)**
 > Brune flekker i toalettet på hytta?
-> Brønnvann med jern gir rustflekker på toalett, badekar og servant. Isokor LMS fjerner rust og kalk – laget med sitron-, vin- og melkesyre.
+> Brønnvann med jern gir oransje og brune rustflekker på toalett, badekar og servant. Isokor LMS fjerner rust og kalk – laget med sitron-, vin- og melkesyre.
 > Bruk hansker, og test først på et skjult sted. Ikke for marmor og kalkstein.
 > 149 kr · isokor-skandinavia.no/products/lms
 Tlačidlo: *Kjøp nå*
@@ -55,12 +55,13 @@ Tlačidlo: *Kjøp nå*
 Tlačidlo: *Les mer* → /pages/hytteservice
 
 ## 4. Cielenie (Meta — Facebook + Instagram)
-| Sada | Kto | Kde | Rozpočet (návrh) |
+| Sada | Kto | Kde | Rozpočet |
 |---|---|---|---|
-| A+B LMS | 25–70 r., domy a chaty | Vegårshei, Tvedestrand, Risør, Gjerstad, Arendal + 15 km | 50 kr/deň |
-| C Hytteservice | 35–70 r., záujem hytte/fritidsbolig | Oslo, Akershus, Buskerud, Vestfold, Rogaland + „nedávno v“ Agder | 70 kr/deň |
-- Dĺžka: 14 dní → spolu ~1 700 kr. Po 7 dňoch vyhodnotiť a presunúť peniaze
-  na lepšiu reklamu.
+| A+B LMS (hrdza) | 25–70 r., domy a chaty | Vegårshei, Tvedestrand, Risør, Gjerstad, Arendal + 15 km | 30 kr/deň |
+| C Hytteservice | 35–70 r., záujem hytte/fritidsbolig | Oslo, Akershus, Buskerud, Vestfold, Rogaland + „nedávno v“ Agder | 27 kr/deň |
+- **Rozpočet schválený Lukom 29. 10.: 800 kr na 14 dní** (≈ 57 kr/deň; 420 + 378 kr).
+  Pri malom rozpočte nedeliť viac — 2 sady, v sade A+B nech Meta sama vyberie lepšiu reklamu.
+  Po 7 dňoch vyhodnotiť; slabšiu sadu vypnúť a peniaze presunúť.
 - Meranie: kliknutia na odkaz, pridanie do košíka, objednávky LMS, objednávky
   a dopyty Hytteservice (Shopify).
 
@@ -68,11 +69,11 @@ Tlačidlo: *Les mer* → /pages/hytteservice
 1. **Fotky pred/po** — WC s hrdzavým fľakom zo studne, dlažba s hrdzou;
    najlepšie z vlastnej zákazky (reálne, nie AI). Bez nich reklama A/B
    s fotkou fľaše.
-2. **Test mangánu** — čierny fľak + LMS; ak zaberie, doplníme „og mangan“.
+2. ~~Test mangánu~~ — neriešime (Luk 29. 10.).
 3. **Popis LMS v e-shope rozšíriť** (návrh nižšie) — dnes je to jedna veta;
    reklama vedie na produkt, ktorý musí predávať sám.
 4. **Sklad:** 20 ks — pri úspechu doobjednať včas.
-5. Lukovo **„áno“ s rozpočtom** → potom spustenie (Meta reklamy cez
+5. ✅ Rozpočet 800 kr / 14 dní (Luk 29. 10.). Spustenie hneď po fotkách (Meta reklamy cez
    Metricool boost alebo priamo v Meta Ads Manageri).
 
 ## 6. Návrh popisu LMS (NO) — NEZMENENÉ v e-shope, čaká na „áno“
