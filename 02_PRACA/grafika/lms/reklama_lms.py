@@ -56,8 +56,6 @@ def make(W, H, PH, path):
     d.rounded_rectangle((x, y, x + bw + 60, y + 78), radius=39, fill=CREAM)
     d.text((x + 30, y + 16), t, font=c, fill=GREEN); y += 104
     d.text((x, y), "isokor-skandinavia.no", font=f('Inter-Medium.otf', 32), fill=ACC)
-    d.text((x, y + 50), "Etsende – bruk hansker. Test først på et skjult sted.",
-           font=f('Inter-Regular.otf', 24), fill=(200, 205, 198))
     can.save(path, quality=90, optimize=True, progressive=True)
 
 

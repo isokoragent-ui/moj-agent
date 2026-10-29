@@ -38,7 +38,6 @@ produkt k nemu).*
 **A — LMS, chata a studňa (lokálne Agder)**
 > Brune flekker i toalettet på hytta?
 > Brønnvann med jern gir oransje og brune rustflekker på toalett, badekar og servant. Isokor LMS fjerner rust og kalk – laget med sitron-, vin- og melkesyre.
-> Bruk hansker, og test først på et skjult sted. Ikke for marmor og kalkstein.
 > 149 kr · isokor-skandinavia.no/products/lms
 Tlačidlo: *Kjøp nå*
 
@@ -100,6 +99,8 @@ med vann. Test alltid først på et skjult sted.
 
 ## 7. Fotky a kreatíva (29. 10.)
 - Od Luka: fľaša LMS, WC pred/po, dlažba pred/po → `02_PRACA/grafika/lms/fotky/`.
+- Luk 29. 10.: z reklamy **vypustiť upozornenie** (rukavice, test na skrytom mieste) — LMS bežne používa na keramiku aj na hrdzu na karosérii auta. V e-shope (produktová stránka) musí zostať informácia o nebezpečnosti (karta, „Etsende“) — súvisí s bodom 2 v odovzdaní. Slovo „bezpečný/trygg“ v reklame nepoužívať (karta: H314). Použitie na auto **nepropagovať**, kým to nepotvrdí výrobca.
+- Dlažba: Luk potvrdil — **dve skutočné fotky spojené v Gemini do jedného obrázka** (pred/po). Pošle originály zvlášť → spojíme sami bez znaku ✦.
 - Hotové: `02_PRACA/grafika/lms/lms_wc_pred_po_1080x1350.jpg` (feed) a `…_1080x1920.jpg` (Stories), skript `reklama_lms.py`.
 - ⚠️ **Dlažba „po“ má v pravom dolnom rohu znak ✦ (Google Gemini)** → pravdepodobne upravené AI. Upravenú fotku „po“ ako skutočný výsledok nepoužiť (klamlivá reklama + pravidlá Meta). Čaká na Lukovo potvrdenie / skutočnú fotku.
 - WC pred/po: rovnaká miestnosť (hadica, dvierka „Hlavní uzávěr vody“), ale **iné veko** (po: s detskou vložkou) — skontrolovať, či je to tá istá misa.
