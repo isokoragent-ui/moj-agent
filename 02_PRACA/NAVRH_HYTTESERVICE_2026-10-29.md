@@ -99,3 +99,11 @@ majiteľov, checklist kontroly + šablónu Tilsynslogg, Finn/FB inzerát.
 - https://kjellshytteservice.no/hyttetilsyn/
 - https://vesthytteservice.com/priser/
 - http://www.strynhytteservice.no/tenester/
+
+## Pod ktorou firmou (odporúčanie agenta 29. 10., Luk nerozhodol)
+**Isokor Skandinavia AS (922 112 975), ako služba „Isokor Hytteservice“** — nie nová značka ani firma.
+- Sedí do značky: ekologická starostlivosť o povrchy; jarné otvorenie = Isokor produkty v praxi; zákazník služby → zákazník e-shopu.
+- AS = obmedzené ručenie (bez zmluvy o zodpovednosti dôležité) a dôveryhodnosť pre majiteľov z Osla/Stavangeru.
+- Proti chaosu: samostatná podstránka na webe, vlastný cenník, samostatný riadok v účtovníctve.
+- Prácu môže fakturovať živnosť ako subdodávka pre AS (ako doteraz) — overiť s účtovníčkou.
+- ⚠️ **MVA:** služby majú 25 % MVA; ceny pre súkromníkov musia byť vrátane MVA. Či je AS v MVA registri, neoverené (brreg blokovaný). Pri obrate nad 50 000 kr za 12 mes. je registrácia povinná.
