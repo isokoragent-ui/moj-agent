@@ -1,0 +1,6 @@
+{"kode": "H00", "eier": "Eksempel Eiersen", "hytte": "Tvedestrand (H00)", "sesong": "2026/27",
+ "besok": [
+  {"dato": "2026-11-03", "tid": "11:15", "type": "Høstlukking", "temp": 9, "funn": "Takrenne full av løv", "tiltak": "Renset takrenner, vann tømt, hovedkran stengt", "bilder": 6},
+  {"dato": "2026-11-15", "tid": "10:40", "type": "Vintertilsyn", "temp": 8, "funn": "Alt i orden", "tiltak": "-", "bilder": 4},
+  {"dato": "2026-11-27", "tid": "13:05", "type": "Vintertilsyn", "temp": 7, "funn": "Musespor i boden", "tiltak": "Satt ut feller (avtalt med eier)", "bilder": 5}
+ ]}

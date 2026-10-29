@@ -9,3 +9,4 @@
 
 Všetky sú bez závislostí (bash + Python 3 štandardná knižnica) a majú
 v hlavičke „PREČO" — aby nikto neskôr nezrušil to, čo nás chráni.
+- `tilsynslogg.py <chata.json>` — PDF záznam kontrol chaty pre poisťovňu (Hytteservice).
