@@ -7,6 +7,9 @@ description: Na konci rozhovoru prepíše 09_ODOVZDANIE/AKTUALNE.md — čo je h
 
 Terminál a zajtrajšok nesmú byť dva oddelené svety.
 
+0. **Najprv stiahni a zlúč `main`** (`git fetch origin main` + merge) — v iných
+   oknách beží iná téma a mohla zapísať do tých istých súborov. Pri konflikte
+   zachovaj obe strany. V `AKTUALNE.md` meň len body témy tohto okna.
 1. Prepíš `09_ODOVZDANIE/AKTUALNE.md` v tejto štruktúre:
    ```
    # Kde sme skončili

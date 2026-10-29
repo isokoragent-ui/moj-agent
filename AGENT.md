@@ -124,4 +124,17 @@ Terminál a zajtrajšok nesmú byť dva oddelené svety.
   sa práca z okna stratí (cloudový kontajner sa maže).
 - Záloha na tablete: `ISOKOR/agent/` (zip, len občas — nie je zdroj pravdy).
 - Agent beží v cloude, **do tabletu nevidí** — súbory odtiaľ musí Luk nahrať.
+### Viac okien naraz — každé okno = jedna téma (Luk 2026-10-29)
+- Luk má otvorených viac okien Claude Code súčasne; **každé rieši inú tému**
+  (napr. jedno etikety, druhé Hytteservice). Do `main` tak priebežne
+  pribúdajú zmeny z iných okien — to je v poriadku, nie chyba.
+- **V tomto okne rob len jeho tému.** Veci z iných okien nemeň, len ich ber
+  do úvahy (čítaj, nepreberaj).
+- **Pred zápisom do zdieľaných súborov** (`09_ODOVZDANIE/AKTUALNE.md`,
+  `06_DENNIK/`, `02_PRACA/PROJEKTY.md`) najprv stiahni a zlúč `main`
+  (`git fetch origin main` + merge). Pri konflikte **zachovaj obe strany** —
+  nikdy neprepíš zápis iného okna.
+- V `AKTUALNE.md` uprav len body svojej témy; ostatné nechaj, ako sú.
+- Na začiatku okna sa spýtaj (ak to nie je jasné z prvej správy), akej téme
+  je okno venované.
 ## MOJE_DOPLNKY_KONIEC
