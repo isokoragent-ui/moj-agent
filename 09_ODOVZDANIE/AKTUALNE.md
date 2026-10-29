@@ -2,7 +2,7 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-29 21:35 Oslo, cloudová relácia (claude.ai) — všetko je v `main` (PR #15)
+**Naposledy:** 2026-10-29 21:40 Oslo, cloudová relácia (claude.ai) — všetko je v `main` (PR #14 + PR #15)
 
 ## Hotové naposledy
 - **29. 10. — Isokor Hytteservice spustené** (nová služba, Isokor Skandinavia AS): analýza trhu Agder → koncept (zatvorenie na zimu, kontrola každých 14 dní s Tilsynslogg pre poisťovňu, otvorenie na jar; bez pohotovosti, bez zamestnanca, sneh a senzory nie sú v cene) → web `/pages/hytteservice` + `/pages/vilkar-hytteservice` + kolekcia + 5 produktov (ceny konečné 11 990 / 15 990 kr celá sezóna), v hlavnom menu. Oblasť len Vegårshei, Tvedestrand, Risør. → `02_PRACA/hytteservice/README.md`, rozhodnutia `08_ROZHODNUTIA/2026-10-29_hytteservice_*.md`.
@@ -11,6 +11,10 @@
 - **29. 10. — Naplánované v Metricoole:** pi 30. 10. 10:30 FB+IG+Threads, 10:35 Google, 12:00 Stories IG+FB · so 31. 10. 11:00 Reels IG+FB, TikTok, YouTube Shorts · po 2. 11. 10:30 video 16:9 FB + YouTube.
 - **29. 10. — Web:** galéria náhrobných kameňov preč zo stránok Hytteservice a „Vårt Magasin“ (šablóny `tjenester`/`sertifikater`, téma nezmenená). Menu zálohované v `02_PRACA/zalohy/`.
 - **29. 10. — Report Badepakken 1:** 17 vstupov, 3 do košíka, 0 objednávok (`02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`).
+- **29. 10. — Cleaner Home premenovaný na Isokor Universalrens** (Luk): e-shop — názov, SEO, popis (7 miest), nová adresa `/products/isokor-universalrens` + presmerovanie zo starej (overené); bezpečnostná karta v1.1 na webe; etiketa → `08_ROZHODNUTIA/2026-10-29_Universalrens_nazov.md`. Záloha popisu v `02_PRACA/zalohy/`.
+- **28.–29. 10. — 12 nórskych etikiet (návrhy)**: Fett- og flekkfjerner, EcoNeutral (texty a fotky podľa Lukovej verzie), Antidugg 250/500 + 100 ml, Junior, Baderomsrens, Bilrens, Clinic, Universalrens, Kalkfjerner, EcoDescal, Kjøleskapsrens → `02_PRACA/etikety/` (PDF na tlač, PNG do Wordu, A4 2 ks). Skript `02_PRACA/etikety/zdroj/etikett.py`. Pri Antidugg, Kalkfjerner, EcoDescal doplnené povinné CLP údaje (signálne slovo, H/P vety, UFI).
+- **Rozhodnutia 28. 10.:** priame zastúpenie výrobcu — logá, názvy, licencie vybavené (`08_ROZHODNUTIA/2026-10-28_vyrobca_prava_znacky.md`); etikety len prekladáme, všetko od výrobcu ostáva vrátane antimikrobiálnych tvrdení (`…_etikety_len_preklad.md`); piktogram Antifog ostáva podľa výrobcu.
+- **Smajli:** e-mail Luk odoslal ručne (29. 10.) — čaká sa na odpoveď.
 - **28. 10.:** e-mail marketing (Messaging, ne 9:30; nyhetsbrev č. 1 naplánovaný na ne 1. 11.), doména odosielateľa overená (SPF/DKIM/DMARC pass).
 
 ## Nedokončené — pokračovať tu
@@ -21,9 +25,9 @@
    - Týka sa: **horľavé** SW, Polisher, Glass Profi, Lotos Standard, FVP (UN 1219) · **žieravé** LMS, LM Descaling/Kalkfjerner, EcoDescal (UN 1760), Fasaderens Plus, FPC (UN 3266), WhiteWood · **oči** SW EKO, SWB, Antidugg (H319), FVE (H318).
    - (a) **nálepka** po nórsky (piktogramy, Fare/Advarsel, H/P vety); (b) **UFI/PCN** platné aj pre Nórsko — **FVE a FVP nemajú UFI**, vypýtať od Rodinná firma; (c) **Produktregisteret** pri ≥ 100 kg/rok; (d) **doprava** nebezpečného tovaru (PostNord/Posten, obmedzené množstvá LQ) — aj Badepakken (obsahuje Kalkfjerner).
    - **Nórske limity v 8.1 neoverené** (Lovdata z cloudu blokovaná): Fasaderens Plus (na webe!) a FPC — NaOH/KOH 2 mg/m³ T, chlór 0,5 ppm/1,5 mg/m³ T. Overiť vo FOR-2011-12-06-1358 vedlegg 1.
-3. **Popisy produktov — Luk rozhodne (nič sa nemenilo):** Wash-In má viditeľnú „Oversetters merknad … Lotos Profi“ (agent ponúkol odstrániť) · Clinic a Muggfjerner — tvrdenia typické pre biocíd (vírusy/baktérie, „99,99 %“, „eliminere sporer“) · Allrens — zdravotné tvrdenia · Badepakken „trygg for hele familien“ pri žieravom Kalkfjerner · Lotos Standard „helsemessig trygg“ · FVP „Sikkerhetstiltak“ nespomína horľavosť · Antidugg — zvyšky HTML z AI nástroja.
-4. 📝 **E-mail pre Smajliho** (montér skla, spolupráca) → `02_PRACA/emaily/2026-10-27_Smajli_samarbeid_glass.md`, čaká na Lukovu kontrolu; Luk odošle z lukas@; follow-up po 7 dňoch.
-5. **Sponzorovanie Reelu Badepakken** beží (~50 kr/deň) — report 29. 10. hotový (0 objednávok), návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web · zmazať v Metricoole TikTok koncept (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken → 349 spolu).
+3. **Popisy produktov — Luk rozhodne (nič sa nemenilo):** Wash-In má viditeľnú „Oversetters merknad … Lotos Profi“ (agent ponúkol odstrániť) · Clinic a Muggfjerner — tvrdenia typické pre biocíd (vírusy/baktérie, „99,99 %“, „eliminere sporer“) · Universalrens (ex Allrens) — zdravotné tvrdenia · Badepakken „trygg for hele familien“ pri žieravom Kalkfjerner · Lotos Standard „helsemessig trygg“ · FVP „Sikkerhetstiltak“ nespomína horľavosť · Antidugg — zvyšky HTML z AI nástroja.
+4. ✉️ **Smajli** (montér skla, spolupráca) — e-mail **Luk odoslal ručne** (oznámil 29. 10.); čakáme na odpoveď. Ak nepríde, follow-up **št 5. 11. 2026** (agent pripomenie).
+5. **Sponzorovanie Reelu Badepakken** beží (~50 kr/deň) — report 1 spravený 29. 10. (17 vstupov, 3 košíky, 0 objednávok — pozri kampaňový súbor), návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web · zmazať v Metricoole TikTok koncept (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken → 349 spolu).
 6. 🍳 **Kuchynský balík:** Fett- og flekkfjerner (Cleaner) + Kjøleskapsrens (Fridge Cleaner) — grafika + produkt + príspevok. Treba od Luka: **cena balíka** a **fotky oboch fliaš**.
 7. **Marža:** chýba nákupná cena EcoNeutral 100 ml a súprav, reálna cena PostNord. Glass Profi (749) a Polisher 500 ml (1 099) sú lacnejšie než veľkoobchod s DPH — Luk opraví tabuľku. Kurz 15 NOK/EUR overiť.
 8. **Vyhodnotenie cien:** koncom novembra 2026 porovnať objednávky s 27. 8.–26. 10. (3 objednávky).
@@ -37,6 +41,7 @@
 16. 📧 **E-mail marketing** — Messaging, 1× týždenne v ne 9:30 (`08_ROZHODNUTIA/2026-10-28_email_marketing_nedela.md`, postup `07_SCHEMY/NEDELNY_EMAIL.md`). **Nyhetsbrev č. 1 naplánovaný na ne 1. 11. 9:30** (23 príjemcov, test OK). Doména overená, SPF/DKIM/DMARC pass. Ďalej: **po 2. 11. výsledky** (otvorenia/kliky/predaje vs. júl 70 %) · **do št 5. 11. text č. 2**. Nízka priorita: štandardný TXT koreňa domény na One.com je vypnutý (možno SPF pre poštu z lukas@/info@) — overiť hlavičkou e-mailu odoslaného z One.com; pri DMARC p=REJECT dôležité.
 17. **Lovable** — Luk 28. 10.: nainštaloval na odporúčanie, **nepoužíva**, nevie na čo je. Má zápis do produktov, zliav, skladu a publikovania + vlastný predajný kanál. Agent odporučil odinštalovať (najužšie oprávnenie, KÓD #3) — **Luk súhlasí, odinštaluje sám ručne** (Nastavenia → Aplikácie → Lovable). **Agent potom overí** cez API (`appInstallations` + `publications`), že zmizla aplikácia aj kanál Lovable.
 18. 💡 **Messaging automatizácie:** „Vi har lagret handlekurven din“ a „Fullfør bestillingen din“ (opustený košík) sú len **návrhy** — zapnutie = predaj navyše bez práce. Navrhnúť Lukovi po prvom nyhetsbreve.
+20. 🏷️ **Etikety — pokračujeme neskôr ďalšími (Luk pošle SK PDF).** Hotové návrhy: Fett- og flekkfjerner, EcoNeutral, Antidugg (250/500 + 100 ml), Junior, Baderomsrens, Bilrens, Clinic, Universalrens, Kalkfjerner, EcoDescal, Kjøleskapsrens** — Luk skontroluje texty; pri EcoNeutral vypýtať od výrobcu vektorový originál na veľkotlač; Antidugg: výrobca potvrdí etanol vs. izopropanol (etiketa vs. karta) a rozhodne otvorené body v `02_PRACA/etikety/README.md` (názov v páse, Produsert i EU/Slovakia, licencie/logá vybavené → `08_ROZHODNUTIA/2026-10-28_vyrobca_prava_znacky.md`). Potom ďalšie etikety rovnakým skriptom.
 19. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
 
 ## Pozor (čo by ďalšieho vypálilo)
@@ -61,4 +66,4 @@
 - `shop.com`, `cloudflare-dns.com` z cloudu blokované; DNS čítať cez hlavičky e-mailu (Gmail RAW).
 - Na konci okna VŽDY commit + push do `main` (z cloudu: vetva → PR → zlúčiť, Luk to schválil 28. 10.).
 
-ĎALŠÍ KROK: pi 30. 10. po 12:00 overiť zverejnenie príspevkov Hytteservice (publicUrl) a sledovať prvé dopyty/objednávky; potom do št 5. 11. text nyhetsbrevu č. 2.
+ĎALŠÍ KROK: pi 30. 10. po 12:00 overiť zverejnenie príspevkov Hytteservice a sledovať prvé dopyty/objednávky; po 2. 11. výsledky nyhetsbrevu č. 1, do št 5. 11. text č. 2 a follow-up Smajlimu, ak neodpovie; ďalšie etikety, keď Luk pošle SK PDF.

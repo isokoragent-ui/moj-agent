@@ -16,8 +16,10 @@
 - **E-mail marketing (od 2026-10-28):** Shopify Messaging, 1× týždenne v ne 9:30 zákazníkom s nákupom a súhlasom (23); doména overená; č. 1 Badepakken naplánovaný na 1. 11. → `07_SCHEMY/NEDELNY_EMAIL.md`
 - **Ceny a doprava (od 2026-10-26):** bežná fľaša 149 kr + doprava 99 kr / 49 kr od 400 kr / zdarma od 700 kr; zľavy za kusy vypnuté; ceny podľa Lukovej tabuľky → `08_ROZHODNUTIA/2026-10-26_ceny_a_doprava_spat_na_povodny_model.md`
 - **Bezpečnostné karty (SDS) NO:** ✅ uzavreté 27. 10. — 31 kariet, 27 na webe; chýbajú GreenGuard, Multi Steinrens, Peisglassrens (čaká na SK PDF od výrobcu) → `02_PRACA/sikkerhetsdatablad/README.md`
+- **Etikety NO (od 2026-10-28):** 🟡 12 návrhov hotových (Fett- og flekkfjerner, EcoNeutral, Antidugg 250/500 + 100 ml, Junior, Baderomsrens, Bilrens, Clinic, Universalrens, Kalkfjerner, EcoDescal, Kjøleskapsrens) — PDF na tlač + PNG + A4; pravidlo „len preklad, všetko od výrobcu ostáva“; ďalšie etikety neskôr → `02_PRACA/etikety/README.md`
 - **Balíky:** 🎄 Badepakken (LM Descaling + Bath Cleaner) 349 kr vrátane dopravy — zverejnený 26. 10., kampaň „Julen starter med et rent bad“ beží → `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`; 🍳 kuchynský balík (Fett- og flekkfjerner + Kjøleskapsrens) — 📝 čaká na cenu a fotky
 - **Firma na webe:** Isokor Skandinavia AS, org. č. 922 112 975
+- **Vzťah s výrobcom:** priame zastúpenie, logá/názvy/texty/licencie vybavené dohodou → `08_ROZHODNUTIA/2026-10-28_vyrobca_prava_znacky.md`
 - **Trh:** Nórsko (komunikácia po nórsky), web `www.isokor-skandinavia.no`
 - **Predaj:** zatiaľ bez predajcov v regiónoch; posielam PostNordom alebo
   osobne
@@ -35,7 +37,7 @@
 | Ekologické čistenie, impregnácia a obnova písma na náhrobných kameňoch | ⏸ e-shop kampaň odložená (návrh: `NAVRH_HROBY_2026-10.md`) |
 | Impregnácia a čistenie sklenených systémov, zábradlí a pod. | 🚀 rozbieha sa |
 | **Isokor Hytteservice** — zatvorenie chaty, kontrola každých 14 dní s Tilsynslogg pre poisťovňu, otvorenie na jar (Vegårshei, Tvedestrand, Risør) | 🚀 spustené 29. 10. 2026 (web + e-shop + príspevky) → `02_PRACA/hytteservice/README.md` |
-| B2B spolupráca s montážnikmi sklenených systémov (robia sami / alebo ponúkajú ďalej za províziu) | 🚀 oslovujem firmy |
+| B2B spolupráca s montážnikmi sklenených systémov (robia sami / alebo ponúkajú ďalej za províziu) | 🚀 oslovujem firmy — Smajli: návrh odoslaný (29. 10.), čaká sa na odpoveď |
 
 *Sú tu diery na trhu — treba na nich pracovať a rozširovať predaj a služby.*
 

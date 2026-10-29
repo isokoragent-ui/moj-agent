@@ -11,7 +11,7 @@ Pravidlá návrhu:
 |---|---|---|
 | 1 | Grave Cleaner | Isokor Gravsteinrens |
 | 2 | LM Descaling | Isokor Kalkfjerner for bad |
-| 3 | Cleaner Home | Isokor Allrens for hjemmet |
+| 3 | Cleaner Home | Isokor Universalrens *(do 29. 10. 2026 „Isokor Allrens for hjemmet“ — Luk premenoval)* |
 | 4 | Bath Cleaner | Isokor Baderomsrens |
 | 5 | Cleaner | Isokor Fett- og flekkfjerner |
 | 6 | Sofa Cleaner | Isokor Sofarens |

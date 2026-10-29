@@ -3,6 +3,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 # použitie: python3 build.py <modul s textom, napr. baderomsrens>
 M = importlib.import_module(sys.argv[1])
 PAGES, PRODUCT, DATE = M.PAGES, M.PRODUCT, M.DATE
+VERSION = getattr(M, 'VERSION', '1.0')
 
 D = os.path.dirname(os.path.abspath(__file__))
 N = len(PAGES)
@@ -69,7 +70,7 @@ def page(i, html):
     return f"""<div class="page">
 <img class="wm" src="watermark.jpg">
 <img class="hdr" src="header.jpg">
-<div class="ht"><b>Sikkerhetsdatablad</b><br>{PRODUCT}<br>Utgivelsesdato: {DATE}<br>NO versjon: 1.0</div>
+<div class="ht"><b>Sikkerhetsdatablad</b><br>{PRODUCT}<br>Utgivelsesdato: {DATE}<br>NO versjon: {VERSION}</div>
 <div class="sub">Dette sikkerhetsdatabladet er i samsvar med forordning (EF) nr. 1907/2006 av 18.12.2006 – REACH og forordning (EU) 2020/878 av 18.6.2020.</div>
 <div class="body">{html}</div>
 <div class="foot">Side {i} av {N}</div>
