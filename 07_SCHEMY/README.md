@@ -22,3 +22,4 @@ a pasce v nich sú tie, ktoré naozaj niekoho stáli čas alebo peniaze:
 
 Prečítaj si ich skôr, než budeš písať vlastné. Ukazujú, akú podrobnosť má
 schéma mať — najmä tie pasce.
+- `NOVA_SLUZBA_NA_WEB.md` — nová služba: stránka + produkty + kolekcia + menu cez Shopify API (29. 10. 2026)

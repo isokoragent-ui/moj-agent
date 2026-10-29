@@ -1,0 +1,112 @@
+[
+ {
+  "id": "gid://shopify/MenuItem/548582621363",
+  "title": "Startside",
+  "url": "/",
+  "type": "FRONTPAGE",
+  "items": []
+ },
+ {
+  "id": "gid://shopify/MenuItem/548582654131",
+  "title": "Produkter",
+  "url": "#",
+  "type": "HTTP",
+  "items": [
+   {
+    "id": "gid://shopify/MenuItem/550571049139",
+    "title": "Rengjøring og vasking i husholdningen",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/326125945011"
+   },
+   {
+    "id": "gid://shopify/MenuItem/550256115891",
+    "title": "Fasade, tak, belegningsstein og treverk",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/325853446323"
+   },
+   {
+    "id": "gid://shopify/MenuItem/550396887219",
+    "title": "Gravstøtter",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/326054609075"
+   },
+   {
+    "id": "gid://shopify/MenuItem/590019002547",
+    "title": "Rengjøring av solcellepaneler",
+    "type": "PAGE",
+    "resourceId": "gid://shopify/Page/123762081971"
+   },
+   {
+    "id": "gid://shopify/MenuItem/550256345267",
+    "title": "Impregnering av fasade, tak og belegningsstein",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/325853577395"
+   },
+   {
+    "id": "gid://shopify/MenuItem/550256902323",
+    "title": "Nano-impregnering for klær, sko, tekstiler og skinn",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/325853741235"
+   },
+   {
+    "id": "gid://shopify/MenuItem/550257066163",
+    "title": "Nano-impregnering for glass og keramikk",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/325853806771"
+   },
+   {
+    "id": "gid://shopify/MenuItem/550257098931",
+    "title": "Nano-beskyttelse av kjøretøyet",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/325853839539"
+   },
+   {
+    "id": "gid://shopify/MenuItem/550896206003",
+    "title": "Helsebeskyttelse og hygiene",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/326218481843"
+   },
+   {
+    "id": "gid://shopify/MenuItem/550397182131",
+    "title": "Fordelspakker",
+    "type": "COLLECTION",
+    "resourceId": "gid://shopify/Collection/326054969523"
+   }
+  ]
+ },
+ {
+  "id": "gid://shopify/MenuItem/550397509811",
+  "title": "Tjenester",
+  "type": "PAGE",
+  "resourceId": "gid://shopify/Page/114371559603",
+  "items": []
+ },
+ {
+  "id": "gid://shopify/MenuItem/550565085363",
+  "title": "Produktkatalog",
+  "type": "COLLECTION",
+  "resourceId": "gid://shopify/Collection/326124699827",
+  "items": []
+ },
+ {
+  "id": "gid://shopify/MenuItem/550804553907",
+  "title": "Sertifikater",
+  "type": "PAGE",
+  "resourceId": "gid://shopify/Page/114476712115",
+  "items": []
+ },
+ {
+  "id": "gid://shopify/MenuItem/597346779315",
+  "title": "Om oss",
+  "type": "PAGE",
+  "resourceId": "gid://shopify/Page/121400295603",
+  "items": []
+ },
+ {
+  "id": "gid://shopify/MenuItem/548582686899",
+  "title": "Kontakt",
+  "type": "PAGE",
+  "resourceId": "gid://shopify/Page/113847337139",
+  "items": []
+ }
+]

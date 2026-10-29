@@ -54,3 +54,5 @@ alebo službe Isokor na Facebook, Instagram (prípadne TikTok, YouTube, Google).
   (boost), čokoľvek s cenou alebo zľavou, ktorá ešte nie je na webe
 - ⚠️ **TikTok fotka nesmie byť PNG** — Business TikTok berie len JPEG/JPG/WEBP (zlyhalo 26. 10. 2026). Grafiku pred zverejnením previesť na JPEG. **Threads má limit 500 znakov** — pri zverejnení všade naraz držať text pod 500.
 - Verejnú URL obrázka vieme dostať cez Shopify Súbory (stagedUploadsCreate → curl POST → fileCreate) — funguje z cloudu (overené 26. 10. 2026).
+
+- ⚠️ **Video cez Shopify ako „Video“ sa zmenší** (1080×1920 → 606×1080). Pre plnú kvalitu nahrať ako bežný súbor: `stagedUploadsCreate resource: FILE, mimeType video/mp4` → `fileCreate contentType: FILE` → `GenericFile.url` (overené 29. 10. 2026). Stories bez textu; TikTok potrebuje `title`, YouTube `title` + `madeForKids`.
