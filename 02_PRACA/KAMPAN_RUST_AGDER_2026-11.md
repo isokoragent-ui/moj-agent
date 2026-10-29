@@ -97,3 +97,9 @@ med vann. Test alltid først på et skjult sted.
 - https://byggebolig.no/drikkevannsforsyning-bronn/fjerneredusere-innholdet-av-jern-mangan-kalsium-og-magnesium
 - https://www.benders.se/globalassets/c4-assets/document/NO-MARK-INSTRUKSJON-vedlikehold-belegningsstein-og-heller-2019-LU.pdf
 - https://stoneworld.com/articles/94210-akemi-rust-remover-for-acid-resistant-stone-and-quartz
+
+## 7. Fotky a kreatíva (29. 10.)
+- Od Luka: fľaša LMS, WC pred/po, dlažba pred/po → `02_PRACA/grafika/lms/fotky/`.
+- Hotové: `02_PRACA/grafika/lms/lms_wc_pred_po_1080x1350.jpg` (feed) a `…_1080x1920.jpg` (Stories), skript `reklama_lms.py`.
+- ⚠️ **Dlažba „po“ má v pravom dolnom rohu znak ✦ (Google Gemini)** → pravdepodobne upravené AI. Upravenú fotku „po“ ako skutočný výsledok nepoužiť (klamlivá reklama + pravidlá Meta). Čaká na Lukovo potvrdenie / skutočnú fotku.
+- WC pred/po: rovnaká miestnosť (hadica, dvierka „Hlavní uzávěr vody“), ale **iné veko** (po: s detskou vložkou) — skontrolovať, či je to tá istá misa.
