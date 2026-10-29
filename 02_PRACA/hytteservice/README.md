@@ -49,3 +49,4 @@ Zdroj textov: `stranka_hytteservice.html`, `stranka_vilkar_hytteservice.html`, `
 Nahraté v Shopify → Obsah → Súbory (banner, mobil READY; video spracovanie).
 Na webe odporúčaná sekcia **„Bilde med tekst"** (fotka chaty + text témy, responzívne) — text v banneri je na mobile pridrobný. Banner/video skôr na FB titulku, reklamy, newsletter.
 Text sekcie: *Vi passer på hytta di i vinter* · *Høstlukking, tilsyn hver 14. dag med bilder og tilsynslogg til forsikringen, og våråpning før 17. mai. Vegårshei, Tvedestrand og Risør.* · tlačidlo *Les mer og bestill* → `/pages/hytteservice`. Do živej témy agent nezapisuje → vkladá Luk v editore témy.
+- **Video na výšku** 1080×1920, 10 s, tichá stopa (Stories/Reels/TikTok/Shorts): `hytteservice_video_vertikal_1080x1920.mp4`, zdroj `video_vertikal.py`. Text v hornej časti nad spodným okrajom rozhrania Stories. V Shopify Súboroch (Video 33839070150835).
