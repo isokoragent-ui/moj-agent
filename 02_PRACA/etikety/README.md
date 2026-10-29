@@ -16,6 +16,7 @@
 | Isokor Clinic 500 ml (SK: Cleaner Clinic) | `Isokor_Clinic_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — tvrdenia + „testet av SUJCHBO, V.V.I., nr. 56/2015/LTL“ ako originál |
 | Isokor Allrens for hjemmet 500 ml (SK: Cleaner Home) | `Isokor_Allrens_for_hjemmet_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — názov v páse na 2 riadky |
 | Isokor Kalkfjerner for bad 500 ml (SK: LM Descaling) | `Isokor_Kalkfjerner_for_bad_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — **žieravý (H314)**: doplnené CLP (FARE, Inneholder: melkesyre, H314, P102/P260/P280/P301+P330+P331/P305+P351+P338/P310/P501, UFI) z karty LMD; odznaky UTEN BØRSTING, EFFEKTIV RENGJØRING |
+| Isokor EcoDescal 500 ml (SK: Eco Descal) | `Isokor_EcoDescal_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 29. 10. 2026 — **žieravý (H314)**: CLP ako Kalkfjerner, UFI W120-G081-7002-X7CT; SK text „bez nebezpečných látok“ v rozpore s H314 — preložené verne |
 
 ### EcoNeutral — iný typ SK súboru (pozor pri ďalších)
 - SK PDF nie je vektorový originál ako Cleaner: **pozadie je obrázok 150 dpi v RGB**, texty sú písmo, názov v páse a odznaky „Prírodný produkt“ sú zapečené v obrázku, logo a čiarový kód sú znaky písma.
