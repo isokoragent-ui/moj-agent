@@ -106,4 +106,4 @@ majiteľov, checklist kontroly + šablónu Tilsynslogg, Finn/FB inzerát.
 - AS = obmedzené ručenie (bez zmluvy o zodpovednosti dôležité) a dôveryhodnosť pre majiteľov z Osla/Stavangeru.
 - Proti chaosu: samostatná podstránka na webe, vlastný cenník, samostatný riadok v účtovníctve.
 - Prácu môže fakturovať živnosť ako subdodávka pre AS (ako doteraz) — overiť s účtovníčkou.
-- ⚠️ **MVA:** služby majú 25 % MVA; ceny pre súkromníkov musia byť vrátane MVA. Či je AS v MVA registri, neoverené (brreg blokovaný). Pri obrate nad 50 000 kr za 12 mes. je registrácia povinná.
+- ⚠️ **MVA:** služby majú 25 % MVA; ceny pre súkromníkov musia byť vrátane MVA. Luk 29. 10.: AS zatiaľ **nie je** v MVA registri, do 50 000 kr za 12 mes. chýba ~2 000 kr → registrácia čoskoro. Ceny pre súkromníkov potom vrátane MVA (prepočítať cenník).
