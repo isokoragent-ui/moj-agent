@@ -12,7 +12,7 @@
 
 ## Nedokončené — pokračovať tu
 0a. ⚠️ **MVA Isokor Skandinavia AS:** Luk 29. 10. — obrat ~48 000 kr za 12 mes., hranica 50 000 kr čoskoro → registrácia MVA (Luk). Potom ceny e-shopu a Hytteservice pre súkromníkov vrátane MVA.
-0. 🏡 **Isokor Hytteservice — PRIPRAVENÉ, nezverejnené** (29. 10.) → `02_PRACA/hytteservice/README.md`: stránka + podmienky + kolekcia + 5 produktov (DRAFT), checklisty, e-mail po objednávke, Tilsynslogg PDF (`_nastroje/tilsynslogg.py`), reklamné texty. Ceny → `08_ROZHODNUTIA/2026-10-29_hytteservice_ceny.md`. **Čaká na Lukovo „áno“ na spustenie** (agent zverejní cez API + menu) a na fotku pre príspevky. Koncept: `02_PRACA/NAVRH_HYTTESERVICE_2026-10-29.md`.
+0. 🏡 **Isokor Hytteservice — SPUSTENÉ 29. 10. ~20:40** → `02_PRACA/hytteservice/README.md`: isokor-skandinavia.no/pages/hytteservice + podmienky + kolekcia + 5 produktov živé, v menu. **Pi 30. 10. po 10:35 over** `getScheduledPosts`/publicUrl príspevkov (FB+IG+Threads 10:30, Google 10:35). **Luk:** pozrieť stránku na mobile, príspevok do FB skupín, Finn, list hyttevel, leták (`REKLAMA_NO.md`). Po každej objednávke: agent pripraví e-mail (`EMAIL_PO_OBJEDNAVKE_NO.md`) ako koncept v Gmaile. Ceny → `08_ROZHODNUTIA/2026-10-29_hytteservice_ceny.md`.
 1. **Sikkerhetsdatablady — zvyšok (keď Luk pošle SK PDF):** GreenGuard 100 ml (⚠️ odpudzovač hmyzu = pravdepodobne **biocíd**, v Nórsku povolenie Miljødirektoratet — overiť skôr, než sa ho bude predávať viac; 284 ks na sklade), Multi Steinrens 5 l, Peisglassrens. Junior → na web, keď ho Luk pridá do e-shopu. Postup: `02_PRACA/sikkerhetsdatablad/README.md`.
 2. **Povinnosti pri nebezpečných výrobkoch — Luk overí/rozhodne:**
    - Týka sa: **horľavé** SW, Polisher, Glass Profi, Lotos Standard, FVP (UN 1219) · **žieravé** LMS, LM Descaling/Kalkfjerner, EcoDescal (UN 1760), Fasaderens Plus, FPC (UN 3266), WhiteWood · **oči** SW EKO, SWB, Antidugg (H319), FVE (H318).
@@ -54,4 +54,4 @@
 - `shop.com`, `cloudflare-dns.com` z cloudu blokované; DNS čítať cez hlavičky e-mailu (Gmail RAW).
 - Na konci okna VŽDY commit + push do `main` (z cloudu: vetva → PR → zlúčiť, Luk to schválil 28. 10.).
 
-ĎALŠÍ KROK: št 29. 10. ráno report sponzorovaného Reelu Badepakken; potom do št 5. 11. text nyhetsbrevu č. 2 a po 2. 11. výsledky nyhetsbrevu č. 1.
+ĎALŠÍ KROK: pi 30. 10. po 10:35 overiť zverejnenie príspevkov Hytteservice; potom do št 5. 11. text nyhetsbrevu č. 2 a po 2. 11. výsledky nyhetsbrevu č. 1.
