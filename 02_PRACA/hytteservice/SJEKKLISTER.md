@@ -34,7 +34,7 @@
 - [ ] Hovedkran på – kontroll av lekkasjer ved alle tappesteder, bereder
 - [ ] Lufting
 - [ ] Lett rengjøring (støv, gulv, kjøkken, bad)
-- [ ] Rust- og manganflekker på toalett/badekar (Isokor)
+- [ ] Rustflekker (oransje–brune) og kalk på toalett/badekar (Isokor LMS)
 - [ ] Vinduer
 - [ ] Terrasse vasket, grønske fjernet (Isokor)
 - [ ] Impregnering (hvis bestilt)
