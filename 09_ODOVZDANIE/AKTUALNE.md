@@ -12,7 +12,7 @@
 
 ## Nedokončené — pokračovať tu
 0a. ⚠️ **MVA Isokor Skandinavia AS:** Luk 29. 10. — obrat ~48 000 kr za 12 mes., hranica 50 000 kr čoskoro → registrácia MVA (Luk). Potom ceny e-shopu a Hytteservice pre súkromníkov vrátane MVA.
-0. 💡 **Analýza trhu Agder (29. 10.)** → `02_PRACA/ANALYZA_TRHU_AGDER_2026-10-29.md`. Návrh: Hyttepakke; koncept rozpísaný v `02_PRACA/NAVRH_HYTTESERVICE_2026-10-29.md`. **Luk rozhodne**, či agent pripraví Finn inzerát + FB príspevok na 1-týždňový test.
+0. 💡 **Analýza trhu Agder (29. 10.)** → `02_PRACA/ANALYZA_TRHU_AGDER_2026-10-29.md`. Návrh: Hyttepakke; koncept rozpísaný v `02_PRACA/NAVRH_HYTTESERVICE_2026-10-29.md`. Luk 29. 10. chce **celé balenie**: stránka Hytteservice na webe, produkty v e-shope, objednávka, podklady (checklisty, Tilsynslogg, podmienky služby), reklamné texty. Agent navrhol postup — **čaká na Lukov štart a ceny (vrátane MVA?)**.
 1. **Sikkerhetsdatablady — zvyšok (keď Luk pošle SK PDF):** GreenGuard 100 ml (⚠️ odpudzovač hmyzu = pravdepodobne **biocíd**, v Nórsku povolenie Miljødirektoratet — overiť skôr, než sa ho bude predávať viac; 284 ks na sklade), Multi Steinrens 5 l, Peisglassrens. Junior → na web, keď ho Luk pridá do e-shopu. Postup: `02_PRACA/sikkerhetsdatablad/README.md`.
 2. **Povinnosti pri nebezpečných výrobkoch — Luk overí/rozhodne:**
    - Týka sa: **horľavé** SW, Polisher, Glass Profi, Lotos Standard, FVP (UN 1219) · **žieravé** LMS, LM Descaling/Kalkfjerner, EcoDescal (UN 1760), Fasaderens Plus, FPC (UN 3266), WhiteWood · **oči** SW EKO, SWB, Antidugg (H319), FVE (H318).
