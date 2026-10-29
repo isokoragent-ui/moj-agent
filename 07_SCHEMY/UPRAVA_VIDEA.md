@@ -46,3 +46,5 @@ Isokor Peisglassrens er et ferdigblandet skum som løser sot, tjære og fett fra
 isokor-skandinavia.no/products/peisglassrens
 
 #peis #vedovn #rengjøring #isokor
+
+- ⚠️ **Artlist hudba sa z cloudu nestiahne** (`cms-public-artifacts.artlist.io` blokované proxy, overené 29. 10. 2026), hoci `download_track` vráti odkaz. Náhrada: vlastná krátka hudba z `02_PRACA/grafika/hytteservice/hudba.py` (numpy → WAV → ffmpeg mux), bez licenčných problémov.
