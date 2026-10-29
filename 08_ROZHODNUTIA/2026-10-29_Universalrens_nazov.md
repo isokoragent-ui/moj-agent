@@ -11,7 +11,7 @@
   SEO popis a popis produktu („Isokor Cleaner Home“ / „Allrens for hjemmet“ → „Isokor Universalrens“, 7 miest), odkaz na novú kartu.
   Overené kontrolným súčtom (body_html digest 4302a0cd…). Záloha pred zmenou: `02_PRACA/zalohy/popis_Allrens_PRED_premenovanim_2026-10-29.html`
   + `produkt_Allrens_PRED_premenovanim_2026-10-29.json`.
-- **Adresa (handle) ostala** `isokor-allrens-for-hjemmet` — zmena by rozbila existujúce odkazy (e-mail Smajlimu, reklamy, Google). Dá sa zmeniť neskôr
-  s presmerovaním, ak Luk chce.
+- **Adresa (handle)** zmenená na `isokor-universalrens` (Luk: odkaz nikde nepoužíval) → https://isokor-skandinavia.no/products/isokor-universalrens.
+  Shopify vytvoril presmerovanie /products/isokor-allrens-for-hjemmet → /products/isokor-universalrens (overené čítaním).
 - **Bezpečnostná karta** v1.1 `Isokor_Universalrens_Sikkerhetsdatablad_NO.pdf` (nová na webe; starý súbor Isokor_Allrens… ostal v Shopify Súboroch, nikde naň nevedie odkaz).
 - **Etiketa** `02_PRACA/etikety/Isokor_Universalrens_500ml_etikett_NO.*` (staré Allrens súbory nahradené).

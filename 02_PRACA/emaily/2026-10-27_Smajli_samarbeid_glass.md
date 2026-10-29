@@ -19,7 +19,7 @@ Jeg ser for meg et samarbeid på to måter, og du velger selv hva som passer deg
 Du har sikkert allerede midler du bruker ved og etter montering, og som fungerer. Hvis du ønsker, kan du gjerne teste noen av våre produkter – helt uforpliktende:
 
 - Isokor LMS rustfjerner – fjerner rust og rustflekker fra profiler, betong, fliser og andre overflater: https://isokor-skandinavia.no/products/lms
-- Isokor Universalrens – konsentrat som blandes med vann, til generell rengjøring: https://isokor-skandinavia.no/products/isokor-allrens-for-hjemmet
+- Isokor Universalrens – konsentrat som blandes med vann, til generell rengjøring: https://isokor-skandinavia.no/products/isokor-universalrens
 - Isokor Cleaner – naturlig og miljøvennlig rengjøringsspray, også til avfetting før impregnering: https://isokor-skandinavia.no/products/isokor-fett-og-flekkfjerner
 - Isokor Polisher – nanoimpregnering og polering for glass og alle blanke overflater: https://isokor-skandinavia.no/products/isokor-polish
 
