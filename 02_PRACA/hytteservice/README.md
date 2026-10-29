@@ -43,3 +43,9 @@ Zdroj textov: `stranka_hytteservice.html`, `stranka_vilkar_hytteservice.html`, `
 - Úvod bez konkrétnych miest („bor et stykke unna – kanskje i en annen by eller landsdel"); oblasť len **Vegårshei, Tvedestrand og Risør** (Gjerstad a Åmli preč) — stránka, produkty, príspevky, reklamné texty.
 - Sneh: žiadna cena za m², „snømåking kun etter avtale og når vi har kapasitet"; snømåking **nie je súčasť kontroly**, pri veľkom snehu bez záruky (stránka, podmienky bod 2, Vintertilsyn, Hele sesongen).
 - Galéria náhrobných kameňov dole: pochádzala zo šablóny `page.json` (XO Gallery „gravsttter-vedlikehold"). Tému nemeníme → stránka Hytteservice prepnutá na šablónu **`tjenester`** (text + recenzie), Vilkår na **`sertifikater`** (len text).
+
+## Grafika pre úvodnú stránku (29. 10.)
+`02_PRACA/grafika/hytteservice/` — banner 1920×800, mobil 1080×1350, video 10 s 1920×800 (slučka), zdroj `banner.py` + `video.py`.
+Nahraté v Shopify → Obsah → Súbory (banner, mobil READY; video spracovanie).
+Na webe odporúčaná sekcia **„Bilde med tekst"** (fotka chaty + text témy, responzívne) — text v banneri je na mobile pridrobný. Banner/video skôr na FB titulku, reklamy, newsletter.
+Text sekcie: *Vi passer på hytta di i vinter* · *Høstlukking, tilsyn hver 14. dag med bilder og tilsynslogg til forsikringen, og våråpning før 17. mai. Vegårshei, Tvedestrand og Risør.* · tlačidlo *Les mer og bestill* → `/pages/hytteservice`. Do živej témy agent nezapisuje → vkladá Luk v editore témy.
