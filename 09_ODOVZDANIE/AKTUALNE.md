@@ -2,17 +2,20 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-28 21:18 Oslo, cloudová relácia (claude.ai) — všetko je v `main`
+**Naposledy:** 2026-10-29 21:35 Oslo, cloudová relácia (claude.ai) — všetko je v `main` (PR #15)
 
 ## Hotové naposledy
-- **28. 10. — E-mail marketing spustený:** nástroj Shopify Messaging (WorkflowMail nie), 1× týždenne v nedeľu 9:30 → `08_ROZHODNUTIA/2026-10-28_email_marketing_nedela.md`. **Nyhetsbrev č. 1 „Julen starter med et rent bad“ (Badepakken) NAPLÁNOVANÝ na ne 1. 11. 9:30**, 23 príjemcov (segment „Nyhetsbrev – kunder med kjøp“); test OK (odkazy, alt text, odhlásenie). Postup: `07_SCHEMY/NEDELNY_EMAIL.md`.
-- **28. 10. — Doména odosielateľa overená:** na One.com doplnených 5 chýbajúcich CNAME (6/6) → Shopify „Autentisert“ 21:08; skutočný e-mail: SPF/DKIM/DMARC pass (p=REJECT) → `07_SCHEMY/OVERENIE_DOMENY_EMAIL.md`. DNS je na One.com (Luk), zapísané v `05_PRISTUPY/REGISTER_PRISTUPOV.md`.
-- **28. 10. — Kontrola e-shopu** po „jesennom upgrade“ Shopify: bez zmien (zoznam aplikácií a kanálov ako základ v denníku). Prompt shop.com/skill.md Luk odložil („nie je to teraz dôležité“).
-- **26.–27. 10.:** bezpečnostné karty uzavreté (31 kariet, 27 na webe → `02_PRACA/sikkerhetsdatablad/README.md`); EcoDescal popis bez zmeny (rozhodnutie, neotvárať); Gmail upratný; menu webu, Om oss, org. č. 922 112 975; ceny 149 kr + doprava 99/49/0; Badepakken 349 kr vrátane dopravy + kampaň; „Nye priser“ 27. 10.
+- **29. 10. — Isokor Hytteservice spustené** (nová služba, Isokor Skandinavia AS): analýza trhu Agder → koncept (zatvorenie na zimu, kontrola každých 14 dní s Tilsynslogg pre poisťovňu, otvorenie na jar; bez pohotovosti, bez zamestnanca, sneh a senzory nie sú v cene) → web `/pages/hytteservice` + `/pages/vilkar-hytteservice` + kolekcia + 5 produktov (ceny konečné 11 990 / 15 990 kr celá sezóna), v hlavnom menu. Oblasť len Vegårshei, Tvedestrand, Risør. → `02_PRACA/hytteservice/README.md`, rozhodnutia `08_ROZHODNUTIA/2026-10-29_hytteservice_*.md`.
+- **29. 10. — Podklady:** checklisty, e-mail po objednávke (NO), `_nastroje/tilsynslogg.py` (PDF pre poisťovňu), reklamné texty `REKLAMA_NO.md`, texty pre kolegyňu (`02_PRACA/spravy/`).
+- **29. 10. — Grafika a video** z Lukových fotiek: banner 1920×800 + mobil, videá 1920×800, 16:9, 9:16 — s vlastnou hudbou (`02_PRACA/grafika/hytteservice/`).
+- **29. 10. — Naplánované v Metricoole:** pi 30. 10. 10:30 FB+IG+Threads, 10:35 Google, 12:00 Stories IG+FB · so 31. 10. 11:00 Reels IG+FB, TikTok, YouTube Shorts · po 2. 11. 10:30 video 16:9 FB + YouTube.
+- **29. 10. — Web:** galéria náhrobných kameňov preč zo stránok Hytteservice a „Vårt Magasin“ (šablóny `tjenester`/`sertifikater`, téma nezmenená). Menu zálohované v `02_PRACA/zalohy/`.
+- **29. 10. — Report Badepakken 1:** 17 vstupov, 3 do košíka, 0 objednávok (`02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`).
+- **28. 10.:** e-mail marketing (Messaging, ne 9:30; nyhetsbrev č. 1 naplánovaný na ne 1. 11.), doména odosielateľa overená (SPF/DKIM/DMARC pass).
 
 ## Nedokončené — pokračovať tu
 0a. ⚠️ **MVA Isokor Skandinavia AS:** Luk 29. 10. — obrat ~48 000 kr za 12 mes., hranica 50 000 kr čoskoro → registrácia MVA (Luk). Potom ceny e-shopu a Hytteservice pre súkromníkov vrátane MVA.
-0. 🏡 **Isokor Hytteservice — SPUSTENÉ 29. 10. ~20:40** → `02_PRACA/hytteservice/README.md`: isokor-skandinavia.no/pages/hytteservice + podmienky + kolekcia + 5 produktov živé, v menu. **Over zverejnenie** (`getScheduledPosts`/publicUrl): pi 30. 10. 10:30 FB+IG+Threads, 10:35 Google, 12:00 Stories IG+FB; so 31. 10. 11:00 Reels IG+FB, TikTok, YouTube Shorts (video); po 2. 11. 10:30 video 16:9 Facebook + YouTube. Grafika + video: `02_PRACA/grafika/hytteservice/`; úvodná stránka — Luk vkladá sekciu „Bilde med tekst“ v editore (agent vedie po jednom kroku). **Luk:** pozrieť stránku na mobile, príspevok do FB skupín, Finn, list hyttevel, leták (`REKLAMA_NO.md`). Po každej objednávke: agent pripraví e-mail (`EMAIL_PO_OBJEDNAVKE_NO.md`) ako koncept v Gmaile. Ceny → `08_ROZHODNUTIA/2026-10-29_hytteservice_ceny.md`.
+0. 🏡 **Isokor Hytteservice — beží od 29. 10.** → `02_PRACA/hytteservice/README.md`: isokor-skandinavia.no/pages/hytteservice + podmienky + kolekcia + 5 produktov živé, v menu. **Over zverejnenie** (`getScheduledPosts`/publicUrl): pi 30. 10. 10:30 FB+IG+Threads, 10:35 Google, 12:00 Stories IG+FB; so 31. 10. 11:00 Reels IG+FB, TikTok, YouTube Shorts (video); po 2. 11. 10:30 video 16:9 Facebook + YouTube. Grafika + video: `02_PRACA/grafika/hytteservice/`; úvodná stránka — Luk vkladá sekciu „Bilde med tekst“ v editore (agent vedie po jednom kroku). **Luk:** pozrieť stránku na mobile, príspevok do FB skupín, Finn, list hyttevel, leták (`REKLAMA_NO.md`). Po každej objednávke: agent pripraví e-mail (`EMAIL_PO_OBJEDNAVKE_NO.md`) ako koncept v Gmaile. Ceny → `08_ROZHODNUTIA/2026-10-29_hytteservice_ceny.md`.
 1. **Sikkerhetsdatablady — zvyšok (keď Luk pošle SK PDF):** GreenGuard 100 ml (⚠️ odpudzovač hmyzu = pravdepodobne **biocíd**, v Nórsku povolenie Miljødirektoratet — overiť skôr, než sa ho bude predávať viac; 284 ks na sklade), Multi Steinrens 5 l, Peisglassrens. Junior → na web, keď ho Luk pridá do e-shopu. Postup: `02_PRACA/sikkerhetsdatablad/README.md`.
 2. **Povinnosti pri nebezpečných výrobkoch — Luk overí/rozhodne:**
    - Týka sa: **horľavé** SW, Polisher, Glass Profi, Lotos Standard, FVP (UN 1219) · **žieravé** LMS, LM Descaling/Kalkfjerner, EcoDescal (UN 1760), Fasaderens Plus, FPC (UN 3266), WhiteWood · **oči** SW EKO, SWB, Antidugg (H319), FVE (H318).
@@ -20,7 +23,7 @@
    - **Nórske limity v 8.1 neoverené** (Lovdata z cloudu blokovaná): Fasaderens Plus (na webe!) a FPC — NaOH/KOH 2 mg/m³ T, chlór 0,5 ppm/1,5 mg/m³ T. Overiť vo FOR-2011-12-06-1358 vedlegg 1.
 3. **Popisy produktov — Luk rozhodne (nič sa nemenilo):** Wash-In má viditeľnú „Oversetters merknad … Lotos Profi“ (agent ponúkol odstrániť) · Clinic a Muggfjerner — tvrdenia typické pre biocíd (vírusy/baktérie, „99,99 %“, „eliminere sporer“) · Allrens — zdravotné tvrdenia · Badepakken „trygg for hele familien“ pri žieravom Kalkfjerner · Lotos Standard „helsemessig trygg“ · FVP „Sikkerhetstiltak“ nespomína horľavosť · Antidugg — zvyšky HTML z AI nástroja.
 4. 📝 **E-mail pre Smajliho** (montér skla, spolupráca) → `02_PRACA/emaily/2026-10-27_Smajli_samarbeid_glass.md`, čaká na Lukovu kontrolu; Luk odošle z lukas@; follow-up po 7 dňoch.
-5. **Sponzorovanie Reelu Badepakken** beží (~50 kr/deň) — **report št 29. 10. ráno**, návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web · zmazať v Metricoole TikTok koncept (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken → 349 spolu).
+5. **Sponzorovanie Reelu Badepakken** beží (~50 kr/deň) — report 29. 10. hotový (0 objednávok), návrhy v `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`. **Luk:** video na TikTok ručne · video na web · zmazať v Metricoole TikTok koncept (uuid 758217148578547347) · skúšobný košík na mobile (1 fľaša → 99 kr, 3 → 49, 5 → 0; Badepakken → 349 spolu).
 6. 🍳 **Kuchynský balík:** Fett- og flekkfjerner (Cleaner) + Kjøleskapsrens (Fridge Cleaner) — grafika + produkt + príspevok. Treba od Luka: **cena balíka** a **fotky oboch fliaš**.
 7. **Marža:** chýba nákupná cena EcoNeutral 100 ml a súprav, reálna cena PostNord. Glass Profi (749) a Polisher 500 ml (1 099) sú lacnejšie než veľkoobchod s DPH — Luk opraví tabuľku. Kurz 15 NOK/EUR overiť.
 8. **Vyhodnotenie cien:** koncom novembra 2026 porovnať objednávky s 27. 8.–26. 10. (3 objednávky).
@@ -37,6 +40,10 @@
 19. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
 
 ## Pozor (čo by ďalšieho vypálilo)
+- **Predvolená šablóna stránky `page.json` má dole galériu náhrobných kameňov** → nové stránky hneď na `templateSuffix: tjenester` alebo `sertifikater`.
+- **Video ako Shopify „Video“ sa zmenší na 606×1080** → pre siete nahrávať ako bežný súbor (GenericFile). Artlist hudba sa z cloudu nestiahne (blokované) → `hudba.py`.
+- **`menuUpdate` nahrádza celé menu** — vždy záloha a celý zoznam položiek. `collectionCreate(input:)` zastarané → `collection:` + `sources`.
+- Hytteservice: kým AS nie je v MVA, na webe „endelige priser“, nie „inkl. mva“. Sneh a senzory nesľubovať.
 - **Prepis popisu produktu:** productUpdate prepíše celý text → vždy over kandidáta aj výsledok cez SHA-256 `digest` (`translatableResource` → `body_html`); `&nbsp;` vo výstupe vyzerá ako medzera. Výmena PDF cez `fileUpdate` mení `?v=` → upraviť aj odkaz.
 - **Čítanie SK originálov:** tabuľky sú často obrázky (pozerať stránky); hlavičky nefiltrovať vzorom, ktorý zmaže aj riadok 1.1.
 - Príspevky: vždy najprv **draft**, zverejniť až po „áno“. Na produkt reálna fotka, nie AI.
@@ -54,4 +61,4 @@
 - `shop.com`, `cloudflare-dns.com` z cloudu blokované; DNS čítať cez hlavičky e-mailu (Gmail RAW).
 - Na konci okna VŽDY commit + push do `main` (z cloudu: vetva → PR → zlúčiť, Luk to schválil 28. 10.).
 
-ĎALŠÍ KROK: pi 30. 10. po 10:35 overiť zverejnenie príspevkov Hytteservice; potom do št 5. 11. text nyhetsbrevu č. 2 a po 2. 11. výsledky nyhetsbrevu č. 1.
+ĎALŠÍ KROK: pi 30. 10. po 12:00 overiť zverejnenie príspevkov Hytteservice (publicUrl) a sledovať prvé dopyty/objednávky; potom do št 5. 11. text nyhetsbrevu č. 2.
