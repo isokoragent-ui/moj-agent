@@ -1,6 +1,6 @@
 # Smajli — montér sklenených systémov · návrh spolupráce
 
-*2026-10-27 · koncept pre Luka (odošle sám z lukas@) · stav: čaká na kontrolu*
+*2026-10-27 · koncept pre Luka (odošle sám z lukas@) · stav: ✅ ODOSLANÉ — Luk poslal ručne (oznámil 29. 10.), čaká sa na odpoveď*
 Kontext: Luk mu poslal prvé oslovenie, Smajli odpovedal pred pár týždňami (20+ rokov praxe, 2 fagbrev, montáž/oprava/výmena skla; chce vedieť, aké zákazky a ako organizovať spoluprácu). Luk nestíhal kvôli Boligmesse v Drammene.
 
 ---
