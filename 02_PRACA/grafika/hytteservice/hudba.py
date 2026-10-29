@@ -1,10 +1,10 @@
-"""Pokojná zimná hudba na 10 s (vlastná, bez licencie): pad + hracia skrinka.
-Použitie: python3 hudba.py vystup.wav"""
+"""Pokojná hudba (vlastná, bez licencie): pad + hracia skrinka, akordy C–Am–F–G dokola.
+Použitie: python3 hudba.py vystup.wav [dĺžka_v_sekundách — predvolene 10]"""
 import sys, wave
 import numpy as np
 
 SR = 44100
-DUR = 10.0
+DUR = float(sys.argv[2]) if len(sys.argv) > 2 else 10.0
 t_all = np.arange(int(SR * DUR)) / SR
 out = np.zeros_like(t_all)
 
@@ -23,7 +23,8 @@ def env(n, a, r):
 
 # akordy: C – Am – F – G (každý 2,5 s), pad s mäkkými harmonickými
 chords = [[48, 60, 64, 67], [45, 57, 60, 64], [41, 57, 60, 65], [43, 55, 59, 62]]
-for i, ch in enumerate(chords):
+for i in range(int(np.ceil(DUR / 2.5))):
+    ch = chords[i % 4]
     s, n = int(i * 2.5 * SR), int(2.9 * SR)
     n = min(n, len(out) - s)
     t = np.arange(n) / SR
@@ -39,7 +40,8 @@ mel = [72, 76, 79, 76, 72, 76, 79, 84,
        69, 72, 76, 72, 69, 72, 76, 81,
        65, 69, 72, 69, 65, 69, 72, 77,
        67, 71, 74, 71, 67, 74, 79, 83]
-for j, note in enumerate(mel):
+for j in range(int(np.ceil(DUR / 2.5)) * 8):
+    note = mel[j % len(mel)]
     s = int(j * 2.5 / 8 * SR)
     n = int(1.6 * SR)
     if s >= len(out):
