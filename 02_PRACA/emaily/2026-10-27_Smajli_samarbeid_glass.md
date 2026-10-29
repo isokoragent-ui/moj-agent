@@ -19,7 +19,7 @@ Jeg ser for meg et samarbeid på to måter, og du velger selv hva som passer deg
 Du har sikkert allerede midler du bruker ved og etter montering, og som fungerer. Hvis du ønsker, kan du gjerne teste noen av våre produkter – helt uforpliktende:
 
 - Isokor LMS rustfjerner – fjerner rust og rustflekker fra profiler, betong, fliser og andre overflater: https://isokor-skandinavia.no/products/lms
-- Isokor Allrens for hjemmet – konsentrat som blandes med vann, til generell rengjøring: https://isokor-skandinavia.no/products/isokor-allrens-for-hjemmet
+- Isokor Universalrens – konsentrat som blandes med vann, til generell rengjøring: https://isokor-skandinavia.no/products/isokor-allrens-for-hjemmet
 - Isokor Cleaner – naturlig og miljøvennlig rengjøringsspray, også til avfetting før impregnering: https://isokor-skandinavia.no/products/isokor-fett-og-flekkfjerner
 - Isokor Polisher – nanoimpregnering og polering for glass og alle blanke overflater: https://isokor-skandinavia.no/products/isokor-polish
 
@@ -46,5 +46,5 @@ www.isokor-skandinavia.no
 +47 486 42 178
 
 ---
-**Na kontrolu pre Luka:** „Vi utfører“ = prácu robí Isokor (Luk); test produktov = ponuka poslať pár fliaš zadarmo; Allrens ako „konsentrat“ — v popise produktu na webe to nie je, len podľa Luka.
+**Na kontrolu pre Luka:** „Vi utfører“ = prácu robí Isokor (Luk); test produktov = ponuka poslať pár fliaš zadarmo; Universalrens ako „konsentrat“ — v popise produktu na webe to nie je, len podľa Luka.
 **Follow-up:** ak neodpovie do 7 dní od odoslania → krátka pripomienka.

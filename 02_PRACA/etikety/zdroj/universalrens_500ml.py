@@ -1,25 +1,25 @@
-# Isokor Allrens for hjemmet 500 ml (SK: Cleaner Home, koncentrát) — nórske texty etikety. Všetko od výrobcu
+# Isokor Universalrens 500 ml (SK: Cleaner Home, koncentrát; do 29. 10. 2026 „Isokor Allrens for hjemmet“ — Luk premenoval) — nórske texty etikety. Všetko od výrobcu
 # ostáva, len preklad (08_ROZHODNUTIA/2026-10-28_etikety_len_preklad.md).
 from reportlab.lib.colors import CMYKColor
 
 SOURCE = 'original_SK_Cleaner_Home_500ml.pdf'
-OUT = 'Isokor_Allrens_for_hjemmet_500ml_etikett_NO'
+OUT = 'Isokor_Universalrens_500ml_etikett_NO'
 
-TITLE = ['ALLRENS', 'FOR HJEMMET']
+TITLE = ['UNIVERSALRENS']
 CLAIMS = ['Miljøvennlig', 'Antimikrobiell', 'Biologisk nedbrytbar']
 
 BODY = [
-    ('ISOKOR® ALLRENS FOR HJEMMET',
+    ('ISOKOR® UNIVERSALRENS',
      'er et universelt, konsentrert og naturlig rensemiddel som kun består av naturlige stoffer, '
-     'planteekstrakter og naturlige oljer. ISOKOR® Allrens for hjemmet er testet for antimikrobielle '
+     'planteekstrakter og naturlige oljer. ISOKOR® Universalrens er testet for antimikrobielle '
      'egenskaper og har en sterk antioksidantvirkning ved ORP ned til –150&nbsp;mV.'),
     ('Bruksområde:',
-     'ISOKOR® Allrens for hjemmet er et konsentrert, naturlig rengjørings- og avfettingsmiddel med universell '
+     'ISOKOR® Universalrens er et konsentrert, naturlig rengjørings- og avfettingsmiddel med universell '
      'bruk på gulv, glass, keramikk, plast og metall, til rens av tepper og møbelstoff, i oppvaskmaskin og til '
      'klesvask. Egnet til rengjøring av overflater på kjøkken og bad. Ikke helseskadelig – holder overflatene '
      'på kjøkken og bad alltid hygienisk rene og trygge.'),
     ('Bruksanvisning:',
-     'Fortynn ISOKOR® Allrens for hjemmet i forholdet 1:5 til 1:100 og påfør på overflaten. Fordel middelet '
+     'Fortynn ISOKOR® Universalrens i forholdet 1:5 til 1:100 og påfør på overflaten. Fordel middelet '
      'med en myk klut, eller bearbeid med pensel eller børste. La virke i ca.&nbsp;3–5&nbsp;minutter, og skyll '
      'deretter med vann. Brukes ved 15–35&nbsp;°C.'),
     ('Sammensetning:',
