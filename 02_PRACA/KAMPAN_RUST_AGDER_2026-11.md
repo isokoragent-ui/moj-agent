@@ -104,3 +104,4 @@ med vann. Test alltid først på et skjult sted.
 - Hotové: `02_PRACA/grafika/lms/lms_wc_pred_po_1080x1350.jpg` (feed) a `…_1080x1920.jpg` (Stories), skript `reklama_lms.py`.
 - ⚠️ **Dlažba „po“ má v pravom dolnom rohu znak ✦ (Google Gemini)** → pravdepodobne upravené AI. Upravenú fotku „po“ ako skutočný výsledok nepoužiť (klamlivá reklama + pravidlá Meta). Čaká na Lukovo potvrdenie / skutočnú fotku.
 - WC pred/po: rovnaká miestnosť (hadica, dvierka „Hlavní uzávěr vody“), ale **iné veko** (po: s detskou vložkou) — skontrolovať, či je to tá istá misa.
+- Dlažba: Lukovi sa nedarilo nahrať originály → použitý spojený obrázok, rozdelený na pred/po a spodok orezaný (znak ✦ preč). Hotové: `02_PRACA/grafika/lms/lms_dlazba_pred_po_1080x1350.jpg` + `…_1080x1920.jpg`, skript `reklama_lms_dlazba.py`.
