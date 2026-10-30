@@ -49,3 +49,14 @@ Fľaše = Lukova fotka Cleaner, vystrihnutá, **nalepené nové nórske etikety*
 | `kjokkenpakken_produkt.jpg` | 2048 × 2048 | produktová fotka (obe fľaše, svetlé pozadie) |
 
 Zdroj: `zdroj/kjokkenpakken_jul/` → `node render.js` (grafika), `python3 packshot.py` (fotka), `python3 nalep.py` (fľaše).
+
+### Kjøkkenpakken — nórska verzia (2026-10-30, Luk chcel „viac nórske, chytľavé, iná farba")
+„Ribbe eller pinnekjøtt? *Rent kjøleskap uansett.*" — vtip na večný nórsky spor o vianočné jedlo. Julerød #b3202d + krémová #fbf3e4, pletený pás so **selburose** (nórsky vzor z vianočných svetrov) hore a dole, cenovka ako vianočná visačka „Begge for 349,- · Frakt inkludert" (nórsky zápis ceny „349,-"), fľaše na krémovom tanieri. Písmo DM Serif Display + Assistant.
+
+| Súbor | Rozmer |
+|---|---|
+| `kjokkenpakken_norsk_portrait.png` | 1080 × 1350 |
+| `kjokkenpakken_norsk_square.png` / `.jpg` | 1080 × 1080 |
+| `kjokkenpakken_norsk_story.png` | 1080 × 1920 |
+
+Zdroj: `zdroj/kjokkenpakken_jul/norsk.html` → `node render_norsk.js`. Pletenina sa kreslí v canvase z bitmapy `ROSE` (13 × 13 očiek).
