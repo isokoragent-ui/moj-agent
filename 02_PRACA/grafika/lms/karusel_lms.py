@@ -34,13 +34,20 @@ def label(d, x, y, text, fill, size=40):
     d.text((x + size * 0.55, y + size * 0.22), text, font=ft, fill=CREAM)
 
 
-def flasa(w, h):
-    fs = ImageOps.exif_transpose(img('lms_flasa.jpg'))
-    W0, H0 = fs.size
-    fs = fs.crop((int(W0 * 0.18), int(H0 * 0.10), int(W0 * 0.78), int(H0 * 0.97)))
-    fl = ImageEnhance.Brightness(fit(fs, w, h)).enhance(1.05)
-    mask = Image.new('L', fl.size, 0); ImageDraw.Draw(mask).rounded_rectangle((0, 0, *fl.size), radius=24, fill=255)
-    return fl, mask
+def flasa(h):
+    """Celá fľaša (Lukova fotka, pozadie odstránené rembg) — výška h, vracia RGBA."""
+    fl = Image.open(os.path.join(SRC, 'lms_flasa_vystrihnuta.png')).convert('RGBA')
+    return fl.resize((round(fl.width * h / fl.height), h), Image.LANCZOS)
+
+
+def vloz_flasu(can, x, y, h):
+    fl = flasa(h)
+    tien = Image.new('RGBA', can.size, (0, 0, 0, 0))
+    ImageDraw.Draw(tien).ellipse((x + fl.width * 0.1, y + h - 22, x + fl.width * 0.9, y + h + 14), fill=(0, 0, 0, 90))
+    from PIL import ImageFilter
+    can.paste(tien.filter(ImageFilter.GaussianBlur(12)), (0, 0), tien.filter(ImageFilter.GaussianBlur(12)))
+    can.paste(fl, (x, y), fl)
+    return fl.width
 
 
 def lines(d, x, y, rows, font, fill=CREAM, step=None):
@@ -69,7 +76,7 @@ def s1(path):  # obálka
     label(d, 28, 28, "FØR", RUST); label(d, half + 31, 28, "ETTER", GREEN)
     y = lines(d, 60, PH + 60, ["Rust?", "Borte."], f('InterDisplay-Bold.otf', 120), step=130)
     lines(d, 60, y + 30, ["Isokor LMS rustfjerner –", "sveip og se hvordan"], f('Inter-Regular.otf', 40))
-    fl, m = flasa(250, 400); can.paste(fl, (W - 310, PH + 60), m)
+    vloz_flasu(can, W - 290, PH + 50, 450)
     strana(d, 1); can.save(path, quality=90, optimize=True, progressive=True)
 
 
@@ -147,7 +154,7 @@ def s6(path):  # aj vodný kameň
                           "på badekaret, servanten og i badstua.",
                           "",
                           "Én flaske – to problemer mindre."], f('Inter-Regular.otf', 40))
-    fl, m = flasa(330, 520); can.paste(fl, ((W - 330) // 2, 730), m)
+    vloz_flasu(can, (W - flasa(540).width) // 2, 720, 540)
     strana(d, 6); can.save(path, quality=90, optimize=True, progressive=True)
 
 
@@ -167,7 +174,7 @@ def s7(path):  # služba
 
 def s8(path):  # CTA
     can = Image.new('RGB', (W, H), CREAM); d = ImageDraw.Draw(can)
-    fl, m = flasa(440, 700); can.paste(fl, ((W - 440) // 2, 90), m)
+    vloz_flasu(can, (W - flasa(740).width) // 2, 80, 740)
     d.text((W // 2, 870), "Isokor LMS rustfjerner", font=f('InterDisplay-Bold.otf', 66), fill=GREEN, anchor='mt')
     d.text((W // 2, 960), "149 kr", font=f('InterDisplay-Bold.otf', 110), fill=RUST, anchor='mt')
     t = "Kjøp på nett"; c = f('Inter-SemiBold.otf', 42); bw = d.textlength(t, font=c)
