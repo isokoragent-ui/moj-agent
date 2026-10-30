@@ -1,11 +1,12 @@
 """Karusel Isokor LMS — prezentácia produktu (FB/IG, 8 slajdov 1080×1350), 30. 10. 2026.
 Lukove skutočné fotky z fotky/. Povrchy len podľa popisu výrobcu + betón (Luk);
 kov/pozinkované NIE (karta 10.5: nezlučiteľné s kovmi) — kým nepotvrdí výrobca.
-Použitie: python3 karusel_lms.py <priečinok_fotiek> <výstupný_priečinok>"""
+Použitie: python3 karusel_lms.py <priečinok_fotiek> <výstupný_priečinok> [video]"""
 import os, sys
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageEnhance
 
 SRC, OUT = sys.argv[1:3]
+VIDEO = len(sys.argv) > 3 and sys.argv[3] == 'video'  # bez „n/8“ a „sveip“ (pre video_karusel_lms.py)
 F = '/usr/share/fonts/opentype/inter/'
 GREEN = (28, 58, 40); CREAM = (246, 243, 236); RUST = (190, 92, 38); ACC = (214, 190, 120)
 W, H = 1080, 1350
@@ -58,6 +59,8 @@ def lines(d, x, y, rows, font, fill=CREAM, step=None):
 
 
 def strana(d, n):
+    if VIDEO:
+        d.text((60, H - 50), "ISOKOR LMS", font=f('Inter-Bold.otf', 26), fill=ACC, anchor='ls'); return
     d.text((W - 60, H - 50), f"{n}/8", font=f('Inter-Medium.otf', 28), fill=ACC, anchor='rs')
     d.text((60, H - 50), "ISOKOR LMS", font=f('Inter-Bold.otf', 26), fill=ACC, anchor='ls')
 
@@ -75,7 +78,7 @@ def s1(path):  # obálka
     d = ImageDraw.Draw(can)
     label(d, 28, 28, "FØR", RUST); label(d, half + 31, 28, "ETTER", GREEN)
     y = lines(d, 60, PH + 60, ["Rust?", "Borte."], f('InterDisplay-Bold.otf', 120), step=130)
-    lines(d, 60, y + 30, ["Isokor LMS rustfjerner –", "sveip og se hvordan"], f('Inter-Regular.otf', 40))
+    lines(d, 60, y + 30, ["Isokor LMS rustfjerner –", "se hvordan" if VIDEO else "sveip og se hvordan"], f('Inter-Regular.otf', 40))
     vloz_flasu(can, W - 290, PH + 50, 450)
     strana(d, 1); can.save(path, quality=90, optimize=True, progressive=True)
 
@@ -94,7 +97,8 @@ def s2(path):  # kde všade
         d.text((125, y), t, font=f('Inter-Bold.otf', 46), fill=GREEN)
         d.text((125, y + 58), s, font=f('Inter-Regular.otf', 32), fill=(90, 100, 92))
         y += 162
-    d.text((W - 60, H - 50), "2/8", font=f('Inter-Medium.otf', 28), fill=RUST, anchor='rs')
+    if not VIDEO:
+        d.text((W - 60, H - 50), "2/8", font=f('Inter-Medium.otf', 28), fill=RUST, anchor='rs')
     d.text((60, H - 50), "ISOKOR LMS", font=f('Inter-Bold.otf', 26), fill=RUST, anchor='ls')
     can.save(path, quality=90, optimize=True, progressive=True)
 
@@ -141,7 +145,8 @@ def s5(path):  # ako na to
         d.text((195, y + 2), t, font=f('Inter-Bold.otf', 46), fill=GREEN)
         d.text((195, y + 58), s, font=f('Inter-Regular.otf', 32), fill=(90, 100, 92))
         y += 150
-    d.text((W - 60, H - 50), "5/8", font=f('Inter-Medium.otf', 28), fill=RUST, anchor='rs')
+    if not VIDEO:
+        d.text((W - 60, H - 50), "5/8", font=f('Inter-Medium.otf', 28), fill=RUST, anchor='rs')
     d.text((60, H - 50), "ISOKOR LMS", font=f('Inter-Bold.otf', 26), fill=RUST, anchor='ls')
     can.save(path, quality=90, optimize=True, progressive=True)
 
@@ -182,7 +187,8 @@ def s8(path):  # CTA
     d.rounded_rectangle((x, 1110, x + bw + 70, 1196), radius=43, fill=GREEN)
     d.text((W // 2, 1153), t, font=c, fill=CREAM, anchor='mm')
     d.text((W // 2, 1235), "isokor-skandinavia.no", font=f('Inter-Medium.otf', 34), fill=RUST, anchor='mt')
-    d.text((W - 60, H - 40), "8/8", font=f('Inter-Medium.otf', 28), fill=RUST, anchor='rs')
+    if not VIDEO:
+        d.text((W - 60, H - 40), "8/8", font=f('Inter-Medium.otf', 28), fill=RUST, anchor='rs')
     can.save(path, quality=90, optimize=True, progressive=True)
 
 
