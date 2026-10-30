@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=block" rel="stylesheet">
+<style>
+  :root {
+    --pine: #0f3326;
+    --pine-2: #1a4a37;
+    --gold: #d9b56b;
+    --gold-soft: #f0dcae;
+    --snow: #f7f4ec;
+    --ink: #10251c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Assistant", sans-serif; background: var(--pine); color: var(--snow); }
+  .card { width: var(--w); height: var(--h); position: relative; overflow: hidden;
+    background: radial-gradient(120% 80% at 50% 30%, var(--pine-2) 0%, var(--pine) 70%); }
+  .snow { position: absolute; inset: 0; pointer-events: none; }
+  .content { position: absolute; inset: 0; padding: var(--pad); display: grid; grid-template-rows: auto 1fr auto; }
+
+  .top { text-align: center; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 14px; color: var(--gold); font-weight: 700; letter-spacing: .22em; text-transform: uppercase; font-size: var(--eyebrow); }
+  .eyebrow::before, .eyebrow::after { content: ""; width: 46px; height: 2px; background: var(--gold); opacity: .7; }
+  h1 { font-family: "Fraunces", serif; font-weight: 700; font-size: var(--h1); line-height: 1.02; margin-top: var(--h1gap); letter-spacing: -.01em; }
+  h1 em { font-style: normal; color: var(--gold-soft); }
+  .sub { margin-top: 14px; font-size: var(--sub); color: #cfe0d6; font-weight: 600; }
+
+  .stage { position: relative; display: flex; align-items: center; justify-content: center; }
+  .bottles { position: relative; display: flex; align-items: flex-end; gap: var(--bgap); z-index: 2; }
+  .bottles img { height: var(--bottle); filter: drop-shadow(0 30px 30px rgba(0,0,0,.45)); }
+  .glow { position: absolute; width: var(--glow); height: var(--glow); border-radius: 50%;
+    background: radial-gradient(circle, rgba(240,220,174,.28) 0%, rgba(240,220,174,0) 65%); z-index: 1; }
+
+  .badge { position: absolute; z-index: 3; width: var(--badge); height: var(--badge); border-radius: 50%;
+    background: var(--gold); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center;
+    box-shadow: 0 16px 34px rgba(0,0,0,.35); text-align: center; transform: rotate(-8deg); }
+  .badge .k { font-size: calc(var(--badge) * .1); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+  .badge .p { font-family: "Fraunces", serif; font-weight: 700; font-size: calc(var(--badge) * .34); line-height: .95; }
+  .badge .p small { font-size: .42em; }
+  .badge .f { font-size: calc(var(--badge) * .1); font-weight: 800; }
+
+  .label { position: absolute; z-index: 3; background: rgba(247,244,236,.96); color: var(--ink); border-radius: 16px; padding: 14px 18px; max-width: var(--lblw); box-shadow: 0 10px 24px rgba(0,0,0,.25); }
+  .label b { display: block; font-size: var(--lblh); font-weight: 800; }
+  .label span { display: block; font-size: var(--lbl); line-height: 1.25; color: #34463c; font-weight: 600; margin-top: 2px; }
+
+  .uses { display: flex; gap: 14px; }
+  .uses > div { width: var(--usew); padding: 18px 10px 16px; border-radius: 16px; background: rgba(247,244,236,.08); border: 2px solid rgba(240,220,174,.45); display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+  .uses svg { width: var(--usei); height: var(--usei); fill: none; stroke: var(--gold); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .uses span { font-weight: 800; font-size: var(--usef); color: var(--snow); line-height: 1.1; }
+  .ba { display: flex; gap: 14px; }
+  .ba figure { position: relative; width: var(--baw); height: var(--bah); border-radius: 16px; overflow: hidden; border: 3px solid rgba(247,244,236,.9); box-shadow: 0 10px 24px rgba(0,0,0,.3); }
+  .ba img { width: 100%; height: 100%; object-fit: cover; }
+  .ba figcaption { position: absolute; left: 10px; top: 10px; background: var(--snow); color: var(--ink); font-weight: 800; font-size: var(--bacap); padding: 4px 12px; border-radius: 999px; letter-spacing: .06em; text-transform: uppercase; }
+  .ba figure.after figcaption { background: var(--gold); }
+
+  .bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+  .info { display: flex; flex-direction: column; gap: 10px; }
+  .save { font-size: var(--save); font-weight: 700; color: #cfe0d6; }
+  .save s { color: #9fb8aa; }
+  .save b { color: var(--gold-soft); }
+  .cta { display: inline-flex; align-items: center; gap: 12px; align-self: flex-start; background: var(--snow); color: var(--ink); font-weight: 800; font-size: var(--cta); padding: 14px 24px; border-radius: 999px; }
+  .brand { font-weight: 600; letter-spacing: .42em; font-size: var(--brand); color: var(--snow); opacity: .9; }
+  .eco { font-size: var(--eco); color: #a9c4b5; font-weight: 600; }
+
+  /* 1080 x 1350 (Instagram / Facebook feed) */
+  body.portrait { --w:1080px; --h:1350px; --pad:64px 64px 56px; --eyebrow:22px; --h1:86px; --h1gap:18px; --sub:28px;
+    --bottle:610px; --bgap:-70px; --glow:760px; --badge:230px; --lblw:290px; --lblh:24px; --lbl:19px;
+    --baw:190px; --bah:230px; --bacap:16px; --usew:126px; --usei:52px; --usef:18px; --save:24px; --cta:26px; --brand:26px; --eco:19px; }
+  body.portrait .badge { right: 70px; top: 30px; }
+  body.portrait .label.lm { left: 18px; top: 120px; }
+  body.portrait .label.bath { right: 18px; bottom: 70px; }
+
+  /* 1080 x 1080 (feed / popup) */
+  body.square { --w:1080px; --h:1080px; --pad:52px 60px 48px; --eyebrow:20px; --h1:70px; --h1gap:12px; --sub:24px;
+    --bottle:470px; --bgap:-56px; --glow:600px; --badge:200px; --lblw:270px; --lblh:22px; --lbl:17px;
+    --baw:160px; --bah:180px; --bacap:14px; --usew:108px; --usei:42px; --usef:16px; --save:22px; --cta:23px; --brand:22px; --eco:17px; }
+  body.square .badge { right: 60px; top: 10px; }
+  body.square .label.lm { left: 6px; top: 70px; }
+  body.square .label.bath { right: 6px; bottom: 40px; }
+
+  /* 1080 x 1920 (story / reels cover) */
+  body.story { --w:1080px; --h:1920px; --pad:150px 70px 140px; --eyebrow:26px; --h1:104px; --h1gap:24px; --sub:32px;
+    --bottle:680px; --bgap:-80px; --glow:900px; --badge:250px; --lblw:310px; --lblh:26px; --lbl:21px;
+    --baw:250px; --bah:300px; --bacap:18px; --usew:200px; --usei:70px; --usef:24px; --save:28px; --cta:30px; --brand:30px; --eco:22px; }
+  body.story .badge { right: 40px; top: 10px; }
+  body.story .label.lm { left: 0px; top: 150px; }
+  body.story .label.bath { right: 0px; bottom: 40px; }
+  body.story .bottom { flex-direction: column; align-items: stretch; gap: 34px; }
+  body.story .uses { justify-content: center; }
+  body.story .ba figure { width: 440px; height: 340px; }
+  body.story .info { align-items: center; text-align: center; }
+  body.story .cta { align-self: center; }
+</style>
+</head>
+<body>
+<div class="card">
+  <svg class="snow" id="snow" width="100%" height="100%"></svg>
+  <div class="content">
+    <div class="top">
+      <div class="eyebrow">Julepakke</div>
+      <h1>Julen starter med<br><em>et rent kjøkken</em></h1>
+      <div class="sub">Kjøleskapsrens + Fett- og flekkfjerner – naturlig rent før julematen</div>
+    </div>
+
+    <div class="stage">
+      <div class="glow"></div>
+      <div class="bottles">
+        <img src="flaska_kjol.png" alt="">
+        <img src="flaska_fett.png" alt="">
+      </div>
+      <div class="badge"><div class="k">Begge for</div><div class="p">349<small> kr</small></div><div class="f">inkl. frakt</div></div>
+      <div class="label lm"><b>Kjøleskapsrens</b><span>Kjøleskap og fryser – trygt der maten står, uten skylling</span></div>
+      <div class="label bath"><b>Fett- og flekkfjerner</b><span>Fett på komfyr, benk, ventilator og fliser</span></div>
+    </div>
+
+    <div class="bottom">
+      <div class="uses">
+        <div><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="8" y1="5" x2="8" y2="7"/><line x1="8" y1="12" x2="8" y2="15"/></svg><span>Kjøleskap</span></div>
+        <div><svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><line x1="3.3" y1="7" x2="20.7" y2="17"/><line x1="3.3" y1="17" x2="20.7" y2="7"/><polyline points="9.5,3.5 12,6 14.5,3.5"/><polyline points="9.5,20.5 12,18 14.5,20.5"/></svg><span>Fryser</span></div>
+        <div><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="7.5" cy="6.5" r=".6"/><circle cx="11" cy="6.5" r=".6"/><rect x="6.5" y="12" width="11" height="6" rx="1"/></svg><span>Komfyr og benk</span></div>
+      </div>
+      <div class="info">
+        <div class="save">Hver for seg <s>397 kr</s> med frakt – <b>du sparer 48 kr</b></div>
+        <div class="cta">Bestill på isokor-skandinavia.no</div>
+        <div class="brand">ISOKOR</div>
+        <div class="eco">Naturlig · Biologisk nedbrytbar · V-Label · Sendes med PostNord</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.body.className = new URLSearchParams(location.search).get('f') || 'portrait';
+  // deterministic snow
+  let s = 7; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  const svg = document.getElementById('snow'); const W = innerWidth, H = innerHeight;
+  let html = '';
+  for (let i = 0; i < 140; i++) {
+    const x = r() * W, y = r() * H, rad = 0.8 + r() * 2.6, o = 0.12 + r() * 0.35;
+    html += `<circle cx="${x}" cy="${y}" r="${rad}" fill="#ffffff" opacity="${o}"/>`;
+  }
+  for (let i = 0; i < 6; i++) {
+    const x = r() * W, y = r() * H * 0.9, k = 10 + r() * 14, o = 0.18 + r() * 0.2;
+    html += `<g transform="translate(${x} ${y})" stroke="#f0dcae" stroke-width="1.6" opacity="${o}" stroke-linecap="round">
+      <line x1="0" y1="${-k}" x2="0" y2="${k}"/><line x1="${-k}" y1="0" x2="${k}" y2="0"/>
+      <line x1="${-k*.7}" y1="${-k*.7}" x2="${k*.7}" y2="${k*.7}"/><line x1="${-k*.7}" y1="${k*.7}" x2="${k*.7}" y2="${-k*.7}"/></g>`;
+  }
+  svg.innerHTML = html;
+</script>
+</body>
+</html>

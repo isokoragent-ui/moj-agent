@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=DM+Serif+Display:ital@0;1&display=block" rel="stylesheet">
+<style>
+  :root { --red:#b3202d; --red-2:#c9303b; --red-dark:#7d1520; --cream:#fbf3e4; --cream-2:#f3e3c4; --ink:#3a0d12; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; }
+  body { font-family: "Assistant", sans-serif; color: var(--cream);
+    background: radial-gradient(90% 60% at 50% 50%, var(--red-2) 0%, var(--red) 55%, var(--red-dark) 100%); }
+  canvas.band { position: absolute; left: 0; width: 1080px; height: 150px; }
+  #bandTop { top: 0; } #bandBottom { bottom: 0; transform: scaleY(-1); }
+  svg.snow { position: absolute; inset: 0; }
+  .abs { position: absolute; }
+  .center { left: 0; right: 0; text-align: center; }
+  .big { font-family: "DM Serif Display", serif; line-height: 1; }
+  #w1 { top: 640px; font-size: 230px; }
+  #w2 { top: 900px; font-size: 120px; font-style: italic; color: var(--cream-2); }
+  #w3 { top: 700px; font-size: 150px; }
+  #w4 { top: 900px; font-size: 76px; font-style: italic; color: var(--cream-2); padding: 0 80px; line-height: 1.1; }
+  .kicker { top: 205px; display: flex; justify-content: center; }
+  .kicker span { font-weight: 800; letter-spacing: .26em; text-transform: uppercase; font-size: 26px; color: var(--ink); background: var(--cream); padding: 8px 20px 7px; border-radius: 4px; }
+  #title { top: 270px; font-size: 104px; }
+  #title em { display: block; font-style: italic; color: var(--cream-2); font-size: .8em; margin-top: 6px; }
+  .plate { left: 50%; top: 1080px; width: 720px; height: 720px; margin: -360px 0 0 -360px; border-radius: 50%;
+    background: radial-gradient(circle at 50% 45%, #fffaf0 0%, var(--cream) 55%, var(--cream-2) 100%);
+    box-shadow: 0 0 0 12px rgba(251,243,228,.18), 0 0 0 26px rgba(251,243,228,.08), 0 30px 60px rgba(60,0,10,.35); }
+  .bottles { left: 0; right: 0; top: 720px; display: flex; justify-content: center; align-items: flex-end; padding-left: 40px; }
+  .bottles img { height: 700px; filter: drop-shadow(0 22px 22px rgba(60,0,10,.35)); }
+  .bottles img + img { margin-left: -80px; }
+  .tag { right: 40px; top: 600px; width: 250px; transform-origin: 50% -160px; }
+  .tag .string { position: absolute; left: 50%; top: -160px; width: 3px; height: 160px; background: var(--cream); transform: translateX(-50%); }
+  .tag .body { background: var(--cream); color: var(--red); text-align: center; padding: 50px 10px 22px;
+    clip-path: polygon(22% 0, 78% 0, 100% 14%, 100% 100%, 0 100%, 0 14%); filter: drop-shadow(0 14px 18px rgba(60,0,10,.35)); position: relative; }
+  .tag .hole { position: absolute; left: 50%; top: 16px; width: 20px; height: 20px; border-radius: 50%; background: var(--red-dark); transform: translateX(-50%); }
+  .tag .k { font-weight: 800; letter-spacing: .14em; font-size: 22px; text-transform: uppercase; color: var(--ink); }
+  .tag .p { font-family: "DM Serif Display", serif; font-size: 92px; line-height: .95; }
+  .tag .line { width: 70%; height: 2px; margin: 10px auto; background: rgba(179,32,45,.3); }
+  .tag .f { font-weight: 800; font-size: 22px; color: var(--ink); }
+  .pill { background: var(--ink); color: var(--cream); border-radius: 16px; padding: 14px 20px; box-shadow: 0 10px 22px rgba(40,0,8,.35); }
+  .pill b { display: block; font-size: 30px; font-weight: 800; }
+  .pill span { display: block; font-size: 24px; font-weight: 600; opacity: .85; }
+  #pl1 { left: 30px; top: 760px; } #pl1 b { color: #8fd3f4; }
+  #pl2 { left: 30px; top: 1330px; } #pl2 b { color: #a6d36b; }
+  #save { top: 1500px; font-size: 36px; font-weight: 700; }
+  #save b { color: var(--cream-2); }
+  #cta { left: 50%; top: 1570px; transform: translateX(-50%); white-space: nowrap; background: var(--cream); color: var(--red); font-weight: 800; font-size: 46px; padding: 20px 44px; border-radius: 999px; }
+  #eco { top: 1680px; font-size: 26px; font-weight: 600; opacity: .85; }
+
+  /* 1920 × 1080 (web, Facebook, YouTube) */
+  html:has(body.wide), body.wide { width: 1920px; height: 1080px; }
+  body.wide canvas.band { width: 1920px; height: 100px; }
+  body.wide #w1 { top: 300px; font-size: 210px; }
+  body.wide #w2 { top: 540px; font-size: 110px; }
+  body.wide #w3 { top: 330px; font-size: 140px; }
+  body.wide #w4 { top: 520px; font-size: 76px; padding: 0 340px; }
+  body.wide .kicker { top: 170px; right: 900px; }
+  body.wide #title { top: 230px; right: 900px; font-size: 100px; }
+  body.wide .plate { left: 1400px; top: 580px; width: 620px; height: 620px; margin: -310px 0 0 -310px; }
+  body.wide .bottles { left: 1000px; right: 0; top: 250px; padding-left: 0; justify-content: center; }
+  body.wide .bottles img { height: 600px; }
+  body.wide .bottles img + img { margin-left: -70px; }
+  body.wide .tag { right: 50px; top: 260px; width: 220px; }
+  body.wide .tag .p { font-size: 80px; }
+  body.wide #pl1 { left: 150px; top: 520px; }
+  body.wide #pl2 { left: 540px; top: 520px; }
+  body.wide #save { top: 680px; right: 900px; }
+  body.wide #cta { left: 510px; top: 745px; }
+  body.wide #eco { top: 860px; right: 900px; }
+</style>
+</head>
+<body>
+<svg class="snow" id="snow" width="1080" height="1920"></svg>
+<canvas class="band" id="bandTop"></canvas>
+<canvas class="band" id="bandBottom"></canvas>
+
+<!-- scéna 1: otázka -->
+<div class="abs center big" id="w1">Ribbe</div>
+<div class="abs center big" id="w2">eller pinnekjøtt?</div>
+<!-- scéna 2: pointa -->
+<div class="abs center big" id="w3">Uansett:</div>
+<div class="abs center big" id="w4">kjøleskapet trenger en vask før julematen</div>
+<!-- scéna 3: produkt -->
+<div class="abs kicker center" id="kick"><span>Kjøkkenpakken · Julevasken</span></div>
+<div class="abs center big" id="title">Rent kjøleskap<em>uansett.</em></div>
+<div class="abs plate" id="plate"></div>
+<div class="abs bottles"><img id="b1" src="flaska_kjol.png"><img id="b2" src="flaska_fett.png"></div>
+<div class="abs pill" id="pl1"><b>Kjøleskapsrens</b><span>kjøleskap og fryser</span></div>
+<div class="abs pill" id="pl2"><b>Fett- og flekkfjerner</b><span>komfyr, benk og vifte</span></div>
+<div class="abs tag" id="tag"><div class="string"></div><div class="body"><div class="hole"></div>
+  <div class="k">Begge for</div><div class="p">349,-</div><div class="line"></div><div class="f">Frakt inkludert</div></div></div>
+<div class="abs center" id="save">Hver for seg 397,- – <b>du sparer 48,-</b></div>
+<div class="abs" id="cta">isokor-skandinavia.no</div>
+<div class="abs center" id="eco">Naturlig · Biologisk nedbrytbar · V-Label</div>
+
+<script>
+  const WIDE = new URLSearchParams(location.search).get('f') === 'wide';
+  if (WIDE) document.body.classList.add('wide');
+  const W = WIDE ? 1920 : 1080, H = WIDE ? 1080 : 1920, BH = WIDE ? 100 : 150;
+  document.getElementById('snow').setAttribute('width', W); document.getElementById('snow').setAttribute('height', H);
+  const CREAM = '#fbf3e4';
+  const ROSE = ['...X.....X...','...XX...XX...','...XXX.XXX...','XXX.XXXXX.XXX','.XXX.XXX.XXX.','..XXX.X.XXX..','...XXX.XXX...',
+                '..XXX.X.XXX..','.XXX.XXX.XXX.','XXX.XXXXX.XXX','...XXX.XXX...','...XX...XX...','...X.....X...'];
+  function band(c, shift) {
+    c.width = W; c.height = BH;
+    const g = c.getContext('2d');
+    g.fillStyle = '#7d1520'; g.fillRect(0, 0, c.width, c.height);
+    const S = c.height / 19, cols = Math.ceil(c.width / S) + 2, off = -((shift % (18 * S)) + 18 * S);
+    const st = (x, y) => { const X = off + x * S, Y = y * S, h = S * .5;
+      g.beginPath(); g.moveTo(X + .6, Y + .5); g.lineTo(X + h - .3, Y + S * .32); g.lineTo(X + h - .3, Y + S - .3); g.lineTo(X + .6, Y + S * .68); g.closePath(); g.fill();
+      g.beginPath(); g.moveTo(X + S - .6, Y + .5); g.lineTo(X + h + .3, Y + S * .32); g.lineTo(X + h + .3, Y + S - .3); g.lineTo(X + S - .6, Y + S * .68); g.closePath(); g.fill(); };
+    g.fillStyle = CREAM;
+    for (let x = 0; x < cols + 60; x++) { st(x, 0); st(x, 18); if (x % 2 === 0) { st(x, 2); st(x, 16); } }
+    for (let cx = 0; cx < cols + 72; cx += 18) {
+      ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') st(cx + x, 3 + y); }));
+      const m = cx + 15; [[0,9],[-1,9],[1,9],[0,8],[0,10],[-2,9],[2,9],[0,7],[0,11]].forEach(([a, b]) => st(m + a, b));
+    }
+  }
+  const ease = x => x <= 0 ? 0 : x >= 1 ? 1 : 1 - Math.pow(1 - x, 3);
+  const seg = (t, a, b) => ease((t - a) / (b - a));
+  const $ = id => document.getElementById(id);
+  const set = (id, o, tf) => { const e = $(id); e.style.opacity = o; if (tf !== undefined) e.style.transform = tf; };
+  let s = 7; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  const flakes = Array.from({ length: 110 }, () => ({ x: r() * W, y: r() * H, rad: 1 + r() * 3, o: .15 + r() * .4, v: 40 + r() * 70, d: r() * 6.28 }));
+
+  window.render = (t) => {
+    band($('bandTop'), t * 40); band($('bandBottom'), t * 40);
+    // scéna 1 (0–3,4 s)
+    const out1 = 1 - seg(t, 3.0, 3.4);
+    set('w1', seg(t, .2, .6) * out1, `scale(${0.7 + 0.3 * seg(t, .2, .6)})`);
+    set('w2', seg(t, 1.1, 1.6) * out1, `translateY(${(1 - seg(t, 1.1, 1.6)) * 40}px)`);
+    // scéna 2 (3,4–6,2 s)
+    const out2 = 1 - seg(t, 5.8, 6.2);
+    set('w3', seg(t, 3.4, 3.9) * out2, `translateY(${(1 - seg(t, 3.4, 3.9)) * 40}px)`);
+    set('w4', seg(t, 4.0, 4.6) * out2, `translateY(${(1 - seg(t, 4.0, 4.6)) * 40}px)`);
+    // scéna 3 (6,2 s →)
+    set('kick', seg(t, 6.2, 6.8));
+    set('title', seg(t, 6.3, 7.0), `translateY(${(1 - seg(t, 6.3, 7.0)) * 50}px)`);
+    set('plate', seg(t, 6.5, 7.2), `scale(${0.8 + 0.2 * seg(t, 6.5, 7.2)})`);
+    set('b1', seg(t, 6.9, 7.6), `translateY(${(1 - seg(t, 6.9, 7.6)) * 160}px)`);
+    set('b2', seg(t, 7.1, 7.8), `translateY(${(1 - seg(t, 7.1, 7.8)) * 160}px)`);
+    set('pl1', seg(t, 7.9, 8.4), `translateX(${(1 - seg(t, 7.9, 8.4)) * -60}px)`);
+    set('pl2', seg(t, 8.1, 8.6), `translateX(${(1 - seg(t, 8.1, 8.6)) * -60}px)`);
+    // visačka spadne zhora a dohojdá sa
+    const tp = seg(t, 8.7, 9.2), tt = Math.max(0, t - 9.2);
+    const swing = 8 + 14 * Math.exp(-tt * 1.6) * Math.cos(tt * 5.5);
+    set('tag', tp, `translateY(${(1 - tp) * -500}px) rotate(${swing}deg)`);
+    set('save', seg(t, 9.9, 10.4));
+    set('cta', seg(t, 10.3, 10.8), `translateX(-50%) translateY(${(1 - seg(t, 10.3, 10.8)) * 30}px)`);
+    set('eco', seg(t, 10.7, 11.2));
+    $('snow').innerHTML = flakes.map(p => {
+      const y = (p.y + p.v * t) % (H + 40) - 20, x = p.x + Math.sin(t * .8 + p.d) * 14;
+      return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${p.rad}" fill="#fff" opacity="${p.o}"/>`;
+    }).join('');
+  };
+  render(0);
+</script>
+</body>
+</html>

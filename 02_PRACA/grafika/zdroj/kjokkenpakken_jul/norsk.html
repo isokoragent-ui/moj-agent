@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=DM+Serif+Display:ital@0;1&display=block" rel="stylesheet">
+<style>
+  :root {
+    --red: #b3202d;
+    --red-2: #c9303b;
+    --red-dark: #7d1520;
+    --cream: #fbf3e4;
+    --cream-2: #f3e3c4;
+    --ink: #3a0d12;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Assistant", sans-serif; background: var(--red); color: var(--cream); }
+  .card { width: var(--w); height: var(--h); position: relative; overflow: hidden;
+    background: radial-gradient(90% 60% at 50% 48%, var(--red-2) 0%, var(--red) 55%, var(--red-dark) 100%); }
+  canvas.band { position: absolute; left: 0; width: 100%; height: var(--band); display: block; }
+  canvas.band.top { top: 0; }
+  canvas.band.bottom { bottom: 0; transform: scaleY(-1); }
+  canvas.bg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+  .content { position: absolute; left: 0; right: 0; top: var(--band); bottom: var(--band); padding: var(--pad);
+    display: grid; grid-template-rows: auto 1fr auto; }
+  .top { text-align: center; }
+  .kicker { display: inline-block; font-weight: 800; letter-spacing: .26em; text-transform: uppercase; font-size: var(--kick);
+    color: var(--ink); background: var(--cream); padding: 7px 18px 6px; border-radius: 4px; }
+  h1 { font-family: "DM Serif Display", serif; font-weight: 400; font-size: var(--h1); line-height: 1.0; margin-top: var(--h1gap); }
+  h1 em { display: block; font-style: italic; color: var(--cream-2); font-size: .82em; margin-top: .08em; }
+
+  .stage { position: relative; display: flex; align-items: center; justify-content: center; }
+  .plate { position: absolute; width: var(--plate); height: var(--plate); border-radius: 50%;
+    background: radial-gradient(circle at 50% 45%, #fffaf0 0%, var(--cream) 55%, var(--cream-2) 100%);
+    box-shadow: 0 0 0 10px rgba(251,243,228,.18), 0 0 0 22px rgba(251,243,228,.08), 0 30px 60px rgba(60,0,10,.35); }
+  .plate::after { content: ""; position: absolute; inset: 18px; border-radius: 50%; border: 3px dashed rgba(179,32,45,.25); }
+  .bottles { position: relative; display: flex; align-items: flex-end; gap: var(--bgap); z-index: 2; margin-left: var(--bshift); }
+  .bottles img { height: var(--bottle); filter: drop-shadow(0 22px 22px rgba(60,0,10,.35)); }
+
+  /* gift tag (julelapp) */
+  .tag { position: absolute; z-index: 4; width: var(--tagw); transform: rotate(8deg); transform-origin: 50% 0; }
+  .tag .string { position: absolute; left: 50%; bottom: 100%; width: 3px; height: var(--str); background: var(--cream); transform: translateX(-50%); opacity: .9; }
+  .tag .body { position: relative; background: var(--cream); color: var(--red); text-align: center; padding: calc(var(--tagw)*.2) 10px calc(var(--tagw)*.09);
+    clip-path: polygon(22% 0, 78% 0, 100% 14%, 100% 100%, 0 100%, 0 14%); box-shadow: 0 16px 30px rgba(60,0,10,.4);
+    filter: drop-shadow(0 14px 18px rgba(60,0,10,.35)); }
+  .tag .hole { position: absolute; left: 50%; top: calc(var(--tagw)*.07); width: calc(var(--tagw)*.08); height: calc(var(--tagw)*.08); border-radius: 50%;
+    background: var(--red-dark); transform: translateX(-50%); }
+  .tag .k { font-weight: 800; letter-spacing: .14em; font-size: calc(var(--tagw)*.085); text-transform: uppercase; color: var(--ink); }
+  .tag .p { font-family: "DM Serif Display", serif; font-size: calc(var(--tagw)*.36); line-height: .95; }
+  .tag .f { font-weight: 800; font-size: calc(var(--tagw)*.085); color: var(--ink); }
+  .tag .line { width: 70%; height: 2px; margin: calc(var(--tagw)*.04) auto; background: rgba(179,32,45,.3); }
+
+  .pill { position: absolute; z-index: 3; background: var(--ink); color: var(--cream); border-radius: 14px; padding: 12px 16px; max-width: var(--pillw);
+    box-shadow: 0 10px 22px rgba(40,0,8,.35); }
+  .pill b { display: block; font-size: var(--pillh); font-weight: 800; }
+  .pill span { display: block; font-size: var(--pill); line-height: 1.22; opacity: .85; font-weight: 600; margin-top: 2px; }
+  .pill.blue b { color: #8fd3f4; }
+  .pill.green b { color: #a6d36b; }
+
+  .bottom { text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--bgap2); }
+  .save { font-size: var(--save); font-weight: 700; }
+  .save s { opacity: .7; }
+  .save b { color: var(--cream-2); }
+  .cta { background: var(--cream); color: var(--red); font-weight: 800; font-size: var(--cta); padding: 14px 30px; border-radius: 999px; box-shadow: 0 10px 22px rgba(60,0,10,.3); }
+  .eco { font-size: var(--eco); font-weight: 600; opacity: .85; letter-spacing: .02em; }
+
+  body.portrait { --w:1080px; --h:1350px; --band:120px; --pad:28px 54px 22px; --kick:20px; --h1:92px; --h1gap:18px;
+    --plate:560px; --bottle:540px; --bgap:-64px; --bshift:40px; --tagw:200px; --str:120px;
+    --pillw:250px; --pillh:21px; --pill:17px; --save:24px; --cta:28px; --eco:18px; --bgap2:12px; }
+  body.portrait .tag { right: 46px; top: 120px; }
+  body.portrait .pill.blue { left: 10px; top: 60px; }
+  body.portrait .pill.green { left: 10px; bottom: 40px; }
+
+  body.square { --w:1080px; --h:1080px; --band:92px; --pad:22px 50px 16px; --kick:17px; --h1:70px; --h1gap:12px;
+    --plate:430px; --bottle:420px; --bgap:-50px; --bshift:30px; --tagw:170px; --str:90px;
+    --pillw:230px; --pillh:19px; --pill:15px; --save:21px; --cta:24px; --eco:16px; --bgap2:9px; }
+  body.square .tag { right: 70px; top: 95px; }
+  body.square .pill.blue { left: 20px; top: 40px; }
+  body.square .pill.green { left: 20px; bottom: 30px; }
+
+  body.story { --w:1080px; --h:1920px; --band:140px; --pad:140px 60px 150px; --kick:24px; --h1:108px; --h1gap:26px;
+    --plate:700px; --bottle:680px; --bgap:-80px; --bshift:40px; --tagw:230px; --str:150px;
+    --pillw:290px; --pillh:25px; --pill:20px; --save:28px; --cta:32px; --eco:21px; --bgap2:16px; }
+  body.story .tag { right: 30px; top: 160px; }
+  body.story .pill.blue { left: 0; top: 120px; }
+  body.story .pill.green { left: 0; bottom: 90px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <canvas class="bg" id="bg"></canvas>
+  <canvas class="band top" id="bandTop"></canvas>
+  <canvas class="band bottom" id="bandBottom"></canvas>
+  <div class="content">
+    <div class="top">
+      <div class="kicker">Kjøkkenpakken · Julevasken</div>
+      <h1>Ribbe eller pinnekjøtt?<em>Rent kjøleskap uansett.</em></h1>
+    </div>
+
+    <div class="stage">
+      <div class="plate"></div>
+      <div class="bottles">
+        <img src="flaska_kjol.png" alt="">
+        <img src="flaska_fett.png" alt="">
+      </div>
+      <div class="tag"><div class="string"></div><div class="body"><div class="hole"></div>
+        <div class="k">Begge for</div><div class="p">349,-</div><div class="line"></div><div class="f">Frakt inkludert</div></div></div>
+      <div class="pill blue"><b>Kjøleskapsrens</b><span>Kjøleskap og fryser – trygt der maten står</span></div>
+      <div class="pill green"><b>Fett- og flekkfjerner</b><span>Komfyr, benk, vifte og fliser</span></div>
+    </div>
+
+    <div class="bottom">
+      <div class="save">Hver for seg <s>397,-</s> med frakt – <b>du sparer 48,-</b></div>
+      <div class="cta">isokor-skandinavia.no</div>
+      <div class="eco">Naturlig · Biologisk nedbrytbar · V-Label · Sendes med PostNord</div>
+    </div>
+  </div>
+</div>
+<script>
+  document.body.className = new URLSearchParams(location.search).get('f') || 'portrait';
+  const CREAM = '#fbf3e4';
+
+  // klasická selburose (13 × 13 očiek)
+  const ROSE = [
+    '...X.....X...',
+    '...XX...XX...',
+    '...XXX.XXX...',
+    'XXX.XXXXX.XXX',
+    '.XXX.XXX.XXX.',
+    '..XXX.X.XXX..',
+    '...XXX.XXX...',
+    '..XXX.X.XXX..',
+    '.XXX.XXX.XXX.',
+    'XXX.XXXXX.XXX',
+    '...XXX.XXX...',
+    '...XX...XX...',
+    '...X.....X...'];
+
+  function band(id) {
+    const c = document.getElementById(id), r = c.getBoundingClientRect();
+    c.width = r.width; c.height = r.height;
+    const g = c.getContext('2d');
+    g.fillStyle = '#7d1520'; g.fillRect(0, 0, c.width, c.height);
+    const ROWS = 19, S = c.height / ROWS;          // veľkosť očka
+    const cols = Math.ceil(c.width / S) + 1;
+    const off = (c.width - Math.floor(c.width / S) * S) / 2;
+    const st = (x, y) => { // jedno očko pleteniny = dve nožičky „V"
+      const X = off + x * S, Y = y * S, h = S * .5;
+      g.beginPath(); g.moveTo(X + .6, Y + .5); g.lineTo(X + h - .3, Y + S * .32); g.lineTo(X + h - .3, Y + S - .3); g.lineTo(X + .6, Y + S * .68); g.closePath(); g.fill();
+      g.beginPath(); g.moveTo(X + S - .6, Y + .5); g.lineTo(X + h + .3, Y + S * .32); g.lineTo(X + h + .3, Y + S - .3); g.lineTo(X + S - .6, Y + S * .68); g.closePath(); g.fill();
+    };
+    g.fillStyle = CREAM;
+    for (let x = -1; x < cols; x++) { st(x, 0); st(x, 18); if (x % 2 === 0) { st(x, 2); st(x, 16); } }
+    const step = 18;
+    for (let cx = 0; cx < cols + step; cx += step) {
+      ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') st(cx + x, 3 + y); }));
+      // kríž medzi ružami
+      const m = cx + 15; st(m, 9); st(m - 1, 9); st(m + 1, 9); st(m, 8); st(m, 10); st(m - 2, 9); st(m + 2, 9); st(m, 7); st(m, 11);
+    }
+  }
+
+  function bg() {
+    const c = document.getElementById('bg'); c.width = innerWidth; c.height = innerHeight;
+    const g = c.getContext('2d');
+    let s = 11; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+    // jemné veľké ruže v pozadí
+    const pts = []; ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') pts.push([x - 6, y - 6]); }));
+    for (let i = 0; i < 7; i++) {
+      const cx = r() * c.width, cy = c.height * (0.12 + r() * 0.76), S = 9 + r() * 6;
+      g.fillStyle = 'rgba(251,243,228,0.06)';
+      for (const [x, y] of pts) g.fillRect(cx + x * S, cy + y * S, S - 2, S - 2);
+    }
+    // sneh
+    for (let i = 0; i < 120; i++) {
+      g.fillStyle = `rgba(255,255,255,${0.10 + r() * 0.3})`;
+      g.beginPath(); g.arc(r() * c.width, r() * c.height, 0.8 + r() * 2.4, 0, 7); g.fill();
+    }
+  }
+  bg(); band('bandTop'); band('bandBottom');
+</script>
+</body>
+</html>
