@@ -22,3 +22,4 @@ a pasce v nich sú tie, ktoré naozaj niekoho stáli čas alebo peniaze:
 
 Prečítaj si ich skôr, než budeš písať vlastné. Ukazujú, akú podrobnosť má
 schéma mať — najmä tie pasce.
+- `EMAIL_NEDORUCI_NA_GMAIL.md` — vlastná doména nedoručí na Gmail (SPF, kde je DNS)
