@@ -43,8 +43,9 @@ Begge for 349 kr – frakt i hele Norge inkludert (hver for seg 397 kr med frakt
 ## Grafika → `02_PRACA/grafika/` (README, sekcia Kjøkkenpakken)
 
 ## ✅ NAPLÁNOVANÉ (30. 10., Luk „áno")
-- **Shopify:** produkt ACTIVE, hlavná fotka = nórska červená verzia. Zverejnenie **pi 6. 11. 2026 8:00 Oslo** naplánované v **Online Store + Google** (publishDate). Overené: teraz `onlineStoreUrl: null`, `isPublished: false`.
-  ⚠️ POS, Facebook a Shop naplánovanie (publishDate) **neprijali** → v piatok po 8:00 zverejniť aj tam (ako Badepakken).
+- **Shopify — ŽIVÝ od 30. 10. 2026 23:44 Oslo** (Luk: „nemusíme čakať") vo všetkých 5 kanáloch (Online Store, POS, Facebook, Shop, Google), `onlineStoreUrl` = https://isokor-skandinavia.no/products/kjokkenpakken, `availableForSale: true`, doprava 0 kr (overené). Pôvodný plán nižšie už neplatí.
+- ~~**Shopify:** produkt ACTIVE, hlavná fotka = nórska červená verzia. Zverejnenie **pi 6. 11. 2026 8:00 Oslo** naplánované v **Online Store + Google** (publishDate). Overené: teraz `onlineStoreUrl: null`, `isPublished: false`.
+  ~~⚠️ POS, Facebook a Shop naplánovanie (publishDate) **neprijali** → v piatok po 8:00 zverejniť aj tam (ako Badepakken).
 - **Metricool pi 6. 11. 10:30** FB + IG + Threads + TikTok (foto JPEG) + Google — text nižšie (490 znakov), obrázok `kjokkenpakken_norsk_portrait.jpg` → [plánovač](https://app.metricool.com/planner/calendar?blogId=7484747&openWithPostUuid=2058566352876947904)
 - **Metricool pi 6. 11. 12:00** Story FB + IG (`kjokkenpakken_norsk_story.jpg`) → [plánovač](https://app.metricool.com/planner/calendar?blogId=7484747&openWithPostUuid=-5477645151936428240)
 - **E-mail ne 8. 11. 9:30** → `02_PRACA/emaily/2026-11-08_nyhetsbrev_Kjokkenpakken.md` (text čaká na Lukovo OK, zadáva Luk v Messaging).
