@@ -2,9 +2,10 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-10-29 21:40 Oslo, cloudová relácia (claude.ai) — všetko je v `main` (PR #14 + PR #15)
+**Naposledy:** 2026-10-30 23:07 Oslo, cloudová relácia (claude.ai), okno „LMS prezentácia“ — v `main` (PR #26 + odovzdanie). Ostatné body nižšie sú z iných okien (29. 10.).
 
 ## Hotové naposledy
+- **30. 10. — Isokor LMS ako samostatný produkt** (okno LMS): karusel 8 slajdov z Lukových fotiek (fľaša vystrihnutá z novej fotky) → **naplánované v Metricoole ut 3. 11. 10:30** FB+IG (8 obr.) + Threads (4 obr.), odkaz https://isokor-skandinavia.no/products/lms; obrázky v Shopify Súboroch. Videá zo slajdov s hudbou na výšku 1080×1920 + na šírku 1920×1080 → Luk zverejní sám (Reels, TikTok, web). → `02_PRACA/grafika/lms/README.md`
 - **29. 10. — Isokor Hytteservice spustené** (nová služba, Isokor Skandinavia AS): analýza trhu Agder → koncept (zatvorenie na zimu, kontrola každých 14 dní s Tilsynslogg pre poisťovňu, otvorenie na jar; bez pohotovosti, bez zamestnanca, sneh a senzory nie sú v cene) → web `/pages/hytteservice` + `/pages/vilkar-hytteservice` + kolekcia + 5 produktov (ceny konečné 11 990 / 15 990 kr celá sezóna), v hlavnom menu. Oblasť len Vegårshei, Tvedestrand, Risør. → `02_PRACA/hytteservice/README.md`, rozhodnutia `08_ROZHODNUTIA/2026-10-29_hytteservice_*.md`.
 - **29. 10. — Podklady:** checklisty, e-mail po objednávke (NO), `_nastroje/tilsynslogg.py` (PDF pre poisťovňu), reklamné texty `REKLAMA_NO.md`, texty pre kolegyňu (`02_PRACA/spravy/`).
 - **29. 10. — Grafika a video** z Lukových fotiek: banner 1920×800 + mobil, videá 1920×800, 16:9, 9:16 — s vlastnou hudbou (`02_PRACA/grafika/hytteservice/`).
@@ -47,6 +48,8 @@
 19. Higgsfield: kľúč z chatu zrušiť. Sprievodca: „pridať test do over.py“ — ponúknuť znova.
 
 ## Pozor (čo by ďalšieho vypálilo)
+- **LMS a kov:** karta LMS 10.5 = nezlučiteľné s kovmi; LMS má 6 kyselín (citrónová, vínna, mliečna, šťaveľová, fosforečná, amidosírová) → pozinkované vozíky/hliník/kov **nepropagovať**, kým nepotvrdí výrobca; vetu „laget med sitron-, vin- og melkesyre“ nepoužívať. Hlavná fotka LMS v e-shope má inú etiketu než skutočná fľaša (asi AI) → do reklám nie.
+- **Vystrihnutie produktu z fotky:** `pip install rembg onnxruntime`, model `isnet-general-use`, potom ponechať len najväčší súvislý kus (scipy) — inak ostanú duchovia pozadia. `rm -rf` v cloude môže byť zamietnuté → nové priečinky namiesto mazania.
 - **Predvolená šablóna stránky `page.json` má dole galériu náhrobných kameňov** → nové stránky hneď na `templateSuffix: tjenester` alebo `sertifikater`.
 - **Video ako Shopify „Video“ sa zmenší na 606×1080** → pre siete nahrávať ako bežný súbor (GenericFile). Artlist hudba sa z cloudu nestiahne (blokované) → `hudba.py`.
 - **`menuUpdate` nahrádza celé menu** — vždy záloha a celý zoznam položiek. `collectionCreate(input:)` zastarané → `collection:` + `sources`.
@@ -68,4 +71,4 @@
 - `shop.com`, `cloudflare-dns.com` z cloudu blokované; DNS čítať cez hlavičky e-mailu (Gmail RAW).
 - Na konci okna VŽDY commit + push do `main` (z cloudu: vetva → PR → zlúčiť, Luk to schválil 28. 10.).
 
-ĎALŠÍ KROK: pi 30. 10. po 12:00 overiť zverejnenie príspevkov Hytteservice a sledovať prvé dopyty/objednávky; po 2. 11. výsledky nyhetsbrevu č. 1, do št 5. 11. text č. 2 a follow-up Smajlimu, ak neodpovie; ďalšie etikety, keď Luk pošle SK PDF.
+ĎALŠÍ KROK: pi 30. 10. po 12:00 overiť zverejnenie príspevkov Hytteservice a sledovať prvé dopyty/objednávky; po 2. 11. výsledky nyhetsbrevu č. 1, do št 5. 11. text č. 2 a follow-up Smajlimu, ak neodpovie; ďalšie etikety, keď Luk pošle SK PDF. · **ut 3. 11. po 10:30 overiť zverejnenie karuselu LMS** (getScheduledPosts → PUBLISHED + publicUrl).
