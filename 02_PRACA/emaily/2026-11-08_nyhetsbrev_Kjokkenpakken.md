@@ -1,6 +1,6 @@
 # Nyhetsbrev č. 2 — Kjøkkenpakken (ne 8. 11. 2026, 9:30 Oslo)
 
-*Stav: 📝 text pripravený agentom 30. 10. — **čaká na Lukovo schválenie textu**, potom Luk zadá v Messaging a naplánuje (postup `07_SCHEMY/NEDELNY_EMAIL.md`; Messaging nemá API na kampane).*
+*Stav: 📝 text pripravený agentom 30. 10. — **riešime pi 6. 11. večer / so 7. 11.** (Luk 30. 10.) — agent vtedy dá text na skopírovanie, Luk zadá a naplánuje v Messaging ručne (postup `07_SCHEMY/NEDELNY_EMAIL.md`; Messaging nemá API na kampane).*
 *Príjemcovia: segment **„Nyhetsbrev – kunder med kjøp“** (`gid://shopify/Segment/500114030771`) — zákazníci e-shopu so súhlasom s marketingom. Text ďakuje za nákup → bez 6 odberateľov bez nákupu (ako č. 1).*
 
 **Predmet:** Ribbe eller pinnekjøtt?
