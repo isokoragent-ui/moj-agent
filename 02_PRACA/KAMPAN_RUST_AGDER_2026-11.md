@@ -106,3 +106,9 @@ med vann. Test alltid først på et skjult sted.
 - WC pred/po: rovnaká miestnosť (hadica, dvierka „Hlavní uzávěr vody“), ale **iné veko** (po: s detskou vložkou) — skontrolovať, či je to tá istá misa.
 - Dlažba: Lukovi sa nedarilo nahrať originály → použitý spojený obrázok, rozdelený na pred/po a spodok orezaný (znak ✦ preč). Hotové: `02_PRACA/grafika/lms/lms_dlazba_pred_po_1080x1350.jpg` + `…_1080x1920.jpg`, skript `reklama_lms_dlazba.py`.
 - 29. 10. neskôr: Luk poslal **4 samostatné skutočné fotky** dlažby (pred, nástrek, pôsobí, po) → `fotky/dlazba_1…4_*.jpg` (orezané z rozhrania galérie). Reklamy prerobené z originálov: pred/po + **3 kroky (Før · Spray · Etter)**, 1080×1350 a 1080×1920. Spojený obrázok z Gemini (`dlazba_pred_po.jpg`) sa už nepoužíva.
+
+## 8. Karusel — prezentácia produktu (30. 10.)
+- Luk 30. 10.: LMS prezentovať **ako samostatný produkt Isokor** (nie cez Hytteservice), cieľ = predať čo najviac fliaš + prípadne zákazky na špecializované čistenie veľkých plôch. Možno aj sponzorované.
+- Hotové: karusel 8 slajdov → `02_PRACA/grafika/lms/karusel/`, text `TEXT_PRISPEVKU_NO.md`. **Neplánované, čaká na „áno“.**
+- ⚠️ **Pozinkované (vozíky), hliníkové profily, kov — zatiaľ nie.** Karta LMS 10.5: „Uforenlige materialer: syrefølsomme materialer, **metaller**“; LMS obsahuje aj kyselinu fosforečnú, šťaveľovú a amidosírovú — kyseliny rozpúšťajú zinkovú vrstvu. Vypýtať od výrobcu (Rodinná firma), či a ako sa smie na pozinkované/hliník (riedenie, čas, oplach).
+- Oprava faktu: LMS nie je len citrónová/vínna/mliečna — podľa karty má 6 kyselín (citrónová, vínna, mliečna, šťaveľová, fosforečná, amidosírová). V reklamách A/B v bode 3 veta „laget med sitron-, vin- og melkesyre“ je neúplná → nepoužiť.
