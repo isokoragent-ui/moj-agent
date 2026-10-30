@@ -18,6 +18,7 @@
 - **Bezpečnostné karty (SDS) NO:** ✅ uzavreté 27. 10. — 31 kariet, 27 na webe; chýbajú GreenGuard, Multi Steinrens, Peisglassrens (čaká na SK PDF od výrobcu) → `02_PRACA/sikkerhetsdatablad/README.md`
 - **Etikety NO (od 2026-10-28):** 🟡 12 návrhov hotových (Fett- og flekkfjerner, EcoNeutral, Antidugg 250/500 + 100 ml, Junior, Baderomsrens, Bilrens, Clinic, Universalrens, Kalkfjerner, EcoDescal, Kjøleskapsrens) — PDF na tlač + PNG + A4; pravidlo „len preklad, všetko od výrobcu ostáva“; ďalšie etikety neskôr → `02_PRACA/etikety/README.md`
 - **Balíky:** 🎄 Badepakken (LM Descaling + Bath Cleaner) 349 kr vrátane dopravy — zverejnený 26. 10., kampaň „Julen starter med et rent bad“ beží → `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`; 🍳 kuchynský balík (Fett- og flekkfjerner + Kjøleskapsrens) — 📝 čaká na cenu a fotky
+- **Isokor LMS (hrdza) — prezentácia produktu (od 2026-10-30):** 🟢 karusel 8 slajdov naplánovaný na ut 3. 11. 10:30 (FB+IG, Threads), videá na výšku a na šírku (Luk zverejní sám); kampaň 800 kr/14 dní schválená, spustenie zatiaľ nie; kov/pozinkované čaká na výrobcu → `02_PRACA/KAMPAN_RUST_AGDER_2026-11.md`, `02_PRACA/grafika/lms/`
 - **Firma na webe:** Isokor Skandinavia AS, org. č. 922 112 975
 - **Vzťah s výrobcom:** priame zastúpenie, logá/názvy/texty/licencie vybavené dohodou → `08_ROZHODNUTIA/2026-10-28_vyrobca_prava_znacky.md`
 - **Trh:** Nórsko (komunikácia po nórsky), web `www.isokor-skandinavia.no`
