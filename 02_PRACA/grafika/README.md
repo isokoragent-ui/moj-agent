@@ -61,3 +61,7 @@ Zdroj: `zdroj/kjokkenpakken_jul/` → `node render.js` (grafika), `python3 packs
 
 Zdroj: `zdroj/kjokkenpakken_jul/norsk.html` → `node render_norsk.js`. Pletenina sa kreslí v canvase z bitmapy `ROSE` (13 × 13 očiek).
 ✅ Luk 30. 10. vybral **červenú nórsku verziu** — hlavná fotka produktu Kjøkkenpakken, príspevok pi 6. 11., e-mail ne 8. 11. Zelená ostáva v zálohe.
+
+### Video Kjøkkenpakken — nórska verzia (2026-10-30)
+`kjokkenpakken_norsk_story.mp4` (1080×1920) a `kjokkenpakken_norsk_wide.mp4` (1920×1080) — 14 s, s hudbou (`hytteservice/hudba.py`, hracia skrinka). Scény: „Ribbe – eller pinnekjøtt?" → „Uansett: kjøleskapet trenger en vask før julematen" → fľaše na tanieri, visačka 349,- spadne a zahojdá sa, „du sparer 48,-", isokor-skandinavia.no. Pletený pás sa posúva, sneží.
+Zdroj: `zdroj/kjokkenpakken_jul/video_norsk.html` (`?f=wide` pre šírku) + `frames_norsk.js` (`OUT=…`, `WIDE=1`).

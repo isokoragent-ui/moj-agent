@@ -27,5 +27,5 @@ Kjøp her: isokor-skandinavia.no/products/isokor-antidugg
 
 ## So 7. 11. — krátke video Kjøkkenpakken (Reels / TikTok / Stories), 14 s, 1080 × 1920
 Scény: „Ribbe – eller pinnekjøtt?" → „Uansett: kjøleskapet trenger en vask før julematen" → fľaše na tanieri, visačka 349,- spadne a zahojdá sa, „du sparer 48,-", isokor-skandinavia.no. Pletený pás sa pomaly posúva, sneží.
-Zdroj hotový: `02_PRACA/grafika/zdroj/kjokkenpakken_jul/video_norsk.html` + `frames_norsk.js` → snímky → ffmpeg + hudba (`02_PRACA/grafika/hytteservice/hudba.py 14`). **Výsledné MP4 ešte nevyrenderované** (príkaz 30. 10. zamietnutý) — dorenderovať, keď Luk povie.
+Zdroj hotový: `02_PRACA/grafika/zdroj/kjokkenpakken_jul/video_norsk.html` + `frames_norsk.js` → snímky → ffmpeg + hudba (`02_PRACA/grafika/hytteservice/hudba.py 14`). ✅ **Hotové 30. 10.:** `02_PRACA/grafika/kjokkenpakken_norsk_story.mp4` (1080×1920, 14 s, hudba) a `kjokkenpakken_norsk_wide.mp4` (1920×1080, 14 s, hudba — web, Facebook, YouTube). Do Metricoolu zatiaľ nie (Luk). Render: `OUT=<priečinok> [WIDE=1] node frames_norsk.js` → ffmpeg + `hudba.py … 14`.
 Text k videu (Reels/TikTok): „Ribbe eller pinnekjøtt? Rent kjøleskap uansett. Kjøkkenpakken – begge for 349 kr, frakt inkludert. isokor-skandinavia.no #julevask #julemat #kjøleskap #isokor"

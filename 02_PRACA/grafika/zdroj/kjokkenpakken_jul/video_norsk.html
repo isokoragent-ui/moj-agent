@@ -47,6 +47,27 @@
   #save b { color: var(--cream-2); }
   #cta { left: 50%; top: 1570px; transform: translateX(-50%); white-space: nowrap; background: var(--cream); color: var(--red); font-weight: 800; font-size: 46px; padding: 20px 44px; border-radius: 999px; }
   #eco { top: 1680px; font-size: 26px; font-weight: 600; opacity: .85; }
+
+  /* 1920 × 1080 (web, Facebook, YouTube) */
+  html:has(body.wide), body.wide { width: 1920px; height: 1080px; }
+  body.wide canvas.band { width: 1920px; height: 100px; }
+  body.wide #w1 { top: 300px; font-size: 210px; }
+  body.wide #w2 { top: 540px; font-size: 110px; }
+  body.wide #w3 { top: 330px; font-size: 140px; }
+  body.wide #w4 { top: 520px; font-size: 76px; padding: 0 340px; }
+  body.wide .kicker { top: 170px; right: 900px; }
+  body.wide #title { top: 230px; right: 900px; font-size: 100px; }
+  body.wide .plate { left: 1400px; top: 580px; width: 620px; height: 620px; margin: -310px 0 0 -310px; }
+  body.wide .bottles { left: 1000px; right: 0; top: 250px; padding-left: 0; justify-content: center; }
+  body.wide .bottles img { height: 600px; }
+  body.wide .bottles img + img { margin-left: -70px; }
+  body.wide .tag { right: 50px; top: 260px; width: 220px; }
+  body.wide .tag .p { font-size: 80px; }
+  body.wide #pl1 { left: 150px; top: 520px; }
+  body.wide #pl2 { left: 540px; top: 520px; }
+  body.wide #save { top: 680px; right: 900px; }
+  body.wide #cta { left: 510px; top: 745px; }
+  body.wide #eco { top: 860px; right: 900px; }
 </style>
 </head>
 <body>
@@ -74,11 +95,15 @@
 <div class="abs center" id="eco">Naturlig · Biologisk nedbrytbar · V-Label</div>
 
 <script>
+  const WIDE = new URLSearchParams(location.search).get('f') === 'wide';
+  if (WIDE) document.body.classList.add('wide');
+  const W = WIDE ? 1920 : 1080, H = WIDE ? 1080 : 1920, BH = WIDE ? 100 : 150;
+  document.getElementById('snow').setAttribute('width', W); document.getElementById('snow').setAttribute('height', H);
   const CREAM = '#fbf3e4';
   const ROSE = ['...X.....X...','...XX...XX...','...XXX.XXX...','XXX.XXXXX.XXX','.XXX.XXX.XXX.','..XXX.X.XXX..','...XXX.XXX...',
                 '..XXX.X.XXX..','.XXX.XXX.XXX.','XXX.XXXXX.XXX','...XXX.XXX...','...XX...XX...','...X.....X...'];
   function band(c, shift) {
-    c.width = 1080; c.height = 150;
+    c.width = W; c.height = BH;
     const g = c.getContext('2d');
     g.fillStyle = '#7d1520'; g.fillRect(0, 0, c.width, c.height);
     const S = c.height / 19, cols = Math.ceil(c.width / S) + 2, off = -((shift % (18 * S)) + 18 * S);
@@ -86,8 +111,8 @@
       g.beginPath(); g.moveTo(X + .6, Y + .5); g.lineTo(X + h - .3, Y + S * .32); g.lineTo(X + h - .3, Y + S - .3); g.lineTo(X + .6, Y + S * .68); g.closePath(); g.fill();
       g.beginPath(); g.moveTo(X + S - .6, Y + .5); g.lineTo(X + h + .3, Y + S * .32); g.lineTo(X + h + .3, Y + S - .3); g.lineTo(X + S - .6, Y + S * .68); g.closePath(); g.fill(); };
     g.fillStyle = CREAM;
-    for (let x = 0; x < cols + 18; x++) { st(x, 0); st(x, 18); if (x % 2 === 0) { st(x, 2); st(x, 16); } }
-    for (let cx = 0; cx < cols + 36; cx += 18) {
+    for (let x = 0; x < cols + 60; x++) { st(x, 0); st(x, 18); if (x % 2 === 0) { st(x, 2); st(x, 16); } }
+    for (let cx = 0; cx < cols + 72; cx += 18) {
       ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') st(cx + x, 3 + y); }));
       const m = cx + 15; [[0,9],[-1,9],[1,9],[0,8],[0,10],[-2,9],[2,9],[0,7],[0,11]].forEach(([a, b]) => st(m + a, b));
     }
@@ -97,7 +122,7 @@
   const $ = id => document.getElementById(id);
   const set = (id, o, tf) => { const e = $(id); e.style.opacity = o; if (tf !== undefined) e.style.transform = tf; };
   let s = 7; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
-  const flakes = Array.from({ length: 110 }, () => ({ x: r() * 1080, y: r() * 1920, rad: 1 + r() * 3, o: .15 + r() * .4, v: 40 + r() * 70, d: r() * 6.28 }));
+  const flakes = Array.from({ length: 110 }, () => ({ x: r() * W, y: r() * H, rad: 1 + r() * 3, o: .15 + r() * .4, v: 40 + r() * 70, d: r() * 6.28 }));
 
   window.render = (t) => {
     band($('bandTop'), t * 40); band($('bandBottom'), t * 40);
@@ -125,7 +150,7 @@
     set('cta', seg(t, 10.3, 10.8), `translateX(-50%) translateY(${(1 - seg(t, 10.3, 10.8)) * 30}px)`);
     set('eco', seg(t, 10.7, 11.2));
     $('snow').innerHTML = flakes.map(p => {
-      const y = (p.y + p.v * t) % 1960 - 20, x = p.x + Math.sin(t * .8 + p.d) * 14;
+      const y = (p.y + p.v * t) % (H + 40) - 20, x = p.x + Math.sin(t * .8 + p.d) * 14;
       return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${p.rad}" fill="#fff" opacity="${p.o}"/>`;
     }).join('');
   };
