@@ -23,6 +23,12 @@ Baderomsrensen er 100 % naturlig, laget av plantebaserte ekstrakter og oljer. De
 
 Begge er klare til bruk, uten blanding, og frakten i Norge er inkludert i pakken.
 
+**Julegavetips til den som har alt**
+
+Vet du ikke hva du skal gi til den som allerede har alt? Et rent og blankt bad er en gave som faktisk blir brukt – og som ikke blir stående i et skap. Badepakken passer fint som en liten julegave til foreldre, svigerfamilien, naboen eller en kollega. Eller som en gave til deg selv før julebesøket kommer.
+
+Du kan oppgi mottakerens adresse når du bestiller, så sender vi pakken rett dit.
+
 [ Se Badepakken ]
 
 Lurer du på noe om hvordan produktene brukes, er det bare å svare på denne e-posten.
@@ -36,6 +42,7 @@ www.isokor-skandinavia.no
 ---
 
 ## Poznámky agenta
+- **30. 10. — doplnený odsek „Julegavetips til den som har alt“** (Luk): darček pre toho, kto má všetko / pre seba. Vložiť medzi odsek o doprave a tlačidlo. Luk ho dopĺňa ručne v Messaging do už naplánovanej kampane → potom znova testovací e-mail. Voliteľne text náhľadu: „Badepakken – også et julegavetips til den som har alt.“ Darčekové balenie ani kartičku nesľubujeme (nemáme).
 - Vynechané zámerne: „trygg for hele familien“, „uten harde kjemikalier“, „allergifri“ — Kalkfjerner je podľa bezpečnostnej karty žieravý (H314); v e-maile by to bolo tvrdenie proti vlastnej karte.
 - Veta o rukaviciach **vyhodená** (Luk 28. 10.: produkt je pri bežnom používaní jemný, označenie je kvôli zneužitiu — piť, do očí). Tvrdenia o bezpečnosti sa ale nepridávajú (označený výrobok — riziko pri kontrole reklamy).
 - Bez falošnej urgentnosti, bez emoji, bez odrážok (HLAS.md).
