@@ -60,3 +60,4 @@ Zdroj: `zdroj/kjokkenpakken_jul/` → `node render.js` (grafika), `python3 packs
 | `kjokkenpakken_norsk_story.png` | 1080 × 1920 |
 
 Zdroj: `zdroj/kjokkenpakken_jul/norsk.html` → `node render_norsk.js`. Pletenina sa kreslí v canvase z bitmapy `ROSE` (13 × 13 očiek).
+✅ Luk 30. 10. vybral **červenú nórsku verziu** — hlavná fotka produktu Kjøkkenpakken, príspevok pi 6. 11., e-mail ne 8. 11. Zelená ostáva v zálohe.

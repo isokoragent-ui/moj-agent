@@ -1,6 +1,6 @@
 # Kjøkkenpakken – Julen starter med et rent kjøkken
 
-*2026-10-30 · okno „Kjøkkenpakken" · produkt v Shopify ako **DRAFT** — zverejní sa až po Lukovom „áno".*
+*2026-10-30 · okno „Kjøkkenpakken" · Luk „áno" (30. 10.): nórska červená verzia, zverejnenie pi 6. 11., e-mail ne 8. 11.*
 
 ## Produkt (Shopify)
 - **Isokor Kjøkkenpakken** · `/products/kjokkenpakken` · id gid://shopify/Product/8767215173811
@@ -41,3 +41,28 @@ Begge for 349 kr – frakt i hele Norge inkludert (hver for seg 397 kr med frakt
 👉 isokor-skandinavia.no/products/kjokkenpakken
 
 ## Grafika → `02_PRACA/grafika/` (README, sekcia Kjøkkenpakken)
+
+## ✅ NAPLÁNOVANÉ (30. 10., Luk „áno")
+- **Shopify:** produkt ACTIVE, hlavná fotka = nórska červená verzia. Zverejnenie **pi 6. 11. 2026 8:00 Oslo** naplánované v **Online Store + Google** (publishDate). Overené: teraz `onlineStoreUrl: null`, `isPublished: false`.
+  ⚠️ POS, Facebook a Shop naplánovanie (publishDate) **neprijali** → v piatok po 8:00 zverejniť aj tam (ako Badepakken).
+- **Metricool pi 6. 11. 10:30** FB + IG + Threads + TikTok (foto JPEG) + Google — text nižšie (490 znakov), obrázok `kjokkenpakken_norsk_portrait.jpg` → [plánovač](https://app.metricool.com/planner/calendar?blogId=7484747&openWithPostUuid=2058566352876947904)
+- **Metricool pi 6. 11. 12:00** Story FB + IG (`kjokkenpakken_norsk_story.jpg`) → [plánovač](https://app.metricool.com/planner/calendar?blogId=7484747&openWithPostUuid=-5477645151936428240)
+- **E-mail ne 8. 11. 9:30** → `02_PRACA/emaily/2026-11-08_nyhetsbrev_Kjokkenpakken.md` (text čaká na Lukovo OK, zadáva Luk v Messaging).
+- Obrázky v Shopify Súboroch: kjokkenpakken-norsk-feed.jpg, kjokkenpakken-norsk-story.jpg.
+
+### Text príspevku (naplánovaný)
+Ribbe eller pinnekjøtt? Der blir vi aldri enige – men et rent kjøleskap trenger alle før julematen skal inn.
+
+Kjøkkenpakken fra Isokor: Kjøleskapsrens til kjøleskap og fryser, trygt der maten står, og Fett- og flekkfjerner til komfyr, benk og kjøkkenvifte. Naturlig og biologisk nedbrytbar.
+
+Begge for 349 kr, frakt i hele Norge inkludert. Begrenset antall.
+isokor-skandinavia.no/products/kjokkenpakken
+
+Hva blir det hos dere – ribbe eller pinnekjøtt?
+
+#julevask #kjøleskap #julemat #isokor
+
+### Ako „hecnúť" Nórov (návrhy agenta)
+- Otázka na konci = komentáre → Meta ukáže príspevok viac ľuďom zadarmo. **Na každý komentár odpovedať** v prvých hodinách (Luk / agent pripraví odpovede).
+- Sponzorovanie (Luk zváži): ak, tak tento obrázok, cieľ „návštevy webu" na /products/kjokkenpakken, celé Nórsko, 30–65, ~50 kr/deň — poučenie z Badepakken (5 miest bolo príliš úzko).
+- Ďalší krok, ak nepôjde: súťaž „Ribbe eller pinnekjøtt? Kommenter og vinn en Kjøkkenpakke" (stojí 1 balík, pravidlá súťaže treba napísať).

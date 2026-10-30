@@ -19,3 +19,6 @@
 ## Agent sám / čaká na „áno"
 - **sám:** výrez, nalepenie, grafika, produkt ako DRAFT
 - **čaká:** zverejnenie produktu a príspevkov
+
+## Súvisiaca pasca — naplánované zverejnenie produktu (30. 10. 2026)
+- `publishablePublish` s `publishDate` v budúcnosti prijme len **Online Store a Google**; POS, Facebook a Shop ho potichu zahodia (bez chyby) → overiť `resourcePublicationsV2(onlyPublished:false)` a tieto kanály zverejniť ručne v deň D.
