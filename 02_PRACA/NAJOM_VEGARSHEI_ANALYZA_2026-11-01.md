@@ -54,7 +54,7 @@ Je to štandardná šablóna Norsk Eiendom — väčšina textu je bežná. Niž
 
 ### 6. Dĺžka viazanosti a výpoveď — §7
 - Platí do 31.12.2029. „Kan ikke sies opp før 01.07.2027. Heretter gjelder 12 måneders gjensidig oppsigelse.“
-- Najskôr teda von cca **30.06.2028** (výpoveď 1. 7. 2027 + 12 mes.). Nie je uvedené, odkedy sa lehota počíta (od doručenia / od konca mesiaca).
+- Najskôr teda von **31.07.2028** (oprava — pozri rozpis nižšie). Nie je uvedené, odkedy sa lehota počíta (od doručenia / od konca mesiaca).
 - Minimálny záväzok pri najskoršom odchode (bez MVA, bez indexácie): nájom 0 + 6 × 3 750 + 12 × 7 500 = **112 500 kr** + spoločné náklady 20 × 1 050 = **21 000 kr** → spolu ~**133 500 kr bez MVA** (~166 900 kr s MVA).
 - **Návrh:** výpovedná lehota pre nájomcu **6 mesiacov**, počítaná „fra den 1. i måneden etter at oppsigelsen er mottatt“; a **opcia na predĺženie** o 3 roky za rovnakých podmienok (+ KPI) — teraz žiadna nie je.
 
@@ -122,3 +122,28 @@ Luk vyberie, ktoré body chce otvoriť → agent pripraví nórsky e-mail pre Ed
 - **Vypustiť:** bod 2 MVA — registrácia príde čoskoro, prvé 2 mesiace bez nájmu.
 - Ostatné body Luk považuje za v poriadku.
 - Návrh e-mailu: `02_PRACA/NAJOM_VEGARSHEI_EMAIL_2026-11-01.md` (neodoslaný).
+
+---
+## Rozpísané podrobnejšie (2026-11-01, na žiadosť Luka)
+
+### §7 Viazanosť
+- Text: „Leieforholdet løper fra 01.11.2026 til 31.12.2029, hvoretter leieforholdet opphører uten oppsigelse. Leieforholdet kan ikke sies opp før 01.07.2027. Heretter gjelder 12 måneders gjensidig oppsigelse.“
+- Výpoveď sa dá **podať** najskôr 1. 7. 2027. Lehota je 12 mesiacov. Zmluva nehovorí, odkedy sa počíta → platí husleieloven § 9-6 (nie je vylúčený v §30): lehota beží **od konca mesiaca**, v ktorom bola výpoveď podaná (overiť na lovdata.no).
+- **Opravené:** najskorší koniec = **31. 7. 2028** (nie 30. 6. 2028, ako bolo v prvej verzii vyššie).
+- Výpoveď v mesiaci X → koniec posledným dňom mesiaca X+12 (júl 2027 → 31. 7. 2028; jan. 2028 → 31. 1. 2029; dec. 2028 → 31. 12. 2029 = aj tak koniec zmluvy).
+- „Gjensidig“ = rovnako môže vypovedať aj prenajímateľ (od 7/2027, 12 mes.).
+- Po 31. 12. 2029 zmluva končí sama, bez opcie na predĺženie.
+- Náklady pri najskoršom odchode (bez MVA, bez KPI): nájom 0 + 6×3 750 + 13×7 500 = 120 000 kr; spoločné 21×1 050 = 22 050 kr → **142 050 kr** (~177 560 s MVA). KPI od 1. 1. 2028 pridá pár stoviek mesačne na 7 mesiacov.
+- Celé obdobie do 31. 12. 2029: nájom 22 500 + 30×7 500 = 247 500; spoločné 38×1 050 = 39 900 → **287 400 kr** bez MVA (+KPI).
+- Návrh: výpovedná lehota pre nájomcu 6 mes. (alebo právo vypovedať už od 1. 1. 2027), lehota „regnet fra utgangen av måneden“ výslovne, opcia predĺženia o 3 roky.
+
+### §15 Spoločné náklady
+- Čo to je: prevádzka budovy delená medzi nájomcov (Bilag 3): energia spoločných priestorov, vonkajšie osvetlenie, voda/kanalizácia/odpad, daň z nehnuteľnosti, upratovanie spoločných priestorov, servis techniky a požiarnych zariadení, správca, sneh, údržba vonkajších plôch vrátane **parkoviska (reasfaltering, oppmerking)**, brannvernledelse, prípadne recepcia/strážna služba.
+- Platenie: záloha 1 050 kr/mes (+MVA) = 12 600 kr/rok. Skutočné náklady sa vyúčtujú do 30. 4. nasledujúceho roka → doplatok alebo preplatok.
+- Kľúč: podľa plochy (náš podiel = 109,5 m² / celková plocha budovy). Zmena princípu kľúča len s naším písomným súhlasom.
+- 8 % administratívna prirážka: prenajímateľ si pripočíta 8 % na všetky náklady ako odmenu za správu (pri 12 000 kr nákladov = +960 kr/rok).
+- Bez stropu: zoznam je len „príklady“ a môže sa meniť (nové služby, nové požiadavky úradov). Čo pribudne, platíme podielom.
+- Ochrana, ktorá v zmluve je: rozpočet vopred, upozornenie pri podstatnej odchýlke, rozpísané vyúčtovanie, ktoré sa dá skontrolovať, náklady na prázdne priestory platí prenajímateľ.
+- Nie je zahrnuté v zľave §29 — platí sa od 1. 11. 2026.
+- Elektrina pre 104: ak je vlastný elektromer (protokol: „Målenr strøm“, „Strøm bestilt hos Elkraft“), platíme ju zvlášť cez vlastnú zmluvu → **ďalší náklad mimo 1 050 kr**. Overiť.
+- Návrh: pred podpisom vyžiadať rozpočet 2027 a vyúčtovanie 2025; strop (napr. nárast max. KPI + 10 %/rok, okrem verejných poplatkov a dane); vyňať parkovisko (nemáme naň právo), recepciu a strážnu službu.
