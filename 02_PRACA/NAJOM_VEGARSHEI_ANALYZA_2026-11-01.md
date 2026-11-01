@@ -55,7 +55,7 @@ Je to štandardná šablóna Norsk Eiendom — väčšina textu je bežná. Niž
 ### 6. Dĺžka viazanosti a výpoveď — §7
 - Platí do 31.12.2029. „Kan ikke sies opp før 01.07.2027. Heretter gjelder 12 måneders gjensidig oppsigelse.“
 - Najskôr teda von **31.07.2028** (oprava — pozri rozpis nižšie). Nie je uvedené, odkedy sa lehota počíta (od doručenia / od konca mesiaca).
-- Minimálny záväzok pri najskoršom odchode (bez MVA, bez indexácie): nájom 0 + 6 × 3 750 + 12 × 7 500 = **112 500 kr** + spoločné náklady 20 × 1 050 = **21 000 kr** → spolu ~**133 500 kr bez MVA** (~166 900 kr s MVA).
+- Minimálny záväzok pri najskoršom odchode (bez MVA, bez indexácie): nájom 0 + 6 × 3 750 + 13 × 7 500 = **120 000 kr** + spoločné náklady 21 × 1 050 = **22 050 kr** → spolu ~**142 050 kr bez MVA** (~177 560 kr s MVA).
 - **Návrh:** výpovedná lehota pre nájomcu **6 mesiacov**, počítaná „fra den 1. i måneden etter at oppsigelsen er mottatt“; a **opcia na predĺženie** o 3 roky za rovnakých podmienok (+ KPI) — teraz žiadna nie je.
 
 ### 7. Zľava z nájmu — §29
