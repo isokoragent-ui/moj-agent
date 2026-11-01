@@ -115,3 +115,10 @@ Je to štandardná šablóna Norsk Eiendom — väčšina textu je bežná. Niž
 
 ## Ďalší krok
 Luk vyberie, ktoré body chce otvoriť → agent pripraví nórsky e-mail pre Edvarda Ajera s návrhmi zmien (len návrh, odosiela Luk po schválení). **Nepodpisovať a neplatiť depozit, kým sa body nevyjasnia.**
+
+---
+## Rozhodnutie Luka (2026-11-01)
+- **Otvoriť:** bod 1 (vandalizmus), bod 3 (účel: kontor, lager, salg + verksted), bod 5 (skryté vady), dátum podpisu §33.
+- **Vypustiť:** bod 2 MVA — registrácia príde čoskoro, prvé 2 mesiace bez nájmu.
+- Ostatné body Luk považuje za v poriadku.
+- Návrh e-mailu: `02_PRACA/NAJOM_VEGARSHEI_EMAIL_2026-11-01.md` (neodoslaný).
