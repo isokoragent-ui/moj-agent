@@ -38,7 +38,7 @@
 | Ekologické čistenie, impregnácia a obnova písma na náhrobných kameňoch | ⏸ e-shop kampaň odložená (návrh: `NAVRH_HROBY_2026-10.md`) |
 | Impregnácia a čistenie sklenených systémov, zábradlí a pod. | 🚀 rozbieha sa |
 | **Isokor Hytteservice** — zatvorenie chaty, kontrola každých 14 dní s Tilsynslogg pre poisťovňu, otvorenie na jar (Vegårshei, Tvedestrand, Risør) | 🚀 spustené 29. 10. 2026 (web + e-shop + príspevky) → `02_PRACA/hytteservice/README.md` |
-| **Isokor Julebytte** — upratovanie chát medzi hosťami (Airbnb/Booking) len 20. 12. 2026 – 6. 1. 2027, Vegårshei a Gautefall; prírodné prostriedky bez parfumov; max. 2 chaty denne, vyššie ceny | 🛠 návrh v2 4. 11. — analýza trhu, koncept, grafika, videá, texty hotové; čaká na Lukovo potvrdenie cien → `02_PRACA/julebytte/KONCEPT.md` |
+| **Isokor Julebytte** — upratovanie chát medzi hosťami (Airbnb/Booking) len 20. 12. 2026 – 6. 1. 2027, Vegårshei a Gautefall; prírodné prostriedky bez parfumov; max. 2 chaty denne, 4 990 / 6 490 kr | 🛠 ceny schválené 4. 11.; grafika, videá, prezentácia, texty hotové; kampaň navrhnutá (štart ut 10. 11.) → `02_PRACA/julebytte/KAMPAN.md` |
 | B2B spolupráca s montážnikmi sklenených systémov (robia sami / alebo ponúkajú ďalej za províziu) | 🚀 oslovujem firmy — Smajli: návrh odoslaný (29. 10.), čaká sa na odpoveď |
 
 *Sú tu diery na trhu — treba na nich pracovať a rozširovať predaj a služby.*

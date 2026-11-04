@@ -23,8 +23,11 @@ Podrobnosti: `02_PRACA/julebytte/KONCEPT.md`
 
 ## Úprava v2 (Luk 4. 11. večer, po analýze trhu)
 - Oblasť **len Vegårshei a Gautefall** (správne „Gautefall“); Risør a Tvedestrand nie.
-- **Vyššie ceny, menej zákaziek** (Luk). Návrh v2: 4 990 / 6 490 kr za výmenu, mimoriadna špina 890 kr/h, bielizeň 690 kr; max. 2 chaty denne; objednávky do 1. 12. — čaká na Lukovo potvrdenie.
+- **Vyššie ceny, menej zákaziek** (Luk). Návrh v2: 4 990 / 6 490 kr za výmenu, mimoriadna špina 890 kr/h, bielizeň 690 kr; max. 2 chaty denne; objednávky do 15. 12. — čaká na Lukovo potvrdenie.
 - **Nesľubujeme výmenu 11:00 → 16:00** — po vianočnej oslave sa to nestihne; čas hotovosti sa dohodne pri objednávke.
 - Háčik: „Vaskebyråene tar juleferie. Vi gjør ikke det.“ (Lukova skúsenosť z minulého roka).
 - Interiér chaty smie byť AI obrázok (Luk) — len atmosféra, nie produkt.
 Analýza: `02_PRACA/julebytte/ANALYZA_TRHU.md`
+
+## Potvrdené (Luk 4. 11.)
+Ceny a podmienky v2 **schválené**: 4 990 / 6 490 kr, 890 kr/h mimoriadna špina, 690 kr bielizeň, max. 2 chaty denne, Vegårshei + Gautefall. **Objednávky do 15. 12.** AI interiér negenerovať (šetriť kredity Artlist).

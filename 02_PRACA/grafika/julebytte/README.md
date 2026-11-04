@@ -1,7 +1,7 @@
 # Grafika — Isokor Julebytte (4. 11. 2026, návrh)
 
 Štýl: zelená ako Hytteservice (#1b3a28) + červený pletený pás so selburose ako Kjøkkenpakken, sneh.
-Oblasť: Vegårshei a Gautefall. Slajd 4 má miesto na `interior.jpg` (AI interiér) — keď súbor existuje, karusel ho použije sám.
+Oblasť: Vegårshei a Gautefall. Slajd 4 má miesto na `interior.jpg` — AI interiér Luk 4. 11. zrušil (šetríme kredity); keby sa niekedy pridal, karusel ho použije sám.
 Fotky: Lukova chata v snehu (výrez z bannera Hytteservice — originál nie je v repozitári), fľaše Kjøleskapsrens, Cleaner (Universalrens, stará etiketa), Fett- og flekkfjerner.
 
 | Súbor | Formát | Na čo |
@@ -11,6 +11,7 @@ Fotky: Lukova chata v snehu (výrez z bannera Hytteservice — originál nie je 
 | `julebytte_story_1.jpg`, `_2.jpg` | 1080×1920 | Stories |
 | `julebytte_video_story_1080x1920.mp4` | 16 s, hudba | Reels, TikTok, Shorts, Stories |
 | `julebytte_video_wide_1920x1080.mp4` | 16 s, hudba | Facebook, YouTube, web |
+| `Isokor_Julebytte_presentasjon.pdf` + `julebytte_presentasjon_1…7.jpg` | 1920×1080, 7 strán | prezentácia pre majiteľov/správcov chát (zdroj `presentasjon.html` + `node render_pres.js`) |
 
 Zdroj: `../zdroj/julebytte/` — `karusel.html` + `node render.js <priečinok>`; video `video.html` + `OUT=… [WIDE=1] node frames.js` → ffmpeg + `../hytteservice/hudba.py výstup.wav 16`.
 Texty: `02_PRACA/julebytte/TEKSTY_NO.md`.

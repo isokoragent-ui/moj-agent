@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<title>Isokor Julebytte</title>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;600;700;800&family=DM+Serif+Display:ital@0;1&display=block" rel="stylesheet">
+<style>
+  @page { size: 1920px 1080px; margin: 0; }
+  :root { --green:#1b3a28; --green-2:#25503a; --green-dark:#0f2418; --red:#b3202d; --red-dark:#7d1520;
+          --cream:#fbf3e4; --cream-2:#f3e3c4; --ink:#16271c; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Assistant",sans-serif; color:var(--cream); background:var(--green-dark); }
+  .page { width:1920px; height:1080px; position:relative; overflow:hidden; page-break-after:always;
+    background:radial-gradient(90% 70% at 60% 50%, var(--green-2) 0%, var(--green) 55%, var(--green-dark) 100%); }
+  .page.cream { background:var(--cream); color:var(--ink); }
+  canvas.band { position:absolute; left:0; top:0; width:1920px; height:70px; z-index:5; }
+  canvas.band.b { top:auto; bottom:0; transform:scaleY(-1); }
+  .in { position:absolute; left:130px; right:130px; top:150px; bottom:130px; }
+  .kicker { display:inline-block; font-weight:800; letter-spacing:.24em; text-transform:uppercase; font-size:22px;
+    background:var(--red); color:var(--cream); padding:9px 20px 8px; border-radius:4px; }
+  .cream .kicker { background:var(--green); }
+  h1 { font-family:"DM Serif Display",serif; font-weight:400; font-size:96px; line-height:1.02; margin-top:26px; }
+  h1 em { font-style:italic; color:var(--cream-2); }
+  .cream h1 em { color:var(--red); }
+  h2 { font-family:"DM Serif Display",serif; font-weight:400; font-size:44px; line-height:1.1; }
+  p { font-size:32px; line-height:1.4; font-weight:600; }
+  .pn { position:absolute; right:130px; bottom:95px; font-weight:800; font-size:20px; letter-spacing:.2em; opacity:.5; }
+  .logo { position:absolute; left:130px; bottom:95px; font-weight:800; font-size:20px; letter-spacing:.3em; opacity:.6; text-transform:uppercase; }
+
+  /* 1 cover */
+  #p1 .ph { position:absolute; right:0; top:0; bottom:0; width:1060px; background:url(hytta_wide.jpg) center/cover;
+    -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 30%); mask-image:linear-gradient(to right,transparent 0%,#000 30%); }
+  #p1 .in { right:900px; top:220px; }
+  #p1 h1 { font-size:128px; }
+  #p1 .sub { font-family:"DM Serif Display",serif; font-style:italic; font-size:50px; color:var(--cream-2); margin-top:26px; line-height:1.15; }
+  #p1 .meta { margin-top:56px; display:flex; flex-direction:column; gap:12px; font-size:30px; font-weight:700; }
+  #p1 .meta b { color:var(--cream-2); }
+
+  /* grid of cards */
+  .cards { display:grid; gap:34px; margin-top:80px; }
+  .card { background:rgba(251,243,228,.08); border:2px solid rgba(251,243,228,.18); border-radius:22px; padding:44px 40px 40px; min-height:440px; }
+  .cream .card { background:#fff; border:2px solid #eadfc8; box-shadow:0 14px 34px rgba(60,40,0,.08); }
+  .card .n { font-family:"DM Serif Display",serif; font-size:96px; line-height:1; color:var(--cream-2); }
+  .cream .card .n { color:var(--red); }
+  .card h2 { margin-top:18px; font-size:50px; } .card p { font-size:30px; margin-top:16px; opacity:.9; }
+
+  /* 4 produkty */
+  #p4 .in { right:900px; }
+  #p4 .stage { position:absolute; right:110px; top:120px; bottom:120px; width:780px; display:flex; align-items:center; justify-content:center; }
+  #p4 .plate { position:absolute; width:640px; height:640px; border-radius:50%;
+    background:radial-gradient(circle at 50% 45%, #fffaf0 0%, var(--cream) 55%, var(--cream-2) 100%);
+    box-shadow:0 0 0 14px rgba(251,243,228,.15), 0 0 0 30px rgba(251,243,228,.06), 0 40px 70px rgba(0,0,0,.35); }
+  #p4 .bottles { position:relative; display:flex; align-items:flex-end; }
+  #p4 .bottles img { height:600px; filter:drop-shadow(0 24px 24px rgba(0,0,0,.35)); }
+  #p4 .bottles img + img { margin-left:-90px; } #p4 .bottles img.mid { height:660px; position:relative; z-index:2; }
+  .chips { display:flex; flex-wrap:wrap; gap:14px; margin-top:40px; }
+  .chips span { font-weight:800; font-size:28px; padding:11px 24px; border-radius:40px; background:var(--cream); color:var(--ink); }
+  .chips span i { font-style:normal; color:var(--red); margin-right:8px; }
+
+  /* 5 dette får du + telefón */
+  #p5 .cols { display:flex; gap:90px; margin-top:36px; }
+  #p5 .in { right:110px; }
+  ul.check { list-style:none; display:grid; gap:14px; flex:1; }
+  ul.check li { font-size:30px; font-weight:700; display:flex; gap:20px; align-items:flex-start; line-height:1.2; }
+  ul.check li::before { content:"✓"; flex:0 0 48px; height:48px; border-radius:50%; background:var(--green); color:var(--cream); display:grid; place-items:center; font-weight:800; font-size:26px; }
+  ul.check li small { display:block; font-size:22px; font-weight:600; color:#6b6252; margin-top:4px; }
+  .phone { flex:0 0 340px; height:600px; margin-top:-40px; transform:rotate(3deg); border-radius:52px; background:#0b0f0d; padding:15px; box-shadow:0 30px 60px rgba(0,0,0,.3); }
+  .screen { width:100%; height:100%; border-radius:38px; background:#f6f3ec; color:#1b241e; overflow:hidden; }
+  .screen .hd { background:var(--green); color:var(--cream); padding:36px 22px 16px; }
+  .screen .hd b { display:block; font-size:23px; } .screen .hd span { font-size:17px; opacity:.8; }
+  .screen .ph { height:190px; background:url(hytta_top.jpg) center 35%/cover; }
+  .screen ul { list-style:none; padding:12px 20px; display:grid; gap:10px; }
+  .screen li { font-size:18px; font-weight:700; display:flex; justify-content:space-between; border-bottom:1px solid #e3ddcf; padding-bottom:8px; }
+  .screen li em { font-style:normal; color:#2c7a4b; } .screen li em.w { color:var(--red); }
+
+  /* 6 ceny */
+  table { width:100%; border-collapse:separate; border-spacing:0 10px; margin-top:24px; }
+  td { font-size:30px; font-weight:700; padding:16px 34px; background:rgba(251,243,228,.08); }
+  td:first-child { border-radius:16px 0 0 16px; } td:last-child { border-radius:0 16px 16px 0; text-align:right; white-space:nowrap; }
+  td.big { font-family:"DM Serif Display",serif; font-weight:400; font-size:50px; color:var(--cream-2); }
+  td small { display:block; font-size:23px; font-weight:600; opacity:.75; margin-top:4px; }
+  .terms { display:flex; gap:24px; margin-top:26px; }
+  .terms div { flex:1; font-size:25px; font-weight:700; background:var(--cream); color:var(--ink); border-radius:16px; padding:20px 24px; }
+  .terms b { display:block; color:var(--red); font-size:20px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:4px; }
+
+  /* 7 bestilling */
+  #p7 .steps { display:grid; grid-template-columns:repeat(4,1fr); gap:26px; margin-top:50px; }
+  #p7 .card { min-height:0; padding:34px 32px; } #p7 .card .n { font-size:76px; } #p7 .card h2 { font-size:42px; } #p7 .card p { font-size:27px; }
+  #p3 .card h2 { font-size:44px; } #p3 .card p { font-size:28px; }
+  #p7 .cta { position:absolute; left:0; right:0; bottom:0; background:var(--red); color:var(--cream); border-radius:22px; padding:38px 50px;
+    display:flex; align-items:center; justify-content:space-between; }
+  #p7 .cta .a { font-family:"DM Serif Display",serif; font-size:60px; }
+  #p7 .cta .b { text-align:right; font-size:30px; font-weight:800; line-height:1.5; }
+</style>
+</head>
+<body>
+
+<section class="page" id="p1">
+  <canvas class="band"></canvas><canvas class="band b"></canvas>
+  <div class="ph"></div>
+  <div class="in">
+    <div class="kicker">Kun 20. desember – 6. januar</div>
+    <h1>Isokor<br>Julebytte</h1>
+    <div class="sub">Vaskebyråene tar juleferie.<br>Vi gjør ikke det.</div>
+    <div class="meta">
+      <div>Utvask av utleiehytter mellom gjester</div>
+      <div><b>Vegårshei og Gautefall</b> · maks to hytter per dag</div>
+    </div>
+  </div>
+</section>
+
+<section class="page cream" id="p2">
+  <canvas class="band"></canvas><canvas class="band b"></canvas>
+  <div class="in">
+    <div class="kicker">Utfordringen</div>
+    <h1>Årets dyreste netter – <em>og ingen vil vaske.</em></h1>
+    <div class="cards" style="grid-template-columns:repeat(3,1fr)">
+      <div class="card"><div class="n">100 %</div><h2>tillegg i jula</h2><p>Vaskebyråer med ansatte betaler høytidstillegg. Derfor stenger mange – eller blir svært dyre.</p></div>
+      <div class="card"><div class="n">25.12.</div><h2>bytter på røde dager</h2><p>Gjester sjekker ut og inn i romjula og rundt nyttår – akkurat når ingen andre jobber.</p></div>
+      <div class="card"><div class="n">★</div><h2>én dårlig anmeldelse</h2><p>En hytte som ikke er klar, koster mer enn én natt. Den koster neste booking også.</p></div>
+    </div>
+  </div>
+  <div class="logo" style="color:var(--green)">Isokor Skandinavia</div><div class="pn" style="color:var(--green)">2 / 7</div>
+</section>
+
+<section class="page" id="p3">
+  <canvas class="band"></canvas><canvas class="band b"></canvas>
+  <div class="in">
+    <div class="kicker">Slik jobber vi</div>
+    <h1>Få hytter. <em>Gjort skikkelig.</em></h1>
+    <div class="cards" style="grid-template-columns:repeat(4,1fr)">
+      <div class="card"><div class="n">2</div><h2>hytter per dag – maks</h2><p>Vi sier ja til få, så vi rekker å gjøre hver hytte ordentlig.</p></div>
+      <div class="card"><div class="n">⏱</div><h2>Tid avtales på forhånd</h2><p>Vi avtaler når hytta er klar. Tips: innsjekk fra kl. 17 eller én ledig natt på de travleste dagene.</p></div>
+      <div class="card"><div class="n">📷</div><h2>Rot etter fest?</h2><p>Vi tar bilder og gir beskjed før kl. 13. Bildene kan du bruke overfor Airbnb eller Booking.</p></div>
+      <div class="card"><div class="n">✓</div><h2>Også på røde dager</h2><p>Julaften, 1. juledag, nyttårsaften og nyttårsdag – samme pris.</p></div>
+    </div>
+  </div>
+  <div class="logo">Isokor Skandinavia</div><div class="pn">3 / 7</div>
+</section>
+
+<section class="page" id="p4">
+  <canvas class="band"></canvas><canvas class="band b"></canvas>
+  <div class="in">
+    <div class="kicker">Det som gjør oss annerledes</div>
+    <h1>Hytta skal lukte hytte. <em>Ikke vaskemiddel.</em></h1>
+    <p style="margin-top:34px">Vi vasker kun med Isokor – våre egne naturlige midler, laget av plante- og oljeekstrakter. Gjestene kommer inn i en ren hytte som lukter tre, ikke parfyme og klor.</p>
+    <div class="chips"><span><i>✕</i>Uten parfyme</span><span><i>✕</i>Uten farger</span><span><i>✕</i>Uten syntetiske tilsetninger</span><span style="background:var(--red);color:var(--cream)">Biologisk nedbrytbart</span></div>
+  </div>
+  <div class="stage"><div class="plate"></div>
+    <div class="bottles"><img src="flaska_kjol.png"><img class="mid" src="cleaner_cut.png"><img src="flaska_fett.png"></div></div>
+  <div class="logo">Isokor Skandinavia</div><div class="pn">4 / 7</div>
+</section>
+
+<section class="page cream" id="p5">
+  <canvas class="band"></canvas><canvas class="band b"></canvas>
+  <div class="in">
+    <div class="kicker">Dette får du</div>
+    <h1>Klar til neste gjest – <em>med bevis.</em></h1>
+    <div class="cols">
+      <ul class="check">
+        <li>Kjøkken, kjøleskap og komfyr</li>
+        <li>Bad og toalett</li>
+        <li>Gulv, støv og peisglass</li>
+        <li><span>Sengene redd opp<small>med ditt sengetøy – vask på stedet mot tillegg</small></span></li>
+        <li>Søppel ut og sjekk av forbruksvarer</li>
+        <li><span>Bilderapport på mobilen<small>hvert rom, skader, glemte ting, det som snart tar slutt</small></span></li>
+        <li><span>Personlig velkomstkort<small>med hyttas navn til neste gjest</small></span></li>
+      </ul>
+      <div class="phone"><div class="screen">
+        <div class="hd"><b>Julebytte · Hytta Fjellro</b><span>27. desember kl. 14:10</span></div>
+        <div class="ph"></div>
+        <ul>
+          <li>Kjøkken <em>✓ 4 bilder</em></li><li>Bad <em>✓ 3 bilder</em></li><li>Soverom <em>✓ 3 bilder</em></li>
+          <li>Stue og peis <em>✓ 2 bilder</em></li><li>Skade: ingen <em>✓</em></li>
+          <li>Glemt: lue, ladekabel <em class="w">!</em></li><li>Dopapir: 4 ruller igjen <em class="w">!</em></li>
+        </ul></div></div>
+    </div>
+  </div>
+  <div class="logo" style="color:var(--green)">Isokor Skandinavia</div><div class="pn" style="color:var(--green)">5 / 7</div>
+</section>
+
+<section class="page" id="p6">
+  <canvas class="band"></canvas><canvas class="band b"></canvas>
+  <div class="in" style="top:120px;bottom:100px">
+    <div class="kicker">Priser og vilkår</div>
+    <h1>Du feirer jul. <em>Vi tar utvasken.</em></h1>
+    <table>
+      <tr><td>Utvask per bytte – opptil 100 m²</td><td class="big">4 990 kr</td></tr>
+      <tr><td>Utvask per bytte – over 100 m²</td><td class="big">6 490 kr</td></tr>
+      <tr><td>Uvanlig mye rot eller skitt<small>dokumentert med bilder før vi starter</small></td><td>890 kr / påbegynt time</td></tr>
+      <tr><td>Vask og tørk av sengetøy og håndklær på stedet</td><td>+ 690 kr</td></tr>
+    </table>
+    <div class="terms">
+      <div><b>Periode</b>20. desember – 6. januar</div>
+      <div><b>Område</b>Vegårshei og Gautefall</div>
+      <div><b>Kapasitet</b>Maks to hytter per dag</div>
+      <div><b>Bestilling</b>Innen 15. desember</div>
+    </div>
+    <p style="font-size:23px;margin-top:22px;opacity:.75">Endelige priser for privatkunder. Samme pris på røde dager. Tips: legg utvasken inn i vaskegebyret på Airbnb eller Booking – da er det gjesten som betaler.</p>
+  </div>
+  <div class="pn">6 / 7</div>
+</section>
+
+<section class="page cream" id="p7">
+  <canvas class="band"></canvas><canvas class="band b"></canvas>
+  <div class="in">
+    <div class="kicker">Slik bestiller du</div>
+    <h1>Fire steg – <em>så er jula sikret.</em></h1>
+    <div class="cards steps">
+      <div class="card"><div class="n">1</div><h2>Send oss en melding</h2><p>Hyttas navn, adresse, størrelse og byttedatoer med ut- og innsjekk.</p></div>
+      <div class="card"><div class="n">2</div><h2>Vi bekrefter</h2><p>Dato og tidspunkt når hytta er klar. Plassene fordeles etter tur.</p></div>
+      <div class="card"><div class="n">3</div><h2>Nøkkel eller kode</h2><p>Du gir oss tilgang – vi tar resten mens du feirer.</p></div>
+      <div class="card"><div class="n">4</div><h2>Rapport og faktura</h2><p>Bilder etter hvert bytte, faktura når perioden er over.</p></div>
+    </div>
+    <div class="cta"><div class="a">Bestill innen 15. desember</div><div class="b">info@isokor-skandinavia.no<br>isokor-skandinavia.no</div></div>
+  </div>
+</section>
+
+<script>
+  const CREAM = '#fbf3e4';
+  const ROSE = ['...X.....X...','...XX...XX...','...XXX.XXX...','XXX.XXXXX.XXX','.XXX.XXX.XXX.','..XXX.X.XXX..','...XXX.XXX...',
+                '..XXX.X.XXX..','.XXX.XXX.XXX.','XXX.XXXXX.XXX','...XXX.XXX...','...XX...XX...','...X.....X...'];
+  document.querySelectorAll('canvas.band').forEach(c => {
+    const W = 1920, BH = 70; c.width = W; c.height = BH; const g = c.getContext('2d');
+    g.fillStyle = '#7d1520'; g.fillRect(0, 0, W, BH);
+    const Sz = BH / 19, cols = Math.ceil(W / Sz) + 1, off = (W - Math.floor(W / Sz) * Sz) / 2;
+    const st = (x, y) => { const X = off + x * Sz, Y = y * Sz, h = Sz * .5;
+      g.beginPath(); g.moveTo(X + .4, Y + .4); g.lineTo(X + h - .2, Y + Sz * .32); g.lineTo(X + h - .2, Y + Sz - .2); g.lineTo(X + .4, Y + Sz * .68); g.closePath(); g.fill();
+      g.beginPath(); g.moveTo(X + Sz - .4, Y + .4); g.lineTo(X + h + .2, Y + Sz * .32); g.lineTo(X + h + .2, Y + Sz - .2); g.lineTo(X + Sz - .4, Y + Sz * .68); g.closePath(); g.fill(); };
+    g.fillStyle = CREAM;
+    for (let x = -1; x < cols; x++) { st(x, 0); st(x, 18); if (x % 2 === 0) { st(x, 2); st(x, 16); } }
+    for (let cx = 0; cx < cols + 18; cx += 18) {
+      ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') st(cx + x, 3 + y); }));
+      const m = cx + 15; [[0,9],[-1,9],[1,9],[0,8],[0,10],[-2,9],[2,9],[0,7],[0,11]].forEach(([a, b]) => st(m + a, b));
+    }
+  });
+</script>
+</body>
+</html>

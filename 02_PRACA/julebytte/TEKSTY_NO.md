@@ -21,7 +21,7 @@ Etter hvert bytte får du bilder av hvert rom på mobilen. Har gjestene etterlat
 
 Opptil 100 m²: 4 990 kr per bytte. Over 100 m²: 6 490 kr. Samme pris på røde dager.
 
-Begrenset antall bytter – bestill innen 1. desember. Send oss en melding.
+Begrenset antall bytter – bestill innen 15. desember. Send oss en melding.
 
 #hytteutleie #airbnbnorge #utvask #hytte #vegårshei #gautefall #isokor
 
@@ -33,13 +33,13 @@ Vaskebyråene tar juleferie. Vi gjør ikke det.
 
 Isokor Julebytte: utvask av utleiehytter 20.12.–6.1., kun i Vegårshei og Gautefall. Maks to hytter per dag, naturlige midler uten parfyme og farger, og bilder av hvert rom etter hvert bytte.
 
-Fra 4 990 kr per bytte, samme pris på røde dager. Bestill innen 1. desember.
+Fra 4 990 kr per bytte, samme pris på røde dager. Bestill innen 15. desember.
 
 ---
 
 ## 3. Reels / TikTok / YouTube Shorts (video na výšku)
 
-Vaskebyråene tar juleferie. Vi gjør ikke det. Isokor Julebytte tar utvasken av utleiehytta di 20.12.–6.1. i Vegårshei og Gautefall – med naturlige midler uten parfyme og farger. Maks to hytter per dag. Bestill innen 1. desember.
+Vaskebyråene tar juleferie. Vi gjør ikke det. Isokor Julebytte tar utvasken av utleiehytta di 20.12.–6.1. i Vegårshei og Gautefall – med naturlige midler uten parfyme og farger. Maks to hytter per dag. Bestill innen 15. desember.
 
 #hytteutleie #airbnbnorge #julevask #hytte #gautefall #isokor
 
@@ -49,7 +49,7 @@ YouTube názov: **Isokor Julebytte – utvask av utleiehytta i jula**
 
 ## 4. Google firemný profil
 
-Vaskebyråene tar juleferie – vi gjør ikke det. Isokor Julebytte: utvask av utleiehytter 20. desember – 6. januar i Vegårshei og Gautefall. Naturlige midler uten parfyme og farger, bilderapport etter hvert bytte, maks to hytter per dag. Fra 4 990 kr per bytte. Bestill innen 1. desember.
+Vaskebyråene tar juleferie – vi gjør ikke det. Isokor Julebytte: utvask av utleiehytter 20. desember – 6. januar i Vegårshei og Gautefall. Naturlige midler uten parfyme og farger, bilderapport etter hvert bytte, maks to hytter per dag. Fra 4 990 kr per bytte. Bestill innen 15. desember.
 
 ---
 
@@ -61,7 +61,7 @@ I fjor så jeg mange som lette etter noen til utvasken mellom gjestene i romjula
 
 Vi tar bare to hytter per dag, så vi rekker å gjøre det skikkelig. Vi vasker med våre egne naturlige midler uten parfyme og farger, og du får bilder av hvert rom etter hvert bytte.
 
-Fra 4 990 kr per bytte. Plassene er få, så send meg en melding innen 1. desember.
+Fra 4 990 kr per bytte. Plassene er få, så send meg en melding innen 15. desember.
 
 Lukas, Isokor Skandinavia
 
@@ -86,4 +86,4 @@ Vi vasker kun med Isokor – naturlige midler laget av plante- og oljeekstrakter
 
 Pris per bytte: opptil 100 m² 4 990 kr, over 100 m² 6 490 kr. Uvanlig mye rot etter fest: 890 kr per påbegynt time, dokumentert med bilder. Endelige priser, samme pris på røde dager.
 
-Tidspunkt for når hytta er klar avtaler vi ved bestilling. Bestill innen 1. desember.
+Tidspunkt for når hytta er klar avtaler vi ved bestilling. Bestill innen 15. desember.

@@ -1,6 +1,6 @@
 # Isokor Julebytte — upratovanie chát medzi hosťami cez sviatky (NÁVRH v2, 4. 11. 2026)
 
-*Stav: návrh v2 po analýze trhu (`ANALYZA_TRHU.md`), čaká na Lukovo rozhodnutie. V e-shope ani v Metricoole nič.*
+*Stav: **v2 schválená Lukom 4. 11.** (ceny, podmienky, objednávky do 15. 12.). Kampaň → `KAMPAN.md`. V e-shope ani v Metricoole zatiaľ nič.*
 *Rozhodnutie: `08_ROZHODNUTIA/2026-11-04_julebytte.md`. Súvisí: `02_PRACA/hytteservice/README.md`.*
 
 ## Jadro
@@ -20,7 +20,7 @@ Predávame **istotu a kvalitu pre málo chát**, nie lacné upratovanie.
 - Odporúčanie majiteľovi na sviatočné výmeny: **check-in od 17:00** alebo **jedna voľná noc** medzi hosťami (na 25. 12. a 1. 1. sa to oplatí — inak riskuje zlú recenziu).
 - Max. 2 chaty denne (Luk sám; s pomocníkom viac).
 
-## Ceny (návrh v2 — vyššie, menej zákaziek)
+## Ceny (schválené Lukom 4. 11. — vyššie, menej zákaziek)
 | Variant | Cena za 1 výmenu |
 |---|---|
 | Opptil 100 m² | 4 990 kr |
@@ -33,13 +33,13 @@ Porovnanie: bežný utvask 1 000 – 2 500 kr (Gautefall prenajímateľ účtuje
 Príklad: 10 výmen × ~5 500 kr ≈ 55 000 kr za 2,5 týždňa.
 
 ## Obdobie a objednávky
-**20. 12. 2026 – 6. 1. 2027.** Objednávky **do 1. 12.** (návrh; prenajímatelia plánujú sviatky mesiace vopred a my potrebujeme poznať kapacitu).
+**20. 12. 2026 – 6. 1. 2027.** Objednávky **do 15. 12.** (Luk 4. 11.).
 
 ## Oblasť
 **Vegårshei a Gautefall** (Luk 4. 11.). Risør a Tvedestrand nie. Pozor: Gautefall nie je v oblasti Hytteservice → v textoch uvádzať samostatne.
 
 ## Obsah na siete (zelená ako Hytteservice + červený pletený pás so selburose)
-1. Karusel 6 slajdov: 1 háčik „Vaskebyråene tar juleferie. Vi gjør ikke det.“ · 2 sviatky a čo hrozí · 3 prírodné prostriedky · 4 čo dostaneš (+ fotka interiéru chaty, AI — Luk povolil) · 5 fotorapport · 6 ceny + „Maks to hytter per dag – bestill innen 1. desember“.
+1. Karusel 6 slajdov: 1 háčik „Vaskebyråene tar juleferie. Vi gjør ikke det.“ · 2 sviatky a čo hrozí · 3 prírodné prostriedky · 4 čo dostaneš (AI interiér Luk 4. 11. zrušil — šetríme kredity) · 5 fotorapport · 6 ceny + „Maks to hytter per dag – bestill innen 15. desember“.
 2. Video 9:16 + 16:9 (16 s, hudba), príspevok, 2 Stories.
 3. Texty: `TEKSTY_NO.md`.
 
