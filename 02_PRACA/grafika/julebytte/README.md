@@ -1,0 +1,17 @@
+# Grafika — Isokor Julebytte (4. 11. 2026, návrh)
+
+Štýl: zelená ako Hytteservice (#1b3a28) + červený pletený pás so selburose ako Kjøkkenpakken, sneh.
+Fotky: Lukova chata v snehu (výrez z bannera Hytteservice — originál nie je v repozitári), fľaše Kjøleskapsrens, Cleaner (Universalrens, stará etiketa), Fett- og flekkfjerner.
+
+| Súbor | Formát | Na čo |
+|---|---|---|
+| `julebytte_karusel_1…6.jpg` | 1080×1350 | karusel FB + IG |
+| `julebytte_post_1080x1350.jpg` | 1080×1350 | samostatný príspevok, Google profil |
+| `julebytte_story_1.jpg`, `_2.jpg` | 1080×1920 | Stories |
+| `julebytte_video_story_1080x1920.mp4` | 16 s, hudba | Reels, TikTok, Shorts, Stories |
+| `julebytte_video_wide_1920x1080.mp4` | 16 s, hudba | Facebook, YouTube, web |
+
+Zdroj: `../zdroj/julebytte/` — `karusel.html` + `node render.js <priečinok>`; video `video.html` + `OUT=… [WIDE=1] node frames.js` → ffmpeg + `../hytteservice/hudba.py výstup.wav 16`.
+Texty: `02_PRACA/julebytte/TEKSTY_NO.md`.
+
+Pasce: fotka chaty má len 1080×720 → na Stories je mierne zväčšená; lepšia by bola originálna fotka (Luk nahrá). Na scénach s textom pod fotkou používať `mask-image` (prelínanie), nie farebný prechod — inak vidno obdĺžnik.

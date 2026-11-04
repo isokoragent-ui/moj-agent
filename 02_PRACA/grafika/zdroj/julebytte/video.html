@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=DM+Serif+Display:ital@0;1&display=block" rel="stylesheet">
+<style>
+  :root { --green:#1b3a28; --green-2:#25503a; --green-dark:#0f2418; --red:#b3202d; --cream:#fbf3e4; --cream-2:#f3e3c4; --ink:#16271c; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { width:1080px; height:1920px; overflow:hidden; }
+  body.wide, body.wide html { width:1920px; height:1080px; }
+  body { font-family:"Assistant",sans-serif; color:var(--cream); position:relative;
+    background:radial-gradient(90% 60% at 50% 50%, var(--green-2) 0%, var(--green) 55%, var(--green-dark) 100%); }
+  canvas.band { position:absolute; left:0; z-index:6; }
+  #bandTop { top:0; } #bandBottom { bottom:0; transform:scaleY(-1); }
+  svg.snow { position:absolute; inset:0; z-index:5; pointer-events:none; }
+  .abs { position:absolute; }
+  .c { left:0; right:0; text-align:center; }
+  .serif { font-family:"DM Serif Display",serif; line-height:1.02; }
+  .it { font-style:italic; color:var(--cream-2); }
+  /* scéna 1 — hodiny */
+  #clock { left:50%; top:560px; width:520px; height:520px; margin-left:-260px; border-radius:50%; background:var(--cream);
+    box-shadow:0 0 0 14px rgba(251,243,228,.15), 0 30px 60px rgba(0,0,0,.4); }
+  #clock .h, #clock .m { position:absolute; left:50%; bottom:50%; background:var(--ink); border-radius:8px; transform-origin:50% 100%; }
+  #clock .h { width:18px; height:150px; margin-left:-9px; } #clock .m { width:10px; height:215px; margin-left:-5px; background:var(--red); }
+  #clock .dot { position:absolute; left:50%; top:50%; width:34px; height:34px; margin:-17px; border-radius:50%; background:var(--ink); }
+  #clock i { position:absolute; left:50%; top:22px; width:8px; height:34px; margin-left:-4px; background:var(--ink); transform-origin:50% 238px; border-radius:4px; }
+  #t1 { top:260px; font-size:96px; } #t2 { top:1230px; font-size:96px; }
+  #time { top:1105px; font-size:58px; font-weight:800; letter-spacing:.06em; }
+  /* scéna 2 */
+  #q1 { top:640px; font-size:120px; } #q2 { top:820px; font-size:92px; padding:0 70px; }
+  /* scéna 3 — fotka + prostriedky */
+  #photo { left:0; right:0; top:0; height:1100px; background:url(hytta_top.jpg) center 30%/cover;
+    -webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent 100%); mask-image:linear-gradient(to bottom,#000 60%,transparent 100%); }
+  #k3 { top:200px; display:flex; justify-content:center; z-index:2; }
+  .kick span { font-weight:800; letter-spacing:.24em; text-transform:uppercase; font-size:26px; padding:9px 20px 8px; border-radius:4px; background:var(--red); color:var(--cream); }
+  #h3 { top:960px; font-size:100px; z-index:2; }
+  #b3 { left:0; right:0; top:1170px; display:flex; justify-content:center; align-items:flex-end; z-index:2; }
+  #b3 img { height:430px; filter:drop-shadow(0 20px 20px rgba(0,0,0,.4)); } #b3 img + img { margin-left:-70px; } #b3 img.mid { height:470px; position:relative; z-index:2; }
+  .chips { top:1680px; display:flex; justify-content:center; gap:14px; z-index:2; }
+  .chips span { font-weight:800; font-size:30px; padding:10px 22px; border-radius:40px; background:var(--cream); color:var(--ink); }
+  .chips span i { font-style:normal; color:var(--red); margin-right:6px; }
+  /* scéna 4 — cena */
+  #k4 { top:260px; display:flex; justify-content:center; }
+  #h4 { top:330px; font-size:118px; }
+  #p4 { left:80px; right:80px; top:720px; display:flex; gap:26px; }
+  .pbox { flex:1; background:var(--cream); color:var(--ink); border-radius:20px; padding:30px; text-align:center; box-shadow:0 18px 40px rgba(0,0,0,.3); }
+  .pbox .s { font-weight:800; font-size:26px; letter-spacing:.14em; text-transform:uppercase; color:var(--red); }
+  .pbox .p { font-family:"DM Serif Display",serif; font-size:96px; line-height:1; margin-top:8px; } .pbox .p small { font-family:"Assistant"; font-size:32px; font-weight:700; }
+  #f4 { top:1000px; font-size:38px; font-weight:700; line-height:1.5; }
+  #cta { left:80px; right:80px; top:1220px; background:var(--red); border-radius:20px; padding:34px; text-align:center; box-shadow:0 18px 40px rgba(0,0,0,.3); }
+  #cta .a { font-weight:800; font-size:26px; letter-spacing:.22em; text-transform:uppercase; }
+  #cta .b { font-family:"DM Serif Display",serif; font-size:66px; margin-top:8px; }
+  #cta .cc { font-size:32px; font-weight:700; margin-top:6px; }
+  #url { top:1500px; font-size:40px; font-weight:800; }
+
+  /* ŠIROKÉ 1920×1080 */
+  body.wide #clock { left:560px; top:250px; width:500px; height:500px; margin-left:-250px; }
+  body.wide #clock i { transform-origin:50% 228px; }
+  body.wide #clock .h { height:140px; } body.wide #clock .m { height:205px; }
+  body.wide #t1 { left:900px; right:80px; top:300px; text-align:left; font-size:92px; }
+  body.wide #t2 { left:900px; right:80px; top:530px; text-align:left; font-size:92px; }
+  body.wide #time { left:310px; right:auto; width:500px; top:800px; }
+  body.wide #q1 { top:330px; } body.wide #q2 { top:500px; padding:0 260px; }
+  body.wide #photo { left:0; right:auto; width:1000px; top:0; height:1080px; background-image:url(hytta_wide.jpg); background-position:center;
+    -webkit-mask-image:linear-gradient(to right,#000 65%,transparent 100%); mask-image:linear-gradient(to right,#000 65%,transparent 100%); }
+  body.wide #k3 { left:1000px; right:60px; top:150px; }
+  body.wide #h3 { left:1000px; right:60px; top:210px; font-size:76px; }
+  body.wide #b3 { left:1000px; right:60px; top:420px; } body.wide #b3 img { height:400px; } body.wide #b3 img.mid { height:440px; }
+  body.wide .chips { left:1000px; right:60px; top:880px; } body.wide .chips span { font-size:24px; }
+  body.wide #k4 { top:150px; } body.wide #h4 { top:205px; font-size:96px; }
+  body.wide #p4 { left:260px; right:260px; top:440px; }
+  body.wide #f4 { top:660px; font-size:32px; }
+  body.wide #cta { left:460px; right:460px; top:770px; padding:20px; } body.wide #cta .b { font-size:52px; }
+  body.wide #url { top:960px; font-size:30px; display:none; }
+</style>
+</head>
+<body>
+<svg class="snow" id="snow"></svg>
+<canvas class="band" id="bandTop"></canvas>
+<canvas class="band" id="bandBottom"></canvas>
+
+<div class="abs c serif" id="t1">Gjestene reiser<br><span class="it">kl.&nbsp;11:00</span></div>
+<div class="abs" id="clock"><i style="transform:rotate(0)"></i><i style="transform:rotate(90deg)"></i><i style="transform:rotate(180deg)"></i><i style="transform:rotate(270deg)"></i><div class="h" id="hh"></div><div class="m" id="mm"></div><div class="dot"></div></div>
+<div class="abs c" id="time">11:00</div>
+<div class="abs c serif" id="t2">De neste kommer<br><span class="it">kl.&nbsp;16:00</span></div>
+
+<div class="abs c serif" id="q1">1. juledag.</div>
+<div class="abs c serif it" id="q2">Hvem vasker utleiehytta di?</div>
+
+<div class="abs" id="photo"></div>
+<div class="abs c kick" id="k3"><span>Isokor Julebytte</span></div>
+<div class="abs c serif" id="h3">Vi gjør det.<br><span class="it">Med naturlige midler.</span></div>
+<div class="abs" id="b3"><img id="bA" src="flaska_kjol.png"><img id="bB" class="mid" src="cleaner_cut.png"><img id="bC" src="flaska_fett.png"></div>
+<div class="abs c chips" id="ch"><span><i>✕</i>Uten parfyme</span><span><i>✕</i>Uten farger</span><span><i>✕</i>Uten syntetiske tilsetninger</span></div>
+
+<div class="abs c kick" id="k4"><span>Kun 20. desember – 6. januar</span></div>
+<div class="abs c serif" id="h4">Du feirer jul.<br><span class="it">Vi tar utvasken.</span></div>
+<div class="abs" id="p4"><div class="pbox"><div class="s">Opptil 100 m²</div><div class="p">2 990 <small>kr</small></div></div><div class="pbox"><div class="s">Over 100 m²</div><div class="p">3 990 <small>kr</small></div></div></div>
+<div class="abs c" id="f4">Bilderapport etter hvert bytte<br>Vegårshei · Risør · Gautefal</div>
+<div class="abs" id="cta"><div class="a">Begrenset antall bytter</div><div class="b">Bestill innen 15. desember</div><div class="cc">isokor-skandinavia.no</div></div>
+<div class="abs c" id="url"></div>
+
+<script>
+  const WIDE = new URLSearchParams(location.search).get('f') === 'wide';
+  if (WIDE) document.body.classList.add('wide');
+  const W = WIDE ? 1920 : 1080, H = WIDE ? 1080 : 1920, BH = WIDE ? 90 : 140;
+  const sn = document.getElementById('snow'); sn.setAttribute('width', W); sn.setAttribute('height', H);
+  const CREAM = '#fbf3e4';
+  const ROSE = ['...X.....X...','...XX...XX...','...XXX.XXX...','XXX.XXXXX.XXX','.XXX.XXX.XXX.','..XXX.X.XXX..','...XXX.XXX...',
+                '..XXX.X.XXX..','.XXX.XXX.XXX.','XXX.XXXXX.XXX','...XXX.XXX...','...XX...XX...','...X.....X...'];
+  function band(c, shift) {
+    c.width = W; c.height = BH; const g = c.getContext('2d');
+    g.fillStyle = '#7d1520'; g.fillRect(0, 0, W, BH);
+    const S = BH / 19, cols = Math.ceil(W / S) + 2, off = -((shift % (18 * S)) + 18 * S);
+    const st = (x, y) => { const X = off + x * S, Y = y * S, h = S * .5;
+      g.beginPath(); g.moveTo(X + .6, Y + .5); g.lineTo(X + h - .3, Y + S * .32); g.lineTo(X + h - .3, Y + S - .3); g.lineTo(X + .6, Y + S * .68); g.closePath(); g.fill();
+      g.beginPath(); g.moveTo(X + S - .6, Y + .5); g.lineTo(X + h + .3, Y + S * .32); g.lineTo(X + h + .3, Y + S - .3); g.lineTo(X + S - .6, Y + S * .68); g.closePath(); g.fill(); };
+    g.fillStyle = CREAM;
+    for (let x = 0; x < cols + 40; x++) { st(x, 0); st(x, 18); if (x % 2 === 0) { st(x, 2); st(x, 16); } }
+    for (let cx = 0; cx < cols + 54; cx += 18) {
+      ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') st(cx + x, 3 + y); }));
+      const m = cx + 15; [[0,9],[-1,9],[1,9],[0,8],[0,10],[-2,9],[2,9],[0,7],[0,11]].forEach(([a, b]) => st(m + a, b));
+    }
+  }
+  const ease = x => x <= 0 ? 0 : x >= 1 ? 1 : 1 - Math.pow(1 - x, 3);
+  const seg = (t, a, b) => ease((t - a) / (b - a));
+  const $ = id => document.getElementById(id);
+  const set = (id, o, tf) => { const e = $(id); e.style.opacity = o; if (tf !== undefined) e.style.transform = tf; };
+  let s = 5; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  const flakes = Array.from({ length: 110 }, () => ({ x: r() * W, y: r() * H, rad: 1 + r() * 3, o: .15 + r() * .4, v: 40 + r() * 70, d: r() * 6.28 }));
+  const pad = n => String(n).padStart(2, '0');
+
+  window.render = (t) => {
+    band($('bandTop'), t * 40); band($('bandBottom'), t * 40);
+    // 1: 0–4,4 s — hodiny 11:00 → 16:00
+    const o1 = 1 - seg(t, 4.0, 4.4);
+    set('t1', seg(t, .2, .7) * o1, `translateY(${(1 - seg(t, .2, .7)) * 40}px)`);
+    set('clock', seg(t, .3, .8) * o1, `scale(${.85 + .15 * seg(t, .3, .8)})`);
+    const hrs = 11 + 5 * seg(t, 1.0, 3.0) ** 1;            // 11 → 16
+    $('hh').style.transform = `rotate(${(hrs % 12) * 30}deg)`;
+    $('mm').style.transform = `rotate(${(hrs % 1) * 360 + (hrs - 11) * 360}deg)`;
+    const hh = Math.floor(hrs), mi = Math.round((hrs - hh) * 60 / 5) * 5 % 60;
+    $('time').textContent = `${pad(hh)}:${pad(t > 3 ? 0 : mi)}`;
+    set('time', seg(t, .5, 1) * o1);
+    set('t2', seg(t, 3.0, 3.5) * o1, `translateY(${(1 - seg(t, 3.0, 3.5)) * 40}px)`);
+    if (t > 3) $('time').textContent = '16:00';
+    // 2: 4,4–7,2 s
+    const o2 = 1 - seg(t, 6.8, 7.2);
+    set('q1', seg(t, 4.4, 4.9) * o2, `scale(${.8 + .2 * seg(t, 4.4, 4.9)})`);
+    set('q2', seg(t, 5.2, 5.8) * o2, `translateY(${(1 - seg(t, 5.2, 5.8)) * 40}px)`);
+    // 3: 7,2–11,6 s
+    const o3 = 1 - seg(t, 11.2, 11.6);
+    set('photo', seg(t, 7.2, 7.9) * o3, `scale(${1.08 - .08 * seg(t, 7.2, 11.6)})`);
+    set('k3', seg(t, 7.4, 7.9) * o3);
+    set('h3', seg(t, 7.6, 8.2) * o3, `translateY(${(1 - seg(t, 7.6, 8.2)) * 40}px)`);
+    set('bA', seg(t, 8.4, 9.0) * o3, `translateY(${(1 - seg(t, 8.4, 9.0)) * 140}px)`);
+    set('bB', seg(t, 8.6, 9.2) * o3, `translateY(${(1 - seg(t, 8.6, 9.2)) * 140}px)`);
+    set('bC', seg(t, 8.8, 9.4) * o3, `translateY(${(1 - seg(t, 8.8, 9.4)) * 140}px)`);
+    set('ch', seg(t, 9.6, 10.1) * o3, `translateY(${(1 - seg(t, 9.6, 10.1)) * 30}px)`);
+    // 4: 11,6 s →
+    set('k4', seg(t, 11.6, 12.1));
+    set('h4', seg(t, 11.7, 12.3), `translateY(${(1 - seg(t, 11.7, 12.3)) * 40}px)`);
+    set('p4', seg(t, 12.4, 12.9), `translateY(${(1 - seg(t, 12.4, 12.9)) * 40}px)`);
+    set('f4', seg(t, 12.9, 13.4));
+    set('cta', seg(t, 13.3, 13.8), `scale(${.92 + .08 * seg(t, 13.3, 13.8)})`);
+    set('url', 0);
+    $('snow').innerHTML = flakes.map(p => {
+      const y = (p.y + p.v * t) % (H + 40) - 20, x = p.x + Math.sin(t * .8 + p.d) * 14;
+      return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${p.rad}" fill="#fff" opacity="${p.o}"/>`;
+    }).join('');
+  };
+  render(0);
+</script>
+</body>
+</html>

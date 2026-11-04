@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;600;700;800&family=DM+Serif+Display:ital@0;1&display=block" rel="stylesheet">
+<style>
+  :root { --green:#1b3a28; --green-2:#25503a; --green-dark:#0f2418; --red:#b3202d; --red-dark:#7d1520;
+          --cream:#fbf3e4; --cream-2:#f3e3c4; --ink:#16271c; --W:1080px; --H:1350px; --band:96px; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { width:var(--W); height:var(--H); overflow:hidden; }
+  body { font-family:"Assistant",sans-serif; color:var(--cream);
+    background:radial-gradient(95% 60% at 50% 55%, var(--green-2) 0%, var(--green) 55%, var(--green-dark) 100%); }
+  body.story { --H:1920px; --band:130px; }
+  canvas.band { position:absolute; left:0; width:var(--W); height:var(--band); z-index:5; }
+  #bandTop { top:0; } #bandBottom { bottom:0; transform:scaleY(-1); }
+  canvas#bg { position:absolute; inset:0; }
+  .slide { position:absolute; left:0; right:0; top:var(--band); bottom:var(--band); display:none; }
+  .slide.on { display:block; }
+  .pad { position:absolute; inset:0; padding:46px 64px; display:flex; flex-direction:column; }
+  .kicker { align-self:flex-start; font-weight:800; letter-spacing:.24em; text-transform:uppercase; font-size:21px;
+    color:var(--ink); background:var(--cream); padding:8px 18px 7px; border-radius:4px; }
+  .kicker.red { background:var(--red); color:var(--cream); }
+  h1 { font-family:"DM Serif Display",serif; font-weight:400; line-height:1.02; font-size:84px; margin-top:22px; }
+  h1 em { display:block; font-style:italic; color:var(--cream-2); }
+  p.lead { font-size:34px; line-height:1.32; font-weight:600; margin-top:24px; color:#eef3e9; }
+  .num { position:absolute; right:64px; bottom:30px; font-weight:800; font-size:22px; letter-spacing:.2em; opacity:.55; }
+  .swipe { position:absolute; right:64px; bottom:28px; font-weight:800; font-size:24px; letter-spacing:.1em; color:var(--cream-2); }
+
+  /* 1 — háčik s fotkou chaty */
+  .photo { position:absolute; left:0; right:0; top:0; height:640px; background:url(hytta_top.jpg) center 30%/cover; }
+  .photo { -webkit-mask-image:linear-gradient(to bottom,#000 58%,transparent 100%); mask-image:linear-gradient(to bottom,#000 58%,transparent 100%); }
+  #s1 .pad { top:560px; padding-top:0; }
+  #s1 h1 { font-size:92px; }
+  #s1 p.lead { font-size:38px; }
+  .clock { display:inline-flex; gap:14px; margin-top:26px; }
+  .clock span { font-weight:800; font-size:30px; background:rgba(251,243,228,.12); border:2px solid rgba(251,243,228,.35); padding:8px 18px; border-radius:40px; }
+
+  /* 2 — kalendár */
+  .cal { display:grid; grid-template-columns:repeat(5,1fr); gap:18px; margin-top:70px; }
+  .day { background:var(--cream); color:var(--ink); border-radius:14px; text-align:center; padding:18px 0 16px; box-shadow:0 14px 30px rgba(0,0,0,.25); }
+  .day .m { background:var(--red); color:var(--cream); font-weight:800; font-size:18px; letter-spacing:.2em; margin:-18px 0 12px; padding:8px 0; border-radius:14px 14px 0 0; }
+  .day .d { font-family:"DM Serif Display",serif; font-size:100px; line-height:1; }
+  .day .t { font-weight:700; font-size:22px; margin-top:6px; color:#5a3a3a; }
+  .loss { margin-top:auto; margin-bottom:40px; display:grid; gap:26px; }
+  .loss div { font-size:36px; font-weight:700; display:flex; gap:18px; align-items:center; }
+  .loss b { flex:0 0 54px; height:54px; border-radius:50%; background:var(--red); display:grid; place-items:center; font-size:26px; }
+
+  /* 3 — prírodné prostriedky (hlavná exkluzivita) */
+  #s3 .stage { position:relative; flex:1; display:flex; align-items:flex-end; justify-content:center; margin-top:10px; }
+  .plate { position:absolute; left:50%; bottom:30px; width:580px; height:580px; margin-left:-290px; border-radius:50%;
+    background:radial-gradient(circle at 50% 45%, #fffaf0 0%, var(--cream) 55%, var(--cream-2) 100%);
+    box-shadow:0 0 0 10px rgba(251,243,228,.16), 0 0 0 22px rgba(251,243,228,.07), 0 30px 60px rgba(0,0,0,.35); }
+  .bottles { position:relative; display:flex; align-items:flex-end; z-index:2; margin-bottom:20px; }
+  .bottles img { height:520px; filter:drop-shadow(0 22px 22px rgba(0,0,0,.35)); }
+  .bottles img + img { margin-left:-70px; }
+  .bottles img.mid { height:575px; position:relative; z-index:3; }
+  .free { display:flex; flex-wrap:wrap; gap:12px; margin-top:22px; }
+  .free span { font-weight:800; font-size:26px; padding:9px 20px; border-radius:40px; background:var(--cream); color:var(--ink); }
+  .free span i { font-style:normal; color:var(--red); margin-right:6px; }
+
+  /* 4 — čo je v cene */
+  ul.check { list-style:none; margin-top:50px; display:grid; gap:30px; }
+  ul.check li { font-size:38px; font-weight:700; display:flex; gap:20px; align-items:flex-start; line-height:1.2; }
+  ul.check li::before { content:"✓"; flex:0 0 52px; height:52px; border-radius:50%; background:var(--cream); color:var(--green); display:grid; place-items:center; font-weight:800; font-size:28px; }
+  ul.check li small { display:block; font-size:27px; font-weight:600; opacity:.75; margin-top:4px; }
+
+  .note { margin-top:auto; margin-bottom:40px; font-family:"DM Serif Display",serif; font-style:italic; font-size:40px; color:var(--cream-2); }
+  /* 5 — fotorapport v mobile */
+  #s5 .row { display:flex; gap:44px; margin-top:34px; flex:1; }
+  .phone { flex:0 0 400px; height:760px; border-radius:54px; background:#0b0f0d; padding:16px; box-shadow:0 30px 60px rgba(0,0,0,.45); }
+  .screen { width:100%; height:100%; border-radius:40px; background:#f6f3ec; color:#1b241e; overflow:hidden; display:flex; flex-direction:column; }
+  .screen .hd { background:var(--green); color:var(--cream); padding:40px 24px 18px; }
+  .screen .hd b { display:block; font-size:25px; } .screen .hd span { font-size:18px; opacity:.8; }
+  .screen .ph { height:200px; background:url(hytta_top.jpg) center 35%/cover; }
+  .screen ul { list-style:none; padding:14px 22px; display:grid; gap:11px; }
+  .screen li { font-size:19px; font-weight:700; display:flex; justify-content:space-between; border-bottom:1px solid #e3ddcf; padding-bottom:9px; }
+  .screen li em { font-style:normal; color:#2c7a4b; } .screen li em.w { color:var(--red); }
+  .side { display:flex; flex-direction:column; justify-content:center; gap:30px; }
+  .side div { font-size:31px; font-weight:700; line-height:1.25; }
+  .side div b { display:block; font-family:"DM Serif Display",serif; font-weight:400; font-size:46px; color:var(--cream-2); margin-bottom:4px; }
+
+  /* 6 — cena a CTA */
+  .price { margin-top:40px; display:flex; gap:22px; }
+  .pbox { flex:1; background:var(--cream); color:var(--ink); border-radius:18px; padding:26px 26px 22px; box-shadow:0 18px 40px rgba(0,0,0,.3); }
+  .pbox .s { font-weight:800; font-size:22px; letter-spacing:.14em; text-transform:uppercase; color:var(--red); }
+  .pbox .p { font-family:"DM Serif Display",serif; font-size:84px; line-height:1; margin-top:8px; }
+  .pbox .p small { font-family:"Assistant"; font-size:28px; font-weight:700; }
+  .facts { margin-top:34px; display:grid; gap:14px; }
+  .facts div { font-size:30px; font-weight:700; } .facts div b { color:var(--cream-2); }
+  .cta { margin-top:auto; background:var(--red); border-radius:18px; padding:26px 30px; text-align:center; box-shadow:0 18px 40px rgba(0,0,0,.3); }
+  .cta .a { font-weight:800; font-size:24px; letter-spacing:.22em; text-transform:uppercase; }
+  .cta .b { font-family:"DM Serif Display",serif; font-size:56px; margin-top:6px; }
+  .cta .c { font-size:28px; font-weight:700; margin-top:4px; }
+  .url { text-align:center; font-weight:800; font-size:28px; margin-top:20px; letter-spacing:.04em; }
+
+  /* story (1080×1920) — len slajd 1 a 6 ako samostatné Stories */
+  body.story #s1 .photo { height:1150px; }
+  body.story #s1 .pad { top:1000px; }
+  body.story #s1 h1 { font-size:86px; }
+  body.story #s1 p.lead { font-size:40px; }
+  body.story #s1 .clock span { font-size:36px; }
+  body.story #s6 .pad { padding:110px 64px 120px; }
+  body.story #s6 h1 { font-size:100px; }
+  .sphoto { display:none; }
+  body.story .sphoto { display:flex; align-items:flex-end; justify-content:center; gap:0; margin-top:50px; position:relative; }
+  body.story .sphoto img { height:430px; filter:drop-shadow(0 20px 20px rgba(0,0,0,.35)); }
+  body.story .sphoto img + img { margin-left:-60px; }
+  body.story .sphoto span { position:absolute; bottom:-46px; left:0; right:0; text-align:center; font-family:'DM Serif Display',serif; font-style:italic; font-size:38px; color:var(--cream-2); }
+  body.story #s6 .facts div { font-size:34px; }
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<canvas class="band" id="bandTop"></canvas>
+<canvas class="band" id="bandBottom"></canvas>
+
+<!-- 1 -->
+<div class="slide" id="s1">
+  <div class="photo"></div>
+  <div class="pad">
+    <div class="kicker red">Isokor Julebytte · 20.12.–6.1.</div>
+    <h1>Gjestene reiser kl.&nbsp;11.<em>De neste kommer kl.&nbsp;16.</em></h1>
+    <p class="lead">Hvem vasker utleiehytta di i jula?</p>
+    <div class="clock"><span>Vegårshei</span><span>Risør</span><span>Gautefal</span></div>
+  </div>
+  <div class="swipe">Bla videre →</div>
+</div>
+
+<!-- 2 -->
+<div class="slide" id="s2"><div class="pad">
+  <div class="kicker">Høytid for utleie</div>
+  <h1>Årets dyreste netter<em>– og ingen vil vaske.</em></h1>
+  <div class="cal">
+    <div class="day"><div class="m">DES</div><div class="d">25</div><div class="t">1. juledag</div></div>
+    <div class="day"><div class="m">DES</div><div class="d">26</div><div class="t">2. juledag</div></div>
+    <div class="day"><div class="m">DES</div><div class="d">27</div><div class="t">bytte</div></div>
+    <div class="day"><div class="m">JAN</div><div class="d">1</div><div class="t">nyttårsdag</div></div>
+    <div class="day"><div class="m">JAN</div><div class="d">2</div><div class="t">bytte</div></div>
+  </div>
+  <p class="lead" style="margin-top:56px;font-size:38px">Gjester sjekker ut og inn samme dag – også på røde dager. Da må noen stå klar med bøtta.</p>
+  <div class="loss">
+    <div><b>!</b>Et bytte for sent = en tapt natt</div>
+    <div><b>!</b>En halvvasket hytte = en dårlig anmeldelse</div>
+    <div><b>!</b>Du sitter i juleselskap – ikke med bøtte og klut</div>
+  </div>
+  <div class="num">2 / 6</div>
+</div></div>
+
+<!-- 3 -->
+<div class="slide" id="s3"><div class="pad">
+  <div class="kicker red">Det som gjør oss annerledes</div>
+  <h1>Hytta skal lukte hytte.<em>Ikke vaskemiddel.</em></h1>
+  <p class="lead" style="font-size:31px">Vi vasker kun med Isokor – naturlige midler laget av plante- og oljeekstrakter.</p>
+  <div class="free"><span><i>✕</i>Uten parfyme</span><span><i>✕</i>Uten farger</span><span><i>✕</i>Uten syntetiske tilsetninger</span></div>
+  <div class="stage">
+    <div class="plate"></div>
+    <div class="bottles"><img src="flaska_kjol.png"><img class="mid" src="cleaner_cut.png"><img src="flaska_fett.png"></div>
+  </div>
+  <div class="num">3 / 6</div>
+</div></div>
+
+<!-- 4 -->
+<div class="slide" id="s4"><div class="pad">
+  <div class="kicker">Dette får du</div>
+  <h1>Klar til neste gjest<em>– samme dag.</em></h1>
+  <ul class="check">
+    <li>Kjøkken, kjøleskap og komfyr</li>
+    <li>Bad og toalett</li>
+    <li>Gulv, støv og peisglass</li>
+    <li><span>Sengene redd opp<small>med ditt sengetøy – vask på stedet mot tillegg</small></span></li>
+    <li>Søppel ut og sjekk av forbruksvarer</li>
+    <li><span>Personlig velkomstkort<small>med hyttas navn til neste gjest</small></span></li>
+  </ul>
+  <div class="note">Alt vaskes med Isokor – uten parfyme, uten farger.</div>
+  <div class="num">4 / 6</div>
+</div></div>
+
+<!-- 5 -->
+<div class="slide" id="s5"><div class="pad">
+  <div class="kicker">Bilderapport etter hvert bytte</div>
+  <h1>Du ser alt.<em>Uten å kjøre dit.</em></h1>
+  <div class="row">
+    <div class="phone"><div class="screen">
+      <div class="hd"><b>Julebytte · Hytta Fjellro</b><span>27. desember kl. 14:10</span></div>
+      <div class="ph"></div>
+      <ul>
+        <li>Kjøkken <em>✓ 4 bilder</em></li>
+        <li>Bad <em>✓ 3 bilder</em></li>
+        <li>Soverom <em>✓ 3 bilder</em></li>
+        <li>Stue og peis <em>✓ 2 bilder</em></li>
+        <li>Skade: ingen <em>✓</em></li>
+        <li>Glemt: lue, ladekabel <em class="w">!</em></li>
+        <li>Dopapir: 4 ruller igjen <em class="w">!</em></li>
+      </ul>
+    </div></div>
+    <div class="side">
+      <div><b>Bilder</b>av hvert rom rett på mobilen</div>
+      <div><b>Dokumentasjon</b>hvis du må melde skade til Airbnb eller Booking</div>
+      <div><b>Beskjed</b>om glemte ting og det som snart tar slutt</div>
+    </div>
+  </div>
+  <div class="num">5 / 6</div>
+</div></div>
+
+<!-- 6 -->
+<div class="slide" id="s6"><div class="pad">
+  <div class="kicker red">Kun 20. desember – 6. januar</div>
+  <h1>Du feirer jul.<em>Vi tar utvasken.</em></h1>
+  <div class="price">
+    <div class="pbox"><div class="s">Opptil 100 m²</div><div class="p">2 990 <small>kr</small></div></div>
+    <div class="pbox"><div class="s">Over 100 m²</div><div class="p">3 990 <small>kr</small></div></div>
+  </div>
+  <div class="facts">
+    <div>Per bytte · <b>samme pris på røde dager</b></div>
+    <div>Vegårshei · Risør · Gautefal</div>
+  </div>
+  <div class="sphoto"><img src="flaska_kjol.png"><img src="cleaner_cut.png"><img src="flaska_fett.png"><span>Naturlige midler – uten parfyme og farger</span></div>
+  <div class="cta"><div class="a">Begrenset antall bytter</div><div class="b">Bestill innen 15. desember</div><div class="c">Send oss en melding</div></div>
+  <div class="url">isokor-skandinavia.no</div>
+</div></div>
+
+<script>
+  const q = new URLSearchParams(location.search);
+  const S = q.get('s') || '1', F = q.get('f') || 'portrait';
+  document.body.classList.add(F);
+  document.getElementById('s' + S).classList.add('on');
+  if (F === 'story') document.querySelectorAll('.num,.swipe').forEach(e => e.remove());
+  if (q.get('single')) document.querySelectorAll('.num,.swipe').forEach(e => e.remove());
+  const W = 1080, H = F === 'story' ? 1920 : 1350, BH = F === 'story' ? 130 : 96, CREAM = '#fbf3e4';
+  const ROSE = ['...X.....X...','...XX...XX...','...XXX.XXX...','XXX.XXXXX.XXX','.XXX.XXX.XXX.','..XXX.X.XXX..','...XXX.XXX...',
+                '..XXX.X.XXX..','.XXX.XXX.XXX.','XXX.XXXXX.XXX','...XXX.XXX...','...XX...XX...','...X.....X...'];
+  function band(id) {
+    const c = document.getElementById(id); c.width = W; c.height = BH;
+    const g = c.getContext('2d'); g.fillStyle = '#7d1520'; g.fillRect(0, 0, W, BH);
+    const Sz = BH / 19, cols = Math.ceil(W / Sz) + 1, off = (W - Math.floor(W / Sz) * Sz) / 2;
+    const st = (x, y) => { const X = off + x * Sz, Y = y * Sz, h = Sz * .5;
+      g.beginPath(); g.moveTo(X + .6, Y + .5); g.lineTo(X + h - .3, Y + Sz * .32); g.lineTo(X + h - .3, Y + Sz - .3); g.lineTo(X + .6, Y + Sz * .68); g.closePath(); g.fill();
+      g.beginPath(); g.moveTo(X + Sz - .6, Y + .5); g.lineTo(X + h + .3, Y + Sz * .32); g.lineTo(X + h + .3, Y + Sz - .3); g.lineTo(X + Sz - .6, Y + Sz * .68); g.closePath(); g.fill(); };
+    g.fillStyle = CREAM;
+    for (let x = -1; x < cols; x++) { st(x, 0); st(x, 18); if (x % 2 === 0) { st(x, 2); st(x, 16); } }
+    for (let cx = 0; cx < cols + 18; cx += 18) {
+      ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') st(cx + x, 3 + y); }));
+      const m = cx + 15; [[0,9],[-1,9],[1,9],[0,8],[0,10],[-2,9],[2,9],[0,7],[0,11]].forEach(([a, b]) => st(m + a, b));
+    }
+  }
+  (function bg() {
+    const c = document.getElementById('bg'); c.width = W; c.height = H; const g = c.getContext('2d');
+    let s = 11 + +S; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+    const pts = []; ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') pts.push([x - 6, y - 6]); }));
+    for (let i = 0; i < 6; i++) { const cx = r() * W, cy = H * (0.15 + r() * 0.75), Z = 9 + r() * 6;
+      g.fillStyle = 'rgba(251,243,228,0.05)'; for (const [x, y] of pts) g.fillRect(cx + x * Z, cy + y * Z, Z - 2, Z - 2); }
+    for (let i = 0; i < 110; i++) { g.fillStyle = `rgba(255,255,255,${0.08 + r() * 0.28})`;
+      g.beginPath(); g.arc(r() * W, r() * H, 0.8 + r() * 2.4, 0, 7); g.fill(); }
+  })();
+  band('bandTop'); band('bandBottom');
+</script>
+</body>
+</html>
