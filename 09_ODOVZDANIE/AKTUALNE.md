@@ -76,4 +76,4 @@
 - `shop.com`, `cloudflare-dns.com` z cloudu blokované; DNS čítať cez hlavičky e-mailu (Gmail RAW).
 - Na konci okna VŽDY commit + push do `main` (z cloudu: vetva → PR → zlúčiť, Luk to schválil 28. 10.).
 
-ĎALŠÍ KROK: **pi 6. 11. po 10:30 a 12:00 overiť príspevky Kjøkkenpakken** (getScheduledPosts → PUBLISHED + publicUrl) a večer / so 7. 11. dať Lukovi text e-mailu na ne 8. 11. (`02_PRACA/emaily/2026-11-08_nyhetsbrev_Kjokkenpakken.md`) · inak tento týždeň nič nezverejňovať (Luk 4. 11.) · SEO krok 1 — Google Search Console + Bing Webmaster s Lukom (po jednom kroku) · výsledky nyhetsbrevu č. 1 z Messaging (Luk) · ďalšie etikety, keď Luk pošle SK PDF.
+ĎALŠÍ KROK: **pi 6. 11. po 10:30 a 12:00 overiť príspevky Kjøkkenpakken** (getScheduledPosts → PUBLISHED + publicUrl) · **št 5. 11. alebo pi 6. 11.** dať Lukovi text e-mailu na ne 8. 11. (`02_PRACA/emaily/2026-11-08_nyhetsbrev_Kjokkenpakken.md`) · inak tento týždeň nič nezverejňovať (Luk 4. 11.) · SEO krok 1 — Google Search Console + Bing Webmaster s Lukom (po jednom kroku) · výsledky nyhetsbrevu č. 1 z Messaging (Luk) · ďalšie etikety, keď Luk pošle SK PDF.
