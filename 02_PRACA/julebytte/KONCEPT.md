@@ -25,7 +25,7 @@ Bonus pre nás: kto to vyskúša cez sviatky, je kandidát na leto 2027 (analýz
 | Over 100 m² | 3 990 kr |
 | Vask og tørk av sengetøy/håndklær på stedet (ak je práčka) | + 490 kr |
 
-V cene: kompletné upratanie (kuchyňa, chladnička, kúpeľňa, podlahy, prach, sklo krbu), ustlané postele majiteľovou bielizňou, vynesený odpad, kontrola spotrebného materiálu, fotorapport, julehilsen.
+V cene: kompletné upratanie (kuchyňa, chladnička, kúpeľňa, podlahy, prach, sklo krbu), ustlané postele majiteľovou bielizňou, vynesený odpad, kontrola spotrebného materiálu, fotorapport, uvítacia kartička s názvom chaty.
 Nie je v cene: bielizeň (prenájom), doplnenie materiálu (podľa bločku), sneh.
 
 ## Oblasť
