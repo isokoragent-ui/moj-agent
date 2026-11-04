@@ -1,4 +1,4 @@
-# Isokor Julebytte — upratovanie chát medzi hosťami cez sviatky (NÁVRH 4. 11. 2026)
+# Isokor Julebytte — upratovanie chát medzi hosťami cez sviatky (NÁVRH 4. 11. 2026, upravené podľa Luka 4. 11.)
 
 *Stav: návrh agenta, čaká na Lukovo rozhodnutie. V e-shope ani v Metricoole nič.*
 *Súvisí: `02_PRACA/hytteservice/README.md` (rovnaká oblasť, rovnaký štýl), `02_PRACA/ANALYZA_TRHU_AGDER_2026-10-29.md` bod 4.*
@@ -12,9 +12,9 @@ majiteľ prichádza o noc, o recenziu a o hviezdičky.
 ## Čo je vyššia hodnota (5 pilierov)
 1. **Garantovaný termín** — rezervovaný deň výmeny je istý, aj na červené dni. Rovnaká cena aj 25. 12. a 1. 1.
 2. **Fotorapport po každej výmene** — fotky každej miestnosti do mobilu + krátky záznam stavu (poškodenie, zabudnuté veci, spotrebný materiál). Majiteľ má dôkaz, keby musel hlásiť škodu cez Airbnb/Booking. (Využíva náš `tilsynslogg.py`.)
-3. **Vlastné ekologické prostriedky Isokor** — kuchyňa, kúpeľňa, chladnička, sklo krbu. Hosť príde do čistej chaty, nie do chaty, ktorá smrdí chlórom. *(Žiadne zdravotné/antibakteriálne tvrdenia — pozri Pasce.)*
-4. **Julehilsen pre ďalšieho hosťa** — malá kartička „God jul fra hytta" na stole (+ voliteľne vzorka Isokor). Pre majiteľa milé gesto do recenzie, pre nás reklama v každej chate.
-5. **Exkluzívne a obmedzené** — len 20. 12. 2026 – 3. 1. 2027, obmedzený počet výmen za deň, rezervácia do 15. 12. Kto príde neskoro, nemá miesto.
+3. ⭐ **HLAVNÁ EXKLUZIVITA: prírodné prostriedky Isokor** (Luk: vypichnúť najviac) — chata nevonia lacnými čistiacimi prostriedkami. Prostriedky sú bez farbív (karty: „fargeløs“), biologicky odbúrateľné. **„Uten syntetisk parfyme / kunstige fargestoffer“ máme písomne len pri EcoNeutral a Møbelrens** → pri Universalrens, Baderomsrens, Kjøleskapsrens, Fett- og flekkfjerner potvrdí výrobca (karty: vôňa „karakteristisk“, parfum v zložení neuvedený, ale karta ho uvádzať nemusí). Kým nepotvrdí, v reklame: „naturlige, fargeløse og biologisk nedbrytbare midler – hytta lukter rent, ikke av vaskemiddel“. Muggfjerner do tohto konceptu nie (popis: „behagelig duft“). *(Žiadne zdravotné/antibakteriálne tvrdenia — pozri Pasce.)*
+4. **Personalizovaná uvítacia kartička** s názvom chaty (napr. „Velkommen til Fjellro – god jul og godt nytt år“), **bez vzoriek** (Luk). Presnú podobu dohodneme s majiteľom.
+5. **Exkluzívne a obmedzené** — len 20. 12. 2026 – 6. 1. 2027 (Luk: predĺžiť do 6. 1.), obmedzený počet výmen za deň, rezervácia do 15. 12. Kto príde neskoro, nemá miesto.
 
 Bonus pre nás: kto to vyskúša cez sviatky, je kandidát na leto 2027 (analýza bod 4) a na Hytteservice.
 
@@ -29,7 +29,7 @@ V cene: kompletné upratanie (kuchyňa, chladnička, kúpeľňa, podlahy, prach,
 Nie je v cene: bielizeň (prenájom), doplnenie materiálu (podľa bločku), sneh.
 
 ## Oblasť
-Vegårshei, Tvedestrand, Risør (ako Hytteservice) — návrh, Luk potvrdí.
+**Vegårshei + Gautefal (Drangedal)** — Luk 4. 11.: Tvedestrand preč, Gautefal pridať (málo chát, zvládnuteľné). Risør — Luk nespomenul vo finálnej verzii → zatiaľ vynechaný, potvrdiť. ⚠️ Gautefal nie je v oblasti Hytteservice → v textoch Julebytte uvádzať oblasti samostatne.
 
 ## Obsah na siete (nórsky štýl: červená chata, sneh, svetlo v okne, selburose ako pri Kjøkkenpakken)
 1. **Karusel 6 slajdov** — 1 háčik „Gjestene reiser 27. desember. De neste kommer kl. 16." · 2 problém (nikto nerobí cez sviatky) · 3 čo dostaneš · 4 fotorapport · 5 naše prostriedky (Lukove fotky fliaš) · 6 cena + „Begrenset antall – bestill innen 15. desember".
