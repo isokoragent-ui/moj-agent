@@ -64,6 +64,15 @@
   ul.check li::before { content:"✓"; flex:0 0 52px; height:52px; border-radius:50%; background:var(--cream); color:var(--green); display:grid; place-items:center; font-weight:800; font-size:28px; }
   ul.check li small { display:block; font-size:27px; font-weight:600; opacity:.75; margin-top:4px; }
 
+  .inter { display:none; }
+  body.hasint #s4 .inter { display:block; position:absolute; left:0; right:0; top:0; height:470px; background:url(interior.jpg) center 55%/cover;
+    -webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent 100%); mask-image:linear-gradient(to bottom,#000 60%,transparent 100%); }
+  body.hasint #s4 .kicker { position:relative; z-index:2; }
+  body.hasint #s4 h1 { margin-top:330px; position:relative; }
+  body.hasint #s4 ul.check { margin-top:26px; gap:16px; }
+  body.hasint #s4 ul.check li { font-size:31px; }
+  body.hasint #s4 ul.check li small { font-size:23px; }
+  body.hasint #s4 .note { font-size:32px; margin-bottom:10px; }
   .note { margin-top:auto; margin-bottom:40px; font-family:"DM Serif Display",serif; font-style:italic; font-size:40px; color:var(--cream-2); }
   /* 5 — fotorapport v mobile */
   #s5 .row { display:flex; gap:44px; margin-top:34px; flex:1; }
@@ -119,9 +128,9 @@
   <div class="photo"></div>
   <div class="pad">
     <div class="kicker red">Isokor Julebytte · 20.12.–6.1.</div>
-    <h1>Gjestene reiser kl.&nbsp;11.<em>De neste kommer kl.&nbsp;16.</em></h1>
-    <p class="lead">Hvem vasker utleiehytta di i jula?</p>
-    <div class="clock"><span>Vegårshei</span><span>Risør</span><span>Gautefal</span></div>
+    <h1>Vaskebyråene tar juleferie.<em>Vi gjør ikke det.</em></h1>
+    <p class="lead">Utvask av utleiehytta di i jula – maks to hytter per dag.</p>
+    <div class="clock"><span>Vegårshei</span><span>Gautefall</span></div>
   </div>
   <div class="swipe">Bla videre →</div>
 </div>
@@ -137,9 +146,9 @@
     <div class="day"><div class="m">JAN</div><div class="d">1</div><div class="t">nyttårsdag</div></div>
     <div class="day"><div class="m">JAN</div><div class="d">2</div><div class="t">bytte</div></div>
   </div>
-  <p class="lead" style="margin-top:56px;font-size:38px">Gjester sjekker ut og inn samme dag – også på røde dager. Da må noen stå klar med bøtta.</p>
+  <p class="lead" style="margin-top:56px;font-size:38px">Gjestene bytter på røde dager – og etter julefeiring tar vasken tid. Da må noen stå klar.</p>
   <div class="loss">
-    <div><b>!</b>Et bytte for sent = en tapt natt</div>
+    <div><b>!</b>Ingen til å vaske = en tapt natt</div>
     <div><b>!</b>En halvvasket hytte = en dårlig anmeldelse</div>
     <div><b>!</b>Du sitter i juleselskap – ikke med bøtte og klut</div>
   </div>
@@ -162,7 +171,8 @@
 <!-- 4 -->
 <div class="slide" id="s4"><div class="pad">
   <div class="kicker">Dette får du</div>
-  <h1>Klar til neste gjest<em>– samme dag.</em></h1>
+  <div class="inter"></div>
+  <h1>Klar til neste gjest<em>– skikkelig.</em></h1>
   <ul class="check">
     <li>Kjøkken, kjøleskap og komfyr</li>
     <li>Bad og toalett</li>
@@ -207,15 +217,15 @@
   <div class="kicker red">Kun 20. desember – 6. januar</div>
   <h1>Du feirer jul.<em>Vi tar utvasken.</em></h1>
   <div class="price">
-    <div class="pbox"><div class="s">Opptil 100 m²</div><div class="p">2 990 <small>kr</small></div></div>
-    <div class="pbox"><div class="s">Over 100 m²</div><div class="p">3 990 <small>kr</small></div></div>
+    <div class="pbox"><div class="s">Opptil 100 m²</div><div class="p">4 990 <small>kr</small></div></div>
+    <div class="pbox"><div class="s">Over 100 m²</div><div class="p">6 490 <small>kr</small></div></div>
   </div>
   <div class="facts">
     <div>Per bytte · <b>samme pris på røde dager</b></div>
-    <div>Vegårshei · Risør · Gautefal</div>
+    <div>Vegårshei · Gautefall · <b>maks to hytter per dag</b></div>
   </div>
   <div class="sphoto"><img src="flaska_kjol.png"><img src="cleaner_cut.png"><img src="flaska_fett.png"><span>Naturlige midler – uten parfyme og farger</span></div>
-  <div class="cta"><div class="a">Begrenset antall bytter</div><div class="b">Bestill innen 15. desember</div><div class="c">Send oss en melding</div></div>
+  <div class="cta"><div class="a">Begrenset antall bytter</div><div class="b">Bestill innen 1. desember</div><div class="c">Send oss en melding</div></div>
   <div class="url">isokor-skandinavia.no</div>
 </div></div>
 
@@ -223,6 +233,7 @@
   const q = new URLSearchParams(location.search);
   const S = q.get('s') || '1', F = q.get('f') || 'portrait';
   document.body.classList.add(F);
+  { const im = new Image(); im.onload = () => document.body.classList.add('hasint'); im.src = 'interior.jpg'; }
   document.getElementById('s' + S).classList.add('on');
   if (F === 'story') document.querySelectorAll('.num,.swipe').forEach(e => e.remove());
   if (q.get('single')) document.querySelectorAll('.num,.swipe').forEach(e => e.remove());

@@ -1,47 +1,47 @@
-# Isokor Julebytte — texty na zverejnenie (NO), návrh 4. 11. 2026
+# Isokor Julebytte — texty na zverejnenie (NO), návrh v2 4. 11. 2026
 
-*Stav: návrh. Nič nie je zverejnené ani v Metricoole. Termín a ceny → `KONCEPT.md`.*
-*Pravidlá: bez „kjemikaliefri", bez zdravotných tvrdení; ceny „endelige priser" (AS ešte nie je v MVA). Threads ≤ 500 znakov.*
+*Stav: návrh. Nič nie je zverejnené ani v Metricoole. Ceny a termíny → `KONCEPT.md`, analýza → `ANALYZA_TRHU.md`.*
+*Pravidlá: bez „kjemikaliefri", bez zdravotných tvrdení; „endelige priser" (AS ešte nie je v MVA). Threads ≤ 500 znakov.*
 
-Grafika: `02_PRACA/grafika/julebytte/` (karusel 1–6, príspevok, 2 Stories, video na výšku a na šírku).
+Grafika: `02_PRACA/grafika/julebytte/`.
 
 ---
 
 ## 1. Facebook + Instagram — karusel (6 obrázkov)
 
-Leier du ut hytta i jula?
+Vaskebyråene tar juleferie. Vi gjør ikke det.
 
-Gjestene sjekker ut kl. 11. De neste kommer kl. 16. Og det er 1. juledag.
+Leier du ut hytta i jula, vet du hvor vanskelig det er å få noen til å ta utvasken mellom gjestene – særlig etter julaften og nyttårsaften.
 
-Isokor Julebytte er utvask mellom gjester – kun fra 20. desember til 6. januar, i Vegårshei, Risør og Gautefal.
+Isokor Julebytte er utvask av utleiehytter fra 20. desember til 6. januar, kun i Vegårshei og Gautefall. Vi tar maks to hytter per dag, så vi rekker å gjøre det skikkelig.
 
 Det som gjør oss annerledes: vi vasker kun med Isokor – naturlige midler laget av plante- og oljeekstrakter. Uten parfyme, uten farger, uten syntetiske tilsetninger. Hytta skal lukte hytte, ikke vaskemiddel.
 
-Etter hvert bytte får du bilder av hvert rom på mobilen, og beskjed om skader, glemte ting og det som snart tar slutt. Neste gjest finner et personlig velkomstkort med hyttas navn.
+Etter hvert bytte får du bilder av hvert rom på mobilen. Har gjestene etterlatt seg mer enn vanlig, dokumenterer vi det – så du kan ta det videre med Airbnb eller Booking. Neste gjest finner et velkomstkort med hyttas navn.
 
-Opptil 100 m²: 2 990 kr per bytte. Over 100 m²: 3 990 kr. Samme pris på røde dager.
+Opptil 100 m²: 4 990 kr per bytte. Over 100 m²: 6 490 kr. Samme pris på røde dager.
 
-Begrenset antall bytter – bestill innen 15. desember. Send oss en melding.
+Begrenset antall bytter – bestill innen 1. desember. Send oss en melding.
 
-#hytteutleie #airbnbnorge #utvask #hytte #vegårshei #risør #gautefal #isokor
+#hytteutleie #airbnbnorge #utvask #hytte #vegårshei #gautefall #isokor
 
 ---
 
 ## 2. Threads (≤ 500 znakov)
 
-Leier du ut hytta i jula? Gjestene reiser kl. 11, de neste kommer kl. 16 – også 1. juledag.
+Vaskebyråene tar juleferie. Vi gjør ikke det.
 
-Isokor Julebytte: utvask mellom gjester 20.12.–6.1. i Vegårshei, Risør og Gautefal. Vi vasker kun med naturlige midler uten parfyme og farger, og du får bilder av hvert rom etter hvert bytte.
+Isokor Julebytte: utvask av utleiehytter 20.12.–6.1., kun i Vegårshei og Gautefall. Maks to hytter per dag, naturlige midler uten parfyme og farger, og bilder av hvert rom etter hvert bytte.
 
-Fra 2 990 kr per bytte, samme pris på røde dager. Begrenset antall – bestill innen 15. desember.
+Fra 4 990 kr per bytte, samme pris på røde dager. Bestill innen 1. desember.
 
 ---
 
 ## 3. Reels / TikTok / YouTube Shorts (video na výšku)
 
-Gjestene reiser kl. 11. De neste kommer kl. 16. Hvem vasker hytta i jula? Vi gjør det – med naturlige midler uten parfyme og farger. Isokor Julebytte 20.12.–6.1., Vegårshei, Risør og Gautefal. Fra 2 990 kr. Bestill innen 15. desember.
+Vaskebyråene tar juleferie. Vi gjør ikke det. Isokor Julebytte tar utvasken av utleiehytta di 20.12.–6.1. i Vegårshei og Gautefall – med naturlige midler uten parfyme og farger. Maks to hytter per dag. Bestill innen 1. desember.
 
-#hytteutleie #airbnbnorge #julevask #hytte #isokor
+#hytteutleie #airbnbnorge #julevask #hytte #gautefall #isokor
 
 YouTube názov: **Isokor Julebytte – utvask av utleiehytta i jula**
 
@@ -49,19 +49,19 @@ YouTube názov: **Isokor Julebytte – utvask av utleiehytta i jula**
 
 ## 4. Google firemný profil
 
-Utvask av utleiehytta i jula – Isokor Julebytte. Kun 20. desember – 6. januar i Vegårshei, Risør og Gautefal. Vi vasker med naturlige midler uten parfyme og farger, og du får bilderapport etter hvert bytte. Fra 2 990 kr per bytte, samme pris på røde dager. Begrenset antall – bestill innen 15. desember.
+Vaskebyråene tar juleferie – vi gjør ikke det. Isokor Julebytte: utvask av utleiehytter 20. desember – 6. januar i Vegårshei og Gautefall. Naturlige midler uten parfyme og farger, bilderapport etter hvert bytte, maks to hytter per dag. Fra 4 990 kr per bytte. Bestill innen 1. desember.
 
 ---
 
-## 5. Facebook skupiny (prenajímatelia, chatári, miestne) — Luk vkladá ručne
+## 5. Facebook skupiny (prenajímatelia, Gautefall, Vegårshei) — Luk vkladá ručne
 
-Hei! Er det noen her som leier ut hytta via Airbnb eller Booking i jula, og gruer seg til utvasken mellom gjestene?
+Hei! Leier du ut hytta på Gautefall eller i Vegårshei i jula?
 
-Vi i Isokor tar utvask mellom gjester fra 20. desember til 6. januar i Vegårshei, Risør og Gautefal – også på julaften, 1. juledag og nyttårsdag, til samme pris.
+I fjor så jeg mange som lette etter noen til utvasken mellom gjestene i romjula – og de fleste vaskebyråene hadde stengt. I år tar vi i Isokor utvask av utleiehytter fra 20. desember til 6. januar, også på røde dager.
 
-Vi vasker med våre egne naturlige midler uten parfyme og farger, så hytta lukter rent og ikke vaskemiddel. Du får bilder av hvert rom etter hvert bytte, og neste gjest får et velkomstkort med hyttas navn.
+Vi tar bare to hytter per dag, så vi rekker å gjøre det skikkelig. Vi vasker med våre egne naturlige midler uten parfyme og farger, og du får bilder av hvert rom etter hvert bytte.
 
-Fra 2 990 kr per bytte. Vi har bare et begrenset antall bytter, så send meg gjerne en melding innen 15. desember.
+Fra 4 990 kr per bytte. Plassene er få, så send meg en melding innen 1. desember.
 
 Lukas, Isokor Skandinavia
 
@@ -69,21 +69,21 @@ Lukas, Isokor Skandinavia
 
 ## 6. Finn (Tjenester → Rengjøring) — Luk vkladá ručne
 
-**Názov:** Utvask av utleiehytte i jula – Vegårshei, Risør, Gautefal
+**Názov:** Utvask av utleiehytte i jula – Vegårshei og Gautefall
 
-Leier du ut hytta i jula og trenger utvask mellom gjestene? Isokor Julebytte tilbyr utvask kun i perioden 20. desember – 6. januar, også på røde dager.
+Vaskebyråene tar juleferie – vi gjør ikke det. Isokor Julebytte tar utvask mellom gjester i perioden 20. desember – 6. januar, også på røde dager. Maks to hytter per dag.
 
 Dette får du:
 - Kjøkken, kjøleskap og komfyr
 - Bad og toalett
 - Gulv, støv og peisglass
-- Sengene redd opp med ditt sengetøy (vask på stedet mot tillegg 490 kr)
+- Sengene redd opp med ditt sengetøy (vask på stedet: + 690 kr)
 - Søppel ut og sjekk av forbruksvarer
 - Bilderapport på mobilen etter hvert bytte
 - Personlig velkomstkort med hyttas navn til neste gjest
 
 Vi vasker kun med Isokor – naturlige midler laget av plante- og oljeekstrakter, uten parfyme, farger og syntetiske tilsetninger.
 
-Pris per bytte: opptil 100 m² 2 990 kr, over 100 m² 3 990 kr. Endelige priser, samme pris på røde dager.
+Pris per bytte: opptil 100 m² 4 990 kr, over 100 m² 6 490 kr. Uvanlig mye rot etter fest: 890 kr per påbegynt time, dokumentert med bilder. Endelige priser, samme pris på røde dager.
 
-Begrenset antall bytter – bestill innen 15. desember.
+Tidspunkt for når hytta er klar avtaler vi ved bestilling. Bestill innen 1. desember.

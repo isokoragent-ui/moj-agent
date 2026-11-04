@@ -1,47 +1,50 @@
-# Isokor Julebytte — upratovanie chát medzi hosťami cez sviatky (NÁVRH 4. 11. 2026, upravené podľa Luka 4. 11.)
+# Isokor Julebytte — upratovanie chát medzi hosťami cez sviatky (NÁVRH v2, 4. 11. 2026)
 
-*Stav: návrh agenta, čaká na Lukovo rozhodnutie. V e-shope ani v Metricoole nič.*
-*Súvisí: `02_PRACA/hytteservice/README.md` (rovnaká oblasť, rovnaký štýl), `02_PRACA/ANALYZA_TRHU_AGDER_2026-10-29.md` bod 4.*
+*Stav: návrh v2 po analýze trhu (`ANALYZA_TRHU.md`), čaká na Lukovo rozhodnutie. V e-shope ani v Metricoole nič.*
+*Rozhodnutie: `08_ROZHODNUTIA/2026-11-04_julebytte.md`. Súvisí: `02_PRACA/hytteservice/README.md`.*
 
-## Jadro (prečo by to majiteľ kúpil)
-Cez Vianoce a Nový rok má prenajímaná chata najdrahšie noci v roku, ale nikto
-nechce upratovať 26. 12. alebo 1. 1. Keď sa výmena hostí nestihne alebo je zlá,
-majiteľ prichádza o noc, o recenziu a o hviezdičky.
-**Predávame istotu, nie upratovanie:** „Du feirer jul. Vi tar utvasken."
+## Jadro
+Minulý rok Luk videl, že prenajímatelia cez sviatky zúfalo hľadali upratovanie — a firmy boli v zahraničí, doma alebo nepracovali. Firmy so zamestnancami platia cez sviatky 100 % príplatky, preto nerobia.
+**Háčik: „Vaskebyråene tar juleferie. Vi gjør ikke det.“**
+Predávame **istotu a kvalitu pre málo chát**, nie lacné upratovanie.
 
-## Čo je vyššia hodnota (5 pilierov)
-1. **Garantovaný termín** — rezervovaný deň výmeny je istý, aj na červené dni. Rovnaká cena aj 25. 12. a 1. 1.
-2. **Fotorapport po každej výmene** — fotky každej miestnosti do mobilu + krátky záznam stavu (poškodenie, zabudnuté veci, spotrebný materiál). Majiteľ má dôkaz, keby musel hlásiť škodu cez Airbnb/Booking. (Využíva náš `tilsynslogg.py`.)
-3. ⭐ **HLAVNÁ EXKLUZIVITA: prírodné prostriedky Isokor** (Luk: vypichnúť najviac) — chata nevonia lacnými čistiacimi prostriedkami. **Výrobca garantuje** (Luk 4. 11.): Universalrens, Baderomsrens, Kjøleskapsrens, Fett- og flekkfjerner, EcoNeutral, Møbelrens = len výťažky z rastlín a olejov, bez parfumov, vôní, farbív a syntetických látok → `08_ROZHODNUTIA/2026-11-04_julebytte.md`. Nepísať „kjemikaliefri“, žiadne zdravotné tvrdenia. Muggfjerner nie (popis: „behagelig duft“).
-4. **Personalizovaná uvítacia kartička** s názvom chaty (napr. „Velkommen til Fjellro – god jul og godt nytt år“), **bez vzoriek** (Luk). Presnú podobu dohodneme s majiteľom.
-5. **Exkluzívne a obmedzené** — len 20. 12. 2026 – 6. 1. 2027 (Luk: predĺžiť do 6. 1.), obmedzený počet výmen za deň, rezervácia do 15. 12. Kto príde neskoro, nemá miesto.
+## Vyššia hodnota
+1. ⭐ **Prírodné prostriedky Isokor** (hlavná exkluzivita) — chata vonia chatou, nie čistiacim prostriedkom. Výrobca garantuje: Universalrens, Baderomsrens, Kjøleskapsrens, Fett- og flekkfjerner, EcoNeutral, Møbelrens = len výťažky z rastlín a olejov, bez parfumov, farbív a syntetických látok. Nepísať „kjemikaliefri“, žiadne zdravotné tvrdenia. Muggfjerner nie.
+2. **Málo chát = robíme to poriadne** — max. 2 chaty denne. Kto príde neskoro, nemá miesto.
+3. **Fotorapport po každej výmene** — fotky každej miestnosti do mobilu, poškodenia, zabudnuté veci, čo dochádza. Dôkaz pre Airbnb/Booking. (`tilsynslogg.py`)
+4. **Ak hostia zanechali chaos po oslave** — nafotíme to, majiteľovi dáme vedieť do 13:00, extra čas účtujeme za hodinu → majiteľ to môže žiadať od hosťa cez Airbnb/Booking (máme dôkaz).
+5. **Personalizovaná uvítacia kartička** s názvom chaty, bez vzoriek.
 
-Bonus pre nás: kto to vyskúša cez sviatky, je kandidát na leto 2027 (analýza bod 4) a na Hytteservice.
+## Časy (Luk: 11:00 → 16:00 sa po vianočnej oslave nestihne)
+- Nesľubujeme výmenu za 5 hodín. Čas hotovosti dohodneme pri objednávke.
+- Odporúčanie majiteľovi na sviatočné výmeny: **check-in od 17:00** alebo **jedna voľná noc** medzi hosťami (na 25. 12. a 1. 1. sa to oplatí — inak riskuje zlú recenziu).
+- Max. 2 chaty denne (Luk sám; s pomocníkom viac).
 
-## Návrh ceny (konečné ceny pre súkromníkov, rovnako ako Hytteservice)
+## Ceny (návrh v2 — vyššie, menej zákaziek)
 | Variant | Cena za 1 výmenu |
 |---|---|
-| Opptil 100 m² | 2 990 kr |
-| Over 100 m² | 3 990 kr |
-| Vask og tørk av sengetøy/håndklær på stedet (ak je práčka) | + 490 kr |
+| Opptil 100 m² | 4 990 kr |
+| Over 100 m² | 6 490 kr |
+| Ekstra tid ved uvanlig mye rot/skitt (dokumentované fotkami) | 890 kr / påbegynt time |
+| Vask og tørk av sengetøy/håndklær på stedet | + 690 kr |
 
-V cene: kompletné upratanie (kuchyňa, chladnička, kúpeľňa, podlahy, prach, sklo krbu), ustlané postele majiteľovou bielizňou, vynesený odpad, kontrola spotrebného materiálu, fotorapport, uvítacia kartička s názvom chaty.
-Nie je v cene: bielizeň (prenájom), doplnenie materiálu (podľa bločku), sneh.
+Rovnaká cena aj na červené dni. Konečné ceny (AS ešte nie je v MVA).
+Porovnanie: bežný utvask 1 000 – 2 500 kr (Gautefall prenajímateľ účtuje hosťom 2 500 kr). Majiteľ si na sviatočné rezervácie nastaví vyšší poplatok za upratovanie → platí hosť.
+Príklad: 10 výmen × ~5 500 kr ≈ 55 000 kr za 2,5 týždňa.
+
+## Obdobie a objednávky
+**20. 12. 2026 – 6. 1. 2027.** Objednávky **do 1. 12.** (návrh; prenajímatelia plánujú sviatky mesiace vopred a my potrebujeme poznať kapacitu).
 
 ## Oblasť
-**Vegårshei, Risør, Gautefal (Drangedal)** — Luk 4. 11.: Tvedestrand preč, Gautefal pridať (málo chát, zvládnuteľné), Risør ostáva. ⚠️ Gautefal nie je v oblasti Hytteservice → v textoch Julebytte uvádzať oblasti samostatne.
+**Vegårshei a Gautefall** (Luk 4. 11.). Risør a Tvedestrand nie. Pozor: Gautefall nie je v oblasti Hytteservice → v textoch uvádzať samostatne.
 
-## Obsah na siete (nórsky štýl: červená chata, sneh, svetlo v okne, selburose ako pri Kjøkkenpakken)
-1. **Karusel 6 slajdov** — 1 háčik „Gjestene reiser 27. desember. De neste kommer kl. 16." · 2 problém (nikto nerobí cez sviatky) · 3 čo dostaneš · 4 fotorapport · 5 naše prostriedky (Lukove fotky fliaš) · 6 cena + „Begrenset antall – bestill innen 15. desember".
-2. **Video 9:16 ~12 s** (Reels/TikTok/Stories) — hodiny 11:00 → 16:00, kľúč v dverách, sneh, text, hudba `hudba.py`.
-3. **Video 16:9** (FB, YouTube) z rovnakých scén.
-4. **Fotka 1080×1350** na jednoduchý príspevok + Google profil.
-5. Texty: FB/IG, Threads (≤ 500 znakov), Google, FB skupiny pre prenajímateľov, Finn.
-
-Fotky: Lukove fotky chaty (Hytteservice) + fotky prostriedkov. Na produkt reálna fotka, nie AI.
+## Obsah na siete (zelená ako Hytteservice + červený pletený pás so selburose)
+1. Karusel 6 slajdov: 1 háčik „Vaskebyråene tar juleferie. Vi gjør ikke det.“ · 2 sviatky a čo hrozí · 3 prírodné prostriedky · 4 čo dostaneš (+ fotka interiéru chaty, AI — Luk povolil) · 5 fotorapport · 6 ceny + „Maks to hytter per dag – bestill innen 1. desember“.
+2. Video 9:16 + 16:9 (16 s, hudba), príspevok, 2 Stories.
+3. Texty: `TEKSTY_NO.md`.
 
 ## Pasce
-- Žiadne „dreper bakterier/virus", „99,9 %", „trygg for allergikere" — biocídne/zdravotné tvrdenia.
-- Kým AS nie je v MVA: „endelige priser", nie „inkl. mva".
-- Kapacita: Luk sám (bez zamestnanca) → reálny počet výmen za deň určí Luk.
-- Názvy Airbnb/Booking v texte len opisne („utleie via Airbnb eller Booking"), bez ich log.
+- Žiadne „dreper bakterier/virus“, „allergivennlig“, „kjemikaliefri“.
+- Kým AS nie je v MVA: „endelige priser“, nie „inkl. mva“.
+- Názvy Airbnb/Booking len opisne, bez ich log.
+- AI obrázok interiéru len ako atmosféra, nikdy nie ako produkt alebo „naša práca“.

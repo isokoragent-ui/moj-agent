@@ -24,7 +24,8 @@
   #clock .h { width:18px; height:150px; margin-left:-9px; } #clock .m { width:10px; height:215px; margin-left:-5px; background:var(--red); }
   #clock .dot { position:absolute; left:50%; top:50%; width:34px; height:34px; margin:-17px; border-radius:50%; background:var(--ink); }
   #clock i { position:absolute; left:50%; top:22px; width:8px; height:34px; margin-left:-4px; background:var(--ink); transform-origin:50% 238px; border-radius:4px; }
-  #t1 { top:260px; font-size:96px; } #t2 { top:1230px; font-size:96px; }
+  #t1 { top:620px; font-size:124px; } #t2 { top:960px; font-size:110px; }
+  #clock, #time { display:none; }
   #time { top:1105px; font-size:58px; font-weight:800; letter-spacing:.06em; }
   /* scéna 2 */
   #q1 { top:640px; font-size:120px; } #q2 { top:820px; font-size:92px; padding:0 70px; }
@@ -57,8 +58,8 @@
   body.wide #clock { left:560px; top:250px; width:500px; height:500px; margin-left:-250px; }
   body.wide #clock i { transform-origin:50% 228px; }
   body.wide #clock .h { height:140px; } body.wide #clock .m { height:205px; }
-  body.wide #t1 { left:900px; right:80px; top:300px; text-align:left; font-size:92px; }
-  body.wide #t2 { left:900px; right:80px; top:530px; text-align:left; font-size:92px; }
+  body.wide #t1 { top:280px; font-size:120px; }
+  body.wide #t2 { top:560px; font-size:110px; }
   body.wide #time { left:310px; right:auto; width:500px; top:800px; }
   body.wide #q1 { top:330px; } body.wide #q2 { top:500px; padding:0 260px; }
   body.wide #photo { left:0; right:auto; width:1000px; top:0; height:1080px; background-image:url(hytta_wide.jpg); background-position:center;
@@ -79,10 +80,10 @@
 <canvas class="band" id="bandTop"></canvas>
 <canvas class="band" id="bandBottom"></canvas>
 
-<div class="abs c serif" id="t1">Gjestene reiser<br><span class="it">kl.&nbsp;11:00</span></div>
+<div class="abs c serif" id="t1">Vaskebyråene<br>tar juleferie.</div>
 <div class="abs" id="clock"><i style="transform:rotate(0)"></i><i style="transform:rotate(90deg)"></i><i style="transform:rotate(180deg)"></i><i style="transform:rotate(270deg)"></i><div class="h" id="hh"></div><div class="m" id="mm"></div><div class="dot"></div></div>
 <div class="abs c" id="time">11:00</div>
-<div class="abs c serif" id="t2">De neste kommer<br><span class="it">kl.&nbsp;16:00</span></div>
+<div class="abs c serif it" id="t2">Vi gjør ikke det.</div>
 
 <div class="abs c serif" id="q1">1. juledag.</div>
 <div class="abs c serif it" id="q2">Hvem vasker utleiehytta di?</div>
@@ -95,9 +96,9 @@
 
 <div class="abs c kick" id="k4"><span>Kun 20. desember – 6. januar</span></div>
 <div class="abs c serif" id="h4">Du feirer jul.<br><span class="it">Vi tar utvasken.</span></div>
-<div class="abs" id="p4"><div class="pbox"><div class="s">Opptil 100 m²</div><div class="p">2 990 <small>kr</small></div></div><div class="pbox"><div class="s">Over 100 m²</div><div class="p">3 990 <small>kr</small></div></div></div>
-<div class="abs c" id="f4">Bilderapport etter hvert bytte<br>Vegårshei · Risør · Gautefal</div>
-<div class="abs" id="cta"><div class="a">Begrenset antall bytter</div><div class="b">Bestill innen 15. desember</div><div class="cc">isokor-skandinavia.no</div></div>
+<div class="abs" id="p4"><div class="pbox"><div class="s">Opptil 100 m²</div><div class="p">4 990 <small>kr</small></div></div><div class="pbox"><div class="s">Over 100 m²</div><div class="p">6 490 <small>kr</small></div></div></div>
+<div class="abs c" id="f4">Maks to hytter per dag<br>Vegårshei · Gautefall</div>
+<div class="abs" id="cta"><div class="a">Begrenset antall bytter</div><div class="b">Bestill innen 1. desember</div><div class="cc">isokor-skandinavia.no</div></div>
 <div class="abs c" id="url"></div>
 
 <script>
@@ -142,7 +143,7 @@
     const hh = Math.floor(hrs), mi = Math.round((hrs - hh) * 60 / 5) * 5 % 60;
     $('time').textContent = `${pad(hh)}:${pad(t > 3 ? 0 : mi)}`;
     set('time', seg(t, .5, 1) * o1);
-    set('t2', seg(t, 3.0, 3.5) * o1, `translateY(${(1 - seg(t, 3.0, 3.5)) * 40}px)`);
+    set('t2', seg(t, 1.8, 2.4) * o1, `translateY(${(1 - seg(t, 1.8, 2.4)) * 40}px)`);
     if (t > 3) $('time').textContent = '16:00';
     // 2: 4,4–7,2 s
     const o2 = 1 - seg(t, 6.8, 7.2);

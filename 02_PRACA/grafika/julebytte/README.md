@@ -1,6 +1,7 @@
 # Grafika — Isokor Julebytte (4. 11. 2026, návrh)
 
 Štýl: zelená ako Hytteservice (#1b3a28) + červený pletený pás so selburose ako Kjøkkenpakken, sneh.
+Oblasť: Vegårshei a Gautefall. Slajd 4 má miesto na `interior.jpg` (AI interiér) — keď súbor existuje, karusel ho použije sám.
 Fotky: Lukova chata v snehu (výrez z bannera Hytteservice — originál nie je v repozitári), fľaše Kjøleskapsrens, Cleaner (Universalrens, stará etiketa), Fett- og flekkfjerner.
 
 | Súbor | Formát | Na čo |
