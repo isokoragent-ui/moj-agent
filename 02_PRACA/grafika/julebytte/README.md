@@ -11,6 +11,7 @@ Fotky: Lukova chata v snehu (výrez z bannera Hytteservice — originál nie je 
 | `julebytte_story_1.jpg`, `_2.jpg` | 1080×1920 | Stories |
 | `julebytte_video_story_1080x1920.mp4` | 16 s, hudba | Reels, TikTok, Shorts, Stories |
 | `julebytte_video_wide_1920x1080.mp4` | 16 s, hudba | Facebook, YouTube, web |
+| `julebytte_karusel_video_vertikal_1080x1920.mp4`, `julebytte_karusel_video_16x9_1920x1080.mp4` | 21,4 s, hudba | video zo slajdov karuselu (Reels/TikTok/Stories; FB/YouTube) — `VIDEO=1 node render.js karusel_video` → `python3 video_karusel.py vertikal\|sirka <priečinok>` → `hudba.py … 22` → ffmpeg (ako LMS) |
 | `Isokor_Julebytte_presentasjon.pdf` + `julebytte_presentasjon_1…7.jpg` | 1920×1080, 7 strán | prezentácia pre majiteľov/správcov chát (zdroj `presentasjon.html` + `node render_pres.js`) |
 
 Zdroj: `../zdroj/julebytte/` — `karusel.html` + `node render.js <priečinok>`; video `video.html` + `OUT=… [WIDE=1] node frames.js` → ffmpeg + `../hytteservice/hudba.py výstup.wav 16`.
