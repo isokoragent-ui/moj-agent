@@ -7,6 +7,7 @@ Fotky: Lukova chata v snehu (výrez z bannera Hytteservice — originál nie je 
 | Súbor | Formát | Na čo |
 |---|---|---|
 | `julebytte_karusel_1…6.jpg` | 1080×1350 | karusel FB + IG |
+| `julebytte_foto_1…6.jpg` | 1080×1350 | **fotokarusel** — viac fotiek, menej textu (ako LMS): chata, WC pred/po, sprcha pred/po (Lukove zákazky), Cleaner, fľaše, CTA. Zdroj `fotokarusel.html` + `node render_foto.js [priečinok] [video]` |
 | `julebytte_post_1080x1350.jpg` | 1080×1350 | samostatný príspevok, Google profil |
 | `julebytte_story_1.jpg`, `_2.jpg` | 1080×1920 | Stories |
 | `julebytte_video_story_1080x1920.mp4` | 16 s, hudba | Reels, TikTok, Shorts, Stories |

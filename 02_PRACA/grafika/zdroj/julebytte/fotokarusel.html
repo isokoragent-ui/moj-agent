@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<!-- Fotokarusel Julebytte (viac fotiek, menej textu, ako LMS), 4. 11. 2026.
+     Fotky: Lukova chata, Lukove zákazky (WC pred/po, sklo sprchy pred/po), fľaše Isokor.
+     Tvrdenie „uten parfyme/farger" len pri slajdoch s prostriedkami pre Julebytte (nie pri WC/sprche — tam LMS/Kalkfjerner). -->
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&family=DM+Serif+Display:ital@0;1&display=block" rel="stylesheet">
+<style>
+  :root { --green:#1b3a28; --red:#b3202d; --cream:#fbf3e4; --cream-2:#f3e3c4; --ink:#16271c; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { width:1080px; height:1350px; overflow:hidden; background:var(--green); font-family:"Assistant",sans-serif; color:var(--cream); }
+  canvas.band { position:absolute; left:0; top:0; width:1080px; height:64px; z-index:5; }
+  .slide { position:absolute; inset:0; display:none; } .slide.on { display:block; }
+  .ph { position:absolute; inset:0; background-size:cover; background-position:center; }
+  .shade { position:absolute; left:0; right:0; bottom:0; height:560px; background:linear-gradient(to bottom, rgba(15,36,24,0) 0%, rgba(15,36,24,.78) 55%, rgba(15,36,24,.95) 100%); }
+  .cap { position:absolute; left:60px; right:60px; bottom:70px; }
+  .kicker { display:inline-block; font-weight:800; letter-spacing:.22em; text-transform:uppercase; font-size:22px; background:var(--red); padding:8px 18px 7px; border-radius:4px; }
+  .line { font-family:"DM Serif Display",serif; font-size:86px; line-height:1.02; margin-top:18px; }
+  .line em { font-style:italic; color:var(--cream-2); }
+  .sub { font-size:32px; font-weight:700; margin-top:14px; opacity:.92; }
+  .split { position:absolute; inset:0; display:grid; grid-template-columns:1fr 1fr; gap:8px; background:var(--cream); }
+  .split div { background-size:cover; background-position:center; position:relative; }
+  .tag { position:absolute; top:100px; left:30px; font-weight:800; font-size:30px; letter-spacing:.12em; text-transform:uppercase; padding:10px 22px; border-radius:40px; background:rgba(22,39,28,.85); }
+  .tag.ok { background:var(--red); }
+  .pack { position:absolute; inset:0; background:radial-gradient(70% 55% at 50% 45%, #fffaf2 0%, var(--cream) 60%, var(--cream-2) 100%); }
+  .pack img { position:absolute; left:50%; top:110px; height:880px; transform:translateX(-50%); filter:drop-shadow(0 30px 30px rgba(60,40,0,.25)); }
+  .pack + .shade { height:470px; }
+  .cta { display:flex; gap:16px; margin-top:22px; flex-wrap:wrap; }
+  .cta span { font-weight:800; font-size:30px; padding:12px 24px; border-radius:40px; background:var(--cream); color:var(--ink); }
+  .cta span.r { background:var(--red); color:var(--cream); }
+  .num { position:absolute; right:60px; top:96px; font-weight:800; font-size:22px; letter-spacing:.2em; background:rgba(22,39,28,.6); padding:6px 14px; border-radius:20px; z-index:4; }
+</style>
+</head>
+<body>
+<canvas class="band" id="band"></canvas>
+
+<div class="slide" id="s1">
+  <div class="ph" style="background-image:url(hytta_top.jpg);background-position:center 20%"></div><div class="shade"></div>
+  <div class="cap"><div class="kicker">Isokor Julebytte · 20.12.–6.1.</div>
+    <div class="line">Du feirer jul.<br><em>Vi vasker hytta.</em></div>
+    <div class="sub">Utvask mellom gjester · Vegårshei og Gautefall</div></div>
+</div>
+
+<div class="slide" id="s2">
+  <div class="split"><div style="background-image:url(../../lms/fotky/wc_pred.jpg)"><span class="tag">Før</span></div><div style="background-image:url(../../lms/fotky/wc_po.jpg)"><span class="tag ok">Etter</span></div></div>
+  <div class="shade"></div>
+  <div class="cap"><div class="line">Fra våre <em>egne jobber.</em></div><div class="sub">Rust fra brønnvann i hytta? Vi tar det.</div></div>
+</div>
+
+<div class="slide" id="s3">
+  <div class="split"><div style="background-image:url(../badepakken_jul/in/66a6fb1a-image.jpg);background-position:62% 55%"><span class="tag">Før</span></div><div style="background-image:url(../badepakken_jul/in/0b6a2b25-image.jpg);background-position:58% 50%"><span class="tag ok">Etter</span></div></div>
+  <div class="shade"></div>
+  <div class="cap"><div class="line">Blank dusj<br><em>til neste gjest.</em></div></div>
+</div>
+
+<div class="slide" id="s4">
+  <div class="ph" style="background-image:url(../kjokkenpakken_jul/in/cleaner_foto.jpg);background-position:center 40%"></div><div class="shade"></div>
+  <div class="cap"><div class="line">Hytta skal lukte hytte.<br><em>Ikke vaskemiddel.</em></div><div class="sub">Uten parfyme · uten farger · uten syntetiske tilsetninger</div></div>
+</div>
+
+<div class="slide" id="s5">
+  <div class="pack"><img src="../../kjokkenpakken_produkt.jpg" style="height:1000px;top:40px;border-radius:0;mix-blend-mode:multiply"></div><div class="shade"></div>
+  <div class="cap"><div class="line">Naturlige midler<br><em>fra vår egen serie.</em></div><div class="sub">Laget av plante- og oljeekstrakter</div></div>
+</div>
+
+<div class="slide" id="s6">
+  <div class="ph" style="background-image:url(hytta_wide.jpg);background-position:center 35%"></div><div class="shade" style="height:640px"></div>
+  <div class="cap"><div class="kicker">Kun 20. desember – 6. januar</div>
+    <div class="line">Maks to hytter<br><em>per dag.</em></div>
+    <div class="cta"><span>Fra 4 990 kr per bytte</span><span>Vegårshei · Gautefall</span><span class="r">Bestill innen 15. desember</span></div></div>
+</div>
+
+<script>
+  const q = new URLSearchParams(location.search), S = q.get('s') || '1';
+  document.getElementById('s' + S).classList.add('on');
+  if (!q.get('single')) { const n = document.createElement('div'); n.className = 'num'; n.textContent = S + ' / 6'; document.body.appendChild(n); }
+  const ROSE = ['...X.....X...','...XX...XX...','...XXX.XXX...','XXX.XXXXX.XXX','.XXX.XXX.XXX.','..XXX.X.XXX..','...XXX.XXX...',
+                '..XXX.X.XXX..','.XXX.XXX.XXX.','XXX.XXXXX.XXX','...XXX.XXX...','...XX...XX...','...X.....X...'];
+  const c = document.getElementById('band'), W = 1080, BH = 64; c.width = W; c.height = BH; const g = c.getContext('2d');
+  g.fillStyle = '#7d1520'; g.fillRect(0, 0, W, BH);
+  const Sz = BH / 19, cols = Math.ceil(W / Sz) + 1, off = (W - Math.floor(W / Sz) * Sz) / 2;
+  const st = (x, y) => { const X = off + x * Sz, Y = y * Sz, h = Sz * .5;
+    g.beginPath(); g.moveTo(X + .4, Y + .4); g.lineTo(X + h - .2, Y + Sz * .32); g.lineTo(X + h - .2, Y + Sz - .2); g.lineTo(X + .4, Y + Sz * .68); g.closePath(); g.fill();
+    g.beginPath(); g.moveTo(X + Sz - .4, Y + .4); g.lineTo(X + h + .2, Y + Sz * .32); g.lineTo(X + h + .2, Y + Sz - .2); g.lineTo(X + Sz - .4, Y + Sz * .68); g.closePath(); g.fill(); };
+  g.fillStyle = '#fbf3e4';
+  for (let x = -1; x < cols; x++) { st(x, 0); st(x, 18); if (x % 2 === 0) { st(x, 2); st(x, 16); } }
+  for (let cx = 0; cx < cols + 18; cx += 18) {
+    ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') st(cx + x, 3 + y); }));
+    const m = cx + 15; [[0,9],[-1,9],[1,9],[0,8],[0,10],[-2,9],[2,9],[0,7],[0,11]].forEach(([a, b]) => st(m + a, b));
+  }
+</script>
+</body>
+</html>
