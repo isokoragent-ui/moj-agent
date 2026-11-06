@@ -67,3 +67,13 @@ Hva blir det hos dere – ribbe eller pinnekjøtt?
 - Otázka na konci = komentáre → Meta ukáže príspevok viac ľuďom zadarmo. **Na každý komentár odpovedať** v prvých hodinách (Luk / agent pripraví odpovede).
 - Sponzorovanie (Luk zváži): ak, tak tento obrázok, cieľ „návštevy webu" na /products/kjokkenpakken, celé Nórsko, 30–65, ~50 kr/deň — poučenie z Badepakken (5 miest bolo príliš úzko).
 - Ďalší krok, ak nepôjde: súťaž „Ribbe eller pinnekjøtt? Kommenter og vinn en Kjøkkenpakke" (stojí 1 balík, pravidlá súťaže treba napísať).
+
+## ✅ Výsledok zverejnenia pi 6. 11. 2026 (overené v Metricoole 10:45 Oslo)
+- Facebook: https://facebook.com/122216737250920172/posts/122220815246920172
+- Instagram: https://www.instagram.com/p/DfZSjfIF2OM/
+- Threads: https://www.threads.com/@isokor_skandinavia/post/DfZSnBbjUMK
+- TikTok (foto JPEG — tentoraz prešlo): https://www.tiktok.com/@isokorskandinavia/video/7704988710135287072
+- Google firemný profil: https://local.google.com/place?id=5296335594512313323&use=posts&lpsid=CAIQACoeChxtc3BfaDoyNVh0N29NaW5oZkE4ZUVKNEU1ZXN3
+- Story FB + IG 12:00 — v čase kontroly ešte PENDING → kontrola 12:15.
+- **Predaje 30. 10.–6. 11.: 0 objednávok**, Shopify neukazuje ani vstupy na /products/kjokkenpakken (analytika môže meškať o deň). Hodnotiť po víkende spolu s e-mailom (ne 8. 11.).
+
