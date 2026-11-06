@@ -74,6 +74,6 @@ Hva blir det hos dere – ribbe eller pinnekjøtt?
 - Threads: https://www.threads.com/@isokor_skandinavia/post/DfZSnBbjUMK
 - TikTok (foto JPEG — tentoraz prešlo): https://www.tiktok.com/@isokorskandinavia/video/7704988710135287072
 - Google firemný profil: https://local.google.com/place?id=5296335594512313323&use=posts&lpsid=CAIQACoeChxtc3BfaDoyNVh0N29NaW5oZkE4ZUVKNEU1ZXN3
-- Story FB + IG 12:00 — v čase kontroly ešte PENDING → kontrola 12:15.
+- Story 12:00 ✅ (overené 12:16): [Facebook](https://facebook.com/122216737250920172/posts/1435994791414845) · [Instagram](https://www.instagram.com/stories/isokor_skandinavia/4024375548347685630)
 - **Predaje 30. 10.–6. 11.: 0 objednávok**, Shopify neukazuje ani vstupy na /products/kjokkenpakken (analytika môže meškať o deň). Hodnotiť po víkende spolu s e-mailom (ne 8. 11.).
 
