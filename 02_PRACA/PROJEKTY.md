@@ -31,6 +31,7 @@
 - **Súvisí:** firma = a.s. (prácu môže robiť aj živnosť pre a.s.)
 - ⏸ **neskôr:** Isokor Junior (Baby Cleaner) — na sklade, do e-shopu zatiaľ nie (Luk 27. 10.); nórska bezpečnostná karta je hotová (`02_PRACA/sikkerhetsdatablad/Isokor_Junior_Sikkerhetsdatablad_NO.pdf`), pri pridaní produktu ju priložiť.
 - ⏸ **neskôr – štruktúra firiem (Luk 28. 10., zatiaľ len plán):** Isokor Skandinavia AS = marketing pre NO/DK/SE; nové firmy **Isokor Norge** (vlastná „nórska produkcia“ – dovoz koncentrátov a superkoncentrátov, riedenie v Nórsku), neskôr **Isokor Danmark** a **Isokor Sverige** (to isté). Súvisí: bezpečnostné karty DA/SV — technicky jednoduché (preklad z nórskych modulov + národné čísla/predpisy), **dodávateľa v 1.3 doplniť, až budú firmy**. ⚠️ Kto riedi, je pre karty **výrobca/formulátor**: zriedený výrobok môže mať inú klasifikáciu → nové zloženie, vlastná karta, nálepka a vlastné UFI/PCN na každú firmu.
+- ⏸ **neskôr – nové obchodné podmienky (Vilkår) e-shopu** (Luk 10. 11.): teraz je tam nevyplnená americká šablóna → prepísať celé po nórsky (Isokor Skandinavia AS, org. nr. 922 112 975 MVA). Návrh pripraví agent, Luk schváli, potom zmenu urobí Luk v admin, lebo agent nemá oprávnenie `write_legal_policies`. Spolu s tým: Hytteservice „endelige priser“ → „inkl. mva“.
 
 ### Služby s najväčším potenciálom (finančne veľmi zaujímavé)
 | Služba | Stav |
