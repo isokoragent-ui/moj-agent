@@ -31,11 +31,16 @@ Rovnako ako pri AS (`02_PRACA/agenda_as/README.md`), len s `--firma zivnost`:
 - **Rozpočet:** po prvom celom mesiaci (december 2026) `agenda.py rozpocet 2027-01 --firma zivnost` → agent navrhne rozpočet + názor, po „áno“ ho zapíše do `agenda/nastavenie.json` → `rozpocet_mesacne`. Mesačný raport potom ukazuje plán vs. skutočnosť.
 - Agenda beží od **1. 11. 2026** (začiatok MVA termínu nov–dec).
 
+## Rytmus (Luk 11. 11. 2026)
+- **Týždenne (nedeľa):** `agenda.py tyzden --firma zivnost` — príjmy, výdavky, kam idú peniaze.
+- **Mesačne (1. deň mesiaca):** `agenda.py mesiac --firma zivnost` — výsledok, porovnanie s minulým mesiacom, rozpočet.
+- **Každé 2 mesiace (MVA termín, ako AS):** `agenda.py termin --firma zivnost` + kontrola dokladov → Luk odovzdá papier **Anne Sofie** (robí AS aj živnosť).
+
 ## Pasce
 - **Najväčšia pasca: zámena firiem.** Pred každou faktúrou a každým výdavkom musí byť jasné, ktorej firmy sa týka. Keď to Luk nepovie → jedna otázka „živnosť, alebo AS?“. Nikdy netipovať.
 - **Živnosť fakturuje AS** (Luk robí prevažne pre a.s.): faktúra živnosti pre Isokor - Skandinavia AS = príjem tu **a zároveň výdavok v AS** (`agenda_as`, kategória `ucty_sluzby` alebo `ine`, s odkazom na číslo faktúry). Zapísať na oboch stranách, inak AS ukazuje vyšší zisk, než má.
 - **Číslovanie:** Luk zadá číslo sám. Faktúry vystavené mimo agenta (vo Worde) treba dopísať do `faktury/data/`, inak `nova` navrhne zlé číslo.
-- **MVA termín:** raporty rátajú 2-mesačné termíny ako pri AS. Malé živnosti (obrat pod 1 mil. NOK) môžu mať aj **ročný termín** — overiť u účtovníčky, ak áno, prepnúť.
+- **Doklady živnosti a AS sa odovzdávajú v dvoch oddelených obálkach** — inak Anne Sofie zaúčtuje bloček do zlej firmy.
 - **Ceny na faktúre bez MVA**, skript pripočíta 25 %. Iná sadzba na riadku: `"mva": 0`.
 - Výsledok živnosti = základ dane; mzda v živnosti neexistuje → odkladať rezervu na daň a trygdeavgift.
 - Oproti šablóne opravený preklep „Sprarebank“ → **Sparebank**, formát A4.
