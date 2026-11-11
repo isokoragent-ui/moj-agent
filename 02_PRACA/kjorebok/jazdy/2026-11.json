@@ -1,1 +1,24 @@
-{"jazdy": []}
+{
+  "jazdy": [
+    {
+      "dato": "2026-11-09",
+      "fra": "Vegårshei",
+      "til": "Arendal (JYSK, Sagvannsveien 52 · Megaflis, Sørsvannsveien 4 · Jula) og tilbake",
+      "formal": "Innkjøp av bord og inventar til nytt verksted og butikk på Myra, Vegårshei",
+      "besokt": "JYSK Arendal, Megaflis Arendal, Jula Arendal",
+      "km": null,
+      "tur_retur": true,
+      "merknad": ""
+    },
+    {
+      "dato": "2026-11-11",
+      "fra": "Vegårshei",
+      "til": "Stathelle (JYSK Bamble, Langrønningen 6) – Larvik (JYSK, Elveveien 135) og tilbake",
+      "formal": "Innkjøp av bord og inventar til nytt verksted og butikk på Myra, Vegårshei",
+      "besokt": "JYSK Bamble, JYSK Larvik",
+      "km": null,
+      "tur_retur": true,
+      "merknad": ""
+    }
+  ]
+}
