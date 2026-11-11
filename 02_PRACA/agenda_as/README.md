@@ -6,7 +6,9 @@ predalo, najazdilo a urobilo — a z toho denné, týždenné a mesačné raport
 ## Ako to funguje
 1. **Luk diktuje** kedykoľvek počas dňa: „Kúpil som v Jule vysávač na dielňu za 1 249, firemnou kartou, bloček mám.“
 2. **Agent zapíše** záznam do `zaznamy/RRRR-MM.json`, zopakuje ho jednou vetou a pri nejasnosti sa spýta (jedna otázka).
-3. Fotka bločku → `doklady/RRRR-MM/` a cesta do záznamu.
+3. **Stačí fotka bločku** (Luk nič neprepisuje): agent z nej prečíta obchod, dátum, sumu, MVA a položky, uloží ju do `doklady/RRRR-MM/RRRR-MM-DD_obchod.jpg`, navrhne kategóriu a **pýta sa len na to, čo na bločku nie je**: ako sa platilo (firemná karta / súkromne) a pri nejasnom nákupe načo to je. Viac bločkov naraz je v poriadku.
+   - Fotka celá a ostrá, aj spodok so sumou a MVA. Nečitateľné číslo agent nehádá — spýta sa.
+   - Papierový originál si Luk odloží, kým s účtovníčkou neoverí, že stačí fotka.
 4. **Raporty:** `python3 _nastroje/agenda.py den|tyzden|mesiac [dátum]` → `reporty/…`
 5. Commit + push → vidno to v každom okne.
 
