@@ -68,6 +68,14 @@ def vsetky_cisla():
     return sorted(int(p.stem) for p in (KOREN / "data").glob("*.json") if p.stem.isdigit())
 
 
+def mva_od(f, nast):
+    """Je firma k dátumu faktúry registrovaná v MVA? (od 6. 11. 2026)"""
+    od = nast.get("mva_registrovana_od")
+    if f.get("mva_registrovana") is not None:
+        return f["mva_registrovana"]
+    return bool(od) and f.get("fakturadato", "") >= od
+
+
 def prepocitaj(f, nast):
     """Doplní forfallsdato, beløp na riadkoch a súčty. Vráti zoznam chýb."""
     chyby = []
@@ -93,7 +101,8 @@ def prepocitaj(f, nast):
         except Exception:
             chyby.append(f"riadok {i}: pris/antall nie je číslo")
             continue
-        sadzba = float(l.get("mva", nast.get("mva_predvolene", 0)))
+        predvolene = nast.get("mva_predvolene", 0) if mva_od(f, nast) else 0
+        sadzba = float(l.get("mva", predvolene))
         l["mva"] = sadzba
         l["belop"] = round(pris * antall, 2)
         netto += l["belop"]
@@ -180,7 +189,7 @@ def kresli(f, nast, cesta):
 
     # ─ pätička
     c.setFont("A", 10)
-    orgnr = nast["org_nr"] + ("  MVA" if f.get("mva_registrovana", nast.get("mva_registrovana")) else "")
+    orgnr = nast["org_nr"] + ("  MVA" if mva_od(f, nast) else "")
     c.drawString(35, y(800), f"ORG.NR.  {orgnr}")
     c.drawCentredString(W / 2, y(800), f"TELEFON: {nast['telefon']}")
     c.drawRightString(P, y(800), nast["web"])

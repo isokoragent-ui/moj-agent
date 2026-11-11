@@ -1,0 +1,91 @@
+{
+  "firma": "Isokor - Skandinavia AS",
+  "mena": "NOK",
+  "mva_registrovana_od": "2026-11-06",
+  "mva_poznamka": "Luk 11. 11. 2026: firma je registrovaná v MVA od 6. 11. 2026. Pred tým bez MVA (obdobie do 5. 11. má účtovníčka).",
+  "ciel_mesacne_cisty": [
+    40000,
+    50000
+  ],
+  "kanaly_prijmov": {
+    "eshop": "E-shop isokor-skandinavia.no (Shopify)",
+    "obchod": "Predaj v obchode Myra, Vegårshei",
+    "sluzby": "Služby zaplatené hneď (Vipps, hotovosť) bez faktúry",
+    "faktura": "Faktúry — počítajú sa z 02_PRACA/faktury, sem NEzapisovať",
+    "ine": "Iné príjmy"
+  },
+  "kategorie_vydavkov": {
+    "tovar": {
+      "popis": "Tovar na predaj (Isokor produkty, balenie, fľaše)",
+      "mva": 25
+    },
+    "material": {
+      "popis": "Materiál na služby (piesok, náradie spotrebné)",
+      "mva": 25
+    },
+    "naradie": {
+      "popis": "Náradie a vybavenie",
+      "mva": 25
+    },
+    "obchod_dielna": {
+      "popis": "Obchod a dielňa Myra — zariadenie, nájom, energie",
+      "mva": 25
+    },
+    "auto": {
+      "popis": "Palivo, mýto, parkovanie, servis",
+      "mva": 25
+    },
+    "doprava": {
+      "popis": "PostNord, Bring, preprava tovaru",
+      "mva": 25
+    },
+    "marketing": {
+      "popis": "Reklama FB/IG/Google, tlač, letáky, grafika",
+      "mva": 25
+    },
+    "software": {
+      "popis": "Shopify, Metricool, aplikácie, domény",
+      "mva": 25
+    },
+    "poplatky": {
+      "popis": "Bankové a platobné poplatky (Shopify Payments, Vipps)",
+      "mva": 0
+    },
+    "telefon_internet": {
+      "popis": "Telefón, internet",
+      "mva": 25
+    },
+    "strava": {
+      "popis": "Jedlo a občerstvenie (pozor: väčšinou bez odpočtu MVA)",
+      "mva": 0
+    },
+    "kancelaria": {
+      "popis": "Kancelárske potreby, drobnosti",
+      "mva": 25
+    },
+    "ucty_sluzby": {
+      "popis": "Účtovníčka, poistenie, poradenstvo",
+      "mva": 25
+    },
+    "ine": {
+      "popis": "Iné",
+      "mva": 25
+    }
+  },
+  "sposoby_platby": [
+    "firemna_karta",
+    "firemny_ucet",
+    "sukromne",
+    "hotovost",
+    "vipps",
+    "faktura_dodavatela"
+  ],
+  "typy_aktivit": [
+    "marketing",
+    "predaj",
+    "stretnutie",
+    "sluzba",
+    "admin",
+    "ine"
+  ]
+}
