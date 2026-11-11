@@ -18,6 +18,7 @@
 | Isokor Kalkfjerner for bad 500 ml (SK: LM Descaling) | `Isokor_Kalkfjerner_for_bad_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 28. 10. 2026 — **žieravý (H314)**: doplnené CLP (FARE, Inneholder: melkesyre, H314, P102/P260/P280/P301+P330+P331/P305+P351+P338/P310/P501, UFI) z karty LMD; odznaky UTEN BØRSTING, EFFEKTIV RENGJØRING |
 | Isokor EcoDescal 500 ml (SK: Eco Descal) | `Isokor_EcoDescal_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 29. 10. 2026 — **žieravý (H314)**: CLP ako Kalkfjerner, UFI W120-G081-7002-X7CT; SK text „bez nebezpečných látok“ v rozpore s H314 — preložené verne |
 | Isokor Kjøleskapsrens 500 ml (SK: Fridge Cleaner) | `Isokor_Kjoleskapsrens_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 29. 10. 2026 — text okrem úvodu = Baderomsrens; číslo šarže 10201CF ponechané z originálu |
+| Isokor Lotos Standard 500 ml (SK: Lotos Standard) | `Isokor_Lotos_Standard_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 11. 11. 2026 — **horľavý (H225)**: doplnené CLP (FARE, Inneholder: isopropylalkohol, H225/H319/H336, P102/P210/P261/P305+P351+P338/P501) z karty Lotos Standard (= SW); UFI ostáva vo spodných riadkoch ako v origináli; odznaky VANN AVSTØTENDE, 99 % PUSTEEVNE |
 
 ### EcoNeutral — iný typ SK súboru (pozor pri ďalších)
 - SK PDF nie je vektorový originál ako Cleaner: **pozadie je obrázok 150 dpi v RGB**, texty sú písmo, názov v páse a odznaky „Prírodný produkt“ sú zapečené v obrázku, logo a čiarový kód sú znaky písma.
@@ -25,6 +26,12 @@
 - **Na veľkotlač si od výrobcu vypýtať vektorový originál (Illustrator/PDF ako pri Cleaneri)** — 150 dpi pozadie je na hrane, na domácu tlač stačí.
 - **28. 10. neskôr: obsah podľa Lukovej NO verzie** (`zdroj/Luk_NO_EcoNeutral_500ml.jpg`) — produkt má širšie použitie (pot, posilňovne, šatne, obuv, auto). Podnadpis „Universell lukt- og flekkfjerner“, Lukove fotky (sofa, posilňovňa, tenisky, šteňa) vystrihnuté z jeho JPG a vložené presne do šesťuholníkov originálu. Forma (písmo, logo, dovozca, odznaky) ostala ako pri ostatných etiketách. Fotky nie sú od výrobcu → ich licencia je Lukova vec.
 - Zmeny proti SK: CAS 144-55-8 presunuté k natron (v origináli omylom pri pelargóniovom oleji); zátvorka „(anti-cyanidiner)“ ponechaná ako v origináli. Tvrdenia „dermatologicky testovaný“ a „bezpečný pre človeka aj zvieratá“ ponechané (od výrobcu).
+
+### Lotos Standard — poznámky (11. 11.)
+- SK originál vektorový ako Cleaner (texty v krivkách), modrá farba pásu C90 M55 Y8,5. Text je veľmi dlhý → písmo tela aj CLP **6,2 pt** (SK ~7 pt); CLP blok končí nad piktogramami a vľavo od ikony 6M.
+- „Označené v súlade s dekrétom č. 415/2012 Coll.“ a „Limit VOC 750 g/l … (A+B elementy)“ preložené verne — je to slovenský predpis o VOC; overiť s výrobcom, či to na nórskej etikete chce mať.
+- SK text píše „Dráždi oči“, karta má H319 „Gir alvorlig øyeirritasjon“ — v texte verný preklad, správna klasifikácia je v CLP bloku.
+- Popis na webe hovorí „helsemessig trygg“ — etiketa také tvrdenie nemá (nič sa nepridávalo).
 
 ## Ako vzniká (`zdroj/etikett.py <modul>`)
 1. Z originálu sa **vektorovo vystrihnú** SK texty a staré logo (cesty ležiace celé v oblastiach `REGIONS`) — nič sa neprekrýva bielym, pozadie (šesťuholníky, fotky, ikony, čiarový kód) ostáva originál v CMYK.
