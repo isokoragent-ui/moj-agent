@@ -8,5 +8,6 @@ agent zapisuje do `02_PRACA/kjorebok/jazdy/RRRR-MM.json`, raz mesačne vyrobí P
 Luka najrýchlejšie, papierovačku robí agent (PROFIL: podklady pre účtovníctvo
 prebrať ako prvé).
 
-**Otvorené:** EČV a značka auta, stav tachometra k 1. 1. 2026, sadzba za km
-(potvrdí Anne Sofie).
+**Doplnené:** auto DL 61036. Sadzba za km zatiaľ žiadna — kniha je prehľad km
+(Luk 11. 11.; preplácanie prípadne dorieši s Anne Sofie).
+**Otvorené:** stav tachometra k 1. 1. 2026.

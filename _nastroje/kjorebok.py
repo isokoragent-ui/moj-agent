@@ -98,7 +98,7 @@ def lag_pdf(mesiac, nast, jazdy, ut):
         Paragraph(f"Kjørebok – {obdobie}", st["Title"]),
         Paragraph(f"<b>Firma:</b> {f['navn']}, org.nr. {f['orgnr']} &nbsp;&nbsp; "
                   f"<b>Sjåfør:</b> {nast['sjafor']} &nbsp;&nbsp; "
-                  f"<b>Bil (privat):</b> {bil.get('merke') or '—'}, reg.nr. {bil.get('regnr') or '—'}",
+                  f"<b>Bil (privat):</b> " + ", ".join(x for x in (bil.get('merke'), f"reg.nr. {bil.get('regnr') or '—'}") if x),
                   st["BodyText"]),
         Spacer(1, 4*mm),
     ]

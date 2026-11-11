@@ -36,15 +36,15 @@ PDF je po nórsky (pre účtovníčku), pracovné poznámky po slovensky.
   Medzery v tachometri medzi jazdami = súkromné km, to je v poriadku.
 - **Firma vs. živnosť (KÓD #25):** táto kniha je **len pre Isokor Skandinavia AS**.
   Keď jazda patrí živnosti, nezapisovať sem — spýtať sa.
-- **Sadzba za km** (`sats_per_km` v `nastavenie.json`) je zatiaľ prázdna —
-  potvrdí ju Anne Sofie (statens sats pre daný rok). Neodhadovať (KÓD #8).
-  Kým je prázdna, PDF ukáže len km, nie sumu.
+- **Sadzba za km — zatiaľ žiadna (Luk 11. 11.).** Kniha jázd slúži ako
+  **prehľad najazdených km**; preplácanie si Luk prípadne dorieši s Anne Sofie.
+  `sats_per_km` nechať `null`, neodhadovať (KÓD #8). PDF ukáže len km.
 - **Stav tachometra k 1. 1.** sa v Nórsku pri knihe jázd zvykne evidovať —
   zapísať do `nastavenie.json`, keď ho Luk povie.
 - Skript **nevyrobí PDF**, kým sú v dátach chyby (tachometer dozadu, chýba účel…).
 
 ## Súbory
-- `nastavenie.json` — firma, vodič, auto (značka, EČV), sadzba
+- `nastavenie.json` — firma, vodič, auto (EČV **DL 61036**), sadzba
 - `jazdy/RRRR-MM.json` — jazdy po mesiacoch
 - `pdf/Kjorebok_RRRR-MM.pdf` — hotové mesačné výkazy
 - Generátor: `_nastroje/kjorebok.py`
