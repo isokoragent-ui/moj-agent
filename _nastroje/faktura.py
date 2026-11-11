@@ -156,7 +156,7 @@ def kresli(f, nast, cesta):
             c.drawString(45, y(riadok_y + j * 11), t)
         c.drawCentredString(stl["pris"], y(riadok_y), suma(float(l["pris"])))
         c.drawCentredString(stl["antall"], y(riadok_y), suma(float(l.get("antall", 1))))
-        c.drawCentredString(stl["mva"], y(riadok_y), suma(l["mva"]))
+        c.drawCentredString(stl["mva"], y(riadok_y), suma(l["mva"]) + " %")
         c.drawCentredString(stl["belop"], y(riadok_y), suma(l["belop"]))
         riadok_y += 11 * len(riadky) + 5
     c.setFillColor(SEDA); c.rect(30, y(riadok_y + 1), P - 30, 4, stroke=0, fill=1)
@@ -180,7 +180,8 @@ def kresli(f, nast, cesta):
 
     # ─ pätička
     c.setFont("A", 10)
-    c.drawString(35, y(800), f"ORG.NR.  {nast['org_nr']}")
+    orgnr = nast["org_nr"] + ("  MVA" if f.get("mva_registrovana", nast.get("mva_registrovana")) else "")
+    c.drawString(35, y(800), f"ORG.NR.  {orgnr}")
     c.drawCentredString(W / 2, y(800), f"TELEFON: {nast['telefon']}")
     c.drawRightString(P, y(800), nast["web"])
     c.showPage(); c.save()

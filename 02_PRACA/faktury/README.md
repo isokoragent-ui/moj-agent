@@ -13,7 +13,7 @@ nie pre živnosť (KÓD #25).*
 ## Čo kde je
 | Súbor | Čo |
 |---|---|
-| `nastavenie.json` | firma, adresa, ORG.NR., telefón, web, účet, banka, splatnosť (4 dni ako v šablóne), MVA 0 % |
+| `nastavenie.json` | firma, adresa, ORG.NR., telefón, web, účet, banka, splatnosť (4 dni ako v šablóne), **MVA 25 %** (firma registrovaná v MVA od 11. 11. 2026) |
 | `data/<číslo>.json` | zadanie faktúry (zdroj pravdy) |
 | `pdf/Faktura_<číslo>.pdf` | hotové PDF |
 | `ZOZNAM.md` | prehľad všetkých faktúr + stav (vystavená / odoslaná / zaplatená) |
@@ -21,7 +21,7 @@ nie pre živnosť (KÓD #25).*
 
 ## Pasce
 - **Číslovanie:** ďalšie číslo = najvyššie v `data/` + 1. Faktúry vystavené mimo agenta (vo Worde) sem treba dopísať, inak sa číslo zopakuje.
-- **MVA:** šablóna má 0 %. Keby AS prešla na MVA, zmeň `mva_predvolene` (alebo `mva` na riadku) — súčty sa dopočítajú.
+- **MVA:** AS je registrovaná v MVA → predvolene **25 %**. `pris` = cena **bez** MVA; skript ráta Nettobeløp → Merverdiavgift → Å BETALE. Iná sadzba na riadku: `"mva": 15` (alebo 0). Pri ORG.NR. sa tlačí „MVA“ (povinné pre registrované firmy). Faktura 19 zostáva s 0 % (vystavená pred registráciou).
 - Oproti šablóne opravené preklepy: „Meverdiavgift“ → **Merverdiavgift**, „Sprarebank“ → **Sparebank**. Formát A4 (šablóna bola Letter).
 - Sumy po nórsky: `10 320`, desatinné `4 106,50`.
 - Faktúru agent **nikdy neodosiela** — len PDF. Odoslanie klientovi ide cez Lukovo „áno“.

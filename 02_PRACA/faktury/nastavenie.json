@@ -10,6 +10,7 @@
   "bankkonto": "2907 31 44580",
   "banka": "Østre Agder Sparebank",
   "splatnost_dni": 4,
-  "mva_predvolene": 0,
-  "posledne_cislo_pred_agentom": 19
+  "mva_predvolene": 25,
+  "posledne_cislo_pred_agentom": 19,
+  "mva_registrovana": true
 }
