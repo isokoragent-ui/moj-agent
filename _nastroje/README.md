@@ -11,3 +11,4 @@ Všetky sú bez závislostí (bash + Python 3 štandardná knižnica) a majú
 v hlavičke „PREČO" — aby nikto neskôr nezrušil to, čo nás chráni.
 - `tilsynslogg.py <chata.json>` — PDF záznam kontrol chaty pre poisťovňu (Hytteservice).
 - `kjorebok.py <RRRR-MM>` — mesačná kniha jázd (Kjørebok) súkromným autom pre Isokor Skandinavia AS → PDF pre účtovníčku. Dáta v `02_PRACA/kjorebok/`.
+- `faktura.py <číslo>|nova|zoznam` — faktúra Isokor - Skandinavia AS v PDF podľa Lukovej šablóny (Faktura 19). Dáta v `02_PRACA/faktury/`.

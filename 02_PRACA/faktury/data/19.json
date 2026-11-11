@@ -1,0 +1,9 @@
+{
+  "cislo": 19,
+  "kunde": {"navn": "Lene Øglænd", "adresse": ["Christiesgate 13", "4307 Sandnes"]},
+  "fakturadato": "2026-10-01",
+  "forfallsdato": "2026-10-05",
+  "linjer": [{"beskrivelse": "Vask av belegningsstein og påfyll av sand", "pris": 240, "antall": 43, "mva": 0}],
+  "stav": "vystavená",
+  "poznamka": "Prepísaná z Lukovej Word šablóny (pôvodné PDF: sablona/Faktura_19_povodna_sablona.pdf)."
+}
