@@ -1,0 +1,16 @@
+{
+  "firma": "Isokor - Skandinavia AS",
+  "adresa": [
+    "Nærestadveien 1",
+    "4985 Vegårshei"
+  ],
+  "org_nr": "922112975",
+  "telefon": "+47 48 642 178",
+  "web": "www.isokor-skandinavia.no",
+  "bankkonto": "2907 31 44580",
+  "banka": "Østre Agder Sparebank",
+  "splatnost_dni": 4,
+  "mva_predvolene": 25,
+  "posledne_cislo_pred_agentom": 19,
+  "mva_registrovana": true
+}
