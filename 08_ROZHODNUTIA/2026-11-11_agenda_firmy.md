@@ -7,3 +7,5 @@ týždenné a mesačné raporty (`_nastroje/agenda.py`).
 **Zásady:** jeden zdroj pre každú vec — faktúry v `faktury/`, jazdy v `kjorebok/`, e-shop zo Shopify
 (agent sťahuje, Luk nediktuje). Sumy sa zapisujú s MVA. Agent nemá prístup do banky.
 **MVA od 6. 11. 2026** (Luk). Od tohto dňa všetko presne a poctivo — každý výdavok s dokladom, plánovanie. Obdobie pred tým má účtovníčka.
+
+**Doplnenie (Luk):** papierové bločky a faktúry odovzdáva Anne Sofie každé 2 mesiace pri MVA priznaní — fotky neukladáme, agent len zapíše údaje. Agent vedie priebežnú rozvahu (`agenda.py prehlad` → `reporty/ROZVAHA.md`) a raport za MVA termín (`agenda.py termin`).

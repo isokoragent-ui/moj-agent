@@ -17,6 +17,8 @@ POUŽITIE:
     python3 _nastroje/agenda.py den 2026-11-12        # denný raport
     python3 _nastroje/agenda.py tyzden 2026-11-12     # ISO týždeň, v ktorom je dátum
     python3 _nastroje/agenda.py mesiac 2026-11        # mesačný raport
+    python3 _nastroje/agenda.py termin 2026-11-12     # MVA termín (2 mesiace), v ktorom je dátum
+    python3 _nastroje/agenda.py prehlad               # priebežná rozvaha od 6. 11. 2026 po dnes + aktuálny termín
     python3 _nastroje/agenda.py kontrola 2026-11      # skontroluje záznamy mesiaca
     (bez dátumu = dnes / tento týždeň / tento mesiac)
 
@@ -28,7 +30,7 @@ ZÁZNAM (v zaznamy/RRRR-MM.json → {"zaznamy": [...]}):
      "druh": "marketing",                                # aktivita: marketing / predaj / stretnutie / ...
      "kto": "Jula Arendal", "popis": "Vysávač na dielňu",
      "platba": "firemna_karta",                          # sukromne = firma dlhuje Lukovi
-     "doklad": "doklady/2026-11/2026-11-12_jula.jpg",    # null = doklad chýba
+     "doklad": true,                                     # Luk má papierový bloček/faktúru (odovzdá Anne Sofie); false = chýba
      "zdroj": "diktovane",                               # alebo "shopify:#1031" (proti duplicitám)
      "poznamka": ""}
 """
@@ -177,6 +179,16 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
           f"| MVA na odvod (výstup − vstup) | {kr(r['mva_von'] - r['mva_dnu'])} | {kr(p['mva_von'] - p['mva_dnu'])} | |",
           f"| Najazdené km | {r['km']}" + (f" (jazdy bez km: {r['km_chyba']})" if r["km_chyba"] else "") + f" | {p['km']} | |", ""]
 
+    if druh == "prehlad":
+        L[4:14] = ["## Rozvaha od začiatku", "", "| | Spolu |", "|---|---:|",
+                   f"| Príjmy bez MVA | {kr(r['prijem_netto'])} |", f"| Výdavky bez MVA | {kr(r['vydavok_netto'])} |",
+                   f"| **Výsledok** | **{kr(r['vysledok'])}** |",
+                   f"| MVA vybraná (výstup) | {kr(r['mva_von'])} |", f"| MVA zaplatená (vstup, odpočet) | {kr(r['mva_dnu'])} |",
+                   f"| MVA na odvod | {kr(r['mva_von'] - r['mva_dnu'])} |", f"| Najazdené km | {r['km']} |", ""]
+        dni = (do - od).days + 1
+        L += [f"Priemer na mesiac (30 dní): výsledok **{kr(r['vysledok'] / dni * 30)}** · cieľ {kr(n['ciel_mesacne_cisty'][0])}–{kr(n['ciel_mesacne_cisty'][1])}.", ""]
+    if druh == "termin":
+        L += ["*MVA termín: tieto čísla sú podklad pre Anne Sofie — presné priznanie robí ona z papierových dokladov.*", ""]
     if druh == "mesiac":
         lo, hi = n["ciel_mesacne_cisty"]
         pct = r["vysledok"] / lo * 100 if lo else 0
@@ -203,7 +215,7 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
 
     # zoznam pohybov — pri dni a týždni celý, pri mesiaci top 10 výdavkov
     pohyby = [z for z in r["zz"] if z["typ"] != "aktivita"]
-    if druh == "mesiac":
+    if druh in ("mesiac", "termin", "prehlad"):
         vyd = sorted([z for z in pohyby if z["typ"] == "vydavok"], key=lambda z: -float(z["suma"]))[:10]
         if vyd:
             L += ["## 10 najväčších výdavkov", "", "| Dátum | Kto | Čo | Suma |", "|---|---|---|---:|"]
@@ -235,7 +247,7 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
     # čo treba riešiť
     pozor = []
     if r["bez_dokladu"]:
-        pozor.append(f"**Výdavky bez dokladu: {len(r['bez_dokladu'])}** — bez bločku ich účtovníčka neuzná: "
+        pozor.append(f"**Výdavky bez papierového dokladu: {len(r['bez_dokladu'])}** — bez bločku/faktúry ich Anne Sofie neuzná: "
                      + "; ".join(f"{z['datum']} {z.get('kto', '')} {kr(float(z['suma']))}" for z in r["bez_dokladu"]))
     if r["sukromne"]:
         s = sum(float(z["suma"]) for z in r["sukromne"])
@@ -283,8 +295,8 @@ def kontrola(mesiac):
                 chyby.append(f"{m}: neznámy kanál '{z.get('kanal')}'")
         if t == "vydavok" and z.get("platba") and z["platba"] not in n["sposoby_platby"]:
             chyby.append(f"{m}: neznámy spôsob platby '{z['platba']}'")
-        if z.get("doklad") and not (KOREN / z["doklad"]).exists():
-            chyby.append(f"{m}: súbor dokladu neexistuje: {z['doklad']}")
+        if t == "vydavok" and "doklad" not in z:
+            chyby.append(f"{m}: chýba pole doklad (true = papier mám, false = nemám)")
         zd = z.get("zdroj", "")
         if zd and zd != "diktovane":
             if zd in zdroje:
@@ -320,8 +332,34 @@ def main():
         pdo = od - timedelta(days=1); pod = date(pdo.year, pdo.month, 1)
         raport("mesiac", od, do, pod, pdo, f"Mesačný raport — {m:02d}/{y}",
                KOREN / "reporty" / "mesiac" / f"{y}-{m:02d}.md")
+    elif druh == "termin":
+        d = date.fromisoformat(arg) if arg else dnes
+        od, do = termin_rozsah(d)
+        pdo = od - timedelta(days=1); pod, _ = termin_rozsah(pdo)
+        c = (od.month + 1) // 2
+        raport("termin", od, do, pod, pdo, f"MVA termín {c}/{od.year} ({MES[od.month - 1]}–{MES[do.month - 1]})",
+               KOREN / "reporty" / "termin" / f"{od.year}-T{c}.md")
+    elif druh == "prehlad":
+        od = date.fromisoformat(nast().get("agenda_od") or nast()["mva_registrovana_od"])
+        do = date.fromisoformat(arg) if arg else dnes
+        raport("prehlad", od, do, od, od - timedelta(days=1), f"Priebežná rozvaha k {dt(do)}",
+               KOREN / "reporty" / "ROZVAHA.md")
+        t_od, t_do = termin_rozsah(do)
+        r = spocitaj(t_od, min(t_do, do), nast())
+        print(f"\nAktuálny MVA termín {dt(t_od)} – {dt(t_do)}: zatiaľ na odvod {kr(r['mva_von'] - r['mva_dnu'])}")
     else:
         print(__doc__); sys.exit(1)
+
+
+def termin_rozsah(d):
+    """Nórske MVA termíny: jan–feb, mar–apr, máj–jún, júl–aug, sep–okt, nov–dec."""
+    m1 = d.month - (d.month - 1) % 2
+    od = date(d.year, m1, 1)
+    do = date(d.year + (m1 + 2 > 12), (m1 + 1) % 12 + 1, 1) - timedelta(days=1)
+    return od, do
+
+
+MES = ["január", "február", "marec", "apríl", "máj", "jún", "júl", "august", "september", "október", "november", "december"]
 
 
 if __name__ == "__main__":
