@@ -33,7 +33,7 @@ Príjmy a výdavky bez MVA, **výsledok**, MVA na odvod, km · porovnanie s pred
 
 ## Pasce
 - **Suma sa zapisuje VRÁTANE MVA** (ako je na bločku); skript si MVA vyráta. Sadzba podľa kategórie (`nastavenie.json`); `strava` má 0 (väčšinou bez odpočtu).
-- **Dátum registrácie MVA** chýba v `nastavenie.json` → doplniť. Pred ním sa MVA z nákupov neodpočítava.
+- **MVA od 6. 11. 2026.** Nákupy a predaje pred týmto dňom sa rátajú bez MVA. Obdobie do 5. 11. (aj Faktura 19) má účtovníčka — neriešime.
 - **Zaplatené súkromne** (`platba: sukromne`) = utlegg — firma to musí Lukovi vrátiť.
 - **Bez dokladu** účtovníčka výdavok neuzná → agent pripomína v každom raporte.
 - E-shop: pred zápisom skontrolovať `zdroj` (číslo objednávky) — `agenda.py kontrola` hlási duplicity.

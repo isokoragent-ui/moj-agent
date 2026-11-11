@@ -6,4 +6,4 @@ týždenné a mesačné raporty (`_nastroje/agenda.py`).
 **Prečo:** vidieť, ako firma ide voči cieľu 40–50 tis. NOK, porovnávať obdobia a stavať marketing na číslach.
 **Zásady:** jeden zdroj pre každú vec — faktúry v `faktury/`, jazdy v `kjorebok/`, e-shop zo Shopify
 (agent sťahuje, Luk nediktuje). Sumy sa zapisujú s MVA. Agent nemá prístup do banky.
-**Otvorené:** dátum registrácie MVA.
+**MVA od 6. 11. 2026** (Luk). Od tohto dňa všetko presne a poctivo — každý výdavok s dokladom, plánovanie. Obdobie pred tým má účtovníčka.

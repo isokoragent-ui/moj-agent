@@ -13,7 +13,7 @@ nie pre živnosť (KÓD #25).*
 ## Čo kde je
 | Súbor | Čo |
 |---|---|
-| `nastavenie.json` | firma, adresa, ORG.NR., telefón, web, účet, banka, splatnosť (4 dni ako v šablóne), **MVA 25 %** (firma registrovaná v MVA od 11. 11. 2026) |
+| `nastavenie.json` | firma, adresa, ORG.NR., telefón, web, účet, banka, splatnosť (4 dni ako v šablóne), **MVA 25 %** (firma registrovaná v MVA **od 6. 11. 2026**; faktúra s dátumom pred tým sa vystaví bez MVA) |
 | `data/<číslo>.json` | zadanie faktúry (zdroj pravdy) |
 | `pdf/Faktura_<číslo>.pdf` | hotové PDF |
 | `ZOZNAM.md` | prehľad všetkých faktúr + stav (vystavená / odoslaná / zaplatená) |

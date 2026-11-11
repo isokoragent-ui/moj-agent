@@ -17,7 +17,7 @@
       "mva": 0
     }
   ],
-  "stav": "vystavená",
-  "poznamka": "Prepísaná z Lukovej Word šablóny (pôvodné PDF: sablona/Faktura_19_povodna_sablona.pdf).",
+  "stav": "zaplatená",
+  "poznamka": "Prepísaná z Lukovej Word šablóny (pôvodné PDF: sablona/Faktura_19_povodna_sablona.pdf). Zaplatená v októbri 2026, bez MVA (pred registráciou), má účtovníčka.",
   "mva_registrovana": false
 }
