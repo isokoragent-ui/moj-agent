@@ -1,0 +1,23 @@
+{
+  "cislo": 530,
+  "kunde": {
+    "navn": "Stranna bygg AS",
+    "adresse": [
+      "Røyslandsveien 81",
+      "4909 Songe"
+    ]
+  },
+  "fakturadato": "2026-10-04",
+  "forfallsdato": "2026-10-09",
+  "referanse": "Et hus i Songe",
+  "linjer": [
+    {
+      "beskrivelse": "Reparering av små skader på en dusjvegg",
+      "pris": 2500,
+      "antall": 1,
+      "mva": 25
+    }
+  ],
+  "stav": "vystavená",
+  "poznamka": "Prepísaná z Lukovej šablóny (sablona/Faktura_530_povodna_sablona.pdf). Stav platby zatiaľ neoverený — opýtať sa Luka."
+}

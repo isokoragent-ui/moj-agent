@@ -20,7 +20,14 @@ POUŽITIE:
     python3 _nastroje/agenda.py termin 2026-11-12     # MVA termín (2 mesiace), v ktorom je dátum
     python3 _nastroje/agenda.py prehlad               # priebežná rozvaha od 6. 11. 2026 po dnes + aktuálny termín
     python3 _nastroje/agenda.py kontrola 2026-11      # skontroluje záznamy mesiaca
+    python3 _nastroje/agenda.py rozpocet 2026-11      # NÁVRH rozpočtu z priemeru posledných 3 celých mesiacov
     (bez dátumu = dnes / tento týždeň / tento mesiac)
+    ... --firma zivnost                               # všetko to isté pre živnosť (02_PRACA/zivnost/agenda)
+                                                      # bez --firma = Isokor - Skandinavia AS
+
+ROZPOČET (nastavenie.json → "rozpocet_mesacne"): {"prijmy": 30000, "vydavky": {"auto": 2500, ...}}
+    Keď je vyplnený, mesačný raport ukáže plán vs. skutočnosť. Návrh robí agent
+    (príkaz rozpocet), do nastavenia ho zapíše až po Lukovom „áno“.
 
 ZÁZNAM (v zaznamy/RRRR-MM.json → {"zaznamy": [...]}):
     {"datum": "2026-11-12", "typ": "vydavok",            # vydavok / prijem / aktivita
@@ -38,11 +45,20 @@ import importlib.util, json, sys
 from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
+import firmy
 
-ROOT = Path(__file__).resolve().parent.parent
-KOREN = ROOT / "02_PRACA" / "agenda_as"
-FAKTURY = ROOT / "02_PRACA" / "faktury"
-KJOREBOK = ROOT / "02_PRACA" / "kjorebok" / "jazdy"
+ROOT = firmy.ROOT
+FIRMA = "as"
+KOREN = firmy.FIRMY["as"]["agenda"]
+FAKTURY = firmy.FIRMY["as"]["faktury"]
+KJOREBOK = firmy.FIRMY["as"]["kjorebok"]
+
+
+def nastav_firmu(kluc):
+    """Prepne agendu, faktúry a kjørebok na danú firmu — nič sa nemieša."""
+    global FIRMA, KOREN, FAKTURY, KJOREBOK
+    f = firmy.FIRMY[kluc]
+    FIRMA, KOREN, FAKTURY, KJOREBOK = kluc, f["agenda"], f["faktury"], f["kjorebok"]
 DNI = ["pondelok", "utorok", "streda", "štvrtok", "piatok", "sobota", "nedeľa"]
 
 
@@ -94,6 +110,7 @@ def faktury(od, do):
         return []
     spec = importlib.util.spec_from_file_location("faktura", ROOT / "_nastroje" / "faktura.py")
     fm = importlib.util.module_from_spec(spec); spec.loader.exec_module(fm)
+    fm.nastav_firmu(FIRMA)
     n = fm.nacitaj_nastavenie()
     out = []
     for c in fm.vsetky_cisla():
@@ -110,6 +127,8 @@ def nezaplatene_faktury():
 
 def jazdy(od, do):
     out = []
+    if KJOREBOK is None:
+        return out
     for m in mesiace_v(od, do):
         p = KJOREBOK / f"{m}.json"
         if p.exists():
@@ -169,6 +188,7 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
     n = nast()
     r, p = spocitaj(od, do, n), spocitaj(pred_od, pred_do, n)
     kan, kat = n["kanaly_prijmov"], n["kategorie_vydavkov"]
+    uct = n.get("uctovnicka") or "účtovníčka"
     L = [f"# {nazov}", "", f"*{n['firma']} · {dt(od)}" + (f" – {dt(do)}" if od != do else "")
          + f" · vygenerované {dt(date.today())} · sumy v NOK*", ""]
 
@@ -188,12 +208,13 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
         dni = (do - od).days + 1
         L += [f"Priemer na mesiac (30 dní): výsledok **{kr(r['vysledok'] / dni * 30)}** · cieľ {kr(n['ciel_mesacne_cisty'][0])}–{kr(n['ciel_mesacne_cisty'][1])}.", ""]
     if druh == "termin":
-        L += ["*MVA termín: tieto čísla sú podklad pre Anne Sofie — presné priznanie robí ona z papierových dokladov.*", ""]
+        L += [f"*MVA termín: tieto čísla sú podklad pre {uct} — presné priznanie sa robí z papierových dokladov.*", ""]
     if druh == "mesiac":
         lo, hi = n["ciel_mesacne_cisty"]
         pct = r["vysledok"] / lo * 100 if lo else 0
         L += [f"**Cieľ {kr(lo)}–{kr(hi)} čistého mesačne:** výsledok {kr(r['vysledok'])} = **{pct:.0f} %** dolnej hranice. "
-              "*(Výsledok firmy pred daňou a pred Lukovou mzdou — čo si z toho reálne vezme, rieši s účtovníčkou.)*", ""]
+              + (n.get("poznamka_vysledok") or "*(Výsledok firmy pred daňou a pred Lukovou mzdou — čo si z toho reálne vezme, rieši s účtovníčkou.)*"), ""]
+        L += rozpocet_tabulka(r, n)
 
     L += ["## Príjmy podľa kanála", ""]
     if r["prijmy"]:
@@ -206,9 +227,10 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
 
     L += ["## Výdavky podľa kategórie", ""]
     if r["vydavky"]:
-        L += ["| Kategória | Počet | S MVA | Bez MVA | MVA na odpočet |", "|---|---:|---:|---:|---:|"]
+        L += ["| Kategória | Počet | S MVA | Bez MVA | MVA na odpočet | Podiel |", "|---|---:|---:|---:|---:|---:|"]
         for k, v in sorted(r["vydavky"].items(), key=lambda x: -x[1][1]):
-            L.append(f"| {kat.get(k, {}).get('popis', k)} | {v[3]} | {kr(v[0])} | {kr(v[1])} | {kr(v[2])} |")
+            podiel = v[1] / r["vydavok_netto"] * 100 if r["vydavok_netto"] else 0
+            L.append(f"| {kat.get(k, {}).get('popis', k)} | {v[3]} | {kr(v[0])} | {kr(v[1])} | {kr(v[2])} | {podiel:.0f} % |")
     else:
         L.append("*Žiadne výdavky.*")
     L.append("")
@@ -247,11 +269,11 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
     # čo treba riešiť
     pozor = []
     if r["bez_dokladu"]:
-        pozor.append(f"**Výdavky bez papierového dokladu: {len(r['bez_dokladu'])}** — bez bločku/faktúry ich Anne Sofie neuzná: "
+        pozor.append(f"**Výdavky bez papierového dokladu: {len(r['bez_dokladu'])}** — bez bločku/faktúry ich {uct} neuzná: "
                      + "; ".join(f"{z['datum']} {z.get('kto', '')} {kr(float(z['suma']))}" for z in r["bez_dokladu"]))
     if r["sukromne"]:
         s = sum(float(z["suma"]) for z in r["sukromne"])
-        pozor.append(f"**Zaplatené súkromne: {kr(s)}** — firma to dlhuje Lukovi (utlegg), treba preplatiť z firemného účtu.")
+        pozor.append(f"**Zaplatené súkromne: {kr(s)}** — " + (n.get("poznamka_sukromne") or "firma to dlhuje Lukovi (utlegg), treba preplatiť z firemného účtu."))
     nz = nezaplatene_faktury()
     po = [f for f in nz if date.fromisoformat(f["forfallsdato"]) < date.today()]
     if nz:
@@ -261,11 +283,60 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
         pozor.append(f"Jazdy bez km v Kjørebok: {r['km_chyba']}.")
     if n.get("mva_registrovana_od") is None:
         pozor.append("Chýba dátum registrácie MVA v `nastavenie.json` — MVA sa zatiaľ ráta pri všetkých záznamoch.")
+    if druh == "mesiac" and not n.get("rozpocet_mesacne"):
+        pozor.append("Rozpočet nie je nastavený — po prvom celom mesiaci dát ho agent navrhne (`agenda.py rozpocet`).")
     L += ["## Treba riešiť", ""] + ([f"- {x}" for x in pozor] or ["*Nič.*"]) + [""]
 
     subor.parent.mkdir(parents=True, exist_ok=True)
     subor.write_text("\n".join(L), encoding="utf-8")
     print("\n".join(L)); print(f"\n→ {subor.relative_to(ROOT)}")
+
+
+# ───────────────────────── rozpočet
+def rozpocet_tabulka(r, n):
+    rp = n.get("rozpocet_mesacne")
+    if not rp:
+        return []
+    kat = n["kategorie_vydavkov"]
+    L = ["## Rozpočet vs. skutočnosť (bez MVA)", "", "| | Plán | Skutočnosť | Rozdiel |", "|---|---:|---:|---:|"]
+    if rp.get("prijmy"):
+        L.append(f"| **Príjmy** | {kr(rp['prijmy'])} | {kr(r['prijem_netto'])} | {kr(r['prijem_netto'] - rp['prijmy'])} |")
+    for k, plan in sorted(rp.get("vydavky", {}).items(), key=lambda x: -x[1]):
+        sk = r["vydavky"].get(k, [0, 0])[1]
+        L.append(f"| {kat.get(k, {}).get('popis', k)} | {kr(plan)} | {kr(sk)} | {kr(plan - sk)}{' ⚠️' if sk > plan else ''} |")
+    mimo = [k for k in r["vydavky"] if k not in rp.get("vydavky", {})]
+    for k in mimo:
+        L.append(f"| {kat.get(k, {}).get('popis', k)} *(mimo plánu)* | 0 | {kr(r['vydavky'][k][1])} | ⚠️ |")
+    plan_v = sum(rp.get("vydavky", {}).values())
+    L += [f"| **Výdavky spolu** | **{kr(plan_v)}** | **{kr(r['vydavok_netto'])}** | **{kr(plan_v - r['vydavok_netto'])}** |", ""]
+    return L
+
+
+def navrh_rozpoctu(mesiac):
+    """Priemer posledných 3 celých mesiacov pred `mesiac` → návrh. Nič nezapisuje do nastavenia."""
+    n = nast()
+    y, m = map(int, mesiac.split("-"))
+    obdobia = []
+    for _ in range(3):
+        y, m = (y - 1, 12) if m == 1 else (y, m - 1)
+        od = date(y, m, 1); do = date(y + (m == 12), m % 12 + 1, 1) - timedelta(days=1)
+        if od >= date.fromisoformat(n.get("agenda_od", "2000-01-01")):
+            obdobia.append(spocitaj(od, do, n))
+    if not obdobia:
+        print(f"Pre {mesiac} ešte nie je ani jeden celý mesiac dát od {n.get('agenda_od')} — rozpočet zatiaľ nenavrhnem (bolo by to tipovanie).")
+        return
+    k = len(obdobia)
+    kat = defaultdict(float)
+    for o in obdobia:
+        for kl, v in o["vydavky"].items():
+            kat[kl] += v[1] / k
+    prijmy = sum(o["prijem_netto"] for o in obdobia) / k
+    print(f"# Návrh rozpočtu {mesiac} — {n['firma']} (priemer {k} mes., bez MVA)\n")
+    print(f"Príjmy: {kr(prijmy)}")
+    for kl, v in sorted(kat.items(), key=lambda x: -x[1]):
+        print(f"  {kl:18} {kr(round(v, -1)):>10}")
+    print(f"Výdavky spolu: {kr(sum(kat.values()))} · výsledok {kr(prijmy - sum(kat.values()))}")
+    print("\n→ Agent k tomu pridá názor (kde škrtnúť, kam pridať) a po Lukovom „áno“ zapíše do nastavenie.json → rozpocet_mesacne.")
 
 
 # ───────────────────────── kontrola
@@ -309,12 +380,16 @@ def kontrola(mesiac):
 
 
 def main():
+    kluc, _, sys.argv[:] = firmy.vyber()
+    nastav_firmu(kluc)
     if len(sys.argv) < 2:
         print(__doc__); sys.exit(1)
     druh, arg = sys.argv[1], (sys.argv[2] if len(sys.argv) > 2 else None)
     dnes = date.today()
     if druh == "kontrola":
         sys.exit(0 if kontrola(arg or dnes.strftime("%Y-%m")) else 2)
+    if druh == "rozpocet":
+        return navrh_rozpoctu(arg or dnes.strftime("%Y-%m"))
     if druh == "den":
         d = date.fromisoformat(arg) if arg else dnes
         raport("den", d, d, d - timedelta(days=7), d - timedelta(days=7),

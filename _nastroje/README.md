@@ -11,5 +11,6 @@ Všetky sú bez závislostí (bash + Python 3 štandardná knižnica) a majú
 v hlavičke „PREČO" — aby nikto neskôr nezrušil to, čo nás chráni.
 - `tilsynslogg.py <chata.json>` — PDF záznam kontrol chaty pre poisťovňu (Hytteservice).
 - `kjorebok.py <RRRR-MM>` — mesačná kniha jázd (Kjørebok) súkromným autom pre Isokor Skandinavia AS → PDF pre účtovníčku. Dáta v `02_PRACA/kjorebok/`.
-- `faktura.py <číslo>|nova|zoznam` — faktúra Isokor - Skandinavia AS v PDF podľa Lukovej šablóny (Faktura 19). Dáta v `02_PRACA/faktury/`.
-- `agenda.py den|tyzden|mesiac|kontrola` — agenda firmy AS: denné záznamy (výdavky, príjmy, aktivity) + raporty; berie aj faktúry a kjørebok. Dáta v `02_PRACA/agenda_as/`.
+- `faktura.py <číslo>|nova|zoznam [--firma zivnost]` — faktúra v PDF podľa Lukovej šablóny. Bez prepínača = Isokor - Skandinavia AS (`02_PRACA/faktury/`, Faktura 19); `--firma zivnost` = Lukas Hric Liten Husservice (`02_PRACA/zivnost/faktury/`, Faktura 530).
+- `agenda.py den|tyzden|mesiac|termin|prehlad|kontrola|rozpocet [--firma zivnost]` — agenda firmy: denné záznamy (výdavky, príjmy, aktivity) + raporty + návrh rozpočtu; berie aj faktúry (a pri AS kjørebok). Bez prepínača = AS (`02_PRACA/agenda_as/`), `--firma zivnost` = `02_PRACA/zivnost/agenda/`.
+- `firmy.py` — jediné miesto, kde je určené, ktorá firma má ktoré priečinky (KÓD #25: nemiešať).
