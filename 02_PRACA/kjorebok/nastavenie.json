@@ -1,0 +1,14 @@
+{
+  "firma": {
+    "navn": "Isokor Skandinavia AS",
+    "orgnr": "922 112 975"
+  },
+  "sjafor": "Lukas Hric",
+  "bil": {
+    "merke": null,
+    "regnr": "DL 61036",
+    "km_stand_1_januar": null
+  },
+  "sats_per_km": null,
+  "sats_kilde": "Luk 11. 11.: zatiaľ bez sadzby — kniha jázd slúži ako prehľad km; sadzbu prípadne dorieši Luk s Anne Sofie"
+}
