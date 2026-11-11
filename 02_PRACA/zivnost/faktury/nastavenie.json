@@ -1,0 +1,19 @@
+{
+  "firma": "Lukas Hric Liten Husservice",
+  "adresa": [
+    "Nærestadveien 1",
+    "4985 Vegårshei"
+  ],
+  "org_nr": "912689441",
+  "telefon": "+47 48 642 178",
+  "web": "",
+  "bankkonto": "2938 13 10130",
+  "banka": "Østre Agder Sparebank",
+  "splatnost_dni": 5,
+  "mva_predvolene": 25,
+  "mva_registrovana_od": "2000-01-01",
+  "mva_stlpec": "suma",
+  "logo": [45, 15, 230, 71],
+  "posledne_cislo_pred_agentom": 530,
+  "poznamka": "Živnosť (enkeltpersonforetak). Podľa Lukovej šablóny Faktura 530 (4. 10. 2026). Registrovaná v MVA (na faktúre 'ORG.NR. … MVA', 25 %) — presný dátum registrácie nepoznáme, preto 2000-01-01 = vždy s MVA. Splatnosť 5 dní ako v šablóne. ÚČET JE INÝ NEŽ PRI AS (AS: 2907 31 44580)."
+}

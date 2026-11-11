@@ -11,6 +11,8 @@ POUŽITIE:
     python3 _nastroje/faktura.py 20              # → pdf/Faktura_20.pdf + aktualizuje ZOZNAM.md
     python3 _nastroje/faktura.py 20 --kontrola   # len prepočíta a vypíše, PDF nerobí
     python3 _nastroje/faktura.py zoznam          # prepíše ZOZNAM.md zo všetkých faktúr
+    ... --firma zivnost                          # to isté pre živnosť (02_PRACA/zivnost/faktury)
+                                                 # bez --firma = Isokor - Skandinavia AS
 
 DÁTA:
     02_PRACA/faktury/nastavenie.json  — firma, účet, ORG.NR., splatnosť
@@ -21,6 +23,7 @@ DÁTA:
      "forfallsdato": "2026-11-15",          # nepovinné → fakturadato + splatnost_dni
      "linjer": [{"beskrivelse": "Vask av belegningsstein", "pris": 240,
                  "antall": 43, "mva": 0}],   # mva v %, nepovinné → mva_predvolene
+     "referanse": "Et hus i Songe",          # nepovinné — tučný riadok pod dátumami (miesto/projekt)
      "stav": "vystavená",                    # vystavená / odoslaná / zaplatená
      "poznamka": ""}                         # len pre nás, na faktúru nejde
 """
@@ -33,8 +36,15 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 from reportlab.lib.utils import simpleSplit
+import firmy
 
-KOREN = Path(__file__).resolve().parent.parent / "02_PRACA" / "faktury"
+KOREN = firmy.FIRMY["as"]["faktury"]
+
+
+def nastav_firmu(kluc):
+    """Prepne všetky cesty na faktúry danej firmy (as / zivnost)."""
+    global KOREN
+    KOREN = firmy.FIRMY[kluc]["faktury"]
 LIB = "/usr/share/fonts/truetype/liberation/"
 pdfmetrics.registerFont(TTFont("A", LIB + "LiberationSans-Regular.ttf"))   # metriky ako Arial
 pdfmetrics.registerFont(TTFont("AB", LIB + "LiberationSans-Bold.ttf"))
@@ -126,7 +136,8 @@ def kresli(f, nast, cesta):
     c.drawRightString(P - 30, y(37), f"Faktura   {f['cislo']}")
     c.setLineWidth(0.8)
     c.line(R, y(46), P, y(46))
-    c.drawImage(str(KOREN / "sablona" / "logo.png"), 60, y(92), width=226, height=43,
+    lx, ltop, lw, lh = nast.get("logo", [60, 49, 226, 43])   # x, horný okraj, šírka, výška
+    c.drawImage(str(KOREN / "sablona" / "logo.png"), lx, y(ltop + lh), width=lw, height=lh,
                 preserveAspectRatio=True, mask="auto")
     c.setFont("AB", 12); c.drawString(R, y(61), nast["firma"])
     c.setFont("A", 10.5)
@@ -146,6 +157,8 @@ def kresli(f, nast, cesta):
     c.setFont("AB", 10.5); c.setFillColor(CERVENA)
     c.drawString(R + 108, y(158), datum(f["forfallsdato"]))
     c.setFillColor(colors.black)
+    if f.get("referanse"):
+        c.setFont("AB", 9); c.drawCentredString(R + 131, y(205), f["referanse"])
 
     # ─ tabuľka
     stl = {"pris": 352, "antall": 405, "mva": 455, "belop": 520}   # stredy stĺpcov
@@ -165,7 +178,10 @@ def kresli(f, nast, cesta):
             c.drawString(45, y(riadok_y + j * 11), t)
         c.drawCentredString(stl["pris"], y(riadok_y), suma(float(l["pris"])))
         c.drawCentredString(stl["antall"], y(riadok_y), suma(float(l.get("antall", 1))))
-        c.drawCentredString(stl["mva"], y(riadok_y), suma(l["mva"]) + " %")
+        if nast.get("mva_stlpec") == "suma":       # živnosť: suma MVA na riadku (ako v šablóne 530)
+            c.drawCentredString(stl["mva"], y(riadok_y), suma(round(l["belop"] * l["mva"] / 100, 2)))
+        else:                                       # AS: sadzba v %
+            c.drawCentredString(stl["mva"], y(riadok_y), suma(l["mva"]) + " %")
         c.drawCentredString(stl["belop"], y(riadok_y), suma(l["belop"]))
         riadok_y += 11 * len(riadky) + 5
     c.setFillColor(SEDA); c.rect(30, y(riadok_y + 1), P - 30, 4, stroke=0, fill=1)
@@ -192,12 +208,13 @@ def kresli(f, nast, cesta):
     orgnr = nast["org_nr"] + ("  MVA" if mva_od(f, nast) else "")
     c.drawString(35, y(800), f"ORG.NR.  {orgnr}")
     c.drawCentredString(W / 2, y(800), f"TELEFON: {nast['telefon']}")
-    c.drawRightString(P, y(800), nast["web"])
+    if nast.get("web"):
+        c.drawRightString(P, y(800), nast["web"])
     c.showPage(); c.save()
 
 
 def zoznam(nast):
-    riadky = ["# Zoznam faktúr — Isokor - Skandinavia AS", "",
+    riadky = [f"# Zoznam faktúr — {nast['firma']}", "",
               "*Generuje `python3 _nastroje/faktura.py zoznam` — ručne neupravuj.*", "",
               "| Č. | Dátum | Splatné | Klient | Suma (kr) | Stav |", "|---|---|---|---|---:|---|"]
     for n in vsetky_cisla():
@@ -214,12 +231,14 @@ def nova(nast):
     kostra = {"cislo": n, "kunde": {"navn": "", "adresse": ["", ""]},
               "fakturadato": date.today().isoformat(), "forfallsdato": "",
               "linjer": [{"beskrivelse": "", "pris": 0, "antall": 1, "mva": nast.get("mva_predvolene", 0)}],
-              "stav": "vystavená", "poznamka": ""}
+              "referanse": "", "stav": "vystavená", "poznamka": ""}
     cesta.write_text(json.dumps(kostra, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Kostra: {cesta}")
 
 
 def main():
+    kluc, _, sys.argv[:] = firmy.vyber()
+    nastav_firmu(kluc)
     if len(sys.argv) < 2:
         print(__doc__); sys.exit(1)
     nast = nacitaj_nastavenie()
@@ -229,7 +248,7 @@ def main():
         zoznam(nast); print("ZOZNAM.md aktualizovaný"); return
     f = nacitaj(sys.argv[1])
     chyby = prepocitaj(f, nast)
-    print(f"Faktura {f['cislo']} — {f['kunde'].get('navn')} — {datum(f['fakturadato'])} → splatné {datum(f['forfallsdato'])}")
+    print(f"[{nast['firma']}] Faktura {f['cislo']} — {f['kunde'].get('navn')} — {datum(f['fakturadato'])} → splatné {datum(f['forfallsdato'])}")
     for l in f["linjer"]:
         print(f"  {l['beskrivelse'][:45]:45} {suma(float(l['pris'])):>8} × {suma(float(l.get('antall', 1))):>5}  mva {suma(l['mva'])}%  = {suma(l['belop'])}")
     print(f"  Netto {suma(f['netto'])} · MVA {suma(f['mva_spolu'])} · Å BETALE {suma(f['spolu'])} kr")

@@ -1,0 +1,92 @@
+{
+  "firma": "Lukas Hric Liten Husservice (živnosť)",
+  "mena": "NOK",
+  "mva_registrovana_od": "2000-01-01",
+  "mva_poznamka": "Na faktúre 530 (4. 10. 2026) je 'ORG.NR. 912689441 MVA' a 25 % → živnosť je v MVA. Dátum registrácie nepoznáme, ráta sa vždy s MVA.",
+  "agenda_od": "2026-11-01",
+  "ciel_mesacne_cisty": [
+    40000,
+    50000
+  ],
+  "poznamka_vysledok": "*(Cieľ 40–50 tis. je za obe firmy spolu. Výsledok živnosti je pred daňou — v živnosti nie je mzda, z výsledku sa platí daň a sociálne odvody (trygdeavgift), preto si odkladaj rezervu.)*",
+  "poznamka_sukromne": "výdavok živnosti zaplatený zo súkromného účtu — daňovo sa uzná, ak je bloček; pre poriadok radšej platiť z účtu živnosti.",
+  "rozpocet_mesacne": null,
+  "kanaly_prijmov": {
+    "sluzby": "Práce zaplatené hneď (Vipps, hotovosť) bez faktúry",
+    "faktura": "Faktúry — počítajú sa z 02_PRACA/zivnost/faktury, sem NEzapisovať",
+    "ine": "Iné príjmy"
+  },
+  "kategorie_vydavkov": {
+    "material": {
+      "popis": "Materiál na zákazky (stavebný, spotrebný)",
+      "mva": 25
+    },
+    "naradie": {
+      "popis": "Náradie a vybavenie",
+      "mva": 25
+    },
+    "auto": {
+      "popis": "Palivo, mýto, parkovanie, servis, poistenie auta",
+      "mva": 25
+    },
+    "subdodavky": {
+      "popis": "Práca iných (subdodávatelia, prenájom techniky)",
+      "mva": 25
+    },
+    "odpad": {
+      "popis": "Odvoz odpadu, skládka",
+      "mva": 25
+    },
+    "pracovne_oblecenie": {
+      "popis": "Pracovné oblečenie, ochranné pomôcky",
+      "mva": 25
+    },
+    "telefon_internet": {
+      "popis": "Telefón, internet",
+      "mva": 25
+    },
+    "poistenie": {
+      "popis": "Poistenie živnosti (zodpovednosť, úraz)",
+      "mva": 0
+    },
+    "ucty_sluzby": {
+      "popis": "Účtovníctvo, poradenstvo, kurzy",
+      "mva": 25
+    },
+    "poplatky": {
+      "popis": "Bankové poplatky, Vipps",
+      "mva": 0
+    },
+    "strava": {
+      "popis": "Jedlo (pozor: väčšinou bez odpočtu MVA)",
+      "mva": 0
+    },
+    "kancelaria": {
+      "popis": "Kancelárske potreby, drobnosti",
+      "mva": 25
+    },
+    "ine": {
+      "popis": "Iné",
+      "mva": 25
+    }
+  },
+  "sposoby_platby": [
+    "ucet_zivnosti",
+    "karta_zivnosti",
+    "sukromne",
+    "hotovost",
+    "vipps",
+    "faktura_dodavatela"
+  ],
+  "typy_aktivit": [
+    "zakazka",
+    "ponuka",
+    "stretnutie",
+    "admin",
+    "ine"
+  ],
+  "doklady": "Papierové bločky a faktúry živnosti Luk odovzdáva Anne Sofie každé 2 mesiace (MVA termín) — ZVLÁŠŤ od dokladov AS. Fotky sa neukladajú — agent z nich len prečíta údaje.",
+  "mva_termin": "2-mesačný (Luk 11. 11. 2026) — jan–feb, mar–apr, máj–jún, júl–aug, sep–okt, nov–dec",
+  "rytmus_raportov": "týždenný (nedeľa) + mesačný (1. deň mesiaca); každé 2 mesiace termínový raport pre Anne Sofie",
+  "uctovnicka_poznamka": "Luk 11. 11. 2026: v generovaných dokumentoch a raportoch NIKDY meno účtovníčky — len „účtovníčka“."
+}

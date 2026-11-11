@@ -48,3 +48,4 @@
 ## Údržba nehnuteľností a opravy (živnosť)
 - **Čo:** údržba nehnuteľností, opravy, manuálne práce
 - **Stav:** ✅ beží — prevažne robím pre a.s.
+- **Faktúry, agenda, raporty, rozpočet (od 11. 11. 2026):** 🟢 oddelene od AS — ORG.NR. 912689441 MVA, účet 2938 13 10130, faktúry od č. 530 (šablóna Lukas Hric Liten Husservice) → `02_PRACA/zivnost/README.md`
