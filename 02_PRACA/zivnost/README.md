@@ -37,6 +37,7 @@ Rovnako ako pri AS (`02_PRACA/agenda_as/README.md`), len s `--firma zivnost`:
 - **Každé 2 mesiace (MVA termín, ako AS):** `agenda.py termin --firma zivnost` + kontrola dokladov → Luk odovzdá papier **Anne Sofie** (robí AS aj živnosť).
 
 ## Pasce
+- **Meno účtovníčky nikdy do raportov, PDF ani iných generovaných dokumentov** (Luk 11. 11.) — vždy len „účtovníčka“. Meno je len v pamäti (README, odovzdanie).
 - **Najväčšia pasca: zámena firiem.** Pred každou faktúrou a každým výdavkom musí byť jasné, ktorej firmy sa týka. Keď to Luk nepovie → jedna otázka „živnosť, alebo AS?“. Nikdy netipovať.
 - **Živnosť fakturuje AS** (Luk robí prevažne pre a.s.): faktúra živnosti pre Isokor - Skandinavia AS = príjem tu **a zároveň výdavok v AS** (`agenda_as`, kategória `ucty_sluzby` alebo `ine`, s odkazom na číslo faktúry). Zapísať na oboch stranách, inak AS ukazuje vyšší zisk, než má.
 - **Číslovanie:** Luk zadá číslo sám. Faktúry vystavené mimo agenta (vo Worde) treba dopísať do `faktury/data/`, inak `nova` navrhne zlé číslo.

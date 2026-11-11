@@ -37,7 +37,7 @@ ZÁZNAM (v zaznamy/RRRR-MM.json → {"zaznamy": [...]}):
      "druh": "marketing",                                # aktivita: marketing / predaj / stretnutie / ...
      "kto": "Jula Arendal", "popis": "Vysávač na dielňu",
      "platba": "firemna_karta",                          # sukromne = firma dlhuje Lukovi
-     "doklad": true,                                     # Luk má papierový bloček/faktúru (odovzdá Anne Sofie); false = chýba
+     "doklad": true,                                     # Luk má papierový bloček/faktúru (odovzdá účtovníčke); false = chýba
      "zdroj": "diktovane",                               # alebo "shopify:#1031" (proti duplicitám)
      "poznamka": ""}
 """
@@ -188,7 +188,6 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
     n = nast()
     r, p = spocitaj(od, do, n), spocitaj(pred_od, pred_do, n)
     kan, kat = n["kanaly_prijmov"], n["kategorie_vydavkov"]
-    uct = n.get("uctovnicka") or "účtovníčka"
     L = [f"# {nazov}", "", f"*{n['firma']} · {dt(od)}" + (f" – {dt(do)}" if od != do else "")
          + f" · vygenerované {dt(date.today())} · sumy v NOK*", ""]
 
@@ -208,7 +207,7 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
         dni = (do - od).days + 1
         L += [f"Priemer na mesiac (30 dní): výsledok **{kr(r['vysledok'] / dni * 30)}** · cieľ {kr(n['ciel_mesacne_cisty'][0])}–{kr(n['ciel_mesacne_cisty'][1])}.", ""]
     if druh == "termin":
-        L += [f"*MVA termín: tieto čísla sú podklad pre {uct} — presné priznanie sa robí z papierových dokladov.*", ""]
+        L += [f"*MVA termín: tieto čísla sú podklad pre účtovníčku — presné priznanie sa robí z papierových dokladov.*", ""]
     if druh == "mesiac":
         lo, hi = n["ciel_mesacne_cisty"]
         pct = r["vysledok"] / lo * 100 if lo else 0
@@ -269,7 +268,7 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
     # čo treba riešiť
     pozor = []
     if r["bez_dokladu"]:
-        pozor.append(f"**Výdavky bez papierového dokladu: {len(r['bez_dokladu'])}** — bez bločku/faktúry ich {uct} neuzná: "
+        pozor.append(f"**Výdavky bez papierového dokladu: {len(r['bez_dokladu'])}** — bez bločku/faktúry ich účtovníčka neuzná: "
                      + "; ".join(f"{z['datum']} {z.get('kto', '')} {kr(float(z['suma']))}" for z in r["bez_dokladu"]))
     if r["sukromne"]:
         s = sum(float(z["suma"]) for z in r["sukromne"])

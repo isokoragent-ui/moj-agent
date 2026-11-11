@@ -35,6 +35,7 @@ Príjmy a výdavky bez MVA, **výsledok**, MVA na odvod, km · porovnanie s pred
 - **ROZVAHA.md** sa prepíše pri každom zápise — vždy aktuálna.
 
 ## Pasce
+- **Meno účtovníčky nikdy do raportov, PDF ani iných generovaných dokumentov** (Luk 11. 11.) — vždy len „účtovníčka“. Doklady AS a živnosti idú v **oddelených obálkach**.
 - **Suma sa zapisuje VRÁTANE MVA** (ako je na bločku); skript si MVA vyráta. Sadzba podľa kategórie (`nastavenie.json`); `strava` má 0 (väčšinou bez odpočtu).
 - **MVA od 6. 11. 2026.** Nákupy a predaje pred týmto dňom sa rátajú bez MVA. Obdobie do 5. 11. (aj Faktura 19) má účtovníčka — neriešime.
 - **Zaplatené súkromne** (`platba: sukromne`) = utlegg — firma to musí Lukovi vrátiť.
