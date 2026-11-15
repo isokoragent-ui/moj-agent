@@ -40,8 +40,11 @@ def bottle(path):
 IMG = {k: load(f) for k, f in [(1, '1_fjord.jpg'), (2, '2_hytte_valp.jpg'), (3, '3_fjellsko.jpg'), (4, '4_bord.jpg')]}
 SH, SW = IMG[1].shape[:2]
 BASE = max(SW / W, SH / H)
-B500, B100 = bottle('flasa_500ml.png'), bottle('flasa_100ml.png')
-BOT_X = {id(B500): 577.0, id(B100): 280.0}         # stred dna v obrázku fľaše
+# 500 ml s NOVOU nórskou etiketou (Luk 15. 11.: „nech môžeme video používať aj do budúcnosti“):
+# ../kjokkenpakken_jul/nalep.py ../../../etikety/Isokor_EcoNeutral_500ml_etikett_NO.png flasa_500ml_nova_etiketa.png
+# 100 ml nová etiketa zatiaľ neexistuje → vo videu nie je (stará fotka: flasa_100ml.png).
+B500 = bottle('flasa_500ml_nova_etiketa.png')
+BOT_X = {id(B500): 414.0}                          # stred dna v obrázku fľaše
 TXT = {k: load_rgba(os.path.join(D, 'texty_wide' if WIDE else 'texty', k + '.png')) for k in ['t1', 't2', 't3', 't4', 't6', 't7']}
 
 clamp = lambda x, a=0.0, b=1.0: max(a, min(b, x))
@@ -132,10 +135,8 @@ def scene3(t):
 
 
 # ---------- 4: stôl — obe fľaše dosadnú, prejde svetlo, záver ----------
-P500 = np.array([780.0, 2200.0 if not WIDE else 2185.0])
-P100 = np.array([1025.0, 1968.0])
+P500 = np.array([800.0, 2200.0 if not WIDE else 2185.0])
 H500 = 920 if WIDE else 1250
-H100 = 480 if WIDE else 650
 
 
 def put(src, spr, h, base, k, sweep):
@@ -166,7 +167,6 @@ def put(src, spr, h, base, k, sweep):
 def scene4(t):
     u = lin(t, 10.8, 18.0)
     src = IMG[4]
-    src = put(src, B100, H100, P100, lin(t, 11.6, 12.6), lin(t, 13.0, 14.0))
     src = put(src, B500, H500, P500, lin(t, 11.0, 12.1), lin(t, 12.8, 13.8))
     return camera(src, 1.05 + 0.04 * ease(u), 800, 1740 if WIDE else 1440)
 
