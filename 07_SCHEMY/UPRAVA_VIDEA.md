@@ -32,6 +32,7 @@ prestrihať a upraviť na sociálne siete.
 - ⚠️ Zdroj 360p sa ostrým nestane — finál ideálne z originálu 1080p.
   AI „vylepšenie" (video-to-video) nepoužívať: mení reálny záber produktu.
 - Hudba v Lukových videách je v poriadku (Luk potvrdil 19. 10.).
+- **Od 15. 11.: produktové videá robiť BEZ zvuku** (`-an`) — Luk si hudbu pridáva sám ručne (napr. v Instagrame/TikToku).
 
 ## Čo agent spraví sám / kde čaká na „áno"
 - **sám:** analýza, strih, návrh textov, kontrola
@@ -48,3 +49,14 @@ isokor-skandinavia.no/products/peisglassrens
 #peis #vedovn #rengjøring #isokor
 
 - ⚠️ **Artlist hudba sa z cloudu nestiahne** (`cms-public-artifacts.artlist.io` blokované proxy, overené 29. 10. 2026), hoci `download_track` vráti odkaz. Náhrada: vlastná krátka hudba z `02_PRACA/grafika/hytteservice/hudba.py` (numpy → WAV → ffmpeg mux), bez licenčných problémov.
+
+## Realistické video z AI fotiek (prvýkrát 2026-11-15, Cleaner v2)
+- **Cesta, ktorá funguje:** agent napíše prompty (EN, 9:16, *bez fliaš, bez textu*), Luk vygeneruje v **Gemini** a vloží do chatu → agent rozpohybuje (`02_PRACA/grafika/zdroj/cleaner_natur/video2.py`) a **skutočnú fľašu vloží sám** — etiketa ostane presná, sprej sa dá nasmerovať z hubice.
+- Pred/po (špinavé → čisté) = **dva obrázky z toho istého rozhovoru v Gemini** („Edit the previous image… change nothing else“) → sedia na pixel, stieranie je prelínanie cez pohyblivú masku.
+- ⚠️ **Canva a Artlist sa z cloudu nestiahnu** (sieť blokuje `www.canva.com`, `media.canva.com`, `export-download.canva.com`, `cms-public-artifacts.artlist.io`; overené 15. 11.). Canva vráti len náhľad 112 px. Povolenie cez mobilnú appku nejde → Luk musí z počítača (Prostredie → Edit → Allowed domains).
+- ⚠️ **OpenCV `warpAffine` s float64 vstupom ignoruje okraj „reflect“ → čierne pásy** na okraji. Vždy pretypovať na float32.
+- ⚠️ Kamera (zoom/otočenie) nesmie vyjsť z obrázka → zrkadlové artefakty. Pri otočení ~2° treba zoom aspoň 1,12.
+- ⚠️ Fľašu a hmlu kresliť **až vo výstupe (po kamere)**, nie do zdrojovej fotky — inak ju okraj fotky oreže rovnou čiarou.
+- Ústie hubice v `flaska_fett.png`: bod (1145, 200), strieka doprava → pri zrkadlení strieka doľava.
+- ⚠️ Odstrániť objekt z fotky (podstavec) vlastným skriptom nejde čisto (šmuhy, hrany) → nechať to na Gemini („Edit this image: remove … keep … exactly where they are“).
+- **Prispôsobenie Lukovej hudby k videu** (15. 11., `zdroj/cleaner_natur/hudba_strih.py`): zmerať tempo a mriežku úderov (spektrálny tok + hľadanie BPM/fázy), nájsť posledný akord skladby → **začiatok skladby + strih na úder taktu do jej záveru**, posledný akord položiť na hlavný moment videa (produkt). Prelínanie 80 ms, aby necvaklo. Hlasitosť pre siete `loudnorm=I=-14`.

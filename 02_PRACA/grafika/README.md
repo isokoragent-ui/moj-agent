@@ -65,3 +65,46 @@ Zdroj: `zdroj/kjokkenpakken_jul/norsk.html` → `node render_norsk.js`. Pletenin
 ### Video Kjøkkenpakken — nórska verzia (2026-10-30)
 `kjokkenpakken_norsk_story.mp4` (1080×1920) a `kjokkenpakken_norsk_wide.mp4` (1920×1080) — 14 s, s hudbou (`hytteservice/hudba.py`, hracia skrinka). Scény: „Ribbe – eller pinnekjøtt?" → „Uansett: kjøleskapet trenger en vask før julematen" → fľaše na tanieri, visačka 349,- spadne a zahojdá sa, „du sparer 48,-", isokor-skandinavia.no. Pletený pás sa posúva, sneží.
 Zdroj: `zdroj/kjokkenpakken_jul/video_norsk.html` (`?f=wide` pre šírku) + `frames_norsk.js` (`OUT=…`, `WIDE=1`).
+
+## Video Cleaner — „Fra naturen til kjøkkenbenken“ (2026-11-15)
+`cleaner_natur_story.mp4` — 15 s, 1080 × 1920, 30 fps, s hudbou (vlastná, `zdroj/cleaner_natur/hudba.py`). Produkt: **Isokor Fett- og flekkfjerner** (SK: Cleaner). Štýl: decentný, prírodný, skoro luxusný — krémový papier, tmavozelená, zlatá; písmo Cormorant Garamond + Jost.
+Scény: rastliny zo zloženia sa samy nakreslia — Appelsin, Sitron, Mandel, Seder („Det begynner i naturen“) → zlaté kvapky oleja z nich stečú do jednej („Ekte planteoljer · Dråpe for dråpe“) → kvapka padne do fľaše („Samlet i én flaske“) → zelená kamenná linka s mastnotou, sprej, utretie, lesk („Fettet løsner. Benken skinner.“) → fľaša + rastlinky, „Naturlig · Miljøvennlig · Biologisk nedbrytbar“, isokor-skandinavia.no.
+Tvrdenia len z etikety (oleje: appelsin, sitron, mandel, seder sú v zložení). Stav: 🟡 návrh v1 — čaká na Lukovu kontrolu.
+Zdroj: `zdroj/cleaner_natur/video.html` + `frames.js` (`OUT=…`, `KONTROLA=1.0,5.5` = len vybrané časy) → `ffmpeg -framerate 30 -i f%04d.jpg -i hudba.wav -c:v libx264 -pix_fmt yuv420p -crf 18 -af loudnorm=I=-16 -c:a aac`.
+
+### Video Cleaner v2 — realistické (2026-11-15)
+`cleaner_natur_v2_story.mp4` — 15 s, 1080 × 1920, 30 fps, s hudbou. Luk: „koncept veľmi dobrý, ale realistickejšie“. Fotky vygeneroval Luk v Gemini podľa `zdroj/cleaner_natur/PROMPTY_GEMINI.md` (`zdroj/cleaner_natur/in/1–6`), agent ich rozpohyboval a vložil **skutočnú fľašu** (`kjokkenpakken_jul/flaska_fett.png`).
+Scény: sad s pomarančmi, ranný opar („Det begynner i naturen“) → suroviny na kameni, záblesky na kvapkách oleja („Ekte planteoljer · Appelsin, sitron, mandel og seder“) → zlatá kvapka sa odtrhne od cédra a padá („Dråpe for dråpe“) → fľaša zostúpi na travertínový podstavec, prebehne svetlo („Samlet i én flaske“) → kuchyňa: fľaša prilieta, **2× strikne z hubice** šikmo na mastnotu, kvapôčky na linke, stieranie odkryje čistú linku (obrázok 6), lesk („Fettet løsner. Benken skinner.“) → záver na podstavci: „Fett- og flekkfjerner · Naturlig · Miljøvennlig · Biologisk nedbrytbar“ + isokor-skandinavia.no.
+Stav: 🟡 návrh v2 — čaká na Lukovu kontrolu.
+Zdroj: `node texty.js` (texty → PNG) → `python3 video2.py PRIECINOK [časy]` (snímky; s časmi len kontrolné) → `python3 hudba.py hudba.wav 15 5.95 10.35,10.85` → `ffmpeg -framerate 30 -i f%04d.jpg -i hudba.wav -c:v libx264 -pix_fmt yuv420p -crf 20 -preset slow -af loudnorm=I=-16 -c:a aac`. Potrebuje `pip install opencv-python-headless`. Render celého videa ~3 min.
+
+### Video Cleaner v3 — jednoduchšie, BEZ ZVUKU (2026-11-15) ✅ aktuálna verzia
+`cleaner_natur_v3_story.mp4` — 12 s, 1080 × 1920, 30 fps, **bez zvukovej stopy** (Luk: hudbu si pridá sám ručne). Luk: kuchyňa so striekaním zbytočná → preč; fľaša väčšia, bez podstavca, medzi surovinami.
+Scény: sad („Det begynner i naturen“) → suroviny („Ekte planteoljer · Appelsin, sitron, mandel og seder“) → kvapka padá („Dråpe for dråpe“) → veľká fľaša jemne dosadne na ľan pred pomaranč, list, céder a mandle, svetlo zľava, prebehne odlesk („Samlet i én flaske“) → „Fett- og flekkfjerner · Naturlig · Miljøvennlig · Biologisk nedbrytbar“ + isokor-skandinavia.no.
+Obrázok bez podstavca: Luk v Gemini (`in/4b_bez_podstavca.jpg`, prompt 4b). Zdroj: `zdroj/cleaner_natur/video3.py` → `ffmpeg -framerate 30 -i f%04d.jpg -c:v libx264 -pix_fmt yuv420p -crf 20 -preset slow -an`.
+- 2026-11-15 (neskôr): **fľaša vymenená za Lukovu novú fotku s etiketou CLEANER** (nové logo Isokor) — `zdroj/cleaner_natur/in/flasa_cleaner_nova_foto.jpg` → `python3 vystrihni_flasu.py` (rembg isnet + očistenie odrezkov kartónu, spúšť bez hnedého nádychu) → `flasa_cleaner_nova.png`; v scéne +8 % jas (fotka bola v šere). Záver: „Isokor · **Cleaner** · *Fett- og flekkfjerner*“ (na fľaši je CLEANER, v e-shope „Isokor Fett- og flekkfjerner“, v popise „Isokor Cleaner“).
+- 2026-11-15: **verzia s Lukovou hudbou** `cleaner_natur_v3_story_hudba.mp4` — skladba „Sunlight on the Floor“ (Luk dodal, `zdroj/cleaner_natur/in/hudba_Sunlight_on_the_Floor.mp3`, 60,7 s, 120 BPM). `python3 hudba_strih.py hudba.wav`: začiatok skladby (1,70–8,01 s) → strih na úder taktu → záver skladby (52,01–57,70 s); posledný akord udrie vo videu v 8,31 s (fľaša dosadla, „Samlet i én flaske“), doznie pod záverečným textom. Mux: `-c:v copy -af loudnorm=I=-14:TP=-1.5 -c:a aac`. Bez zvuku ostáva `cleaner_natur_v3_story.mp4`.
+- 2026-11-15: **predĺžené na 18 s** (Luk: zábery príliš rýchle, treba čas na čítanie). Sad 4,2 s · suroviny 3,8 s · kvapka 3,6 s (pád v jemnom spomalení) · fľaša + záver 7,6 s (záverečný text 3,4 s). `video3.py`: SCENES majú nový aj pôvodný čas, pohyb sa spomalí úmerne. Hudba: `hudba_strih.py` (predvolené 18 s) — strih na takt v 10,31 s pri prechode na fľašu, posledný akord v 14,31 s so záverečným textom. Oba súbory (`cleaner_natur_v3_story.mp4` bez zvuku, `…_hudba.mp4`) prepísané na 18 s.
+- 2026-11-15 (neskôr): **späť na fľašu s nórskou etiketou FETT- OG FLEKKFJERNER** (Luk) a záverečný nadpis „Fett- og flekkfjerner“ → `08_ROZHODNUTIA/2026-11-15_Cleaner_etiketa_vo_videu.md`. Fotka s „CLEANER“ len záloha.
+
+### Video Cleaner v3 — na šírku pre web (2026-11-15)
+1920 × 1080, 18 s, rovnaké zábery a časovanie ako 9:16. Rozloženie: **vľavo krémový panel 800 px s textami** (čitateľné, nič neprekrývajú), **vpravo zábery** (fotky sú na výšku → výrez s väčším zoomom, fľaša na šírku menšia, aby bola celá).
+| Súbor | Na čo |
+|---|---|
+| `cleaner_natur_v3_wide_web.mp4` | **web** (úvodná stránka / produkt), bez zvuku, 3,4 MB |
+| `cleaner_natur_v3_wide.mp4` | bez zvuku, plná kvalita (25 MB) |
+| `cleaner_natur_v3_wide_hudba.mp4` | s hudbou „Sunlight on the Floor“ (YouTube, Facebook) |
+Zdroj: `WIDE=1 node texty.js` (texty z `texty_wide.html`) → `WIDE=1 python3 video3.py PRIECINOK` → web: `ffmpeg … -vf hqdn3d=2:2:3:3 -crf 26 -an` (jemné odšumenie zrna → 7× menší súbor).
+
+## Video EcoNeutral — „Frisk luft – også inne“ (2026-11-15)
+Rovnaký postup a štýl ako Cleaner v3 (séria), chladnejšia severská paleta. 18 s, **bez zvuku** (hudbu pridá Luk, prípadne `hudba_strih.py`).
+Zábery (Gemini, `zdroj/econeutral_natur/in/1–4`, prompty v `PROMPTY_GEMINI.md`): fjord v hmle — hmla sa valí po vode („Isokor EcoNeutral · Frisk luft – også inne“) → hytte, šteňa na vlnenej deke **dýcha** („Dermatologisk testet · Trygg for både mennesker og dyr“) → turistické topánky a ponožky, prach v svetle („Nøytraliserer lukt · Sko, tepper, madrasser og bilinteriør“) → stôl z brezy: **skutočné fľaše 500 ml + 100 ml** (Lukove fotky s NO etiketou, `vystrihni_flase.py`, vyváženie bielej) dosadnú, prejde svetlo („Etterlater en frisk duft“) → „Isokor · EcoNeutral · Lukt- og flekkfjerner · Naturlig · Miljøvennlig · Biologisk nedbrytbar“ + isokor-skandinavia.no. Všetky tvrdenia z etikety.
+| Súbor | Na čo |
+|---|---|
+| `econeutral_story.mp4` | 1080×1920, Reels/TikTok/Stories |
+| `econeutral_wide_web.mp4` | 1920×1080, web, 2,6 MB |
+| `econeutral_wide.mp4` | 1920×1080, plná kvalita (YouTube, Facebook) |
+Zdroj: `node texty.js` + `WIDE=1 node texty.js` → `python3 video_eco.py PRIECINOK` (`WIDE=1` na šírku) → ffmpeg ako pri Cleaneri.
+Stav: 🟡 návrh — čaká na Lukovu kontrolu.
+- 2026-11-15 (neskôr): **nová nórska etiketa** na 500 ml (`kjokkenpakken_jul/nalep.py` + `etikety/Isokor_EcoNeutral_500ml_etikett_NO.png` → `zdroj/econeutral_natur/flasa_500ml_nova_etiketa.png`, rovnaká fľaša ako Fett- og flekkfjerner = séria). **100 ml vyradená** — nová etiketa pre EcoNeutral 100 ml zatiaľ neexistuje (Luk chce video použiteľné do budúcna). **Hudba „Salt Air and Cedar“** (Luk, `in/hudba_Salt_Air_and_Cedar.mp3`, 157 s, mriežka úderov 0,05 + 0,4k s): začiatok 0–10,85 s → stíšenie 0,5 s → strih na úder pri prechode na fľašu → záverečná fráza 146,05–153,2 s; posledný akord vo videu 15,25 s. `python3 ../cleaner_natur/hudba_strih.py out.wav 0 10.85 146.05 153.2 18 ../econeutral_natur/in/hudba_Salt_Air_and_Cedar.mp3 0.5`. Súbory s hudbou: `econeutral_story_hudba.mp4`, `econeutral_wide_hudba.mp4`; bez zvuku: `econeutral_story.mp4`, `econeutral_wide.mp4`, `econeutral_wide_web.mp4` (web).
+- 2026-11-15 (neskôr): **100 ml späť, s novou etiketou** (Luk: „etikety budú rovnaké, len rozdiel vo veľkosti“). `etiketa_100ml.py` → kópia NO etikety 500 ml s „100ml“ (písmo Khand Bold, farba z originálu) — **len pre video, nie tlačová** (na tlač treba rozmer 100 ml etikety). `nalep_valec.py` = všeobecná verzia `nalep.py` (geometria fľaše ako parametre, svetlo po stĺpcoch zo starej etikety) → `flasa_100ml_nova_etiketa.png`. Oba videá aj web verzia prerenderované.
