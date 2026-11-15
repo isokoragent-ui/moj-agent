@@ -27,11 +27,11 @@ IMG = {k: load(f) for k, f in [(1, '1_sad.jpg'), (2, '2_suroviny.jpg'), (3, '3_k
                                   (4, '4b_bez_podstavca.jpg')]}
 SH, SW = IMG[1].shape[:2]                  # 2752 × 1536
 BASE = max(SW / W, SH / H)                 # zdrojové px na výstupný px
-BOT = load_rgba(os.path.join(D, 'flasa_cleaner_nova.png'))   # Lukova fotka s novou etiketou CLEANER (vystrihni_flasu.py)
+BOT = load_rgba(os.path.join(D, '..', 'kjokkenpakken_jul', 'flaska_fett.png'))   # nórska etiketa FETT- OG FLEKKFJERNER (Luk 15. 11.)
 BOT[:, :, :3] *= np.array([1.0, 0.985, 0.95], np.float32)   # teplejšie, nech sedí k rannému svetlu
 BH, BW = BOT.shape[:2]
 NOZ = np.array([1145.0, 200.0])           # ústie hubice v obrázku fľaše (strieka doprava)
-BODY_X, BODY_Y = 410.0, 2992.0             # stred dna fľaše
+BODY_X, BODY_Y = 414.0, 2992.0             # stred dna fľaše
 TXT = {k: load_rgba(os.path.join(D, 'texty', k + '.png')) for k in ['t1', 't2', 't3', 't4', 't6', 't7']}
 
 clamp = lambda x, a=0.0, b=1.0: max(a, min(b, x))
