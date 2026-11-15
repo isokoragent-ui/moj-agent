@@ -59,3 +59,4 @@ isokor-skandinavia.no/products/peisglassrens
 - ⚠️ Fľašu a hmlu kresliť **až vo výstupe (po kamere)**, nie do zdrojovej fotky — inak ju okraj fotky oreže rovnou čiarou.
 - Ústie hubice v `flaska_fett.png`: bod (1145, 200), strieka doprava → pri zrkadlení strieka doľava.
 - ⚠️ Odstrániť objekt z fotky (podstavec) vlastným skriptom nejde čisto (šmuhy, hrany) → nechať to na Gemini („Edit this image: remove … keep … exactly where they are“).
+- **Prispôsobenie Lukovej hudby k videu** (15. 11., `zdroj/cleaner_natur/hudba_strih.py`): zmerať tempo a mriežku úderov (spektrálny tok + hľadanie BPM/fázy), nájsť posledný akord skladby → **začiatok skladby + strih na úder taktu do jej záveru**, posledný akord položiť na hlavný moment videa (produkt). Prelínanie 80 ms, aby necvaklo. Hlasitosť pre siete `loudnorm=I=-14`.
