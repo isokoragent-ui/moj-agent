@@ -95,3 +95,14 @@ Obrázok bez podstavca: Luk v Gemini (`in/4b_bez_podstavca.jpg`, prompt 4b). Zdr
 | `cleaner_natur_v3_wide.mp4` | bez zvuku, plná kvalita (25 MB) |
 | `cleaner_natur_v3_wide_hudba.mp4` | s hudbou „Sunlight on the Floor“ (YouTube, Facebook) |
 Zdroj: `WIDE=1 node texty.js` (texty z `texty_wide.html`) → `WIDE=1 python3 video3.py PRIECINOK` → web: `ffmpeg … -vf hqdn3d=2:2:3:3 -crf 26 -an` (jemné odšumenie zrna → 7× menší súbor).
+
+## Video EcoNeutral — „Frisk luft – også inne“ (2026-11-15)
+Rovnaký postup a štýl ako Cleaner v3 (séria), chladnejšia severská paleta. 18 s, **bez zvuku** (hudbu pridá Luk, prípadne `hudba_strih.py`).
+Zábery (Gemini, `zdroj/econeutral_natur/in/1–4`, prompty v `PROMPTY_GEMINI.md`): fjord v hmle — hmla sa valí po vode („Isokor EcoNeutral · Frisk luft – også inne“) → hytte, šteňa na vlnenej deke **dýcha** („Dermatologisk testet · Trygg for både mennesker og dyr“) → turistické topánky a ponožky, prach v svetle („Nøytraliserer lukt · Sko, tepper, madrasser og bilinteriør“) → stôl z brezy: **skutočné fľaše 500 ml + 100 ml** (Lukove fotky s NO etiketou, `vystrihni_flase.py`, vyváženie bielej) dosadnú, prejde svetlo („Etterlater en frisk duft“) → „Isokor · EcoNeutral · Lukt- og flekkfjerner · Naturlig · Miljøvennlig · Biologisk nedbrytbar“ + isokor-skandinavia.no. Všetky tvrdenia z etikety.
+| Súbor | Na čo |
+|---|---|
+| `econeutral_story.mp4` | 1080×1920, Reels/TikTok/Stories |
+| `econeutral_wide_web.mp4` | 1920×1080, web, 2,6 MB |
+| `econeutral_wide.mp4` | 1920×1080, plná kvalita (YouTube, Facebook) |
+Zdroj: `node texty.js` + `WIDE=1 node texty.js` → `python3 video_eco.py PRIECINOK` (`WIDE=1` na šírku) → ffmpeg ako pri Cleaneri.
+Stav: 🟡 návrh — čaká na Lukovu kontrolu.
