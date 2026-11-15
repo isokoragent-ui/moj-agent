@@ -1,9 +1,9 @@
 """Prispôsobí Lukovu skladbu dĺžke videa: začiatok skladby + strih na úder taktu do jej záveru.
 „Sunlight on the Floor“ (in/hudba_Sunlight_on_the_Floor.mp3): 120 BPM, takt = 2,0 s, hudba nastupuje v 2,01 s,
 posledný akord v 54,01 s, doznie ~57,7 s (analýza 15. 11.).
-Video v3 (12 s): skladba 1,70–8,01 s → video 0,00–6,31 s; strih na takt → skladba 52,01–57,70 s → video 6,31–12,00 s.
-Posledný akord tak udrie vo videu v 8,31 s — keď fľaša dosadne a príde „Samlet i én flaske“.
-Použitie: python3 hudba_strih.py vystup.wav"""
+Video v3 18 s (predvolené): skladba 1,70–12,01 s → video 0–10,31 s (prechod na fľašu); strih na takt → skladba 50,01–57,70 s
+→ video 10,31–18,00 s. Posledný akord udrie v 14,31 s, keď príde záverečný text, a doznie do konca.
+Použitie: python3 hudba_strih.py vystup.wav [A0 CUT_A CUT_B B1 DĹŽKA]"""
 import subprocess, sys
 import numpy as np
 
@@ -13,8 +13,9 @@ raw = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', SRC, '-f', 'f32le', 
                      capture_output=True, check=True).stdout
 x = np.frombuffer(raw, np.float32).reshape(-1, 2).astype(np.float64)
 
-A0, CUT_A, CUT_B, B1 = 1.70, 8.01, 52.01, 57.70     # skladba: úvod do CUT_A, záver od CUT_B
-DUR = 12.0
+# skladba: úvod A0–CUT_A, záver CUT_B–B1 (strihy na úder taktu = 2,01 + 2k s); predvolené = video 18 s
+# 12 s verzia: python3 hudba_strih.py out.wav 1.70 8.01 52.01 57.70 12
+A0, CUT_A, CUT_B, B1, DUR = [float(v) for v in sys.argv[2:7]] if len(sys.argv) > 6 else (1.70, 12.01, 50.01, 57.70, 18.0)
 XF = 0.08                                            # krátke prelínanie na údere (bez cvaknutia)
 
 a = x[int(A0 * SR):int((CUT_A + XF / 2) * SR)]

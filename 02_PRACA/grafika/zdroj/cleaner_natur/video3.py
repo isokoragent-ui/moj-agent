@@ -8,7 +8,7 @@ import cv2
 D = os.path.dirname(os.path.abspath(__file__))
 OUT = sys.argv[1]
 os.makedirs(OUT, exist_ok=True)
-FPS, DUR = 30, 12.0
+FPS, DUR = 30, 18.0          # 15. 11.: zábery predĺžené (Luk: viac času na čítanie textov)
 W, H = 1080, 1920
 
 
@@ -213,9 +213,10 @@ def scene_bottle(t):  # fľaša medzi surovinami, 6.7–12
     return camera(src, 1.05 + 0.04 * ease(u), 767, 1440)
 
 
-SCENES = [(scene1, 0, 2.9), (scene2, 2.5, 5.3), (scene3, 4.9, 7.1), (scene_bottle, 6.7, 12.01)]
-TEXTS = [('t1', .5, 2.6, .6, .4), ('t2', 3.0, 5.0, .5, .4), ('t3', 5.4, 6.9, .5, .4), ('t4', 8.0, 9.6, .5, .4),
-         ('t6', 9.9, 99, .6, .1), ('t7', 10.4, 99, .5, .1)]
+# (scéna, začiatok, koniec v novom videu, pôvodný začiatok, pôvodný koniec) — pohyb scény sa spomalí úmerne
+SCENES = [(scene1, 0, 4.2, 0, 2.9), (scene2, 3.8, 7.6, 2.5, 5.3), (scene3, 7.2, 10.8, 4.9, 7.1), (scene_bottle, 10.4, 18.01, 6.7, 12.01)]
+TEXTS = [('t1', .6, 3.9, .6, .5), ('t2', 4.3, 7.3, .6, .5), ('t3', 7.8, 10.4, .6, .5), ('t4', 12.0, 14.2, .6, .5),
+         ('t6', 14.6, 99, .7, .1), ('t7', 15.2, 99, .6, .1)]
 
 GRAIN = np.random.default_rng(1).normal(0, 1, (H // 2, W // 2)).astype(np.float32)
 yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
@@ -224,10 +225,10 @@ VIG = 1 - 0.22 * np.clip(((xx - W / 2) / (W * .62)) ** 2 + ((yy - H / 2) / (H * 
 
 def frame(t):
     img = None
-    for fn, a, b in SCENES:
+    for fn, a, b, oa, ob in SCENES:
         if a <= t < b:
             op = min(ease(lin(t, a, a + 0.4)) if a > 0 else 1, 1 - ease(lin(t, b - 0.4, b)) if b < DUR else 1)
-            f = fn(t)
+            f = fn(oa + (t - a) * (ob - oa) / (b - a))
             img = f if img is None else img * (1 - op) + f * op
     for k, a, b, fi, fo in TEXTS:
         op = win(t, a, b, fi, fo)
