@@ -32,6 +32,7 @@ prestrihať a upraviť na sociálne siete.
 - ⚠️ Zdroj 360p sa ostrým nestane — finál ideálne z originálu 1080p.
   AI „vylepšenie" (video-to-video) nepoužívať: mení reálny záber produktu.
 - Hudba v Lukových videách je v poriadku (Luk potvrdil 19. 10.).
+- **Od 15. 11.: produktové videá robiť BEZ zvuku** (`-an`) — Luk si hudbu pridáva sám ručne (napr. v Instagrame/TikToku).
 
 ## Čo agent spraví sám / kde čaká na „áno"
 - **sám:** analýza, strih, návrh textov, kontrola
@@ -57,3 +58,4 @@ isokor-skandinavia.no/products/peisglassrens
 - ⚠️ Kamera (zoom/otočenie) nesmie vyjsť z obrázka → zrkadlové artefakty. Pri otočení ~2° treba zoom aspoň 1,12.
 - ⚠️ Fľašu a hmlu kresliť **až vo výstupe (po kamere)**, nie do zdrojovej fotky — inak ju okraj fotky oreže rovnou čiarou.
 - Ústie hubice v `flaska_fett.png`: bod (1145, 200), strieka doprava → pri zrkadlení strieka doľava.
+- ⚠️ Odstrániť objekt z fotky (podstavec) vlastným skriptom nejde čisto (šmuhy, hrany) → nechať to na Gemini („Edit this image: remove … keep … exactly where they are“).

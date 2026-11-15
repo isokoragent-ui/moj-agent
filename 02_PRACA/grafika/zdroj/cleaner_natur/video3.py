@@ -181,32 +181,36 @@ def scene3(t):  # kvapka, 4.9–7.4
     return camera(src, 1.0 + 0.07 * ease(u), 768, 1300 + 120 * u)
 
 
-BASE_PT = np.array([767.0, 2235.0])        # kde fľaša stojí na ľane (stred dna)
+BASE_PT = np.array([767.0, 2350.0])        # kde fľaša stojí na ľane (stred dna)
 
 
 def scene_bottle(t):  # fľaša medzi surovinami, 6.7–12
     u = lin(t, 6.7, 12.0)
     src = IMG[4].copy()
-    h = 1450
+    h = 1350
     k = lin(t, 6.95, 8.0)
     near = eout(k)
     op = ease(clamp(k * 2.2))
     by = BASE_PT[1] - 240 * (1 - near)
     # tieň: kontaktný pod dnom + mäkký vrhnutý doprava dozadu (svetlo zľava hore)
-    sh = soft_ellipse((SW, SH), BASE_PT[0] + 8, BASE_PT[1] - 6, 205, 34, blur=14) * 0.6 * near
+    sh = soft_ellipse((SW, SH), BASE_PT[0] + 8, BASE_PT[1] - 6, 185, 32, blur=14) * 0.6 * near
     sh2 = soft_ellipse((SW, SH), BASE_PT[0] + 300, BASE_PT[1] - 60, 330, 55, ang=-8, blur=55) * 0.30 * near
     shade = np.clip(sh + sh2, 0, 1)[:, :, None] * op
     src = src * (1 - shade * np.array([0.55, 0.6, 0.68], np.float32))
     lay = place(BOT, bottle_standing(h, BASE_PT[0], by), (SW, SH))
+    # svetlo zľava (ako lúč na stene): ľavá strana fľaše teplejšia a svetlejšia, pravá v tieni
+    gx = np.clip((np.arange(SW, dtype=np.float32) - (BASE_PT[0] - 200)) / 400, 0, 1)[None, :, None]
+    lay = lay.copy()
+    lay[:, :, :3] *= (1.06 - 0.16 * gx) * np.array([1.0, 0.985, 0.955], np.float32)
     sweep = lin(t, 8.3, 9.3)
     if 0 < sweep < 1:  # svetelný prechod cez fľašu
         xx = np.arange(SW, dtype=np.float32)[None, :]
         yy = np.arange(SH, dtype=np.float32)[:, None]
-        band = np.exp(-(((xx - (BASE_PT[0] - 400 + 800 * sweep)) + (yy - 1500) * 0.35) / 60) ** 2) * np.sin(np.pi * sweep)
+        band = np.exp(-(((xx - (BASE_PT[0] - 400 + 800 * sweep)) + (yy - 1700) * 0.35) / 60) ** 2) * np.sin(np.pi * sweep)
         lay = lay.copy()
         lay[:, :, :3] += band[:, :, None] * 0.25 * lay[:, :, 3:4]
     src = over(src, lay, op)
-    return camera(src, 1.17 + 0.06 * ease(u), 767, 1585 - 40 * u)
+    return camera(src, 1.05 + 0.04 * ease(u), 767, 1440)
 
 
 SCENES = [(scene1, 0, 2.9), (scene2, 2.5, 5.3), (scene3, 4.9, 7.1), (scene_bottle, 6.7, 12.01)]
