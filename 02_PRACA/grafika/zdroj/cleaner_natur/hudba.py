@@ -1,6 +1,6 @@
 """Pokojná „luxusná“ hudba pre video Cleaner (vlastná, bez licencie):
 mäkký pad Dmaj9 – Bm9 – Gmaj9 – A6, riedke klavírne tóny, kvapka (7,6 s) a sprej (10,45 s).
-Použitie: python3 hudba.py vystup.wav [dĺžka — predvolene 15]"""
+Použitie: python3 hudba.py vystup.wav [dĺžka=15] [čas_kvapky] [časy_spreja,oddelené,čiarkou]"""
 import sys, wave
 import numpy as np
 
@@ -9,6 +9,8 @@ DUR = float(sys.argv[2]) if len(sys.argv) > 2 else 15.0
 N = int(SR * DUR)
 out = np.zeros(N)
 rng = np.random.default_rng(4)
+KVAPKA = float(sys.argv[3]) if len(sys.argv) > 3 else 7.6          # čas kvapky
+SPREJ = [float(x) for x in sys.argv[4].split(",")] if len(sys.argv) > 4 else [10.45, 10.75]
 
 
 def hz(n):
@@ -47,10 +49,10 @@ for st, note in mel:
 # kvapka — klesajúci „plink“
 n = int(.35 * SR); t = np.arange(n) / SR
 f = 1400 * np.exp(-t * 6) + 500
-add(0.12 * np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 14), 7.6)
+add(0.12 * np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 14), KVAPKA)
 
 # sprej — dva krátke šumy (high-pass)
-for st in (10.45, 10.75):
+for st in SPREJ:
     n = int(.32 * SR)
     w = rng.standard_normal(n)
     w = np.diff(np.concatenate([[0], w]))  # jednoduchý high-pass
