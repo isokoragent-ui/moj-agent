@@ -22,3 +22,8 @@
 
 ## Súvisiaca pasca — naplánované zverejnenie produktu (30. 10. 2026)
 - `publishablePublish` s `publishDate` v budúcnosti prijme len **Online Store a Google**; POS, Facebook a Shop ho potichu zahodia (bez chyby) → overiť `resourcePublicationsV2(onlyPublished:false)` a tieto kanály zverejniť ručne v deň D.
+
+## Iná fľaša (napr. 100 ml) — 15. 11. 2026
+- `02_PRACA/grafika/zdroj/econeutral_natur/nalep_valec.py`: geometria ako parametre (Y0 Y1 E XL0 XL1 XR0 XR1 THETA_C), etiketa obopína celý obvod, svetlo po stĺpcoch = 85. percentil jasu starej etikety (žiadne natvrdo zadané riadky).
+- THETA_C záporné → čelný panel (logo) sa posunie do stredu fľaše.
+- Iný objem: prepísať „500ml“ v PNG etikety (`etiketa_100ml.py`, písmo Khand Bold z `sikkerhetsdatablad/zdroj/`).
