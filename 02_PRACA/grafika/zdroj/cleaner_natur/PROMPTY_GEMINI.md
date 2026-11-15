@@ -25,3 +25,7 @@ Photorealistic vertical 9:16 photo of a modern Scandinavian kitchen countertop, 
 ## 6 — Tá istá linka ČISTÁ (12–15 s · „Benken skinner" + záver)
 (Napíš v tom istom rozhovore hneď po obrázku 5, aby to bola tá istá kuchyňa.)
 Edit the previous image: keep exactly the same kitchen, the same camera angle, the same light and composition. Remove all grease, splatters and stains — the countertop is now spotless and freshly wiped, with a soft natural sheen and a gentle reflection of the window light. Change nothing else. No bottles, no text, no logos, no people.
+
+## 4b — Podstavec preč (v3, 15. 11.) → uložiť ako `in/4b_bez_podstavca.jpg`
+(V tom istom rozhovore ako obrázok 4, alebo obrázok 4 priložiť.)
+Edit this image: remove the round travertine stone pedestal completely. Keep the orange half, the green leaf, the almonds and the cedar sprig exactly where they are, same size and same light. Where the pedestal was, continue the cream linen tablecloth with natural soft wrinkles and the plain warm cream wall behind, with the same soft diagonal sunbeam. Leave the center of the linen empty — a bottle will be placed there later. Keep the same camera angle and composition, vertical 9:16. No new objects, no bottles, no text, no logos.
