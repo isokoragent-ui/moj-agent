@@ -86,3 +86,12 @@ Obrázok bez podstavca: Luk v Gemini (`in/4b_bez_podstavca.jpg`, prompt 4b). Zdr
 - 2026-11-15: **verzia s Lukovou hudbou** `cleaner_natur_v3_story_hudba.mp4` — skladba „Sunlight on the Floor“ (Luk dodal, `zdroj/cleaner_natur/in/hudba_Sunlight_on_the_Floor.mp3`, 60,7 s, 120 BPM). `python3 hudba_strih.py hudba.wav`: začiatok skladby (1,70–8,01 s) → strih na úder taktu → záver skladby (52,01–57,70 s); posledný akord udrie vo videu v 8,31 s (fľaša dosadla, „Samlet i én flaske“), doznie pod záverečným textom. Mux: `-c:v copy -af loudnorm=I=-14:TP=-1.5 -c:a aac`. Bez zvuku ostáva `cleaner_natur_v3_story.mp4`.
 - 2026-11-15: **predĺžené na 18 s** (Luk: zábery príliš rýchle, treba čas na čítanie). Sad 4,2 s · suroviny 3,8 s · kvapka 3,6 s (pád v jemnom spomalení) · fľaša + záver 7,6 s (záverečný text 3,4 s). `video3.py`: SCENES majú nový aj pôvodný čas, pohyb sa spomalí úmerne. Hudba: `hudba_strih.py` (predvolené 18 s) — strih na takt v 10,31 s pri prechode na fľašu, posledný akord v 14,31 s so záverečným textom. Oba súbory (`cleaner_natur_v3_story.mp4` bez zvuku, `…_hudba.mp4`) prepísané na 18 s.
 - 2026-11-15 (neskôr): **späť na fľašu s nórskou etiketou FETT- OG FLEKKFJERNER** (Luk) a záverečný nadpis „Fett- og flekkfjerner“ → `08_ROZHODNUTIA/2026-11-15_Cleaner_etiketa_vo_videu.md`. Fotka s „CLEANER“ len záloha.
+
+### Video Cleaner v3 — na šírku pre web (2026-11-15)
+1920 × 1080, 18 s, rovnaké zábery a časovanie ako 9:16. Rozloženie: **vľavo krémový panel 800 px s textami** (čitateľné, nič neprekrývajú), **vpravo zábery** (fotky sú na výšku → výrez s väčším zoomom, fľaša na šírku menšia, aby bola celá).
+| Súbor | Na čo |
+|---|---|
+| `cleaner_natur_v3_wide_web.mp4` | **web** (úvodná stránka / produkt), bez zvuku, 3,4 MB |
+| `cleaner_natur_v3_wide.mp4` | bez zvuku, plná kvalita (25 MB) |
+| `cleaner_natur_v3_wide_hudba.mp4` | s hudbou „Sunlight on the Floor“ (YouTube, Facebook) |
+Zdroj: `WIDE=1 node texty.js` (texty z `texty_wide.html`) → `WIDE=1 python3 video3.py PRIECINOK` → web: `ffmpeg … -vf hqdn3d=2:2:3:3 -crf 26 -an` (jemné odšumenie zrna → 7× menší súbor).

@@ -9,7 +9,10 @@ D = os.path.dirname(os.path.abspath(__file__))
 OUT = sys.argv[1]
 os.makedirs(OUT, exist_ok=True)
 FPS, DUR = 30, 18.0          # 15. 11.: zábery predĺžené (Luk: viac času na čítanie textov)
-W, H = 1080, 1920
+# WIDE=1 → verzia na šírku 1920×1080 pre web: vľavo krémový panel s textom (PANEL px), vpravo zábery (W×H)
+WIDE = os.environ.get('WIDE') == '1'
+FW, FH, PANEL = 1920, 1080, 800
+W, H = (FW - PANEL, FH) if WIDE else (1080, 1920)
 
 
 def load(name):
@@ -32,7 +35,7 @@ BOT[:, :, :3] *= np.array([1.0, 0.985, 0.95], np.float32)   # teplejšie, nech s
 BH, BW = BOT.shape[:2]
 NOZ = np.array([1145.0, 200.0])           # ústie hubice v obrázku fľaše (strieka doprava)
 BODY_X, BODY_Y = 414.0, 2992.0             # stred dna fľaše
-TXT = {k: load_rgba(os.path.join(D, 'texty', k + '.png')) for k in ['t1', 't2', 't3', 't4', 't6', 't7']}
+TXT = {k: load_rgba(os.path.join(D, 'texty_wide' if WIDE else 'texty', k + '.png')) for k in ['t1', 't2', 't3', 't4', 't6', 't7']}
 
 clamp = lambda x, a=0.0, b=1.0: max(a, min(b, x))
 lin = lambda t, a, b: clamp((t - a) / (b - a))
@@ -53,6 +56,10 @@ def win(t, a, b, fi=.5, fo=.5):
 # ---------- pomocné: kamera a skladanie ----------
 def camera(src, zoom, cx, cy, rot=0.0):
     """Výrez zo zdroja: stred (cx,cy) v zdrojových px, zoom 1 = celý obraz na výšku."""
+    if WIDE:  # zábery na výšku → výrez musí ostať vo fotke: väčší zoom + stred držaný vo vnútri
+        zoom = zoom * 1.98
+        hx, hy = W * BASE / zoom / 2, H * BASE / zoom / 2
+        cx, cy = min(max(cx, hx + 8), SW - hx - 8), min(max(cy, hy + 8), SH - hy - 8)
     s = BASE / zoom
     a = np.deg2rad(rot)
     M = np.array([[s * np.cos(a), -s * np.sin(a), 0], [s * np.sin(a), s * np.cos(a), 0]], np.float32)
@@ -129,8 +136,9 @@ def scene1(t):  # sad, 0–2.9
     u = lin(t, 0, 2.9)
     img = camera(IMG[1], 1.0 + 0.08 * ease(u), 780 + 40 * u, 1400 + 10 * u)
     # ranný opar za textom
-    fog = soft_ellipse((W, H), 540, 420, 560, 260, blur=120)
-    img = img * (1 - fog[:, :, None] * .42) + fog[:, :, None] * .42 * np.array([.97, .93, .85], np.float32)
+    if not WIDE:  # opar za textom (na šírku je text v paneli)
+        fog = soft_ellipse((W, H), 540, 420, 560, 260, blur=120)
+        img = img * (1 - fog[:, :, None] * .42) + fog[:, :, None] * .42 * np.array([.97, .93, .85], np.float32)
     # dýchajúce ranné svetlo zľava
     g = soft_ellipse((W, H), 80, 760, 520, 820, blur=160)
     img = img + g[:, :, None] * np.array([1.0, .82, .55]) * (0.10 + 0.05 * np.sin(t * 2.2))
@@ -178,16 +186,16 @@ def scene3(t):  # kvapka, 4.9–7.4
         spr = cv2.filter2D(DROP, -1, ker)
     lay = place(spr, M, (SW, SH))
     src = over(src, lay)
-    return camera(src, 1.0 + 0.07 * ease(u), 768, 1300 + 120 * u)
+    return camera(src, 1.0 + 0.07 * ease(u), 768, (1120 + 80 * u) if WIDE else (1300 + 120 * u))   # na šírku: vidno aj vetvičku
 
 
-BASE_PT = np.array([767.0, 2350.0])        # kde fľaša stojí na ľane (stred dna)
+BASE_PT = np.array([767.0, 2320.0 if WIDE else 2350.0])   # kde fľaša stojí na ľane (stred dna)
 
 
 def scene_bottle(t):  # fľaša medzi surovinami, 6.7–12
     u = lin(t, 6.7, 12.0)
     src = IMG[4].copy()
-    h = 1350
+    h = 1080 if WIDE else 1350          # na šírku je výrez nižší → menšia fľaša, aby sa zmestila celá
     k = lin(t, 6.95, 8.0)
     near = eout(k)
     op = ease(clamp(k * 2.2))
@@ -210,7 +218,7 @@ def scene_bottle(t):  # fľaša medzi surovinami, 6.7–12
         lay = lay.copy()
         lay[:, :, :3] += band[:, :, None] * 0.25 * lay[:, :, 3:4]
     src = over(src, lay, op)
-    return camera(src, 1.05 + 0.04 * ease(u), 767, 1440)
+    return camera(src, 1.05 + 0.04 * ease(u), 767, 1740 if WIDE else 1440)
 
 
 # (scéna, začiatok, koniec v novom videu, pôvodný začiatok, pôvodný koniec) — pohyb scény sa spomalí úmerne
@@ -220,6 +228,9 @@ TEXTS = [('t1', .6, 3.9, .6, .5), ('t2', 4.3, 7.3, .6, .5), ('t3', 7.8, 10.4, .6
 
 GRAIN = np.random.default_rng(1).normal(0, 1, (H // 2, W // 2)).astype(np.float32)
 yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+_py = np.linspace(0, 1, FH, dtype=np.float32)[:, None, None]
+_px = np.linspace(0, 1, PANEL, dtype=np.float32)[None, :, None]
+PANEL_BG = (np.array([.955, .925, .87], np.float32) * (1.0 - 0.05 * _py - 0.03 * _px))
 VIG = 1 - 0.22 * np.clip(((xx - W / 2) / (W * .62)) ** 2 + ((yy - H / 2) / (H * .62)) ** 2, 0, 1.5)[:, :, None]
 
 
@@ -230,6 +241,12 @@ def frame(t):
             op = min(ease(lin(t, a, a + 0.4)) if a > 0 else 1, 1 - ease(lin(t, b - 0.4, b)) if b < DUR else 1)
             f = fn(oa + (t - a) * (ob - oa) / (b - a))
             img = f if img is None else img * (1 - op) + f * op
+    img = img * VIG
+    if WIDE:
+        canvas = np.empty((FH, FW, 3), np.float32)
+        canvas[:, :PANEL] = PANEL_BG
+        canvas[:, PANEL:] = img
+        img = canvas
     for k, a, b, fi, fo in TEXTS:
         op = win(t, a, b, fi, fo)
         if op > 0:
@@ -238,8 +255,7 @@ def frame(t):
             if dy:
                 tx = np.roll(tx, dy, axis=0)
             img = over(img, tx, op)
-    img = img * VIG
-    g = cv2.resize(np.roll(GRAIN, int(t * 997) % 400, axis=1), (W, H))
+    g = cv2.resize(np.roll(GRAIN, int(t * 997) % 400, axis=1), (img.shape[1], img.shape[0]))
     img = img + g[:, :, None] * 0.012
     return np.clip(img, 0, 1)
 
