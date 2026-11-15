@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=block" rel="stylesheet">
+<style>
+  :root { --cream:#f5efe4; --cream-2:#ebe2d2; --green:#1f3a2b; --green-2:#2f5240; --gold:#b8955a; --gold-2:#d9bd85; --ink:#23302a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; }
+  body { background: var(--cream); font-family: "Jost", sans-serif; color: var(--ink); }
+  .layer { position: absolute; inset: 0; }
+  #paper { background: radial-gradient(120% 80% at 50% 40%, #fbf7ef 0%, var(--cream) 55%, var(--cream-2) 100%); }
+  canvas { position: absolute; inset: 0; }
+  .txt { position: absolute; left: 0; right: 0; text-align: center; will-change: transform, opacity; }
+  .kick { font-family: "Jost"; font-weight: 500; font-size: 26px; letter-spacing: .42em; text-transform: uppercase; color: var(--gold); }
+  .serif { font-family: "Cormorant Garamond", serif; font-weight: 500; line-height: 1.05; color: var(--green); }
+  .serif em { font-style: italic; }
+  .light .serif, .light.serif { color: var(--cream); }
+  .rule { width: 90px; height: 2px; background: var(--gold); margin: 26px auto; }
+  #bottle { position: absolute; will-change: transform, opacity; }
+  #bottle img { display: block; width: 100%; }
+  #grain { position: absolute; inset: 0; opacity: .07; mix-blend-mode: multiply; pointer-events: none; }
+  #vignette { position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(110% 75% at 50% 50%, rgba(0,0,0,0) 60%, rgba(40,30,15,.22) 100%); }
+</style>
+</head>
+<body>
+<div id="paper" class="layer"></div>
+
+<!-- SCÉNA A/B: rastliny -->
+<svg id="bot" class="layer" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <radialGradient id="gOrange" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#f8cf86"/><stop offset="1" stop-color="#e9a64a"/></radialGradient>
+    <radialGradient id="gLemon" cx="40%" cy="40%" r="60%"><stop offset="0" stop-color="#f7e9a0"/><stop offset="1" stop-color="#e2c55a"/></radialGradient>
+    <radialGradient id="gDrop" cx="38%" cy="58%" r="62%"><stop offset="0" stop-color="#fff1c9"/><stop offset=".45" stop-color="#e6bd6a"/><stop offset="1" stop-color="#a77a33"/></radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+  <g fill="none" stroke="#2f5240" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- POMARANČ (plátok) -->
+    <g id="orange" transform="translate(300 830)">
+      <circle class="fill" r="118" fill="url(#gOrange)" stroke="none"/>
+      <circle class="fill" r="100" fill="#fbe3b4" stroke="none" opacity=".55"/>
+      <circle class="d" r="118"/><circle class="d" r="100"/>
+      <path class="d" d="M0 -96 L0 96 M-96 0 L96 0 M-68 -68 L68 68 M68 -68 L-68 68 M-37 -89 L37 89 M37 -89 L-37 89 M-89 -37 L89 37 M89 -37 L-89 37"/>
+      <circle class="d" r="9"/>
+    </g>
+    <!-- CITRÓN s listom -->
+    <g id="lemon" transform="translate(780 800) rotate(-18)">
+      <path class="fill" d="M-128 0 C-120 -70 -60 -92 0 -92 C60 -92 120 -70 128 0 C120 70 60 92 0 92 C-60 92 -120 70 -128 0 Z" fill="url(#gLemon)" stroke="none"/>
+      <path class="d" d="M-150 0 Q-140 -6 -128 0 C-120 -70 -60 -92 0 -92 C60 -92 120 -70 128 0 Q140 6 150 0 Q140 -6 128 0 C120 70 60 92 0 92 C-60 92 -120 70 -128 0 Q-140 6 -150 0"/>
+      <path class="fill" d="M60 -90 C90 -170 170 -190 230 -170 C200 -110 130 -80 60 -90 Z" fill="#9db58a" stroke="none" opacity=".75"/>
+      <path class="d" d="M60 -90 C90 -170 170 -190 230 -170 C200 -110 130 -80 60 -90 Z M60 -90 Q150 -140 230 -170"/>
+    </g>
+    <!-- MANDĽA – vetvička -->
+    <g id="almond" transform="translate(300 1250) rotate(10)">
+      <path class="d" d="M-150 140 C-80 60 0 0 120 -110"/>
+      <path class="fill" d="M-90 70 C-160 40 -190 -20 -180 -60 C-120 -40 -90 10 -90 70 Z" fill="#a9bf95" stroke="none" opacity=".7"/>
+      <path class="d" d="M-90 70 C-160 40 -190 -20 -180 -60 C-120 -40 -90 10 -90 70 Z"/>
+      <path class="fill" d="M-20 10 C20 -60 80 -80 110 -70 C90 -20 40 10 -20 10 Z" fill="#a9bf95" stroke="none" opacity=".7"/>
+      <path class="d" d="M-20 10 C20 -60 80 -80 110 -70 C90 -20 40 10 -20 10 Z"/>
+      <path class="fill" d="M30 -40 C-10 -110 0 -170 30 -200 C70 -150 70 -90 30 -40 Z" fill="#a9bf95" stroke="none" opacity=".7"/>
+      <path class="d" d="M30 -40 C-10 -110 0 -170 30 -200 C70 -150 70 -90 30 -40 Z"/>
+      <path class="fill" d="M-60 120 C-40 70 10 60 40 70 C40 110 0 150 -60 120 Z" fill="#d9b98a" stroke="none" opacity=".85"/>
+      <path class="d" d="M-60 120 C-40 70 10 60 40 70 C40 110 0 150 -60 120 Z M-44 112 C-20 90 10 82 30 80"/>
+    </g>
+    <!-- CÉDER – vetvička -->
+    <g id="cedar" transform="translate(770 1270) rotate(-30)">
+      <path class="d" d="M-170 0 C-60 -8 60 -6 170 0"/>
+      <path class="d" d="M-140 -2 l-30 -40 M-140 -2 l-30 40 M-100 -3 l-30 -48 M-100 -3 l-30 48 M-60 -4 l-30 -54 M-60 -4 l-30 54 M-20 -5 l-28 -56 M-20 -5 l-28 56 M20 -5 l-26 -52 M20 -5 l-26 52 M60 -4 l-24 -46 M60 -4 l-24 46 M100 -3 l-22 -38 M100 -3 l-22 38 M140 -2 l-18 -28 M140 -2 l-18 28"/>
+      <path class="d" d="M-20 -5 C0 -60 40 -100 90 -120"/>
+      <path class="d" d="M20 -40 l-4 -26 M40 -62 l2 -26 M60 -80 l6 -24 M30 -50 l22 -10 M52 -70 l22 -8 M72 -88 l20 -6"/>
+    </g>
+  </g>
+  <!-- popisky rastlín -->
+  <g font-family="Cormorant Garamond" font-style="italic" font-size="40" fill="#2f5240" text-anchor="middle">
+    <text class="lab" x="300" y="1000">Appelsin</text>
+    <text class="lab" x="780" y="985">Sitron</text>
+    <text class="lab" x="300" y="1470">Mandel</text>
+    <text class="lab" x="780" y="1430">Seder</text>
+  </g>
+  <!-- kvapky -->
+  <g id="drops"></g>
+</svg>
+
+<!-- SCÉNA D: kamenná linka -->
+<div id="counter" class="layer">
+  <canvas id="marble" width="1080" height="1920"></canvas>
+  <canvas id="grease" width="1080" height="1920"></canvas>
+  <canvas id="fx" width="1080" height="1920"></canvas>
+</div>
+
+<div id="bottle"><img src="../kjokkenpakken_jul/flaska_fett.png"></div>
+
+<!-- TEXTY -->
+<div id="tA" class="txt" style="top:300px">
+  <div class="kick">Isokor Green</div>
+  <div class="rule"></div>
+  <div class="serif" style="font-size:96px">Det begynner<br><em>i naturen</em></div>
+</div>
+<div id="tB" class="txt" style="top:300px">
+  <div class="kick">Ekte planteoljer</div>
+  <div class="rule"></div>
+  <div class="serif" style="font-size:88px"><em>Dråpe for dråpe</em></div>
+</div>
+<div id="tC" class="txt" style="top:250px">
+  <div class="serif" style="font-size:88px">Samlet<br><em>i én flaske</em></div>
+</div>
+<div id="tD" class="txt light" style="top:250px">
+  <div class="kick" style="color:#f1dfb6">Kjøkkenbenken</div>
+  <div class="rule" style="background:#f1dfb6"></div>
+  <div class="serif" style="font-size:92px;color:#fbf6ec;text-shadow:0 2px 30px rgba(0,0,0,.35)">Fettet løsner.<br><em>Benken skinner.</em></div>
+</div>
+<div id="tE" class="txt" style="top:190px">
+  <div class="kick">Isokor</div>
+  <div class="rule"></div>
+  <div class="serif" style="font-size:92px">Fett- og<br>flekkfjerner</div>
+  <div style="margin-top:28px;font-size:27px;letter-spacing:.2em;text-transform:uppercase;color:#4c5e52">Naturlig · Miljøvennlig · Biologisk nedbrytbar</div>
+</div>
+<div id="tE2" class="txt" style="top:1745px">
+  <div style="font-family:'Cormorant Garamond';font-style:italic;font-size:44px;color:var(--green)">isokor-skandinavia.no</div>
+</div>
+
+<canvas id="grain" width="540" height="960" style="width:1080px;height:1920px"></canvas>
+<div id="vignette"></div>
+
+<script>
+// ---------- pomocné ----------
+const W = 1080, H = 1920;
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const lin = (t, a, b) => clamp((t - a) / (b - a));
+const ease = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+const eOut = x => 1 - Math.pow(1 - x, 3);
+const eIn = x => x * x * x;
+const win = (t, a, b, fi = .5, fo = .5) => Math.min(ease(lin(t, a, a + fi)), 1 - ease(lin(t, b - fo, b)));
+let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const $ = id => document.getElementById(id);
+
+// ---------- čiary rastlín: príprava na „kreslenie“ ----------
+const strokes = [...document.querySelectorAll('#bot .d')].map(el => {
+  const len = el.getTotalLength(); el.style.strokeDasharray = len; el.style.strokeDashoffset = len; return { el, len };
+});
+const plants = ['orange', 'lemon', 'almond', 'cedar'].map(id => $(id));
+const plantPos = [[300, 830], [780, 800], [300, 1250], [770, 1270]];
+const fills = [...document.querySelectorAll('#bot .fill')];
+const labs = [...document.querySelectorAll('#bot .lab')];
+
+// ---------- kvapky ----------
+const NS = 'http://www.w3.org/2000/svg';
+const dropPath = 'M0 -1 C0.35 -0.45 0.62 -0.05 0.62 0.32 C0.62 0.7 0.33 1 0 1 C-0.33 1 -0.62 0.7 -0.62 0.32 C-0.62 -0.05 -0.35 -0.45 0 -1 Z';
+function mkDrop() {
+  const g = document.createElementNS(NS, 'g');
+  const p = document.createElementNS(NS, 'path'); p.setAttribute('d', dropPath); p.setAttribute('fill', 'url(#gDrop)');
+  const h = document.createElementNS(NS, 'ellipse'); h.setAttribute('cx', -0.22); h.setAttribute('cy', 0.25); h.setAttribute('rx', 0.12); h.setAttribute('ry', 0.22); h.setAttribute('fill', '#fffaf0'); h.setAttribute('opacity', .8);
+  g.appendChild(p); g.appendChild(h); $('drops').appendChild(g); return g;
+}
+const small = [];
+for (let i = 0; i < 4; i++) for (let k = 0; k < 3; k++) small.push({ g: mkDrop(), from: plantPos[i], delay: i * .18 + k * .32, wob: rnd() * 6.28 });
+const big = mkDrop();
+const CX = 540, CY = 1060;
+
+// ---------- mramor (čistý) ----------
+(function () {
+  const c = $('marble').getContext('2d');
+  const g = c.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#2c4234'); g.addColorStop(.5, '#22362a'); g.addColorStop(1, '#17271d');
+  c.fillStyle = g; c.fillRect(0, 0, W, H);
+  seed = 11;
+  for (let v = 0; v < 26; v++) {               // žilky
+    c.beginPath(); let x = rnd() * W * 1.4 - 200, y = rnd() * H;
+    c.moveTo(x, y);
+    for (let s = 0; s < 8; s++) { const nx = x + 120 + rnd() * 160, ny = y + (rnd() - .5) * 260; c.quadraticCurveTo(x + (rnd() - .3) * 200, y + (rnd() - .5) * 200, nx, ny); x = nx; y = ny; }
+    c.strokeStyle = `rgba(${200 + rnd() * 40},${205 + rnd() * 30},${190},${.10 + rnd() * .20})`; c.lineWidth = .6 + rnd() * 3; c.stroke();
+  }
+  for (let i = 0; i < 9000; i++) { c.fillStyle = `rgba(255,255,255,${rnd() * .05})`; c.fillRect(rnd() * W, rnd() * H, 1.5, 1.5); }
+})();
+// ---------- mastnota ----------
+(function () {
+  const c = $('grease').getContext('2d'); seed = 23;
+  for (let i = 0; i < 70; i++) {
+    const x = rnd() * W, y = 700 + rnd() * 1150, r = 14 + rnd() * 55;
+    const g = c.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0, `rgba(176,142,78,${.16 + rnd() * .14})`); g.addColorStop(.55, 'rgba(160,125,60,.1)'); g.addColorStop(1, 'rgba(160,125,60,0)');
+    c.fillStyle = g; c.beginPath(); c.ellipse(x, y, r * (1 + rnd()), r, rnd() * 3, 0, 7); c.fill();
+  }
+  c.globalCompositeOperation = 'source-over';
+  for (let i = 0; i < 22; i++) {        // šmuhy
+    c.beginPath(); const x = rnd() * W, y = 800 + rnd() * 1000; c.moveTo(x, y);
+    c.bezierCurveTo(x + 80, y - 40, x + 180, y + 30, x + 260 + rnd() * 120, y - 10);
+    c.strokeStyle = `rgba(165,132,72,${.10 + rnd() * .12})`; c.lineWidth = 14 + rnd() * 30; c.lineCap = 'round'; c.stroke();
+  }
+  for (let i = 0; i < 260; i++) { c.fillStyle = `rgba(90,65,30,${.3 + rnd() * .4})`; c.beginPath(); c.arc(rnd() * W, 720 + rnd() * 1150, 1 + rnd() * 3, 0, 7); c.fill(); }
+})();
+// sprejové kvapôčky (pevné náhodné)
+seed = 5; const mist = Array.from({ length: 420 }, () => ({ a: (rnd() - .5) * .55, v: .45 + rnd() * .75, r: 1 + rnd() * 3.5, d: rnd() * .25 }));
+const beads = Array.from({ length: 160 }, () => ({ x: 120 + rnd() * 760, y: 900 + rnd() * 700, r: 2 + rnd() * 7 }));
+
+// ---------- zrno papiera ----------
+(function () { const c = $('grain').getContext('2d'); const im = c.createImageData(540, 960); seed = 3;
+  for (let i = 0; i < im.data.length; i += 4) { const v = 120 + rnd() * 135; im.data[i] = im.data[i + 1] = im.data[i + 2] = v; im.data[i + 3] = 255; } c.putImageData(im, 0, 0); })();
+
+// ---------- render(t) ----------
+function setTxt(id, op, dy) { const e = $(id); e.style.opacity = op; e.style.transform = `translateY(${(1 - op) * dy}px)`; }
+
+window.render = function (t) {
+  // --- A: rastliny sa nakreslia (0–3.4) ---
+  strokes.forEach((s, i) => {
+    const pi = plants.findIndex(p => p.contains(s.el));
+    const p = eOut(lin(t, .15 + pi * .28, 1.6 + pi * .28));
+    s.el.style.strokeDashoffset = s.len * (1 - p);
+  });
+  const fillOp = ease(lin(t, 1.3, 2.6));
+  fills.forEach(f => f.style.opacity = fillOp * (+f.getAttribute('opacity') || 1) );
+  labs.forEach((l, i) => l.setAttribute('opacity', ease(lin(t, 1.7 + i * .15, 2.4 + i * .15)) * (1 - ease(lin(t, 3.6, 4.2)))));
+  // B: rastliny jemne ustupujú, zväčšenie
+  const out = ease(lin(t, 5.4, 6.6));
+  const breathe = 1 + .015 * Math.sin(t * 1.4);
+  plants.forEach((p, i) => {
+    const [x, y] = plantPos[i]; const dx = (x - CX) * .25 * out, dy = (y - CY) * .25 * out;
+    const base = p.getAttribute('data-base') || p.getAttribute('transform'); p.setAttribute('data-base', base);
+    p.setAttribute('transform', `translate(${dx} ${dy}) ` + base.replace(/translate\(([^)]+)\)/, (m, a) => `translate(${a}) scale(${breathe * (1 + .08 * out)})`));
+    p.style.opacity = 1 - out;
+  });
+  $('bot').style.opacity = 1;
+
+  // kvapky z rastlín do stredu (3.4–5.8)
+  small.forEach(d => {
+    const p = lin(t, 3.4 + d.delay, 5.0 + d.delay * .6);
+    if (p <= 0 || t > 6.0) { d.g.setAttribute('opacity', 0); return; }
+    const [fx, fy] = d.from; const e = ease(p);
+    const x = fx + (CX - fx) * e + Math.sin(d.wob + p * 6) * 14 * (1 - e);
+    const y = fy + (CY - fy) * e + Math.sin(p * Math.PI) * -60;
+    const s = 16 * (1 - .35 * e);
+    d.g.setAttribute('transform', `translate(${x} ${y}) scale(${s})`);
+    d.g.setAttribute('opacity', Math.min(1, p * 5) * (p > .97 ? 0 : 1));
+  });
+  // veľká kvapka rastie (4.0–6.4), padá (6.6–8.2)
+  const grow = eOut(lin(t, 4.0, 6.2));
+  const fall = eIn(lin(t, 6.9, 7.6));
+  const bigY = CY + fall * 190 - Math.sin(t * 2) * 6 * (1 - fall);
+  const bigS = 8 + 52 * grow - 20 * fall;
+  big.setAttribute('transform', `translate(${CX} ${bigY}) scale(${bigS * .9} ${bigS * (1 + .25 * fall)})`);
+  big.setAttribute('opacity', (t > 4.0 && t < 7.62) ? 1 : 0);
+
+  // --- C: fľaša (6.4–9.8) a záverečná fľaša (12.7–15) ---
+  const b = $('bottle');
+  const bIn = eOut(lin(t, 6.3, 7.4));
+  const glow = Math.exp(-Math.pow((t - 7.7) / .35, 2));
+  if (t < 9.9) {
+    const h = 760, w = h * 1147 / 3002;
+    b.style.width = w + 'px'; b.style.left = (540 - w / 2 + 22) + 'px'; b.style.top = (1170 + (1 - bIn) * 700) + 'px';
+    b.style.transform = `scale(${1 + .03 * glow})`; b.style.filter = `drop-shadow(0 30px 40px rgba(40,30,15,.28)) brightness(${1 + .12 * glow})`;
+    b.style.opacity = bIn * (1 - ease(lin(t, 9.3, 9.9)));
+  } else if (t < 12.6) {
+    // D: fľaša prilieta sprava a strieka
+    const k = eOut(lin(t, 9.6, 10.3)) * (1 - ease(lin(t, 11.2, 11.9)));
+    const h = 820, w = h * 1147 / 3002;
+    b.style.width = w + 'px'; b.style.left = (1080 - w * .55 + (1 - k) * 500) + 'px'; b.style.top = '520px';
+    const kick = Math.exp(-Math.pow((t - 10.45) / .08, 2)) * 4;
+    b.style.transform = `rotate(${-28 - kick}deg)`; b.style.filter = 'drop-shadow(0 30px 40px rgba(0,0,0,.45))';
+    b.style.opacity = k;
+  } else {
+    const k = eOut(lin(t, 12.8, 13.8));
+    const h = 900, w = h * 1147 / 3002;
+    b.style.width = w + 'px'; b.style.left = (540 - w / 2 + 25) + 'px'; b.style.top = (760 + (1 - k) * 80) + 'px';
+    b.style.transform = 'rotate(0deg) scale(1)'; b.style.filter = 'drop-shadow(0 40px 45px rgba(40,30,15,.25))';
+    b.style.opacity = k;
+  }
+
+  // --- D: linka (9.5–12.9) ---
+  const cOp = win(t, 9.4, 13.0, .6, .5);
+  $('counter').style.opacity = cOp;
+  $('counter').style.transform = `scale(${1.06 - .06 * lin(t, 9.4, 13)})`;
+  // stieranie zľava doprava diagonálne (11.0–12.2)
+  const wipe = ease(lin(t, 11.0, 12.3));
+  const gx = -300 + wipe * 1900;
+  $('grease').style.clipPath = `polygon(${gx}px 0, 1400px 0, 1400px 1920px, ${gx - 500}px 1920px)`;
+  const fx = $('fx').getContext('2d'); fx.clearRect(0, 0, W, H);
+  if (t > 9.5 && t < 13) {
+    // sprej
+    const sp = lin(t, 10.35, 11.3);
+    if (sp > 0) {
+      const ox = 1080 - 820 * 1147 / 3002 * .55 + 30, oy = 640;  // približne hubica
+      mist.forEach(m => {
+        const q = clamp((sp - m.d) / .6); if (q <= 0 || q >= 1) return;
+        const ang = Math.PI * .82 + m.a; const dist = q * 900 * m.v;
+        const x = ox + Math.cos(ang) * dist, y = oy + Math.sin(ang) * dist + q * q * 260;
+        fx.fillStyle = `rgba(245,240,228,${.55 * (1 - q)})`; fx.beginPath(); fx.arc(x, y, m.r * (1 + q), 0, 7); fx.fill();
+      });
+    }
+    // kvapôčky na povrchu po postreku, pred utretím
+    const bd = ease(lin(t, 10.7, 11.0));
+    beads.forEach(p => { if (p.x - (p.y - 0) * .26 < gx - 300 && wipe > 0) return;
+      fx.fillStyle = `rgba(255,252,240,${.35 * bd})`; fx.beginPath(); fx.arc(p.x, p.y, p.r, 0, 7); fx.fill();
+      fx.fillStyle = `rgba(255,255,255,${.6 * bd})`; fx.beginPath(); fx.arc(p.x - p.r * .3, p.y - p.r * .3, p.r * .3, 0, 7); fx.fill(); });
+    // utierka (mäkký pruh)
+    if (wipe > 0 && wipe < 1) {
+      fx.save(); fx.translate(gx - 250, 1350); fx.rotate(.45);
+      const g = fx.createLinearGradient(-200, 0, 200, 0); g.addColorStop(0, 'rgba(255,250,238,0)'); g.addColorStop(.6, 'rgba(255,250,238,.10)'); g.addColorStop(.9, 'rgba(255,250,238,.28)'); g.addColorStop(1, 'rgba(255,250,238,0)');
+      fx.fillStyle = g; fx.fillRect(-200, -900, 400, 1800); fx.restore();
+    }
+    // lesk po utretí
+    const sh = lin(t, 12.0, 12.9);
+    if (sh > 0 && sh < 1) {
+      const sx = -400 + sh * 1900;
+      const g = fx.createLinearGradient(sx - 200, 0, sx + 200, 0);
+      g.addColorStop(0, 'rgba(255,255,255,0)'); g.addColorStop(.5, 'rgba(255,250,235,.22)'); g.addColorStop(1, 'rgba(255,255,255,0)');
+      fx.save(); fx.transform(1, 0, -.35, 1, 0, 0); fx.fillStyle = g; fx.fillRect(sx - 200, 0, 400 + 700, H); fx.restore();
+      // iskry
+      [[380, 1180], [720, 1420], [560, 980]].forEach(([x, y], i) => {
+        const a = Math.exp(-Math.pow((sh - .3 - i * .18) / .08, 2)); if (a < .02) return;
+        fx.save(); fx.translate(x, y); fx.globalAlpha = a; fx.fillStyle = '#fffbe9';
+        fx.beginPath(); for (let k = 0; k < 8; k++) { const r = k % 2 ? 6 : 38; const an = k * Math.PI / 4; fx.lineTo(Math.cos(an) * r, Math.sin(an) * r); } fx.fill(); fx.restore();
+      });
+    }
+  }
+
+  // --- E: záver – rastlinky okolo fľaše (12.7–15) ---
+  const endOp = ease(lin(t, 12.7, 13.5));
+  if (endOp > 0) {
+    plants.forEach((p, i) => {
+      const pos = [[230, 1500], [860, 1430], [210, 1180], [870, 1150]][i];
+      p.setAttribute('transform', `translate(${pos[0]} ${pos[1]}) rotate(${[-10, 20, 25, -40][i]}) scale(.62)`);
+      p.style.opacity = endOp * .9;
+    });
+  }
+
+  // --- texty ---
+  setTxt('tA', win(t, .5, 3.3, .8, .5), 30);
+  setTxt('tB', win(t, 3.5, 6.3, .6, .5), 30);
+  setTxt('tC', win(t, 7.0, 9.6, .6, .5), 30);
+  setTxt('tD', win(t, 10.1, 12.85, .6, .45), 30);
+  setTxt('tE', ease(lin(t, 13.0, 13.8)), 30);
+  setTxt('tE2', ease(lin(t, 13.4, 14.2)), 20);
+
+  // celkové stmievanie na konci
+  document.body.style.filter = `brightness(${1 - .0 * lin(t, 14.6, 15)})`;
+};
+window.render(0);
+</script>
+</body>
+</html>

@@ -65,3 +65,9 @@ Zdroj: `zdroj/kjokkenpakken_jul/norsk.html` → `node render_norsk.js`. Pletenin
 ### Video Kjøkkenpakken — nórska verzia (2026-10-30)
 `kjokkenpakken_norsk_story.mp4` (1080×1920) a `kjokkenpakken_norsk_wide.mp4` (1920×1080) — 14 s, s hudbou (`hytteservice/hudba.py`, hracia skrinka). Scény: „Ribbe – eller pinnekjøtt?" → „Uansett: kjøleskapet trenger en vask før julematen" → fľaše na tanieri, visačka 349,- spadne a zahojdá sa, „du sparer 48,-", isokor-skandinavia.no. Pletený pás sa posúva, sneží.
 Zdroj: `zdroj/kjokkenpakken_jul/video_norsk.html` (`?f=wide` pre šírku) + `frames_norsk.js` (`OUT=…`, `WIDE=1`).
+
+## Video Cleaner — „Fra naturen til kjøkkenbenken“ (2026-11-15)
+`cleaner_natur_story.mp4` — 15 s, 1080 × 1920, 30 fps, s hudbou (vlastná, `zdroj/cleaner_natur/hudba.py`). Produkt: **Isokor Fett- og flekkfjerner** (SK: Cleaner). Štýl: decentný, prírodný, skoro luxusný — krémový papier, tmavozelená, zlatá; písmo Cormorant Garamond + Jost.
+Scény: rastliny zo zloženia sa samy nakreslia — Appelsin, Sitron, Mandel, Seder („Det begynner i naturen“) → zlaté kvapky oleja z nich stečú do jednej („Ekte planteoljer · Dråpe for dråpe“) → kvapka padne do fľaše („Samlet i én flaske“) → zelená kamenná linka s mastnotou, sprej, utretie, lesk („Fettet løsner. Benken skinner.“) → fľaša + rastlinky, „Naturlig · Miljøvennlig · Biologisk nedbrytbar“, isokor-skandinavia.no.
+Tvrdenia len z etikety (oleje: appelsin, sitron, mandel, seder sú v zložení). Stav: 🟡 návrh v1 — čaká na Lukovu kontrolu.
+Zdroj: `zdroj/cleaner_natur/video.html` + `frames.js` (`OUT=…`, `KONTROLA=1.0,5.5` = len vybrané časy) → `ffmpeg -framerate 30 -i f%04d.jpg -i hudba.wav -c:v libx264 -pix_fmt yuv420p -crf 18 -af loudnorm=I=-16 -c:a aac`.
