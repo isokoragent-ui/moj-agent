@@ -104,20 +104,28 @@
         <img src="flaska_fett.png" alt="">
       </div>
       <div class="tag"><div class="string"></div><div class="body"><div class="hole"></div>
-        <div class="k">Begge for</div><div class="p">349,-</div><div class="line"></div><div class="f">Frakt inkludert</div></div></div>
+        <div class="k">Begge for</div><div class="p" id="pris">349,-</div><div class="line"></div><div class="f" id="tagf">Frakt inkludert</div></div></div>
       <div class="pill blue"><b>Kjøleskapsrens</b><span>Kjøleskap og fryser – trygt der maten står</span></div>
       <div class="pill green"><b>Fett- og flekkfjerner</b><span>Komfyr, benk, vifte og fliser</span></div>
     </div>
 
     <div class="bottom">
-      <div class="save">Hver for seg <s>397,-</s> med frakt – <b>du sparer 48,-</b></div>
+      <div class="save" id="save">Hver for seg <s>397,-</s> med frakt – <b>du sparer 48,-</b></div>
       <div class="cta">isokor-skandinavia.no</div>
-      <div class="eco">Naturlig · Biologisk nedbrytbar · V-Label · Sendes med PostNord</div>
+      <div class="eco" id="eco">Naturlig · Biologisk nedbrytbar · V-Label · Sendes med PostNord</div>
     </div>
   </div>
 </div>
 <script>
-  document.body.className = new URLSearchParams(location.search).get('f') || 'portrait';
+  const Q = new URLSearchParams(location.search);
+  document.body.className = Q.get('f') || 'portrait';
+  // ?v=butikk — verzia na stôl v obchode: 249,-, bez dopravy
+  if (Q.get('v') === 'butikk') {
+    document.getElementById('pris').textContent = '249,-';
+    document.getElementById('tagf').textContent = 'Julepris';
+    document.getElementById('save').innerHTML = '<b>Kjøp begge sammen her i butikken</b>';
+    document.getElementById('eco').textContent = 'Naturlig · Biologisk nedbrytbar · V-Label';
+  }
   const CREAM = '#fbf3e4';
 
   // klasická selburose (13 × 13 očiek)

@@ -59,7 +59,9 @@ Zdroj: `zdroj/kjokkenpakken_jul/` → `node render.js` (grafika), `python3 packs
 | `kjokkenpakken_norsk_square.png` / `.jpg` | 1080 × 1080 |
 | `kjokkenpakken_norsk_story.png` | 1080 × 1920 |
 
-Zdroj: `zdroj/kjokkenpakken_jul/norsk.html` → `node render_norsk.js`. Pletenina sa kreslí v canvase z bitmapy `ROSE` (13 × 13 očiek).
+Zdroj: `zdroj/kjokkenpakken_jul/norsk.html` → `node render_norsk.js`.
+
+**Verzia do obchodu (stôl):** `kjokkenpakken_butikk_story.png` / `_portrait` / `_square` — „Begge for 249,-“, „Julepris“, bez dopravy a bez PostNord. Render: `node render_norsk.js ../.. butikk` (prepínač `?v=butikk`). Pletenina sa kreslí v canvase z bitmapy `ROSE` (13 × 13 očiek).
 ✅ Luk 30. 10. vybral **červenú nórsku verziu** — hlavná fotka produktu Kjøkkenpakken, príspevok pi 6. 11., e-mail ne 8. 11. Zelená ostáva v zálohe.
 
 ### Video Kjøkkenpakken — nórska verzia (2026-10-30)
