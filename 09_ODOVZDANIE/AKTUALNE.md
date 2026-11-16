@@ -2,9 +2,10 @@
 
 *Prepisuje `/odovzdaj` na konci každého rozhovoru. Agent to číta ako prvé.*
 
-**Naposledy:** 2026-11-12 22:31 Oslo, cloudová relácia (claude.ai), okno „Snapchat + pošta“ (PR #42–#45 → `main`). Ostatné body nižšie sú z iných okien.
+**Naposledy:** 2026-11-16 14:05 Oslo, cloudová relácia (claude.ai), okno „Plagáty do obchodu“ (PR #48). Ostatné body nižšie sú z iných okien.
 
 ## Hotové naposledy
+- **16. 11. — Plagáty na stôl do obchodu** (okno Plagáty): Kjøkkenpakken aj Badepakken v obchode **249 kr za oba, bez dopravy** („Julepris“, „Kjøp begge sammen her i butikken“). Hotové **A4 na tlač** (PDF bez okrajov + PNG 300 dpi): `02_PRACA/grafika/kjokkenpakken_butikk_a4.*`, `badepakken_butikk_a4.*` (Badepakken s nórskou výzdobou v rohoch — vetvičky, šišky, jarabina, julekurv). Kjøkkenpakken aj v mobilných formátoch. Web ostáva 349 kr s dopravou. Luk: „takto je to v poriadku“. → `08_ROZHODNUTIA/2026-11-16_balicky_obchod_249.md`
 - **12. 11. — Pošta pretriedená** (okno Snapchat): 37 vlákien do Koša (Luk „áno“), v doručenej 21. Nájom Vegårshei Eiendom č. 184820055 + 184820056 + Shopify faktúra 6. 11. (530,93 kr, PDF v prílohe) → štítok **Faktúry/Na tlač**; č. 184820062 neoznačená (Luk odpísal „Faktura er feil“ → čakáme opravenú).
 - **12. 11. — Snapchat** (okno Snapchat): Luk založil profil **ISOKOR Skandinavia** na Snapchate. Agent spísal, ako Snapchat funguje a plán na začiatok → `02_PRACA/SNAPCHAT.md`. V Metricoole Snapchat **nie je** napojený (overené `getBrandSettings`) → zatiaľ ručne z mobilu.
 - **11. 11. — Živnosť: faktúry + agenda + raporty + rozpočet** (okno Živnosť): `02_PRACA/zivnost/` — oddelené od AS (ORG.NR. 912689441 MVA, účet 2938 13 10130, splatnosť 5 dní). Šablóna **Faktura 530** (Stranna bygg AS, 3 125 kr) načítaná, logo vytiahnuté, PDF vzhľadovo sedí. Skripty `faktura.py` / `agenda.py` spoločné s prepínačom `--firma zivnost` (`_nastroje/firmy.py`); AS funguje ako predtým. Pribudlo pre obe firmy: podiel výdavkov v % a rozpočet (plán vs. skutočnosť). Faktura 530 zaplatená. Účtovníctvo živnosti tiež Anne Sofie, MVA každé 2 mesiace, doklady v oddelených obálkach.
