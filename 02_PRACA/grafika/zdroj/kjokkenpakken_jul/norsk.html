@@ -84,6 +84,14 @@
   body.story .tag { right: 30px; top: 160px; }
   body.story .pill.blue { left: 0; top: 120px; }
   body.story .pill.green { left: 0; bottom: 90px; }
+
+  /* A4 na tlač: 1240 × 1754 CSS px, renderuje sa 2× (= 300 dpi) a do PDF */
+  body.a4 { --w:1240px; --h:1754px; --band:150px; --pad:64px 70px 54px; --kick:26px; --h1:114px; --h1gap:24px;
+    --plate:700px; --bottle:660px; --bgap:-78px; --bshift:40px; --tagw:260px; --str:150px;
+    --pillw:340px; --pillh:29px; --pill:23px; --save:36px; --cta:38px; --eco:24px; --bgap2:20px; }
+  body.a4 .tag { right: 34px; top: 150px; }
+  body.a4 .pill.blue { left: 0; top: 110px; }
+  body.a4 .pill.green { left: 0; bottom: 70px; }
 </style>
 </head>
 <body>
@@ -144,10 +152,12 @@
     '...XX...XX...',
     '...X.....X...'];
 
+  const DPR = +Q.get('dpr') || devicePixelRatio || 1;
   function band(id) {
-    const c = document.getElementById(id), r = c.getBoundingClientRect();
-    c.width = r.width; c.height = r.height;
-    const g = c.getContext('2d');
+    const c0 = document.getElementById(id), r = c0.getBoundingClientRect();
+    c0.width = r.width * DPR; c0.height = r.height * DPR;
+    const c = { width: r.width, height: r.height };
+    const g = c0.getContext('2d'); g.scale(DPR, DPR);
     g.fillStyle = '#7d1520'; g.fillRect(0, 0, c.width, c.height);
     const ROWS = 19, S = c.height / ROWS;          // veľkosť očka
     const cols = Math.ceil(c.width / S) + 1;
@@ -168,8 +178,9 @@
   }
 
   function bg() {
-    const c = document.getElementById('bg'); c.width = innerWidth; c.height = innerHeight;
-    const g = c.getContext('2d');
+    const c0 = document.getElementById('bg'); c0.width = innerWidth * DPR; c0.height = innerHeight * DPR;
+    const c = { width: innerWidth, height: innerHeight };
+    const g = c0.getContext('2d'); g.scale(DPR, DPR);
     let s = 11; const r = () => (s = (s * 9301 + 49297) % 233280) / 233280;
     // jemné veľké ruže v pozadí
     const pts = []; ROSE.forEach((row, y) => [...row].forEach((ch, x) => { if (ch === 'X') pts.push([x - 6, y - 6]); }));
