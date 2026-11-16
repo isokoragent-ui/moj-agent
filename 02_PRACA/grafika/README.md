@@ -26,6 +26,8 @@ Farby: ihličnatá zelená #0f3326, zlatá #d9b56b; písmo Fraunces + Assistant.
 | `badepakken_jul_story.png` | 1080 × 1920 | Story / Reels |
 
 Zdroj: `zdroj/badepakken_jul/` → `node render.js` (výstup do `02_PRACA/grafika/`).
+
+**Verzia do obchodu (A4 na tlač):** `badepakken_butikk_a4.pdf` (210 × 297 mm) + `badepakken_butikk_a4.png` (300 dpi) — „Begge for 249 kr“, „Julepris“, „Kjøp begge sammen her i butikken“, bez dopravy; v rohoch nórska výzdoba (smrekové vetvičky, šišky, jarabina, pletené srdiečko julekurv — vektor, kreslí funkcia `pynt()`). Render: `node render.js ../.. butikk a4` (bez `a4` = mobilné formáty).
 ⚠️ Produkt „Isokor Badepakken“ (349 kr) je v Shopify **DRAFT** a pri cene 349 by sa pripočítala doprava 99 kr → treba vyriešiť „inkl. frakt“, kým sa grafika zverejní.
 
 ### Video Story Badepakken (2026-10-26)
