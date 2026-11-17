@@ -18,10 +18,17 @@
 | `sections/isokor-hytte.liquid` | pás Hytteservice |
 | `assets/isokor-forside.css` | spoločný vzhľad (farby `.isk`) |
 | `assets/fraunces-600.woff2` | písmo nadpisov **uložené v téme** (nie z Google → bez GDPR rizika) |
+| `sections/isokor-julepakker.liquid` | **(18. 11.)** veľké karty Badepakken + Kjøkkenpakken: obsah 2 fliaš, cena, „Du sparer“ (počíta sa živo: 2 fľaše + 99 kr doprava − cena balíčka), košík; pole „Termín objednávky pred Vianocami“ (prázdne = skryté) |
+| `snippets/isokor-snoflak.liquid` | snehová vločka (dekorácia) |
 | `templates/index.json` | poradie: hero → problémy → bestsellery → pred/po → balíčky → prečo → Hytteservice → recenzie Fera („Kundeanmeldelser“) → newsletter → blog |
 
 Zo starej úvodnej stránky **vypadol** blok „Les mer – mindre“ (sľub „100 % naturlige“
 a „fornøydgaranti“ — protirečí podmienkam, audit bod 5–6). Je v zálohe.
+
+## Vianočný režim (17. 11., Luk: „viac vianočné, vytiahnuť kúpeľňu a kuchyňu“)
+- Hero má zaškrtávatko **„Vianočný vzhľad“** (tmavozelená, zlatá, padajúci sneh, vločky). Po Vianociach ho Luk odškrtne a prepíše texty → stránka je späť v bežnom vzhľade.
+- Sekcia „Isokor – Julepakker“ je hneď pod hlavným pásom; starú sekciu „Balíčky“ som z úvodnej stránky vyradil (súbor ostal).
+- Po Vianociach: sekciu Julepakker skryť alebo premenovať texty (napr. „Fordelspakker“).
 
 ## Obrázky na nahratie (v `obrazky/`, nahrá Luk v editore)
 Agent ich do Shopify nenahral (priame nahratie z cloudu zablokovalo bezpečnostné pravidlo prostredia).

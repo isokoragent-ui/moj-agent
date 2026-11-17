@@ -98,3 +98,66 @@
 .isk-hy__txt p{margin:0;font-size:1.8rem;color:#d5e0e6}
 .isk-hy__row{display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center;margin-top:.8rem}
 @media (max-width:749px){.isk-hy__txt{padding:3.2rem 2.4rem}.isk-prob,.isk-best,.isk-fe,.isk-pak,.isk-why{padding:5.6rem 0}}
+/* ===== JUL ===== */
+.isk{--isk-gran:#0f3326;--isk-gran2:#174a37;--isk-rod:#a8202f;--isk-gull2:#d9b56b}
+.isk-snow{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.isk-snow i{position:absolute;top:-1rem;width:.6rem;height:.6rem;border-radius:50%;background:#fff;opacity:.55;animation:isk-fall linear infinite}
+.isk-snow i:nth-child(1){left:6%;animation-duration:11s;animation-delay:-2s}
+.isk-snow i:nth-child(2){left:18%;width:.4rem;height:.4rem;animation-duration:14s;animation-delay:-7s}
+.isk-snow i:nth-child(3){left:31%;animation-duration:12s;animation-delay:-4s}
+.isk-snow i:nth-child(4){left:44%;width:.8rem;height:.8rem;opacity:.35;animation-duration:16s;animation-delay:-9s}
+.isk-snow i:nth-child(5){left:57%;animation-duration:13s;animation-delay:-1s}
+.isk-snow i:nth-child(6){left:69%;width:.4rem;height:.4rem;animation-duration:10s;animation-delay:-6s}
+.isk-snow i:nth-child(7){left:81%;animation-duration:15s;animation-delay:-3s}
+.isk-snow i:nth-child(8){left:93%;width:.7rem;height:.7rem;opacity:.4;animation-duration:12s;animation-delay:-8s}
+@keyframes isk-fall{to{transform:translateY(80rem) translateX(3rem)}}
+@media (prefers-reduced-motion:reduce){.isk-snow i{animation:none;display:none}}
+.isk-flake{position:absolute;color:rgba(255,255,255,.14);pointer-events:none;z-index:0}
+/* hero jul */
+.isk-hero--jul{background:var(--isk-gran);color:#f6f5f0;position:relative;overflow:hidden}
+.isk-hero--jul .isk__wrap{position:relative;z-index:1}
+.isk-hero--jul .isk__eyebrow{color:var(--isk-gull2)}
+.isk-hero--jul .isk__lead,.isk-hero--jul .isk-hero__trust{color:#d6e2da}
+.isk-hero--jul .isk-hero__trust svg{stroke:var(--isk-gull2)}
+.isk-hero--jul .isk__btn--fill{background:var(--isk-gull2);color:var(--isk-gran)}
+.isk-hero--jul .isk__btn--line{border-color:#f6f5f0;color:#f6f5f0}
+.isk-hero--jul .isk-hero__media{background:var(--isk-gran2)}
+.isk-hero--jul .isk-hero__deco g{stroke:rgba(217,181,107,.35)}
+.isk-hero--jul .isk-hero__trio img{border-radius:1.4rem;box-shadow:0 1.6rem 4rem rgba(0,0,0,.35)}
+.isk-hero--jul .isk-hero__trio img:nth-child(1){transform:rotate(-4deg)}
+.isk-hero--jul .isk-hero__trio img:nth-child(2){transform:rotate(3deg);margin:0 0 0 -3rem}
+.isk-hero--jul .isk-hero__chip{background:var(--isk-rod);color:#fff}
+.isk-hero--jul .isk-hero__chip small{color:#f7d9dc}
+/* julepakker */
+.isk-jp{background:var(--isk-gran);color:#f6f5f0;padding:8rem 0;position:relative;overflow:hidden;border-top:1px solid rgba(217,181,107,.25)}
+.isk-jp .isk__wrap{position:relative;z-index:1}
+.isk-jp .isk__eyebrow{color:var(--isk-gull2)}
+.isk-jp__sub{margin:0 0 1rem;font-size:1.8rem;color:#d6e2da;max-width:62rem}
+.isk-jp__frist{display:inline-block;margin-top:.6rem;background:rgba(217,181,107,.15);color:var(--isk-gull2);border:1px solid rgba(217,181,107,.4);border-radius:999px;padding:.6rem 1.4rem;font-weight:700;font-size:1.5rem}
+.isk-jp__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(34rem,1fr));gap:2.8rem;margin-top:4rem}
+.isk-jp__card{position:relative;background:#fbfaf6;color:var(--isk-ink);border-radius:2.8rem;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2rem 5rem rgba(0,0,0,.25)}
+.isk-jp__ribbon{position:absolute;top:2rem;right:2rem;z-index:2;background:var(--isk-rod);color:#fff;font-weight:700;font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase;padding:.7rem 1.4rem;border-radius:999px}
+.isk-jp__media{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:0;min-height:30rem;padding:3.2rem 2.4rem 0;overflow:hidden}
+.isk-jp__media>img{max-height:30rem;width:auto;max-width:100%;position:relative;z-index:1}
+.isk-jp__pair{display:flex;align-items:flex-end;justify-content:center;position:relative;z-index:1;padding-bottom:2.4rem}
+.isk-jp__pair img{width:clamp(12rem,13vw,17rem);border-radius:1.6rem;background:#fff;box-shadow:0 1.2rem 3rem rgba(20,42,31,.15)}
+.isk-jp__pair img+img{margin-left:-2.4rem;transform:translateY(-1.2rem) rotate(3deg)}
+.isk-jp__pair img:first-child{transform:rotate(-3deg)}
+.isk-jp__media .isk-jp__branch{position:absolute;left:-1rem;top:-1rem;width:16rem;z-index:0;opacity:.9}
+.isk-jp__body{padding:2.6rem 2.8rem 3rem;display:flex;flex-direction:column;gap:1.2rem;flex:1}
+.isk-jp__kicker{font-size:1.3rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3d6b52}
+.isk-jp__title{font-family:"Isokor Fraunces",Georgia,serif;font-weight:600;font-size:clamp(3rem,3vw,3.8rem);line-height:1.08;margin:0}
+.isk-jp__list{list-style:none;margin:.4rem 0;padding:0;display:flex;flex-direction:column;gap:.8rem;font-size:1.6rem}
+.isk-jp__list li{display:flex;gap:1rem;align-items:flex-start}
+.isk-jp__list svg{flex:0 0 2rem;margin-top:.3rem}
+.isk-jp__list a{color:var(--isk-ink);font-weight:700}
+.isk-jp__list span{color:var(--isk-muted)}
+.isk-jp__price{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1.2rem;margin-top:auto;padding-top:1.4rem;border-top:1px dashed #d9ddd3}
+.isk-jp__price strong{font-family:"Isokor Fraunces",Georgia,serif;font-size:4rem;font-weight:600;line-height:1}
+.isk-jp__price em{font-style:normal;color:var(--isk-muted);font-size:1.6rem}
+.isk-jp__spar{background:#fbe7e9;color:var(--isk-rod);font-weight:700;font-size:1.4rem;border-radius:999px;padding:.4rem 1.2rem}
+.isk-jp__btns{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.4rem}
+.isk-jp__btns form{margin:0}
+.isk__btn--red{background:var(--isk-rod);color:#fff}
+.isk__btn--gran{background:var(--isk-gran);color:#fff}
+@media (max-width:749px){.isk-jp{padding:5.6rem 0}.isk-jp__grid{grid-template-columns:1fr}.isk-jp__media{min-height:24rem}}

@@ -1,5 +1,10 @@
 {{ 'isokor-forside.css' | asset_url | stylesheet_tag }}
-<section class="isk isk-hero" id="isk-hero-{{ section.id }}">
+<section class="isk isk-hero{% if section.settings.jul %} isk-hero--jul{% endif %}" id="isk-hero-{{ section.id }}">
+  {%- if section.settings.jul -%}
+    <div class="isk-snow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    {%- render 'isokor-snoflak', size: 140, style: 'left: -3rem; top: 2rem' -%}
+    {%- render 'isokor-snoflak', size: 70, style: 'left: 46%; bottom: 3rem' -%}
+  {%- endif -%}
   <div class="isk__wrap">
     <div class="isk-hero__text">
       {%- if section.settings.eyebrow != blank -%}<p class="isk__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
@@ -42,13 +47,14 @@
   "tag": "div",
   "class": "isk-section",
   "settings": [
+    { "type": "checkbox", "id": "jul", "label": "Vianočný vzhľad (sneh, tmavozelená, zlatá)", "default": false },
     { "type": "text", "id": "eyebrow", "label": "Malý nadpis nad", "default": "Miljøvennlig rengjøring · Agder" },
     { "type": "text", "id": "heading", "label": "Hlavný nadpis", "default": "Rent hjem. Ren samvittighet." },
     { "type": "textarea", "id": "text", "label": "Text", "default": "Rengjøring og nano-impregnering som tar kalk, fett, rust og mugg – skånsomt mot deg, huset og naturen." },
     { "type": "text", "id": "btn1_label", "label": "Tlačidlo 1 – text", "default": "Se alle produkter" },
-    { "type": "url", "id": "btn1_link", "label": "Tlačidlo 1 – odkaz" },
+    { "type": "text", "id": "btn1_link", "label": "Tlačidlo 1 – odkaz", "info": "Napr. /collections/produktkatalog alebo #isk-julepakker (skok na sekciu)" },
     { "type": "text", "id": "btn2_label", "label": "Tlačidlo 2 – text", "default": "Finn riktig middel" },
-    { "type": "url", "id": "btn2_link", "label": "Tlačidlo 2 – odkaz (prázdne = skok na „Hva vil du bli kvitt?“)" },
+    { "type": "text", "id": "btn2_link", "label": "Tlačidlo 2 – odkaz", "info": "Prázdne = skok na „Hva vil du bli kvitt?“" },
     { "type": "text", "id": "trust1", "label": "Výhoda 1", "default": "Betal med Vipps" },
     { "type": "text", "id": "trust2", "label": "Výhoda 2", "default": "Rask levering i hele Norge" },
     { "type": "text", "id": "trust3", "label": "Výhoda 3", "default": "Lokal kundeservice" },
