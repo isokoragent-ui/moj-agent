@@ -21,6 +21,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Produkt | Stav |
 |---|---|
 | LMS rustfjerner | ✅ 17. 11. (karusel + SDS), kov opravený podľa `08_ROZHODNUTIA/2026-11-17_lms_kalkfjerner_kov.md`; fotky pred/po čakajú na Luka |
+| Baderomsrens | ✅ 17. 11. (etiketa + SDS; tvrdenia výrobcu antimikrobielt / 99,99 % podľa Luka → `08_ROZHODNUTIA/2026-11-17_baderomsrens_tvrdenia_vyrobcu.md`) |
 | Kalkfjerner for bad | ✅ 17. 11. (etiketa NO = preklad výrobcu + SDS LMD; H314 → otázka o rukaviciach) |
 | ostatné | ⏳ produkt po produkte |
 
