@@ -1,0 +1,76 @@
+/* Isokor – spoločný vzhľad celého webu (2026-11). Načítava sa v layout/theme.liquid po štýloch témy. */
+@font-face{font-family:"Isokor Fraunces";src:url("fraunces-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+:root{
+  --isk-les:#1f4d36;--isk-ink:#142a1f;--isk-muted:#3f5047;--isk-salvia:#e2ebdf;--isk-lin:#f6f5f0;--isk-gull:#e7c987;--isk-rod:#a8202f;
+  --font-heading-family:"Isokor Fraunces",Georgia,serif;--font-heading-weight:600;
+  --buttons-radius:40px;--buttons-radius-outset:41px;--buttons-border-offset:.3px;
+  --inputs-radius:12px;--inputs-radius-outset:13px;--media-radius:18px;
+}
+:root,.color-scheme-1{--color-button:31,77,54;--color-button-text:255,255,255;--color-link:31,77,54}
+.color-scheme-2{--color-background:246,245,240;--gradient-background:#f6f5f0;--color-button:31,77,54;--color-button-text:255,255,255}
+.color-scheme-4{--color-background:20,42,31;--gradient-background:#142a1f}
+h1,h2,h3,.h0,.h1,.h2,.h3{letter-spacing:-.01em}
+.product__title h1{font-size:clamp(3.2rem,4vw,4.6rem);line-height:1.08}
+.button,.shopify-payment-button__button--unbranded{font-weight:700;letter-spacing:.02em}
+.product-form__submit{min-height:5.6rem;font-size:1.7rem}
+.announcement-bar__message{font-size:1.4rem;letter-spacing:.03em}
+.card__heading{font-family:var(--font-body-family);font-weight:700}
+.card .price{font-weight:700}
+.footer{background:#142a1f;color:#d9e1da}
+.footer a,.footer .link,.footer h2{color:#d9e1da}
+.footer .footer-block__heading{color:#fff}
+
+/* ===== stránka produktu ===== */
+.isk-p-kat{font-size:1.3rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3d6b52;margin:0}
+.isk-p-kort{font-size:1.8rem;color:var(--isk-muted);margin:.4rem 0 0}
+.isk-p-chips{display:flex;flex-wrap:wrap;gap:.8rem;margin:.6rem 0 0;padding:0;list-style:none}
+.isk-p-chips li{background:var(--isk-salvia);border-radius:999px;padding:.6rem 1.2rem;font-size:1.4rem;font-weight:600;color:var(--isk-ink)}
+.isk-p-lager{color:#2f7a4a;font-weight:700;font-size:1.5rem;margin:0}
+.isk-tillit{background:var(--isk-lin);border-radius:1.8rem;padding:1.6rem 1.8rem;display:flex;flex-direction:column;gap:1rem;font-size:1.5rem;color:var(--isk-muted)}
+.isk-tillit strong{color:var(--isk-ink)}
+.isk-tillit__bar{height:.8rem;background:var(--isk-salvia);border-radius:.4rem;overflow:hidden}
+.isk-tillit__bar span{display:block;height:100%;background:var(--isk-les);border-radius:.4rem}
+.isk-tillit ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:.8rem}
+.isk-tillit li{display:flex;gap:.8rem;align-items:flex-start}
+.isk-tillit li svg{flex:0 0 1.8rem;margin-top:.2rem}
+.isk-pi{padding:6.4rem 0}
+.isk-pi--hvit{background:#fff}.isk-pi--salvia{background:var(--isk-salvia)}.isk-pi--lin{background:var(--isk-lin)}
+.isk-pi__wrap{max-width:124rem;margin:0 auto;padding:0 2rem}
+.isk-pi h2{font-size:clamp(2.8rem,3vw,3.8rem);margin:0 0 2.4rem}
+.isk-steg{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:2rem;list-style:none;margin:0;padding:0;counter-reset:steg}
+.isk-steg li{background:var(--isk-lin);border-radius:2rem;padding:2.2rem;display:flex;gap:1.4rem;align-items:flex-start;font-size:1.7rem;font-weight:600;color:var(--isk-ink)}
+.isk-steg li::before{counter-increment:steg;content:counter(steg);flex:0 0 3.6rem;height:3.6rem;border-radius:50%;background:var(--isk-les);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.isk-fe2{display:flex;flex-wrap:wrap;gap:4.8rem;align-items:center}
+.isk-fe2__txt{flex:1 1 36rem;min-width:0}
+.isk-fe2__media{flex:0 1 40rem;min-width:0;width:100%}
+.isk-fe2__frame{position:relative;aspect-ratio:3/4;border-radius:2.2rem;overflow:hidden;--pos:50%}
+.isk-fe2__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.isk-fe2__frame .isk-fe2__for{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.isk-fe2__line{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;background:#fff;pointer-events:none}
+.isk-fe2__b{position:absolute;top:1.4rem;font-weight:700;font-size:1.3rem;padding:.5rem 1.1rem;border-radius:999px}
+.isk-fe2__b--f{left:1.4rem;background:rgba(20,42,31,.85);color:#fff}.isk-fe2__b--e{right:1.4rem;background:#fff;color:var(--isk-ink)}
+.isk-fe2 input[type=range]{width:100%;height:4.4rem;accent-color:var(--isk-les)}
+.isk-kort3{display:grid;grid-template-columns:repeat(auto-fit,minmax(28rem,1fr));gap:2.2rem}
+.isk-kort3>div{background:#fff;border-radius:2.2rem;padding:2.6rem}
+.isk-kort3 h3{margin:0 0 1.2rem;font-size:2.2rem}
+.isk-kort3 p{margin:0;color:var(--isk-muted);white-space:pre-line}
+.isk-kort3 .isk-varsel{border:2px solid #f1dfd2}
+.isk-dok{display:inline-flex;align-items:center;gap:1rem;font-weight:700;color:var(--isk-les)}
+.isk-faq{max-width:86rem;margin:0 auto}
+.isk-faq details{background:#fff;border-radius:1.6rem;margin-bottom:1rem;padding:0 2rem}
+.isk-faq summary{padding:1.8rem 0;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:1.2rem;font-size:1.7rem}
+.isk-faq summary::-webkit-details-marker{display:none}
+.isk-faq summary::after{content:"+";font-size:2.2rem;line-height:1}
+.isk-faq details[open] summary::after{content:"–"}
+.isk-faq details p{margin:0 0 1.8rem;color:var(--isk-muted)}
+.isk-mer{display:grid;grid-template-columns:repeat(auto-fit,minmax(22rem,1fr));gap:2rem}
+.isk-mer a{background:#fff;border-radius:2rem;overflow:hidden;text-decoration:none;color:var(--isk-ink);display:flex;flex-direction:column}
+.isk-mer__img{aspect-ratio:1/1;background:#eef2ea}
+.isk-mer__img img{width:100%;height:100%;object-fit:cover;display:block}
+.isk-mer__txt{padding:1.6rem 1.8rem;display:flex;justify-content:space-between;gap:1rem;font-weight:700}
+.isk-sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#fff;border-top:1px solid #dfe3da;padding:1rem 1.6rem;display:none;align-items:center;justify-content:space-between;gap:1.2rem;box-shadow:0 -.6rem 2rem rgba(20,42,31,.08)}
+.isk-sticky form{margin:0}
+.isk-sticky strong{font-size:1.5rem}
+@media (max-width:749px){.isk-sticky{display:flex}body:has(.isk-sticky){padding-bottom:7rem}.isk-pi{padding:4.8rem 0}}
+/* kolekcie */
+.collection .card__media img,.product-grid .card__media img{object-fit:contain}

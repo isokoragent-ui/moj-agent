@@ -1,0 +1,5 @@
+{%- comment -%} Načíta spoločný vzhľad Isokor (farby, písmo, tlačidlá) na každej stránke. Je v skupine hlavičky. {%- endcomment -%}
+{{ 'isokor-global.css' | asset_url | stylesheet_tag }}
+{% schema %}
+{ "name": "Isokor – vzhľad webu", "tag": "div", "enabled_on": { "groups": ["header"] }, "settings": [] }
+{% endschema %}

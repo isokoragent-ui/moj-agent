@@ -1,0 +1,48 @@
+{
+ "sections": {
+  "isokor_frakt": {
+   "type": "custom-liquid",
+   "settings": {
+    "custom_liquid": "{%- assign t = cart.total_price -%}{%- assign p = t | times: 100 | divided_by: 70000 -%}{%- if p > 100 -%}{%- assign p = 100 -%}{%- endif -%}{%- if cart.item_count > 0 -%}<div class=\"isk-tillit\" style=\"max-width:60rem;margin:0 auto\">{%- if t >= 70000 -%}<strong>Du har gratis frakt!</strong>{%- elsif t >= 40000 -%}<strong>Frakt kun 49 kr – {{ 70000 | minus: t | money_without_trailing_zeros }} til gratis frakt</strong>{%- else -%}<strong>{{ 40000 | minus: t | money_without_trailing_zeros }} til billigere frakt (49 kr) · gratis over 700 kr</strong>{%- endif -%}<div class=\"isk-tillit__bar\"><span style=\"width: {{ p }}%\"></span></div><span>Badepakken og Kjøkkenpakken har frakt inkludert. Levering 6–10 virkedager.</span></div>{%- endif -%}",
+    "color_scheme": "scheme-1",
+    "padding_top": 24,
+    "padding_bottom": 0
+   }
+  },
+  "cart-items": {
+   "type": "main-cart-items",
+   "settings": {
+    "color_scheme": "scheme-1",
+    "padding_top": 24,
+    "padding_bottom": 36
+   }
+  },
+  "cart-footer": {
+   "type": "main-cart-footer",
+   "blocks": {
+    "subtotal": {
+     "type": "subtotal",
+     "settings": {}
+    },
+    "buttons": {
+     "type": "buttons",
+     "settings": {}
+    }
+   },
+   "block_order": [
+    "subtotal",
+    "buttons"
+   ],
+   "settings": {
+    "color_scheme": "scheme-1",
+    "padding_top": 20,
+    "padding_bottom": 40
+   }
+  }
+ },
+ "order": [
+  "isokor_frakt",
+  "cart-items",
+  "cart-footer"
+ ]
+}
