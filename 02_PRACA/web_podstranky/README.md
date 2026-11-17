@@ -1,6 +1,6 @@
 # Podstránky e-shopu — nový dizajn (od 2026-11-17)
 
-**Pracovná téma:** „Isokor – PRACOVNÁ (podstránky)“ `gid://shopify/OnlineStoreTheme/156287008947` (kópia živej JUL, NEZVEREJNENÁ).
+**Pracovná téma:** „Isokor – JUL 2026 + nové podstránky“ (premenovaná 17. 11.; predtým „PRACOVNÁ (podstránky)“) `gid://shopify/OnlineStoreTheme/156287008947` (kópia živej JUL, NEZVEREJNENÁ).
 Náhľad LMS: https://isokor-skandinavia.no/products/lms?preview_theme_id=156287008947
 ⚠️ Po pozretí náhľadu: https://isokor-skandinavia.no/?preview_theme_id= (inak prehliadač ukazuje náhľad ďalej).
 
@@ -34,3 +34,6 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 - Vipps (#1038) ide cez Vipps/MobilePay. **PayPal je na e-shope deaktivovaný** (Luk 17. 11.; účet PayPal má len na platobný terminál) — posledná PayPal objednávka #1027 bola v júli, keď ešte bol zapnutý. Na webe PayPal neuvádzať.
 - Účet na výplaty Luk zmenil 10. 11. → výplata zadržaná do 14. 11. (bezpečnostné pravidlo Shopify).
 - Agent nevidí číslo účtu ani rozvrh výplat (konektor bez oprávnenia `read_shopify_payments`).
+
+## Zverejnenie (17. 11.)
+Luk chce LMS online hneď → zverejniť „Isokor – JUL 2026 + nové podstránky“ (vianočná úvodná + nové podstránky). Overené: JUL naposledy zmenená 20:59, kópia vznikla 21:33 → nič sa nestratí. Návrat: „Isokor – JUL 2026 (teraz)“ → Publikovať. **Potom** nahrať tie isté súbory podstránok do „po sviatkoch 2027“.
