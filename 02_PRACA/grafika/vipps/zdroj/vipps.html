@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600;700;800&display=block" rel="stylesheet">
+<style>
+  /* A5 = 874 × 1240 CSS px; PNG 2× = 300 dpi; PDF A5 aj A4 (vektor) */
+  :root { --or: #ff5b24; --or-2: #ff7a45; --or-d: #e0470f; --ink: #1d1d1b; --cream: #fff7f2; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 874px; height: 1240px; font-family: "Assistant", sans-serif; background: var(--or); overflow: hidden; }
+  .card { position: relative; width: 874px; height: 1240px; overflow: hidden;
+    background: radial-gradient(90% 60% at 50% 38%, var(--or-2) 0%, var(--or) 60%, var(--or-d) 100%);
+    display: flex; flex-direction: column; align-items: center; padding: 70px 70px 56px; color: #fff; }
+  .dots { position: absolute; inset: 0; opacity: .10;
+    background-image: radial-gradient(#fff 2px, transparent 2.5px); background-size: 28px 28px; }
+  .logo { position: relative; height: 70px; filter: brightness(0) invert(1); }
+  h1 { position: relative; font-weight: 800; font-size: 104px; line-height: 1; margin-top: 36px; letter-spacing: -.02em; text-align: center; }
+  .sub { position: relative; font-weight: 700; font-size: 31px; margin-top: 12px; opacity: .95; text-align: center; }
+  .qrbox { position: relative; margin-top: 34px; background: #fff; border-radius: 40px; padding: 62px 62px 30px;
+    box-shadow: 0 24px 50px rgba(120,30,0,.35); display: flex; flex-direction: column; align-items: center; }
+  .qrbox img { width: 429px; height: 429px; display: block; image-rendering: pixelated; }
+  .name { color: var(--ink); font-weight: 800; font-size: 34px; margin-top: 26px; letter-spacing: .02em; }
+  .nr { color: var(--or-d); font-weight: 800; font-size: 30px; margin-top: 2px; }
+  .steps { position: relative; display: flex; gap: 22px; margin-top: 38px; }
+  .step { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 25px; }
+  .step i { font-style: normal; width: 42px; height: 42px; border-radius: 50%; background: #fff; color: var(--or-d);
+    display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 24px; flex: none; }
+  .foot { position: relative; margin-top: auto; text-align: center; }
+  .thanks { font-weight: 800; font-size: 34px; }
+  .web { font-weight: 700; font-size: 24px; opacity: .9; margin-top: 4px; letter-spacing: .03em; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="dots"></div>
+  <img class="logo" src="logo.svg" alt="Isokor">
+  <h1>Betal med Vipps</h1>
+  <div class="sub">Skann koden med kameraet eller i Vipps-appen</div>
+  <div class="qrbox">
+    <img src="qr.svg" alt="QR-kode">
+    <div class="name">ISOKOR-SKANDINAVIA AS</div>
+    <div class="nr">Vippsnummer 62769</div>
+  </div>
+  <div class="steps">
+    <div class="step"><i>1</i>Skann</div>
+    <div class="step"><i>2</i>Skriv inn beløp</div>
+    <div class="step"><i>3</i>Bekreft</div>
+  </div>
+  <div class="foot">
+    <div class="thanks">Takk for handelen!</div>
+    <div class="web">isokor-skandinavia.no</div>
+  </div>
+</div>
+</body>
+</html>
