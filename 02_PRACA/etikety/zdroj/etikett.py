@@ -189,7 +189,13 @@ def overlay(m, L):
     if L['arc']:
         arc_text(c, L['arc'], m.ARC, green)
 
-    for t, tx_, ty_, font, fs, col, al in L['texts']:
+    for t, tx_, ty_, font, fs, col, al, *ko in L['texts']:
+        if ko:                                 # biely obrys pod textom (originál má výsek do ikony za textom)
+            w_ = pdfmetrics.stringWidth(t, font, fs)
+            x_ = {'l': X(tx_), 'c': X(tx_) - w_ / 2, 'r': X(tx_) - w_}[al]
+            to = c.beginText(x_, Y(ty_)); to.setFont(font, fs); to.setTextRenderMode(1)
+            c.saveState(); c.setStrokeColor(WHITE); c.setLineWidth(ko[0]); c.setLineJoin(1)
+            to.textOut(t); c.drawText(to); c.restoreState()
         c.setFillColor(col); c.setFont(font, fs)
         {'l': c.drawString, 'c': c.drawCentredString, 'r': c.drawRightString}[al](X(tx_), Y(ty_), t)
 
