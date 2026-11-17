@@ -25,7 +25,7 @@
 .isk-hero__media{position:relative;background:var(--isk-salvia);border-radius:2.8rem;min-height:52rem;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;padding:6rem 2rem 0}
 .isk-hero__media img{max-width:100%;height:auto;max-height:47rem;width:auto;position:relative;z-index:1}
 .isk-hero__trio{display:flex;align-items:flex-end;justify-content:center;gap:0;padding-bottom:3rem;position:relative;z-index:1}
-.isk-hero__trio img{width:clamp(12rem,14vw,19rem);border-radius:1.8rem;box-shadow:0 1.2rem 3rem rgba(20,42,31,.15);background:#fff}
+.isk-hero__trio img{width:clamp(12rem,14vw,19rem);height:auto;aspect-ratio:auto;object-fit:contain;border-radius:1.8rem;box-shadow:0 1.2rem 3rem rgba(20,42,31,.15);background:#fff}
 .isk-hero__trio img:nth-child(2){width:clamp(15rem,17vw,23rem);margin:0 -2rem;z-index:2;position:relative}
 .isk-hero__deco{position:absolute;inset:0;width:100%;height:100%;z-index:0}
 .isk-hero__chip{position:absolute;top:2.8rem;left:2.8rem;z-index:3;background:#fff;border-radius:1.6rem;padding:1.4rem 1.8rem;box-shadow:0 .8rem 2.4rem rgba(20,42,31,.1)}
@@ -138,9 +138,9 @@
 .isk-jp__card{position:relative;background:#fbfaf6;color:var(--isk-ink);border-radius:2.8rem;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2rem 5rem rgba(0,0,0,.25)}
 .isk-jp__ribbon{position:absolute;top:2rem;right:2rem;z-index:2;background:var(--isk-rod);color:#fff;font-weight:700;font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase;padding:.7rem 1.4rem;border-radius:999px}
 .isk-jp__media{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:0;min-height:30rem;padding:3.2rem 2.4rem 0;overflow:hidden}
-.isk-jp__media>img{max-height:30rem;width:auto;max-width:100%;position:relative;z-index:1}
+.isk-jp__media>img{max-height:30rem;width:auto;height:auto;max-width:100%;position:relative;z-index:1}
 .isk-jp__pair{display:flex;align-items:flex-end;justify-content:center;position:relative;z-index:1;padding-bottom:2.4rem}
-.isk-jp__pair img{width:clamp(12rem,13vw,17rem);border-radius:1.6rem;background:#fff;box-shadow:0 1.2rem 3rem rgba(20,42,31,.15)}
+.isk-jp__pair img{width:clamp(12rem,13vw,17rem);height:auto;aspect-ratio:auto;object-fit:contain;border-radius:1.6rem;background:#fff;box-shadow:0 1.2rem 3rem rgba(20,42,31,.15)}
 .isk-jp__pair img+img{margin-left:-2.4rem;transform:translateY(-1.2rem) rotate(3deg)}
 .isk-jp__pair img:first-child{transform:rotate(-3deg)}
 .isk-jp__media .isk-jp__branch{position:absolute;left:-1rem;top:-1rem;width:16rem;z-index:0;opacity:.9}
@@ -161,3 +161,6 @@
 .isk__btn--red{background:var(--isk-rod);color:#fff}
 .isk__btn--gran{background:var(--isk-gran);color:#fff}
 @media (max-width:749px){.isk-jp{padding:5.6rem 0}.isk-jp__grid{grid-template-columns:1fr}.isk-jp__media{min-height:24rem}}
+/* fix 17.11: obrázky nikdy nenaťahovať */
+.isk img{max-width:100%}
+.isk-hero__trio img,.isk-jp__pair img{height:auto!important}

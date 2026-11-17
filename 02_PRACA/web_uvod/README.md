@@ -1,6 +1,13 @@
 # Nová úvodná stránka — sekcie v kópii témy (2026-11-17)
 
-**Kópia témy:** „Isokor – nová úvodná 2026-11“ (`gid://shopify/OnlineStoreTheme/156284649651`, NEZVEREJNENÁ)
+## Dve témy (Luk 17. 11.: „teraz vianočná, s novým návrhom pokračujeme po sviatkoch“)
+| Téma | ID | Kedy |
+|---|---|---|
+| **Isokor – JUL 2026 (teraz)** | `…/156284649651` | teraz – vianočná verzia (náhľad `?preview_theme_id=156284649651`) |
+| **Isokor – po sviatkoch 2027** | `…/156285272243` | po sviatkoch – bežná nová verzia (náhľad `?preview_theme_id=156285272243`), šablóna aj v `tema_po_sviatkoch/` |
+
+Obe majú rovnaké sekcie a CSS; líšia sa len `templates/index.json`. **Pasca:** úprava kódu sekcie alebo CSS sa musí nahrať do OBOCH tém.
+**Pasca 2 (17. 11.):** `image_tag` dáva obrázku `height` z originálu → ak CSS nastaví len `width`, obrázok sa natiahne. Vždy pridať `height:auto`.
 **Živá téma:** „Dawn“ (`…/146881511603`) — **nezmenená**. Po zverejnení novej ostane v knižnici tém.
 
 - Náhľad: https://isokor-skandinavia.no/?preview_theme_id=156284649651
