@@ -21,11 +21,13 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Produkt | Stav |
 |---|---|
 | LMS rustfjerner | ✅ 17. 11. (karusel + SDS), kov opravený podľa `08_ROZHODNUTIA/2026-11-17_lms_kalkfjerner_kov.md`; fotky pred/po čakajú na Luka |
+| Fett- og flekkfjerner | ✅ 17. 11. (etiketa + SDS = Baderomsrens; pred/po = fotky rúry z produktu, rôzna orientácia → Luk skontroluje posuvník) |
 | Baderomsrens | ✅ 17. 11. (etiketa + SDS; tvrdenia výrobcu antimikrobielt / 99,99 % podľa Luka → `08_ROZHODNUTIA/2026-11-17_baderomsrens_tvrdenia_vyrobcu.md`) |
 | Kalkfjerner for bad | ✅ 17. 11. (etiketa NO = preklad výrobcu + SDS LMD; H314 → otázka o rukaviciach) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
+- **Fotky pri produktoch sú skutočné** (Luk 17. 11.), niektoré upravené (Gemini/agent) len na veľkosť → smú sa použiť aj do pred/po (metapole file_reference berie MediaImage ID z médií produktu).
 - Hlavička: `padding_top/bottom` musí byť násobok 4 (14 neprešlo).
 - Živú tému (JUL) agent nemení → všetko v pracovnej; po dokončení Luk zverejní pracovnú. Potom to isté do „po sviatkoch“ (homepage index.json sa líši, ostatné súbory rovnaké).
 - Fotky z cloudu do Shopify nenahrám (blokované) → fotky pred/po nahrá Luk priamo do metapoľa produktu.
