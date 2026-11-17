@@ -1,0 +1,47 @@
+{{ 'isokor-forside.css' | asset_url | stylesheet_tag }}
+<section class="isk isk-prob" id="isk-problemer">
+  <div class="isk__wrap">
+    <h2 class="isk__h2">{{ section.settings.heading }}</h2>
+    {%- if section.settings.text != blank -%}<p class="isk__sub">{{ section.settings.text }}</p>{%- endif -%}
+    <div class="isk-prob__grid">
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.product -%}
+        {%- assign url = block.settings.link | default: p.url | default: routes.all_products_collection_url -%}
+        <a class="isk-prob__tile" href="{{ url }}" {{ block.shopify_attributes }}>
+          <span class="isk-prob__ico" style="background: {{ block.settings.color }}" aria-hidden="true">{{ block.settings.name | slice: 0 }}</span>
+          <span class="isk-prob__name">{{ block.settings.name }}</span>
+          <span class="isk-prob__prod">{{ block.settings.product_label | default: p.title }}</span>
+          <span class="isk-prob__more">{{ section.settings.more }} →</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Isokor – Problémy",
+  "tag": "div",
+  "class": "isk-section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "Hva vil du bli kvitt?" },
+    { "type": "text", "id": "text", "label": "Text", "default": "Velg problemet – vi viser deg midlet som løser det." },
+    { "type": "text", "id": "more", "label": "Text odkazu", "default": "Se midlet" }
+  ],
+  "blocks": [
+    {
+      "type": "problem",
+      "name": "Problém",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Problém", "default": "Kalk" },
+        { "type": "product", "id": "product", "label": "Produkt" },
+        { "type": "text", "id": "product_label", "label": "Krátky názov produktu (inak celý názov)" },
+        { "type": "url", "id": "link", "label": "Iný odkaz (napr. kolekcia)" },
+        { "type": "color", "id": "color", "label": "Farba ikony", "default": "#dbe8f0" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Isokor – Problémy" }]
+}
+{% endschema %}

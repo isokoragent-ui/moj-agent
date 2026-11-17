@@ -1,6 +1,6 @@
 # Návrh novej úvodnej stránky e-shopu (2026-11-17)
 
-*Okno „Nová úvodná stránka“. Stav: **návrh na posúdenie** — v e-shope nič nezmenené.*
+*Okno „Nová úvodná stránka“. Stav: **sekcie hotové v kópii témy (17. 11.)** → `02_PRACA/web_uvod/README.md`.*
 
 **Návrh (plátno, interaktívny):** https://claude.ai/artifact/9Y65CZEaSEpZthRfhFet3Y
 — úvodná stránka + grafický systém (farby, písmo, tlačidlá).

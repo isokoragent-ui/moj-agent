@@ -1,0 +1,50 @@
+{{ 'isokor-forside.css' | asset_url | stylesheet_tag }}
+<section class="isk isk-pak">
+  <div class="isk__wrap">
+    {%- if section.settings.eyebrow != blank -%}<p class="isk__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    <h2 class="isk__h2">{{ section.settings.heading }}</h2>
+    <div class="isk-pak__grid">
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.product -%}
+        {%- if p != blank -%}
+          {%- assign img = block.settings.image | default: p.featured_image -%}
+          <a class="isk-pak__card" href="{{ p.url }}" {{ block.shopify_attributes }}>
+            <div class="isk-pak__img">{%- if img -%}{{ img | image_url: width: 500 | image_tag: loading: 'lazy', alt: p.title }}{%- endif -%}</div>
+            <div class="isk-pak__txt">
+              <div class="isk__serif" style="font-size: 2.8rem">{{ block.settings.title | default: p.title }}</div>
+              {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
+              <span class="isk-pak__badge">{{ p.price | money_without_trailing_zeros }} {{ block.settings.badge_suffix }}</span>
+            </div>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Isokor – Balíčky",
+  "tag": "div",
+  "class": "isk-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Malý nadpis", "default": "Fordelspakker" },
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "To flasker, én pris – frakt inkludert" }
+  ],
+  "blocks": [
+    {
+      "type": "pakke",
+      "name": "Balíček",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Produkt" },
+        { "type": "image_picker", "id": "image", "label": "Iný obrázok (inak hlavná fotka produktu)" },
+        { "type": "text", "id": "title", "label": "Názov (inak názov produktu)" },
+        { "type": "textarea", "id": "text", "label": "Text" },
+        { "type": "text", "id": "badge_suffix", "label": "Za cenou", "default": "inkl. frakt" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "Isokor – Balíčky" }]
+}
+{% endschema %}
