@@ -11,6 +11,7 @@
 - **Cieľ:** dostať produkty a služby viac medzi ľudí → pravidelné objednávky
 - **Stav:** 🚀 rozbieha sa — beží asi rok, stále počiatočná fáza
 - **Čo chýba:** dobré postupy a marketing — bez nich sa na trhu neetablujú
+- **E-shop – nový dizajn (17. 11. 2026):** ✅ zverejnená téma „Isokor – JUL 2026 + nové podstránky“; produkty 4/37 vyplnené, ďalej produkt po produkte → `02_PRACA/web_podstranky/README.md`. Po Novom roku téma „PO SVIATKOCH 2027“.
 - **E-shop (Shopify, Basic):** 8 260 NOK čistých za 12 mes., 28 objednávok, konverzia ~0,6–1 % → `02_PRACA/ESHOP_ANALYZA.md`; web audit 2026-10-18 → `02_PRACA/WEB_AUDIT_2026-10-18.md` (názvy, SEO, adresy opravené; zvyšok rozpracovaný)
 - **Sociálne siete (2026-10-18):** FB, IG, TikTok, YouTube, Google Business pripojené cez Metricool → agent pripravuje príspevky (draft → Lukovo „áno“); príspevky: Peisglassrens 18. 10., Badepakken 26. 10. (FB, IG, Threads, Google), Nye priser 27. 10.; TikTok — videá dáva Luk ručne → `07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md`
 - **Snapchat (od 2026-11-12):** profil ISOKOR Skandinavia založený, obsah zatiaľ žiadny, mimo Metricoolu (ručne) → `02_PRACA/SNAPCHAT.md`
