@@ -70,3 +70,14 @@ Zdroj: `zdroj/kjokkenpakken_jul/norsk.html` → `node render_norsk.js`.
 ### Video Kjøkkenpakken — nórska verzia (2026-10-30)
 `kjokkenpakken_norsk_story.mp4` (1080×1920) a `kjokkenpakken_norsk_wide.mp4` (1920×1080) — 14 s, s hudbou (`hytteservice/hudba.py`, hracia skrinka). Scény: „Ribbe – eller pinnekjøtt?" → „Uansett: kjøleskapet trenger en vask før julematen" → fľaše na tanieri, visačka 349,- spadne a zahojdá sa, „du sparer 48,-", isokor-skandinavia.no. Pletený pás sa posúva, sneží.
 Zdroj: `zdroj/kjokkenpakken_jul/video_norsk.html` (`?f=wide` pre šírku) + `frames_norsk.js` (`OUT=…`, `WIDE=1`).
+
+## Sofarens — fľaša s novou nórskou etiketou (2026-11-17)
+Z Lukovej skutočnej fotky fľaše Sofa Cleaner (stará skúšobná etiketa „Middel for rengjøring og rens av polstrede møbler“) → nalepená nová etiketa `etikety/Isokor_Sofarens_500ml_etikett_NO.png` (schéma `07_SCHEMY/ETIKETA_NA_FLASU.md`).
+
+| Súbor | Na čo |
+|---|---|
+| `sofarens_produkt.jpg` | 2048 × 2048, svetlé pozadie — produktová fotka, záverečný záber videa |
+| `sofarens_flaska_bez_pozadia.png` | fľaša bez pozadia — do grafík a videa |
+
+Zdroj: `zdroj/sofarens/` → `python3 cut.py` (rembg), `python3 nalep.py ../../../etikety/Isokor_Sofarens_500ml_etikett_NO.png flaska_sofarens.png`, `python3 packshot.py`.
+Lukova druhá fotka (`foto_sofa_cleaner_AI_gemini.jpg`, fľaša v obývačke) je z Gemini — etiketa má vymyslené texty („Profesjonell dyprens“, „UEIN“) → **nepoužívať**.
