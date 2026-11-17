@@ -18,9 +18,9 @@
 | `sections/isokor-hytte.liquid` | pás Hytteservice |
 | `assets/isokor-forside.css` | spoločný vzhľad (farby `.isk`) |
 | `assets/fraunces-600.woff2` | písmo nadpisov **uložené v téme** (nie z Google → bez GDPR rizika) |
-| `sections/isokor-julepakker.liquid` | **(18. 11.)** veľké karty Badepakken + Kjøkkenpakken: obsah 2 fliaš, cena, „Du sparer“ (počíta sa živo: 2 fľaše + 99 kr doprava − cena balíčka), košík; pole „Termín objednávky pred Vianocami“ (prázdne = skryté) |
+| `sections/isokor-julepakker.liquid` | **(17. 11.)** veľké karty Badepakken + Kjøkkenpakken: obsah 2 fliaš, cena, „Du sparer“ (počíta sa živo: 2 fľaše + 99 kr doprava − cena balíčka), košík; pole „Termín objednávky pred Vianocami“ (prázdne = skryté) |
 | `snippets/isokor-snoflak.liquid` | snehová vločka (dekorácia) |
-| `templates/index.json` | poradie: hero → problémy → bestsellery → pred/po → balíčky → prečo → Hytteservice → recenzie Fera („Kundeanmeldelser“) → newsletter → blog |
+| `templates/index.json` | poradie: hero → **Julepakker** → problémy → bestsellery → pred/po → prečo → Hytteservice → recenzie Fera („Kundeanmeldelser“) → newsletter → blog |
 
 Zo starej úvodnej stránky **vypadol** blok „Les mer – mindre“ (sľub „100 % naturlige“
 a „fornøydgaranti“ — protirečí podmienkam, audit bod 5–6). Je v zálohe.
@@ -36,7 +36,7 @@ Agent ich do Shopify nenahral (priame nahratie z cloudu zablokovalo bezpečnostn
 |---|---|
 | `isokor-forside-hero-flasker.png` | Isokor – Hero → Obrázok |
 | `isokor-forside-wc-for.jpg` / `-etter.jpg` | Isokor – Pred/po → Fotka PRED / PO |
-| `isokor-forside-kjokkenpakken.png` / `-badepakken.png` | Isokor – Balíčky → blok → Iný obrázok |
+| `isokor-forside-kjokkenpakken.png` / `-badepakken.png` | Isokor – Julepakker → blok → Obrázok (inak sa ukážu 2 fľaše) |
 
 ## Návrat späť (keby niečo)
 1. Shopify → Online obchod → Témy → pri „Dawn“ → **Publikovať**. Hotovo, všetko ako predtým.
