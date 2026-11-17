@@ -37,3 +37,13 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 
 ## Zverejnenie (17. 11.)
 Luk chce LMS online hneď → zverejniť „Isokor – JUL 2026 + nové podstránky“ (vianočná úvodná + nové podstránky). Overené: JUL naposledy zmenená 20:59, kópia vznikla 21:33 → nič sa nestratí. Návrat: „Isokor – JUL 2026 (teraz)“ → Publikovať. **Potom** nahrať tie isté súbory podstránok do „po sviatkoch 2027“.
+
+## ✅ ZVEREJNENÉ 17. 11. 2026 ~21:58 (Luk) — overené `themes(roles:MAIN)`
+- **Živá:** „Isokor – JUL 2026 + nové podstránky“ `…/156287008947`.
+- **Po sviatkoch:** „Isokor – PO SVIATKOCH 2027 (s podstránkami)“ `…/156287566003` = kópia živej + bežná úvodná (index.json bez `jul`). Po Novom roku Luk zverejní túto.
+- „ZASTARANÉ – nepoužívať“ `…/156285272243` (stará po-sviatkoch bez podstránok) — Luk môže zmazať.
+- Návrat: „Isokor – JUL 2026 (teraz)“ alebo „Dawn“.
+
+## Ďalšie produkty = len metapolia (nie téma!)
+Obsah produktu je v metapoliach → po zápise je **hneď na živom webe**. Preto: agent pripraví texty → Luk schváli → agent zapíše.
+Zmena kódu šablóny = nová pracovná kópia živej + to isté do „po sviatkoch“.

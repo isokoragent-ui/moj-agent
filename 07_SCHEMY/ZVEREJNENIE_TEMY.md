@@ -19,6 +19,7 @@
 Rovnaké kroky, len pri téme „Dawn“ → Publikovať. Nič sa nestratí — stará téma ostáva v knižnici.
 
 ## Pasce
+- ⚠️ **Sezónna téma + nové podstránky:** keď sa zverejní nová pracovná téma, starú „po sviatkoch“ treba nahradiť kópiou novej živej (inak po prepnutí zmiznú novinky). Názov témy max. 50 znakov.
 - ⚠️ **„Na webe vidím inú verziu“ = takmer vždy náhľad v prehliadači.** Otvorený odkaz `?preview_theme_id=…` si prehliadač pamätá a ukazuje ten náhľad aj na bežnej adrese (dole čierny pruh „Exit preview“). Riešenie: otvoriť `https://isokor-skandinavia.no/?preview_theme_id=` alebo ťuknúť „Exit preview“. Najprv overiť `themes{role}`, až potom hľadať chybu (17. 11. 2026).
 - ⚠️ **Úpravy v editore platia len pre tú tému, v ktorej sa robia.** Máme 2 verzie (JUL / po sviatkoch) — zmena kódu sekcie alebo CSS sa nahráva do OBOCH.
 - ⚠️ **Kópia témy je fotka v čase.** Ak sa po vytvorení kópie zmení niečo v živej téme (menu je spoločné, ale pätička, hlavička, nastavenia aplikácií v téme nie), kópia to nemá. Pred zverejnením porovnať `updatedAt` živej témy s dátumom kópie.
