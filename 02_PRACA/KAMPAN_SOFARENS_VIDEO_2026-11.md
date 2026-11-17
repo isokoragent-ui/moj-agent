@@ -61,3 +61,4 @@ Hudba: vlastná (`hytteservice/hudba.py`), ako pri predošlých videách.
 - ⚠️ **„Pred/po“ z AI nesmie vyzerať ako skutočný výsledok** (markedsføringsloven + pravidlá Meta; to isté sme riešili pri dlažbe LMS). Riešenie: v rohu malé „Illustrasjonsbilder“, **alebo** záber 4–5 natočiť naozaj (víno + čučoriedky na kúsku látky, 15 s mobilom) — reálny záber predáva najviac.
 - ⚠️ Gemini môže odmietnuť „blood“ → použi „dark red nosebleed spots“.
 - ⚠️ Hlavná fotka Sofarens v e-shope vyzerá ako AI → do videa skutočná fotka fľaše.
+- ✅ 17. 11.: fľaša s novou nórskou etiketou z Lukovej skutočnej fotky → `grafika/sofarens_flaska_bez_pozadia.png` (záverečný záber) a `grafika/sofarens_produkt.jpg`.
