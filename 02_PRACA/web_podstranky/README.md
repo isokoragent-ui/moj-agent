@@ -31,6 +31,6 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 ## Platby — overené 17. 11. 2026
 - Shopify `paymentSettings.supportedDigitalWallets` = **Shop Pay, Apple Pay, Google Pay** → zákazník platí telefónom; Luk ich mať nemusí.
 - Karta / Apple Pay / Google Pay / Shop Pay = Shopify Payments → **automatická výplata na bankový účet** (napr. #1040 248 kr zo 4. 11. → výplata 9. 11. 236,58 kr, „settes inn på bankkontoen din i løpet av 1–2 virkedager“; poplatok ~11 kr).
-- Vipps (#1038) ide cez Vipps/MobilePay, PayPal (#1027) na účet PayPal.
+- Vipps (#1038) ide cez Vipps/MobilePay. **PayPal je na e-shope deaktivovaný** (Luk 17. 11.; účet PayPal má len na platobný terminál) — posledná PayPal objednávka #1027 bola v júli, keď ešte bol zapnutý. Na webe PayPal neuvádzať.
 - Účet na výplaty Luk zmenil 10. 11. → výplata zadržaná do 14. 11. (bezpečnostné pravidlo Shopify).
 - Agent nevidí číslo účtu ani rozvrh výplat (konektor bez oprávnenia `read_shopify_payments`).
