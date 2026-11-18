@@ -20,4 +20,4 @@ Stav: **čaká na Lukovo „áno“**.
 - **passer_med:** Fett- og flekkfjerner (príprava povrchu) · Møbelrens · Baderomsrens
 
 ⚠️ Presný postup nanášania (sprej? handrička? čas schnutia?) v zdroji nie je → v krokoch len „Påfør Polish“. Ak Luk pošle SK etiketu Polisher, doplní sa.
-Nedané: hygienické/antibakteriálne tvrdenia („ugunstig for bakterier og muggsopp“), „flere år“ bez etikety.
+Nedané: hygienické/antibakteriálne tvrdenia („ugunstig for bakterier og muggsopp“). FAQ „Hvilken størrelse“ = vlastný návrh agenta.
