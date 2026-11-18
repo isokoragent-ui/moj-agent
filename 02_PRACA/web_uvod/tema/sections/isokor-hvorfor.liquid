@@ -1,0 +1,38 @@
+{{ 'isokor-forside.css' | asset_url | stylesheet_tag }}
+<section class="isk isk-why">
+  <div class="isk__wrap">
+    <h2 class="isk__h2">{{ section.settings.heading }}</h2>
+    <div class="isk-why__grid">
+      {%- for block in section.blocks -%}
+        <div class="isk-why__item" {{ block.shopify_attributes }}>
+          <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3 42 13.5v21L24 45 6 34.5v-21z" fill="#e2ebdf"/><path d="m16 24 6 6 11-12" fill="none" stroke="#1f4d36" stroke-width="3"/></svg>
+          <strong>{{ block.settings.title }}</strong>
+          <span>{{ block.settings.text }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Isokor – Prečo my",
+  "tag": "div",
+  "class": "isk-section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "Hvorfor Isokor?" }
+  ],
+  "blocks": [
+    {
+      "type": "grunn",
+      "name": "Dôvod",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Nadpis", "default": "Miljøvennlige formler" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "Isokor – Prečo my" }]
+}
+{% endschema %}

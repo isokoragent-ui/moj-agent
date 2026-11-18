@@ -1,0 +1,34 @@
+{%- comment -%}
+  Dôvera pri tlačidle Kúpiť: koľko chýba do lacnejšej / bezplatnej dopravy + istoty.
+  Hranice dopravy: 400 kr → 49 kr, 700 kr → zdarma (08_ROZHODNUTIA/2026-10-26). Počíta sa z košíka + ceny produktu.
+{%- endcomment -%}
+{%- assign v = product.selected_or_first_available_variant -%}
+{%- assign spolu = cart.total_price | plus: v.price -%}
+{%- assign hranica1 = 40000 -%}
+{%- assign hranica2 = 70000 -%}
+{%- assign pct = spolu | times: 100 | divided_by: hranica2 -%}
+{%- if pct > 100 -%}{%- assign pct = 100 -%}{%- endif -%}
+<div class="isk-tillit">
+  {%- if product.tags contains 'tjeneste' or product.type == 'Tjeneste' -%}
+    <strong>Tjeneste – ingen frakt</strong>
+  {%- elsif product.handle == 'badepakken' or product.handle == 'kjokkenpakken' -%}
+    <strong>Frakt inkludert i prisen</strong>
+  {%- elsif spolu >= hranica2 -%}
+    <strong>Du får gratis frakt!</strong>
+    <div class="isk-tillit__bar"><span style="width: 100%"></span></div>
+  {%- elsif spolu >= hranica1 -%}
+    <strong>Frakt kun 49 kr – {{ hranica2 | minus: spolu | money_without_trailing_zeros }} til gratis frakt</strong>
+    <div class="isk-tillit__bar"><span style="width: {{ pct }}%"></span></div>
+  {%- else -%}
+    <strong>{{ hranica1 | minus: spolu | money_without_trailing_zeros }} til billigere frakt (49 kr)</strong>
+    <div class="isk-tillit__bar"><span style="width: {{ pct }}%"></span></div>
+  {%- endif -%}
+  <ul>
+    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1f4d36" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Vipps, kort, Apple Pay og Google Pay</li>
+    {%- unless product.type == 'Tjeneste' -%}
+    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1f4d36" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Levering 6–10 virkedager</li>
+    {%- endunless -%}
+    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1f4d36" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>14 dagers angrerett</li>
+    <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1f4d36" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Spørsmål? <a href="tel:+4748642178">486 42 178</a></li>
+  </ul>
+</div>

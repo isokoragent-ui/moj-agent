@@ -1,0 +1,39 @@
+{{ 'isokor-forside.css' | asset_url | stylesheet_tag }}
+<section class="isk isk-hy">
+  <div class="isk__wrap">
+    <div class="isk-hy__box">
+      <div class="isk-hy__img">
+        {%- if section.settings.image != blank -%}
+          {{ section.settings.image | image_url: width: 1000 | image_tag: loading: 'lazy', sizes: '(min-width: 750px) 50vw, 100vw', alt: section.settings.image.alt }}
+        {%- endif -%}
+      </div>
+      <div class="isk-hy__txt">
+        {%- if section.settings.eyebrow != blank -%}<p class="isk__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+        <h2 class="isk__h2">{{ section.settings.heading }}</h2>
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+        <div class="isk-hy__row">
+          <a class="isk__btn isk__btn--light" href="{{ section.settings.link | default: '/pages/hytteservice' }}">{{ section.settings.btn_label }}</a>
+          {%- if section.settings.price != blank -%}<span style="font-size: 1.6rem; color: #d5e0e6">{{ section.settings.price }}</span>{%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Isokor – Hytteservice",
+  "tag": "div",
+  "class": "isk-section",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Obrázok" },
+    { "type": "text", "id": "eyebrow", "label": "Malý nadpis", "default": "Ny tjeneste · Hytteservice" },
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "Vi passer på hytta di i vinter" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Vinterlukking, tilsyn hver 14. dag med logg til forsikringen, og våråpning. Vegårshei, Tvedestrand og Risør." },
+    { "type": "text", "id": "btn_label", "label": "Tlačidlo", "default": "Se pakkene" },
+    { "type": "url", "id": "link", "label": "Odkaz" },
+    { "type": "text", "id": "price", "label": "Cena vedľa tlačidla", "default": "Hele sesongen 11 990 kr" }
+  ],
+  "presets": [{ "name": "Isokor – Hytteservice" }]
+}
+{% endschema %}

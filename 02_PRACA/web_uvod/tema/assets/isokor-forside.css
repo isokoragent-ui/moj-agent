@@ -1,0 +1,166 @@
+@font-face{font-family:"Isokor Fraunces";src:url("fraunces-600.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+.isk{--isk-les:#1f4d36;--isk-ink:#142a1f;--isk-muted:#3f5047;--isk-salvia:#e2ebdf;--isk-lin:#f6f5f0;--isk-gull:#e7c987;--isk-fjord:#0f2a3a;color:var(--isk-ink);font-size:1.7rem;line-height:1.55}
+.isk *{box-sizing:border-box}
+.isk__wrap{max-width:124rem;margin:0 auto;padding:0 2rem}
+.isk__h1,.isk__h2,.isk__serif{font-family:"Isokor Fraunces",Georgia,serif;font-weight:600;letter-spacing:-.01em;color:inherit;margin:0}
+.isk__h1{font-size:clamp(4rem,5.4vw,6.8rem);line-height:1.04;margin-bottom:2rem}
+.isk__h2{font-size:clamp(3rem,3.4vw,4.4rem);line-height:1.12;margin-bottom:.8rem}
+.isk__eyebrow{margin:0 0 1.2rem;font-size:1.4rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3d6b52}
+.isk__lead{margin:0 0 3rem;font-size:2rem;color:var(--isk-muted);max-width:52rem}
+.isk__sub{margin:0 0 3.2rem;font-size:1.8rem;color:var(--isk-muted)}
+.isk__btns{display:flex;flex-wrap:wrap;gap:1.2rem}
+.isk__btn{display:inline-flex;align-items:center;justify-content:center;min-height:4.8rem;padding:0 2.8rem;border-radius:999px;font-weight:700;font-size:1.6rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:filter .15s,transform .15s;font-family:inherit}
+.isk__btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.isk__btn--fill{background:var(--isk-les);color:#fff}
+.isk__btn--dark{background:var(--isk-ink);color:#fff}
+.isk__btn--light{background:#f2f5f7;color:var(--isk-fjord)}
+.isk__btn--line{border-color:var(--isk-ink);color:var(--isk-ink);background:transparent}
+.isk__btn--sm{min-height:4.4rem;padding:0 1.8rem;font-size:1.5rem}
+/* hero */
+.isk-hero{background:var(--isk-lin);padding:5.6rem 0 6.4rem}
+.isk-hero .isk__wrap{display:flex;flex-wrap:wrap;gap:4.8rem;align-items:center}
+.isk-hero__text,.isk-hero__media{flex:1 1 44rem;min-width:0}
+.isk-hero__trust{display:flex;flex-wrap:wrap;gap:1rem 2.4rem;margin-top:3.4rem;font-size:1.5rem;color:var(--isk-muted);list-style:none;padding:0}
+.isk-hero__trust li{display:flex;align-items:center;gap:.8rem}
+.isk-hero__media{position:relative;background:var(--isk-salvia);border-radius:2.8rem;min-height:52rem;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;padding:6rem 2rem 0}
+.isk-hero__media img{max-width:100%;height:auto;max-height:47rem;width:auto;position:relative;z-index:1}
+.isk-hero__trio{display:flex;align-items:flex-end;justify-content:center;gap:0;padding-bottom:3rem;position:relative;z-index:1}
+.isk-hero__trio img{width:clamp(12rem,14vw,19rem);height:auto;aspect-ratio:auto;object-fit:contain;border-radius:1.8rem;box-shadow:0 1.2rem 3rem rgba(20,42,31,.15);background:#fff}
+.isk-hero__trio img:nth-child(2){width:clamp(15rem,17vw,23rem);margin:0 -2rem;z-index:2;position:relative}
+.isk-hero__deco{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.isk-hero__chip{position:absolute;top:2.8rem;left:2.8rem;z-index:3;background:#fff;border-radius:1.6rem;padding:1.4rem 1.8rem;box-shadow:0 .8rem 2.4rem rgba(20,42,31,.1)}
+.isk-hero__chip small{display:block;font-size:1.3rem;color:var(--isk-muted)}
+.isk-hero__chip span{font-family:"Isokor Fraunces",Georgia,serif;font-size:2.8rem;font-weight:600}
+@media (max-width:749px){.isk-hero{padding:3.2rem 0 4rem}.isk-hero__media{min-height:38rem}.isk-hero .isk__wrap{gap:3.2rem}}
+/* problemer */
+.isk-prob{background:#fff;padding:7.2rem 0}
+.isk-prob__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr));gap:1.6rem}
+.isk-prob__tile{display:flex;flex-direction:column;gap:1rem;padding:2.2rem;border:2px solid #e2e7df;border-radius:1.8rem;text-decoration:none;color:var(--isk-ink);background:#f9faf7;transition:border-color .15s}
+.isk-prob__tile:hover{border-color:var(--isk-les)}
+.isk-prob__ico{width:4.4rem;height:4.4rem;border-radius:1.2rem;display:flex;align-items:center;justify-content:center;font-family:"Isokor Fraunces",Georgia,serif;font-weight:600;font-size:2rem}
+.isk-prob__name{font-weight:700;font-size:1.9rem}
+.isk-prob__prod{font-size:1.5rem;color:var(--isk-muted)}
+.isk-prob__more{font-size:1.5rem;font-weight:700;color:var(--isk-les)}
+/* bestselgere */
+.isk-best{background:var(--isk-lin);padding:8rem 0}
+.isk-best__head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1.2rem;margin-bottom:3rem}
+.isk-best__head a{font-weight:700;color:var(--isk-les)}
+.isk-best__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(24rem,1fr));gap:2.2rem}
+.isk-card{background:#fff;border-radius:2.2rem;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.isk-card:hover{transform:translateY(-3px);box-shadow:0 1.2rem 3rem rgba(20,42,31,.1)}
+.isk-card__img{display:block;aspect-ratio:1/1;background:#eef2ea}
+.isk-card__img img{width:100%;height:100%;object-fit:cover;display:block}
+.isk-card__body{padding:2rem 2.2rem 2.2rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.isk-card__tag{font-size:1.3rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#3d6b52}
+.isk-card__name{font-weight:700;font-size:1.9rem;color:var(--isk-ink);text-decoration:none;line-height:1.3}
+.isk-card__desc{font-size:1.5rem;color:var(--isk-muted);flex:1}
+.isk-card__foot{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.2rem;flex-wrap:wrap}
+.isk-card__price{font-family:"Isokor Fraunces",Georgia,serif;font-size:2.4rem;font-weight:600}
+.isk-card__price s{font-family:inherit;font-size:1.6rem;color:var(--isk-muted);font-weight:400;margin-left:.4rem}
+.isk-card__foot form{margin:0}
+/* for/etter */
+.isk-fe{background:var(--isk-salvia);padding:8rem 0}
+.isk-fe .isk__wrap{display:flex;flex-wrap:wrap;gap:5.6rem;align-items:center}
+.isk-fe__text{flex:1 1 42rem;min-width:0}
+.isk-fe__media{flex:0 1 44rem;min-width:0;width:100%}
+.isk-fe__frame{position:relative;aspect-ratio:3/4;border-radius:2.2rem;overflow:hidden;background:#ccc;--pos:50%}
+.isk-fe__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.isk-fe__before{clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.isk-fe__line{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;background:#fff;transform:translateX(-1.5px);pointer-events:none}
+.isk-fe__badge{position:absolute;top:1.6rem;font-weight:700;font-size:1.4rem;padding:.6rem 1.2rem;border-radius:999px}
+.isk-fe__badge--b{left:1.6rem;background:rgba(20,42,31,.85);color:#fff}
+.isk-fe__badge--a{right:1.6rem;background:#fff;color:var(--isk-ink)}
+.isk-fe label{display:block;margin:1.4rem 0 .4rem;font-size:1.4rem;font-weight:600;color:var(--isk-muted)}
+.isk-fe input[type=range]{width:100%;height:4.4rem;accent-color:var(--isk-les)}
+/* pakker */
+.isk-pak{background:#173d2c;color:#f6f5f0;padding:8rem 0}
+.isk-pak .isk__eyebrow{color:var(--isk-gull)}
+.isk-pak__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(32rem,1fr));gap:2.4rem;margin-top:3.6rem}
+.isk-pak__card{display:flex;flex-wrap:wrap;gap:2rem;align-items:center;background:var(--isk-lin);color:var(--isk-ink);border-radius:2.4rem;padding:2.4rem;text-decoration:none}
+.isk-pak__img{flex:0 0 18rem;max-width:100%}
+.isk-pak__img img{width:100%;height:auto;display:block;border-radius:1.4rem}
+.isk-pak__txt{flex:1 1 18rem}
+.isk-pak__txt p{margin:.6rem 0 1.4rem;color:var(--isk-muted);font-size:1.6rem}
+.isk-pak__badge{display:inline-block;background:var(--isk-gull);color:var(--isk-ink);font-weight:700;border-radius:999px;padding:.8rem 1.6rem}
+/* hvorfor */
+.isk-why{background:var(--isk-lin);padding:8rem 0}
+.isk-why__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(23rem,1fr));gap:2.8rem;margin-top:3.6rem}
+.isk-why__item{display:flex;flex-direction:column;gap:1rem}
+.isk-why__item strong{font-size:2rem}
+.isk-why__item span{color:var(--isk-muted);font-size:1.6rem}
+/* hytte */
+.isk-hy{background:var(--isk-lin);padding:0 0 8rem}
+.isk-hy__box{display:flex;flex-wrap:wrap;border-radius:2.8rem;overflow:hidden;background:var(--isk-fjord);color:#f2f5f7}
+.isk-hy__img{flex:1 1 42rem;min-width:0;min-height:32rem;position:relative}
+.isk-hy__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.isk-hy__txt{flex:1 1 42rem;min-width:0;padding:4.8rem;display:flex;flex-direction:column;justify-content:center;gap:1.4rem}
+.isk-hy__txt .isk__eyebrow{color:#9fd0e6;margin:0}
+.isk-hy__txt p{margin:0;font-size:1.8rem;color:#d5e0e6}
+.isk-hy__row{display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center;margin-top:.8rem}
+@media (max-width:749px){.isk-hy__txt{padding:3.2rem 2.4rem}.isk-prob,.isk-best,.isk-fe,.isk-pak,.isk-why{padding:5.6rem 0}}
+/* ===== JUL ===== */
+.isk{--isk-gran:#0f3326;--isk-gran2:#174a37;--isk-rod:#a8202f;--isk-gull2:#d9b56b}
+.isk-snow{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.isk-snow i{position:absolute;top:-1rem;width:.6rem;height:.6rem;border-radius:50%;background:#fff;opacity:.55;animation:isk-fall linear infinite}
+.isk-snow i:nth-child(1){left:6%;animation-duration:11s;animation-delay:-2s}
+.isk-snow i:nth-child(2){left:18%;width:.4rem;height:.4rem;animation-duration:14s;animation-delay:-7s}
+.isk-snow i:nth-child(3){left:31%;animation-duration:12s;animation-delay:-4s}
+.isk-snow i:nth-child(4){left:44%;width:.8rem;height:.8rem;opacity:.35;animation-duration:16s;animation-delay:-9s}
+.isk-snow i:nth-child(5){left:57%;animation-duration:13s;animation-delay:-1s}
+.isk-snow i:nth-child(6){left:69%;width:.4rem;height:.4rem;animation-duration:10s;animation-delay:-6s}
+.isk-snow i:nth-child(7){left:81%;animation-duration:15s;animation-delay:-3s}
+.isk-snow i:nth-child(8){left:93%;width:.7rem;height:.7rem;opacity:.4;animation-duration:12s;animation-delay:-8s}
+@keyframes isk-fall{to{transform:translateY(80rem) translateX(3rem)}}
+@media (prefers-reduced-motion:reduce){.isk-snow i{animation:none;display:none}}
+.isk-flake{position:absolute;color:rgba(255,255,255,.14);pointer-events:none;z-index:0}
+/* hero jul */
+.isk-hero--jul{background:var(--isk-gran);color:#f6f5f0;position:relative;overflow:hidden}
+.isk-hero--jul .isk__wrap{position:relative;z-index:1}
+.isk-hero--jul .isk__eyebrow{color:var(--isk-gull2)}
+.isk-hero--jul .isk__lead,.isk-hero--jul .isk-hero__trust{color:#d6e2da}
+.isk-hero--jul .isk-hero__trust svg{stroke:var(--isk-gull2)}
+.isk-hero--jul .isk__btn--fill{background:var(--isk-gull2);color:var(--isk-gran)}
+.isk-hero--jul .isk__btn--line{border-color:#f6f5f0;color:#f6f5f0}
+.isk-hero--jul .isk-hero__media{background:var(--isk-gran2)}
+.isk-hero--jul .isk-hero__deco g{stroke:rgba(217,181,107,.35)}
+.isk-hero--jul .isk-hero__trio img{border-radius:1.4rem;box-shadow:0 1.6rem 4rem rgba(0,0,0,.35)}
+.isk-hero--jul .isk-hero__trio img:nth-child(1){transform:rotate(-4deg)}
+.isk-hero--jul .isk-hero__trio img:nth-child(2){transform:rotate(3deg);margin:0 0 0 -3rem}
+.isk-hero--jul .isk-hero__chip{background:var(--isk-rod);color:#fff}
+.isk-hero--jul .isk-hero__chip small{color:#f7d9dc}
+/* julepakker */
+.isk-jp{background:var(--isk-gran);color:#f6f5f0;padding:8rem 0;position:relative;overflow:hidden;border-top:1px solid rgba(217,181,107,.25)}
+.isk-jp .isk__wrap{position:relative;z-index:1}
+.isk-jp .isk__eyebrow{color:var(--isk-gull2)}
+.isk-jp__sub{margin:0 0 1rem;font-size:1.8rem;color:#d6e2da;max-width:62rem}
+.isk-jp__frist{display:inline-block;margin-top:.6rem;background:rgba(217,181,107,.15);color:var(--isk-gull2);border:1px solid rgba(217,181,107,.4);border-radius:999px;padding:.6rem 1.4rem;font-weight:700;font-size:1.5rem}
+.isk-jp__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(34rem,1fr));gap:2.8rem;margin-top:4rem}
+.isk-jp__card{position:relative;background:#fbfaf6;color:var(--isk-ink);border-radius:2.8rem;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2rem 5rem rgba(0,0,0,.25)}
+.isk-jp__ribbon{position:absolute;top:2rem;right:2rem;z-index:2;background:var(--isk-rod);color:#fff;font-weight:700;font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase;padding:.7rem 1.4rem;border-radius:999px}
+.isk-jp__media{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:0;min-height:30rem;padding:3.2rem 2.4rem 0;overflow:hidden}
+.isk-jp__media>img{max-height:30rem;width:auto;height:auto;max-width:100%;position:relative;z-index:1}
+.isk-jp__pair{display:flex;align-items:flex-end;justify-content:center;position:relative;z-index:1;padding-bottom:2.4rem}
+.isk-jp__pair img{width:clamp(12rem,13vw,17rem);height:auto;aspect-ratio:auto;object-fit:contain;border-radius:1.6rem;background:#fff;box-shadow:0 1.2rem 3rem rgba(20,42,31,.15)}
+.isk-jp__pair img+img{margin-left:-2.4rem;transform:translateY(-1.2rem) rotate(3deg)}
+.isk-jp__pair img:first-child{transform:rotate(-3deg)}
+.isk-jp__media .isk-jp__branch{position:absolute;left:-1rem;top:-1rem;width:16rem;z-index:0;opacity:.9}
+.isk-jp__body{padding:2.6rem 2.8rem 3rem;display:flex;flex-direction:column;gap:1.2rem;flex:1}
+.isk-jp__kicker{font-size:1.3rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#3d6b52}
+.isk-jp__title{font-family:"Isokor Fraunces",Georgia,serif;font-weight:600;font-size:clamp(3rem,3vw,3.8rem);line-height:1.08;margin:0}
+.isk-jp__list{list-style:none;margin:.4rem 0;padding:0;display:flex;flex-direction:column;gap:.8rem;font-size:1.6rem}
+.isk-jp__list li{display:flex;gap:1rem;align-items:flex-start}
+.isk-jp__list svg{flex:0 0 2rem;margin-top:.3rem}
+.isk-jp__list a{color:var(--isk-ink);font-weight:700}
+.isk-jp__list span{color:var(--isk-muted)}
+.isk-jp__price{display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1.2rem;margin-top:auto;padding-top:1.4rem;border-top:1px dashed #d9ddd3}
+.isk-jp__price strong{font-family:"Isokor Fraunces",Georgia,serif;font-size:4rem;font-weight:600;line-height:1}
+.isk-jp__price em{font-style:normal;color:var(--isk-muted);font-size:1.6rem}
+.isk-jp__spar{background:#fbe7e9;color:var(--isk-rod);font-weight:700;font-size:1.4rem;border-radius:999px;padding:.4rem 1.2rem}
+.isk-jp__btns{display:flex;flex-wrap:wrap;gap:1rem;margin-top:1.4rem}
+.isk-jp__btns form{margin:0}
+.isk__btn--red{background:var(--isk-rod);color:#fff}
+.isk__btn--gran{background:var(--isk-gran);color:#fff}
+@media (max-width:749px){.isk-jp{padding:5.6rem 0}.isk-jp__grid{grid-template-columns:1fr}.isk-jp__media{min-height:24rem}}
+/* fix 17.11: obrázky nikdy nenaťahovať */
+.isk img{max-width:100%}
+.isk-hero__trio img,.isk-jp__pair img{height:auto!important}

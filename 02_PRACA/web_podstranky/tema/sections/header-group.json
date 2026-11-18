@@ -1,0 +1,66 @@
+{
+ "name": "t:sections.header.name",
+ "type": "header",
+ "sections": {
+  "announcement-bar": {
+   "type": "announcement-bar",
+   "blocks": {
+    "a1": {
+     "type": "announcement",
+     "settings": {
+      "text": "Frakt 99 kr · 49 kr over 400 kr · Gratis frakt over 700 kr",
+      "link": "shopify://collections/produktkatalog"
+     }
+    },
+    "a2": {
+     "type": "announcement",
+     "settings": {
+      "text": "Betal trygt med Vipps · 14 dagers angrerett",
+      "link": ""
+     }
+    }
+   },
+   "block_order": [
+    "a1",
+    "a2"
+   ],
+   "settings": {
+    "auto_rotate": true,
+    "change_slides_speed": 6,
+    "color_scheme": "scheme-4",
+    "show_line_separator": false,
+    "show_social": false,
+    "enable_country_selector": false,
+    "enable_language_selector": false
+   }
+  },
+  "header": {
+   "type": "header",
+   "settings": {
+    "logo_position": "middle-left",
+    "mobile_logo_position": "center",
+    "menu": "main-menu",
+    "menu_type_desktop": "dropdown",
+    "sticky_header_type": "on-scroll-up",
+    "show_line_separator": true,
+    "color_scheme": "scheme-1",
+    "menu_color_scheme": "scheme-1",
+    "enable_country_selector": false,
+    "enable_language_selector": false,
+    "enable_customer_avatar": true,
+    "margin_bottom": 0,
+    "padding_top": 12,
+    "padding_bottom": 12
+   }
+  },
+  "isokor_stil": {
+   "type": "isokor-stil",
+   "settings": {}
+  }
+ },
+ "order": [
+  "isokor_stil",
+  "announcement-bar",
+  "header"
+ ]
+}

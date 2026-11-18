@@ -1,0 +1,57 @@
+{%- assign before = section.settings.before -%}
+{%- assign after = section.settings.after -%}
+{%- assign show = request.design_mode -%}
+{%- if before != blank and after != blank -%}{%- assign show = true -%}{%- endif -%}
+{%- if show -%}
+{{ 'isokor-forside.css' | asset_url | stylesheet_tag }}
+<section class="isk isk-fe">
+  <div class="isk__wrap">
+    <div class="isk-fe__text">
+      {%- if section.settings.eyebrow != blank -%}<p class="isk__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+      <h2 class="isk__h2" style="margin-bottom: 1.8rem">{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}<p class="isk__lead" style="font-size: 1.8rem">{{ section.settings.text }}</p>{%- endif -%}
+      {%- assign p = section.settings.product -%}
+      {%- if p != blank -%}
+        <a class="isk__btn isk__btn--dark" href="{{ p.url }}">{{ section.settings.btn_label }} – {{ p.price | money_without_trailing_zeros }}</a>
+      {%- endif -%}
+    </div>
+    <div class="isk-fe__media">
+      {%- if before != blank and after != blank -%}
+        <div class="isk-fe__frame" id="isk-fe-{{ section.id }}">
+          {{ after | image_url: width: 900 | image_tag: loading: 'lazy', alt: section.settings.after_label }}
+          {{ before | image_url: width: 900 | image_tag: loading: 'lazy', class: 'isk-fe__before', alt: section.settings.before_label }}
+          <div class="isk-fe__line"></div>
+          <span class="isk-fe__badge isk-fe__badge--b">{{ section.settings.before_label }}</span>
+          <span class="isk-fe__badge isk-fe__badge--a">{{ section.settings.after_label }}</span>
+        </div>
+        <label for="isk-fe-range-{{ section.id }}">{{ section.settings.hint }}</label>
+        <input id="isk-fe-range-{{ section.id }}" type="range" min="0" max="100" value="50"
+          oninput="document.getElementById('isk-fe-{{ section.id }}').style.setProperty('--pos', this.value + '%')">
+      {%- else -%}
+        <p style="padding: 4rem; background: #fff; border-radius: 2rem">Nahraj fotku PRED a PO v nastaveniach tejto sekcie. Bez nich sa sekcia zákazníkom neukáže.</p>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Isokor – Pred/po",
+  "tag": "div",
+  "class": "isk-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Malý nadpis", "default": "Ekte bilder · ingen filter" },
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "Rust og kalk i toalettet? Dra og se forskjellen." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Samme toalett, før og etter Isokor LMS rustfjerner. Spray på, la virke, skyll – uten skuring." },
+    { "type": "product", "id": "product", "label": "Produkt" },
+    { "type": "text", "id": "btn_label", "label": "Tlačidlo", "default": "Kjøp LMS" },
+    { "type": "image_picker", "id": "before", "label": "Fotka PRED" },
+    { "type": "image_picker", "id": "after", "label": "Fotka PO" },
+    { "type": "text", "id": "before_label", "label": "Štítok pred", "default": "FØR" },
+    { "type": "text", "id": "after_label", "label": "Štítok po", "default": "ETTER" },
+    { "type": "text", "id": "hint", "label": "Popis posuvníka", "default": "Dra for å sammenligne" }
+  ],
+  "presets": [{ "name": "Isokor – Pred/po" }]
+}
+{% endschema %}

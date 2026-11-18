@@ -1,0 +1,9 @@
+{%- comment -%} Snehová vločka na pozadie. Parametre: size (px), style (CSS polohy). {%- endcomment -%}
+<svg class="isk-flake" width="{{ size | default: 80 }}" height="{{ size | default: 80 }}" viewBox="0 0 100 100" style="{{ style }}" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+    <path d="M50 6v88M12 28l76 44M12 72l76-44"/>
+    <path d="M50 18l-8-8M50 18l8-8M50 82l-8 8M50 82l8 8"/>
+    <path d="M22 34l-11 3M22 34l-3-11M78 66l11-3M78 66l3 11"/>
+    <path d="M22 66l-3 11M22 66l-11-3M78 34l3-11M78 34l11 3"/>
+  </g>
+</svg>

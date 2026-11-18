@@ -1,0 +1,67 @@
+{{ 'isokor-forside.css' | asset_url | stylesheet_tag }}
+<section class="isk isk-best">
+  <div class="isk__wrap">
+    <div class="isk-best__head">
+      <h2 class="isk__h2">{{ section.settings.heading }}</h2>
+      {%- if section.settings.link_label != blank -%}<a href="{{ section.settings.link | default: routes.all_products_collection_url }}">{{ section.settings.link_label }} →</a>{%- endif -%}
+    </div>
+    <div class="isk-best__grid">
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.product -%}
+        {%- if p != blank -%}
+          {%- assign v = p.selected_or_first_available_variant -%}
+          <div class="isk-card" {{ block.shopify_attributes }}>
+            <a class="isk-card__img" href="{{ p.url }}" aria-label="{{ p.title | escape }}">
+              {%- if p.featured_image -%}{{ p.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(min-width: 990px) 25vw, (min-width: 750px) 50vw, 100vw', alt: p.title }}{%- endif -%}
+            </a>
+            <div class="isk-card__body">
+              {%- if block.settings.tag != blank -%}<span class="isk-card__tag">{{ block.settings.tag }}</span>{%- endif -%}
+              <a class="isk-card__name" href="{{ p.url }}">{{ p.title }}</a>
+              {%- if block.settings.desc != blank -%}<span class="isk-card__desc">{{ block.settings.desc }}</span>{%- endif -%}
+              <div class="isk-card__foot">
+                <span class="isk-card__price">{{ p.price | money_without_trailing_zeros }}{%- if p.compare_at_price > p.price -%}<s>{{ p.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}</span>
+                {%- if p.available -%}
+                  <form method="post" action="{{ routes.cart_add_url }}">
+                    <input type="hidden" name="id" value="{{ v.id }}">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="isk__btn isk__btn--fill isk__btn--sm">{{ section.settings.add_label }}</button>
+                  </form>
+                {%- else -%}
+                  <span class="isk-card__desc">{{ section.settings.soldout_label }}</span>
+                {%- endif -%}
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Isokor – Bestsellery",
+  "tag": "div",
+  "class": "isk-section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "Mest kjøpt akkurat nå" },
+    { "type": "text", "id": "link_label", "label": "Odkaz – text", "default": "Se alle produkter" },
+    { "type": "url", "id": "link", "label": "Odkaz" },
+    { "type": "text", "id": "add_label", "label": "Tlačidlo košík", "default": "Legg i kurven" },
+    { "type": "text", "id": "soldout_label", "label": "Vypredané", "default": "Utsolgt" }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Produkt",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Produkt" },
+        { "type": "text", "id": "tag", "label": "Kategória (malý nadpis)" },
+        { "type": "text", "id": "desc", "label": "Krátky popis" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [{ "name": "Isokor – Bestsellery" }]
+}
+{% endschema %}

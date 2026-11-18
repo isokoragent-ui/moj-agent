@@ -1,0 +1,122 @@
+{%- comment -%}
+  Isokor – obsah pod produktom. Všetko sa berie z metapolí produktu (namespace "isokor").
+  Časť, ktorá nemá obsah, sa nezobrazí → šablóna funguje pre všetky produkty hneď.
+{%- endcomment -%}
+{%- assign m = product.metafields.isokor -%}
+{%- assign steg = m.steg.value -%}
+{%- assign for_b = m.for_bilde.value -%}
+{%- assign etter_b = m.etter_bilde.value -%}
+{%- assign faq = m.faq.value -%}
+
+{%- if steg != blank -%}
+<section class="isk-pi isk-pi--hvit">
+  <div class="isk-pi__wrap">
+    <h2>{{ section.settings.steg_heading }}</h2>
+    <ol class="isk-steg">
+      {%- for s in steg -%}<li>{{ s }}</li>{%- endfor -%}
+    </ol>
+  </div>
+</section>
+{%- endif -%}
+
+{%- if for_b != blank and etter_b != blank -%}
+<section class="isk-pi isk-pi--salvia">
+  <div class="isk-pi__wrap isk-fe2">
+    <div class="isk-fe2__txt">
+      <h2>{{ section.settings.fe_heading }}</h2>
+      <p style="font-size: 1.8rem; color: var(--isk-muted); margin: 0">{{ section.settings.fe_text }}</p>
+    </div>
+    <div class="isk-fe2__media">
+      <div class="isk-fe2__frame" id="isk-fe2-{{ section.id }}">
+        {{ etter_b | image_url: width: 900 | image_tag: loading: 'lazy', alt: 'Etter' }}
+        {{ for_b | image_url: width: 900 | image_tag: loading: 'lazy', class: 'isk-fe2__for', alt: 'Før' }}
+        <div class="isk-fe2__line"></div>
+        <span class="isk-fe2__b isk-fe2__b--f">FØR</span><span class="isk-fe2__b isk-fe2__b--e">ETTER</span>
+      </div>
+      <label for="isk-fe2-r-{{ section.id }}" style="display: block; margin: 1.2rem 0 .2rem; font-size: 1.4rem; font-weight: 600">Dra for å sammenligne</label>
+      <input id="isk-fe2-r-{{ section.id }}" type="range" min="0" max="100" value="50" oninput="document.getElementById('isk-fe2-{{ section.id }}').style.setProperty('--pos', this.value + '%')">
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{%- if m.passer_til != blank or m.ikke_bruk != blank or m.sds != blank -%}
+<section class="isk-pi isk-pi--lin">
+  <div class="isk-pi__wrap isk-kort3">
+    {%- if m.passer_til != blank -%}<div><h3>Passer til</h3><p>{{ m.passer_til.value }}</p></div>{%- endif -%}
+    {%- if m.ikke_bruk != blank -%}<div class="isk-varsel"><h3>Ikke bruk på</h3><p>{{ m.ikke_bruk.value }}</p></div>{%- endif -%}
+    {%- if m.sds != blank -%}
+      <div><h3>Dokumenter</h3>
+        <a class="isk-dok" href="{{ m.sds.value }}" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></svg>Sikkerhetsdatablad (PDF)</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{%- endif -%}
+
+{%- if faq != blank and faq.size > 0 -%}
+<section class="isk-pi isk-pi--lin" style="padding-top: 0">
+  <div class="isk-pi__wrap">
+    <div class="isk-faq">
+      <h2>{{ section.settings.faq_heading }}</h2>
+      {%- for q in faq -%}
+        <details><summary>{{ q.q }}</summary><p>{{ q.a }}</p></details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{%- assign mer = m.passer_med.value -%}
+{%- if mer == blank and product.collections.size > 0 -%}
+  {%- assign mer = product.collections.first.products -%}
+{%- endif -%}
+{%- if mer != blank -%}
+<section class="isk-pi isk-pi--hvit">
+  <div class="isk-pi__wrap">
+    <h2>{{ section.settings.mer_heading }}</h2>
+    <div class="isk-mer">
+      {%- assign vist = 0 -%}
+      {%- for p in mer -%}
+        {%- if p.id != product.id and p.available and vist < 4 -%}
+          {%- assign vist = vist | plus: 1 -%}
+          <a href="{{ p.url }}">
+            <span class="isk-mer__img">{%- if p.featured_image -%}{{ p.featured_image | image_url: width: 500 | image_tag: loading: 'lazy', alt: p.title }}{%- endif -%}</span>
+            <span class="isk-mer__txt"><span>{{ p.title }}</span><span>{{ p.price | money_without_trailing_zeros }}</span></span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{%- assign v = product.selected_or_first_available_variant -%}
+{%- if product.available -%}
+<div class="isk-sticky">
+  <strong>{{ product.title | truncate: 30 }} · {{ v.price | money_without_trailing_zeros }}</strong>
+  <form method="post" action="{{ routes.cart_add_url }}">
+    <input type="hidden" name="id" value="{{ v.id }}">
+    <input type="hidden" name="quantity" value="1">
+    <button type="submit" class="button button--primary">{{ section.settings.kjop_label }}</button>
+  </form>
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Isokor – obsah produktu",
+  "tag": "div",
+  "class": "isk-section",
+  "settings": [
+    { "type": "paragraph", "content": "Obsah sa berie z polí pri produkte (Isokor – postup, passer til, otázky, fotky pred/po…). Prázdne časti sa skryjú." },
+    { "type": "text", "id": "steg_heading", "label": "Nadpis postupu", "default": "Slik gjør du" },
+    { "type": "text", "id": "fe_heading", "label": "Nadpis pred/po", "default": "Før og etter" },
+    { "type": "text", "id": "fe_text", "label": "Text pred/po", "default": "Ekte bilder fra våre egne jobber." },
+    { "type": "text", "id": "faq_heading", "label": "Nadpis otázok", "default": "Spørsmål og svar" },
+    { "type": "text", "id": "mer_heading", "label": "Nadpis súvisiacich", "default": "Passer godt sammen med" },
+    { "type": "text", "id": "kjop_label", "label": "Tlačidlo dole na mobile", "default": "Legg i kurven" }
+  ],
+  "presets": [{ "name": "Isokor – obsah produktu" }]
+}
+{% endschema %}
