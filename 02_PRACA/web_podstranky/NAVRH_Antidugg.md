@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Antidugg for glass og visir (2026-11-18)
 Zdroj: nórska etiketa (`02_PRACA/etikety/zdroj/antidugg_250_500ml.py` + `_100ml`) + SDS NO 1.0 (= SW EKO, **H319 – Gir alvorlig øyeirritasjon**, ADVARSEL). Produkt `gid://shopify/Product/8414714233011`, 500 ml 249 kr / 100 ml 89 kr, 20 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Glass og sikt
 - **kort:** Nanobeskyttelse som hindrer dugg på glass, plast og pleksiglass – bilruter, sidespeil, briller, visir, speil og vinduer. Effekten varer i 2–6 uker.
