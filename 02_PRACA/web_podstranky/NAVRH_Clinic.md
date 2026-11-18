@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Clinic rengjøring for helse og hygiene (2026-11-18)
 Zdroj: nórska etiketa (`02_PRACA/etikety/zdroj/clinic_500ml.py`, odznak „testet av SUJCHBO, V.V.I., nr. 56/2015/LTL“) + SDS NO 1.0 (= Baderomsrens, nie je nebezpečný; „Farlige stoffer: Ingen“). Produkt `gid://shopify/Product/8415040241843`, 199 kr, 10 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Hygiene – overflater og hender
 - **kort:** Rengjøring og avfetting av alle overflater – og av hender og hud. Antimikrobielle egenskaper bekreftet ved testing (SUJCHBO, nr. 56/2015/LTL). Dermatologisk testet, krever ikke skylling og etterlater en mild glans og behagelig duft.
