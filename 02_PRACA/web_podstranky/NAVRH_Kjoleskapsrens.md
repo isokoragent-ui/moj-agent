@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Kjøleskapsrens (2026-11-18)
 Zdroj: nórska etiketa (`02_PRACA/etikety/zdroj/kjoleskapsrens_500ml.py`) + SDS NO 1.0. Produkt `gid://shopify/Product/8399558049971`, 149 kr, 20 ks.
-Stav: **čaká na Lukovo „áno“** — po zápise je hneď online.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním metapolí cez API. Živú stránku z cloudu otvoriť nejde (proxy blokuje doménu).
 
 - **kategori:** Kjøkken – kjøleskap
 - **kort:** Rengjøringsmiddel for kjøleskap, fryser og kjølebokser – innvendig og utvendig. Trygt på flater som kommer i kontakt med mat. Fjerner matrester og fett uten striper, nøytraliserer vond lukt og trenger ikke skylles. Sertifisert med V-Label.
