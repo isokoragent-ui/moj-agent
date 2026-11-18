@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor EcoNeutral lukt- og flekkfjerner (2026-11-18)
 Zdroj: nórska etiketa (`02_PRACA/etikety/zdroj/econeutral_500ml.py`, obsah podľa Lukovej NO verzie 28. 10.) + SDS NO 1.0 (= Baderomsrens, nie je nebezpečný; „Farlige stoffer: Ingen“). Produkt `gid://shopify/Product/8433576771763`, 100 ml 49 kr / 500 ml 149 kr, 30 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026**, overené čítaním cez API.
 
 - **kategori:** Lukt og flekker
 - **kort:** Fjerner flekker og nøytraliserer lukt fra svette, urin, oppkast og annen organisk forurensning – på tekstiler, madrasser, tepper, møbelstoff, sko og i bilen. Trenger ikke skylles og etterlater en frisk duft.
@@ -18,4 +18,4 @@ Stav: **čaká na Lukovo „áno“**.
   - Når kommer pakken? → Vanligvis innen 6–10 virkedager med PostNord.
 - **passer_med:** Sofarens · Lotos Standard nanoimpregnering · Møbelrens (Lukova skupina pri Sofarens)
 
-Nechané podľa etikety: „dermatologisk testet og trygt for mennesker og dyr“ — do kariet nedávam (nie je v SDS ako doklad; ostáva v popise).
+Luk 18. 11.: „je dermatologicky testovaný a bezpečný; je to Anti Urine Cleaner, len pod iným názvom v Nórsku“ → „Dermatologisk testet og trygt for mennesker og dyr“ doplnené do `kort`, štítka a otázky o zvieratách.

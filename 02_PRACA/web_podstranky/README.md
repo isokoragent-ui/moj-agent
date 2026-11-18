@@ -31,6 +31,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Peisglassrens | ✅ 18. 11. (len zo starého popisu – etiketa NO ani SDS nie sú; SDS doplniť, keď príde od výrobcu; `passer_med` prázdne) |
 | Multi Steinrens 5 l | ✅ 18. 11. (= Gravsteinrens, iný názov; „100 % naturlig“ podľa Luka; SDS zatiaľ nie – vlastný list s názvom Multi Steinrens vyrobiť; súvisiace LMS + SW EKO) |
 | Sofarens | ✅ 18. 11. (nová NO etiketa + SDS; súvisiace podľa Luka: EcoNeutral, Lotos Standard, Møbelrens) |
+| EcoNeutral | ✅ 18. 11. (NO etiketa + SDS; = Anti Urine Cleaner pod NO názvom; „dermatologisk testet og trygt for mennesker og dyr“ podľa Luka; súvisiace Sofarens, Lotos Standard, Møbelrens) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
