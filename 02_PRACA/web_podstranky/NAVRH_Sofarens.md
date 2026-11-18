@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Sofarens (2026-11-18)
 Zdroj: nórska etiketa (`02_PRACA/etikety/zdroj/sofarens_500ml.py`, návrh 17. 11.) + SDS NO 1.0 (= Baderomsrens, nie je nebezpečný; „Farlige stoffer: Ingen“). Produkt `gid://shopify/Product/8323970138291`, 149 kr, 20 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026**, overené čítaním cez API.
 
 - **kategori:** Tekstil – sofa og møbeltrekk
 - **kort:** Naturlig middel for dyprens av sofaer, møbeltrekk, bilseter og tepper. Fjerner vanskelige flekker fra kaffe, juice, melk og urin, og nøytraliserer vond lukt. Klar til bruk.
@@ -15,4 +15,4 @@ Stav: **čaká na Lukovo „áno“**.
   - Kan jeg bruke det på bilsetene? → Ja, på bilseter, setetrekk og tepper i bilen.
   - Skal det fortynnes? → Nei. Produktet er klart til bruk og skal ikke fortynnes eller blandes med andre stoffer.
   - Når kommer pakken? → Vanligvis innen 6–10 virkedager med PostNord.
-- **passer_med:** EcoNeutral lukt- og flekkfjerner · Møbelrens
+- **passer_med:** EcoNeutral lukt- og flekkfjerner · Lotos Standard nanoimpregnering · Møbelrens (Luk: „pasuje s EcoNeutral, Lotos Standard a Furniture Cleaner“)
