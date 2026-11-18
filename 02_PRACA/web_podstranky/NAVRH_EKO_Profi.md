@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor EKO Profi flisimpregnering (2026-11-18)
 Zdroj: súčasný popis v e-shope (preklad SK, podrobný) + SDS NO 1.0 (= Lotos Profi, **nie je klasifikovaný**). NO etiketa nie je. Produkt `gid://shopify/Product/8581675385011`, 699 kr, 7 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Impregnering – fliser
 - **kort:** Nanoimpregnering for matte, sklisikre fliser og gresfliser på bad, i dusj, wellness og kjøkken. Kalk og smuss fester seg ikke, og flisene blir raske å vaske. Usynlig – endrer ikke farge eller glans. 1 liter rekker til ca. 30 m².
