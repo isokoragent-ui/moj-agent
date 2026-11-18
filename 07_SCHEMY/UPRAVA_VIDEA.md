@@ -48,3 +48,4 @@ isokor-skandinavia.no/products/peisglassrens
 #peis #vedovn #rengjøring #isokor
 
 - ⚠️ **Artlist hudba sa z cloudu nestiahne** (`cms-public-artifacts.artlist.io` blokované proxy, overené 29. 10. 2026), hoci `download_track` vráti odkaz. Náhrada: vlastná krátka hudba z `02_PRACA/grafika/hytteservice/hudba.py` (numpy → WAV → ffmpeg mux), bez licenčných problémov.
+- ⚠️ **`loudnorm` prevzorkuje zvuk na 96 kHz** → v mobile a náhľade chatu video hrá ticho. Vždy pridať `,aresample=44100` a `-ar 44100` (Sofarens 18. 11.).
