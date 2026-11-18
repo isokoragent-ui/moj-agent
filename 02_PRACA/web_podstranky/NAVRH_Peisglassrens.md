@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Peisglassrens (2026-11-18)
 Zdroj: **len krátky popis produktu v e-shope** — nórska etiketa ani bezpečnostný list (SDS) nie sú (SDS čaká na SK PDF od výrobcu, PROJEKTY.md). Produkt `gid://shopify/Product/8324602167475`, 149 kr, 17 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Peis og vedovn
 - **kort:** Ferdigblandet, skummende rens for glasset i peis og vedovn. Løser raskt opp sot, tjære, fett og fastbrent smuss – og gir klart innsyn til flammene igjen.
