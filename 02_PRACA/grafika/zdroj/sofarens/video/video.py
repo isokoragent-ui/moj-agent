@@ -66,6 +66,7 @@ S = [
     (12.2, 14.8, '09_cista_sofa', 1.14, 1.0, 0.42, 0.62),
     (14.8, 20.0, 'KONIEC', 1.0, 1.06, 0.47, 0.6),
 ]
+VARIANT = os.environ.get('VARIANT', 'jul')    # jul | neutral (VARIANT=neutral python3 video.py …)
 XF = 0.3                                          # prelínačka (s) — okrem rýchlej série škvŕn
 
 IMG = {}
@@ -122,14 +123,15 @@ def texts(t):
     elif t < 9.5:
         a = fade(t, 6.0, 9.5)
         y = box_text(d, ['Laget av'], 300, a, size=46, fnt='Inter-SemiBold.otf', col=GOLD, slide=1)
-        box_text(d, ['kaldpressede oljer', 'og planteekstrakter'], y + 6, fade(t, 6.3, 9.5), size=80, slide=1)
+        box_text(d, ['plantebaserte', 'ekstrakter og oljer'], y + 6, fade(t, 6.3, 9.5), size=80, slide=1)  # Luk 18. 11.: bez „kaldpressede“
     elif t < 12.2:
         steps = [('Spray.', 9.75), ('Vent litt.', 10.45), ('Tørk av.', 11.15)]
         vis = [s for s, t0 in steps if t >= t0]
         if vis:
             box_text(d, vis, 300, fade(t, 9.75, 12.2, 0.25, 0.25), size=92)
     elif t < 14.8:
-        box_text(d, ['Ren sofa –', 'klar for julebesøket'], 300, fade(t, 12.45, 14.8), size=84, slide=1)
+        line2 = 'klar for julebesøket' if VARIANT == 'jul' else 'som ny igjen'   # neutrálna = celoročná verzia
+        box_text(d, ['Ren sofa –', line2], 300, fade(t, 12.45, 14.8), size=84, slide=1)
     else:
         a = fade(t, 15.1, 99)
         y = box_text(d, ['ISOKOR SOFARENS'], 230, a, size=86, slide=1)
