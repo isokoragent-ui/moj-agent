@@ -81,3 +81,13 @@ Z Lukovej skutočnej fotky fľaše Sofa Cleaner (stará skúšobná etiketa „M
 
 Zdroj: `zdroj/sofarens/` → `python3 cut.py` (rembg), `python3 nalep.py ../../../etikety/Isokor_Sofarens_500ml_etikett_NO.png flaska_sofarens.png`, `python3 packshot.py`.
 Lukova druhá fotka (`foto_sofa_cleaner_AI_gemini.jpg`, fľaša v obývačke) je z Gemini — etiketa má vymyslené texty („Profesjonell dyprens“, „UEIN“) → **nepoužívať**.
+
+## Antidugg — hyllekort do obchodu A5 (2026-11-18)
+Kartička vedľa produktu na polici: na čo to je a ako sa to používa. „ANTIDUGG · Slutt på dugg – klar sikt!“, okuliare pred/po (UTEN / MED ANTIDUGG), 6 ikon „Brukes på“, 4 kroky „Slik gjør du“ (z nórskej etikety), „Test det: pust på glasset!“, QR na `products/isokor-antidugg` (overené v Shopify, aktívny). Bez ceny (cenovku má obchod). Farby z etikety: bordová #8a0b3f, šalviová #dfe7d3; písmo Khand + Assistant.
+
+| Súbor | Rozmer |
+|---|---|
+| `antidugg_hylle_a5.pdf` | 148 × 210 mm, vektor — na tlač |
+| `antidugg_hylle_a5.png` | 1748 × 2483 (300 dpi) |
+
+Zdroj: `zdroj/antidugg_hylle/hylle.html` → `node render.js`. Prompt do Gemini (alternatíva): `zdroj/antidugg_hylle/GEMINI_PROMPT.md`.
