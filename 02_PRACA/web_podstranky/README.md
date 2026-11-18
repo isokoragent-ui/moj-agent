@@ -34,6 +34,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | EcoNeutral | ✅ 18. 11. (NO etiketa + SDS; = Anti Urine Cleaner pod NO názvom; „dermatologisk testet og trygt for mennesker og dyr“ podľa Luka; súvisiace Sofarens, Lotos Standard, Møbelrens) |
 | Antidugg | ✅ 18. 11. (NO etiketa + SDS, H319 v „Ikke bruk“; zloženie nedané – rozpor etanol/izopropanol čaká na výrobcu) |
 | Bilrens | ✅ 18. 11. (NO etiketa + SDS; súvisiace Antidugg, Sofarens, EcoNeutral) |
+| Universalrens | ✅ 18. 11. (NO etiketa + SDS v1.1; koncentrát 1:5–1:100; „antimikrobiell“ z etikety; zdravotné tvrdenia zo starého popisu nedané) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce

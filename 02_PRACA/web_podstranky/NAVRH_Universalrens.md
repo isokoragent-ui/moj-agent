@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Universalrens (2026-11-18)
 Zdroj: nórska etiketa (`02_PRACA/etikety/zdroj/universalrens_500ml.py`) + SDS NO v1.1 (= Baderomsrens, nie je nebezpečný). Produkt `gid://shopify/Product/8280244420787`, 349 kr (koncentrát), 9 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Konsentrat – hele hjemmet
 - **kort:** Konsentrert, naturlig rengjørings- og avfettingsmiddel for hele hjemmet – gulv, glass, keramikk, plast og metall, tepper og møbelstoff, oppvaskmaskin og klesvask. Fortynnes 1:5 til 1:100. Testet for antimikrobielle egenskaper.
