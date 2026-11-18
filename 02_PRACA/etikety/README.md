@@ -19,6 +19,7 @@
 | Isokor EcoDescal 500 ml (SK: Eco Descal) | `Isokor_EcoDescal_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 29. 10. 2026 — **žieravý (H314)**: CLP ako Kalkfjerner, UFI W120-G081-7002-X7CT; SK text „bez nebezpečných látok“ v rozpore s H314 — preložené verne |
 | Isokor Kjøleskapsrens 500 ml (SK: Fridge Cleaner) | `Isokor_Kjoleskapsrens_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 29. 10. 2026 — text okrem úvodu = Baderomsrens; číslo šarže 10201CF ponechané z originálu |
 | Isokor Sofarens 500 ml (SK: Sofa Cleaner) | `Isokor_Sofarens_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 17. 11. 2026 — odznaky EFFEKTIV, NØYTRALISERER LUKT, NATURLIG PRODUKT; podnadpis „Middel for rengjøring og dyprens av polstrede møbler“; „olej z citrónovej trávy“ = sitrongressolje |
+| Isokor Møbelrens 500 ml (SK: Furniture Cleaner) | `Isokor_Mobelrens_500ml_etikett_NO.pdf` · `…_NO.png` · `…_NO_A4_2ks.pdf` | 🟡 návrh 18. 11. 2026 — rozloženie ako Fridge; text okrem úvodu = Bath/Fridge (preklad prevzatý); podnadpis „Miljøvennlig middel for rengjøring og pleie av møbler“, hnedá 35/60/80/25 z originálu; preklep SK „FURNATURE“ a „Isokor Polisher“ → Polish; šarža 10201FC ponechaná |
 
 ### EcoNeutral — iný typ SK súboru (pozor pri ďalších)
 - SK PDF nie je vektorový originál ako Cleaner: **pozadie je obrázok 150 dpi v RGB**, texty sú písmo, názov v páse a odznaky „Prírodný produkt“ sú zapečené v obrázku, logo a čiarový kód sú znaky písma.
