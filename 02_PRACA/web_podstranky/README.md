@@ -26,6 +26,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Kalkfjerner for bad | ✅ 17. 11. (etiketa NO = preklad výrobcu + SDS LMD; H314 → otázka o rukaviciach) |
 | Kjøleskapsrens | ✅ 18. 11. (etiketa + SDS; bez pred/po, bez „Ikke bruk“ – etiketa nič neuvádza; súvisiace: Fett-, Kjøkkenpakken, Polish) |
 | Kjøkkenpakken | ✅ 18. 11. (balíček; 2 SDS ako odkazy v otázke, pole `sds` prázdne; doprava „med PostNord“ – Luk 18. 11.) |
+| Badepakken | ✅ 18. 11. (balíček; 2 SDS v otázke; rukavice pri Kalkfjerner podľa etikety H314; starý popis „trygg for hele familien / hudvennlig“ ostáva – Luk zvažuje cez výrobcu) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce

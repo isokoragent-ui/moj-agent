@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Badepakken (2026-11-18)
 Zdroj: schválené texty Baderomsrens + Kalkfjerner for bad (17. 11.), etikety, SDS. Produkt `gid://shopify/Product/8416261603507`, 349 kr vrátane dopravy, 20 ks. Jednotlivo 2 × 149 kr + 99 doprava = 397 → úspora 48 kr.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Julepakke – bad
 - **kort:** To flasker på 500 ml for hele badet: Kalkfjerner tar kalk og kalkbelegg på fliser, fuger og i dusjen, Baderomsrens er til den daglige vasken av servant, badekar, speil og armatur. 349 kr – frakt i Norge er inkludert.
@@ -19,3 +19,6 @@ Stav: **čaká na Lukovo „áno“**.
 - **passer_med:** Kalkfjerner for bad · Baderomsrens · Kjøkkenpakken
 
 ⚠️ Starý popis balíčka (pod kartou) tvrdí „trygg for hele familien“ a „Allergifri og hudvennlig formel“ — pri žieravom Kalkfjerner (H314) nesedí (AKTUALNE bod 3). Metapolia to neopakujú; popis ostáva, kým Luk nerozhodne.
+
+## Luk 18. 11. ku Kalkfjerner
+Luk: „nie je žieravý, je bezpečný, len kvôli niektorým zložkám musí byť tak označený; koncentrácia je neškodná.“ Agent: web nesmie tvrdiť opak etikety/SDS (H314, CLP + Forbrukertilsynet) → v textoch len to, čo je na etikete (rukavice, okuliare). Ak výrobca prepočíta klasifikáciu a vydá SDS bez H314, zmeníme etiketu aj web. Luk: „áno, zapíš to“.
