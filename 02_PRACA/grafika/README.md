@@ -81,3 +81,8 @@ Z Lukovej skutočnej fotky fľaše Sofa Cleaner (stará skúšobná etiketa „M
 
 Zdroj: `zdroj/sofarens/` → `python3 cut.py` (rembg), `python3 nalep.py ../../../etikety/Isokor_Sofarens_500ml_etikett_NO.png flaska_sofarens.png`, `python3 packshot.py`.
 Lukova druhá fotka (`foto_sofa_cleaner_AI_gemini.jpg`, fľaša v obývačke) je z Gemini — etiketa má vymyslené texty („Profesjonell dyprens“, „UEIN“) → **nepoužívať**.
+
+### Video Sofarens (2026-11-18)
+`sofarens_video_story_1080x1920.mp4` — 20 s, 30 fps, s hudbou (`hytteservice/hudba.py`). Reels, TikTok, Stories, Shorts.
+Scény: víno sa rozleje „Rødvin på sofaen?“ (0–2,8 s) → rýchle strihy čučoriedky / polievka / krv / sirup, jedno slovo na záber (2,8–5,8) → olej a extrakty „Laget av kaldpressede oljer og planteekstrakter“ (5,8–9,5) → nástrek „Spray. Vent litt. Tørk av.“ (9,5–12,2) → čistá sofa „Ren sofa – klar for julebesøket“ (12,2–14,8) → **skutočná fľaša s novou etiketou** na stolíku, „ISOKOR SOFARENS · Fjerner flekker og lukt · Sofa · tepper · bilseter · V-Label-sertifisert“, cenovka 149,-, isokor-skandinavia.no. Celý čas malé „Illustrasjonsbilder“ (scény sú z Gemini).
+Zdroj: `zdroj/sofarens/video/video.py` (obrázky `obr/`, Lukove z Gemini zmenšené na 1300 px) → `python3 video.py <snímky>` (`<snímky> 1.5,19.5` = kontrolné snímky) → ffmpeg ako vyššie + hudba.
