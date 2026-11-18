@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Multi Steinrens 5 l (2026-11-18)
 Zdroj: **len súčasný popis v e-shope** (vyzerá ako text z Gemini — `data-path-to-node`); nórska etiketa ani SDS nie sú (SDS čaká na výrobcu). Produkt `gid://shopify/Product/8447815614643`, 699 kr, 6 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“ po doplnení 100 % naturlig), overené čítaním cez API. Prvý pokus o zápis zamietnutý v povolení (Luk chcel doplniť info).
 
 - **kategori:** Ute – stein, tak og fasade
 - **kort:** 100 % naturlig rengjøringsmiddel for stein og fasader ute. Fjerner mose, alger, lav, fett, sot og smuss fra belegningsstein, heller, naturstein, takstein og murpuss. 5 liter.
