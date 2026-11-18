@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Bilrens (2026-11-18)
 Zdroj: nórska etiketa (`02_PRACA/etikety/zdroj/bilrens_500ml.py`) + SDS NO 1.0 (= Baderomsrens, nie je nebezpečný). Produkt `gid://shopify/Product/8415035326643`, 149 kr, 10 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Bil – inne og ute
 - **kort:** Skånsom rens for bilen, inne og ute. Fjerner fett, støv, insektrester og kvae fra vinduer, lykter og speil, avleiringer på felger og smuss på seter og dashbord – uten striper. Nøytraliserer vond lukt.
