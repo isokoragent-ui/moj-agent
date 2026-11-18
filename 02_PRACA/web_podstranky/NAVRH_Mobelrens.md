@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Møbelrens (2026-11-18)
 Zdroj: súčasný popis v e-shope (SK Furniture Cleaner; text z Gemini) + SDS NO 1.0 (= Baderomsrens, nie je nebezpečný). NO etiketa nie je. Produkt `gid://shopify/Product/8415573835955`, 149 kr, 9 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“ po doplnení z NO etikety), overené čítaním cez API.
 
 - **kategori:** Møbler og overflater
 - **kort:** Skånsom rens for møbler i tre (vokset og lakkert), plast, metall, glass, marmor og akryl. Fjerner støv, fett, fingeravtrykk og flekker uten striper, og har antistatisk effekt som gjør at støvet ikke legger seg like fort igjen.
@@ -18,3 +18,6 @@ Stav: **čaká na Lukovo „áno“**.
 - **passer_med:** Polish for blanke overflater · Sofarens · EcoNeutral
 
 Nedané zo starého popisu: „99,99 %“, „trygt for barn, kjæledyr og allergikere“, „trygt for vannøkosystemer“, „revolusjonerende“ — nie je etiketa ako zdroj.
+
+## Doplnené 18. 11.
+Luk poslal SK etiketu Furniture Cleaner → NO etiketa `02_PRACA/etikety/Isokor_Mobelrens_500ml_etikett_NO.*`. Z nej do karty: „opptil 99,99 % av proteinforurensning“ a „Trygt for mennesker og husdyr“ (`kort`), FAQ „Riper det?“ podľa etikety („riper ikke overflaten“).

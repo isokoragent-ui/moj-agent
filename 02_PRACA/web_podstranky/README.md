@@ -37,6 +37,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Universalrens | ✅ 18. 11. (NO etiketa + SDS v1.1; koncentrát 1:5–1:100; „antimikrobiell“ z etikety; zdravotné tvrdenia zo starého popisu nedané) |
 | Clinic | ✅ 18. 11. (NO etiketa + SDS; „antimikrobielle egenskaper bekreftet ved testing“ + SUJCHBO 56/2015/LTL z etikety; vírusy/baktérie/99,99 % nedané) |
 | EcoDescal | ✅ 18. 11. (NO etiketa + SDS = LMS, H314 → rukavice/okuliare; „uten farlige stoffer“ nedané) |
+| Møbelrens | ✅ 18. 11. (= Furniture Cleaner; NO etiketa vyrobená v ten istý deň → „99,99 % proteinforurensning“ + „trygt for mennesker og husdyr“ z etikety; súvisiace Polish, Sofarens, EcoNeutral) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
