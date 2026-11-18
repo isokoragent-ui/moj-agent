@@ -16,6 +16,6 @@ Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez 
   - Kan jeg bruke det på briller og visir? → Ja, på briller, vernebriller, visir og masker – av glass, plast og pleksiglass.
   - Hvilken størrelse skal jeg velge? → 100 ml er nok til briller og visir. 500 ml er til bilruter, speil og vinduer.
   - Når kommer pakken? → Vanligvis innen 6–10 virkedager med PostNord.
-- **passer_med:** Fett- og flekkfjerner (etiketa ho odporúča na odmastenie)
+- **passer_med:** Bilrens · Fett- og flekkfjerner (Bilrens doplnený 18. 11. – Luk; Fett etiketa odporúča na odmastenie)
 
 Pozn.: rozpor etiketa (etanol) vs. SDS (izopropanol) — čaká na výrobcu, do kariet sa zloženie nedáva.
