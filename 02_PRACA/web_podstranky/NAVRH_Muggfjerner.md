@@ -1,7 +1,7 @@
 # Návrh metapolí — Isokor Muggfjerner (2026-11-18)
 Zdroj: text výrobcu v popise produktu (nórska etiketa zatiaľ nie je), SDS NO 1.0 (= Baderomsrens, nie je nebezpečný). Produkt `gid://shopify/Product/8415597953203`, 149 kr, 9 ks.
 Tvrdenia o účinku: Luk 18. 11. „áno, eliminuje spóry a baktérie“ → ako pri Baderomsrens (`08_ROZHODNUTIA/2026-11-17_baderomsrens_tvrdenia_vyrobcu.md`).
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Bad – mugg og sopp
 - **kort:** Fjerner mugg, sopp og deres sporer fra fliser, silikonfuger, fuger, vinduskarmer og hagemøbler. Fjerner opptil 99,99 % av proteinbasert smuss og nøytraliserer muggluft. Klar til bruk og trenger ikke skylles.
