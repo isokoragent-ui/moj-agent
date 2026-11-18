@@ -1,5 +1,6 @@
 """Video Isokor Sofarens na siete — 20 s, 1080×1920 (Reels, TikTok, Stories, Shorts), 30 fps.
-Obrázky: Lukove z Gemini (`obr/`, zmenšené na 1300 px) + skutočná fľaša s novou etiketou (`../flaska_sofarens.png`).
+Obrázky: Lukove z Gemini (`obr/`, zmenšené na 1300 px) + fľaša s novou etiketou (`../flaska_sofarens_nova.png`, Lukov obrázok 18. 11.).
+Hudba: `hudba_Sun_on_the_Floorboards.mp3` (od Luka) od 46,05 s — drop skladby (48,85 s) padne na prvý strih škvŕn (2,8 s).
 Použitie:  python3 video.py <priečinok_snímok> [koniec]   (koniec = len jedna kontrolná snímka záverečného záberu)
 Potom:     python3 ../../../hytteservice/hudba.py hudba.wav 20 && ffmpeg … (pozri README)."""
 import os, sys, math
@@ -30,20 +31,20 @@ def cam(img, z, ox=0.5, oy=0.5, dx=0.0, dy=0.0):
 # ---------- záverečný záber: skutočná fľaša na stolíku ----------
 def end_scene():
     bg = Image.fromarray(load('10_stolik'))
-    b = Image.open(os.path.join(HERE, '..', 'flaska_sofarens.png')).convert('RGBA')
-    bh = 840                                      # výška fľaše v px obrázka 1300 × 2329
+    b = Image.open(os.path.join(HERE, '..', 'flaska_sofarens_nova.png')).convert('RGBA')
+    bh = 800                                      # výška fľaše v px obrázka 1300 × 2329
     b = b.resize((round(b.width * bh / b.height), bh), Image.LANCZOS)
     a = np.array(b).astype(np.float32)
     a[..., :3] *= np.array([1.03, 0.97, 0.88]) * 0.93   # teplé večerné svetlo scény (lampa, sviečky)
     # jemný prechod svetla zľava (lampa) doprava
     a[..., :3] *= np.linspace(1.03, 0.90, a.shape[1])[None, :, None]
     b = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
-    body_cx = 642 * bh / 2783                     # stred tela fľaše vo výreze (spúšť trčí doľava)
+    body_cx = 442 * bh / 2198                     # stred tela fľaše vo výreze (spúšť trčí doľava)
     foot = (470, 1735)                            # kde stojí fľaša na doske stolíka (px obrázka)
     x = round(foot[0] - body_cx); y = foot[1] - bh
     # tieň: kontaktný pod fľašou + mäkký vrhnutý doprava (lampa vľavo)
     sh = Image.new('L', bg.size, 0); d = ImageDraw.Draw(sh)
-    bw = (980 - 305) * bh / 2783
+    bw = (734 - 150) * bh / 2198
     d.ellipse((foot[0] - bw / 2 - 6, foot[1] - 22, foot[0] + bw / 2 + 10, foot[1] + 14), fill=170)
     d.polygon([(foot[0] - bw * 0.3, foot[1] - 8), (foot[0] + bw * 0.5, foot[1] - 14),
                (foot[0] + bw * 1.9, foot[1] - 60), (foot[0] + bw * 1.2, foot[1] + 4)], fill=70)
@@ -58,10 +59,10 @@ S = [
     (2.8, 3.55, '02_cucoriedky', 1.04, 1.16, 0.45, 0.55),
     (3.55, 4.3, '03_polievka', 1.04, 1.16, 0.45, 0.5),
     (4.3, 5.05, '04_krv', 1.04, 1.18, 0.45, 0.55),
-    (5.05, 5.8, '05_sirup', 1.04, 1.16, 0.5, 0.55),
+    (5.05, 5.8, '05_saft', 1.04, 1.16, 0.5, 0.55),
     (5.8, 7.7, '06_olej', 1.0, 1.12, 0.5, 0.42),
     (7.7, 9.5, '07_extrakty', 1.12, 1.0, 0.5, 0.55),
-    (9.5, 12.2, '08_sprej', 1.0, 1.10, 0.55, 0.52),
+    (9.5, 12.2, '08_sprej', 1.0, 1.05, 0.6, 0.5),
     (12.2, 14.8, '09_cista_sofa', 1.14, 1.0, 0.42, 0.62),
     (14.8, 20.0, 'KONIEC', 1.0, 1.06, 0.47, 0.6),
 ]
@@ -114,7 +115,7 @@ def texts(t):
     if t < 2.8:
         box_text(d, ['Rødvin på sofaen?'], 300, fade(t, 0.35, 2.8, 0.3, 0.2), size=92, slide=1)
     elif t < 5.8:                                   # pri každom strihu jedno slovo (zoznam zakrýval fľašu sirupu)
-        words = ['Blåbær.', 'Tomatsuppe.', 'Blod.', 'Sirup.']
+        words = ['Blåbær.', 'Tomatsuppe.', 'Blod.', 'Saft.']
         n = sum(1 for s in S[1:5] if s[0] <= t)
         a = fade(t, 2.8, 5.8, 0.15, 0.25)
         box_text(d, [words[n - 1]], 300, a, size=104)
