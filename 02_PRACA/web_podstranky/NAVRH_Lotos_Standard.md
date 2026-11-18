@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Lotos Standard nanoimpregnering (2026-11-18)
 Zdroj: súčasný popis v e-shope (preklad SK) + SDS NO 1.0 (= SW: **H225 meget brannfarlig, H319, H336**, UN 1219). NO etiketa nie je. Produkt `gid://shopify/Product/8384193331379`, 249 kr, 10 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Impregnering – tekstil, sko og skinn
 - **kort:** Usynlig nanoimpregnering for klær, sko, skinn og tekstiler. Stopper vann og smuss, men stoffet puster fortsatt. Endrer ikke farge eller følelse – også på semsket skinn. Holder i ca. 2–3 vask.
