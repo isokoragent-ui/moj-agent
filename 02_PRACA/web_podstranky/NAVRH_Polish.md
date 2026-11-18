@@ -1,7 +1,7 @@
 # Návrh metapolí — Isokor Polish for blanke overflater (2026-11-18)
 Zdroj: súčasný popis v e-shope (SK Polisher; text z Gemini) + SDS NO 1.0 (= SW: **H225 meget brannfarlig, H319 øyeirritasjon, H336 døsighet**, UN 1219). NO etiketa nie je. Produkt `gid://shopify/Product/8415613485235`, 100 ml 349 kr / 500 ml 1 099 kr, 18 ks.
 Pozor: **nie je to čistič, ale nano-impregnácia** (vodoodpudivá, lotosový efekt).
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Nanoimpregnering – blanke flater
 - **kort:** Universell nanoimpregnering for blanke, faste overflater i hjemmet og på bilen – dusjvegger, bilglass, billakk, felger, lakkerte flater, hard plast, glasert keramikk og fliser. Gir perleeffekt, gjør at smuss og kalk ikke fester seg, og gir en dyp glans.
