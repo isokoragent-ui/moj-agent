@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Kjøkkenpakken (2026-11-18)
 Zdroj: nórske etikety Kjøleskapsrens + Fett- og flekkfjerner, schválené texty oboch produktov (17.–18. 11.), rozhodnutie `08_ROZHODNUTIA/2026-10-30_kjokkenpakken.md`. Produkt `gid://shopify/Product/8767215173811`, 349 kr vrátane dopravy, 9 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“; doprava zmenená na „med PostNord“), overené čítaním cez API.
 
 - **kategori:** Julepakke – kjøkken
 - **kort:** To flasker på 500 ml for hele kjøkkenet: Kjøleskapsrens til kjøleskap og fryser, Fett- og flekkfjerner til fett og fastgrodd smuss på benk, komfyr og vifte. 349 kr – frakt i Norge er inkludert.

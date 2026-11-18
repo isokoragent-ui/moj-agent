@@ -25,9 +25,12 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Baderomsrens | ✅ 17. 11. (etiketa + SDS; tvrdenia výrobcu antimikrobielt / 99,99 % podľa Luka → `08_ROZHODNUTIA/2026-11-17_baderomsrens_tvrdenia_vyrobcu.md`) |
 | Kalkfjerner for bad | ✅ 17. 11. (etiketa NO = preklad výrobcu + SDS LMD; H314 → otázka o rukaviciach) |
 | Kjøleskapsrens | ✅ 18. 11. (etiketa + SDS; bez pred/po, bez „Ikke bruk“ – etiketa nič neuvádza; súvisiace: Fett-, Kjøkkenpakken, Polish) |
+| Kjøkkenpakken | ✅ 18. 11. (balíček; 2 SDS ako odkazy v otázke, pole `sds` prázdne; doprava „med PostNord“ – Luk 18. 11.) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
+- **Doprava v texte (Luk 18. 11.): PostNord.** Kjøkkenpakken má „med PostNord“; LMS/Kalkfjerner/Baderomsrens/Fett/Kjøleskapsrens majú zatiaľ „Bring eller PostNord“ → zjednotiť po Lukovom „áno“.
+- Otázky (`faq.a`) sa vypisujú ako HTML → dá sa vložiť odkaz `<a href>` (použité pri balíčkoch na 2 bezpečnostné listy).
 - **Fotky pri produktoch sú skutočné** (Luk 17. 11.), niektoré upravené (Gemini/agent) len na veľkosť → smú sa použiť aj do pred/po (metapole file_reference berie MediaImage ID z médií produktu).
 - Hlavička: `padding_top/bottom` musí byť násobok 4 (14 neprešlo).
 - Živú tému (JUL) agent nemení → všetko v pracovnej; po dokončení Luk zverejní pracovnú. Potom to isté do „po sviatkoch“ (homepage index.json sa líši, ostatné súbory rovnaké).
