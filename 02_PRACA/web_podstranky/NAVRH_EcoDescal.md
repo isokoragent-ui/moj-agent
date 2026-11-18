@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor EcoDescal avkalker for vannkoker og kaffemaskin (2026-11-18)
 Zdroj: nórska etiketa (`02_PRACA/etikety/zdroj/ecodescal_500ml.py`; CLP blok FARE, H314, P280…) + SDS NO 1.0 (= LMS, Skin Corr. 1C H314, Eye Dam. 1, UN 1760). Produkt `gid://shopify/Product/8397264748723`, 119 kr, 10 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Kjøkken – avkalking
 - **kort:** Avkalkingsmiddel for vannkoker og kaffemaskin – helautomatiske og halvautomatiske maskiner, espresso- og kapselmaskiner. Laget av fruktsyrer og fruktekstrakter. Løser kalk raskt uten å skade maskinen, og gir glans til krom og rustfritt stål.

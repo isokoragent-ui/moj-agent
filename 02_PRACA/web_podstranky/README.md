@@ -36,6 +36,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Bilrens | ✅ 18. 11. (NO etiketa + SDS; súvisiace Antidugg, Sofarens, EcoNeutral) |
 | Universalrens | ✅ 18. 11. (NO etiketa + SDS v1.1; koncentrát 1:5–1:100; „antimikrobiell“ z etikety; zdravotné tvrdenia zo starého popisu nedané) |
 | Clinic | ✅ 18. 11. (NO etiketa + SDS; „antimikrobielle egenskaper bekreftet ved testing“ + SUJCHBO 56/2015/LTL z etikety; vírusy/baktérie/99,99 % nedané) |
+| EcoDescal | ✅ 18. 11. (NO etiketa + SDS = LMS, H314 → rukavice/okuliare; „uten farlige stoffer“ nedané) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
