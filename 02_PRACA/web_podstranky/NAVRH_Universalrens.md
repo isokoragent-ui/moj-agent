@@ -10,7 +10,7 @@ Stav: **čaká na Lukovo „áno“**.
 - **ikke_bruk:** (prázdne — etiketa nič neuvádza)
 - **sds:** https://cdn.shopify.com/s/files/1/0719/7389/6371/files/Isokor_Universalrens_Sikkerhetsdatablad_NO.pdf?v=1793296184
 - **faq:**
-  - Hvor mye skal jeg blande? → Fra 1:5 til lett smuss 1:100. Til vanlig vask holder en liten skvett i en bøtte med vann. Sterkere blanding til fett og grovt smuss.
+  - Hvor mye skal jeg blande? → Fra 1:5 til fett og grovt smuss, til 1:100 for lett smuss.
   - Hvor lenge varer flasken? → Fordi den er konsentrert, blir 500 ml til mange liter ferdig vaskevann.
   - Kan jeg bruke den i oppvaskmaskin og til klesvask? → Ja, produktet kan brukes i oppvaskmaskin og til klesvask.
   - Må jeg skylle etterpå? → Ja. La virke 3–5 minutter og skyll deretter med vann.
@@ -19,4 +19,4 @@ Stav: **čaká na Lukovo „áno“**.
 - **passer_med:** Fett- og flekkfjerner · Baderomsrens · Kjøkkenpakken
 
 Nedané zo starého popisu (zdravotné tvrdenia, AKTUALNE bod 3): „naturlig avgiftning av kroppen“, „støtter immunforsvaret“, „trygg nok til å vaske egen hud“, „vask av frukt og grønnsaker“.
-⚠️ FAQ „liten skvett i en bøtte“ a „mange liter“ = vlastný výklad pomeru 1:5–1:100 (na etikete nie je presné dávkovanie na vedro).
+⚠️ FAQ „mange liter ferdig vaskevann“ = výpočet z pomeru 1:5–1:100 (500 ml → 3–50 l), nie text etikety.
