@@ -29,7 +29,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
-- **Doprava v texte (Luk 18. 11.): PostNord.** Kjøkkenpakken má „med PostNord“; LMS/Kalkfjerner/Baderomsrens/Fett/Kjøleskapsrens majú zatiaľ „Bring eller PostNord“ → zjednotiť po Lukovom „áno“.
+- **Doprava v texte (Luk 18. 11.): „med PostNord“** — zjednotené pri všetkých 6 hotových produktoch → `08_ROZHODNUTIA/2026-11-18_doprava_postnord.md`.
 - Otázky (`faq.a`) sa vypisujú ako HTML → dá sa vložiť odkaz `<a href>` (použité pri balíčkoch na 2 bezpečnostné listy).
 - **Fotky pri produktoch sú skutočné** (Luk 17. 11.), niektoré upravené (Gemini/agent) len na veľkosť → smú sa použiť aj do pred/po (metapole file_reference berie MediaImage ID z médií produktu).
 - Hlavička: `padding_top/bottom` musí byť násobok 4 (14 neprešlo).
