@@ -39,7 +39,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | EcoDescal | ✅ 18. 11. (NO etiketa + SDS = LMS, H314 → rukavice/okuliare; „uten farlige stoffer“ nedané) |
 | Møbelrens | ✅ 18. 11. (= Furniture Cleaner; NO etiketa vyrobená v ten istý deň → „99,99 % proteinforurensning“ + „trygt for mennesker og husdyr“ z etikety; súvisiace Polish, Sofarens, EcoNeutral) |
 | Polish | ✅ 18. 11. (nano-impregnácia, nie čistič; SDS = SW: H225/H319/H336 v „Ikke bruk“; postup nanášania chýba – doplniť zo SK etikety Polisher) |
-| Lotos Standard | ✅ 18. 11. (impregnácia textílií; SDS = SW: H225/H319/H336 v „Ikke bruk“; „helsemessig trygg“ nedané; súvisiace Sofarens, EcoNeutral, Møbelrens) |
+| Lotos Standard | ✅ 18. 11. (impregnácia textílií; SDS = SW: H225/H319/H336 v „Ikke bruk“; „helsemessig trygg“ nedané; súvisiace Lotos Profi, Sofarens, EcoNeutral) |
 | Lotos Profi | ✅ 18. 11. (trvalá impregnácia; SDS neklasifikovaný; „livslang“ → „varig“; súvisiace Lotos Standard, Sofarens, EcoNeutral) |
 | ostatné | ⏳ produkt po produkte |
 

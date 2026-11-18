@@ -16,6 +16,6 @@ Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez 
   - Når kan jeg bruke klærne? → Etter 2–3 timer. For lengst holdbarhet: vent 24 timer.
   - Kan jeg bruke det på sofaen? → Ja, på stoppede møbler og bilseter. Rengjør gjerne først med Isokor Sofarens.
   - Når kommer pakken? → Vanligvis innen 6–10 virkedager med PostNord.
-- **passer_med:** Sofarens · EcoNeutral · Møbelrens (Lukova skupina)
+- **passer_med:** Lotos Profi · Sofarens · EcoNeutral (18. 11. Luk: Lotos Profi namiesto Møbelrens)
 
 Nedané zo starého popisu: „helsemessig trygg“ (v rozpore so SDS H225/H319/H336), „ugunstig for bakterier og midd“, „sunnere“.
