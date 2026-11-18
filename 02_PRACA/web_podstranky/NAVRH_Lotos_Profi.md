@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Lotos Profi nanoimpregnering (2026-11-18)
 Zdroj: súčasný popis v e-shope + SDS NO 1.0 (**nie je klasifikovaný**, izopropanol 5–<10 %, EUH210, bez UFI). NO etiketa nie je. Produkt `gid://shopify/Product/8384190841011`, 799 kr, 8 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 18. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Impregnering – varig, tekstil og skinn
 - **kort:** Varig nanoimpregnering for sofaer, bilseter, klær, sko og skinn. Bindingen er så sterk at den tåler mange vask og rens. Stopper vann, rødvin, kaffe og juice, men stoffet puster fortsatt. Trygg ved hudkontakt.
