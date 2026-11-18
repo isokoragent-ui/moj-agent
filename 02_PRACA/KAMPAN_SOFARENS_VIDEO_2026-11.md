@@ -62,3 +62,6 @@ Hudba: vlastná (`hytteservice/hudba.py`), ako pri predošlých videách.
 - ⚠️ Gemini môže odmietnuť „blood“ → použi „dark red nosebleed spots“.
 - ⚠️ Hlavná fotka Sofarens v e-shope vyzerá ako AI → do videa skutočná fotka fľaše.
 - ✅ 17. 11.: fľaša s novou nórskou etiketou z Lukovej skutočnej fotky → `grafika/sofarens_flaska_bez_pozadia.png` (záverečný záber) a `grafika/sofarens_produkt.jpg`.
+
+## Hotové video (18. 11.)
+`grafika/sofarens_video_story_1080x1920.mp4` — 20 s, z Lukových obrázkov z Gemini + skutočná fľaša. Čaká na Lukovo „áno“; potom 16:9 a Metricool.
