@@ -36,9 +36,9 @@ ZÁZNAM (v zaznamy/RRRR-MM.json → {"zaznamy": [...]}):
      "kanal": "obchod",                                  # príjem: eshop / obchod / sluzby / ine
      "druh": "marketing",                                # aktivita: marketing / predaj / stretnutie / ...
      "kto": "Jula Arendal", "popis": "Vysávač na dielňu",
-     "platba": "firemna_karta",                          # sukromne = firma dlhuje Lukovi
+     "platba": "firemna_karta",                          # sukromne = firma dlhuje Lukovi; zaplatila_druha_firma = AS↔živnosť
      "doklad": true,                                     # Luk má papierový bloček/faktúru (odovzdá účtovníčke); false = chýba
-     "zdroj": "diktovane",                               # alebo "shopify:#1031" (proti duplicitám)
+     "zdroj": "diktovane",                               # alebo "shopify:#1031", "blocek:JYSK-0052-2514" (obchod-číslo bločku; MUSÍ byť unikátny) (proti duplicitám)
      "poznamka": ""}
 """
 import importlib.util, json, sys
@@ -156,7 +156,7 @@ def spocitaj(od, do, n):
     zz, ff, jj = zaznamy(od, do), faktury(od, do), jazdy(od, do)
     r = {"prijmy": defaultdict(lambda: [0.0, 0.0, 0.0, 0]),   # kanál → brutto, netto, mva, počet
          "vydavky": defaultdict(lambda: [0.0, 0.0, 0.0, 0]),
-         "aktivity": [], "bez_dokladu": [], "sukromne": [], "zz": zz, "ff": ff, "jj": jj}
+         "aktivity": [], "bez_dokladu": [], "sukromne": [], "druha_firma": [], "zz": zz, "ff": ff, "jj": jj}
     for z in zz:
         if z["typ"] == "aktivita":
             r["aktivity"].append(z); continue
@@ -169,6 +169,8 @@ def spocitaj(od, do, n):
                 r["bez_dokladu"].append(z)
             if z.get("platba") == "sukromne":
                 r["sukromne"].append(z)
+            if z.get("platba") == "zaplatila_druha_firma":
+                r["druha_firma"].append(z)
     for f in ff:
         v = r["prijmy"]["faktura"]
         v[0] += f["spolu"]; v[1] += f["netto"]; v[2] += f["mva_spolu"]; v[3] += 1
@@ -273,6 +275,10 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
     if r["sukromne"]:
         s = sum(float(z["suma"]) for z in r["sukromne"])
         pozor.append(f"**Zaplatené súkromne: {kr(s)}** — " + (n.get("poznamka_sukromne") or "firma to dlhuje Lukovi (utlegg), treba preplatiť z firemného účtu."))
+    if r["druha_firma"]:
+        s = sum(float(z["suma"]) for z in r["druha_firma"])
+        pozor.append(f"**Zaplatila druhá firma: {kr(s)}** — " + (n.get("poznamka_druha_firma") or "výdavok zaplatený kartou/účtom druhej firmy — treba ho medzi firmami vyrovnať.")
+                     + " (" + "; ".join(f"{z['datum']} {z.get('kto', '')} {kr(float(z['suma']))}" for z in r["druha_firma"]) + ")")
     nz = nezaplatene_faktury()
     po = [f for f in nz if date.fromisoformat(f["forfallsdato"]) < date.today()]
     if nz:

@@ -29,7 +29,7 @@
 - **Isokor LMS (hrdza) — prezentácia produktu (od 2026-10-30):** 🟢 karusel 8 slajdov naplánovaný na ut 3. 11. 10:30 (FB+IG, Threads), videá na výšku a na šírku (Luk zverejní sám); kampaň 800 kr/14 dní schválená, spustenie zatiaľ nie; kov/pozinkované čaká na výrobcu → `02_PRACA/KAMPAN_RUST_AGDER_2026-11.md`, `02_PRACA/grafika/lms/`
 - **Kniha jázd (Kjørebok, od 11. 11. 2026):** 🟢 firemné jazdy súkromným autom — Luk diktuje, agent zapisuje, mesačne PDF pre Anne Sofie → `02_PRACA/kjorebok/README.md`
 - **Faktúry (od 11. 11. 2026):** 🟢 agent generuje PDF podľa Lukovej šablóny, MVA 25 % → `02_PRACA/faktury/README.md`
-- **Agenda firmy (od 11. 11. 2026):** 🟢 denné záznamy výdavkov/príjmov/aktivít + raporty deň/týždeň/mesiac → `02_PRACA/agenda_as/README.md`
+- **Agenda firmy (od 11. 11. 2026):** 🟢 denné záznamy výdavkov/príjmov/aktivít + raporty deň/týždeň/mesiac → `02_PRACA/agenda_as/README.md` · 19. 11.: prvé doklady zapísané (nov + pred MVA od 1/2026); 🟡 čaká párovanie s bankovými výpismi od 1. 1. 2026 (Luk nafotí naraz)
 - **Firma na webe:** Isokor Skandinavia AS, org. č. 922 112 975
 - **Vzťah s výrobcom:** priame zastúpenie, logá/názvy/texty/licencie vybavené dohodou → `08_ROZHODNUTIA/2026-10-28_vyrobca_prava_znacky.md`
 - **Trh:** Nórsko (komunikácia po nórsky), web `www.isokor-skandinavia.no`
