@@ -13,6 +13,18 @@
       "zdroj": "faktura:VegarsheiEiendom-184820055"
     },
     {
+      "datum": "2026-11-06",
+      "typ": "vydavok",
+      "suma": 530.93,
+      "mva": 0,
+      "kategoria": "software",
+      "kto": "Shopify",
+      "popis": "Faktúra 617644565 — Shopify predplatné 389 + aplikácie 141,93. Zahraničná služba bez nórskej MVA (snudd avregning rieši účtovníčka). Zaplatené kartou živnosti Visa *6155 → AS dlhuje živnosti.",
+      "platba": "zaplatila_druha_firma",
+      "doklad": true,
+      "zdroj": "faktura:Shopify-617644565"
+    },
+    {
       "datum": "2026-11-09",
       "typ": "vydavok",
       "suma": 391.0,

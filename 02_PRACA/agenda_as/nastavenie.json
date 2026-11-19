@@ -78,7 +78,8 @@
     "sukromne",
     "hotovost",
     "vipps",
-    "faktura_dodavatela"
+    "faktura_dodavatela",
+    "zaplatila_druha_firma"
   ],
   "typy_aktivit": [
     "marketing",
@@ -89,5 +90,6 @@
     "ine"
   ],
   "agenda_od": "2026-11-06",
-  "doklady": "Papierové bločky a faktúry Luk odovzdáva Anne Sofie každé 2 mesiace (MVA termín). Fotky sa neukladajú — agent z nich len prečíta údaje."
+  "doklady": "Papierové bločky a faktúry Luk odovzdáva Anne Sofie každé 2 mesiace (MVA termín). Fotky sa neukladajú — agent z nich len prečíta údaje.",
+  "poznamka_druha_firma": "zaplatené kartou živnosti (Visa *6155) — AS to dlhuje živnosti, treba vyrovnať z účtu AS."
 }

@@ -7,14 +7,14 @@
 | | Spolu |
 |---|---:|
 | Príjmy bez MVA | 0 |
-| Výdavky bez MVA | 3 190,72 |
-| **Výsledok** | **−3 190,72** |
+| Výdavky bez MVA | 3 721,65 |
+| **Výsledok** | **−3 721,65** |
 | MVA vybraná (výstup) | 0 |
 | MVA zaplatená (vstup, odpočet) | 797,68 |
 | MVA na odvod | −797,68 |
 | Najazdené km | 536 |
 
-Priemer na mesiac (30 dní): výsledok **−6 837,26** · cieľ 40 000–50 000.
+Priemer na mesiac (30 dní): výsledok **−7 974,96** · cieľ 40 000–50 000.
 
 ## Príjmy podľa kanála
 
@@ -24,8 +24,9 @@ Priemer na mesiac (30 dní): výsledok **−6 837,26** · cieľ 40 000–50 000.
 
 | Kategória | Počet | S MVA | Bez MVA | MVA na odpočet | Podiel |
 |---|---:|---:|---:|---:|---:|
-| Obchod a dielňa Myra — zariadenie, nájom, energie | 5 | 3 361,40 | 2 689,12 | 672,28 | 84 % |
-| Náradie a vybavenie | 1 | 627 | 501,60 | 125,40 | 16 % |
+| Obchod a dielňa Myra — zariadenie, nájom, energie | 5 | 3 361,40 | 2 689,12 | 672,28 | 72 % |
+| Shopify, Metricool, aplikácie, domény | 1 | 530,93 | 530,93 | 0 | 14 % |
+| Náradie a vybavenie | 1 | 627 | 501,60 | 125,40 | 13 % |
 
 ## 10 najväčších výdavkov
 
@@ -35,6 +36,7 @@ Priemer na mesiac (30 dní): výsledok **−6 837,26** · cieľ 40 000–50 000.
 | 11. 11. 2026 | JYSK Stathelle (Bamble) | 2× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra | 782 |
 | 13. 11. 2026 | JYSK Arendal | Rohožka FRYTLE 60×120 + 4× záclona ORUST 140×300 — obchod Myra | 777,40 |
 | 16. 11. 2026 | Megaflis Agderparken | 2× sada skrutkovačov Bahco (BE9881 + SPOR/PH/PZ 6 dielov) | 627 |
+| 6. 11. 2026 | Shopify | Faktúra 617644565 — Shopify predplatné 389 + aplikácie 141,93. Zahraničná služba bez nórskej MVA (snudd avregning rieši účtovníčka). Zaplatené kartou živnosti Visa *6155 → AS dlhuje živnosti. | 530,93 |
 | 9. 11. 2026 | JYSK Arendal | 1× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra | 391 |
 | 9. 11. 2026 | Megaflis Agderparken | Dekoračná fólia D-C-FIX Concrete 67,5×200 + D-C-FIX DIY kit + Bahco čepele 18 mm — obchod/dielňa Myra | 238 |
 
@@ -52,3 +54,4 @@ Priemer na mesiac (30 dní): výsledok **−6 837,26** · cieľ 40 000–50 000.
 ## Treba riešiť
 
 - **Zaplatené súkromne: 865** — firma to dlhuje Lukovi (utlegg), treba preplatiť z firemného účtu.
+- **Zaplatila druhá firma: 530,93** — zaplatené kartou živnosti (Visa *6155) — AS to dlhuje živnosti, treba vyrovnať z účtu AS. (2026-11-06 Shopify 530,93)
