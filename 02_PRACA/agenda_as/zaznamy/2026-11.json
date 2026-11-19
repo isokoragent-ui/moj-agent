@@ -95,6 +95,18 @@
       "platba": "sukromne",
       "doklad": true,
       "zdroj": "blocek:Megaflis-0000P11002000231957"
+    },
+    {
+      "datum": "2026-11-17",
+      "typ": "vydavok",
+      "suma": 183.2,
+      "mva": 0,
+      "kategoria": "software",
+      "kto": "Anthropic Ireland",
+      "popis": "Claude Pro 17. 11.–17. 12. 2026 (receipt #2694-1680-5031) — AI asistent firmy. Zahraničná služba bez nórskej MVA (snudd avregning rieši účtovníčka).",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "faktura:Anthropic-2694-1680-5031"
     }
   ]
 }

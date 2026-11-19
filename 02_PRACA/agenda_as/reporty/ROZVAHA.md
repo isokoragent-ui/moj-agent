@@ -7,14 +7,14 @@
 | | Spolu |
 |---|---:|
 | Príjmy bez MVA | 0 |
-| Výdavky bez MVA | 3 721,65 |
-| **Výsledok** | **−3 721,65** |
+| Výdavky bez MVA | 3 904,85 |
+| **Výsledok** | **−3 904,85** |
 | MVA vybraná (výstup) | 0 |
 | MVA zaplatená (vstup, odpočet) | 797,68 |
 | MVA na odvod | −797,68 |
 | Najazdené km | 536 |
 
-Priemer na mesiac (30 dní): výsledok **−7 974,96** · cieľ 40 000–50 000.
+Priemer na mesiac (30 dní): výsledok **−8 367,54** · cieľ 40 000–50 000.
 
 ## Príjmy podľa kanála
 
@@ -24,8 +24,8 @@ Priemer na mesiac (30 dní): výsledok **−7 974,96** · cieľ 40 000–50 000.
 
 | Kategória | Počet | S MVA | Bez MVA | MVA na odpočet | Podiel |
 |---|---:|---:|---:|---:|---:|
-| Obchod a dielňa Myra — zariadenie, nájom, energie | 5 | 3 361,40 | 2 689,12 | 672,28 | 72 % |
-| Shopify, Metricool, aplikácie, domény | 1 | 530,93 | 530,93 | 0 | 14 % |
+| Obchod a dielňa Myra — zariadenie, nájom, energie | 5 | 3 361,40 | 2 689,12 | 672,28 | 69 % |
+| Shopify, Metricool, aplikácie, domény | 2 | 714,13 | 714,13 | 0 | 18 % |
 | Náradie a vybavenie | 1 | 627 | 501,60 | 125,40 | 13 % |
 
 ## 10 najväčších výdavkov
@@ -39,6 +39,7 @@ Priemer na mesiac (30 dní): výsledok **−7 974,96** · cieľ 40 000–50 000.
 | 6. 11. 2026 | Shopify | Faktúra 617644565 — Shopify predplatné 389 + aplikácie 141,93. Zahraničná služba bez nórskej MVA (snudd avregning rieši účtovníčka). Zaplatené kartou živnosti Visa *6155 → AS dlhuje živnosti. | 530,93 |
 | 9. 11. 2026 | JYSK Arendal | 1× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra | 391 |
 | 9. 11. 2026 | Megaflis Agderparken | Dekoračná fólia D-C-FIX Concrete 67,5×200 + D-C-FIX DIY kit + Bahco čepele 18 mm — obchod/dielňa Myra | 238 |
+| 17. 11. 2026 | Anthropic Ireland | Claude Pro 17. 11.–17. 12. 2026 (receipt #2694-1680-5031) — AI asistent firmy. Zahraničná služba bez nórskej MVA (snudd avregning rieši účtovníčka). | 183,20 |
 
 ## Jazdy (z Kjørebok)
 
