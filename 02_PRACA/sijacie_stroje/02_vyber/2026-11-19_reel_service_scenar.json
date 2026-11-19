@@ -106,7 +106,7 @@
     0.5,
     0.5
    ],
-   "beats": 10
+   "beats": 8
   },
   {
    "img": "01_originaly/fotky/2026-11-19_janome_mc3500_07_hotovy.jpg",
@@ -168,12 +168,12 @@
   ],
   "beats": 8
  },
- "beat": 0.5001,
+ "beat": 0.5108,
  "audio": {
-  "file": "01_originaly/hudba/En_drape_olje.mp3",
-  "start": 26.11,
+  "file": "01_originaly/hudba/The_Measured_Step.mp3",
+  "start": 29.768,
   "fade_in": 0.3,
   "fade_out": 2.5,
-  "pozn": "úsek 26,1–73,1 s: 32 dôb pred refrénom (refrén 42,1 s padne na 'Vi åpner og rengjør'), refrén do konca"
+  "pozn": "inštrumentál 117 BPM; pokojný medzidiel 41,7–45,5 s ide pod 'hoppe over sting', nástup 46,1 s padne na 'Vi åpner og rengjør'"
  }
 }
