@@ -1,0 +1,16 @@
+{
+  "zaznamy": [
+    {
+      "datum": "2026-08-04",
+      "typ": "vydavok",
+      "suma": 1800.0,
+      "mva": 0,
+      "kategoria": "marketing",
+      "kto": "Dølemomarknaden",
+      "popis": "Faktúra 1291 — stánok na trhu Dølemomarknaden, 4 m × 450 kr, MVA 0 %. Splatné 14. 8. 2026. Obdobie pred MVA.",
+      "platba": null,
+      "doklad": true,
+      "zdroj": "faktura:Dolemomarknaden-1291"
+    }
+  ]
+}
