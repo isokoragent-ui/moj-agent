@@ -7,7 +7,7 @@ Stav: ✅ **zapísané 19. 11. 2026** (Luk „áno“), overené čítaním cez 
 
 - **kategori:** Sett – bad
 - **kort:** Komplett sett for badet: rengjør, fjern kalk og beskytt. Kalkfjerner og Baderomsrens gjør flisene, fugene og dusjen rene – Polish beskytter de blanke flatene og EKO Profi de matte flisene, slik at kalk og smuss ikke fester seg like lett.
-- **fordeler:** 4 produkter · Rens og impregnering · Blanke og matte flater
+- **fordeler:** 4 produkter · Du sparer 147 kr · Blanke og matte flater (19. 11. Luk; pôvodne „Rens og impregnering“)
 - **steg:** Kalk: fjern gammel kalk og rens fugene med Isokor Kalkfjerner – skyll med vann · Vask med Isokor Baderomsrens – overflaten må være helt ren og tørr · Blanke flater (dusjglass, speil, krom, glaserte fliser): påfør Isokor Polish · Matte flater (gresfliser, sklisikre gulv, matte veggfliser): påfør Isokor EKO Profi · La tørke ca. 8 timer – full herding etter 24 timer
 - **passer_til:** Dusj og dusjkabinett · fliser og fuger · badekar og servant · speil og glass · krom og armatur · sklisikre gulv og gresfliser
 - **ikke_bruk:** Kalkfjerner kan gi etseskader på hud og øyne – bruk hansker og vernebriller.\nPolish er meget brannfarlig og kan gi døsighet – hold borte fra flamme og luft godt ut.\nProduktene må ikke blandes med hverandre.

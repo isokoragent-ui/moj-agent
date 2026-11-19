@@ -11,4 +11,4 @@
 
 ## Pozor
 - Pri zmene ceny jednotlivých produktov prepočítať, či sada ostáva lacnejšia.
-- „Du sparer 147 kr“ zatiaľ na karte nie je — len po Lukovom „áno“.
+- „Du sparer 147 kr“ je v štítkoch karty od 19. 11. (Luk „áno“). Pri zmene cien prepočítať aj štítok.
