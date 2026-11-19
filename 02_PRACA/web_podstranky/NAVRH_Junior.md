@@ -21,4 +21,4 @@ Zdroj textov: NO etiketa `02_PRACA/etikety/zdroj/junior_500ml.py` + SDS NO 1.0 (
 ## ✅ Overené 19. 11. (po Lukových úpravách)
 - Produkt **ACTIVE**, 149 kr, 20 ks, `availableForSale` true, 2 fotky (Luk: Baby Cleaner so starým logom + Junior s novým logom; staré nechá, kým nedopredá fľaše so starou etiketou), publikovaný na 7 kanáloch (Online Store, POS, Facebook, Shop, Google, TikTok, Lovable), kolekcie + AVADA Best Sellers.
 - **Živá téma = „Isokor – JUL 2026 + Junior (19. 11.)“** `…/156333179059` (Luk zverejnil), v „Populært før jul“ b_2 = Junior. Návrat: „Isokor – JUL 2026 + nové podstránky“ `…/156287008947`.
-- Otvorené: alt texty fotiek prázdne; SDS Junior nie je v Súboroch (metapole `sds` prázdne); „PO SVIATKOCH 2027“ Junior nemá (rozhodnúť po Novom roku).
+- Alt texty doplnené 19. 11. (1000006842 = Junior, 1000006843 = Baby Cleaner – podľa Lukovho popisu, obrázok 843 agent nevidel). Otvorené: SDS Junior nie je v Súboroch (metapole `sds` prázdne); „PO SVIATKOCH 2027“ Junior nemá (rozhodnúť po Novom roku).

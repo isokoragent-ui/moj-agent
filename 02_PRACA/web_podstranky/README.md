@@ -48,7 +48,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Fasaderens | ✅ 19. 11. (SDS = Baderomsrens, nie je nebezpečný; postup + spotreba 1 l/8 m²; súvisiace SW EKO, Multi Steinrens, Fasaderens Plus) |
 | Fasaderens Plus | ✅ 19. 11. (žieravý H314/H290/H318, FARE v „Ikke bruk“; ⚠️ 5 l nad LQ 1 l → overiť PostNord/ADR) |
 | Gravsteinrens | ✅ 19. 11. (= Multi Steinrens; 100 % naturlig; bez høytrykk podľa stránky služby; súvisiace Multi Steinrens, Gravsteinvask – tjeneste) |
-| Isokor Junior (nový, 19. 11.) | ✅ ACTIVE, 149 kr, 20 ks, karta z NO etikety; na úvodnej stránke v „Populært før jul“ (živá téma „…+ Junior (19. 11.)“); SDS a alt texty chýbajú |
+| Isokor Junior (nový, 19. 11.) | ✅ ACTIVE, 149 kr, 20 ks, karta z NO etikety; na úvodnej stránke v „Populært før jul“ (živá téma „…+ Junior (19. 11.)“); alt texty doplnené; SDS chýba |
 | GreenGuard 100 ml | ⏸ neskôr (Luk 19. 11.: teraz nie je sezóna; „prírodné, nie je biocíd“; 284 ks na sklade; SDS chýba) |
 | ostatné | ⏳ produkt po produkte |
 
