@@ -32,6 +32,11 @@ zvuk stroja, ktorý znovu šije. Nič korporátne.
 - **Firma:** Systua på Vegårshei
 - **Prevádzka:** Skredderstuen — web `www.skredderstuen.no`
 - **Jazyk:** všetko po nórsky (videá, titulky, popisky, hashtagy)
+- **Siete:** Facebook + Instagram → hlavný formát video na výšku 9:16
+  (Reels, ide na FB aj IG), k tomu prípadne štvorec 1:1 do feedu
+- **Metricool (19. 11. 2026):** Skredderstuen tam **nie je** pripojený (len
+  značka isokorskandinavia) → zatiaľ zverejňuje Luk/manželka ručne. Pripojiť
+  ako 2. značku = rozhodnutie Luka (nikdy nezverejňovať cez Isokor účty).
 
 ## Otvorené
-- Ktoré sociálne siete, logo/farby — doplniť.
+- Logo/farby, názvy FB a IG profilov — doplniť.
