@@ -17,3 +17,8 @@ Zdroj textov: NO etiketa `02_PRACA/etikety/zdroj/junior_500ml.py` + SDS NO 1.0 (
 - `02_PRACA/grafika/junior/junior_detska_izba_NO.jpg` — Luk: obrázok s NO etiketou JUNIOR (detská izba, macko). Luk ho pridá k produktu ručne; agent ho smie ďalej používať (siete, grafika).
   ⚠️ Generovaný obrázok: odznak má skomolený text („ANTIMIKRUBIELLE CEERIMLEKER“), vpravo dole staré logo Isokor. Fľaša, ktorú zákazník dostane, má nálepku „BABY CLEANER“.
 - `02_PRACA/grafika/junior/baby_cleaner_skutocna_flasa.jpg` — skutočná fľaša s NO nálepkou BABY CLEANER (Lukova fotka).
+
+## ✅ Overené 19. 11. (po Lukových úpravách)
+- Produkt **ACTIVE**, 149 kr, 20 ks, `availableForSale` true, 2 fotky (Luk: Baby Cleaner so starým logom + Junior s novým logom; staré nechá, kým nedopredá fľaše so starou etiketou), publikovaný na 7 kanáloch (Online Store, POS, Facebook, Shop, Google, TikTok, Lovable), kolekcie + AVADA Best Sellers.
+- **Živá téma = „Isokor – JUL 2026 + Junior (19. 11.)“** `…/156333179059` (Luk zverejnil), v „Populært før jul“ b_2 = Junior. Návrat: „Isokor – JUL 2026 + nové podstránky“ `…/156287008947`.
+- Otvorené: alt texty fotiek prázdne; SDS Junior nie je v Súboroch (metapole `sds` prázdne); „PO SVIATKOCH 2027“ Junior nemá (rozhodnúť po Novom roku).
