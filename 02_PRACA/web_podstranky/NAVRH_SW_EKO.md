@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor SW EKO impregnering for fasade og tak (2026-11-19)
 Zdroj: **len 2 vety** v súčasnom popise + SDS NO 1.0 (H319 Advarsel; použitie „vannavstøtende impregnering (beskyttende belegg)“; vernebriller pri špliechaní, hansker pri dlhšej práci, dobré vetranie). NO etiketa ani postup nanášania/spotreba/schnutie nie sú. Produkt `gid://shopify/Product/8394159194291`, 349 kr, 20 ks.
-Stav: **čaká na Lukovo „áno“** — minimálna karta; `steg` prázdne (časť sa neukáže), kým nepríde SK etiketa.
+Stav: 🟡 **zapísané 19. 11. 2026 ako minimálna karta** (Luk „áno“), overené čítaním cez API; `steg` prázdne, kým nepríde SK etiketa.
 
 - **kategori:** Impregnering – fasade, stein og tak
 - **kort:** Selvrensende, vannavstøtende impregnering for sugende overflater ute: fasader, tak, betong, murpuss, stein, belegningsstein og andre porøse flater.
