@@ -1,0 +1,32 @@
+# Opravy šijacích strojov — marketing (fotky, videá)
+
+*Samostatný projekt. Firma manželky, Luk spolupracuje — stroje opravuje
+popri Isokore, po večeroch. **Nie je to Isokor** — iná firma, iné účty,
+iný tón (KÓD #25). Nemiešať s `02_PRACA/` Isokor kampaňami.*
+
+## Čo sem patrí
+| Priečinok | Čo tam je | Pravidlo |
+|---|---|---|
+| `01_originaly/fotky/` | pôvodné fotky od Luka | **nikdy neupravovať ani nemazať** — len čítať |
+| `01_originaly/videa/` | pôvodné videá od Luka | to isté; súbor nad ~90 MB → Google Drive (GitHub berie max 100 MB) a sem len odkaz v `ZOZNAM.md` |
+| `02_vyber/` | vybrané zábery, výrezy, pracovné verzie | smie sa prepisovať |
+| `03_hotove/` | hotové videá/obrázky na zverejnenie | názov `RRRR-MM-DD_tema_format.mp4` (napr. `_9x16`, `_1x1`) |
+| `04_texty/` | popisky, hashtagy, scenáre, nápady | jeden súbor = jeden príspevok |
+
+## Zdroje
+- `ZOZNAM.md` — čo prišlo, kedy, aký stroj, čo sa na ňom robilo
+  (agent dopĺňa pri každom novom súbore).
+
+## Ako to beží
+1. Luk nahrá fotky/videá do chatu (agent do tabletu nevidí) → agent ich uloží
+   do `01_originaly/` a zapíše do `ZOZNAM.md`.
+2. Agent navrhne video/príspevok (scenár + strih + text) → `02_vyber/`.
+3. Luk schváli → hotové do `03_hotove/`.
+4. Zverejnenie **len po Lukovom „áno“** (siete, web).
+
+## Tón
+Ľudský, odľahčený, „dielňa po večeroch“ — pred/po, detaily mechaniky,
+zvuk stroja, ktorý znovu šije. Nič korporátne.
+
+## Otvorené
+- Názov firmy, kde sa zverejňuje (siete, web), jazyk (NO?), logo/farby — doplniť.

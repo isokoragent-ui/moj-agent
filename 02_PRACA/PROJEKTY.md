@@ -2,6 +2,11 @@
 
 *Jeden blok = jeden projekt. Stav aktualizuj pri každom `/odovzdaj`.*
 
+## Opravy šijacích strojov — firma manželky (od 19. 11. 2026)
+- **Čo:** Luk opravuje šijacie stroje popri Isokore (po večeroch); agent robí z fotiek a videí z opráv marketing — videá na siete a web
+- **Stav:** 🆕 priečinok založený, čaká na prvé fotky/videá
+- **Nie je Isokor** — iná firma, iné účty → `02_PRACA/sijacie_stroje/README.md`
+
 ## Isokor — distribúcia a služby (a.s.)
 - **Čo:** distribúcia prírodných čistiacich prostriedkov, impregnácií
   a produktov na ošetrovanie a údržbu povrchov značky Isokor + služby s nimi
