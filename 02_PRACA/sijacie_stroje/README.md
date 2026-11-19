@@ -52,7 +52,7 @@ zvuk stroja, ktorý znovu šije. Nič korporátne.
 ## Hotové
 | Dátum | Video | Text | Stav |
 |---|---|---|---|
-| 2026-11-19 | `03_hotove/2026-11-19_service_symaskin_9x16.mp4` | `04_texty/2026-11-19_service_symaskin.md` | 🟡 čaká na „áno“ |
+| 2026-11-19 | `03_hotove/2026-11-19_service_symaskin_9x16.mp4` | `04_texty/2026-11-19_service_symaskin.md` | ✅ schválené (v4, The Measured Step) — zverejní manželka |
 
 ## Hudba
 - `01_originaly/hudba/En_drape_olje.mp3` — **vlastná pieseň Skredderstuen

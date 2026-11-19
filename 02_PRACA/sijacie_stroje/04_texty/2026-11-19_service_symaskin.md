@@ -2,7 +2,7 @@
 
 **Video:** `03_hotove/2026-11-19_service_symaskin_9x16.mp4` (9:16, 47 s, v4 — inštrumentál „The Measured Step“, strihy na dobu)
 **Kam:** Instagram Reels + Facebook Reels, web
-**Stav:** 🟡 návrh — čaká na Lukovo „áno“, potom manželka zverejní ručne
+**Stav:** ✅ Luk schválil 19. 11. — manželka zverejní ručne
 
 ## Popis (skopírovať)
 
