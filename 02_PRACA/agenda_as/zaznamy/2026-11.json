@@ -13,6 +13,18 @@
       "zdroj": "blocek:JYSK-0052-2514"
     },
     {
+      "datum": "2026-11-09",
+      "typ": "vydavok",
+      "suma": 238.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "Megaflis Agderparken",
+      "popis": "Dekoračná fólia D-C-FIX Concrete 67,5×200 + D-C-FIX DIY kit + Bahco čepele 18 mm — obchod/dielňa Myra",
+      "platba": "sukromne",
+      "doklad": true,
+      "zdroj": "blocek:Megaflis-0000P11002000230563"
+    },
+    {
       "datum": "2026-11-11",
       "typ": "vydavok",
       "suma": 782.0,

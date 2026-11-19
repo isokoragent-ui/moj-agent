@@ -7,14 +7,14 @@
 | | Spolu |
 |---|---:|
 | Príjmy bez MVA | 0 |
-| Výdavky bez MVA | 3 000,32 |
-| **Výsledok** | **−3 000,32** |
+| Výdavky bez MVA | 3 190,72 |
+| **Výsledok** | **−3 190,72** |
 | MVA vybraná (výstup) | 0 |
-| MVA zaplatená (vstup, odpočet) | 750,08 |
-| MVA na odvod | −750,08 |
+| MVA zaplatená (vstup, odpočet) | 797,68 |
+| MVA na odvod | −797,68 |
 | Najazdené km | 0 |
 
-Priemer na mesiac (30 dní): výsledok **−6 429,26** · cieľ 40 000–50 000.
+Priemer na mesiac (30 dní): výsledok **−6 837,26** · cieľ 40 000–50 000.
 
 ## Príjmy podľa kanála
 
@@ -24,8 +24,8 @@ Priemer na mesiac (30 dní): výsledok **−6 429,26** · cieľ 40 000–50 000.
 
 | Kategória | Počet | S MVA | Bez MVA | MVA na odpočet | Podiel |
 |---|---:|---:|---:|---:|---:|
-| Obchod a dielňa Myra — zariadenie, nájom, energie | 4 | 3 123,40 | 2 498,72 | 624,68 | 83 % |
-| Náradie a vybavenie | 1 | 627 | 501,60 | 125,40 | 17 % |
+| Obchod a dielňa Myra — zariadenie, nájom, energie | 5 | 3 361,40 | 2 689,12 | 672,28 | 84 % |
+| Náradie a vybavenie | 1 | 627 | 501,60 | 125,40 | 16 % |
 
 ## 10 najväčších výdavkov
 
@@ -36,6 +36,7 @@ Priemer na mesiac (30 dní): výsledok **−6 429,26** · cieľ 40 000–50 000.
 | 13. 11. 2026 | JYSK Arendal | Rohožka FRYTLE 60×120 + 4× záclona ORUST 140×300 — obchod Myra | 777,40 |
 | 16. 11. 2026 | Megaflis Agderparken | 2× sada skrutkovačov Bahco (BE9881 + SPOR/PH/PZ 6 dielov) | 627 |
 | 9. 11. 2026 | JYSK Arendal | 1× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra | 391 |
+| 9. 11. 2026 | Megaflis Agderparken | Dekoračná fólia D-C-FIX Concrete 67,5×200 + D-C-FIX DIY kit + Bahco čepele 18 mm — obchod/dielňa Myra | 238 |
 
 ## Jazdy (z Kjørebok)
 
@@ -48,5 +49,5 @@ Priemer na mesiac (30 dní): výsledok **−6 429,26** · cieľ 40 000–50 000.
 
 ## Treba riešiť
 
-- **Zaplatené súkromne: 627** — firma to dlhuje Lukovi (utlegg), treba preplatiť z firemného účtu.
+- **Zaplatené súkromne: 865** — firma to dlhuje Lukovi (utlegg), treba preplatiť z firemného účtu.
 - Jazdy bez km v Kjørebok: 2.
