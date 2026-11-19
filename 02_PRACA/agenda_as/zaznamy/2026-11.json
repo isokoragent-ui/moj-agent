@@ -1,6 +1,18 @@
 {
   "zaznamy": [
     {
+      "datum": "2026-11-04",
+      "typ": "vydavok",
+      "suma": 1313.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "Vegårshei Eiendom 1 AS",
+      "popis": "Faktúra 184820055 — nájom Hovlandsveien 1, november 2026: nájom 7 500 − zľava 7 500 = 0, spoločné náklady 1 050 + MVA 262,50 (+0,50 zaokr.). Splatná 14. 11., zaplatená z firemného účtu. Pozn.: faktúra pred registráciou MVA (6. 11.) — odpočet 262,50 posúdi účtovníčka.",
+      "platba": "firemny_ucet",
+      "doklad": true,
+      "zdroj": "faktura:VegarsheiEiendom-184820055"
+    },
+    {
       "datum": "2026-11-09",
       "typ": "vydavok",
       "suma": 391.0,
