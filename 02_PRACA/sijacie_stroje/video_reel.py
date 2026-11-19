@@ -90,11 +90,13 @@ def main(spec_path, out):
     clips = []  # (počet snímok, funkcia index -> snímka) — šetrí pamäť
     for sc in spec["scenes"]:
         im = load(sc["img"]); cap = caption_layer(sc.get("text"), sc.get("sub"))
-        n = int(sc.get("dur", 2.6) * FPS)
+        dur = sc["beats"] * spec["beat"] + FADE if "beats" in sc else sc.get("dur", 2.6)
+        n = round(dur * FPS)
         clips.append((n, lambda i, im=im, cap=cap, sc=sc, n=n: Image.alpha_composite(
             frame(im, i / max(n - 1, 1), sc).convert("RGBA"), cap).convert("RGB")))
     e = spec["end"]; card = end_card(e["lines"])
-    clips.append((int(e.get("dur", 3.5) * FPS), lambda i: card))
+    edur = e["beats"] * spec["beat"] + FADE if "beats" in e else e.get("dur", 3.5)
+    clips.append((round(edur * FPS), lambda i: card))
 
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                            "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-f", "lavfi", "-i",
@@ -111,6 +113,17 @@ def main(spec_path, out):
             for k in range(nf):
                 ff.stdin.write(Image.blend(get(n - nf + k), get2(k), (k + 1) / (nf + 1)).tobytes())
     ff.stdin.close(); ff.wait()
+    if "audio" in spec:  # hudba: úsek piesne, prelínanie na začiatku a konci
+        a = spec["audio"]
+        dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                             "-of", "csv=p=0", out]))
+        tmp = out + ".tmp.mp4"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", out, "-ss", str(a["start"] - FADE / 2),
+                        "-t", str(dur), "-i", a["file"], "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+                        "-af", f"afade=t=in:d={a.get('fade_in', 0.3)},afade=t=out:st={dur - a.get('fade_out', 2)}:"
+                               f"d={a.get('fade_out', 2)},loudnorm=I=-14:TP=-1.5",
+                        "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", tmp], check=True)
+        subprocess.run(["mv", tmp, out], check=True)
 
 if __name__ == "__main__":
     main(*sys.argv[1:3])

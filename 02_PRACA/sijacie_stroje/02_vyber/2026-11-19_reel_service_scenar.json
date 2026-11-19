@@ -3,7 +3,6 @@
   {
    "img": "01_originaly/fotky/2026-11-19_singer676g_01_otvoreny_zhora_spinavy.jpg",
    "text": "Når var symaskinen din sist på service?",
-   "dur": 4.9,
    "zoom": [
     1.0,
     1.15
@@ -11,12 +10,12 @@
    "focus": [
     0.6,
     0.45
-   ]
+   ],
+   "beats": 10
   },
   {
    "img": "01_originaly/fotky/2026-11-19_singer676g_02_chapac_prach.jpg",
    "text": "Lo og støv samler seg under stingplaten …",
-   "dur": 5.2,
    "zoom": [
     1.05,
     1.2
@@ -24,12 +23,12 @@
    "focus": [
     0.55,
     0.55
-   ]
+   ],
+   "beats": 11
   },
   {
    "img": "01_originaly/fotky/2026-11-19_singer676g_03_cistenie_pinzeta.jpg",
    "text": "… og da kan maskinen hoppe over sting eller gå tungt.",
-   "dur": 5.4,
    "zoom": [
     1.0,
     1.15
@@ -37,13 +36,13 @@
    "focus": [
     0.65,
     0.45
-   ]
+   ],
+   "beats": 11
   },
   {
    "img": "01_originaly/fotky/2026-11-19_singer676g_04_otvoreny_bok.jpg",
    "text": "Vi åpner og rengjør",
    "sub": "også der du ikke kommer til selv",
-   "dur": 5.4,
    "zoom": [
     1.0,
     1.12
@@ -51,13 +50,13 @@
    "focus": [
     0.55,
     0.4
-   ]
+   ],
+   "beats": 10
   },
   {
    "img": "01_originaly/fotky/2026-11-19_singer676g_06_predny_kryt_otvoreny.jpg",
    "text": "Smører",
    "sub": "de bevegelige delene",
-   "dur": 3.8,
    "zoom": [
     1.08,
     1.0
@@ -65,13 +64,13 @@
    "focus": [
     0.45,
     0.45
-   ]
+   ],
+   "beats": 8
   },
   {
    "img": "01_originaly/fotky/2026-11-19_janome_mc3500_06_otvoreny_zozadu.jpg",
    "text": "Justerer",
    "sub": "trådspenning og sting",
-   "dur": 3.8,
    "zoom": [
     1.0,
     1.12
@@ -79,12 +78,12 @@
    "focus": [
     0.55,
     0.45
-   ]
+   ],
+   "beats": 8
   },
   {
    "img": "01_originaly/fotky/2026-11-19_singer676g_09_testovacie_stehy.jpg",
    "text": "Og vi prøvesyr før du henter den",
-   "dur": 4.9,
    "zoom": [
     1.0,
     1.12
@@ -92,13 +91,13 @@
    "focus": [
     0.4,
     0.55
-   ]
+   ],
+   "beats": 10
   },
   {
    "img": "01_originaly/fotky/2026-11-19_singer676g_08_hotovy_testsitie.jpg",
    "text": "Gamle klassikere …",
    "sub": "Singer 676G – klar til å sy igjen",
-   "dur": 5.4,
    "zoom": [
     1.0,
     1.1
@@ -106,13 +105,13 @@
    "focus": [
     0.5,
     0.5
-   ]
+   ],
+   "beats": 10
   },
   {
    "img": "01_originaly/fotky/2026-11-19_janome_mc3500_07_hotovy.jpg",
    "text": "… og nyere maskiner",
    "sub": "Janome Memory Craft 3500",
-   "dur": 5.2,
    "zoom": [
     1.0,
     1.1
@@ -120,11 +119,11 @@
    "focus": [
     0.5,
     0.5
-   ]
+   ],
+   "beats": 8
   }
  ],
  "end": {
-  "dur": 5.0,
   "lines": [
    [
     "Lever inn symaskinen din",
@@ -166,6 +165,15 @@
     ],
     "m"
    ]
-  ]
+  ],
+  "beats": 8
+ },
+ "beat": 0.5001,
+ "audio": {
+  "file": "01_originaly/hudba/En_drape_olje.mp3",
+  "start": 26.11,
+  "fade_in": 0.3,
+  "fade_out": 2.5,
+  "pozn": "úsek 26,1–73,1 s: 32 dôb pred refrénom (refrén 42,1 s padne na 'Vi åpner og rengjør'), refrén do konca"
  }
 }
