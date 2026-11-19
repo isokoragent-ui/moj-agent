@@ -42,3 +42,14 @@ zvuk stroja, ktorý znovu šije. Nič korporátne.
 
 ## Otvorené
 - Logo/farby, názvy FB a IG profilov — doplniť.
+
+## Nástroj
+- `video_reel.py <scenar.json> <vystup.mp4>` — z fotiek spraví Reel 9:16
+  (pomalý zoom, nórsky text v hornej tretine, prelínanie, záverečná karta).
+  Scenáre v `02_vyber/*_scenar.json`. Video je bez hudby — tú pridá manželka
+  v Instagrame. Text je hore, lebo spodok a pravý okraj zakrýva rozhranie IG/FB.
+
+## Hotové
+| Dátum | Video | Text | Stav |
+|---|---|---|---|
+| 2026-11-19 | `03_hotove/2026-11-19_service_symaskin_9x16.mp4` | `04_texty/2026-11-19_service_symaskin.md` | 🟡 čaká na „áno“ |

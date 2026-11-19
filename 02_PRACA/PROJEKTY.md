@@ -4,7 +4,7 @@
 
 ## Opravy šijacích strojov — Systua på Vegårshei / Skredderstuen (firma manželky, od 19. 11. 2026)
 - **Čo:** Luk opravuje šijacie stroje popri Isokore (po večeroch); agent robí z fotiek a videí z opráv marketing — videá na siete a web
-- **Stav:** 🆕 priečinok založený, čaká na prvé fotky/videá
+- **Stav:** 🟡 prvé video „Service på symaskin“ (19. 11.) čaká na Lukovo „áno“; 17 fotiek (Singer 676G, Janome MC3500)
 - **Web:** `www.skredderstuen.no` · **Jazyk:** všetko po nórsky · **Siete:** FB + IG + web — zverejňuje manželka ručne, agent dodá video + text
 - **Nie je Isokor** — iná firma, iné účty → `02_PRACA/sijacie_stroje/README.md`
 

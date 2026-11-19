@@ -1,0 +1,17 @@
+{"scenes":[
+ {"img":"01_originaly/fotky/2026-11-19_singer676g_01_otvoreny_zhora_spinavy.jpg","text":"Når var symaskinen din sist på service?","dur":3.0,"zoom":[1.0,1.15],"focus":[0.6,0.45]},
+ {"img":"01_originaly/fotky/2026-11-19_singer676g_02_chapac_prach.jpg","text":"Lo og støv samler seg under stingplaten …","dur":2.8,"zoom":[1.05,1.2],"focus":[0.55,0.55]},
+ {"img":"01_originaly/fotky/2026-11-19_singer676g_03_cistenie_pinzeta.jpg","text":"… og da kan maskinen hoppe over sting eller gå tungt.","dur":3.0,"zoom":[1.0,1.15],"focus":[0.65,0.45]},
+ {"img":"01_originaly/fotky/2026-11-19_singer676g_04_otvoreny_bok.jpg","text":"Vi åpner og rengjør","sub":"også der du ikke kommer til selv","dur":2.6,"zoom":[1.0,1.12],"focus":[0.55,0.4]},
+ {"img":"01_originaly/fotky/2026-11-19_singer676g_06_predny_kryt_otvoreny.jpg","text":"Smører","sub":"de bevegelige delene","dur":2.4,"zoom":[1.08,1.0],"focus":[0.45,0.45]},
+ {"img":"01_originaly/fotky/2026-11-19_janome_mc3500_06_otvoreny_zozadu.jpg","text":"Justerer","sub":"trådspenning og sting","dur":2.4,"zoom":[1.0,1.12],"focus":[0.55,0.45]},
+ {"img":"01_originaly/fotky/2026-11-19_singer676g_09_testovacie_stehy.jpg","text":"Og vi prøvesyr før du henter den","dur":2.8,"zoom":[1.0,1.12],"focus":[0.4,0.55]},
+ {"img":"01_originaly/fotky/2026-11-19_singer676g_08_hotovy_testsitie.jpg","text":"Gamle klassikere …","sub":"Singer 676G – klar til å sy igjen","dur":2.6,"zoom":[1.0,1.1],"focus":[0.5,0.5]},
+ {"img":"01_originaly/fotky/2026-11-19_janome_mc3500_07_hotovy.jpg","text":"… og nyere maskiner","sub":"Janome Memory Craft 3500","dur":2.6,"zoom":[1.0,1.1],"focus":[0.5,0.5]}
+],
+"end":{"dur":4.0,"lines":[
+ ["Lever inn symaskinen din",68,[40,34,30],"b"],
+ ["Rengjøring · Smøring · Justering",46,[176,62,52],"m"],
+ ["Skredderstuen – Vegårshei",52,[40,34,30],"b"],
+ ["skredderstuen.no",48,[95,85,78],"m"]
+]}}
