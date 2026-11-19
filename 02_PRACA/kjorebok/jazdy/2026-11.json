@@ -6,9 +6,9 @@
       "til": "Arendal (JYSK, Sagvannsveien 52 · Megaflis, Sørsvannsveien 4 · Jula) og tilbake",
       "formal": "Innkjøp av bord og inventar til nytt verksted og butikk på Myra, Vegårshei",
       "besokt": "JYSK Arendal, Megaflis Arendal, Jula Arendal",
-      "km": null,
+      "km": 108,
       "tur_retur": true,
-      "merknad": ""
+      "merknad": "54 km hver vei"
     },
     {
       "dato": "2026-11-11",
@@ -19,6 +19,26 @@
       "km": null,
       "tur_retur": true,
       "merknad": ""
+    },
+    {
+      "dato": "2026-11-13",
+      "til": "Arendal (JYSK, Sagvannsveien 52) og tilbake",
+      "formal": "Innkjøp av dørmatte og gardiner til butikk på Myra, Vegårshei",
+      "besokt": "JYSK Arendal",
+      "fra": "Vegårshei",
+      "tur_retur": true,
+      "km": 108,
+      "merknad": "54 km hver vei"
+    },
+    {
+      "dato": "2026-11-16",
+      "til": "Arendal (Megaflis, Sørsvannsveien 4 D) og tilbake",
+      "formal": "Innkjøp av verktøy (skrutrekkersett) til verksted på Myra, Vegårshei",
+      "besokt": "Megaflis Agderparken",
+      "fra": "Vegårshei",
+      "tur_retur": true,
+      "km": 108,
+      "merknad": "54 km hver vei"
     }
   ]
 }

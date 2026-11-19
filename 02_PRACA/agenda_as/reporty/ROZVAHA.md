@@ -12,7 +12,7 @@
 | MVA vybraná (výstup) | 0 |
 | MVA zaplatená (vstup, odpočet) | 797,68 |
 | MVA na odvod | −797,68 |
-| Najazdené km | 0 |
+| Najazdené km | 324 |
 
 Priemer na mesiac (30 dní): výsledok **−6 837,26** · cieľ 40 000–50 000.
 
@@ -40,8 +40,10 @@ Priemer na mesiac (30 dní): výsledok **−6 837,26** · cieľ 40 000–50 000.
 
 ## Jazdy (z Kjørebok)
 
-- 9. 11. 2026: Arendal (JYSK, Sagvannsveien 52 · Megaflis, Sørsvannsveien 4 · Jula) og tilbake — **km chýba**
+- 9. 11. 2026: Arendal (JYSK, Sagvannsveien 52 · Megaflis, Sørsvannsveien 4 · Jula) og tilbake — 108 km
 - 11. 11. 2026: Stathelle (JYSK Bamble, Langrønningen 6) – Larvik (JYSK, Elveveien 135) og tilbake — **km chýba**
+- 13. 11. 2026: Arendal (JYSK, Sagvannsveien 52) og tilbake — 108 km
+- 16. 11. 2026: Arendal (Megaflis, Sørsvannsveien 4 D) og tilbake — 108 km
 
 ## Aktivity (marketing, predaj, stretnutia)
 
@@ -50,4 +52,4 @@ Priemer na mesiac (30 dní): výsledok **−6 837,26** · cieľ 40 000–50 000.
 ## Treba riešiť
 
 - **Zaplatené súkromne: 865** — firma to dlhuje Lukovi (utlegg), treba preplatiť z firemného účtu.
-- Jazdy bez km v Kjørebok: 2.
+- Jazdy bez km v Kjørebok: 1.
