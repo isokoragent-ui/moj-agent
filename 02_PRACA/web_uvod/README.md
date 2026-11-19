@@ -50,3 +50,10 @@ Agent ich do Shopify nenahral (priame nahratie z cloudu zablokovalo bezpečnostn
 2. Záloha súborov živej témy z 17. 11.: `02_PRACA/zalohy_temy/ZIVA_Dawn_2026-11-17__*`.
 
 Zverejnenie novej témy robí **Luk** (agent tému publikovať nesmie ani nemôže).
+
+## 19. 11. 2026 — Populært før jul: rovnaká výška fotiek
+- Príčina: `.isk-card__img` mal `aspect-ratio:1/1`, ale fotka na výšku (Junior 1696×2528) rámik natiahla (min-height:auto) → karta vyššia.
+- Oprava v `assets/isokor-forside.css` (koniec súboru, „fix 19.11“): rámik `position:relative;overflow:hidden;background:#fff`, obrázok `position:absolute;inset:0;height:100%!important;object-fit:contain;padding:1.2rem` → všetky karty štvorec, fľaša celá viditeľná.
+- Nahraté do **„Isokor – JUL 2026 + Junior + fotky (19. 11.)“** `…/156335505587` (kópia živej po Lukových úpravách z 15:18, NEZVEREJNENÁ) a do **„PO SVIATKOCH 2027“** `…/156287566003`. Kontrolný súčet oboch = lokálny súbor (ddc04f8e…).
+- Luk zverejní „…+ Junior + fotky“. Náhľad: https://isokor-skandinavia.no/?preview_theme_id=156335505587 (potom `?preview_theme_id=` na zrušenie náhľadu).
+- ✅ **Zverejnené 19. 11. (Luk)**, overené `themes(roles:MAIN)` = `…/156335505587`, CSS checksum ddc04f8e…

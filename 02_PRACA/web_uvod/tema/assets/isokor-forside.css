@@ -164,3 +164,6 @@
 /* fix 17.11: obrázky nikdy nenaťahovať */
 .isk img{max-width:100%}
 .isk-hero__trio img,.isk-jp__pair img{height:auto!important}
+/* fix 19.11: Populært – všetky fotky rovnako vysoké (štvorec), celá fľaša viditeľná aj pri fotke na výšku */
+.isk-card__img{position:relative;overflow:hidden;background:#fff}
+.isk-card__img img{position:absolute;inset:0;width:100%;height:100%!important;object-fit:contain;padding:1.2rem}

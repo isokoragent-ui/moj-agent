@@ -1,0 +1,322 @@
+{
+ "sections": {
+  "isk_hero": {
+   "type": "isokor-hero",
+   "settings": {
+    "jul": true,
+    "eyebrow": "God jul fra Isokor · Julesesongen 2026",
+    "heading": "Skinnende rent til jul.",
+    "text": "Bad og kjøkken klare til julebesøket – uten skuring. Julepakkene våre: to flasker, frakt inkludert.",
+    "btn1_label": "Se julepakkene",
+    "btn1_link": "#isk-julepakker",
+    "btn2_label": "Alle produkter",
+    "btn2_link": "/collections/produktkatalog",
+    "price_small": "Julepakke – 2 flasker",
+    "price_text": "349 kr inkl. frakt",
+    "products": [
+     "badepakken",
+     "kjokkenpakken"
+    ]
+   }
+  },
+  "isk_problemer": {
+   "type": "isokor-problemer",
+   "blocks": {
+    "p_1": {
+     "type": "problem",
+     "settings": {
+      "name": "Kalk",
+      "product": "isokor-kalkfjerner-for-bad",
+      "product_label": "Kalkfjerner for bad",
+      "color": "#dbe8f0"
+     }
+    },
+    "p_2": {
+     "type": "problem",
+     "settings": {
+      "name": "Fett",
+      "product": "isokor-fett-og-flekkfjerner",
+      "product_label": "Fett- og flekkfjerner",
+      "color": "#e3edd6"
+     }
+    },
+    "p_3": {
+     "type": "problem",
+     "settings": {
+      "name": "Rust",
+      "product": "lms",
+      "product_label": "LMS rustfjerner",
+      "color": "#f1dfd2"
+     }
+    },
+    "p_4": {
+     "type": "problem",
+     "settings": {
+      "name": "Mugg",
+      "product": "isokor-muggfjerner",
+      "product_label": "Muggfjerner",
+      "color": "#e2e0ee"
+     }
+    },
+    "p_5": {
+     "type": "problem",
+     "settings": {
+      "name": "Lukt i kjøleskap",
+      "product": "isokor-kjoleskapsrens",
+      "product_label": "Kjøleskapsrens",
+      "color": "#d9ecea"
+     }
+    },
+    "p_6": {
+     "type": "problem",
+     "settings": {
+      "name": "Grønske på fasade",
+      "product": "isokor-fasaderens",
+      "product_label": "Fasaderens",
+      "color": "#e6ead7"
+     }
+    }
+   },
+   "block_order": [
+    "p_1",
+    "p_2",
+    "p_3",
+    "p_4",
+    "p_5",
+    "p_6"
+   ],
+   "settings": {}
+  },
+  "isk_best": {
+   "type": "isokor-bestselgere",
+   "blocks": {
+    "b_1": {
+     "type": "product",
+     "settings": {
+      "product": "isokor-kalkfjerner-for-bad",
+      "tag": "Bad",
+      "desc": "Kalk og såperester på dusj, glass og armatur."
+     }
+    },
+    "b_2": {
+     "type": "product",
+     "settings": {
+      "product": "isokor-junior",
+      "tag": "Barn",
+      "desc": "Leker, matstoler og barnevogn – ingen skylling."
+     }
+    },
+    "b_3": {
+     "type": "product",
+     "settings": {
+      "product": "isokor-fett-og-flekkfjerner",
+      "tag": "Kjøkken",
+      "desc": "Fastbrent fett på komfyr, vifte og benk."
+     }
+    },
+    "b_4": {
+     "type": "product",
+     "settings": {
+      "product": "lms",
+      "tag": "Rust og kalk",
+      "desc": "Rust, kalk og vanskelige flekker i bad og sanitær."
+     }
+    }
+   },
+   "block_order": [
+    "b_1",
+    "b_2",
+    "b_3",
+    "b_4"
+   ],
+   "settings": {
+    "link": "shopify://collections/produktkatalog",
+    "heading": "Populært før jul"
+   }
+  },
+  "isk_for_etter": {
+   "type": "isokor-for-etter",
+   "settings": {
+    "product": "lms"
+   }
+  },
+  "isk_hvorfor": {
+   "type": "isokor-hvorfor",
+   "blocks": {
+    "w_1": {
+     "type": "grunn",
+     "settings": {
+      "title": "Miljøvennlige formler",
+      "text": "Laget for å rengjøre effektivt uten å belaste hjemmet og naturen unødig."
+     }
+    },
+    "w_2": {
+     "type": "grunn",
+     "settings": {
+      "title": "Ett middel per problem",
+      "text": "Ikke ett «alt-i-ett» som gjør alt halvveis – riktig middel for kalk, fett, rust og mugg."
+     }
+    },
+    "w_3": {
+     "type": "grunn",
+     "settings": {
+      "title": "Åpent om innholdet",
+      "text": "Sikkerhetsdatablad og sertifikater ligger på nettsiden."
+     }
+    },
+    "w_4": {
+     "type": "grunn",
+     "settings": {
+      "title": "Lokalt i Agder",
+      "text": "Liten norsk bedrift. Du får svar fra et menneske, ikke en robot."
+     }
+    }
+   },
+   "block_order": [
+    "w_1",
+    "w_2",
+    "w_3",
+    "w_4"
+   ],
+   "settings": {}
+  },
+  "isk_hytte": {
+   "type": "isokor-hytte",
+   "settings": {
+    "image": "shopify://shop_images/hytteservice-vinter-hytte.jpg",
+    "link": "shopify://pages/hytteservice"
+   }
+  },
+  "fera_reviews": {
+   "type": "apps",
+   "blocks": {
+    "fera_all_reviews_babAXp": {
+     "type": "shopify://apps/fera/blocks/all_reviews/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
+     "settings": {
+      "heading": "Kundeanmeldelser",
+      "layout": "list",
+      "star_color": "#dce96c",
+      "types_to_show": "both"
+     }
+    }
+   },
+   "block_order": [
+    "fera_all_reviews_babAXp"
+   ],
+   "settings": {
+    "include_margins": true
+   }
+  },
+  "newsletter": {
+   "type": "newsletter",
+   "blocks": {
+    "nh": {
+     "type": "heading",
+     "settings": {
+      "heading": "Julens beste rengjøringstips",
+      "heading_size": "h2"
+     }
+    },
+    "np": {
+     "type": "paragraph",
+     "settings": {
+      "text": "<p>Ett kort tips i uka og tilbud før alle andre. Meld deg av når du vil.</p>"
+     }
+    },
+    "nf": {
+     "type": "email_form",
+     "settings": {}
+    }
+   },
+   "block_order": [
+    "nh",
+    "np",
+    "nf"
+   ],
+   "settings": {
+    "color_scheme": "scheme-1",
+    "full_width": true,
+    "padding_top": 40,
+    "padding_bottom": 52
+   }
+  },
+  "blog": {
+   "type": "featured-blog",
+   "name": "t:sections.featured-blog.presets.name",
+   "settings": {
+    "blog": "nyheter",
+    "post_limit": 4,
+    "heading": "<strong>Tips og nyheter</strong>",
+    "heading_size": "h2",
+    "columns_desktop": 4,
+    "show_view_all": true,
+    "show_image": true,
+    "show_date": true,
+    "show_author": false,
+    "color_scheme": "scheme-1",
+    "padding_top": 36,
+    "padding_bottom": 36
+   }
+  },
+  "isk_julepakker": {
+   "type": "isokor-julepakker",
+   "settings": {},
+   "blocks": {
+    "jp_bad": {
+     "type": "pakke",
+     "settings": {
+      "product": "badepakken",
+      "title": "Badepakken",
+      "kicker": "Badet",
+      "ribbon": "Julepris",
+      "bg": "#e3ecf4",
+      "berry": "#a8202f",
+      "red": false,
+      "product_a": "isokor-kalkfjerner-for-bad",
+      "a_name": "Kalkfjerner for bad",
+      "a_text": "kalk og såperester på dusj, glassvegg og armatur",
+      "product_b": "isokor-baderomsrens",
+      "b_name": "Baderomsrens",
+      "b_text": "daglig rengjøring av servant, fliser og toalett",
+      "price_note": "for begge · frakt inkludert"
+     }
+    },
+    "jp_kjokken": {
+     "type": "pakke",
+     "settings": {
+      "product": "kjokkenpakken",
+      "title": "Kjøkkenpakken",
+      "kicker": "Kjøkkenet",
+      "ribbon": "Julepris",
+      "bg": "#f6e3df",
+      "berry": "#a8202f",
+      "red": true,
+      "product_a": "isokor-fett-og-flekkfjerner",
+      "a_name": "Fett- og flekkfjerner",
+      "a_text": "komfyr, vifte og benk etter ribbe og julebakst",
+      "product_b": "isokor-kjoleskapsrens",
+      "b_name": "Kjøleskapsrens",
+      "b_text": "rent og friskt kjøleskap før julematen",
+      "price_note": "for begge · frakt inkludert"
+     }
+    }
+   },
+   "block_order": [
+    "jp_bad",
+    "jp_kjokken"
+   ]
+  }
+ },
+ "order": [
+  "isk_hero",
+  "isk_julepakker",
+  "isk_problemer",
+  "isk_best",
+  "isk_for_etter",
+  "isk_hvorfor",
+  "isk_hytte",
+  "fera_reviews",
+  "newsletter",
+  "blog"
+ ]
+}

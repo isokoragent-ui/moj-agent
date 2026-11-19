@@ -24,9 +24,37 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Fett- og flekkfjerner | ✅ 17. 11. (etiketa + SDS = Baderomsrens; pred/po = fotky rúry z produktu, rôzna orientácia → Luk skontroluje posuvník) |
 | Baderomsrens | ✅ 17. 11. (etiketa + SDS; tvrdenia výrobcu antimikrobielt / 99,99 % podľa Luka → `08_ROZHODNUTIA/2026-11-17_baderomsrens_tvrdenia_vyrobcu.md`) |
 | Kalkfjerner for bad | ✅ 17. 11. (etiketa NO = preklad výrobcu + SDS LMD; H314 → otázka o rukaviciach) |
+| Kjøleskapsrens | ✅ 18. 11. (etiketa + SDS; bez pred/po, bez „Ikke bruk“ – etiketa nič neuvádza; súvisiace: Fett-, Kjøkkenpakken, Polish) |
+| Kjøkkenpakken | ✅ 18. 11. (balíček; 2 SDS ako odkazy v otázke, pole `sds` prázdne; doprava „med PostNord“ – Luk 18. 11.) |
+| Badepakken | ✅ 18. 11. (balíček; 2 SDS v otázke; rukavice pri Kalkfjerner podľa etikety H314; starý popis „trygg for hele familien / hudvennlig“ ostáva – Luk zvažuje cez výrobcu) |
+| Muggfjerner | ✅ 18. 11. (text výrobcu z popisu – NO etiketa nie je; tvrdenia mugg/sopp/sporer + 99,99 % podľa Luka; „bakterier“ nedané – nie je v zdroji) |
+| Peisglassrens | ✅ 18. 11. (len zo starého popisu – etiketa NO ani SDS nie sú; SDS doplniť, keď príde od výrobcu; `passer_med` prázdne) |
+| Multi Steinrens 5 l | ✅ 18. 11. (= Gravsteinrens, iný názov; „100 % naturlig“ podľa Luka; SDS zatiaľ nie – vlastný list s názvom Multi Steinrens vyrobiť; súvisiace LMS + SW EKO) |
+| Sofarens | ✅ 18. 11. (nová NO etiketa + SDS; súvisiace podľa Luka: EcoNeutral, Lotos Standard, Møbelrens) |
+| EcoNeutral | ✅ 18. 11. (NO etiketa + SDS; = Anti Urine Cleaner pod NO názvom; „dermatologisk testet og trygt for mennesker og dyr“ podľa Luka; súvisiace Sofarens, Lotos Standard, Møbelrens) |
+| Antidugg | ✅ 18. 11. (NO etiketa + SDS, H319 v „Ikke bruk“; zloženie nedané – rozpor etanol/izopropanol čaká na výrobcu) |
+| Bilrens | ✅ 18. 11. (NO etiketa + SDS; súvisiace Antidugg, Sofarens, EcoNeutral) |
+| Universalrens | ✅ 18. 11. (NO etiketa + SDS v1.1; koncentrát 1:5–1:100; „antimikrobiell“ z etikety; zdravotné tvrdenia zo starého popisu nedané) |
+| Clinic | ✅ 18. 11. (NO etiketa + SDS; „antimikrobielle egenskaper bekreftet ved testing“ + SUJCHBO 56/2015/LTL z etikety; vírusy/baktérie/99,99 % nedané) |
+| EcoDescal | ✅ 18. 11. (NO etiketa + SDS = LMS, H314 → rukavice/okuliare; „uten farlige stoffer“ nedané) |
+| Møbelrens | ✅ 18. 11. (= Furniture Cleaner; NO etiketa vyrobená v ten istý deň → „99,99 % proteinforurensning“ + „trygt for mennesker og husdyr“ z etikety; súvisiace Polish, Sofarens, EcoNeutral) |
+| Polish | ✅ 18. 11. (nano-impregnácia, nie čistič; SDS = SW: H225/H319/H336 v „Ikke bruk“; postup nanášania chýba – doplniť zo SK etikety Polisher) |
+| Lotos Standard | ✅ 18. 11. (impregnácia textílií; SDS = SW: H225/H319/H336 v „Ikke bruk“; „helsemessig trygg“ nedané; súvisiace Lotos Profi, Sofarens, EcoNeutral) |
+| Lotos Profi | ✅ 18. 11. (trvalá impregnácia; SDS neklasifikovaný; „livslang“ → „varig“; súvisiace Lotos Standard, Sofarens, EcoNeutral) |
+| EKO Profi | ✅ 18. 11. (impregnácia matnej dlažby; SDS neklasifikovaný; matná = EKO Profi, lesklá = Polish; súvisiace Kalkfjerner, Fett-, Polish) |
+| Baderomssett | ✅ 19. 11. (Baderomsrens + Kalkfjerner + Polish 100 ml + EKO Profi; **cena 1 499 → 1 199 kr** – Luk; 4 SDS v otázke; varovania H314 + H225) |
+| SW EKO | 🟡 19. 11. minimálna (popis má 2 vety; bez krokov – chýba postup, spotreba, schnutie → SK etiketa SW EKO od Luka; H319 v „Ikke bruk“; súvisiace Multi Steinrens, LMS) |
+| Glass Profi | ✅ 19. 11. („flytende vindusviskere“; SDS = Polisher: H225/H319/H336; vonku vs. Antidugg vnútri; súvisiace Antidugg, Bilrens, Fett-) |
+| Fasaderens | ✅ 19. 11. (SDS = Baderomsrens, nie je nebezpečný; postup + spotreba 1 l/8 m²; súvisiace SW EKO, Multi Steinrens, Fasaderens Plus) |
+| Fasaderens Plus | ✅ 19. 11. (žieravý H314/H290/H318, FARE v „Ikke bruk“; ⚠️ 5 l nad LQ 1 l → overiť PostNord/ADR) |
+| Gravsteinrens | ✅ 19. 11. (= Multi Steinrens; 100 % naturlig; bez høytrykk podľa stránky služby; súvisiace Multi Steinrens, Gravsteinvask – tjeneste) |
+| Isokor Junior (nový, 19. 11.) | ✅ ACTIVE, 149 kr, 20 ks, karta z NO etikety; na úvodnej stránke v „Populært før jul“ (živá téma „…+ Junior (19. 11.)“); alt texty doplnené; SDS chýba |
+| GreenGuard 100 ml | ⏸ neskôr (Luk 19. 11.: teraz nie je sezóna; „prírodné, nie je biocíd“; 284 ks na sklade; SDS chýba) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
+- **Doprava v texte (Luk 18. 11.): „med PostNord“** — zjednotené pri všetkých 6 hotových produktoch → `08_ROZHODNUTIA/2026-11-18_doprava_postnord.md`.
+- Otázky (`faq.a`) sa vypisujú ako HTML → dá sa vložiť odkaz `<a href>` (použité pri balíčkoch na 2 bezpečnostné listy).
 - **Fotky pri produktoch sú skutočné** (Luk 17. 11.), niektoré upravené (Gemini/agent) len na veľkosť → smú sa použiť aj do pred/po (metapole file_reference berie MediaImage ID z médií produktu).
 - Hlavička: `padding_top/bottom` musí byť násobok 4 (14 neprešlo).
 - Živú tému (JUL) agent nemení → všetko v pracovnej; po dokončení Luk zverejní pracovnú. Potom to isté do „po sviatkoch“ (homepage index.json sa líši, ostatné súbory rovnaké).
