@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Fasaderens (2026-11-19)
 Zdroj: súčasný popis v e-shope (SK Facade; postup, spotreba, skladovanie) + SDS NO 1.0 (= Baderomsrens, nie je nebezpečný). NO etiketa nie je. Produkt `gid://shopify/Product/8415569903795`, 699 kr, 6 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 19. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Ute – fasade og tak
 - **kort:** Skånsom fasaderens som fjerner støv, fett, eksos og trafikkforurensning fra fasader, tre- og plastkledning, tak, murer og belegningsstein. Skader verken malingen eller underlaget, og skåner plantene rundt huset.
