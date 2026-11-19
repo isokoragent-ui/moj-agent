@@ -22,7 +22,7 @@ iný tón (KÓD #25). Nemiešať s `02_PRACA/` Isokor kampaňami.*
    do `01_originaly/` a zapíše do `ZOZNAM.md`.
 2. Agent navrhne video/príspevok (scenár + strih + text) → `02_vyber/`.
 3. Luk schváli → hotové do `03_hotove/`.
-4. Zverejnenie **len po Lukovom „áno“** (siete, web).
+4. Manželka si hotové video + text stiahne a zverejní ručne.
 
 ## Tón
 Ľudský, odľahčený, „dielňa po večeroch“ — pred/po, detaily mechaniky,
@@ -34,9 +34,11 @@ zvuk stroja, ktorý znovu šije. Nič korporátne.
 - **Jazyk:** všetko po nórsky (videá, titulky, popisky, hashtagy)
 - **Siete:** Facebook + Instagram → hlavný formát video na výšku 9:16
   (Reels, ide na FB aj IG), k tomu prípadne štvorec 1:1 do feedu
-- **Metricool (19. 11. 2026):** Skredderstuen tam **nie je** pripojený (len
-  značka isokorskandinavia) → zatiaľ zverejňuje Luk/manželka ručne. Pripojiť
-  ako 2. značku = rozhodnutie Luka (nikdy nezverejňovať cez Isokor účty).
+- **Zverejňovanie (rozhodnuté 19. 11. 2026):** manželka nahrá hotové videá
+  **ručne** na FB, IG aj web. Agent nič nezverejňuje, Metricool sa pre
+  Skredderstuen nepoužíva (je tam len Isokor — nikdy cez Isokor účty).
+- **Agent odovzdáva:** hotové video v `03_hotove/` + nórsky popis s hashtagmi
+  v `04_texty/` (pripravené na skopírovanie).
 
 ## Otvorené
 - Logo/farby, názvy FB a IG profilov — doplniť.
