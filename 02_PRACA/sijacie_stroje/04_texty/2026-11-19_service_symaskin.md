@@ -1,6 +1,6 @@
 # Reel: Service på symaskin (19. 11. 2026)
 
-**Video:** `03_hotove/2026-11-19_service_symaskin_9x16.mp4` (9:16, ~44 s, bez hudby; v2 — dlhšie zábery na čítanie)
+**Video:** `03_hotove/2026-11-19_service_symaskin_9x16.mp4` (9:16, 47 s, v3 — s piesňou „En dråpe olje“, strihy na dobu)
 **Kam:** Instagram Reels + Facebook Reels, web
 **Stav:** 🟡 návrh — čaká na Lukovo „áno“, potom manželka zverejní ručne
 
@@ -24,7 +24,7 @@ Vi tar både gamle klassikere og nyere maskiner. Denne uken: en Singer 676G og e
 #symaskin #symaskinservice #symaskinreparasjon #sy #søm #skredder #vegårshei #agder #singer #janome #gjenbruk
 
 ## Tip pre zverejnenie
-- Hudbu pridať priamo v Instagrame (ich licencované skladby) — video je zámerne bez zvuku.
+- Hudba je už vo videe („En dråpe olje“, úsek 26–73 s) — v IG nepridávať ďalšiu.
 - Ako titulnú fotku (cover) vybrať prvý záber alebo hotový Singer.
 
 ## Preklad pre Luka (SK)
