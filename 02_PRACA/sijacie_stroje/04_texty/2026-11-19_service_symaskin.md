@@ -1,6 +1,6 @@
 # Reel: Service på symaskin (19. 11. 2026)
 
-**Video:** `03_hotove/2026-11-19_service_symaskin_9x16.mp4` (9:16, 24,6 s, bez hudby)
+**Video:** `03_hotove/2026-11-19_service_symaskin_9x16.mp4` (9:16, ~44 s, bez hudby; v2 — dlhšie zábery na čítanie)
 **Kam:** Instagram Reels + Facebook Reels, web
 **Stav:** 🟡 návrh — čaká na Lukovo „áno“, potom manželka zverejní ručne
 
