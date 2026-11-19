@@ -137,4 +137,8 @@ Terminál a zajtrajšok nesmú byť dva oddelené svety.
 - V `AKTUALNE.md` uprav len body svojej témy; ostatné nechaj, ako sú.
 - Na začiatku okna sa spýtaj (ak to nie je jasné z prvej správy), akej téme
   je okno venované.
+### Zlučovanie do main (Luk 2026-11-19)
+- Zmeny v repozitári agent **zlúči do `main` rovno, bez pýtania** (PR z
+  pracovnej vetvy → hneď merge). Navonok (zverejnenie, pošta, e-shop,
+  platby) stále až po „áno“. → `08_ROZHODNUTIA/2026-11-19_zlucovanie_do_main.md`
 ## MOJE_DOPLNKY_KONIEC
