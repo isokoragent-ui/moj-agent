@@ -1,6 +1,6 @@
 # Opravy šijacích strojov — marketing (fotky, videá)
 
-*Samostatný projekt. Firma manželky, Luk spolupracuje — stroje opravuje
+*Samostatný projekt. Firma manželky (Systua på Vegårshei / Skredderstuen), Luk spolupracuje — stroje opravuje
 popri Isokore, po večeroch. **Nie je to Isokor** — iná firma, iné účty,
 iný tón (KÓD #25). Nemiešať s `02_PRACA/` Isokor kampaňami.*
 
@@ -28,5 +28,10 @@ iný tón (KÓD #25). Nemiešať s `02_PRACA/` Isokor kampaňami.*
 Ľudský, odľahčený, „dielňa po večeroch“ — pred/po, detaily mechaniky,
 zvuk stroja, ktorý znovu šije. Nič korporátne.
 
+## Firma
+- **Firma:** Systua på Vegårshei
+- **Prevádzka a web (doména):** Skredderstuen — presnú adresu webu doplniť
+- **Jazyk:** všetko po nórsky (videá, titulky, popisky, hashtagy)
+
 ## Otvorené
-- Názov firmy, kde sa zverejňuje (siete, web), jazyk (NO?), logo/farby — doplniť.
+- Presná adresa webu, ktoré sociálne siete, logo/farby — doplniť.

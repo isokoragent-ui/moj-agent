@@ -2,9 +2,10 @@
 
 *Jeden blok = jeden projekt. Stav aktualizuj pri každom `/odovzdaj`.*
 
-## Opravy šijacích strojov — firma manželky (od 19. 11. 2026)
+## Opravy šijacích strojov — Systua på Vegårshei / Skredderstuen (firma manželky, od 19. 11. 2026)
 - **Čo:** Luk opravuje šijacie stroje popri Isokore (po večeroch); agent robí z fotiek a videí z opráv marketing — videá na siete a web
 - **Stav:** 🆕 priečinok založený, čaká na prvé fotky/videá
+- **Jazyk:** všetko po nórsky
 - **Nie je Isokor** — iná firma, iné účty → `02_PRACA/sijacie_stroje/README.md`
 
 ## Isokor — distribúcia a služby (a.s.)
