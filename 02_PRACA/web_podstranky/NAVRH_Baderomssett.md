@@ -1,7 +1,7 @@
 # Návrh metapolí — Isokor Baderomssett – rens og nanoimpregnering (2026-11-19)
 Zdroj: súčasný popis v e-shope (Gemini) + schválené karty Baderomsrens, Kalkfjerner, Polish, EKO Profi + SDS (Kalkfjerner H314, Polish H225/H319/H336). Produkt `gid://shopify/Product/8604392784051`, 1 499 kr, 6 ks.
 Obsah sady (Luk 19. 11.): Baderomsrens 500 ml, Kalkfjerner 500 ml, **Polish 100 ml**, EKO Profi.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 19. 11. 2026** (Luk „áno“), overené čítaním cez API. **Cena zmenená na 1 199 kr** (Luk) → `08_ROZHODNUTIA/2026-11-19_baderomssett_cena_1199.md`.
 
 ⚠️ Cena: jednotlivo 149 + 149 + 349 + 699 = **1 346 kr** < sada 1 499 kr → sada je o 153 kr drahšia. Do karty žiadne „du sparer“. Rozhodne Luk.
 

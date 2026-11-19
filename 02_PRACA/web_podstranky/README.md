@@ -42,6 +42,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Lotos Standard | ✅ 18. 11. (impregnácia textílií; SDS = SW: H225/H319/H336 v „Ikke bruk“; „helsemessig trygg“ nedané; súvisiace Lotos Profi, Sofarens, EcoNeutral) |
 | Lotos Profi | ✅ 18. 11. (trvalá impregnácia; SDS neklasifikovaný; „livslang“ → „varig“; súvisiace Lotos Standard, Sofarens, EcoNeutral) |
 | EKO Profi | ✅ 18. 11. (impregnácia matnej dlažby; SDS neklasifikovaný; matná = EKO Profi, lesklá = Polish; súvisiace Kalkfjerner, Fett-, Polish) |
+| Baderomssett | ✅ 19. 11. (Baderomsrens + Kalkfjerner + Polish 100 ml + EKO Profi; **cena 1 499 → 1 199 kr** – Luk; 4 SDS v otázke; varovania H314 + H225) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
