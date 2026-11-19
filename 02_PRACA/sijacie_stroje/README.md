@@ -53,3 +53,8 @@ zvuk stroja, ktorý znovu šije. Nič korporátne.
 | Dátum | Video | Text | Stav |
 |---|---|---|---|
 | 2026-11-19 | `03_hotove/2026-11-19_service_symaskin_9x16.mp4` | `04_texty/2026-11-19_service_symaskin.md` | 🟡 čaká na „áno“ |
+
+## Hudba
+- `01_originaly/hudba/En_drape_olje.mp3` — **vlastná pieseň Skredderstuen
+  (vygenerovaná, smieme ju voľne použiť — Luk 19. 11. 2026)**. 3:01, 120 BPM;
+  refrén 42,1–73,1 s a 104–154 s; outro od 155 s.
