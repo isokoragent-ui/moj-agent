@@ -30,8 +30,8 @@ zvuk stroja, ktorý znovu šije. Nič korporátne.
 
 ## Firma
 - **Firma:** Systua på Vegårshei
-- **Prevádzka a web (doména):** Skredderstuen — presnú adresu webu doplniť
+- **Prevádzka:** Skredderstuen — web `www.skredderstuen.no`
 - **Jazyk:** všetko po nórsky (videá, titulky, popisky, hashtagy)
 
 ## Otvorené
-- Presná adresa webu, ktoré sociálne siete, logo/farby — doplniť.
+- Ktoré sociálne siete, logo/farby — doplniť.
