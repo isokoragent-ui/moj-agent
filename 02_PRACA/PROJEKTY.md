@@ -11,14 +11,14 @@
 - **Cieľ:** dostať produkty a služby viac medzi ľudí → pravidelné objednávky
 - **Stav:** 🚀 rozbieha sa — beží asi rok, stále počiatočná fáza
 - **Čo chýba:** dobré postupy a marketing — bez nich sa na trhu neetablujú
-- **E-shop – nový dizajn (17. 11. 2026):** ✅ zverejnená téma „Isokor – JUL 2026 + nové podstránky“; produkty 4/37 vyplnené, ďalej produkt po produkte → `02_PRACA/web_podstranky/README.md`. Po Novom roku téma „PO SVIATKOCH 2027“.
+- **E-shop – nový dizajn (17. 11. 2026):** ✅ živá téma „Isokor – JUL 2026 + Junior + fotky (19. 11.)“; **produktové karty 28/37 + nový Junior** (18.–19. 11.), zvyšok produkt po produkte (SW, FVE, FVP, Wash-In, služby; GreenGuard na jar) → `02_PRACA/web_podstranky/README.md`
 - **E-shop (Shopify, Basic):** 8 260 NOK čistých za 12 mes., 28 objednávok, konverzia ~0,6–1 % → `02_PRACA/ESHOP_ANALYZA.md`; web audit 2026-10-18 → `02_PRACA/WEB_AUDIT_2026-10-18.md` (názvy, SEO, adresy opravené; zvyšok rozpracovaný)
 - **Sociálne siete (2026-10-18):** FB, IG, TikTok, YouTube, Google Business pripojené cez Metricool → agent pripravuje príspevky (draft → Lukovo „áno“); príspevky: Peisglassrens 18. 10., Badepakken 26. 10. (FB, IG, Threads, Google), Nye priser 27. 10.; TikTok — videá dáva Luk ručne → `07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md`
 - **Snapchat (od 2026-11-12):** profil ISOKOR Skandinavia založený, obsah zatiaľ žiadny, mimo Metricoolu (ručne) → `02_PRACA/SNAPCHAT.md`
 - **E-mail marketing (od 2026-10-28):** Shopify Messaging, 1× týždenne v ne 9:30 zákazníkom s nákupom a súhlasom (23); doména overená; č. 1 Badepakken naplánovaný na 1. 11. → `07_SCHEMY/NEDELNY_EMAIL.md`
 - **Ceny a doprava (od 2026-10-26):** bežná fľaša 149 kr + doprava 99 kr / 49 kr od 400 kr / zdarma od 700 kr; zľavy za kusy vypnuté; ceny podľa Lukovej tabuľky → `08_ROZHODNUTIA/2026-10-26_ceny_a_doprava_spat_na_povodny_model.md`
 - **Bezpečnostné karty (SDS) NO:** ✅ uzavreté 27. 10. — 31 kariet, 27 na webe; chýbajú GreenGuard, Multi Steinrens, Peisglassrens (čaká na SK PDF od výrobcu) → `02_PRACA/sikkerhetsdatablad/README.md`
-- **Etikety NO (od 2026-10-28):** 🟡 12 návrhov hotových (Fett- og flekkfjerner, EcoNeutral, Antidugg 250/500 + 100 ml, Junior, Baderomsrens, Bilrens, Clinic, Universalrens, Kalkfjerner, EcoDescal, Kjøleskapsrens) + Sofarens (17. 11.) — PDF na tlač + PNG + A4; pravidlo „len preklad, všetko od výrobcu ostáva“; ďalšie etikety neskôr → `02_PRACA/etikety/README.md`
+- **Etikety NO (od 2026-10-28):** 🟡 12 návrhov hotových (Fett- og flekkfjerner, EcoNeutral, Antidugg 250/500 + 100 ml, Junior, Baderomsrens, Bilrens, Clinic, Universalrens, Kalkfjerner, EcoDescal, Kjøleskapsrens) + Sofarens (17. 11.) + Møbelrens (18. 11.) — PDF na tlač + PNG + A4; pravidlo „len preklad, všetko od výrobcu ostáva“; ďalšie etikety neskôr → `02_PRACA/etikety/README.md`
 - **Balíky:** 🎄 Badepakken (LM Descaling + Bath Cleaner) 349 kr vrátane dopravy — zverejnený 26. 10., kampaň „Julen starter med et rent bad“ beží → `02_PRACA/KAMPAN_BADEPAKKEN_JUL_2026.md`; 🍳 Kjøkkenpakken (Kjøleskapsrens + Fett- og flekkfjerner) 349 kr vrátane dopravy — živý od 30. 10., príspevky pi 6. 11., e-mail ne 8. 11. → `02_PRACA/KAMPAN_KJOKKENPAKKEN_JUL_2026.md`; 🏪 **v obchode oba balíky 249 kr bez dopravy** (od 16. 11., plagáty A4 → `08_ROZHODNUTIA/2026-11-16_balicky_obchod_249.md`)
 - **Isokor LMS (hrdza) — prezentácia produktu (od 2026-10-30):** 🟢 karusel 8 slajdov naplánovaný na ut 3. 11. 10:30 (FB+IG, Threads), videá na výšku a na šírku (Luk zverejní sám); kampaň 800 kr/14 dní schválená, spustenie zatiaľ nie; kov/pozinkované čaká na výrobcu → `02_PRACA/KAMPAN_RUST_AGDER_2026-11.md`, `02_PRACA/grafika/lms/`
 - **Kniha jázd (Kjørebok, od 11. 11. 2026):** 🟢 firemné jazdy súkromným autom — Luk diktuje, agent zapisuje, mesačne PDF pre Anne Sofie → `02_PRACA/kjorebok/README.md`
@@ -34,7 +34,7 @@
   **budúci rok nový produkt** — čistenie + impregnácia v jednom
   (nano-keramická vrstva)
 - **Súvisí:** firma = a.s. (prácu môže robiť aj živnosť pre a.s.)
-- ⏸ **neskôr:** Isokor Junior (Baby Cleaner) — na sklade, do e-shopu zatiaľ nie (Luk 27. 10.); nórska bezpečnostná karta je hotová (`02_PRACA/sikkerhetsdatablad/Isokor_Junior_Sikkerhetsdatablad_NO.pdf`), pri pridaní produktu ju priložiť.
+- ✅ **Isokor Junior (Baby Cleaner)** — v e-shope od 19. 11. 2026 (149 kr, 20 ks, na úvodnej stránke v „Populært før jul“) → `02_PRACA/web_podstranky/NAVRH_Junior.md`
 - ⏸ **neskôr – štruktúra firiem (Luk 28. 10., zatiaľ len plán):** Isokor Skandinavia AS = marketing pre NO/DK/SE; nové firmy **Isokor Norge** (vlastná „nórska produkcia“ – dovoz koncentrátov a superkoncentrátov, riedenie v Nórsku), neskôr **Isokor Danmark** a **Isokor Sverige** (to isté). Súvisí: bezpečnostné karty DA/SV — technicky jednoduché (preklad z nórskych modulov + národné čísla/predpisy), **dodávateľa v 1.3 doplniť, až budú firmy**. ⚠️ Kto riedi, je pre karty **výrobca/formulátor**: zriedený výrobok môže mať inú klasifikáciu → nové zloženie, vlastná karta, nálepka a vlastné UFI/PCN na každú firmu.
 
 ### Služby s najväčším potenciálom (finančne veľmi zaujímavé)
