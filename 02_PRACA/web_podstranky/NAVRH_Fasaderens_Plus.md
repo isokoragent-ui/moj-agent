@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Fasaderens Plus (2026-11-19)
 Zdroj: súčasný popis v e-shope (SK Facade Plus; riedenie, postup, spotreba) + SDS NO 1.0 (vlastný obsah, v2.0: NaOH + KOH + metakremičitan, **Fare, H290, H314 (Skin Corr. 1A), H318**, pH 13–14, UN 3266 trieda 8, LQ 1 l). NO etiketa nie je. Produkt `gid://shopify/Product/8415500730547`, 1000 ml 199 kr / 5000 ml 899 kr, 10 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 19. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 ⚠️ Doprava: SDS 14.6 — obmedzené množstvo (LQ) **max 1 l na vnútorný obal**. Kanister 5 l nespĺňa LQ → podľa ADR nebezpečný tovar triedy 8; PostNord/Bring bežne neprepravia bez dohody o nebezpečnom tovare. Overiť s PostNord pred ďalším predajom 5 l. (Luk rozhodne.)
 

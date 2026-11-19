@@ -46,6 +46,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | SW EKO | 🟡 19. 11. minimálna (popis má 2 vety; bez krokov – chýba postup, spotreba, schnutie → SK etiketa SW EKO od Luka; H319 v „Ikke bruk“; súvisiace Multi Steinrens, LMS) |
 | Glass Profi | ✅ 19. 11. („flytende vindusviskere“; SDS = Polisher: H225/H319/H336; vonku vs. Antidugg vnútri; súvisiace Antidugg, Bilrens, Fett-) |
 | Fasaderens | ✅ 19. 11. (SDS = Baderomsrens, nie je nebezpečný; postup + spotreba 1 l/8 m²; súvisiace SW EKO, Multi Steinrens, Fasaderens Plus) |
+| Fasaderens Plus | ✅ 19. 11. (žieravý H314/H290/H318, FARE v „Ikke bruk“; ⚠️ 5 l nad LQ 1 l → overiť PostNord/ADR) |
 | GreenGuard 100 ml | ⏸ neskôr (Luk 19. 11.: teraz nie je sezóna; „prírodné, nie je biocíd“; 284 ks na sklade; SDS chýba) |
 | ostatné | ⏳ produkt po produkte |
 
