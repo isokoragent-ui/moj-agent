@@ -12,3 +12,8 @@ Zdroj textov: NO etiketa `02_PRACA/etikety/zdroj/junior_500ml.py` + SDS NO 1.0 (
 2. Produkt ACTIVE + Online Store (+ ostatné kanály ako Baderomsrens).
 3. Luk zverejní tému „…+ Junior“. Bez toho sa na úvodnej stránke nič nemení.
 4. SDS Junior nahrať do Súborov (Luk) → metapole `sds`.
+
+## Fotky (19. 11.)
+- `02_PRACA/grafika/junior/junior_detska_izba_NO.jpg` — Luk: obrázok s NO etiketou JUNIOR (detská izba, macko). Luk ho pridá k produktu ručne; agent ho smie ďalej používať (siete, grafika).
+  ⚠️ Generovaný obrázok: odznak má skomolený text („ANTIMIKRUBIELLE CEERIMLEKER“), vpravo dole staré logo Isokor. Fľaša, ktorú zákazník dostane, má nálepku „BABY CLEANER“.
+- `02_PRACA/grafika/junior/baby_cleaner_skutocna_flasa.jpg` — skutočná fľaša s NO nálepkou BABY CLEANER (Lukova fotka).
