@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Gravsteinrens (2026-11-19)
 Zdroj: = Multi Steinrens (Luk 18. 11., `08_ROZHODNUTIA/2026-11-18_multi_steinrens_gravsteinrens.md`) + súčasný popis (1 veta: gravsteiner, minnesmerker, gravplasser, steinmonumenter og statuer ute) + stránka služby „Rengjøring av gravsteiner“ (granitt, marmor, sandstein, kunststein; mose, lav, alger, sot, rust; bez vysokého tlaku) + SDS NO 1.0 (= Baderomsrens, nie je nebezpečný). Produkt `gid://shopify/Product/8272480239795`, 500 ml 149 kr / 5000 ml 699 kr, 14 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 19. 11. 2026** (Luk „daj to na e-shop“), overené čítaním cez API.
 
 - **kategori:** Ute – gravstein og minnesmerker
 - **kort:** 100 % naturlig rens for gravsteiner, minnesmerker, steinmonumenter og statuer ute. Fjerner mose, alger, lav, sot og smuss skånsomt – uten å skade steinen, inskripsjonen eller plantene rundt.
