@@ -1,3 +1,124 @@
 {
-  "zaznamy": []
+  "zaznamy": [
+    {
+      "datum": "2026-11-04",
+      "typ": "vydavok",
+      "suma": 1313.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "Vegårshei Eiendom 1 AS",
+      "popis": "Faktúra 184820055 — nájom Hovlandsveien 1, november 2026: nájom 7 500 − zľava 7 500 = 0, spoločné náklady 1 050 + MVA 262,50 (+0,50 zaokr.). Splatná 14. 11., zaplatená z firemného účtu. Pozn.: faktúra pred registráciou MVA (6. 11.) — odpočet 262,50 posúdi účtovníčka.",
+      "platba": "firemny_ucet",
+      "doklad": true,
+      "zdroj": "faktura:VegarsheiEiendom-184820055"
+    },
+    {
+      "datum": "2026-11-04",
+      "typ": "vydavok",
+      "suma": 75.0,
+      "mva": 25,
+      "kategoria": "doprava",
+      "kto": "PostNord",
+      "popis": "Zásielka 5 kg (Service Point) do Høvåg, objednávka 1003719886, kvittering 4189389 — 60 + MVA 15. Pred registráciou MVA (6. 11.) — odpočet posúdi účtovníčka.",
+      "platba": "sukromne",
+      "doklad": true,
+      "zdroj": "faktura:PostNord-4189389"
+    },
+    {
+      "datum": "2026-11-06",
+      "typ": "vydavok",
+      "suma": 530.93,
+      "mva": 0,
+      "kategoria": "software",
+      "kto": "Shopify",
+      "popis": "Faktúra 617644565 — Shopify predplatné 389 + aplikácie 141,93. Zahraničná služba bez nórskej MVA (snudd avregning rieši účtovníčka). Zaplatené kartou živnosti Visa *6155 → AS dlhuje živnosti.",
+      "platba": "zaplatila_druha_firma",
+      "doklad": true,
+      "zdroj": "faktura:Shopify-617644565"
+    },
+    {
+      "datum": "2026-11-09",
+      "typ": "vydavok",
+      "suma": 391.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "JYSK Arendal",
+      "popis": "1× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "blocek:JYSK-0052-2514"
+    },
+    {
+      "datum": "2026-11-09",
+      "typ": "vydavok",
+      "suma": 238.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "Megaflis Agderparken",
+      "popis": "Dekoračná fólia D-C-FIX Concrete 67,5×200 + D-C-FIX DIY kit + Bahco čepele 18 mm — obchod/dielňa Myra",
+      "platba": "sukromne",
+      "doklad": true,
+      "zdroj": "blocek:Megaflis-0000P11002000230563"
+    },
+    {
+      "datum": "2026-11-11",
+      "typ": "vydavok",
+      "suma": 782.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "JYSK Stathelle (Bamble)",
+      "popis": "2× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "blocek:JYSK-0107-1301"
+    },
+    {
+      "datum": "2026-11-11",
+      "typ": "vydavok",
+      "suma": 1173.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "JYSK Larvik",
+      "popis": "3× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "blocek:JYSK-0057-5442"
+    },
+    {
+      "datum": "2026-11-13",
+      "typ": "vydavok",
+      "suma": 777.4,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "JYSK Arendal",
+      "popis": "Rohožka FRYTLE 60×120 + 4× záclona ORUST 140×300 — obchod Myra",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "blocek:JYSK-0052-7201"
+    },
+    {
+      "datum": "2026-11-16",
+      "typ": "vydavok",
+      "suma": 627.0,
+      "mva": 25,
+      "kategoria": "naradie",
+      "kto": "Megaflis Agderparken",
+      "popis": "2× sada skrutkovačov Bahco (BE9881 + SPOR/PH/PZ 6 dielov)",
+      "platba": "sukromne",
+      "doklad": true,
+      "zdroj": "blocek:Megaflis-0000P11002000231957"
+    },
+    {
+      "datum": "2026-11-17",
+      "typ": "vydavok",
+      "suma": 183.2,
+      "mva": 0,
+      "kategoria": "software",
+      "kto": "Anthropic Ireland",
+      "popis": "Claude Pro 17. 11.–17. 12. 2026 (receipt #2694-1680-5031) — AI asistent firmy. Zahraničná služba bez nórskej MVA (snudd avregning rieši účtovníčka).",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "faktura:Anthropic-2694-1680-5031"
+    }
+  ]
 }

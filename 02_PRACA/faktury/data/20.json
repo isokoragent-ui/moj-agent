@@ -1,0 +1,14 @@
+{
+  "cislo": 20,
+  "kunde": {"navn": "Vegårshei kommune", "adresse": ["Molandsveien 11", "4985 Vegårshei"]},
+  "fakturadato": "2026-11-19",
+  "forfallsdato": "2026-11-29",
+  "linjer": [
+    {"beskrivelse": "Produksjon av utebenker – arbeid (timer)", "pris": 800, "antall": 14, "mva": 25},
+    {"beskrivelse": "Festemidler", "pris": 280, "antall": 1, "mva": 25},
+    {"beskrivelse": "Transport – henting av tømmer og levering av benker (gratis)", "pris": 0, "antall": 1, "mva": 25}
+  ],
+  "referanse": "Elvelangs",
+  "stav": "vystavená",
+  "poznamka": "Luk 19. 11. 2026: výroba vonkajších lavíc pre Vegårshei kommune, projekt Elvelangs. Splatnosť 10 dní. Doprava zadarmo."
+}

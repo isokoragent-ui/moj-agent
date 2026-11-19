@@ -1,0 +1,16 @@
+{
+  "zaznamy": [
+    {
+      "datum": "2026-04-27",
+      "typ": "vydavok",
+      "suma": 535.0,
+      "mva": 0,
+      "kategoria": "ine",
+      "kto": "RVO – Fondet for regionale verneombud i bygge- og anleggsbransjen (Amili Collection)",
+      "popis": "Avgift 924994 — zákonný poplatok RVO bygg og anlegg, minimumsavgift 2026 (0 zamestnancov) 500 + fakturagebyr 35, MVA 0 %. Splatné 18. 5. 2026, na faktúre ručne „BET.“ (zaplatené). Obdobie pred MVA.",
+      "platba": "firemny_ucet",
+      "doklad": true,
+      "zdroj": "faktura:RVO-924994"
+    }
+  ]
+}

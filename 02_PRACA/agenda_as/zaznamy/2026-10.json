@@ -1,0 +1,16 @@
+{
+  "zaznamy": [
+    {
+      "datum": "2026-10-17",
+      "typ": "vydavok",
+      "suma": 183.2,
+      "mva": 0,
+      "kategoria": "software",
+      "kto": "Anthropic Ireland",
+      "popis": "Claude Pro 17. 10.–17. 11. 2026 (receipt #2245-7476) — AI asistent firmy. Zahraničná služba bez nórskej MVA (snudd avregning rieši účtovníčka).",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "faktura:Anthropic-2245-7476"
+    }
+  ]
+}
