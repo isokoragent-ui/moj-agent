@@ -38,7 +38,7 @@ ZÁZNAM (v zaznamy/RRRR-MM.json → {"zaznamy": [...]}):
      "kto": "Jula Arendal", "popis": "Vysávač na dielňu",
      "platba": "firemna_karta",                          # sukromne = firma dlhuje Lukovi
      "doklad": true,                                     # Luk má papierový bloček/faktúru (odovzdá účtovníčke); false = chýba
-     "zdroj": "diktovane",                               # alebo "shopify:#1031" (proti duplicitám)
+     "zdroj": "diktovane",                               # alebo "shopify:#1031", "blocek:JYSK-0052-2514" (obchod-číslo bločku; MUSÍ byť unikátny) (proti duplicitám)
      "poznamka": ""}
 """
 import importlib.util, json, sys
