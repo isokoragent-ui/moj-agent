@@ -44,6 +44,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | EKO Profi | ✅ 18. 11. (impregnácia matnej dlažby; SDS neklasifikovaný; matná = EKO Profi, lesklá = Polish; súvisiace Kalkfjerner, Fett-, Polish) |
 | Baderomssett | ✅ 19. 11. (Baderomsrens + Kalkfjerner + Polish 100 ml + EKO Profi; **cena 1 499 → 1 199 kr** – Luk; 4 SDS v otázke; varovania H314 + H225) |
 | SW EKO | 🟡 19. 11. minimálna (popis má 2 vety; bez krokov – chýba postup, spotreba, schnutie → SK etiketa SW EKO od Luka; H319 v „Ikke bruk“; súvisiace Multi Steinrens, LMS) |
+| Glass Profi | ✅ 19. 11. („flytende vindusviskere“; SDS = Polisher: H225/H319/H336; vonku vs. Antidugg vnútri; súvisiace Antidugg, Bilrens, Fett-) |
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce

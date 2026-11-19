@@ -1,6 +1,6 @@
 # Návrh metapolí — Isokor Glass Profi glassimpregnering (2026-11-19)
 Zdroj: súčasný popis v e-shope (podrobný, s postupom a spotrebou) + SDS NO 1.0 (= Polisher/SW: **H225, H319, H336**, UN 1219). NO etiketa nie je. Produkt `gid://shopify/Product/8415591006387`, 749 kr, 9 ks.
-Stav: **čaká na Lukovo „áno“**.
+Stav: ✅ **zapísané 19. 11. 2026** (Luk „áno“), overené čítaním cez API.
 
 - **kategori:** Impregnering – glass og visir
 - **kort:** Flytende vindusviskere: kraftig vannavstøtende nanoimpregnering for bilruter og motorsykkelvisir. Regnvann legger seg ikke som en film, men triller av – og sikten blir klarere i regnvær. Også for annet glass og glasert keramikk.
