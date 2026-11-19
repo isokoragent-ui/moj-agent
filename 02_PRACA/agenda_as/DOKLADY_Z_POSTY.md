@@ -10,7 +10,7 @@ Postup: Luk vytlačí → povie „vytlačené“ → agent zapíše do `zaznamy
 | # | Dátum | Od koho | Čo | Suma s MVA | MVA | Platba | Tlačiť | Evidované |
 |---|---|---|---|---|---|---|---|---|
 | 1 | 17. 10. 2026 | Anthropic Ireland | Claude Pro 17. 10.–17. 11. (#2245-7476) | 183,20 | zahr. služba | karta \*2133 (AS) | ☐ | ✅ |
-| 2 | 4. 11. 2026 | PostNord | Zásielka 5 kg do Høvåg, objednávka 1003719886 (60 + 15 MVA) | 75,00 | 25 % (pred reg.) | Vipps | ☐ | ☐ |
+| 2 | 4. 11. 2026 | PostNord | Zásielka 5 kg do Høvåg, objednávka 1003719886 (60 + 15 MVA) | 75,00 | 25 % (pred reg.) | Vipps súkromný → AS dlhuje Lukovi | ☐ | ✅ |
 | 3 | 4. 11. 2026 | Vegårshei Eiendom | Faktúra 184820055 — nájom november | 1 313,00 | 262,50 | firemný účet | ✅ | ✅ |
 | 4 | 6. 11. 2026 | Shopify | Faktúra 617644565 — predplatné 389 + aplikácie 141,93 | 530,93 | zahr. služba | Visa \*6155 živnosť → AS dlhuje živnosti | ☐ | ✅ |
 | 5 | 17. 11. 2026 | Anthropic Ireland | Claude Pro 17. 11.–17. 12. (#2694-1680-5031) | 183,20 | zahr. služba | karta \*2133 (AS) | ☐ | ✅ |

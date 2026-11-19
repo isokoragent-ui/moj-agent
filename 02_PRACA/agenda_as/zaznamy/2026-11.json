@@ -13,6 +13,18 @@
       "zdroj": "faktura:VegarsheiEiendom-184820055"
     },
     {
+      "datum": "2026-11-04",
+      "typ": "vydavok",
+      "suma": 75.0,
+      "mva": 25,
+      "kategoria": "doprava",
+      "kto": "PostNord",
+      "popis": "Zásielka 5 kg (Service Point) do Høvåg, objednávka 1003719886, kvittering 4189389 — 60 + MVA 15. Pred registráciou MVA (6. 11.) — odpočet posúdi účtovníčka.",
+      "platba": "sukromne",
+      "doklad": true,
+      "zdroj": "faktura:PostNord-4189389"
+    },
+    {
       "datum": "2026-11-06",
       "typ": "vydavok",
       "suma": 530.93,
