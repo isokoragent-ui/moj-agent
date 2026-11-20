@@ -44,3 +44,8 @@ Príjmy a výdavky bez MVA, **výsledok**, MVA na odvod, km · porovnanie s pred
 - E-shop: pred zápisom skontrolovať `zdroj` (číslo objednávky) — `agenda.py kontrola` hlási duplicity.
 - Výsledok v raporte je **pred daňou a pred Lukovou mzdou** — nie je to „čisté do vrecka“.
 - Agent nemá a nežiada prístup do banky — čísla sú len z diktovania, Shopify a faktúr.
+
+## Oblasť a hodiny pri príjmoch (od 2026-11-20, Luk „áno“)
+- K príjmu v agende **aj k faktúre** (`02_PRACA/faktury/data/<č>.json`, najvyššia úroveň) sa dajú pridať 2 nepovinné polia: `oblast` (zoznam v `nastavenie.json` → `oblasti`) a `hodiny` (spolu práca + cesta, všetci ľudia).
+- Raport týždeň/mesiac/prehľad potom ukáže **„Príjmy podľa oblasti“ so zárobkom na hodinu** a porovná ho s hranicou `hranica_kr_h` (1 119 kr/h bez MVA, `10_STUDIUM_MAJETOK/08_HODINOVKA.md`).
+- Platí rovnako pre živnosť (`--firma zivnost`). Agent sa pri zápise príjmu zo služby spýta na oblasť a hodiny, ak ich Luk nepovie.
