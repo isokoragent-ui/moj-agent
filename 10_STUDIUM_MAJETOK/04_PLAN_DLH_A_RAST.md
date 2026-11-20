@@ -4,6 +4,8 @@
 dôležité — postupnosť straty majetku z Gn 47 sa tu otáča naopak:
 **sloboda → likvidita → výrobné aktíva → majetok.***
 
+*Luk 2026-11-20: dlhy si spláca sám, nie je ich veľa — tento plán je len všeobecný návod. Hlavný súbor je `06_SYSTEM_FINANCII.md`.*
+
 *Platí len pre súkromné financie Luka. Firmy (AS, živnosť) riešime v ich
 priečinkoch — ale pozor: živnosť (ENK) ručí súkromným majetkom.*
 
