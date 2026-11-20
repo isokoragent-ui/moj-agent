@@ -13,6 +13,7 @@ Informačné a vzdelávacie: fakty, štúdie, plán. Žiadne náboženské výkl
 | `04_PLAN_DLH_A_RAST.md` | konkrétny postup: zmapovať → zastaviť → splatiť → rezerva → budovať |
 | `05_MOJE_CISLA.md` | šablóna na Lukove čísla (domácnosť, príjem, majetok) — vyplníme spolu |
 | `06_SYSTEM_FINANCII.md` | **hlavný súbor:** systém účtov, rozdeľovací kľúč, stupne slobody, deti a štúdium, rytmus správy |
+| `07_MOTOR_PRIJMOV.md` | ako z viacerých služieb spraviť systém: ročný kalendár motorov, 1 motor + 2 sezónne + pasívne, zisk na hodinu |
 
 ## Pravidlá tohto priečinka
 - **Fakt = zdroj.** Biblia: kniha kapitola:verš. História: dátum + kto. Dnešok:
