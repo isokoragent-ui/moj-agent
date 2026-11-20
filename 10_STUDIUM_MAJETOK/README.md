@@ -11,7 +11,8 @@ Informačné a vzdelávacie: fakty, štúdie, plán. Žiadne náboženské výkl
 | `02_INE_HISTORICKE_ZDROJE.md` | Mezopotámia, Egypt, Grécko, Rím, Talmud, islam, stredovek, novovek — s dátumami |
 | `03_POROVNANIE_S_DNESKOM.md` | čo platilo vtedy vs. čo platí dnes v Nórsku (úroky, zábezpeky, oddlženie) — s číslami |
 | `04_PLAN_DLH_A_RAST.md` | konkrétny postup: zmapovať → zastaviť → splatiť → rezerva → budovať |
-| `05_MOJE_CISLA.md` | šablóna na Lukove skutočné dlhy a výpočet poradia splácania (vyplníme spolu) |
+| `05_MOJE_CISLA.md` | šablóna na Lukove čísla (domácnosť, príjem, majetok) — vyplníme spolu |
+| `06_SYSTEM_FINANCII.md` | **hlavný súbor:** systém účtov, rozdeľovací kľúč, stupne slobody, deti a štúdium, rytmus správy |
 
 ## Pravidlá tohto priečinka
 - **Fakt = zdroj.** Biblia: kniha kapitola:verš. História: dátum + kto. Dnešok:

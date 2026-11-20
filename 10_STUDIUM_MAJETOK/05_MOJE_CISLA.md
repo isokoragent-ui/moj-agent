@@ -5,7 +5,7 @@
 
 **Stav k:** ____
 
-## Dlhy
+## Dlhy (Luk spláca sám — nepovinné)
 | Komu | Druh (karta / forbrukslån / auto / hypotéka / daň / inkaso / súkromne) | Zostatok NOK | Efektívny úrok % | Mesačná splátka NOK | Zábezpeka | Ručiteľ / ručím ja |
 |---|---|---|---|---|---|---|
 | | | | | | | |
