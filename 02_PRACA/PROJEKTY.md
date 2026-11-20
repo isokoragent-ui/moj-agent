@@ -55,7 +55,7 @@
 
 ## B2B — sameie a borettslag v Agderi (Isokor AS, od 2026-11-20)
 - **Čo:** ročné zmluvy na údržbu (fasády, hrdza, sklo, dlažba) pre sameie/borettslag a obce
-- **Stav:** 🟡 nástroj na zoznam hotový (`_nastroje/sameie_agder.py`), dáta čakajú na prístup k data.brreg.no → `02_PRACA/b2b_sameie/README.md`
+- **Stav:** ⏸ neskôr (Luk 20. 11.) · 🟡 nástroj na zoznam hotový (`_nastroje/sameie_agder.py`), dáta čakajú na prístup k data.brreg.no → `02_PRACA/b2b_sameie/README.md`
 - **Prečo:** `10_STUDIUM_MAJETOK/09_PREDAJNY_SYSTEM.md` — ponuka u výboru v jan–feb 2027
 
 ## Údržba nehnuteľností a opravy (živnosť)
