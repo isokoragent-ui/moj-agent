@@ -88,5 +88,18 @@
   "doklady": "Papierové bločky a faktúry živnosti Luk odovzdáva Anne Sofie každé 2 mesiace (MVA termín) — ZVLÁŠŤ od dokladov AS. Fotky sa neukladajú — agent z nich len prečíta údaje.",
   "mva_termin": "2-mesačný (Luk 11. 11. 2026) — jan–feb, mar–apr, máj–jún, júl–aug, sep–okt, nov–dec",
   "rytmus_raportov": "týždenný (nedeľa) + mesačný (1. deň mesiaca); každé 2 mesiace termínový raport pre Anne Sofie",
-  "uctovnicka_poznamka": "Luk 11. 11. 2026: v generovaných dokumentoch a raportoch NIKDY meno účtovníčky — len „účtovníčka“."
+  "uctovnicka_poznamka": "Luk 11. 11. 2026: v generovaných dokumentoch a raportoch NIKDY meno účtovníčky — len „účtovníčka“.",
+  "oblasti": {
+    "kamene": "Náhrobné kamene",
+    "hytte": "Hytteservice",
+    "sklo": "Sklo, zábradlia, impregnácia",
+    "b2b_udrzba": "Zmluvy B2B (sameie, borettslag, kommune, firmy)",
+    "drevo": "Rezanie dreva (pásová píla)",
+    "udrzba": "Maľovanie, údržba, tesárstvo, murárstvo",
+    "vyroba": "Výroba na zákazku (lavice, drevo)",
+    "produkty": "Produkty Isokor (predaj)",
+    "ine": "Iné"
+  },
+  "hranica_kr_h": 1119,
+  "hranica_poznamka": "Spodná hranica zárobku na hodinu bez MVA pri 50 000 kr čisté/mes. a 60 % fakturovaných h — 10_STUDIUM_MAJETOK/08_HODINOVKA.md (odhad, Luk 2026-11-20)."
 }

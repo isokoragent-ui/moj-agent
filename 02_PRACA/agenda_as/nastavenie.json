@@ -91,5 +91,18 @@
   ],
   "agenda_od": "2026-11-06",
   "doklady": "Papierové bločky a faktúry Luk odovzdáva Anne Sofie každé 2 mesiace (MVA termín). Fotky sa neukladajú — agent z nich len prečíta údaje.",
-  "poznamka_druha_firma": "zaplatené kartou živnosti (Visa *6155) — AS to dlhuje živnosti, treba vyrovnať z účtu AS."
+  "poznamka_druha_firma": "zaplatené kartou živnosti (Visa *6155) — AS to dlhuje živnosti, treba vyrovnať z účtu AS.",
+  "oblasti": {
+    "kamene": "Náhrobné kamene",
+    "hytte": "Hytteservice",
+    "sklo": "Sklo, zábradlia, impregnácia",
+    "b2b_udrzba": "Zmluvy B2B (sameie, borettslag, kommune, firmy)",
+    "drevo": "Rezanie dreva (pásová píla)",
+    "udrzba": "Maľovanie, údržba, tesárstvo, murárstvo",
+    "vyroba": "Výroba na zákazku (lavice, drevo)",
+    "produkty": "Produkty Isokor (predaj)",
+    "ine": "Iné"
+  },
+  "hranica_kr_h": 1119,
+  "hranica_poznamka": "Spodná hranica zárobku na hodinu bez MVA pri 50 000 kr čisté/mes. a 60 % fakturovaných h — 10_STUDIUM_MAJETOK/08_HODINOVKA.md (odhad, Luk 2026-11-20)."
 }
