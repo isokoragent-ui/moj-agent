@@ -63,4 +63,4 @@ Tu sa neplatí za hodinu, ale za kus → meradlo = **tržba bez MVA na hodinu d�
 
 ## Čo upresniť (z toho sa výpočet spresní)
 - Skutočné ročné náklady živnosti (auto, poistky, účtovníčka…) — po decembri ich budeme mať z agendy.
-- Robíš kamene cez **živnosť alebo AS**? (V AS sa počíta inak: mzda + zamestnávateľské odvody 14,1 % + daň firmy 22 %.)
+- ✅ Luk 20. 11.: kamene idú cez **AS**, mzdu nevypláca, kombinuje so živnosťou a odpismi → táto sadzba platí pre živnosť fakturujúcu AS; AS musí predávať drahšie (pozri `09_PREDAJNY_SYSTEM.md` bod 6).
