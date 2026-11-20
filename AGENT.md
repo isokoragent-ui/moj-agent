@@ -37,6 +37,7 @@ Detaily → `01_JA/PROFIL.md`, plán → `02_PRACA/PLAN.md`.
 | `07_SCHEMY/` | návody na veci, ktoré sa opakujú (aj s pascami) |
 | `08_ROZHODNUTIA/` | čo sme rozhodli, kedy a prečo |
 | `09_ODOVZDANIE/` | kde sme skončili — pre ďalší rozhovor alebo druhý počítač |
+| `10_STUDIUM_MAJETOK/` | vzdelávanie: ako sa majetok nadobúda a množí (Biblia, história, dnešok) + súkromný plán dlh → rast. Oddelené od firiem. |
 | `_inbox/` | sem hádžem súbory na spracovanie |
 | `_nastroje/` | skripty: preveruj, over, záloha |
 
