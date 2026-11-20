@@ -15,6 +15,7 @@ Informačné a vzdelávacie: fakty, štúdie, plán. Žiadne náboženské výkl
 | `06_SYSTEM_FINANCII.md` | **hlavný súbor:** systém účtov, rozdeľovací kľúč, stupne slobody, deti a štúdium, rytmus správy |
 | `08_HODINOVKA.md` + `kalkulacka_hodinovka.py` | minimálna hodinová sadzba s MVA, daňou, nákladmi a nefakturovaným časom; prepočet náhrobných kameňov |
 | `09_PREDAJNY_SYSTEM.md` | rovnica príjmu, mapa 8 oblastí predaja, mechanizmy (sameie/borettslag, kommune, partneri, pomocník), poradie na 2027, týždenný rytmus, AS a výber peňazí |
+| `10_SLEDOVANIE.md` | cena za zákazku vs. hodinovka (Sandnes), šijacie stroje, čo a v akom rytme sledujem, trhy a zákony (rozpočet 2027) |
 | `07_MOTOR_PRIJMOV.md` | ako z viacerých služieb spraviť systém: ročný kalendár motorov, 1 motor + 2 sezónne + pasívne, zisk na hodinu |
 
 ## Pravidlá tohto priečinka

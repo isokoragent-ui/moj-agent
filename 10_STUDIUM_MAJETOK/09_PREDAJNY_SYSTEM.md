@@ -73,7 +73,7 @@ patrí do jej okna / priečinka v `02_PRACA/` — tu sa v nich nič nemení.
 ## 4. Poradie — nie všetko naraz (KÓD #10)
 | Obdobie | Aktívne predávame | Bežia samy |
 |---|---|---|
-| **Jan–feb 2027** | ① B2B zmluvy (sameie, kommune) · ② rezanie dreva | Hytte kontroly, e-shop |
+| **Jan–feb 2027** | ① B2B zmluvy (sameie, kommune) | Hytte kontroly, e-shop, rezanie dreva okrajovo (jarné objednávky už sú) |
 | **Mar 2027** | ③ jarné turné kamene + Gravsteinsavtale | B2B uzavreté zmluvy |
 | Apr–máj | realizácia: kamene, Hytte otvorenie, B2B jar | |
 | Jún–aug | realizácia B2B + údržba pre stálych | |
@@ -99,5 +99,5 @@ patrí do jej okna / priečinka v `02_PRACA/` — tu sa v nich nič nemení.
   Anne Sofie — pripravím jej podklady.
 
 ## 7. Ďalší krok
-Odsúhlasiť 3 oblasti na jan–mar 2027 (návrh: B2B zmluvy, rezanie dreva, jarné
-turné kameňov). Potom v okne Isokor: zoznam sameie/borettslag + obcí a prvá ponuka.
+Luk 20. 11.: rezanie dreva len okrajovo (jarné objednávky už má). Zostáva: B2B zmluvy
++ jarné turné kameňov. Potom v okne Isokor: zoznam sameie/borettslag + obcí a prvá ponuka.
