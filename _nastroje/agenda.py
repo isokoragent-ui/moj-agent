@@ -39,7 +39,14 @@ ZÁZNAM (v zaznamy/RRRR-MM.json → {"zaznamy": [...]}):
      "platba": "firemna_karta",                          # sukromne = firma dlhuje Lukovi; zaplatila_druha_firma = AS↔živnosť
      "doklad": true,                                     # Luk má papierový bloček/faktúru (odovzdá účtovníčke); false = chýba
      "zdroj": "diktovane",                               # alebo "shopify:#1031", "blocek:JYSK-0052-2514" (obchod-číslo bločku; MUSÍ byť unikátny) (proti duplicitám)
-     "poznamka": ""}
+     "poznamka": "",
+     "oblast": "kamene",                                 # NEPOVINNÉ, len príjem: oblasť z nastavenie.json → "oblasti"
+     "hodiny": 9.5}                                      # NEPOVINNÉ, len príjem: hodiny spolu (práca + cesta, všetci ľudia)
+
+OBLAST A HODINY (Luk 2026-11-20): to isté `oblast` + `hodiny` sa dá dať aj do faktúry
+    (02_PRACA/faktury/data/<č>.json, na najvyššiu úroveň). Mesačný raport potom ukáže
+    „Príjmy podľa oblasti“ so zárobkom na hodinu (bez MVA ÷ hodiny) a porovná ho so
+    spodnou hranicou z 10_STUDIUM_MAJETOK/08_HODINOVKA.md (nastavenie.json → "hranica_kr_h").
 """
 import importlib.util, json, sys
 from collections import defaultdict
@@ -156,6 +163,7 @@ def spocitaj(od, do, n):
     zz, ff, jj = zaznamy(od, do), faktury(od, do), jazdy(od, do)
     r = {"prijmy": defaultdict(lambda: [0.0, 0.0, 0.0, 0]),   # kanál → brutto, netto, mva, počet
          "vydavky": defaultdict(lambda: [0.0, 0.0, 0.0, 0]),
+         "oblasti": defaultdict(lambda: [0.0, 0.0, 0]),          # oblasť → netto, hodiny, počet
          "aktivity": [], "bez_dokladu": [], "sukromne": [], "druha_firma": [], "zz": zz, "ff": ff, "jj": jj}
     for z in zz:
         if z["typ"] == "aktivita":
@@ -164,6 +172,8 @@ def spocitaj(od, do, n):
         kluc = z.get("kanal", "ine") if z["typ"] == "prijem" else z.get("kategoria", "ine")
         tab = r["prijmy"] if z["typ"] == "prijem" else r["vydavky"]
         v = tab[kluc]; v[0] += float(z["suma"]); v[1] += net; v[2] += mva; v[3] += 1
+        if z["typ"] == "prijem":
+            pridaj_oblast(r, z, net)
         if z["typ"] == "vydavok":
             if not z.get("doklad"):
                 r["bez_dokladu"].append(z)
@@ -174,6 +184,7 @@ def spocitaj(od, do, n):
     for f in ff:
         v = r["prijmy"]["faktura"]
         v[0] += f["spolu"]; v[1] += f["netto"]; v[2] += f["mva_spolu"]; v[3] += 1
+        pridaj_oblast(r, f, f["netto"])
     r["prijem_netto"] = sum(v[1] for v in r["prijmy"].values())
     r["prijem_brutto"] = sum(v[0] for v in r["prijmy"].values())
     r["vydavok_netto"] = sum(v[1] for v in r["vydavky"].values())
@@ -183,6 +194,29 @@ def spocitaj(od, do, n):
     r["km"] = sum(j.get("km") or 0 for j in jj)
     r["km_chyba"] = sum(1 for j in jj if not j.get("km"))
     return r
+
+
+def pridaj_oblast(r, z, netto):
+    """Príjem (záznam alebo faktúra) → súčet podľa oblasti; bez oblasti = 'nezaradene'."""
+    o = r["oblasti"][z.get("oblast") or "nezaradene"]
+    o[0] += netto; o[1] += float(z.get("hodiny") or 0); o[2] += 1
+
+
+def oblasti_tabulka(r, n):
+    if not r["oblasti"]:
+        return []
+    nazvy, hr = n.get("oblasti", {}), n.get("hranica_kr_h")
+    L = ["## Príjmy podľa oblasti (zárobok na hodinu)", "",
+         "| Oblasť | Počet | Bez MVA | Hodiny | Kr/h | " + (f"vs. hranica {kr(hr)} |" if hr else "|"),
+         "|---|---:|---:|---:|---:|" + ("---|" if hr else "")]
+    for k, (net, hod, poc) in sorted(r["oblasti"].items(), key=lambda x: -x[1][0]):
+        kh = net / hod if hod else None
+        stav = ("" if kh is None else ("✅" if kh >= hr else "⚠️ pod")) if hr else ""
+        L.append(f"| {nazvy.get(k, 'bez oblasti' if k == 'nezaradene' else k)} | {poc} | {kr(net)} | "
+                 f"{(str(round(hod, 1)).replace('.', ',') if hod else '—')} | {kr(round(kh)) if kh else '—'} |" + (f" {stav} |" if hr else ""))
+    L += ["", "*Kr/h = príjem bez MVA ÷ hodiny (práca + cesta, všetci ľudia), pred materiálom a nákladmi. "
+          "Bez hodín sa nedá zrátať — doplň `hodiny` k príjmu alebo faktúre.*", ""]
+    return L
 
 
 # ───────────────────────── raport
@@ -225,6 +259,9 @@ def raport(druh, od, do, pred_od, pred_do, nazov, subor):
     else:
         L.append("*Žiadne príjmy.*")
     L.append("")
+
+    if druh in ("mesiac", "tyzden", "prehlad"):
+        L += oblasti_tabulka(r, n)
 
     L += ["## Výdavky podľa kategórie", ""]
     if r["vydavky"]:
@@ -369,6 +406,13 @@ def kontrola(mesiac):
                 chyby.append(f"{m}: faktúry sem nepatria — počítajú sa z 02_PRACA/faktury")
             elif z.get("kanal") not in n["kanaly_prijmov"]:
                 chyby.append(f"{m}: neznámy kanál '{z.get('kanal')}'")
+        if t == "prijem" and z.get("oblast") and z["oblast"] not in n.get("oblasti", {}):
+            chyby.append(f"{m}: neznáma oblasť '{z['oblast']}' (pozri nastavenie.json → oblasti)")
+        if t == "prijem" and "hodiny" in z:
+            try:
+                assert float(z["hodiny"]) > 0
+            except Exception:
+                chyby.append(f"{m}: hodiny musia byť kladné číslo")
         if t == "vydavok" and z.get("platba") and z["platba"] not in n["sposoby_platby"]:
             chyby.append(f"{m}: neznámy spôsob platby '{z['platba']}'")
         if t == "vydavok" and "doklad" not in z:

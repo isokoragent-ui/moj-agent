@@ -68,7 +68,9 @@ sa zapne, až keď si ho zaslúži.
 V agende sa pri príjme dnes zapisuje suma a kanál, ale **nie oblasť a hodiny**.
 Návrh: pri každom príjme zo služby 2 nepovinné polia — `oblast` (kamene / hytte /
 sklo / B2B / drevo / údržba / produkty) a `hodiny` (vrátane cesty, koľko ľudí).
-Zmena nástroja patrí do okna Účtovníctvo — až po Lukovom „áno“.
+✅ **Hotové 2026-11-20 (Luk „áno“):** polia `oblast` + `hodiny` v `_nastroje/agenda.py` (príjmy aj faktúry), raport „Príjmy podľa oblasti“ s kr/h vs. hranica 1 119. Návod v `02_PRACA/agenda_as/README.md`.
+
+**Prvé pozorovanie:** Faktura 20 (Vegårshei kommune, lavice) = 14 h × 800 kr + doprava zadarmo → **~820 kr/h bez MVA, pod hranicou 1 119**. Pri obci ako opakovanom klientovi zvážiť cenu za kus/projekt namiesto hodinovky a dopravu účtovať.
 
 ## 6. Trhy a zákony — sledovací zoznam
 | Oblasť | Kde | Stav k 2026-11-20 |
