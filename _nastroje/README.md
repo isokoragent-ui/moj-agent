@@ -14,3 +14,5 @@ v hlavičke „PREČO" — aby nikto neskôr nezrušil to, čo nás chráni.
 - `faktura.py <číslo>|nova|zoznam [--firma zivnost]` — faktúra v PDF podľa Lukovej šablóny. Bez prepínača = Isokor - Skandinavia AS (`02_PRACA/faktury/`, Faktura 19); `--firma zivnost` = Lukas Hric Liten Husservice (`02_PRACA/zivnost/faktury/`, Faktura 530).
 - `agenda.py den|tyzden|mesiac|termin|prehlad|kontrola|rozpocet [--firma zivnost]` — agenda firmy: denné záznamy (výdavky, príjmy, aktivity) + raporty + návrh rozpočtu; berie aj faktúry (a pri AS kjørebok). Bez prepínača = AS (`02_PRACA/agenda_as/`), `--firma zivnost` = `02_PRACA/zivnost/agenda/`.
 - `firmy.py` — jediné miesto, kde je určené, ktorá firma má ktoré priečinky (KÓD #25: nemiešať).
+
+- `sameie_agder.py` — zoznam sameie + borettslag v Agderi z Enhetsregisteret (API alebo stiahnutý súbor) → `02_PRACA/b2b_sameie/` (2026-11-20)
