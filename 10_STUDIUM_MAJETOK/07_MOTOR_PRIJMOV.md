@@ -71,7 +71,7 @@ na zmluvách alebo čakajú. To rieši „nedá sa ťahať všetko naraz“.
 **Koľko musí hodina zarobiť** (výpočet, predpoklady ⚠️):
 - cieľ 50 000 kr čistého mesačne · daň a odvody ~33 % → ~75 000 kr pred daňou
 - fakturovateľných hodín reálne ~100/mes. (zvyšok je predaj, cesty, admin)
-- → **potrebuješ ~750 kr zisku na fakturovanú hodinu**
+- → ~~750 kr/h~~ **opravené: ~1 120 kr/h bez MVA (1 400 s MVA)** pri 60 % fakturovaných hodín — presný výpočet s nákladmi a daňou v `08_HODINOVKA.md`
 
 **Pravidlo:** čo dlhodobo neprinesie aspoň túto sumu na hodinu **a** sa neopakuje,
 ide do „len pre stálych zákazníkov“, nie do aktívneho predaja.
