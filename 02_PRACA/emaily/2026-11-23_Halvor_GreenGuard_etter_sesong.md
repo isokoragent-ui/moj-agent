@@ -2,7 +2,7 @@
 
 **Odoslané:** 23. 11. 2026, Luk ručne zo svojho e-mailu. **Stav:** čakáme na odpoveď (termín stretnutia).
 **Kontext:** začiatkom leta 2026 sme v jeho predajni nechali 12 ks GreenGuard na skúšku (bez faktúry), dohodnuté s pani, ktorá tam vtedy pracovala. Luk bol v piatok 20. 11. osobne, Halvor mal stretnutie.
-**Ďalej:** zistiť predaj → zvyšok zobrať späť → ponuka na 2027 (GreenGuard + Cleaner, Kjøleskapsrens, Eco Neutral, Sofarens, feriepakker pre camping/bobil). ⚠️ Pred novou dodávkou GreenGuard overiť, či nejde o biocíd (Miljødirektoratet).
+**Ďalej:** zistiť predaj → zvyšok zobrať späť → ponuka na 2027 (GreenGuard + Cleaner, Kjøleskapsrens, Eco Neutral, Sofarens, feriepakker pre camping/bobil). GreenGuard = plne prírodný, nie biocíd (Luk 23. 11.).
 
 ---
 

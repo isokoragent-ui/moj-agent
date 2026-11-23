@@ -10,3 +10,6 @@ Luk: „To je teraz v podstate v poriadku.“ Názvy, adresy, SEO titulky a SEO 
 
 ## Riziko, ktoré ostáva
 O tom, či je výrobok biocíd, rozhodujú aj tvrdenia v texte. Luk o tom vie. Ďalej to nepripomínať, kým nepríde nová informácia.
+
+## Doplnok 2026-11-23
+Luk znova (3. raz: 18. 10., 19. 11., 23. 11.): **GreenGuard je plne prírodný produkt, nie biocíd.** Agent to v okne E-mail Halvor pripomenul napriek tomuto rozhodnutiu — chyba. Pri GreenGuard už biocíd nespomínať (ani v ponukách, ani v odovzdaní).
