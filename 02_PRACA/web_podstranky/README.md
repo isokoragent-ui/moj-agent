@@ -49,6 +49,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | Fasaderens Plus | ✅ 19. 11. (žieravý H314/H290/H318, FARE v „Ikke bruk“; ⚠️ 5 l nad LQ 1 l → overiť PostNord/ADR) |
 | Gravsteinrens | ✅ 19. 11. (= Multi Steinrens; 100 % naturlig; bez høytrykk podľa stránky služby; súvisiace Multi Steinrens, Gravsteinvask – tjeneste) |
 | Isokor Junior (nový, 19. 11.) | ✅ ACTIVE, 149 kr, 20 ks, karta z NO etikety; na úvodnej stránke v „Populært før jul“ (živá téma „…+ Junior (19. 11.)“); alt texty doplnené; SDS chýba |
+| **Isokor Glosy (nový, 23. 11.)** | 📝 NO texty pripravené → `NAVRH_Glosy.md`; v e-shope ešte nie je; chýba cena, sklad, SDS, NO etiketa |
 | GreenGuard 100 ml | ⏸ neskôr (Luk 19. 11.: teraz nie je sezóna; „prírodné, nie je biocíd“; 284 ks na sklade; SDS chýba) |
 | ostatné | ⏳ produkt po produkte |
 
