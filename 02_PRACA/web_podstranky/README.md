@@ -53,7 +53,7 @@ Prázdne pole = tá časť sa neukáže. Bez `passer_med` sa ukážu produkty z 
 | ostatné | ⏳ produkt po produkte |
 
 ## Pasce
-- **Úvodná stránka 23. 11. (Luk):** v „Populært før jul“ LMS → **Baderomsrens** (tag „Bad“, „Daglig rengjøring av servant, fliser og toalett.“). Kópia živej témy „Isokor – JUL 2026 + Baderomsrens (23. 11.)“ `…/156418015411` (NEZVEREJNENÁ) → Luk zverejní. Obsahuje už aj Lukovu opravu „barnestoler“. LMS ostáva v „Hva vil du bli kvitt?“ (Rust) a v sekcii pred/po.
+- **Úvodná stránka 23. 11. (Luk):** v „Populært før jul“ LMS → **Baderomsrens** (tag „Bad“, „Daglig rengjøring av servant, fliser og toalett.“). Kópia živej témy „Isokor – JUL 2026 + Baderomsrens (23. 11.)“ `…/156418015411` — **ŽIVÁ od 23. 11.** (Luk zverejnil, overené). Obsahuje už aj Lukovu opravu „barnestoler“. LMS ostáva v „Hva vil du bli kvitt?“ (Rust) a v sekcii pred/po.
 - **„matstoler“ → „barnestoler“ (Luk 23. 11.):** „matstol“ sa v nórčine veľmi nepoužíva. Na karte Junior opravené všade (popis, kort, passer_til, SEO) a overené. Úvodná stránka v živej téme má ešte „Leker, matstoler og barnevogn“ — živú tému agent cez API meniť nemôže.
 - **Doprava v texte (Luk 18. 11.): „med PostNord“** — zjednotené pri všetkých 6 hotových produktoch → `08_ROZHODNUTIA/2026-11-18_doprava_postnord.md`.
 - Otázky (`faq.a`) sa vypisujú ako HTML → dá sa vložiť odkaz `<a href>` (použité pri balíčkoch na 2 bezpečnostné listy).
