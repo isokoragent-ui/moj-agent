@@ -76,6 +76,7 @@ Isokor Glosy – naturlig rens og nanoimpregnering i ett for glass, keramikk og 
 - Glosy + Polisher = prirodzená dvojica pre B2B sklo (Smajli, Fermin/Profilco).
 
 ## Chýba, kým pôjde do e-shopu
+- **Luk 23. 11.:** novinka, výrobca ju dal do predaja asi pred týždňom → produkt ani cenu ešte nemá. **Odhad koncovej ceny v e-shope: 149–199 kr.** SDS pošle Luk; údaje doplní, keď ich dostane od výrobcu.
 - cena, objem (na fotke 500 ml), počet kusov na sklade
 - bezpečnostný list (SDS) → `ikke_bruk` a varovania (bez SDS ich nevymýšľam)
 - NO etiketa (SK → NO, ako pri ostatných v `02_PRACA/etikety/`)
