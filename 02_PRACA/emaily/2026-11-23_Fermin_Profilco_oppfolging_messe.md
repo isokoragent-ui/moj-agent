@@ -1,6 +1,6 @@
 # Fermin Bjerke Rodriguez (majiteľ, Profilco) — follow-up po Boligmesse Fornebu
 
-**Pripravené:** 23. 11. 2026. **Stav:** čaká, kým Luk odošle ručne.
+**Odoslané:** 23. 11. 2026, Luk ručne. **Stav:** čakáme na odpoveď (termín stretnutia).
 **Kontext:** stretli sa na Boligmesse v Oslo (Fornebu) — spolupráca pri čistení a impregnácii sklenených systémov, odstraňovanie hrdzavých škvŕn a nečistôt. Bol to pre neho zaujímavé, dohoda stretnúť sa v novembri alebo po Novom roku. Luk volal začiatkom novembra — bol på reise.
 **Ďalej:** stretnutie → model spolupráce ako pri Smajlim (robia sami / alebo ponúkajú ďalej s províziou) → `02_PRACA/emaily/2026-10-27_Smajli_samarbeid_glass.md`.
 
