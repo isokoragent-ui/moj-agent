@@ -7,14 +7,14 @@
 | | Spolu |
 |---|---:|
 | Príjmy bez MVA | 11 480 |
-| Výdavky bez MVA | 3 964,85 |
-| **Výsledok** | **7 515,15** |
+| Výdavky bez MVA | 4 762,26 |
+| **Výsledok** | **6 717,74** |
 | MVA vybraná (výstup) | 2 870 |
-| MVA zaplatená (vstup, odpočet) | 812,68 |
-| MVA na odvod | 2 057,32 |
+| MVA zaplatená (vstup, odpočet) | 1 012,03 |
+| MVA na odvod | 1 857,97 |
 | Najazdené km | 536 |
 
-Priemer na mesiac (30 dní): výsledok **11 866,03** · cieľ 40 000–50 000.
+Priemer na mesiac (30 dní): výsledok **10 606,96** · cieľ 40 000–50 000.
 
 ## Príjmy podľa kanála
 
@@ -34,16 +34,17 @@ Priemer na mesiac (30 dní): výsledok **11 866,03** · cieľ 40 000–50 000.
 
 | Kategória | Počet | S MVA | Bez MVA | MVA na odpočet | Podiel |
 |---|---:|---:|---:|---:|---:|
-| Obchod a dielňa Myra — zariadenie, nájom, energie | 5 | 3 361,40 | 2 689,12 | 672,28 | 68 % |
-| Shopify, Metricool, aplikácie, domény | 2 | 714,13 | 714,13 | 0 | 18 % |
-| Náradie a vybavenie | 1 | 627 | 501,60 | 125,40 | 13 % |
-| PostNord, Bring, preprava tovaru | 1 | 75 | 60 | 15 | 2 % |
+| Obchod a dielňa Myra — zariadenie, nájom, energie | 6 | 4 358,16 | 3 486,53 | 871,63 | 73 % |
+| Shopify, Metricool, aplikácie, domény | 2 | 714,13 | 714,13 | 0 | 15 % |
+| Náradie a vybavenie | 1 | 627 | 501,60 | 125,40 | 11 % |
+| PostNord, Bring, preprava tovaru | 1 | 75 | 60 | 15 | 1 % |
 
 ## 10 najväčších výdavkov
 
 | Dátum | Kto | Čo | Suma |
 |---|---|---|---:|
 | 11. 11. 2026 | JYSK Larvik | 3× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra | 1 173 |
+| 20. 11. 2026 | NorEngros Kjosavik Arendal | 2× papierové poháre 25 cl termo (198,76), servítky 3L 24 cm biele (99), papierové utierky Senterrull Plus 1 karton (699) — spotrebný materiál obchod/dielňa Myra. Netto 797,41 + MVA 199,35. | 996,76 |
 | 11. 11. 2026 | JYSK Stathelle (Bamble) | 2× písací stôl ASTRUP 60×120 čierny (B2B -8 %) — zariadenie obchod/dielňa Myra | 782 |
 | 13. 11. 2026 | JYSK Arendal | Rohožka FRYTLE 60×120 + 4× záclona ORUST 140×300 — obchod Myra | 777,40 |
 | 16. 11. 2026 | Megaflis Agderparken | 2× sada skrutkovačov Bahco (BE9881 + SPOR/PH/PZ 6 dielov) | 627 |

@@ -121,6 +121,18 @@
       "zdroj": "faktura:Anthropic-2694-1680-5031"
     },
     {
+      "datum": "2026-11-20",
+      "typ": "vydavok",
+      "suma": 996.76,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "NorEngros Kjosavik Arendal",
+      "popis": "2× papierové poháre 25 cl termo (198,76), servítky 3L 24 cm biele (99), papierové utierky Senterrull Plus 1 karton (699) — spotrebný materiál obchod/dielňa Myra. Netto 797,41 + MVA 199,35.",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "blocek:NorEngros-45140100345485"
+    },
+    {
       "datum": "2026-11-24",
       "typ": "vydavok",
       "suma": 75.0,
