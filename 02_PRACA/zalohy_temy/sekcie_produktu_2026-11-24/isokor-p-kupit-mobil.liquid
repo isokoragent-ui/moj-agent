@@ -1,0 +1,25 @@
+{%- comment -%} Isokor – pruh „Legg i kurven“ dole na mobile (je prilepený k spodku obrazovky, poradie sekcie nehrá rolu). {%- endcomment -%}
+{%- assign v = product.selected_or_first_available_variant -%}
+{%- if product.available -%}
+<div class="isk-sticky">
+  <strong>{{ product.title | truncate: 30 }} · {{ v.price | money_without_trailing_zeros }}</strong>
+  <form method="post" action="{{ routes.cart_add_url }}">
+    <input type="hidden" name="id" value="{{ v.id }}">
+    <input type="hidden" name="quantity" value="1">
+    <button type="submit" class="button button--primary">{{ section.settings.label }}</button>
+  </form>
+</div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Isokor – kúpiť (mobil)",
+  "tag": "div",
+  "class": "isk-section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "text", "id": "label", "label": "Text tlačidla", "default": "Legg i kurven" }
+  ],
+  "presets": [{ "name": "Isokor – kúpiť (mobil)" }]
+}
+{% endschema %}

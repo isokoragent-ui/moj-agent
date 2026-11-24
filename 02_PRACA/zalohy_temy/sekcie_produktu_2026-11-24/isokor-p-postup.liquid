@@ -1,0 +1,26 @@
+{%- comment -%} Isokor – postup použitia (metapole isokor.steg). Bez obsahu sa nezobrazí. {%- endcomment -%}
+{%- assign steg = product.metafields.isokor.steg.value -%}
+{%- if steg != blank -%}
+<section class="isk-pi isk-pi--hvit">
+  <div class="isk-pi__wrap">
+    <h2>{{ section.settings.heading }}</h2>
+    <ol class="isk-steg">
+      {%- for s in steg -%}<li>{{ s }}</li>{%- endfor -%}
+    </ol>
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Isokor – postup",
+  "tag": "div",
+  "class": "isk-section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "paragraph", "content": "Kroky sa berú z poľa produktu „Isokor – postup“. Bez krokov sa sekcia skryje." },
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "Slik gjør du" }
+  ],
+  "presets": [{ "name": "Isokor – postup" }]
+}
+{% endschema %}

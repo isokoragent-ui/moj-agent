@@ -1,0 +1,39 @@
+{%- comment -%} Isokor – súvisiace produkty (metapole isokor.passer_med, inak prvá kolekcia produktu). {%- endcomment -%}
+{%- assign mer = product.metafields.isokor.passer_med.value -%}
+{%- if mer == blank and product.collections.size > 0 -%}
+  {%- assign mer = product.collections.first.products -%}
+{%- endif -%}
+{%- if mer != blank -%}
+<section class="isk-pi isk-pi--hvit">
+  <div class="isk-pi__wrap">
+    <h2>{{ section.settings.heading }}</h2>
+    <div class="isk-mer">
+      {%- assign vist = 0 -%}
+      {%- for p in mer -%}
+        {%- if p.id != product.id and p.available and vist < section.settings.pocet -%}
+          {%- assign vist = vist | plus: 1 -%}
+          <a href="{{ p.url }}">
+            <span class="isk-mer__img">{%- if p.featured_image -%}{{ p.featured_image | image_url: width: 500 | image_tag: loading: 'lazy', alt: p.title }}{%- endif -%}</span>
+            <span class="isk-mer__txt"><span>{{ p.title }}</span><span>{{ p.price | money_without_trailing_zeros }}</span></span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Isokor – súvisiace",
+  "tag": "div",
+  "class": "isk-section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "paragraph", "content": "Produkty z poľa „Passer godt med“; keď je prázdne, z rovnakej kolekcie." },
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "Passer godt sammen med" },
+    { "type": "range", "id": "pocet", "label": "Počet produktov", "min": 2, "max": 8, "step": 1, "default": 4 }
+  ],
+  "presets": [{ "name": "Isokor – súvisiace" }]
+}
+{% endschema %}
