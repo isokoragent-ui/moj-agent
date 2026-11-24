@@ -13,17 +13,6 @@
           "type": "title",
           "settings": {}
         },
-        "fera": {
-          "type": "shopify://apps/fera/blocks/product_reviews_summary/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
-          "settings": {
-            "star_color": "#b0802a",
-            "size": 20,
-            "show_count": true,
-            "show_avg_rating": true,
-            "alignment": "left",
-            "hide_when_no_reviews": true
-          }
-        },
         "kort": {
           "type": "custom_liquid",
           "settings": {
@@ -72,7 +61,6 @@
       "block_order": [
         "kat",
         "title",
-        "fera",
         "kort",
         "price",
         "lager",
