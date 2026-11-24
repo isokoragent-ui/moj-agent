@@ -133,6 +133,18 @@
       "zdroj": "blocek:NorEngros-45140100345485"
     },
     {
+      "datum": "2026-11-20",
+      "typ": "vydavok",
+      "suma": 677.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "JULA Arendal",
+      "popis": "2× úložná polica MDF (à 249) + kávovar 600 W 1,25 l (179) — obchod/dielňa Myra. Netto 541,60 + MVA 135,40. Na bločku karta *5802 (BankAxept, bezkontaktne) — Luk 24. 11.: platba odišla z účtu AS.",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "blocek:JULA-63307-472323"
+    },
+    {
       "datum": "2026-11-24",
       "typ": "vydavok",
       "suma": 75.0,
