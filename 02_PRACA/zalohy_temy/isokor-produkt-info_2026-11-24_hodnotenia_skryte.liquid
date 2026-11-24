@@ -92,59 +92,36 @@
 {%- endif -%}
 
 {%- comment -%}
-  Hodnotenia (Fera) — úplne dole pod „Passer godt sammen med“, v menšom formáte (Luk 24. 11. 2026).
-  Fera vkladá widget sama (app embed) hneď pod produkt; skript ho po načítaní presunie sem.
-  Keď Fera nič nevloží (vypnutá, žiadny widget), sekcia ostane skrytá.
+  Hodnotenia (Fera) na stránke produktu SKRYŤ — ostávajú len na úvodnej stránke (Luk 24. 11. 2026).
+  Fera vkladá widget sama (app embed), nie je v šablóne → skript ho po načítaní skryje.
+  Hviezdičky pri názve (.product__info-container) ostávajú.
 {%- endcomment -%}
-<section class="isk-pi isk-pi--hvit isk-anm" id="isk-anm-{{ section.id }}" hidden>
-  <div class="isk-pi__wrap">
-    <h2 class="isk-anm__h">{{ section.settings.anm_heading }}</h2>
-    <div class="isk-anm__box" data-isk-anm></div>
-  </div>
-</section>
-<style>
-  .isk-anm { padding-top: 2.4rem; padding-bottom: 3.2rem; border-top: 1px solid rgba(0,0,0,.08); }
-  .isk-anm__h { text-align: center; font-size: 2rem; margin: 0 0 1.2rem; }
-  .isk-anm__box { max-width: 760px; margin: 0 auto; zoom: .85; }
-  @media (max-width: 749px) { .isk-anm__box { zoom: .9; } }
-</style>
 <script>
   (function () {
-    var sec = document.getElementById('isk-anm-{{ section.id }}');
-    if (!sec) return;
-    var box = sec.querySelector('[data-isk-anm]');
-    var vylucit = 'product-info, .product__info-container, .product__info-wrapper, .isk-sticky, header, footer, .shopify-section-group-header-group, .shopify-section-group-footer-group';
+    var nechat = '.product__info-container, .isk-sticky, header, footer, .shopify-section-group-header-group, .shopify-section-group-footer-group';
     function jeFera(el) {
       if (!el || el.nodeType !== 1) return false;
       var t = (el.getAttribute('class') || '') + ' ' + (el.id || '') + ' ' + (el.getAttribute('data-fera-container') || '');
       return /fera/i.test(t) || el.hasAttribute('data-fera-container');
     }
-    function najdi() {
+    function skry() {
       var k = document.querySelectorAll('[data-fera-container], [class*="fera"], [id*="fera"]');
       for (var i = 0; i < k.length; i++) {
         var el = k[i];
-        if (box.contains(el) || el.closest(vylucit)) continue;
+        if (el.closest(nechat)) continue;
         var top = el;
         while (top.parentElement && jeFera(top.parentElement)) top = top.parentElement;
-        if (top.closest(vylucit) || box.contains(top)) continue;
+        if (top.closest(nechat) || top.getAttribute('data-isk-skryte')) continue;
         var cs = window.getComputedStyle(top);
-        if (cs.position === 'fixed' || cs.position === 'sticky') continue;
-        if (top.offsetHeight < 60) continue;
-        return top;
+        if (cs.position === 'fixed') continue;
+        top.style.setProperty('display', 'none', 'important');
+        top.setAttribute('data-isk-skryte', '1');
       }
-      return null;
     }
-    function presun() {
-      var w = najdi();
-      if (!w) return false;
-      box.appendChild(w);
-      sec.hidden = false;
-      return true;
-    }
-    if (presun()) return;
-    var mo = new MutationObserver(function () { if (presun()) mo.disconnect(); });
+    skry();
+    var mo = new MutationObserver(skry);
     mo.observe(document.body, { childList: true, subtree: true });
-    setTimeout(function () { mo.disconnect(); }, 20000);
+    setTimeout(function () { mo.disconnect(); }, 30000);
   })();
 </script>
 
@@ -172,7 +149,6 @@
     { "type": "text", "id": "fe_text", "label": "Text pred/po", "default": "Ekte bilder fra våre egne jobber." },
     { "type": "text", "id": "faq_heading", "label": "Nadpis otázok", "default": "Spørsmål og svar" },
     { "type": "text", "id": "mer_heading", "label": "Nadpis súvisiacich", "default": "Passer godt sammen med" },
-    { "type": "text", "id": "anm_heading", "label": "Nadpis hodnotení", "default": "Kundeanmeldelser" },
     { "type": "text", "id": "kjop_label", "label": "Tlačidlo dole na mobile", "default": "Legg i kurven" }
   ],
   "presets": [{ "name": "Isokor – obsah produktu" }]
