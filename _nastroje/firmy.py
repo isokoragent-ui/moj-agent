@@ -23,6 +23,7 @@ FIRMY = {
         "nazov": "Isokor - Skandinavia AS",
         "faktury": P / "faktury",
         "agenda": P / "agenda_as",
+        "folgesedler": P / "folgesedler",
         "kjorebok": P / "kjorebok" / "jazdy",
     },
     "zivnost": {

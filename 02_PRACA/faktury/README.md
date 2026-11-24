@@ -20,6 +20,7 @@ nie pre živnosť (KÓD #25).*
 | `sablona/` | pôvodné PDF Faktura 19 + logo vytiahnuté z neho |
 
 ## Pasce
+- **Pri dodaní tovaru najprv dodací list** (`02_PRACA/folgesedler/`) — z podpísaného listu: `python3 _nastroje/folgeseddel.py <č.> --faktura` → kostra faktúry.
 - **Číslovanie:** ďalšie číslo = najvyššie v `data/` + 1. Faktúry vystavené mimo agenta (vo Worde) sem treba dopísať, inak sa číslo zopakuje.
 - **MVA:** AS je registrovaná v MVA → predvolene **25 %**. `pris` = cena **bez** MVA; skript ráta Nettobeløp → Merverdiavgift → Å BETALE. Iná sadzba na riadku: `"mva": 15` (alebo 0). Pri ORG.NR. sa tlačí „MVA“ (povinné pre registrované firmy). Faktura 19 zostáva s 0 % (vystavená pred registráciou).
 - Oproti šablóne opravené preklepy: „Meverdiavgift“ → **Merverdiavgift**, „Sprarebank“ → **Sparebank**. Formát A4 (šablóna bola Letter).
