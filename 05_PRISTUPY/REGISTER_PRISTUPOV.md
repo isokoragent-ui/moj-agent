@@ -18,6 +18,7 @@
 | Higgsfield (AI video/obrázky) | tvorba videí a obrázkov na marketing | ⏳ plánované — účet na firmu (AS), platený plán kvôli komerčným právam | — | zrušiť predplatné |
 | Metricool (plánovanie príspevkov) | plánovať príspevky, analytika | ✅ konektor v claude.ai (overené 2026-10-18); značka isokorskandinavia napojená na **Facebook, Instagram, TikTok, YouTube, Google Business Profile, Facebook Ads** | príspevky ako draft → naplánovať až po „áno“ (`07_SCHEMY/PRISPEVOK_SOCIALNE_SIETE.md`) | odpojiť v claude.ai → Connectors |
 | Artlist (AI obrázky, videá, hlas, hudba) | tvorba marketingového obsahu | ✅ konektor v claude.ai (overené 2026-10-17); plán AI Suite 16500, ostáva 6 723 kreditov, obnova 10. 11. | generovanie míňa kredity → vopred povedať cenu | odpojiť v claude.ai → Connectors |
+| Fera (hodnotenia v e-shope) | čítať/meniť widgety hodnotení (umiestnenie, vzhľad), čítať recenzie | ✅ **sieťový tajný kľúč prostredia** (cloud Claude Code) pre `api.fera.ai`, hlavička `Secret-Key` — proxy ho vkladá sama, v súboroch nie je (overené volaním 2026-11-24: `/v3/private/store`, `/v3/private/widgets`). ⚠️ Luk kľúč poslal do chatu → **vymeniť vo Fere** a nový uložiť cez formulár, nie do chatu | zmeny = živý e-shop → len po „áno“ | Fera → Settings → API keys → zrušiť kľúč |
 | PostNord app | odosielanie zásielok | Luk ručne | agent len pripraví údaje | — |
 
 *Prístupy pridávame priebežne, jeden po druhom (schéma `07_SCHEMY/NOVY_PRISTUP.md`).*
