@@ -1,0 +1,14 @@
+{
+  "cislo": 1,
+  "dato": "2026-11-24",
+  "ekspedert_av": "Lukas Hric",
+  "kjoper": {"navn": "Esso Vegårshei", "adresse": ["Heiveien 871", "4985 Vegårshei"]},
+  "linjer": [
+    {"spesifikasjon": "Isokor Antifog 100 ml", "antall": 15, "pris": 40, "mva": 25}
+  ],
+  "uten_priser": false,
+  "levert_til": "",
+  "stav": "vystavený",
+  "faktura": null,
+  "poznamka": "Luk 24. 11. 2026: 15 ks Antifog 100 ml à 40 kr + MVA."
+}
