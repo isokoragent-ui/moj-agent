@@ -1,0 +1,13 @@
+{
+  "cislo": 21,
+  "kunde": {"navn": "Esso Vegårshei", "adresse": ["Heiveien 871", "4985 Vegårshei"]},
+  "fakturadato": "2026-11-24",
+  "forfallsdato": "2026-11-29",
+  "linjer": [
+    {"beskrivelse": "Isokor GreenGuard", "pris": 80, "antall": 4, "mva": 25}
+  ],
+  "referanse": "",
+  "stav": "vystavená",
+  "oblast": "produkty",
+  "poznamka": "Luk 24. 11. 2026: 4 ks GreenGuard po 100 kr s MVA (80 + 20 MVA). Splatnosť 5 dní."
+}
