@@ -9,7 +9,7 @@ Predchádzajúce audity: `WEB_AUDIT_2026-10-18.md`, `ESHOP_ANALYZA.md` (18. 10.)
 - **Dodanie 6–10 dní je realita PostNord** (Agder → Oslo), odosiela sa do 1 dňa → bod 3 „Pomalé dodanie“ sa nedá vyriešiť dopravcom; ostáva len napísať „Sendes innen 1 virkedag“.
 - **Opustené pokladne z Osla sú často falošné** („Storgata 1, 3, 5, 10“) → pokladňa → nákup nie je až taký zlý, ako ukazuje 10 %.
 - **Príspevky už vedú na produkt.** Shopify ich napriek tomu ráta ako príchody na úvodnú stránku → treba odkazy s **UTM** (`?utm_source=facebook&utm_campaign=…`), aby bolo vidno, ktorý príspevok priviedol koho. Možné príčiny: odkaz v profile (bio) vedie na úvodnú, alebo prehliadač v aplikácii FB/IG stratí cestu.
-- **„Norsko“ → „Norge“** v kontakte: konektor nemá oprávnenie upravovať podmienky obchodu → Luk ručne (Innstillinger → Retningslinjer → Kontaktinformasjon).
+- ✅ **„Norsko“ → „Norge“** v kontakte opravil Luk 24. 11. (overené). Konektor nemá oprávnenie upravovať podmienky obchodu (`write_legal_policies`) → Vilkår for bruk tiež len ručne.
 
 ## 1. Čísla (posledných 60 dní, 26. 9.–24. 11. 2026)
 
