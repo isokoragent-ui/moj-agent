@@ -4,6 +4,13 @@
 Predchádzajúce audity: `WEB_AUDIT_2026-10-18.md`, `ESHOP_ANALYZA.md` (18. 10.).*
 *Zmeny z 17.–24. 11. (nový dizajn, sekcie produktu, hodnotenia) sa v číslach ešte neprejavia — merať od 1. 12.*
 
+## ⚠️ Doplnenie po rozhovore s Lukom (24. 11.)
+- **Doprava ostáva** 99 / 49 (400–700) / zadarmo od 700 kr → `08_ROZHODNUTIA/2026-11-24_doprava_ostava.md`. Body 2 a „#1 Doprava“ v tabuľke krokov **neplatia**.
+- **Dodanie 6–10 dní je realita PostNord** (Agder → Oslo), odosiela sa do 1 dňa → bod 3 „Pomalé dodanie“ sa nedá vyriešiť dopravcom; ostáva len napísať „Sendes innen 1 virkedag“.
+- **Opustené pokladne z Osla sú často falošné** („Storgata 1, 3, 5, 10“) → pokladňa → nákup nie je až taký zlý, ako ukazuje 10 %.
+- **Príspevky už vedú na produkt.** Shopify ich napriek tomu ráta ako príchody na úvodnú stránku → treba odkazy s **UTM** (`?utm_source=facebook&utm_campaign=…`), aby bolo vidno, ktorý príspevok priviedol koho. Možné príčiny: odkaz v profile (bio) vedie na úvodnú, alebo prehliadač v aplikácii FB/IG stratí cestu.
+- **„Norsko“ → „Norge“** v kontakte: konektor nemá oprávnenie upravovať podmienky obchodu → Luk ručne (Innstillinger → Retningslinjer → Kontaktinformasjon).
+
 ## 1. Čísla (posledných 60 dní, 26. 9.–24. 11. 2026)
 
 | Krok | Návštevy | Podiel | Bežný e-shop |
