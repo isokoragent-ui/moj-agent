@@ -10,6 +10,7 @@ s dokladom v `02_PRACA/agenda_as/zaznamy/` a vyrobí zoznam „chýba doklad“.
 **Pravidlá:**
 - Fotky výpisov sa neukladajú, do repozitára idú len čísla a popisy. Agent nemá prístup do banky.
 - Karty: *4580, *2133 = AS · *4599 = súkromná · Visa *6155 = živnosť.
+  - Spresnenie 24. 11.: AS má jednu kartu a jeden účet — *2133 = koniec čísla karty, *4580 = koniec čísla účtu. *5802 (JULA 20. 11.) zaplatené z účtu AS.
 - Výdavok AS zaplatený inak: `platba: sukromne` (AS dlhuje Lukovi), `zaplatila_druha_firma` (AS dlhuje živnosti).
 - Pred 6. 11. sa MVA neodpočítava (agenda to rieši sama); hraničné prípady posúdi účtovníčka.
 
