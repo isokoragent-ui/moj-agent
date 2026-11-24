@@ -1,0 +1,38 @@
+{%- comment -%} Isokor – fotky pred/po s posuvníkom (metapolia isokor.for_bilde + etter_bilde). Bez oboch fotiek sa nezobrazí. {%- endcomment -%}
+{%- assign for_b = product.metafields.isokor.for_bilde.value -%}
+{%- assign etter_b = product.metafields.isokor.etter_bilde.value -%}
+{%- if for_b != blank and etter_b != blank -%}
+<section class="isk-pi isk-pi--salvia">
+  <div class="isk-pi__wrap isk-fe2">
+    <div class="isk-fe2__txt">
+      <h2>{{ section.settings.heading }}</h2>
+      <p style="font-size: 1.8rem; color: var(--isk-muted); margin: 0">{{ section.settings.text }}</p>
+    </div>
+    <div class="isk-fe2__media">
+      <div class="isk-fe2__frame" id="isk-fe2-{{ section.id }}">
+        {{ etter_b | image_url: width: 900 | image_tag: loading: 'lazy', alt: 'Etter' }}
+        {{ for_b | image_url: width: 900 | image_tag: loading: 'lazy', class: 'isk-fe2__for', alt: 'Før' }}
+        <div class="isk-fe2__line"></div>
+        <span class="isk-fe2__b isk-fe2__b--f">FØR</span><span class="isk-fe2__b isk-fe2__b--e">ETTER</span>
+      </div>
+      <label for="isk-fe2-r-{{ section.id }}" style="display: block; margin: 1.2rem 0 .2rem; font-size: 1.4rem; font-weight: 600">Dra for å sammenligne</label>
+      <input id="isk-fe2-r-{{ section.id }}" type="range" min="0" max="100" value="50" oninput="document.getElementById('isk-fe2-{{ section.id }}').style.setProperty('--pos', this.value + '%')">
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Isokor – pred/po",
+  "tag": "div",
+  "class": "isk-section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "paragraph", "content": "Fotky sa berú z polí produktu „Før-bilde“ a „Etter-bilde“. Bez oboch fotiek sa sekcia skryje." },
+    { "type": "text", "id": "heading", "label": "Nadpis", "default": "Før og etter" },
+    { "type": "text", "id": "text", "label": "Text", "default": "Ekte bilder fra våre egne jobber." }
+  ],
+  "presets": [{ "name": "Isokor – pred/po" }]
+}
+{% endschema %}

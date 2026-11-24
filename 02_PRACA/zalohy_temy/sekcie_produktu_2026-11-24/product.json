@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "kat": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- if product.metafields.isokor.kategori != blank -%}<p class=\"isk-p-kat\">{{ product.metafields.isokor.kategori.value }}</p>{%- endif -%}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "fera": {
+          "type": "shopify://apps/fera/blocks/product_reviews_summary/2fbfcfa7-8a04-479f-89a8-0621fa099c51",
+          "settings": {
+            "star_color": "#b0802a",
+            "size": 20,
+            "show_count": true,
+            "show_avg_rating": true,
+            "alignment": "left",
+            "hide_when_no_reviews": true
+          }
+        },
+        "kort": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign m = product.metafields.isokor -%}{%- if m.kort != blank -%}<p class=\"isk-p-kort\">{{ m.kort.value }}</p>{%- endif -%}{%- if m.fordeler != blank -%}<ul class=\"isk-p-chips\">{%- for f in m.fordeler.value -%}<li>{{ f }}</li>{%- endfor -%}</ul>{%- endif -%}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "lager": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- if product.available and product.type != 'Tjeneste' -%}<p class=\"isk-p-lager\">● På lager · levering 6–10 virkedager</p>{%- endif -%}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "tillit": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'isokor-tillit', product: product -%}"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "kat",
+        "title",
+        "fera",
+        "kort",
+        "price",
+        "lager",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "tillit",
+        "description"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "isk_postup": {
+      "type": "isokor-p-postup",
+      "settings": {}
+    },
+    "isk_pred_po": {
+      "type": "isokor-p-pred-po",
+      "settings": {}
+    },
+    "isk_info": {
+      "type": "isokor-p-info",
+      "settings": {}
+    },
+    "isk_otazky": {
+      "type": "isokor-p-otazky",
+      "settings": {}
+    },
+    "isk_suvisiace": {
+      "type": "isokor-p-suvisiace",
+      "settings": {}
+    },
+    "anmeldelser": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "isk_kupit": {
+      "type": "isokor-p-kupit-mobil",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "isk_postup",
+    "isk_pred_po",
+    "isk_info",
+    "isk_otazky",
+    "isk_suvisiace",
+    "anmeldelser",
+    "isk_kupit"
+  ]
+}
