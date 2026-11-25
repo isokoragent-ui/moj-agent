@@ -3,12 +3,13 @@
 
 Použitie:  python3 video_reel.py <scenar.json> <vystup.mp4>
 Scenár (JSON): {"scenes":[{"img":"cesta.jpg","text":"…","sub":"…","dur":2.6,
-                 "zoom":[1.0,1.12],"focus":[0.5,0.5]}, …],
+                 "zoom":[1.0,1.12],"focus":[0.5,0.5],
+                 "fit":false}  ← fit: fotka na šírku celá + rozmazané pozadie, …],
                "end":{"lines":["…"],"dur":3.5}}   ← "end" a "text" sú voliteľné
 Originály sa len čítajú (EXIF otočenie sa rieši tu).
 """
 import json, subprocess, sys
-from PIL import Image, ImageOps, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageOps, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 
 W, H, FPS, FADE = 1080, 1920, 30, 0.4
 BOLD = "/usr/share/fonts/opentype/inter/Inter-Bold.otf"
@@ -58,7 +59,24 @@ def caption_layer(text, sub):
     return layer
 
 
+def frame_fit(im, t, sc):
+    """Fotka na šírku celá: rozmazané stmavené pozadie + obrázok na šírku plochy."""
+    if "_bg" not in sc:
+        bg = im.resize((round(im.width * H / im.height), H)).crop((0, 0, W, H)) if im.width / im.height < W / H \
+            else im.resize((round(im.width * H / im.height), H))
+        x0 = (bg.width - W) // 2
+        sc["_bg"] = ImageEnhance.Brightness(bg.crop((x0, 0, x0 + W, H)).filter(ImageFilter.GaussianBlur(40))).enhance(0.55)
+    z0, z1 = sc.get("zoom", [1.0, 1.06])
+    z = z0 + (z1 - z0) * t
+    w = round(W * z); h = round(im.height * w / im.width)
+    out = sc["_bg"].copy()
+    out.paste(im.resize((w, h), Image.BICUBIC), ((W - w) // 2, (H - h) // 2))
+    return out
+
+
 def frame(im, t, sc):
+    if sc.get("fit"):
+        return frame_fit(im, t, sc)
     z0, z1 = sc.get("zoom", [1.0, 1.1])
     fx, fy = sc.get("focus", [0.5, 0.5])
     z = z0 + (z1 - z0) * t
