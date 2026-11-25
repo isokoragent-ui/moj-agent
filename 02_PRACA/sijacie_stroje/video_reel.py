@@ -4,7 +4,7 @@
 Použitie:  python3 video_reel.py <scenar.json> <vystup.mp4>
 Scenár (JSON): {"scenes":[{"img":"cesta.jpg","text":"…","sub":"…","dur":2.6,
                  "zoom":[1.0,1.12],"focus":[0.5,0.5]}, …],
-               "end":{"lines":["…"],"dur":3.5}}
+               "end":{"lines":["…"],"dur":3.5}}   ← "end" a "text" sú voliteľné
 Originály sa len čítajú (EXIF otočenie sa rieši tu).
 """
 import json, subprocess, sys
@@ -94,9 +94,10 @@ def main(spec_path, out):
         n = round(dur * FPS)
         clips.append((n, lambda i, im=im, cap=cap, sc=sc, n=n: Image.alpha_composite(
             frame(im, i / max(n - 1, 1), sc).convert("RGBA"), cap).convert("RGB")))
-    e = spec["end"]; card = end_card(e["lines"])
-    edur = e["beats"] * spec["beat"] + FADE if "beats" in e else e.get("dur", 3.5)
-    clips.append((round(edur * FPS), lambda i: card))
+    if "end" in spec:  # záverečná karta je voliteľná (reel bez textu ju nemá)
+        e = spec["end"]; card = end_card(e["lines"])
+        edur = e["beats"] * spec["beat"] + FADE if "beats" in e else e.get("dur", 3.5)
+        clips.append((round(edur * FPS), lambda i: card))
 
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
                            "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-f", "lavfi", "-i",

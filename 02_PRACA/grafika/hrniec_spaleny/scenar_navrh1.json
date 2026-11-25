@@ -1,0 +1,7 @@
+{"scenes":[
+ {"img":"02_PRACA/grafika/hrniec_spaleny/01_originaly/1_pred_A.jpg","dur":3.2,"zoom":[1.0,1.15],"focus":[0.5,0.5]},
+ {"img":"02_PRACA/grafika/hrniec_spaleny/01_originaly/2_pred_B.jpg","dur":2.8,"zoom":[1.05,1.0],"focus":[0.5,0.5]},
+ {"img":"02_PRACA/grafika/hrniec_spaleny/01_originaly/3_pocas_drotenka.jpg","dur":3.4,"zoom":[1.0,1.12],"focus":[0.5,0.45]},
+ {"img":"02_PRACA/grafika/hrniec_spaleny/01_originaly/4_dno_zvonka.jpg","dur":2.8,"zoom":[1.0,1.1],"focus":[0.47,0.5]},
+ {"img":"02_PRACA/grafika/hrniec_spaleny/01_originaly/5_dno_zvonka_bok.jpg","dur":3.4,"zoom":[1.1,1.0],"focus":[0.5,0.4]}],
+ "audio":{"file":"02_PRACA/grafika/hrniec_spaleny/hudba.wav","start":0.2,"fade_out":1.5}}
