@@ -119,6 +119,42 @@
       "platba": "firemna_karta",
       "doklad": true,
       "zdroj": "faktura:Anthropic-2694-1680-5031"
+    },
+    {
+      "datum": "2026-11-20",
+      "typ": "vydavok",
+      "suma": 996.76,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "NorEngros Kjosavik Arendal",
+      "popis": "2× papierové poháre 25 cl termo (198,76), servítky 3L 24 cm biele (99), papierové utierky Senterrull Plus 1 karton (699) — spotrebný materiál obchod/dielňa Myra. Netto 797,41 + MVA 199,35.",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "blocek:NorEngros-45140100345485"
+    },
+    {
+      "datum": "2026-11-20",
+      "typ": "vydavok",
+      "suma": 677.0,
+      "mva": 25,
+      "kategoria": "obchod_dielna",
+      "kto": "JULA Arendal",
+      "popis": "2× úložná polica MDF (à 249) + kávovar 600 W 1,25 l (179) — obchod/dielňa Myra. Netto 541,60 + MVA 135,40. Na bločku karta *5802 (BankAxept, bezkontaktne) — Luk 24. 11.: platba odišla z účtu AS.",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "blocek:JULA-63307-472323"
+    },
+    {
+      "datum": "2026-11-24",
+      "typ": "vydavok",
+      "suma": 75.0,
+      "mva": 25,
+      "kategoria": "doprava",
+      "kto": "PostNord",
+      "popis": "Zásielka 5 kg (Service Point, pakkeautomat) do Sortlandu, objednávka 1003784353, kvittering/transakcia 4253856 — 60 + MVA 15. Zaplatené firemnou kartou AS (Visa).",
+      "platba": "firemna_karta",
+      "doklad": true,
+      "zdroj": "faktura:PostNord-4253856"
     }
   ]
 }

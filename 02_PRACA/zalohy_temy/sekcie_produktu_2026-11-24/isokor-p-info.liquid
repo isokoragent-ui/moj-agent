@@ -1,0 +1,28 @@
+{%- comment -%} Isokor – Passer til / Ikke bruk på / Dokumenter (SDS). Bez obsahu sa nezobrazí. {%- endcomment -%}
+{%- assign m = product.metafields.isokor -%}
+{%- if m.passer_til != blank or m.ikke_bruk != blank or m.sds != blank -%}
+<section class="isk-pi isk-pi--lin">
+  <div class="isk-pi__wrap isk-kort3">
+    {%- if m.passer_til != blank -%}<div><h3>Passer til</h3><p>{{ m.passer_til.value }}</p></div>{%- endif -%}
+    {%- if m.ikke_bruk != blank -%}<div class="isk-varsel"><h3>Ikke bruk på</h3><p>{{ m.ikke_bruk.value }}</p></div>{%- endif -%}
+    {%- if m.sds != blank -%}
+      <div><h3>Dokumenter</h3>
+        <a class="isk-dok" href="{{ m.sds.value }}" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6"/></svg>Sikkerhetsdatablad (PDF)</a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Isokor – passer til",
+  "tag": "div",
+  "class": "isk-section",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "paragraph", "content": "Obsah z polí produktu „Passer til“, „Ikke bruk på“ a „Sikkerhetsdatablad“. Prázdne časti sa skryjú." }
+  ],
+  "presets": [{ "name": "Isokor – passer til" }]
+}
+{% endschema %}

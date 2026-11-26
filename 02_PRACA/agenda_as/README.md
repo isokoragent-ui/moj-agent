@@ -40,7 +40,7 @@ Príjmy a výdavky bez MVA, **výsledok**, MVA na odvod, km · porovnanie s pred
 - **MVA od 6. 11. 2026.** Nákupy a predaje pred týmto dňom sa rátajú bez MVA. Obdobie do 5. 11. (aj Faktura 19) má účtovníčka; **od 19. 11. Luk chce evidovať aj doklady AS z roku 2026 pred MVA** → do `zaznamy/RRRR-MM.json` podľa dátumu faktúry, `mva` podľa dokladu (väčšinou 0). ROZVAHA (od 6. 11.) ich nezapočíta, mesačné raporty áno.
 - **Zaplatené súkromne** (`platba: sukromne`) = utlegg — firma to musí Lukovi vrátiť.
 - **Bez papierového dokladu** Anne Sofie výdavok neuzná → agent pripomína v každom raporte, kým Luk nepovie, že papier má.
-- **Bloček z fotky: `zdroj` = `blocek:<obchod>-<číslo bločku>`** (napr. `blocek:JYSK-0052-2514`) — musí byť unikátny, inak `kontrola` hlási duplicitu. Platba: karta *4580 a *2133 = firemné AS, *4599 = súkromná, Visa *6155 = živnosť (Luk 19. 11.). Shopify patrí od 19. 11. AS (doteraz platené kartou živnosti *6155).
+- **Bloček z fotky: `zdroj` = `blocek:<obchod>-<číslo bločku>`** (napr. `blocek:JYSK-0052-2514`) — musí byť unikátny, inak `kontrola` hlási duplicitu. Platba AS = **jedna karta, jeden účet** (Luk 24. 11.): *2133 = koniec čísla karty AS, *4580 = koniec čísla účtu AS (BankAxept ho tlačí na bloček, napr. „******4580-1“). Neznáme *5802 na bločku JULA 20. 11. — platba odišla z účtu AS, berie sa ako AS. Ďalej: *4599 = súkromná, Visa *6155 = živnosť (Luk 19. 11.). Shopify patrí od 19. 11. AS (doteraz platené kartou živnosti *6155).
 - E-shop: pred zápisom skontrolovať `zdroj` (číslo objednávky) — `agenda.py kontrola` hlási duplicity.
 - Výsledok v raporte je **pred daňou a pred Lukovou mzdou** — nie je to „čisté do vrecka“.
 - Agent nemá a nežiada prístup do banky — čísla sú len z diktovania, Shopify a faktúr.
