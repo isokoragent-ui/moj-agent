@@ -1,8 +1,8 @@
 # Black Friday 2026 — 15 % pre kupujúcich (pi 27. 11.)
 
-*Stav: 📝 pripravené agentom št 26. 11. — čaká na Lukovo „áno“ na zľavu v e-shope a na zadanie v Messaging.*
+*Stav: ✅ zľava vytvorená 26. 11. (Luk „áno“ na 15 %), overená čítaním — stav SCHEDULED. ⏳ E-maily zadáva Luk v Messaging.*
 
-## Zľava v e-shope (návrh, ešte NEVYTVORENÁ)
+## Zľava v e-shope — VYTVORENÁ (`gid://shopify/DiscountCodeNode/1278774313139`)
 - **15 %** (agent odporúča 15 namiesto 12 — pozri nižšie).
 - Kód **BLACKFRIDAY15**, zákazník ho nepíše: tlačidlo v e-maile ho vloží do košíka samo
   (odkaz `https://isokor-skandinavia.no/discount/BLACKFRIDAY15?redirect=/collections/all`).
