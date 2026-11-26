@@ -37,7 +37,7 @@ Polisher og LMS er spesialprodukter for impregnering og rustfjerning. Sikkerhets
 
 **To måter å samarbeide på**
 
-1. Dere bruker produktene selv – ved overlevering etter montering, ved service, eller som et tillegg dere tilbyr kunden. Vi sender gjerne noen flasker til test, helt uforpliktende.
+1. Dere bruker produktene selv – ved overlevering etter montering, ved service, eller som et tillegg dere tilbyr kunden. Vi kommer gjerne innom, viser produktene og demonstrerer dem.
 
 2. Dere anbefaler oss – vi gjør jobben. Mange av kundene deres ønsker at rekkverk og glass skal holde seg rene og beskyttet, men det er sjelden noe dere har tid til mellom monteringsjobbene. Dere nevner tjenesten for kunden, vi gir en fast pris, utfører rengjøringen og impregneringen, og dere får 15–20 % av oppdragets verdi for hvert oppdrag dere formidler.
 
@@ -55,6 +55,7 @@ www.isokor-skandinavia.no
 ---
 
 ## Poznámky agenta
+- **26. 11. opravené:** pôvodne „Vi sender gjerne noen flasker til test, helt uforpliktende“ → firma si vypýtala fľaše na test. Luk: fľaše len tak neposielame, najprv stretnutie, vzorky až potom. Nová veta: „Vi kommer gjerne innom, viser produktene og demonstrerer dem.“
 - **„Naturlig“ len pri Cleaner a Glosy — zámerne.** Podľa bezpečnostných listov je Polisher horľavý (H225) a LMS žieravý (H314). Majitelia sklenárskych firiem karty čítajú; keby sme „100 % naturlig“ napísali pri všetkých, prvá karta nás vyvráti. Preto veta „Polisher og LMS er spesialprodukter…“.
 - Glosy nemá stránku v e-shope → bez odkazu. Tvrdenie „naturlig“ podľa textu výrobcu; SDS ešte nemáme.
 - Provízia 15–20 % = ako pri Smajlim. Ak to nechceš písať v prvom e-maile, zmeniť na „en provisjon for hvert oppdrag“.
