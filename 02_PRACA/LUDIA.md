@@ -11,5 +11,6 @@ najprv sa sem pozrie. Sľuby, ktoré tu nie sú, neexistujú.*
 | Bjornar | zákazník — impregnácia WPC panelov (z ukážky e-mailu) | e-mail | leto 2026 | — |
 | Halvor | predajňa — má od leta 2026 na skúšku 12 ks GreenGuard (bez faktúry); možný odberateľ 2027 | e-mail, osobne | e-mail 23. 11. 2026 (Luk ručne), osobne bol 20. 11. (mal stretnutie) | čakám termín stretnutia; sľúbil som: zvyšok GreenGuard zobrať späť, ponuka na 2027 → `02_PRACA/emaily/2026-11-23_Halvor_GreenGuard_etter_sesong.md` |
 | Fermin Bjerke Rodriguez | majiteľ firmy **Profilco** — možný B2B partner (sklenené systémy: čistenie, impregnácia, hrdzavé škvrny) | osobne (Boligmesse Fornebu), telefón, e-mail | telefonát zač. novembra 2026 (bol på reise); follow-up e-mail odoslaný 23. 11. (Luk ručne) | dohoda: stretnúť sa v novembri alebo po Novom roku → `02_PRACA/emaily/2026-11-23_Fermin_Profilco_oppfolging_messe.md` |
+| kategorikoordinátor Sunkost (meno doplniť) | reťazec Sunkost — možný odberateľ série pre domácnosť | e-mail (priamy kontakt) | návrh prvého e-mailu 26. 11. 2026 | čakám na Lukovo odoslanie; ponúkame info, produktové listy, certifikáty, vzorky → `02_PRACA/emaily/2026-11-26_Sunkost_kategorikoordinator.md` |
 
 *Kľúčoví klienti a partneri zatiaľ nie sú — všetko je v rozbehu.*
