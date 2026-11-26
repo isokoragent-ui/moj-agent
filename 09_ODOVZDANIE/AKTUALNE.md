@@ -37,7 +37,7 @@
 - **28. 10.:** e-mail marketing (Messaging, ne 9:30; nyhetsbrev č. 1 naplánovaný na ne 1. 11.), doména odosielateľa overená (SPF/DKIM/DMARC pass).
 
 ## Nedokončené — pokračovať tu
-- 🧪 **Sklenárska firma chce fľaše na test** (okno E-mail Halvor, 26. 11.): odpoveď — najprv stretnutie/prezentácia, vzorky až potom → `02_PRACA/emaily/2026-11-26_sklo_odpoved_testovanie.md`. Luk odošle; doplniť, ktorá firma. Šablóna pre sklenárske firmy opravená (bez ponuky fliaš na test).
+- 🧪 **Sklenárska firma chce fľaše na test** (okno E-mail Halvor, 26. 11.): Luk pošle 2–3 produkty na test (výnimka, šablóna to sľúbila), odpoveď pýta adresu, potom spätná väzba + stretnutie → `02_PRACA/emaily/2026-11-26_sklo_odpoved_testovanie.md`. Luk odošle; doplniť, ktorá firma. Šablóna pre sklenárske firmy opravená (bez ponuky fliaš na test).
 - 🌿 **Sunkost – kategorikoordinátor** (okno E-mail Halvor, 26. 11.): NO e-mail – Isokor Skandinavia, 100 % prírodná séria pre domácnosť, výroba v Nórsku, dialóg aj na jar → `02_PRACA/emaily/2026-11-26_Sunkost_kategorikoordinator.md`. **Luk odoslal 26. 11.** (ručne, upravený) → čakáme; INCI, dermatologické správy, V-Label certifikáty mať po ruke.
 - **Automatické e-maily — plán čaká na schválenie** (okno Black Friday, 26. 11.): `02_PRACA/EMAIL_AUTOMATIZACIE_PLAN.md` — 9 e-mailov, fáza 1 = opustená pokladňa, poďakovanie, hodnotenie po 15 dňoch. Po „áno“ agent napíše nórske texty, Luk zadá v Messaging krok po kroku.
 - **Black Friday e-maily (Luk v Messaging):** e-mail 1 dnes št 26. 11. ~13:00, pripomienka pi 27. 11. 9:00; segment „Nyhetsbrev – kunder med kjøp“ (23). Tlačidlo = `https://isokor-skandinavia.no/discount/BLACKFRIDAY15?redirect=/collections/all`. **Po 30. 11.:** agent vyhodnotí otvorenia, kliky, objednávky s kódom.
